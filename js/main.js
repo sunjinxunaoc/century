@@ -4,16 +4,48 @@
     const navToggle = document.getElementById('navToggle');
     const nav = document.getElementById('nav');
 
+    function closeNavDropdowns() {
+        nav.querySelectorAll('.has-dropdown.open').forEach(function(item) {
+            item.classList.remove('open');
+        });
+    }
+
     if (navToggle && nav) {
         navToggle.addEventListener('click', function() {
+            if (nav.classList.contains('active')) {
+                closeNavDropdowns();
+            }
             nav.classList.toggle('active');
             this.classList.toggle('active');
         });
 
-        document.querySelectorAll('.nav-link').forEach(function(link) {
+        document.querySelectorAll('.nav-list a').forEach(function(link) {
             link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    const parent = this.parentElement;
+                    if (parent.classList.contains('has-dropdown') && this === parent.querySelector(':scope > a')) {
+                        return;
+                    }
+                }
                 nav.classList.remove('active');
                 navToggle.classList.remove('active');
+            });
+        });
+
+        document.querySelectorAll('.has-dropdown > a').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    const item = this.parentElement;
+                    const wasOpen = item.classList.contains('open');
+                    const siblings = item.parentElement.querySelectorAll(':scope > .has-dropdown');
+                    siblings.forEach(function(sib) {
+                        if (sib !== item) {
+                            sib.classList.remove('open');
+                        }
+                    });
+                    item.classList.toggle('open', !wasOpen);
+                    e.preventDefault();
+                }
             });
         });
     }
