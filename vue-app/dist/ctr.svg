@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 600">
+  <rect width="930" height="600" fill="#FFFFFF"/>
+  <!-- C -->
+  <path d="M278 247 A82 82 0 1 0 278 353" fill="none" stroke="#E8590C" stroke-width="56"/>
+  <!-- T -->
+  <path d="M355 218 H565" stroke="#E8590C" stroke-width="56"/>
+  <path d="M460 190 V410" stroke="#E8590C" stroke-width="56"/>
+  <!-- R -->
+  <path d="M653 190 V410" stroke="#E8590C" stroke-width="56"/>
+  <path d="M653 218 H735 A55 55 0 0 1 735 328 H653" fill="none" stroke="#E8590C" stroke-width="56"/>
+  <polygon points="702,300 758,300 806,410 750,410" fill="#E8590C"/>
+</svg>

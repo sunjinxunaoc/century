@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-gray-700 bg-white antialiased;
+  }
+  a {
+    @apply no-underline text-inherit;
+  }
+  img {
+    @apply max-w-full;
+  }
+}
+
+@layer components {
+  .container-app {
+    @apply max-w-[1200px] mx-auto px-5;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md font-medium transition-colors duration-200 cursor-pointer;
+  }
+  .btn-primary {
+    @apply bg-[#FF6B00] text-white hover:bg-orange-600;
+  }
+  .btn-outline {
+    @apply border border-white text-white hover:bg-white hover:text-[#1A1A2E];
+  }
+  .btn-large {
+    @apply px-8 py-4 text-base;
+  }
+  .section-header {
+    @apply text-center mb-12;
+  }
+  .section-title {
+    @apply text-3xl font-bold text-[#1A1A2E] mb-3;
+  }
+  .section-subtitle {
+    @apply text-gray-500 max-w-2xl mx-auto;
+  }
+  .card {
+    @apply bg-white rounded-lg shadow-card overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-card-lg;
+  }
+  .tag {
+    @apply inline-block text-xs font-semibold uppercase tracking-wide text-[#FF6B00] bg-orange-50 rounded-full px-3 py-1;
+  }
+  .breadcrumb {
+    @apply flex flex-wrap items-center gap-2 text-sm text-gray-500 mb-6;
+  }
+  .breadcrumb a {
+    @apply text-[#FF6B00];
+  }
+  .sidebar {
+    @apply bg-white border border-gray-200 rounded-lg shadow-card p-5;
+  }
+  @screen lg {
+    .sidebar {
+      @apply sticky top-24 max-h-[calc(100vh-110px)] overflow-y-auto;
+    }
+  }
+  .sidebar-title {
+    @apply text-base font-bold text-[#1A1A2E] uppercase tracking-wide pb-3 mb-4 border-b-2 border-[#FF6B00];
+  }
+  .sidebar-link {
+    @apply block px-2.5 py-2 text-sm text-gray-600 rounded hover:bg-orange-50 hover:text-[#FF6B00];
+  }
+  .sidebar-link.active {
+    @apply text-[#FF6B00] font-semibold bg-orange-50 border-l-[3px] border-[#FF6B00];
+  }
+  .spec-table {
+    @apply w-full border-collapse text-sm;
+  }
+  .spec-table th {
+    @apply bg-[#1A1A2E] text-white font-semibold px-4 py-3 text-left whitespace-nowrap border border-gray-200;
+  }
+  .spec-table td {
+    @apply px-4 py-3 border border-gray-200;
+  }
+  .spec-table tr:nth-child(even) td {
+    @apply bg-gray-50;
+  }
+  .article-content h2 {
+    @apply text-2xl font-bold text-[#1A1A2E] mt-9 mb-3;
+  }
+  .article-content h3 {
+    @apply text-lg font-bold text-[#1A1A2E] mt-6 mb-3;
+  }
+  .article-content p {
+    @apply mb-4 leading-relaxed;
+  }
+  .article-content ul,
+  .article-content ol {
+    @apply mb-4 ml-6 leading-relaxed;
+  }
+  .article-content ul {
+    @apply list-disc;
+  }
+  .article-content ol {
+    @apply list-decimal;
+  }
+  .article-content strong {
+    @apply text-[#1A1A2E];
+  }
+  .article-content a {
+    @apply text-[#FF6B00] hover:underline;
+  }
+}
+
+@layer utilities {
+  .animate-reveal {
+    @apply transition-all duration-500 ease-out;
+  }
+}

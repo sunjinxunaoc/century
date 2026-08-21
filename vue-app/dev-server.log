@@ -1,0 +1,14 @@
+Port 5173 is in use, trying another one...
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m301[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5174[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [[2m23:23:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ProductSidebar.vue, /src/styles/main.css[22m
+[2m23:23:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ProductSidebar.vue, /src/styles/main.css[22m
+[2m23:23:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ProductSidebar.vue, /src/styles/main.css[22m
+[2m23:23:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ProductSidebar.vue, /src/styles/main.css[22m
+[2m23:24:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ProductSidebar.vue, /src/styles/main.css[22m
+[2m23:24:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ProductSidebar.vue, /src/styles/main.css[22m
+[2m23:24:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ProductSidebar.vue, /src/styles/main.css[22m
+[2m23:24:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ProductSidebar.vue?vue&type=style&index=0&scoped=e214bd53&lang.css[22m
+[2m23:24:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles/main.css[22m
