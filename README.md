@@ -1,69 +1,73 @@
-# Century Auto Parts — 官方网站
+<p align="center">
+  <a href="./README_zh.md">中文</a> · <a href="./README.md"><b>English</b></a>
+</p>
 
-**Hebei Century Auto Parts Co., Ltd.** 官方公司网站与产品目录源码,一家自 2010 年起专业制造和出口轮胎维修产品的厂商。
+# Century Auto Parts — Official Website
 
-🔗 官网: **https://centurymanufacture.com**
+Source code for the official company website of **Hebei Century Auto Parts Co., Ltd.**, a professional manufacturer and exporter of tire repair products since 2010.
+
+🔗 Live website: **https://centurymanufacture.com**
 
 ---
 
-## 📂 仓库结构
+## 📂 Repository Structure
 
-本仓库包含网站的源码(基于 Vue 3 的静态生成站点)。
+This repository contains the source code of the website (a static site generated with Vue 3).
 
-| 路径 | 说明 |
-|------|------|
-| `vue-app/` | 当前官方网站源码(Vue 3 + Vite + vite-ssg) |
-| `index.html` 等根目录文件 | 早期静态网页版本(历史遗留) |
+| Path | Description |
+|------|-------------|
+| `vue-app/` | Current official website source (Vue 3 + Vite + vite-ssg) |
+| Root files (`index.html`, etc.) | Early static web pages (legacy) |
 
-> 当前线上站点使用 `vue-app/` 内的构建产物。详见 [`vue-app/DEPLOY.md`](./vue-app/DEPLOY.md)。
+> The live website uses the build output from `vue-app/`. See [`vue-app/DEPLOY.md`](./vue-app/DEPLOY.md) for details.
 
-## 🛠 技术栈(`vue-app/`)
+## 🛠 Tech Stack (`vue-app/`)
 
-| 类别 | 技术 |
-|------|------|
-| 框架 | Vue 3 (`<script setup>`) |
-| 构建 / SSG | Vite + [vite-ssg](https://github.com/antfu/vite-ssg)(全静态、预渲染 HTML) |
-| 路由 | Vue Router |
-| SEO / 元信息 | @unhead/vue(逐页 title、description、OG、canonical、JSON-LD schema) |
-| 样式 | Tailwind CSS |
+| Layer | Tech |
+|-------|------|
+| Framework | Vue 3 (`<script setup>`) |
+| Build / SSG | Vite + [vite-ssg](https://github.com/antfu/vite-ssg) (fully static, pre-rendered HTML) |
+| Routing | Vue Router |
+| SEO / Meta | @unhead/vue (per-page title, description, OG tags, canonical, JSON-LD schema) |
+| Styling | Tailwind CSS |
 
-## ✨ 功能(`vue-app/`)
+## ✨ Features (`vue-app/`)
 
-- 静态站点生成 — 118+ 个预渲染页面,可直接部署到任意静态主机
-- 完整 SEO 配置 — `sitemap.xml`、`robots.txt`、`llms.txt`、结构化数据(Organization、WebSite、Product、BreadcrumbList、Article)、canonical 与 Open Graph
-- 产品目录 — 按分类/子分类组织,含图片轮播、放大、规格表
-- 全局导航 — 桌面/移动端菜单、面包屑、相关产品、分页
-- 线索获取 — Request Quote 表单与 WhatsApp 直达链接
+- Static site generation — 118+ pre-rendered pages for any static host
+- Complete SEO setup — `sitemap.xml`, `robots.txt`, `llms.txt`, structured data (Organization, WebSite, Product, BreadcrumbList, Article), canonical & Open Graph tags
+- Product catalogue — organized by category/subcategory with image galleries, zoom and spec tables
+- Global navigation — desktop & mobile menus, breadcrumbs, related products, pagination
+- Lead capture — Request Quote form and WhatsApp deep links
 
-## 🚀 本地运行(`vue-app/`)
+## 🚀 Getting Started
 
 ```bash
 cd vue-app
 npm install
 npm run dev          # → http://localhost:5173
-npm run gen-seo      # 重新生成 sitemap.xml + llms.txt
-npm run build        # 生产构建(输出到 dist/,自动执行 gen-seo)
-npm run preview      # 预览生产构建
+npm run gen-seo      # regenerates sitemap.xml + llms.txt
+npm run build        # production build → dist/ (auto-runs gen-seo)
+npm run preview      # preview the production build
 ```
 
-## 📦 部署
+## 📦 Deployment
 
-纯静态站点,`period dist/` 构建产物可部署到任意静态主机或自有服务器(Nginx/Apache/cPanel),无需服务端运行时。上传 `dist/` **内容**到网站根目录即可,详见 [`vue-app/DEPLOY.md`](./vue-app/DEPLOY.md)。
+A completely static site — the build output in `dist/` can be deployed to any static host or your own server (Nginx / Apache / cPanel) with no server-side runtime. Upload the **contents** of `dist/` to your web root. See [`vue-app/DEPLOY.md`](./vue-app/DEPLOY.md).
 
-## 🗺 产品分类
+## 🗺 Product Categories
 
-- 平衡块(Wheel Balancing Weights)
-- 气门嘴(Tyre Valves — 乘用车、卡车巴士、农机)
-- TPMS(胎压监测系统)
-- 补胎条(Tyre Seal String)
-- 补胎片(Tyre Patch)
-- 蘑菇钉(Mushroom Patch Plug)
+- Wheel Balancing Weights
+- Tyre Valves (Passenger, Truck & Bus, Agricultural)
+- TPMS (Tire Pressure Monitoring System)
+- Tyre Seal String
+- Tyre Patch (US & EU Style)
+- Mushroom Patch Plug
 
-## 📫 联系方式
+## 📫 Contact
 
-- **官网:** https://centurymanufacture.com
-- **邮箱:** gracecenturyauto@gmail.com
-- **电话 / WhatsApp:** +86 15633632668
+- **Website:** https://centurymanufacture.com
+- **Email:** gracecenturyauto@gmail.com
+- **Phone / WhatsApp:** +86 15633632668
 
 ---
 
