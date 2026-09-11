@@ -1,0 +1,45 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build output
+dist
+dist-ssr
+.vite-ssg-temp
+
+# Local env / logs
+*.log
+dev.log
+dev.err.log
+dev-server.log
+dev-server.err.log
+
+# Deployment artifacts
+deploy.zip
+
+# Temporary / cache dirs
+.chrome-tmp
+.chrome-tmp*
+.edge-tmp
+.edge-tmp*
+.cache
+*.tmp
+
+# PDF extraction / working files
+panels/
+largepanels/
+extracted/
+page4_*.png
+page4_*.jpeg
+panels_contactsheet.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# Misc
+*.local
