@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, ref, watch, onMounted, onBeforeUnmount } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import { findCategory, findSubcategory, findProduct, relatedProducts, PAGE_SIZE } from '../data/products'
@@ -44,7 +44,7 @@ const baseSubPath = computed(() => (category.value && subcategory.value ? `/prod
 
 const pageTitle = computed(() => {
   if (product.value) return product.value.name
-  if (subcategory.value) return totalPages.value > 1 ? `${subcategory.value.name} - Page ${currentPage.value}` : subcategory.value.name
+  if (subcategory.value) return totalPages.value > 1 && currentPage.value > 1 ? `${subcategory.value.name} - Page ${currentPage.value}` : subcategory.value.name
   return category.value?.name || 'Products'
 })
 
@@ -55,12 +55,47 @@ const crumbs = computed(() => {
   ]
   if (category.value) items.push({ label: category.value.name, path: `/products/${category.value.slug}` })
   if (subcategory.value) items.push({ label: subcategory.value.name, path: baseSubPath.value })
-  if (totalPages.value > 1 && pageType.value === 'subcategory') items.push({ label: `Page ${currentPage.value}` })
+  if (totalPages.value > 1 && currentPage.value > 1 && pageType.value === 'subcategory') items.push({ label: `Page ${currentPage.value}` })
   if (product.value) items.push({ label: product.value.name })
   return items
 })
 
 const activeSubSlug = computed(() => found.value?.subcategory?.slug || subcategory.value?.slug || slug.value)
+
+const gallery = computed(() => {
+  const imgs = product.value?.images
+  if (imgs && imgs.length) return imgs
+  return product.value?.image ? [product.value.image] : []
+})
+const currentIndex = ref(0)
+const currentImage = computed(() => gallery.value[currentIndex.value] || gallery.value[0] || '/images/placeholder.svg')
+function prevImage() {
+  if (gallery.value.length < 2) return
+  currentIndex.value = (currentIndex.value - 1 + gallery.value.length) % gallery.value.length
+}
+function nextImage() {
+  if (gallery.value.length < 2) return
+  currentIndex.value = (currentIndex.value + 1) % gallery.value.length
+}
+function goToImage(i) {
+  currentIndex.value = i
+}
+watch(() => product.value?.slug, () => { currentIndex.value = 0 })
+
+const zoomOpen = ref(false)
+function openZoom() {
+  zoomOpen.value = true
+  document.body.style.overflow = 'hidden'
+}
+function closeZoom() {
+  zoomOpen.value = false
+  document.body.style.overflow = ''
+}
+function onKeydown(e) {
+  if (e.key === 'Escape') closeZoom()
+}
+onMounted(() => window.addEventListener('keydown', onKeydown))
+onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
 
 useHead(() => {
   const isSubPaged = pageType.value === 'subcategory' && totalPages.value > 1
@@ -78,6 +113,7 @@ useHead(() => {
         '@type': 'Product',
         name: product.value.name,
         description: product.value.desc,
+        ...(product.value.image ? { image: `https://centurymanufacture.com${product.value.image}` } : {}),
         category: category.value?.name,
         brand: { '@type': 'Brand', name: 'Century Auto Parts' },
         manufacturer: { '@type': 'Organization', name: 'Hebei Century Auto Parts Co., Ltd.' },
@@ -114,6 +150,7 @@ useHead(() => {
       { property: 'og:description', content: desc },
       { property: 'og:type', content: product.value ? 'product' : 'website' },
       { property: 'og:url', content: url },
+      ...(product.value?.image ? [{ property: 'og:image', content: `https://centurymanufacture.com${product.value.image}` }] : []),
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
     link,
@@ -134,19 +171,46 @@ useHead(() => {
 
             <!-- PRODUCT DETAIL -->
             <template v-if="pageType === 'product'">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div class="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-10 lg:gap-14 items-start">
                 <div class="rounded-lg overflow-hidden bg-gray-100 shadow-card">
-                  <img src="/images/placeholder.svg" :alt="product.name" class="w-full aspect-[4/3] object-cover">
+                  <div class="relative">
+                    <button type="button" class="group relative block w-full cursor-zoom-in" @click="openZoom" aria-label="Enlarge product image">
+                      <img :src="currentImage" :alt="product.name" class="w-full h-auto object-contain block transition-transform duration-300 group-hover:scale-105">
+                      <span class="absolute inset-0 flex items-end justify-end p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="inline-flex items-center gap-1 bg-black/60 text-white text-xs px-2 py-1 rounded">&#128269; Click to enlarge</span>
+                      </span>
+                    </button>
+                    <template v-if="gallery.length > 1">
+                      <button type="button" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-black/40 text-white text-xl hover:bg-black/60" @click="prevImage" aria-label="Previous image">&#8249;</button>
+                      <button type="button" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-black/40 text-white text-xl hover:bg-black/60" @click="nextImage" aria-label="Next image">&#8250;</button>
+                      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+                        <button v-for="(img, i) in gallery" :key="img" type="button" class="h-2 rounded-full transition-all" :class="i === currentIndex ? 'w-5 bg-white' : 'w-2 bg-white/50'" @click="goToImage(i)" :aria-label="`Image ${i + 1}`"></button>
+                      </div>
+                    </template>
+                  </div>
                 </div>
-                <div>
-                  <h1 class="text-2xl font-bold text-[#1A1A2E] mb-4">{{ product.name }}</h1>
-                  <p class="text-gray-500 mb-5">{{ product.desc }}</p>
-                  <ul class="list-disc ml-5 space-y-2 text-gray-600 mb-6">
-                    <li v-for="f in product.features" :key="f">{{ f }}</li>
-                  </ul>
-                  <div class="flex gap-4">
-                    <RouterLink to="/contact" class="btn btn-primary">Request Quote</RouterLink>
-                    <a href="tel:+8615633632668" class="btn border border-[#1A1A2E] text-[#1A1A2E] hover:bg-[#1A1A2E] hover:text-white">Call +86 15633632668</a>
+
+                <div class="lg:sticky lg:top-24">
+                  <h1 class="text-2xl md:text-3xl font-bold text-[#1A1A2E] leading-tight">{{ product.name }}</h1>
+                  <p v-if="product.tagline" class="text-[#FF6B00] font-medium mt-2">{{ product.tagline }}</p>
+                  <div class="w-12 h-0.5 bg-[#FF6B00] mt-4 mb-5"></div>
+                  <p class="text-gray-500 leading-relaxed">{{ product.desc }}</p>
+
+                  <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
+                    <div v-for="f in product.features" :key="f" class="flex items-start gap-2.5 text-gray-600">
+                      <svg class="w-5 h-5 shrink-0 text-[#FF6B00] mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>{{ f }}</span>
+                    </div>
+                  </div>
+
+                  <div class="mt-8 pt-6 border-t border-gray-200">
+                    <div class="flex flex-col sm:flex-row gap-3">
+                      <RouterLink to="/contact" class="btn btn-primary btn-large flex-1 justify-center">Request Quote</RouterLink>
+                      <a href="https://api.whatsapp.com/send?phone=8615633632668&text=Hello, I'm interested in {{ product.name }}" target="_blank" rel="noopener" class="btn btn-large flex-1 justify-center border-2 border-[#25D366] text-[#128C7E] hover:bg-[#25D366] hover:text-white">
+                        <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        WhatsApp
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -165,7 +229,7 @@ useHead(() => {
                   <p class="text-gray-500">Explore more related products</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <ProductCard v-for="r in related" :key="r.slug" :name="r.name" :desc="r.tagline" :href="`/products/${categorySlug}/${r.slug}`" />
+                  <ProductCard v-for="r in related" :key="r.slug" :name="r.name" :desc="r.tagline" :image="r.image" :href="`/products/${categorySlug}/${r.slug}`" />
                 </div>
               </div>
             </template>
@@ -178,7 +242,7 @@ useHead(() => {
               </div>
               <template v-if="subcategory.products && subcategory.products.length">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <ProductCard v-for="p in pagedProducts" :key="p.slug" :name="p.name" :desc="p.tagline" :href="`/products/${categorySlug}/${p.slug}`" />
+                  <ProductCard v-for="p in pagedProducts" :key="p.slug" :name="p.name" :desc="p.tagline" :image="p.image" :href="`/products/${categorySlug}/${p.slug}`" />
                 </div>
                 <Pagination :current="currentPage" :total="totalPages" :base-path="baseSubPath" />
               </template>
@@ -209,5 +273,14 @@ useHead(() => {
       </div>
     </section>
     <CtaSection :heading="`Need ${category.name}?`" />
+
+    <Teleport to="body">
+      <div v-if="zoomOpen" class="fixed inset-0 z-[2000] flex items-center justify-center bg-black/85 p-4 md:p-10" @click.self="closeZoom">
+        <img :src="currentImage" :alt="product?.name" class="max-w-full max-h-full object-contain shadow-2xl">
+        <button v-if="gallery.length > 1" type="button" class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl hover:bg-white/20" @click="prevImage" aria-label="Previous image">&#8249;</button>
+        <button v-if="gallery.length > 1" type="button" class="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl hover:bg-white/20" @click="nextImage" aria-label="Next image">&#8250;</button>
+        <button type="button" class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl hover:bg-white/20" @click="closeZoom" aria-label="Close">&times;</button>
+      </div>
+    </Teleport>
   </div>
 </template>

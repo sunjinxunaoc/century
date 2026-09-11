@@ -27,7 +27,7 @@ const catImages = {
   'tpms': '/images/TPMS Valve.webp',
   'tyre-seal-string': '/images/tire seal.webp',
   'tyre-patch': '/images/tire patch.webp',
-  'mushroom-patch-plug': '/images/tire patch.webp',
+  'mushroom-patch-plug': '/images/mushroom patch plug.webp',
 }
 </script>
 

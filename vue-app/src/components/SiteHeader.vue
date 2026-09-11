@@ -30,17 +30,8 @@ const productsNav = categories.map((cat) => {
   }
 })
 
-const projectNav = [
-  { label: 'All Projects', path: '/project' },
-  { label: 'Asia', path: '/project#asia' },
-  { label: 'Europe', path: '/project#europe' },
-  { label: 'Middle East', path: '/project#middle-east' },
-  { label: 'Africa', path: '/project#africa' },
-  { label: 'Americas', path: '/project#americas' },
-]
 
-function toggleMobile(key) {
-  const set = new Set(openMobile.value)
+function toggleMobile(key) {  const set = new Set(openMobile.value)
   if (set.has(key)) set.delete(key)
   else set.add(key)
   openMobile.value = set
@@ -99,12 +90,6 @@ onMounted(() => {
                 </li>
               </ul>
             </li>
-            <li class="group relative">
-              <RouterLink to="/project" class="nav-link" active-class="active">Projects <span class="text-xs">&#9662;</span></RouterLink>
-              <ul class="dropdown-menu">
-                <li v-for="pr in projectNav" :key="pr.label"><RouterLink :to="pr.path" class="dropdown-item">{{ pr.label }}</RouterLink></li>
-              </ul>
-            </li>
             <li><RouterLink to="/news" class="nav-link" active-class="active">News</RouterLink></li>
             <li><RouterLink to="/contact" class="nav-link" active-class="active">Contact</RouterLink></li>
           </ul>
@@ -154,15 +139,6 @@ onMounted(() => {
                 </template>
                 <RouterLink v-else :to="p.path" class="mobile-link" active-class="active" @click="closeNav">{{ p.label }}</RouterLink>
               </li>
-            </ul>
-          </li>
-          <li>
-            <div class="flex items-center justify-between">
-              <RouterLink to="/project" class="mobile-link" active-class="active" @click="onNavLinkClick">Projects</RouterLink>
-              <button class="px-3 py-1 text-[#FF6B00]" @click="toggleMobile('project')">&#9662;</button>
-            </div>
-            <ul v-show="openMobile.has('project')" class="ml-4 flex flex-col gap-1 border-l-2 border-orange-300 pl-3">
-              <li v-for="pr in projectNav" :key="pr.label"><RouterLink :to="pr.path" class="mobile-link" active-class="active" @click="closeNav">{{ pr.label }}</RouterLink></li>
             </ul>
           </li>
           <li><RouterLink to="/news" class="mobile-link" active-class="active" @click="closeNav">News</RouterLink></li>

@@ -13,7 +13,6 @@ function add(path, priority, freq = 'monthly') {
 
 add('/about/', '0.7', 'weekly')
 add('/products/', '0.8', 'weekly')
-add('/project/', '0.8', 'weekly')
 add('/news/', '0.8', 'weekly')
 add('/contact/', '0.7', 'weekly')
 
@@ -58,7 +57,6 @@ Email: gracecenturyauto@gmail.com
 - Home: ${BASE}/
 - About Us: ${BASE}/about/
 - Products: ${BASE}/products/
-- Projects: ${BASE}/project/
 - News: ${BASE}/news/
 - Contact: ${BASE}/contact/
 

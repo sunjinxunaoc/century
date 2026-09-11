@@ -3,10 +3,6 @@
   "\u0000vite/modulepreload-polyfill.js": [],
   "\u0000vite/preload-helper.js": [],
   "../../../../../ctr.svg": [],
-  "../../../../../images/placeholder.svg": [
-    "/assets/ProductPage-Na1ZAE7H.js",
-    "/assets/ProductPage-C0eBBaPW.css"
-  ],
   "index.html": [],
   "node_modules/@unhead/dom/dist/index.mjs": [],
   "node_modules/@unhead/shared/dist/index.mjs": [],
@@ -25,46 +21,46 @@
   "node_modules/vue-router/dist/vue-router.mjs": [],
   "src/App.vue": [],
   "src/components/ArticleCard.vue": [
-    "/assets/news-CauqH7-5.js"
+    "/assets/news-C1x3gDk7.js"
   ],
   "src/components/BreadcrumbNav.vue": [
-    "/assets/BreadcrumbNav-cpoDxKsF.js"
+    "/assets/BreadcrumbNav-CL8IJT1l.js"
   ],
   "src/components/CategoryCard.vue": [
-    "/assets/ProductPage-Na1ZAE7H.js",
+    "/assets/ProductPage-BEoRtl0P.js",
     "/assets/ProductPage-C0eBBaPW.css"
   ],
   "src/components/CtaSection.vue": [
-    "/assets/CtaSection-DCexW9t6.js"
+    "/assets/CtaSection-BWwpsxzL.js"
   ],
   "src/components/PageHero.vue": [
-    "/assets/PageHero-D-jYIhkv.js"
+    "/assets/PageHero-D_C32A1c.js"
   ],
   "src/components/Pagination.vue": [
-    "/assets/ProductPage-Na1ZAE7H.js",
+    "/assets/ProductPage-BEoRtl0P.js",
     "/assets/ProductPage-C0eBBaPW.css"
   ],
   "src/components/Pagination.vue?vue&type=style&index=0&scoped=b42b35ae&lang.css": [
-    "/assets/ProductPage-Na1ZAE7H.js",
+    "/assets/ProductPage-BEoRtl0P.js",
     "/assets/ProductPage-C0eBBaPW.css"
   ],
   "src/components/ProductCard.vue": [
-    "/assets/ProductPage-Na1ZAE7H.js",
+    "/assets/ProductPage-BEoRtl0P.js",
     "/assets/ProductPage-C0eBBaPW.css"
   ],
   "src/components/ProductSidebar.vue": [
-    "/assets/ProductSidebar-BNzmmbkJ.js",
+    "/assets/ProductSidebar-eNPY-iKL.js",
     "/assets/ProductSidebar-9aOuGDZm.css"
   ],
   "src/components/ProductSidebar.vue?vue&type=style&index=0&scoped=ddeb706b&lang.css": [
-    "/assets/ProductSidebar-BNzmmbkJ.js",
+    "/assets/ProductSidebar-eNPY-iKL.js",
     "/assets/ProductSidebar-9aOuGDZm.css"
   ],
   "src/components/SiteFooter.vue": [],
   "src/components/SiteHeader.vue": [],
-  "src/components/SiteHeader.vue?vue&type=style&index=0&scoped=e2453b43&lang.css": [],
+  "src/components/SiteHeader.vue?vue&type=style&index=0&scoped=90813f2e&lang.css": [],
   "src/components/SpecTable.vue": [
-    "/assets/ProductPage-Na1ZAE7H.js",
+    "/assets/ProductPage-BEoRtl0P.js",
     "/assets/ProductPage-C0eBBaPW.css"
   ],
   "src/components/WhatsAppFloat.vue": [],
@@ -73,34 +69,28 @@
     "/assets/articles-Cx7qxZCE.js"
   ],
   "src/data/products.js": [],
-  "src/data/projects.js": [
-    "/assets/project-DWTXRS2p.js"
-  ],
   "src/main.js": [],
   "src/pages/ArticlePage.vue": [
-    "/assets/ArticlePage-BlRn_uHz.js"
+    "/assets/ArticlePage-p_rBi0cX.js"
   ],
   "src/pages/ProductPage.vue": [
-    "/assets/ProductPage-Na1ZAE7H.js",
+    "/assets/ProductPage-BEoRtl0P.js",
     "/assets/ProductPage-C0eBBaPW.css"
   ],
   "src/pages/about.vue": [
-    "/assets/about-oDIuADvw.js"
+    "/assets/about-BxyIE-2a.js"
   ],
   "src/pages/contact.vue": [
-    "/assets/contact-BHQBBXEf.js"
+    "/assets/contact-CnJvqSWw.js"
   ],
   "src/pages/index.vue": [
-    "/assets/index-Bp6sWfx6.js"
+    "/assets/index-NhBCEbcT.js"
   ],
   "src/pages/news.vue": [
-    "/assets/news-CauqH7-5.js"
+    "/assets/news-C1x3gDk7.js"
   ],
   "src/pages/products.vue": [
-    "/assets/products-alcRSxqL.js"
-  ],
-  "src/pages/project.vue": [
-    "/assets/project-DWTXRS2p.js"
+    "/assets/products-BmgaJ632.js"
   ],
   "src/router.js": [],
   "src/styles/main.css": []
