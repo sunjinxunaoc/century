@@ -41,7 +41,7 @@ function onSubmit(e) {
 const info = [
   { label: 'Address', value: 'No.161, Qiantang Village, Qingyun Town, Yanshan County, Cangzhou City, Hebei Province, China' },
   { label: 'Phone', value: '+86 15633632668', href: 'tel:+8615633632668' },
-  { label: 'Email', value: 'gracecenturyauto@gmail.com', href: 'mailto:gracecenturyauto@gmail.com' },
+  { label: 'Email', value: 'info@centurymanufacture.com', href: 'mailto:info@centurymanufacture.com' },
   { label: 'Hours', value: 'Mon-Sat: 8am - 6pm' },
 ]
 </script>

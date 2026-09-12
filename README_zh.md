@@ -66,7 +66,7 @@ npm run preview      # 预览生产构建
 ## 📫 联系方式
 
 - **官网:** https://centurymanufacture.com
-- **邮箱:** gracecenturyauto@gmail.com
+- **邮箱:** info@centurymanufacture.com
 - **电话 / WhatsApp:** +86 15633632668
 
 ---

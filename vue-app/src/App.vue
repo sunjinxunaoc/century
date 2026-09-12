@@ -26,7 +26,7 @@ useHead({
           addressCountry: 'CN',
         },
         telephone: '+86-156-3363-2668',
-        email: 'gracecenturyauto@gmail.com',
+        email: 'info@centurymanufacture.com',
         foundingDate: '2010',
         areaServed: 'Worldwide',
       }),

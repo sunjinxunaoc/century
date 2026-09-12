@@ -62,7 +62,7 @@ Upload the **contents** of `dist/` to your web root. See [`DEPLOY.md`](./DEPLOY.
 ## 📫 Contact
 
 - **Website:** https://centurymanufacture.com
-- **Email:** gracecenturyauto@gmail.com
+- **Email:** info@centurymanufacture.com
 - **Phone / WhatsApp:** +86 15633632668
 
 ---

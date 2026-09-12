@@ -50,7 +50,7 @@ const socials = [
           <ul class="flex flex-col gap-3 text-sm text-gray-400">
             <li><strong class="text-gray-300">Address:</strong><br>No.161, Qiantang Village, Qingyun Town, Yanshan County, Cangzhou City, Hebei Province, China</li>
             <li><strong class="text-gray-300">Phone:</strong> +86 15633632668</li>
-            <li><strong class="text-gray-300">Email:</strong> gracecenturyauto@gmail.com</li>
+            <li><strong class="text-gray-300">Email:</strong> info@centurymanufacture.com</li>
             <li><strong class="text-gray-300">Hours:</strong> Mon-Sat: 8am - 6pm</li>
           </ul>
         </div>

@@ -66,7 +66,7 @@ A completely static site — the build output in `dist/` can be deployed to any 
 ## 📫 Contact
 
 - **Website:** https://centurymanufacture.com
-- **Email:** gracecenturyauto@gmail.com
+- **Email:** info@centurymanufacture.com
 - **Phone / WhatsApp:** +86 15633632668
 
 ---

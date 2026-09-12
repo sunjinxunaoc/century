@@ -51,7 +51,7 @@ const llms = `# Century Auto Parts - Hebei Century Auto Parts Co., Ltd.
 
 Website: ${BASE}
 Phone: +86 15633632668
-Email: gracecenturyauto@gmail.com
+Email: info@centurymanufacture.com
 
 ## Pages
 - Home: ${BASE}/
