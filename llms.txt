@@ -9,7 +9,6 @@ Email: info@centurymanufacture.com
 - Home: https://centurymanufacture.com/
 - About Us: https://centurymanufacture.com/about.html
 - Products: https://centurymanufacture.com/products.html
-- Projects: https://centurymanufacture.com/project.html
 - News: https://centurymanufacture.com/news.html
 - Contact: https://centurymanufacture.com/contact.html
 
