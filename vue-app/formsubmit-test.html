@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FormSubmit Activation Test</title>
+</head>
+<body style="font-family:sans-serif;max-width:560px;margin:40px auto;padding:0 16px">
+  <h1>FormSubmit Activation Test</h1>
+  <p>Fill in any fields and click send. FormSubmit will email a confirmation link to info@centurymanufacture.com — click that link to activate the form.</p>
+
+  <form method="POST" action="https://formsubmit.co/info@centurymanufacture.com">
+    <input type="hidden" name="_subject" value="FormSubmit activation test">
+    <input type="hidden" name="_captcha" value="false">
+    <p><label>Name<br><input type="text" name="name" required style="width:100%;padding:8px"></label></p>
+    <p><label>Email<br><input type="email" name="email" required style="width:100%;padding:8px"></label></p>
+    <p><label>Message<br><textarea name="message" rows="4" required style="width:100%;padding:8px"></textarea></label></p>
+    <button type="submit" style="padding:10px 22px;cursor:pointer">Send</button>
+  </form>
+</body>
+</html>

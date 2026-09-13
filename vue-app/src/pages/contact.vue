@@ -18,24 +18,50 @@ useHead({
   ],
 })
 
-const form = reactive({ name: '', email: '', product: 'Wheel Balancing Weights', message: '' })
+const form = reactive({ name: '', email: '', mobile: '', product: 'Wheel Balancing Weights', message: '' })
 const sending = ref(false)
 const submitted = ref(false)
+const error = ref('')
 
 const productOptions = [
   'Wheel Balancing Weights', 'Tyre Valves', 'TPMS', 'Tyre Seal String', 'Tyre Patch', 'Mushroom Patch Plug', 'Other',
 ]
 
-function onSubmit(e) {
-  if (sending.value) {
-    e.preventDefault()
-    return
-  }
+async function onSubmit() {
+  if (sending.value) return
   sending.value = true
-  setTimeout(() => {
+  error.value = ''
+
+  const payload = new FormData()
+  payload.append('name', form.name)
+  payload.append('email', form.email)
+  payload.append('mobile', form.mobile)
+  payload.append('product', form.product)
+  payload.append('message', form.message)
+  payload.append('_subject', `New Inquiry from ${form.name || 'website'} - ${form.product}`)
+  payload.append('_replyto', form.email)
+  payload.append('_template', 'table')
+
+  try {
+    const res = await fetch('https://formsubmit.co/ajax/info@centurymanufacture.com', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: payload,
+    })
+    if (res.ok) {
+      submitted.value = true
+      form.name = ''
+      form.email = ''
+      form.mobile = ''
+      form.message = ''
+    } else {
+      error.value = 'Something went wrong. Please try again or email us directly at info@centurymanufacture.com.'
+    }
+  } catch (err) {
+    error.value = 'Network error. Please try again or email us directly at info@centurymanufacture.com.'
+  } finally {
     sending.value = false
-    submitted.value = true
-  }, 800)
+  }
 }
 
 const info = [
@@ -72,7 +98,7 @@ const info = [
 
           <div class="bg-white border border-gray-200 rounded-lg shadow-card p-8">
             <h2 class="text-2xl font-bold text-[#1A1A2E] mb-6">Request a Quote</h2>
-            <form @submit="onSubmit" class="space-y-4">
+            <form @submit.prevent="onSubmit" class="space-y-4">
               <div>
                 <label class="block text-sm font-medium text-gray-600 mb-1">Your Name</label>
                 <input v-model="form.name" type="text" required placeholder="Your name"
@@ -81,6 +107,11 @@ const info = [
               <div>
                 <label class="block text-sm font-medium text-gray-600 mb-1">Email</label>
                 <input v-model="form.email" type="email" required placeholder="you@company.com"
+                  class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF6B00]">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-600 mb-1">Mobile / WhatsApp</label>
+                <input v-model="form.mobile" type="tel" placeholder="+86 138 0000 0000"
                   class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF6B00]">
               </div>
               <div>
@@ -98,7 +129,8 @@ const info = [
                 class="w-full btn btn-primary" :class="{ 'opacity-60': sending }">
                 {{ sending ? 'Sending...' : 'Send Inquiry' }}
               </button>
-              <p v-if="submitted" class="text-green-600 text-sm text-center">Thank you! Your inquiry has been received. We will reply within 24 hours.</p>
+              <p v-if="error" class="text-red-600 text-sm text-center">{{ error }}</p>
+              <p v-if="submitted" class="text-green-600 text-sm text-center">Thank you! Your inquiry has been sent successfully. We will reply within 24 hours.</p>
             </form>
           </div>
         </div>
