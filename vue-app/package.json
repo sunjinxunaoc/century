@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "gen-seo": "node scripts/gen-seo.mjs",
+    "indexnow": "node scripts/indexnow.mjs",
     "prebuild": "node scripts/gen-seo.mjs",
     "build": "vite-ssg build",
     "preview": "vite preview"
