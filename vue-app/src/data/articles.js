@@ -1,5 +1,55 @@
 export const articles = [
   {
+    slug: 'tr414-tyre-valve-guide',
+    title: 'TR414 Tyre Valve: Specs, Uses and How It Compares to TR413 & TR415',
+    date: 'September 14, 2026',
+    dateISO: '2026-09-14',
+    tags: ['Product Guide', 'Tyre Valves'],
+    img: '/images/tire valve.webp',
+    imgAlt: 'TR414 rubber tyre valve',
+    desc: 'Everything buyers need to know about the TR414 tyre valve: rim hole size, effective length, core and cap, which vehicles it fits, and how TR414 compares to TR412, TR413, TR414C and TR415.',
+    content: `
+      <p>The <strong>TR414 tyre valve</strong> is one of the most widely used rubber valve stems in the world—a standard fitment for passenger cars and light trucks. If you are sourcing valves for a workshop, fleet or wholesale range, understanding the TR414 and how it differs from neighbouring series will help you stock the right product and avoid fitment mistakes.</p>
+
+      <p>We manufacture the TR414 as a factory-direct high quality rubber tyre valve at <a href="/products/tyre-valves/tr414-tyre-valve/">Century Auto Parts</a>. Below are the full specifications and a comparison with the other passenger-car rubber valves in the TR series.</p>
+
+      <h2>TR414 tyre valve specifications</h2>
+      <ul>
+        <li><strong>Model:</strong> TR414</li>
+        <li><strong>Reference:</strong> V2.03.2</li>
+        <li><strong>Rim hole:</strong> 11.5mm (.453")</li>
+        <li><strong>Effective length:</strong> 38mm (1.50")</li>
+        <li><strong>Valve core:</strong> 9002#</li>
+        <li><strong>Valve cap:</strong> VC8</li>
+        <li><strong>Material:</strong> high-grade vulcanized rubber with brass core and cap</li>
+      </ul>
+      <p>Because every TR414 tyre valve uses the standard <strong>11.5mm (.453") rim hole</strong>, it is a direct, trouble-free replacement across most aftermarket and OEM passenger car rims.</p>
+
+      <h2>Which vehicles use the TR414?</h2>
+      <p>The TR414 rubber tyre valve fits <strong>passenger cars and light trucks</strong> on both tube-type and tubeless rims. Its 38mm effective length clears standard steel and alloy wheel designs without the stem fouling the wheel well.</p>
+
+      <h2>TR414 vs TR412, TR413, TR414C and TR415</h2>
+      <p>The TR series shares the same 11.5mm rim hole but differs mainly in <strong>effective length</strong>, which is why it is important to choose the correct stem for the wheel:</p>
+      <ul>
+        <li><strong>TR412</strong> - 22mm (0.88") effective length; the shortest standard passenger valve, for shallow rims.</li>
+        <li><strong>TR413</strong> - 32mm (1.25") effective length; a common mid-length passenger valve.</li>
+        <li><strong>TR414</strong> - 38mm (1.50") effective length; the longer standard valve suited to wheels with deeper valve seating.</li>
+        <li><strong>TR414C</strong> - a variant of the TR414 with a different cap configuration, still using the 11.5mm rim hole.</li>
+        <li><strong>TR415</strong> - 15.8mm (.625") rim hole; a larger-bore valve, not interchangeable with TR412-TR414 on a standard 11.5mm rim.</li>
+      </ul>
+      <p>If you are unsure which length you need, measuring the rim hole and the required stem length is the reliable way to confirm. For a stock range, keeping <strong>TR413 and TR414</strong> covers the vast majority of standard passenger car fitments.</p>
+
+      <h2>Why use a quality rubber valve</h2>
+      <p>A poor-quality valve causes slow leaks, corrosion on the brass core and premature failure. A properly vulcanized <strong>rubber tyre valve</strong> with a precision brass core holds pressure consistently and stays flexible in cold weather. When sourcing in bulk, factory-direct pricing and consistent quality matter—see our <a href="/products/tyre-valves/tr414-tyre-valve/">TR414 tyre valve product page</a> for full details.</p>
+
+      <p>Need help choosing the right valve series for your market? <a href="/contact/">Contact our sales team</a>—we can recommend the right mix of TR412, TR413, TR414 and TR415 for your inventory.</p>
+    `,
+    related: [
+      { slug: 'tyre-valve-guide', title: 'Tyre Valve Types Explained', date: 'August 1, 2026', desc: 'Understand TR412-TR415, TR570-TR572 and V3-20 valve series.', tag: 'Tyre Valves' },
+      { slug: 'tpms-maintenance', title: 'TPMS Valve Maintenance', date: 'July 25, 2026', desc: 'How to extend the life of your TPMS sensors.', tag: 'TPMS' },
+    ],
+  },
+  {
     slug: 'wheel-weight-guide',
     title: 'How to Choose Wheel Balancing Weights: Fe vs Pb, Clip-On vs Adhesive',
     date: 'August 8, 2026',

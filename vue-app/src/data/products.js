@@ -248,9 +248,9 @@ export const categories = [
               '/images/products/tyre%20valves/tr414-tyre-valve002.jpg',
             ],
             tagline: 'High quality rubber tyre valve for passenger cars and light trucks. Ref V2.03.2, 11.5mm/.453" rim hole, 38mm/1.50" effective length.',
-            desc: 'TR414 Tyre Valve - high quality rubber tyre valve stem for passenger cars and light trucks.',
-            keywords: 'TR414 tyre valve, TR414, rubber tyre valve, passenger car valve',
-            features: ['Precision-engineered rubber valve', 'Reliable leak-proof sealing', 'Easy installation', 'Factory direct supply'],
+            desc: 'The TR414 tyre valve is a high quality rubber valve stem designed for passenger cars and light trucks, offering a reliable, leak-proof seal for long service life. As a standard TR414 valve with an 11.5mm (.453") rim hole and 38mm (1.50") effective length, it is a direct replacement for most aftermarket and OEM passenger car applications. Our TR414 rubber tyre valves are factory-direct, precision built from high-grade vulcanized rubber with a brass core and cap, ensuring consistent air retention and easy installation. Suitable for inner tube and tubeless rims, available in bulk and with custom packaging for wholesale and export orders.',
+            keywords: 'TR414 tyre valve, TR414, TR414 valve stem, rubber tyre valve, passenger car tyre valve, TR414 rubber valve, car tyre valve, V2.03.2 valve, tyre valve wholesale',
+            features: ['Precision-engineered vulcanized rubber', 'Reliable leak-proof sealing', '11.5mm (.453") rim hole, TR414 standard', '38mm (1.50") effective length', 'Brass core & cap included', 'Easy installation, direct fit', 'Factory direct, OEM/ODM & bulk supply'],
             spec: {
               headers: ['Model', 'Ref. No.', 'Rim Hole', 'Eff. Length', 'Core', 'Cap'],
               rows: [['TR414', 'V2.03.2', '11.5mm / .453"', '38mm / 1.50"', '9002#', 'VC8']],
