@@ -42,6 +42,13 @@ const pageType = computed(() => {
 
 const baseSubPath = computed(() => (category.value && subcategory.value ? `/products/${category.value.slug}/${subcategory.value.slug}` : ''))
 
+const canonicalPath = computed(() => {
+  if (!category.value) return '/products'
+  if (product.value) return `/products/${category.value.slug}/${product.value.slug}`
+  if (subcategory.value) return `/products/${category.value.slug}/${subcategory.value.slug}`
+  return `/products/${category.value.slug}`
+})
+
 const pageTitle = computed(() => {
   if (product.value) return product.value.name
   if (subcategory.value) return totalPages.value > 1 && currentPage.value > 1 ? `${subcategory.value.name} - Page ${currentPage.value}` : subcategory.value.name
@@ -99,11 +106,25 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
 
 useHead(() => {
   const isSubPaged = pageType.value === 'subcategory' && totalPages.value > 1
-  const baseUrl = `https://centurymanufacture.com${baseSubPath.value}`
+  const baseUrl = `https://centurymanufacture.com${canonicalPath.value}`
   const url = isSubPaged && currentPage.value > 1
     ? `${baseUrl}/page/${currentPage.value}/`
     : `${baseUrl}/`
   const desc = product.value?.desc || subcategory.value?.desc || category.value?.intro || pageTitle.value
+  const tagline = product.value?.tagline || subcategory.value?.tagline || category.value?.tagline || ''
+  const catName = category.value?.name || ''
+  const name = product.value?.name || subcategory.value?.name || ''
+
+  let srcDesc = desc
+  const parts = [name, catName, tagline].filter(p => p && p.length > 3)
+  for (const p of parts) {
+    if (srcDesc.length >= 120) break
+    srcDesc = `${srcDesc.trim()}${p ? ' ' + p : ''}`
+  }
+
+  const metaDesc = srcDesc.length > 152
+    ? `${srcDesc.slice(0, 152).replace(/\s+\S*$/, '').replace(/[\.\s]+$/, '')}...`
+    : srcDesc.trim()
   const scripts = []
   if (product.value) {
     scripts.push({
@@ -144,10 +165,10 @@ useHead(() => {
   return {
     title: `${pageTitle.value} | Century Auto Parts`,
     meta: [
-      { name: 'description', content: desc },
+      { name: 'description', content: metaDesc },
       { name: 'keywords', content: product.value?.keywords || category.value?.name || '' },
       { property: 'og:title', content: `${pageTitle.value} | Century Auto Parts` },
-      { property: 'og:description', content: desc },
+      { property: 'og:description', content: metaDesc },
       { property: 'og:type', content: product.value ? 'product' : 'website' },
       { property: 'og:url', content: url },
       ...(product.value?.image ? [{ property: 'og:image', content: `https://centurymanufacture.com${product.value.image}` }] : []),

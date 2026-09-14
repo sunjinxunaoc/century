@@ -46,7 +46,7 @@ export const articles = [
     tags: ['Product Guide', 'Tyre Valves'],
     img: '/images/tire valve.webp',
     imgAlt: 'Rubber and metal tyre valves',
-    desc: 'A practical reference to tyre valve series: TR412-TR415 rubber valves, TR570-TR572 truck and bus valves, V3-20, TR618A agricultural valves and PVR motorcycle valves.',
+    desc: 'A practical tyre valve series reference: TR412-TR415 rubber valves, TR570-TR572 truck and bus valves, TR618A agricultural and PVR motorcycle valves.',
     content: `
       <p>Tyre valves are identified by series numbers that indicate their application, bore size and stem style. Knowing which series fits which vehicle helps distributors stock the right range and avoid costly mix-ups. Here is a quick reference to the main series we manufacture.</p>
 
@@ -116,7 +116,7 @@ export const articles = [
     tags: ['Repairs', 'Tyre Patch'],
     img: '/images/tire patch.webp',
     imgAlt: 'Tyre patches and repair materials',
-    desc: 'The difference between tyre patches, plugs and mushroom patch plugs, and how to store tyre repair products correctly.',
+    desc: 'The difference between tyre patches, plugs and mushroom patch plugs, and how to store tyre repair products correctly for long-lasting, permanent repairs.',
     content: `
       <p>Not every puncture needs the same repair. Choosing the right method affects both the quality of the repair and how long it lasts. Here is the practical difference between the three most common repair products.</p>
 

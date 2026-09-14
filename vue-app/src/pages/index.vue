@@ -6,10 +6,10 @@ import { useHead } from '@unhead/vue'
 useHead({
   title: 'Century Auto Parts | Tire Repair Products Manufacturer',
   meta: [
-    { name: 'description', content: 'Professional manufacturer of wheel balancing weights, tyre valves, TPMS, tyre seal strings, tyre patches and mushroom patch plugs since 2010. Factory direct to 50+ countries.' },
+    { name: 'description', content: 'Professional manufacturer of wheel balancing weights, tyre valves, TPMS, tyre patches and mushroom plugs. Factory direct to 50+ countries since 2010.' },
     { name: 'keywords', content: 'tyre repair products, wheel balancing weights, tyre valves, TPMS, tyre patch, tyre seal string, mushroom patch plug' },
     { property: 'og:title', content: 'Century Auto Parts | Tire Repair Products Manufacturer' },
-    { property: 'og:description', content: 'Professional manufacturer of wheel balancing weights, tyre valves, TPMS, tyre seal strings, tyre patches and mushroom patch plugs since 2010. Factory direct to 50+ countries.' },
+    { property: 'og:description', content: 'Professional manufacturer of wheel balancing weights, tyre valves, TPMS, tyre patches and mushroom plugs. Factory direct to 50+ countries since 2010.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://centurymanufacture.com/' },
     { name: 'twitter:card', content: 'summary_large_image' },
