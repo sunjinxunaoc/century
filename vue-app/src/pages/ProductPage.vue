@@ -23,6 +23,14 @@ const found = computed(() => (slug.value ? findProduct(categorySlug.value, slug.
 const product = computed(() => found.value?.product || null)
 const related = computed(() => (product.value ? relatedProducts(categorySlug.value, product.value.slug, 3) : []))
 
+const featuredProducts = computed(() => {
+  const list = []
+  for (const sub of (category.value?.subcategories || [])) {
+    for (const p of (sub.products || [])) list.push(p)
+  }
+  return list.slice(0, 6)
+})
+
 const totalPages = computed(() => {
   const count = subcategory.value?.products?.length || 0
   return Math.max(1, Math.ceil(count / PAGE_SIZE))
@@ -155,6 +163,21 @@ useHead(() => {
       })),
     }),
   })
+  const faqSource = pageType.value === 'category' ? category.value : pageType.value === 'subcategory' ? subcategory.value : null
+  if (faqSource?.faqs?.length) {
+    scripts.push({
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqSource.faqs.map(f => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }),
+    })
+  }
   const link = [
     { rel: 'canonical', href: url },
   ]
@@ -261,14 +284,35 @@ useHead(() => {
                 <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">Available Models</h2>
                 <p class="text-gray-500">{{ subcategory.desc }}</p>
               </div>
+
+              <div v-if="subcategory.highlights && subcategory.highlights.length" class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
+                <div v-for="h in subcategory.highlights" :key="h" class="flex items-start gap-2.5 text-gray-600">
+                  <svg class="w-5 h-5 shrink-0 text-[#FF6B00] mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>{{ h }}</span>
+                </div>
+              </div>
+
               <template v-if="subcategory.products && subcategory.products.length">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   <ProductCard v-for="p in pagedProducts" :key="p.slug" :name="p.name" :desc="p.tagline" :image="p.image" :href="`/products/${categorySlug}/${p.slug}`" />
                 </div>
                 <Pagination :current="currentPage" :total="totalPages" :base-path="baseSubPath" />
               </template>
               <div v-else-if="subcategory.models" class="mt-6">
                 <SpecTable :headers="['Model', 'Type', 'Material', 'Remarks']" :rows="subcategory.models.map(m => [m, 'Tyre valve', 'Metal', 'TBD'])" />
+              </div>
+
+              <div v-if="subcategory.faqs && subcategory.faqs.length" class="mt-14">
+                <div class="section-header text-left">
+                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">Frequently Asked Questions</h2>
+                  <p class="text-gray-500">Common questions about {{ subcategory.name.toLowerCase() }}</p>
+                </div>
+                <div class="space-y-4">
+                  <div v-for="f in subcategory.faqs" :key="f.q" class="card p-6">
+                    <h3 class="font-semibold text-[#1A1A2E] mb-2">{{ f.q }}</h3>
+                    <p class="text-gray-500 leading-relaxed">{{ f.a }}</p>
+                  </div>
+                </div>
               </div>
             </template>
 
@@ -278,7 +322,15 @@ useHead(() => {
                 <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">{{ category.name }}</h2>
                 <p class="text-gray-500">{{ category.intro }}</p>
               </div>
-              <div v-if="category.subcategories.length" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+              <div v-if="category.highlights && category.highlights.length" class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
+                <div v-for="h in category.highlights" :key="h" class="flex items-start gap-2.5 text-gray-600">
+                  <svg class="w-5 h-5 shrink-0 text-[#FF6B00] mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>{{ h }}</span>
+                </div>
+              </div>
+
+              <div v-if="category.subcategories.length" class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <CategoryCard v-for="sub in category.subcategories" :key="sub.slug" :title="sub.name" :desc="sub.desc" :href="`/products/${categorySlug}/${sub.slug}`" />
               </div>
               <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -286,6 +338,29 @@ useHead(() => {
                   <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-orange-50 text-[#FF6B00] flex items-center justify-center text-xl">&#9672;</div>
                   <h3 class="font-semibold text-[#1A1A2E] mb-2">{{ c.title }}</h3>
                   <p class="text-sm text-gray-500 leading-relaxed">{{ c.desc }}</p>
+                </div>
+              </div>
+
+              <div v-if="featuredProducts.length" class="mt-14">
+                <div class="section-header text-left">
+                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">Featured Products</h2>
+                  <p class="text-gray-500">Popular {{ category.name.toLowerCase() }} from our factory</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <ProductCard v-for="p in featuredProducts" :key="p.slug" :name="p.name" :desc="p.tagline" :image="p.image" :href="`/products/${categorySlug}/${p.slug}`" />
+                </div>
+              </div>
+
+              <div v-if="category.faqs && category.faqs.length" class="mt-14">
+                <div class="section-header text-left">
+                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">Frequently Asked Questions</h2>
+                  <p class="text-gray-500">Common questions about {{ category.name.toLowerCase() }}</p>
+                </div>
+                <div class="space-y-4">
+                  <div v-for="f in category.faqs" :key="f.q" class="card p-6">
+                    <h3 class="font-semibold text-[#1A1A2E] mb-2">{{ f.q }}</h3>
+                    <p class="text-gray-500 leading-relaxed">{{ f.a }}</p>
+                  </div>
                 </div>
               </div>
             </template>

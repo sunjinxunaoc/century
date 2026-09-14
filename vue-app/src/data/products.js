@@ -68,11 +68,33 @@ export const categories = [
     name: 'Wheel Balancing Weights',
     tagline: 'Precision-balanced clip-on & adhesive weights for every wheel type',
     intro: 'Clip-on and adhesive wheel balancing weights in Fe (steel) and Pb (lead). Available in gram and OZ series from 5g up, with zinc plated, epoxy coated or black coated finishes.',
+    highlights: [
+      'Clip-on and adhesive types for steel, alloy and aluminum rims',
+      'Fe (steel) and Pb (lead) series with zinc plated, epoxy coated or black coated finishes',
+      'Gram and OZ series from 5g up to 500g for truck wheels',
+      'Self-adhesive backing with blue, white, Norton or 3M tape options',
+      'Factory-direct supply with custom packaging for wholesale and export',
+    ],
+    faqs: [
+      { q: 'What is the difference between clip-on and adhesive wheel weights?', a: 'Clip-on weights attach to the rim edge and suit steel rims and trucks, while adhesive weights stick to the inner barrel of alloy rims for a cleaner look and no rim contact damage.' },
+      { q: 'What finishes are available?', a: 'Fe and Pb weights come zinc plated, epoxy coated or black coated, with blue, white, Norton or 3M adhesive tape for the adhesive range.' },
+      { q: 'Can you supply custom sizes and packaging?', a: 'Yes. We offer gram and OZ series from 5g upward, including 500g truck weights, and custom packaging for wholesale and export orders.' },
+    ],
     subcategories: [
       {
         slug: 'fe-wheel-balancing-weights',
         name: 'Fe Wheel Balancing Weights',
         desc: 'Six Fe models in adhesive and clip-on types: CTR-FE-01A/02A, CTR-FE-01C to CTR-FE-04C.',
+        highlights: [
+          'Adhesive and clip-on steel weights for alloy and steel rims',
+          'Round and right-angle profiles; 140 x 19 x 3.8 mm adhesive size',
+          'Zinc plated, epoxy coated or black coated finishes',
+          'Gram series from 5g to 60g',
+        ],
+        faqs: [
+          { q: 'What is the difference between Fe and Pb weights?', a: 'Fe (steel) weights are the modern, environmentally preferred alternative to lead (Pb), offering the same balancing performance without lead.' },
+          { q: 'Which tape options do you offer?', a: 'Blue, white, Norton or 3M adhesive tape for the adhesive range.' },
+        ],
         products: [
           {
             slug: 'fe-adhesive-wheel-weight-ctr-fe-01a',
@@ -158,6 +180,16 @@ export const categories = [
         slug: 'lead-wheel-balancing-weights',
         name: 'Lead Wheel Balancing Weights',
         desc: 'Five Pb models in adhesive and clip-on types: CTR-PB-01A/02A, CTR-PB-01C to CTR-PB-03C.',
+        highlights: [
+          'Adhesive and clip-on lead weights for superior vibration damping',
+          '105 x 18 x 4 mm adhesive size; ordinary or easy-peel tape',
+          'Natural color or plastic coated clip-on finishes',
+          'Gram series from 5g up to 500g for trucks',
+        ],
+        faqs: [
+          { q: 'Why choose lead weights?', a: 'Lead offers higher density and excellent vibration damping, ideal for premium balancing and heavy truck applications.' },
+          { q: 'Are lead weights still available?', a: 'Yes, we supply Pb weights for markets where they remain approved, alongside Fe alternatives.' },
+        ],
         products: [
           {
             slug: 'pb-adhesive-wheel-weight-ctr-pb-01a',
@@ -233,11 +265,33 @@ export const categories = [
     name: 'Tyre Valves',
     tagline: 'Rubber & metal tyre valves for every vehicle type',
     intro: 'Rubber & metal tyre valves for passenger cars, light trucks, trucks, buses, agricultural machinery and off-road vehicles.',
+    highlights: [
+      'Rubber (snap-in) and brass metal (clamp-in) valve stems',
+      'Covers passenger cars, light trucks, trucks, buses, motorcycles and off-road machinery',
+      'Standard TR series (TR412-TR415, TR414C) plus V3, TR57x, TRJ and TR618A heavy-duty valves',
+      'Brass cores and caps included; rim holes from 11.5mm to 20.5mm',
+      'Factory-direct with OEM/ODM and bulk supply options',
+    ],
+    faqs: [
+      { q: 'What is the difference between rubber and metal tyre valves?', a: 'Rubber snap-in valves are lighter and suit standard passenger car rims, while brass clamp-in metal valves handle higher pressures and are recommended for trucks, buses and high-speed applications.' },
+      { q: 'Which TR valve do I need?', a: 'TR414 is the most common (11.5mm rim hole, 38mm effective length). TR412, TR413 and TR415 differ by effective length, and TR414C adds a higher 65 PSI rating.' },
+      { q: 'Do your valves come with cores and caps?', a: 'Yes. All our valves are supplied complete with brass cores (9002# or 7002#) and caps.' },
+    ],
     subcategories: [
       {
         slug: 'passenger-car-light-truck-valves',
         name: 'Passenger Car & Light Truck',
         desc: 'Eight tyre valve products: TR414, TR412-415 valve stems, TR414C and PVR40-70.',
+        highlights: [
+          'Rubber snap-in valves for passenger cars and light trucks',
+          'Standard TR414 (11.5mm / .453" rim hole, 38mm length)',
+          'TR412-TR415, TR414C and motorcycle PVR40-70 options',
+          'Brass 9002# core and VC8 cap included',
+        ],
+        faqs: [
+          { q: 'What rim hole does the TR414 fit?', a: 'The TR414 fits the standard 11.5mm (.453") rim hole, with a 38mm (1.50") effective length.' },
+          { q: 'Can I use these on motorcycles?', a: 'The PVR40-PVR70 range is designed for motorcycles and scooters, with 45° and 90° bend options.' },
+        ],
         products: [
           {
             slug: 'tr414-tyre-valve',
@@ -405,6 +459,16 @@ export const categories = [
         slug: 'truck-bus-valves',
         name: 'Truck & Bus',
         desc: 'V3-20 series, TR570-TR572 and MS70-7 metal high-pressure valves for trucks, buses and heavy-duty commercial vehicles.',
+        highlights: [
+          'Brass clamp-in metal valves for high pressure',
+          'V3-20-4/6, V3 series, TR570-TR574 and 58MS options',
+          'Rim holes up to 20.5mm; 27° to 90° bends',
+          'Heavy-duty construction for commercial vehicles',
+        ],
+        faqs: [
+          { q: 'What pressure do these valves handle?', a: 'These brass metal valves are built for high-pressure truck and bus applications, well above standard passenger car ratings.' },
+          { q: 'Are they clamp-in or snap-in?', a: 'They are clamp-in (bolt-in) brass valves, secured with a nut for a rigid, leak-proof fit on steel and alloy commercial rims.' },
+        ],
         products: [
           {
             slug: 'v3-20-4-v3-20-6-valve-stem',
@@ -522,6 +586,16 @@ export const categories = [
         slug: 'agricultural-tractors-off-road-valves',
         name: 'Agricultural & Off-Road',
         desc: 'TR618A, TRJ650-02/03 and TR1175A heavy-duty valves for agricultural machinery and off-road vehicles.',
+        highlights: [
+          'Heavy-duty tubeless valves for tractors and off-road machinery',
+          'TR618A (5/8" hole, 90 PSI) and TRJ650 large-bore swivel type',
+          'TR1175A with 86° bend and 20.5mm rim hole',
+          'Brass/metal construction for harsh conditions',
+        ],
+        faqs: [
+          { q: 'Do these fit agricultural rims?', a: 'Yes. They are designed for tractor and off-road rims with rim holes from 5/8" (15.9mm) up to 20.5mm.' },
+          { q: 'What is a large-bore swivel valve?', a: 'The TRJ650 series has a swiveling, large-bore design that allows faster inflation and easy access on heavy machinery.' },
+        ],
         products: [
           {
             slug: 'tr618a-tubeless-valve',
@@ -579,11 +653,33 @@ export const categories = [
     name: 'TPMS',
     tagline: 'Tyre Pressure Monitoring System valves & sensors',
     intro: 'TPMS valve stems for virtually every vehicle brand - Buick, Toyota, Nissan, BMW, Mercedes-Benz, Volkswagen, Geely and more. EPDM or aluminum & rubber construction with brass cores, 80 PSI. Compatible with OE and aftermarket TPMS sensors.',
+    highlights: [
+      '47 application-specific valve stems covering major global vehicle brands',
+      'EPDM rubber & brass or aluminum & rubber construction with brass cores',
+      'Snap-in type for fast, tool-free installation; 80 PSI max pressure',
+      'Compatible with OE and aftermarket TPMS sensors, including universal Autel types',
+      'Direct factory supply with custom packaging',
+    ],
+    faqs: [
+      { q: 'Do your TPMS valve stems fit aftermarket sensors?', a: 'Yes. Our stems are designed to work with OE and most aftermarket TPMS sensors, including universal Autel sensors (see TPMS-30).' },
+      { q: 'What material are they made from?', a: 'They are made from EPDM rubber with a brass stem and core, or aluminum with rubber, both rated to 80 PSI maximum inflation pressure.' },
+      { q: 'Are they snap-in or clamp-in?', a: 'The TPMS valve stems are snap-in type, allowing quick replacement without special tools.' },
+    ],
     subcategories: [
       {
         slug: 'tpms-valve-stem',
         name: 'TPMS Valve Stem',
         desc: 'TPMS valve stems covering 47 vehicle applications - from passenger cars to aftermarket installations.',
+        highlights: [
+          '47 application-specific stems for major global brands',
+          'EPDM rubber & brass or aluminum & rubber construction',
+          'Snap-in type; 80 PSI maximum pressure',
+          'Fits OE and aftermarket TPMS sensors',
+        ],
+        faqs: [
+          { q: 'How do I pick the right TPMS stem?', a: 'Match by vehicle make and model. Our stems list compatible brands (Buick, Toyota, Nissan, BMW, Mercedes-Benz, VW, Geely and more) in each product name.' },
+          { q: 'Are these compatible with Autel sensors?', a: 'Yes, TPMS-30 is designed as a universal fit for Autel sensors, and most stems suit aftermarket sensors.' },
+        ],
         products: tpmsStems,
       },
     ],
@@ -593,11 +689,33 @@ export const categories = [
     name: 'Tyre Seal String',
     tagline: 'Quick emergency puncture repair for tubeless tyres',
     intro: 'High-quality rubber seal strings for quick, on-the-spot emergency puncture repairs on tubeless tyres.',
+    highlights: [
+      'Quick, on-the-spot emergency repair for tubeless tyres',
+      'CTR-TS series rubber strings in 100mm and 200mm lengths',
+      'Multiple diameters (3mm to 6mm) to match puncture size',
+      'Simple installation with a reamer and insertion tool',
+      'Factory-direct bulk supply with custom packing',
+    ],
+    faqs: [
+      { q: 'What is a tyre seal string?', a: 'A tyre seal string is a rubber strip inserted into a puncture to seal it as a quick emergency repair for tubeless tyres, without removing the wheel.' },
+      { q: 'How long does a seal string repair last?', a: 'Seal strings are intended as a quick emergency fix to get you to a workshop; a permanent patch or plug repair is recommended afterward.' },
+      { q: 'What sizes are available?', a: 'Our CTR-TS series covers 100mm and 200mm lengths with diameters from 3mm to 6mm.' },
+    ],
     subcategories: [
       {
         slug: 'tyre-repair-strings',
         name: 'Tyre Repair Strings',
         desc: 'Rubber repair strings and seal strings in the CTR-TS series for quick emergency tyre repairs.',
+        highlights: [
+          'Rubber seal strings for emergency tubeless tyre repairs',
+          'CTR-TS series in 100mm and 200mm lengths',
+          '3mm to 6mm diameters for different puncture sizes',
+          'Card, box and carton packing options',
+        ],
+        faqs: [
+          { q: 'What is the CTR-TS series?', a: 'It is our range of rubber repair strings used with a reamer and insertion tool to seal tubeless tyre punctures quickly on the road.' },
+          { q: 'What lengths are available?', a: '100mm and 200mm lengths, with diameters from 3mm to 6mm.' },
+        ],
         products: [
           {
             slug: 'tire-repair-strings-rubber-strips',
@@ -660,11 +778,33 @@ export const categories = [
     name: 'Tyre Patch',
     tagline: 'Permanent repair patches for every tyre construction',
     intro: 'Professional tyre patches applied to the inner liner for durable, permanent repairs - US-style and EU-style radial patches, bias patches and all-purpose repair patches.',
+    highlights: [
+      'Permanent repairs bonded to the tyre inner liner',
+      'US-style and EU-style radial and bias ply patches',
+      'Round, oval, square, sunflower and inner-tube patches',
+      '1-6 ply construction for sidewall and large-injury repairs',
+      'Factory-direct supply with full CTR-TPU and CTR-TPE series',
+    ],
+    faqs: [
+      { q: 'What is the difference between radial and bias ply patches?', a: 'Radial patches are reinforced for modern radial tyres and sidewall repairs, while bias ply patches suit traditional bias-ply tyres. Both bond permanently to the inner liner.' },
+      { q: 'How do I choose the right patch size?', a: 'The patch must be larger than the injury and rated for the tyre type. Our CTR-TPU and CTR-TPE series span 32mm to 440mm with 1-6 ply options.' },
+      { q: 'Are patches a permanent repair?', a: 'Yes. Applied correctly with vulcanizing cement to a properly prepared inner liner, patches provide a durable, permanent repair.' },
+    ],
     subcategories: [
       {
         slug: 'us-style-tire-patch',
         name: 'US-Style Tire Patch',
         desc: 'US-style tyre patches: all-purpose round patches, radial sidewall patches, black radial patches and bias ply patches.',
+        highlights: [
+          'US-style patches for permanent inner-liner repairs',
+          'All-purpose round, radial sidewall and black radial patches',
+          'Bias ply patches for traditional tyres',
+          'CTR-TPU series from 35mm to 165mm',
+        ],
+        faqs: [
+          { q: 'What are US-style patches?', a: 'US-style patches are self-vulcanizing patches applied to the inner liner, covering round, radial and bias ply repairs in the CTR-TPU series.' },
+          { q: 'Can I repair sidewalls with these?', a: 'The CTR-TPU-10 HD to CTR-TPU-14 HD radial patches are heavy-duty and designed for sidewall repairs.' },
+        ],
         products: [
           {
             slug: 'all-purpose-repair-patch-round',
@@ -767,6 +907,16 @@ export const categories = [
         slug: 'eu-style-tire-patch',
         name: 'EU-Style Tire Patch',
         desc: 'EU-style tyre patches: radial patches, bias ply patches, all-purpose round patches, inner/sunflower/oval patches and bicycle patches.',
+        highlights: [
+          'EU-style patches with 1-6 ply construction',
+          'Radial, bias ply and all-purpose round patches',
+          'Inner tube, sunflower, oval and bicycle patches',
+          'CTR-TPE series from 24mm to 440mm',
+        ],
+        faqs: [
+          { q: 'What is the difference between US and EU style patches?', a: 'EU-style patches use a ply-based sizing system (1-6 ply) and cover a wider range including inner tube and bicycle patches.' },
+          { q: 'What sizes do you offer?', a: 'From 24 x 34mm inner tube patches up to 180 x 440mm 4-ply radial patches.' },
+        ],
         products: [
           {
             slug: 'eu-style-radial-tire-patch',
@@ -908,11 +1058,33 @@ export const categories = [
     name: 'Mushroom Patch Plug',
     tagline: 'The most reliable combination plug & patch repair',
     intro: 'A mushroom-shaped plug where the stem fills the puncture and the patch bonds to the inner liner - combining the benefits of a plug and a patch for a permanent tyre repair.',
+    highlights: [
+      'Combination plug-and-patch for the strongest permanent repair',
+      'Stem fills the puncture; patch bonds to the inner liner',
+      'Sizes from 26 x 4 mm to 100 x 100 x 14 mm',
+      'EU-style options with 1-2 PLY reinforcement',
+      'Factory-direct supply with custom packaging',
+    ],
+    faqs: [
+      { q: 'What is a mushroom patch plug?', a: 'It combines a plug and a patch in one: the stem fills the puncture hole while the head bonds to the inner liner, giving a permanent, airtight repair in a single step.' },
+      { q: 'When should I use a mushroom plug over a patch?', a: 'Use a mushroom plug for straight-through punctures up to about 14mm; a separate patch is better for large or angled injuries.' },
+      { q: 'What sizes do you offer?', a: 'From 26 x 4 mm up to 100 x 100 x 14 mm, plus EU-style plugs with 1-2 PLY.' },
+    ],
     subcategories: [
       {
         slug: 'mushroom-patch-plugs',
         name: 'Mushroom Patch Plugs',
         desc: 'Mushroom tire repair patch plugs and EU-style mushroom plugs with PLY options.',
+        highlights: [
+          'Combination plug and patch for permanent repairs',
+          'Stem fills the puncture, head bonds to the inner liner',
+          '26 x 4mm to 100 x 100 x 14mm sizes',
+          'EU-style plugs with 1-2 PLY',
+        ],
+        faqs: [
+          { q: 'What sizes are available?', a: 'From 26 x 4mm to 100 x 100 x 14mm, plus EU-style HP plugs with 1-2 PLY.' },
+          { q: 'How does a mushroom plug work?', a: 'The stem is pulled through the puncture and the mushroom head bonds to the inner liner, sealing the injury permanently in one step.' },
+        ],
         products: [
           {
             slug: 'mushroom-tire-repair-patch-plug',
