@@ -61,11 +61,11 @@ function toggleSub(slug) {
     <div :class="collapsed ? 'hidden lg:block' : ''">
       <h4 class="sidebar-title">Products</h4>
       <ul class="flex flex-col gap-0.5">
-      <li><RouterLink to="/products" class="sidebar-link" :class="{ active: !category }">All Products</RouterLink></li>
+      <li><RouterLink to="/products/" class="sidebar-link" :class="{ active: !category }">All Products</RouterLink></li>
       <li v-for="cat in categories" :key="cat.slug">
         <div class="flex items-center gap-0.5">
           <RouterLink
-            :to="`/products/${cat.slug}`"
+            :to="`/products/${cat.slug}/`"
             class="sidebar-link flex-1 font-semibold"
             :class="{ active: category === cat.slug && !subcategory }"
             @click="openCat(cat.slug)"
@@ -84,7 +84,7 @@ function toggleSub(slug) {
             <template v-if="sub.products && sub.products.length">
               <div class="flex items-center gap-0.5">
                 <RouterLink
-                  :to="`/products/${cat.slug}/${sub.slug}`"
+                  :to="`/products/${cat.slug}/${sub.slug}/`"
                   class="sidebar-link flex-1 font-medium"
                   :class="{ active: subcategory === sub.slug && !product }"
                   @click="openSub(sub.slug)"
@@ -99,11 +99,11 @@ function toggleSub(slug) {
               </div>
               <ul v-if="openSubs.has(sub.slug)" class="ml-3 border-l-2 border-orange-200 pl-2 flex flex-col gap-0.5">
                 <li v-for="p in sub.products" :key="p.slug">
-                  <RouterLink :to="`/products/${cat.slug}/${p.slug}`" class="sidebar-link" :class="{ active: product === p.slug }">{{ p.name }}</RouterLink>
+                  <RouterLink :to="`/products/${cat.slug}/${p.slug}/`" class="sidebar-link" :class="{ active: product === p.slug }">{{ p.name }}</RouterLink>
                 </li>
               </ul>
             </template>
-            <RouterLink v-else :to="`/products/${cat.slug}/${sub.slug}`" class="sidebar-link" :class="{ active: subcategory === sub.slug }">{{ sub.name }}</RouterLink>
+            <RouterLink v-else :to="`/products/${cat.slug}/${sub.slug}/`" class="sidebar-link" :class="{ active: subcategory === sub.slug }">{{ sub.name }}</RouterLink>
           </li>
         </ul>
       </li>

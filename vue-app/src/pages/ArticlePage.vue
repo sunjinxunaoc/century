@@ -87,11 +87,11 @@ useHead(() => {
               <h4 class="font-semibold text-[#1A1A2E] mb-1 leading-snug">{{ r.title }}</h4>
               <div class="text-xs text-gray-400 mb-2">{{ r.date }}</div>
               <p class="text-sm text-gray-500 mb-3">{{ r.desc }}</p>
-              <RouterLink :to="`/news/${r.slug}`" class="text-[#FF6B00] text-sm font-medium hover:underline">Read More &rarr;</RouterLink>
+              <RouterLink :to="`/news/${r.slug}/`" class="text-[#FF6B00] text-sm font-medium hover:underline">Read More &rarr;</RouterLink>
             </div>
           </div>
           <div class="mt-8">
-            <RouterLink to="/news" class="btn border border-[#1A1A2E] text-[#1A1A2E] hover:bg-[#1A1A2E] hover:text-white">&#8592; Back to News</RouterLink>
+            <RouterLink to="/news/" class="btn border border-[#1A1A2E] text-[#1A1A2E] hover:bg-[#1A1A2E] hover:text-white">&#8592; Back to News</RouterLink>
           </div>
         </footer>
       </div>

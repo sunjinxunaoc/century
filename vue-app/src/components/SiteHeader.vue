@@ -12,20 +12,20 @@ const productsNav = categories.map((cat) => {
   for (const sub of cat.subcategories || []) {
     const products = (sub.products || []).map((p) => ({
       label: p.name,
-      path: `/products/${cat.slug}/${p.slug}`,
+      path: `/products/${cat.slug}/${p.slug}/`,
     }))
     children.push({
       label: sub.name,
-      path: `/products/${cat.slug}/${sub.slug}`,
+      path: `/products/${cat.slug}/${sub.slug}/`,
       children: products.length ? products : undefined,
     })
   }
   for (const card of cat.cards || []) {
-    children.push({ label: card.title, path: `/products/${cat.slug}` })
+    children.push({ label: card.title, path: `/products/${cat.slug}/` })
   }
   return {
     label: cat.name,
-    path: `/products/${cat.slug}`,
+    path: `/products/${cat.slug}/`,
     children: children.length ? children : undefined,
   }
 })
@@ -67,9 +67,9 @@ onMounted(() => {
         <nav class="hidden md:block">
           <ul class="flex gap-6">
             <li><RouterLink to="/" class="nav-link" exact-active-class="active">Home</RouterLink></li>
-            <li><RouterLink to="/about" class="nav-link" active-class="active">About Us</RouterLink></li>
+            <li><RouterLink to="/about/" class="nav-link" active-class="active">About Us</RouterLink></li>
             <li class="group relative">
-              <RouterLink to="/products" class="nav-link" active-class="active">Products <span class="text-xs">&#9662;</span></RouterLink>
+              <RouterLink to="/products/" class="nav-link" active-class="active">Products <span class="text-xs">&#9662;</span></RouterLink>
               <ul class="dropdown-menu">
                 <li v-for="p in productsNav" :key="p.path" class="relative group/sub">
                   <template v-if="p.children">
@@ -90,8 +90,8 @@ onMounted(() => {
                 </li>
               </ul>
             </li>
-            <li><RouterLink to="/news" class="nav-link" active-class="active">News</RouterLink></li>
-            <li><RouterLink to="/contact" class="nav-link" active-class="active">Contact</RouterLink></li>
+            <li><RouterLink to="/news/" class="nav-link" active-class="active">News</RouterLink></li>
+            <li><RouterLink to="/contact/" class="nav-link" active-class="active">Contact</RouterLink></li>
           </ul>
         </nav>
 
@@ -107,10 +107,10 @@ onMounted(() => {
       <div v-show="navOpen" class="md:hidden pb-4">
         <ul class="flex flex-col gap-2">
           <li><RouterLink to="/" class="mobile-link" exact-active-class="active" @click="closeNav">Home</RouterLink></li>
-          <li><RouterLink to="/about" class="mobile-link" active-class="active" @click="closeNav">About Us</RouterLink></li>
+          <li><RouterLink to="/about/" class="mobile-link" active-class="active" @click="closeNav">About Us</RouterLink></li>
           <li>
             <div class="flex items-center justify-between">
-              <RouterLink to="/products" class="mobile-link" active-class="active" @click="onNavLinkClick">Products</RouterLink>
+              <RouterLink to="/products/" class="mobile-link" active-class="active" @click="onNavLinkClick">Products</RouterLink>
               <button class="px-3 py-1 text-[#FF6B00]" @click="toggleMobile('products')">&#9662;</button>
             </div>
             <ul v-show="openMobile.has('products')" class="ml-4 flex flex-col gap-1 border-l-2 border-orange-300 pl-3">
@@ -141,8 +141,8 @@ onMounted(() => {
               </li>
             </ul>
           </li>
-          <li><RouterLink to="/news" class="mobile-link" active-class="active" @click="closeNav">News</RouterLink></li>
-          <li><RouterLink to="/contact" class="mobile-link" active-class="active" @click="closeNav">Contact</RouterLink></li>
+          <li><RouterLink to="/news/" class="mobile-link" active-class="active" @click="closeNav">News</RouterLink></li>
+          <li><RouterLink to="/contact/" class="mobile-link" active-class="active" @click="closeNav">Contact</RouterLink></li>
         </ul>
       </div>
     </div>

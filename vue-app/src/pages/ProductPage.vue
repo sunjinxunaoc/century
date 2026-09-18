@@ -66,10 +66,10 @@ const pageTitle = computed(() => {
 const crumbs = computed(() => {
   const items = [
     { label: 'Home', path: '/' },
-    { label: 'Products', path: '/products' },
+    { label: 'Products', path: '/products/' },
   ]
-  if (category.value) items.push({ label: category.value.name, path: `/products/${category.value.slug}` })
-  if (subcategory.value) items.push({ label: subcategory.value.name, path: baseSubPath.value })
+  if (category.value) items.push({ label: category.value.name, path: `/products/${category.value.slug}/` })
+  if (subcategory.value) items.push({ label: subcategory.value.name, path: `${baseSubPath.value}/` })
   if (totalPages.value > 1 && currentPage.value > 1 && pageType.value === 'subcategory') items.push({ label: `Page ${currentPage.value}` })
   if (product.value) items.push({ label: product.value.name })
   return items
@@ -147,6 +147,16 @@ useHead(() => {
         brand: { '@type': 'Brand', name: 'Century Auto Parts' },
         manufacturer: { '@type': 'Organization', name: 'Hebei Century Auto Parts Co., Ltd.' },
         url,
+        offers: {
+          '@type': 'Offer',
+          url,
+          priceCurrency: product.value.currency || 'USD',
+          price: String(product.value.price != null ? product.value.price : '0.10'),
+          availability: 'https://schema.org/InStock',
+          itemCondition: 'https://schema.org/NewCondition',
+          priceValidUntil: '2027-12-31',
+          seller: { '@type': 'Organization', name: 'Hebei Century Auto Parts Co., Ltd.' },
+        },
       }),
     })
   }
@@ -249,7 +259,7 @@ useHead(() => {
 
                   <div class="mt-8 pt-6 border-t border-gray-200">
                     <div class="flex flex-col sm:flex-row gap-3">
-                      <RouterLink to="/contact" class="btn btn-primary btn-large flex-1 justify-center">Request Quote</RouterLink>
+                      <RouterLink to="/contact/" class="btn btn-primary btn-large flex-1 justify-center">Request Quote</RouterLink>
                       <a href="https://api.whatsapp.com/send?phone=8615633632668&text=Hello, I'm interested in {{ product.name }}" target="_blank" rel="noopener" class="btn btn-large flex-1 justify-center border-2 border-[#25D366] text-[#128C7E] hover:bg-[#25D366] hover:text-white">
                         <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         WhatsApp
@@ -273,7 +283,7 @@ useHead(() => {
                   <p class="text-gray-500">Explore more related products</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <ProductCard v-for="r in related" :key="r.slug" :name="r.name" :desc="r.tagline" :image="r.image" :href="`/products/${categorySlug}/${r.slug}`" />
+                  <ProductCard v-for="r in related" :key="r.slug" :name="r.name" :desc="r.tagline" :image="r.image" :href="`/products/${categorySlug}/${r.slug}/`" />
                 </div>
               </div>
             </template>
@@ -294,7 +304,7 @@ useHead(() => {
 
               <template v-if="subcategory.products && subcategory.products.length">
                 <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <ProductCard v-for="p in pagedProducts" :key="p.slug" :name="p.name" :desc="p.tagline" :image="p.image" :href="`/products/${categorySlug}/${p.slug}`" />
+                  <ProductCard v-for="p in pagedProducts" :key="p.slug" :name="p.name" :desc="p.tagline" :image="p.image" :href="`/products/${categorySlug}/${p.slug}/`" />
                 </div>
                 <Pagination :current="currentPage" :total="totalPages" :base-path="baseSubPath" />
               </template>
@@ -331,7 +341,7 @@ useHead(() => {
               </div>
 
               <div v-if="category.subcategories.length" class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <CategoryCard v-for="sub in category.subcategories" :key="sub.slug" :title="sub.name" :desc="sub.desc" :href="`/products/${categorySlug}/${sub.slug}`" />
+                <CategoryCard v-for="sub in category.subcategories" :key="sub.slug" :title="sub.name" :desc="sub.desc" :href="`/products/${categorySlug}/${sub.slug}/`" />
               </div>
               <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div v-for="c in category.cards" :key="c.title" class="card reveal p-6 text-center">
@@ -347,7 +357,7 @@ useHead(() => {
                   <p class="text-gray-500">Popular {{ category.name.toLowerCase() }} from our factory</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <ProductCard v-for="p in featuredProducts" :key="p.slug" :name="p.name" :desc="p.tagline" :image="p.image" :href="`/products/${categorySlug}/${p.slug}`" />
+                  <ProductCard v-for="p in featuredProducts" :key="p.slug" :name="p.name" :desc="p.tagline" :image="p.image" :href="`/products/${categorySlug}/${p.slug}/`" />
                 </div>
               </div>
 

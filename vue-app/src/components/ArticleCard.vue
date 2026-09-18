@@ -16,7 +16,7 @@ defineProps({
       <h3 class="font-semibold text-[#1A1A2E] mb-2 leading-snug">{{ article.title }}</h3>
       <div class="text-xs text-gray-400 mb-3">{{ article.date }}</div>
       <p class="text-sm text-gray-500 leading-relaxed mb-4 flex-1">{{ article.desc }}</p>
-      <RouterLink :to="`/news/${article.slug}`" class="text-[#FF6B00] text-sm font-medium hover:underline">Read More &rarr;</RouterLink>
+      <RouterLink :to="`/news/${article.slug}/`" class="text-[#FF6B00] text-sm font-medium hover:underline">Read More &rarr;</RouterLink>
     </div>
   </div>
 </template>

@@ -51,8 +51,8 @@ const catImages = {
         <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">Tire Repair Products for <span class="text-[#FF6B00]">Global Markets</span></h1>
         <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">Wheel balancing weights, tyre valves, TPMS, patches and repair materials - manufactured and exported worldwide with factory-direct quality and pricing.</p>
         <div class="flex justify-center gap-4 flex-wrap">
-          <RouterLink to="/products" class="btn btn-primary btn-large">Explore Products</RouterLink>
-          <RouterLink to="/contact" class="btn btn-outline btn-large">Get a Quote</RouterLink>
+          <RouterLink to="/products/" class="btn btn-primary btn-large">Explore Products</RouterLink>
+          <RouterLink to="/contact/" class="btn btn-outline btn-large">Get a Quote</RouterLink>
         </div>
       </div>
     </section>
@@ -82,7 +82,7 @@ const catImages = {
             <div class="p-5 flex flex-col flex-1">
               <h3 class="font-semibold text-[#1A1A2E] mb-2">{{ cat.name }}</h3>
               <p class="text-sm text-gray-500 leading-relaxed mb-4 flex-1">{{ cat.tagline }}</p>
-              <RouterLink :to="`/products/${cat.slug}`" class="text-[#FF6B00] text-sm font-medium hover:underline">Explore Range &rarr;</RouterLink>
+              <RouterLink :to="`/products/${cat.slug}/`" class="text-[#FF6B00] text-sm font-medium hover:underline">Explore Range &rarr;</RouterLink>
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ const props = defineProps({
 })
 
 function pagePath(page) {
-  return page === 1 ? props.basePath : `${props.basePath}/page/${page}`
+  return page === 1 ? `${props.basePath}/` : `${props.basePath}/page/${page}/`
 }
 
 const pages = computed(() => {

@@ -1,18 +1,18 @@
 <script setup>
 const quickLinks = [
   { label: 'Home', path: '/' },
-  { label: 'About Us', path: '/about' },
-  { label: 'Products', path: '/products' },
-  { label: 'News', path: '/news' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'About Us', path: '/about/' },
+  { label: 'Products', path: '/products/' },
+  { label: 'News', path: '/news/' },
+  { label: 'Contact', path: '/contact/' },
 ]
 const productLinks = [
-  { label: 'Wheel Balancing Weights', path: '/products/wheel-balancing-weights' },
-  { label: 'Tyre Valves', path: '/products/tyre-valves' },
-  { label: 'TPMS', path: '/products/tpms' },
-  { label: 'Tyre Seal String', path: '/products/tyre-seal-string' },
-  { label: 'Tyre Patch', path: '/products/tyre-patch' },
-  { label: 'Mushroom Patch Plug', path: '/products/mushroom-patch-plug' },
+  { label: 'Wheel Balancing Weights', path: '/products/wheel-balancing-weights/' },
+  { label: 'Tyre Valves', path: '/products/tyre-valves/' },
+  { label: 'TPMS', path: '/products/tpms/' },
+  { label: 'Tyre Seal String', path: '/products/tyre-seal-string/' },
+  { label: 'Tyre Patch', path: '/products/tyre-patch/' },
+  { label: 'Mushroom Patch Plug', path: '/products/mushroom-patch-plug/' },
 ]
 const socials = [
   { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=100075854564828' },
