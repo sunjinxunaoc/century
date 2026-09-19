@@ -24,7 +24,11 @@ useHead({
         name: 'Hebei Century Auto Parts Co., Ltd.',
         alternateName: 'Century Auto Parts',
         url: 'https://centurymanufacture.com',
-        description: 'Professional manufacturer of tire valves, wheel weights, TPMS, tire repair tools and patches since 2010.',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://centurymanufacture.com/android-chrome-512x512.png',
+        },
+        description: 'Professional manufacturer of wheel balancing weights, tire valves, TPMS, tire repair tools and patches since 2010.',
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'No.161, Qiantang Village, Qingyun Town, Yanshan County',

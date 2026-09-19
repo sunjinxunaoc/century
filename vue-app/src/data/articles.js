@@ -1,5 +1,88 @@
 export const articles = [
   {
+    slug: 'wheel-weight-manufacturers',
+    title: 'Wheel Weight Manufacturers: Global Guide for Buyers',
+    date: 'September 18, 2026',
+    dateISO: '2026-09-18',
+    tags: ['Industry Guide', 'Wheel Weights'],
+    img: '/images/wheel weight.webp',
+    imgAlt: 'Clip-on and adhesive wheel balancing weights from global manufacturers',
+    desc: 'A practical global guide to wheel weight manufacturers: the major factories and brands by region, what materials and certifications they offer, and how to vet a supplier before placing a wholesale order.',
+    faq: [
+      { q: 'Who is the largest wheel weight manufacturer in the world?', a: 'WEGMANN automotive in Germany is generally regarded as the largest family-owned wheel weight producer, supplying both OE carmakers and the aftermarket through its Perfect Equipment and Hofmann Power Weight operations. 3M and Hennessy Industries are the other major US-based names.' },
+      { q: 'Which countries produce the most wheel balancing weights?', a: 'Germany leads the premium OE segment, the United States has a strong domestic aftermarket industry, and China is the largest production base by volume, supplying Fe, Zn and Pb weights in bulk to distributors worldwide.' },
+      { q: 'Are lead wheel weights still legal?', a: 'Lead wheel weights are restricted or banned in the EU, the UK, Canada and several US states, and the US EPA runs a voluntary lead-free initiative. Many distributors have switched entirely to steel, zinc and adhesive weights. Always confirm the rules in your market before importing.' },
+      { q: 'What certifications should a wheel weight manufacturer have?', a: 'ISO 9001 is the baseline for any factory. For Europe, ask for RoHS and REACH compliance documents; for OE supply, IATF 16949. A quality manufacturer should also provide weight tolerance reports and salt-spray test results for coatings.' },
+      { q: 'What MOQ do wheel weight manufacturers usually require?', a: 'It varies widely. Chinese export manufacturers typically offer the most flexible MOQs, often from a few hundred kilograms or a small pallet mixed across SKUs, while Western suppliers usually sell by carton or pallet. Samples at nominal cost are standard practice.' },
+      { q: 'How can I verify a wheel weight manufacturer before ordering?', a: 'Verify the business licence and factory address, request ISO certificates and test reports, order pre-production samples, and arrange a third-party inspection (SGS, BV or TUV) before shipment. For larger orders, an on-site audit is worth the cost.' },
+    ],
+    content: `
+      <p>Wheel balancing weights are one of the highest-consumption products in any tyre workshop, which makes the choice of <strong>wheel weight manufacturer</strong> a strategic decision for distributors and wholesalers. This guide maps the major manufacturers by region, explains what separates a good factory from a bad one, and gives you a practical vetting checklist before you commit to a bulk order.</p>
+      <p><em>Last updated: September 2026. Company details are based on public information and are provided for reference, not as an endorsement.</em></p>
+
+      <h2>What a wheel weight manufacturer does</h2>
+      <p>A manufacturer is not a trading company that resells products. A real factory controls the full production chain, and the differences show up directly in product consistency:</p>
+      <ul>
+        <li><strong>Material processing</strong> - Fe (steel), Zn (zinc) and Pb (lead) are cast or stamped into standard weight segments, typically 5g to 500g in both gram and OZ series.</li>
+        <li><strong>Surface treatment</strong> - zinc plating, epoxy coating or black coating to prevent corrosion, with full coating on clip-on weights to avoid galvanic corrosion against the rim.</li>
+        <li><strong>Adhesive conversion</strong> - adhesive weights are cut, primed and laminated with tape (blue, white, Norton or 3M) in strips or individual segments.</li>
+        <li><strong>Clip forming</strong> - steel clips are stamped and heat-treated to match specific rim flange profiles.</li>
+        <li><strong>Quality control</strong> - weight tolerance checks, adhesion peel tests and salt-spray tests on coatings.</li>
+        <li><strong>Packing</strong> - bulk cartons for workshops or retail-ready private label packaging for distributors.</li>
+      </ul>
+      <p>When you evaluate suppliers, ask which of these steps happen in-house. A manufacturer that controls processing, coating and packing can guarantee consistency; a reseller cannot.</p>
+
+      <h2>Global wheel weight manufacturers</h2>
+      <p>The market splits into three groups: large diversified groups with OE backing, specialist producers, and export-focused factories in Asia. The table below summarises the major names.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Manufacturer</th><th>Headquarters</th><th>Focus</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>WEGMANN automotive</td><td>Marktheidenfeld, Germany</td><td>OE and aftermarket weights; family group behind Hofmann Power Weight and Perfect Equipment</td></tr>
+            <tr><td>Perfect Equipment</td><td>Murfreesboro, TN, USA</td><td>Broad aftermarket catalogue of clip-on and adhesive replacement weights</td></tr>
+            <tr><td>Hofmann Power Weight</td><td>Germany</td><td>Premium adhesive and clip-on weight ranges within the WEGMANN group</td></tr>
+            <tr><td>3M</td><td>St. Paul, MN, USA</td><td>Adhesive wheel weight systems built on 3M adhesive science</td></tr>
+            <tr><td>Hennessy Industries</td><td>Brentwood, TN, USA</td><td>Coats tyre service equipment and associated workshop consumables</td></tr>
+            <tr><td>Plombco</td><td>Laval, QC, Canada</td><td>Lead-free steel and zinc weights, including the Plasteel range</td></tr>
+            <tr><td>HAWEKA</td><td>Germany</td><td>Adhesive weights and wheel clamping accessories</td></tr>
+            <tr><td>Wurth</td><td>Kunzelsau, Germany</td><td>Global workshop supplier with own-brand wheel weights</td></tr>
+            <tr><td><a href="/">Century Auto Parts</a></td><td>Cangzhou, China</td><td>Fe and Pb clip-on and adhesive weights with OEM/private label service</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Wheel weight manufacturers in the USA</h3>
+      <p>The US market is anchored by the American operations of the WEGMANN group - Perfect Equipment and Hofmann Power Weight - together with 3M's adhesive weight systems and Hennessy Industries, best known for Coats tyre service equipment. McGee Company and Wurth USA are significant suppliers with nationwide distribution. Because the EPA's National Lead-Free Wheel Weight Initiative encourages the move away from lead, US supply has shifted decisively toward steel, zinc and adhesive weights.</p>
+
+      <h3>Wheel weight manufacturers in Europe</h3>
+      <p>Germany is the centre of the European industry. WEGMANN automotive is the largest family-owned producer, with OE relationships across the major carmakers. Hofmann Power Weight and HAWEKA both operate from Germany with an engineering-led positioning, while Wurth distributes own-brand weights to workshops across the continent. European end-of-life vehicle restrictions on lead make lead-free ranges the default for the region.</p>
+
+      <h3>Wheel weight manufacturers in China</h3>
+      <p>China is the world's largest production base for export wheel weights, concentrated in Hebei province. Chinese manufacturers supply Fe, Zn and Pb weights in bulk with gram and OZ series from 5g to 500g, typically with OEM packaging and more flexible MOQs than Western factories. Sourcing from China lowers cost significantly for equivalent specifications, but it requires more supplier vetting: business licence verification, ISO 9001 certification, pre-production samples and third-party inspection (SGS, BV or TUV).</p>
+      <p>We at Century Auto Parts have manufactured wheel balancing weights in Cangzhou, Hebei since 2010 and export to more than 50 countries. Our range covers <a href="/products/wheel-balancing-weights/fe-wheel-balancing-weights/">Fe adhesive and clip-on weights</a> and <a href="/products/wheel-balancing-weights/lead-wheel-balancing-weights/">Pb (lead) weights</a> in gram and OZ series, with zinc-plated, epoxy or black finishes and blue, white, Norton or 3M tape options. Private label packing and mixed consolidation with our tyre valves, TPMS and repair products are available - see <a href="/news/ordering-guide/">how to order from Century Auto Parts</a>.</p>
+
+      <h2>How to choose a wheel weight manufacturer</h2>
+      <p>Whether you are comparing the global groups above or evaluating a new factory, use the same checklist:</p>
+      <ol>
+        <li><strong>Compliance first.</strong> Confirm which materials are legal in your market. Lead wheel weights are restricted or phased out in the EU, the UK, Canada and several US states; steel, zinc and adhesive weights are the safe default for those markets.</li>
+        <li><strong>Certifications.</strong> ISO 9001 is the baseline for a manufacturer. For Europe, ask for RoHS and REACH documentation; for OE supply, IATF 16949.</li>
+        <li><strong>Weight tolerance.</strong> A quality factory holds each segment within a tight tolerance band. Ask for the tolerance specification and a sample inspection report.</li>
+        <li><strong>Coating quality.</strong> Ask for salt-spray test results and confirm that clip-on weights are fully coated, including the clip cavity, to prevent galvanic corrosion on alloy rims.</li>
+        <li><strong>Range depth.</strong> A serious manufacturer covers gram and OZ series from 5g to 500g, clip-on profiles for common rim flanges, and adhesive weights in strip and segment form.</li>
+        <li><strong>Capacity and lead time.</strong> State your annual volume and ask for the factory's monthly output of your key SKUs, plus the standard production lead time.</li>
+        <li><strong>OEM and private label.</strong> If you sell under your own brand, confirm the factory can print cartons, blister packs or retail boxes with your artwork.</li>
+        <li><strong>Export record.</strong> An experienced exporter handles Incoterms (FOB, CIF, DDP), provides correct shipping documents and can show customer references from your region.</li>
+      </ol>
+      <p>For a deeper look at materials and mounting types, see our <a href="/news/wheel-weight-guide/">guide to choosing wheel balancing weights</a>. To compare our specifications and request a quote, browse the <a href="/products/wheel-balancing-weights/">wheel balancing weights range</a> or <a href="/contact/">contact our team</a>.</p>
+    `,
+    related: [
+      { slug: 'wheel-weight-guide', title: 'How to Choose Wheel Balancing Weights', date: 'August 8, 2026', desc: 'Fe vs Pb materials and clip-on vs adhesive types.', tag: 'Wheel Weights' },
+      { slug: 'ordering-guide', title: 'How to Order from Century Auto Parts', date: 'July 2, 2026', desc: 'MOQ, samples, OEM/ODM and shipping explained.', tag: 'Ordering' },
+    ],
+  },
+  {
     slug: 'wheel-weight-guide',
     title: 'How to Choose Wheel Balancing Weights: Fe vs Pb, Clip-On vs Adhesive',
     date: 'August 8, 2026',
@@ -32,9 +115,10 @@ export const articles = [
 
       <h2>Packing and private label</h2>
       <p>We supply wheel weights in standard cartons or retail-ready packing, with private label branding available for distributors.</p>
+      <p>Looking for a supplier? See our global guide to <a href="/news/wheel-weight-manufacturers/">wheel weight manufacturers</a> or browse the full <a href="/products/wheel-balancing-weights/">wheel balancing weights range</a>.</p>
     `,
     related: [
-      { slug: 'tyre-valve-guide', title: 'Tyre Valve Types Explained', date: 'August 1, 2026', desc: 'Understand TR412-TR415, TR570-TR572 and V3-20 valve series.', tag: 'Tyre Valves' },
+      { slug: 'wheel-weight-manufacturers', title: 'Wheel Weight Manufacturers: Global Guide', date: 'September 18, 2026', desc: 'The major manufacturers by region and how to vet a factory.', tag: 'Industry Guide' },
       { slug: 'ordering-guide', title: 'How to Order from Century Auto Parts', date: 'July 2, 2026', desc: 'MOQ, samples, OEM/ODM and shipping explained.', tag: 'Ordering' },
     ],
   },
@@ -213,10 +297,11 @@ export const articles = [
 
       <h2>Worldwide delivery</h2>
       <p>We export to <strong>50+ countries</strong>, including the USA, Canada, UK, Germany, France, Australia, the Middle East, Southeast Asia, South America and Africa.</p>
+      <p>Comparing suppliers? See our <a href="/news/wheel-weight-manufacturers/">wheel weight manufacturers guide</a> for a map of the global industry and a supplier vetting checklist.</p>
     `,
     related: [
+      { slug: 'wheel-weight-manufacturers', title: 'Wheel Weight Manufacturers: Global Guide', date: 'September 18, 2026', desc: 'The major manufacturers by region and how to vet a factory.', tag: 'Industry Guide' },
       { slug: 'wheel-weight-guide', title: 'How to Choose Wheel Balancing Weights', date: 'August 8, 2026', desc: 'Fe vs Pb materials and clip-on vs adhesive types.', tag: 'Wheel Weights' },
-      { slug: 'tyre-valve-guide', title: 'Tyre Valve Types Explained', date: 'August 1, 2026', desc: 'Understand TR412-TR415, TR570-TR572 and V3-20 series.', tag: 'Tyre Valves' },
     ],
   },
 ]

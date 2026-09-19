@@ -4,12 +4,12 @@ import CtaSection from '../components/CtaSection.vue'
 import { useHead } from '@unhead/vue'
 
 useHead({
-  title: 'Century Auto Parts | Tire Repair Products Manufacturer',
+  title: 'Wheel Weight Manufacturer | Wheel Balancing Weights Factory - Century Auto Parts',
   meta: [
-    { name: 'description', content: 'Professional manufacturer of wheel balancing weights, tyre valves, TPMS, tyre patches and mushroom plugs. Factory direct to 50+ countries since 2010.' },
-    { name: 'keywords', content: 'tyre repair products, wheel balancing weights, tyre valves, TPMS, tyre patch, tyre seal string, mushroom patch plug' },
-    { property: 'og:title', content: 'Century Auto Parts | Tire Repair Products Manufacturer' },
-    { property: 'og:description', content: 'Professional manufacturer of wheel balancing weights, tyre valves, TPMS, tyre patches and mushroom plugs. Factory direct to 50+ countries since 2010.' },
+    { name: 'description', content: 'Wheel weight manufacturer since 2010. Clip-on and adhesive wheel balancing weights in Fe, Zn & Pb, gram & OZ series, plus tyre valves, TPMS and repair products. Factory direct to 50+ countries.' },
+    { name: 'keywords', content: 'wheel weight manufacturer, wheel weight manufacturers, wheel weight factory, wheel balancing weight manufacturer, wheel balancing weights, tyre valves, TPMS, tyre patch, tyre seal string, mushroom patch plug' },
+    { property: 'og:title', content: 'Wheel Weight Manufacturer | Wheel Balancing Weights Factory - Century Auto Parts' },
+    { property: 'og:description', content: 'Wheel weight manufacturer since 2010. Clip-on and adhesive wheel balancing weights in Fe, Zn & Pb, gram & OZ series, plus tyre valves, TPMS and repair products. Factory direct to 50+ countries.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://centurymanufacture.com/' },
     { name: 'twitter:card', content: 'summary_large_image' },
@@ -48,12 +48,13 @@ const catImages = {
     <section class="relative bg-gradient-to-br from-[#1A1A2E] via-[#2B2B45] to-[#4A2B1A] text-white overflow-hidden">
       <div class="container-app pt-36 pb-24 md:pt-44 md:pb-32 text-center">
         <span class="inline-block bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6">&#9672; Since 2010 &nbsp;&middot;&nbsp; Exported to 50+ Countries</span>
-        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">Tire Repair Products for <span class="text-[#FF6B00]">Global Markets</span></h1>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">Wheel Weight <span class="text-[#FF6B00]">Manufacturer</span> for Global Markets</h1>
         <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">Wheel balancing weights, tyre valves, TPMS, patches and repair materials - manufactured and exported worldwide with factory-direct quality and pricing.</p>
         <div class="flex justify-center gap-4 flex-wrap">
           <RouterLink to="/products/" class="btn btn-primary btn-large">Explore Products</RouterLink>
           <RouterLink to="/contact/" class="btn btn-outline btn-large">Get a Quote</RouterLink>
         </div>
+        <p class="text-sm text-gray-400 mt-6">New: <RouterLink to="/news/wheel-weight-manufacturers/" class="text-[#FF6B00] hover:underline">Wheel Weight Manufacturers - Global Guide for Buyers</RouterLink></p>
       </div>
     </section>
 

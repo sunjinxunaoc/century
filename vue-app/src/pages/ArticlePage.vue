@@ -34,6 +34,33 @@ useHead(() => {
       }),
     })
   }
+  if (article.value?.faq?.length) {
+    scripts.push({
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: article.value.faq.map(f => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }),
+    })
+  }
+  scripts.push({
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: crumbs.value.map((c, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: c.label,
+        item: c.path ? `https://centurymanufacture.com${c.path}${c.path.endsWith('/') ? '' : '/'}` : url,
+      })),
+    }),
+  })
   return {
     title: `${article.value?.title || 'News'} | Century Auto Parts`,
     meta: [
@@ -78,6 +105,16 @@ useHead(() => {
         </div>
 
         <div class="article-content" v-html="article.content"></div>
+
+        <div v-if="article.faq && article.faq.length" class="mt-10">
+          <h2 class="text-2xl font-bold text-[#1A1A2E] mb-5">Frequently Asked Questions</h2>
+          <div class="space-y-4">
+            <div v-for="f in article.faq" :key="f.q" class="card p-6">
+              <h3 class="font-semibold text-[#1A1A2E] mb-2">{{ f.q }}</h3>
+              <p class="text-gray-500 leading-relaxed">{{ f.a }}</p>
+            </div>
+          </div>
+        </div>
 
         <footer class="mt-12 pt-6 border-t border-gray-200">
           <h3 class="text-xl font-bold text-[#1A1A2E] mb-5">Related Articles</h3>

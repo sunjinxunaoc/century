@@ -108,6 +108,21 @@
   .article-content a {
     @apply text-[#FF6B00] hover:underline;
   }
+  .article-content .table-wrap {
+    @apply overflow-x-auto mb-6;
+  }
+  .article-content table {
+    @apply w-full text-sm border-collapse;
+  }
+  .article-content th {
+    @apply px-4 py-2.5 border border-gray-200 bg-gray-50 text-left font-semibold text-[#1A1A2E] whitespace-nowrap;
+  }
+  .article-content td {
+    @apply px-4 py-2.5 border border-gray-200 align-top text-gray-600;
+  }
+  .article-content tbody tr:nth-child(even) td {
+    @apply bg-gray-50;
+  }
 }
 
 @layer utilities {
