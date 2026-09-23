@@ -135,6 +135,8 @@ useHead(() => {
     : srcDesc.trim()
   const scripts = []
   if (product.value) {
+    const modelCode = (product.value.name.match(/\bCTR-[A-Z0-9-]+/i) || [])[0]
+      || (product.value.name.match(/\b(TPMS-\d+|TR\d+[A-Z]?|PVR\d+|V3-\d+)/i) || [])[0]
     scripts.push({
       type: 'application/ld+json',
       innerHTML: JSON.stringify({
@@ -142,10 +144,11 @@ useHead(() => {
         '@type': 'Product',
         name: product.value.name,
         description: product.value.desc,
+        ...(modelCode ? { sku: modelCode.toUpperCase(), mpn: modelCode.toUpperCase() } : {}),
         ...(product.value.image ? { image: `https://centurymanufacture.com${product.value.image}` } : {}),
         category: category.value?.name,
         brand: { '@type': 'Brand', name: 'Century Auto Parts' },
-        manufacturer: { '@type': 'Organization', name: 'Hebei Century Auto Parts Co., Ltd.' },
+        manufacturer: { '@id': 'https://centurymanufacture.com/#organization' },
         url,
         offers: {
           '@type': 'Offer',
@@ -188,6 +191,39 @@ useHead(() => {
       }),
     })
   }
+  if (pageType.value === 'category' && category.value?.subcategories?.length) {
+    scripts.push({
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: category.value.name,
+        itemListElement: category.value.subcategories.map((sub, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: sub.name,
+          url: `https://centurymanufacture.com/products/${category.value.slug}/${sub.slug}/`,
+        })),
+      }),
+    })
+  }
+  if (pageType.value === 'subcategory' && subcategory.value?.products?.length) {
+    scripts.push({
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: `${subcategory.value.name} - ${category.value?.name || ''}`.trim(),
+        numberOfItems: subcategory.value.products.length,
+        itemListElement: pagedProducts.value.map((p, i) => ({
+          '@type': 'ListItem',
+          position: (currentPage.value - 1) * PAGE_SIZE + i + 1,
+          name: p.name,
+          url: `https://centurymanufacture.com/products/${category.value.slug}/${p.slug}/`,
+        })),
+      }),
+    })
+  }
   const link = [
     { rel: 'canonical', href: url },
   ]
@@ -215,7 +251,7 @@ useHead(() => {
 
 <template>
   <div v-if="category">
-    <PageHero :title="pageTitle" :subtitle="product?.tagline || category.tagline" />
+    <PageHero :title="pageTitle" :subtitle="product?.tagline || category.tagline" :heading-tag="product ? 'div' : 'h1'" />
     <section class="py-16">
       <div class="container-app">
         <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-10 items-start">
@@ -229,7 +265,7 @@ useHead(() => {
                 <div class="rounded-lg overflow-hidden bg-gray-100 shadow-card">
                   <div class="relative">
                     <button type="button" class="group relative block w-full cursor-zoom-in" @click="openZoom" aria-label="Enlarge product image">
-                      <img :src="currentImage" :alt="product.name" class="w-full h-auto object-contain block transition-transform duration-300 group-hover:scale-105">
+                      <img :src="currentImage" :alt="product.name" width="1200" height="1200" fetchpriority="high" decoding="async" class="w-full h-auto object-contain block transition-transform duration-300 group-hover:scale-105">
                       <span class="absolute inset-0 flex items-end justify-end p-3 opacity-0 group-hover:opacity-100 transition-opacity">
                         <span class="inline-flex items-center gap-1 bg-black/60 text-white text-xs px-2 py-1 rounded">&#128269; Click to enlarge</span>
                       </span>

@@ -21,6 +21,7 @@ useHead({
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Organization',
+        '@id': 'https://centurymanufacture.com/#organization',
         name: 'Hebei Century Auto Parts Co., Ltd.',
         alternateName: 'Century Auto Parts',
         url: 'https://centurymanufacture.com',
@@ -47,11 +48,18 @@ useHead({
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebSite',
+        '@id': 'https://centurymanufacture.com/#website',
         name: 'Century Auto Parts',
+        alternateName: 'centurymanufacture.com',
         url: 'https://centurymanufacture.com',
+        inLanguage: 'en',
+        publisher: { '@id': 'https://centurymanufacture.com/#organization' },
         potentialAction: {
           '@type': 'SearchAction',
-          target: 'https://centurymanufacture.com/products/?q={search_term_string}',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: 'https://centurymanufacture.com/products/?q={search_term_string}',
+          },
           'query-input': 'required name=search_term_string',
         },
       }),

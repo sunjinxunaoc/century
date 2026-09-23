@@ -7,7 +7,7 @@ defineProps({
 <template>
   <div class="card reveal flex flex-col">
     <div class="aspect-[4/3] overflow-hidden bg-gray-100">
-      <img :src="article.img" :alt="article.title" loading="lazy" class="w-full h-full object-cover">
+      <img :src="article.img" :alt="article.title" width="800" height="450" loading="lazy" decoding="async" class="w-full h-full object-cover">
     </div>
     <div class="p-5 flex flex-col flex-1">
       <div class="flex flex-wrap gap-1.5 mb-2">

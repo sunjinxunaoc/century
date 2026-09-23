@@ -99,7 +99,7 @@ export const categories = [
           {
             slug: 'fe-adhesive-wheel-weight-ctr-fe-01a',
             name: 'Fe Adhesive Wheel Weight CTR-FE-01A',
-            image: '/images/products/Wheel Balancing Weights/Fe%20Adhensive%20Wheel%20Weight%20CTR-FE-01A.jpg',
+            image: '/images/products/Wheel Balancing Weights/Fe%20Adhensive%20Wheel%20Weight%20CTR-FE-01A.webp',
             tagline: 'Self-adhesive steel wheel balancing weight for alloy rims. Round or right angle profile, 140 x 19 x 3.8 mm.',
             desc: 'Self-adhesive steel wheel balancing weight for alloy and aluminum rims. Round or right angle profile, 140 x 19 x 3.8 mm.',
             keywords: 'Fe Adhesive Wheel Weight, CTR-FE-01A, steel adhesive wheel weight, alloy rim weight',
@@ -112,7 +112,7 @@ export const categories = [
           {
             slug: 'steel-adhesive-wheel-weight-ctr-fe-02a',
             name: 'Steel Adhesive Wheel Weight CTR-FE-02A',
-            image: '/images/products/Wheel Balancing Weights/Steel-Adhensive-Wheel-Weight-CTR-FE-02A.jpg',
+            image: '/images/products/Wheel Balancing Weights/Steel-Adhensive-Wheel-Weight-CTR-FE-02A.webp',
             tagline: 'Self-adhesive steel wheel balancing weight for alloy rims. 12 x 5gr, 140 x 19 x 3.8 mm.',
             desc: 'Self-adhesive steel wheel balancing weight for alloy and aluminum rims.',
             keywords: 'Steel Adhesive Wheel Weight, CTR-FE-02A, steel adhesive wheel weight, alloy rim weight',
@@ -125,7 +125,7 @@ export const categories = [
           {
             slug: 'fe-clip-on-wheel-weight-alloy-rims-ctr-fe-01c',
             name: 'Fe Clip On Wheel Weight for Alloy Rims CTR-FE-01C',
-            image: '/images/products/Wheel Balancing Weights/FE--Clip-On-wheel-balancing-weight-For-Alloy-Rims-CTR-FE-01C.jpg',
+            image: '/images/products/Wheel Balancing Weights/FE--Clip-On-wheel-balancing-weight-For-Alloy-Rims-CTR-FE-01C.webp',
             tagline: 'Steel clip on wheel balancing weight designed for alloy rims.',
             desc: 'Steel clip on wheel balancing weight designed for alloy rims.',
             keywords: 'Fe Clip On Wheel Weight, CTR-FE-01C, alloy rim clip on weight, steel clip on weight',
@@ -138,7 +138,7 @@ export const categories = [
           {
             slug: 'fe-clip-on-wheel-weight-fn-series-car-rims-ctr-fe-02c',
             name: 'Fe Clip On Wheel Weight for FN Series Car Rims CTR-FE-02C',
-            image: '/images/products/Wheel Balancing Weights/Fe%20clip%20on%20wheel%20weight%20for%20FN%20series%20car%20rims%20CTR-FE-02C.jpg',
+            image: '/images/products/Wheel Balancing Weights/Fe%20clip%20on%20wheel%20weight%20for%20FN%20series%20car%20rims%20CTR-FE-02C.webp',
             tagline: 'Steel clip on wheel balancing weight designed for FN series car rims.',
             desc: 'Steel clip on wheel balancing weight designed for FN series car rims.',
             keywords: 'Fe Clip On Wheel Weight, CTR-FE-02C, FN series car rim weight, steel clip on weight',
@@ -151,7 +151,7 @@ export const categories = [
           {
             slug: 'fe-clip-on-wheel-weight-steel-rims-ctr-fe-03c',
             name: 'Fe Clip On Wheel Weight for Steel Rims CTR-FE-03C',
-            image: '/images/products/Wheel Balancing Weights/Fe-clip-on-wheel-weight-for-Steel-rims-CTR-FE-03C.jpg',
+            image: '/images/products/Wheel Balancing Weights/Fe-clip-on-wheel-weight-for-Steel-rims-CTR-FE-03C.webp',
             tagline: 'Steel clip on wheel balancing weight designed for steel rims.',
             desc: 'Steel clip on wheel balancing weight designed for steel rims.',
             keywords: 'Fe Clip On Wheel Weight, CTR-FE-03C, steel rim clip on weight, steel clip on weight',
@@ -164,7 +164,7 @@ export const categories = [
           {
             slug: 'fe-clip-on-wheel-weight-alloy-rims-ctr-fe-04c',
             name: 'Fe Clip On Wheel Weight for Alloy Rims CTR-FE-04C',
-            image: '/images/products/Wheel Balancing Weights/Fe%20clip%20on%20wheel%20weight%20for%20Alloy%20rims%20CTR-FE-04C.jpg',
+            image: '/images/products/Wheel Balancing Weights/Fe%20clip%20on%20wheel%20weight%20for%20Alloy%20rims%20CTR-FE-04C.webp',
             tagline: 'Steel clip on wheel balancing weight designed for alloy rims.',
             desc: 'Steel clip on wheel balancing weight designed for alloy rims.',
             keywords: 'Fe Clip On Wheel Weight, CTR-FE-04C, alloy rim clip on weight, steel clip on weight',
@@ -194,7 +194,7 @@ export const categories = [
           {
             slug: 'pb-adhesive-wheel-weight-ctr-pb-01a',
             name: 'Pb Adhesive Wheel Weight CTR-PB-01A',
-            image: '/images/products/Wheel Balancing Weights/Pb-Adhensive-Wheel-Weight-CTR-PB-01A.jpg',
+            image: '/images/products/Wheel Balancing Weights/Pb-Adhensive-Wheel-Weight-CTR-PB-01A.webp',
             tagline: 'Self-adhesive lead wheel balancing weight offering superior vibration damping for alloy and aluminum rims. 105 x 18 x 4 mm.',
             desc: 'Self-adhesive lead wheel balancing weight offering superior vibration damping for alloy and aluminum rims.',
             keywords: 'Pb Adhesive Wheel Weight, CTR-PB-01A, lead adhesive wheel weight, alloy rim weight',
@@ -207,7 +207,7 @@ export const categories = [
           {
             slug: 'lead-adhesive-wheel-weight-ctr-pb-02a',
             name: 'Lead Adhesive Wheel Weight CTR-PB-02A',
-            image: '/images/products/Wheel Balancing Weights/Lead-Adhensive-Wheel-Weight-CTR-PB-02A.jpg',
+            image: '/images/products/Wheel Balancing Weights/Lead-Adhensive-Wheel-Weight-CTR-PB-02A.webp',
             tagline: 'Self-adhesive lead wheel balancing weight for alloy and aluminum rims. 12 x 5gr, 105 x 18 x 4 mm.',
             desc: 'Self-adhesive lead wheel balancing weight for alloy and aluminum rims.',
             keywords: 'Lead Adhesive Wheel Weight, CTR-PB-02A, lead adhesive wheel weight, alloy rim weight',
@@ -220,7 +220,7 @@ export const categories = [
           {
             slug: 'pb-clip-on-wheel-weight-steel-rims-ctr-pb-01c',
             name: 'Pb Clip On Wheel Weight for Steel Rims CTR-PB-01C',
-            image: '/images/products/Wheel Balancing Weights/Pb--clip-on-balance-weight-for-steel-rims-CTR-PB-01C.jpg',
+            image: '/images/products/Wheel Balancing Weights/Pb--clip-on-balance-weight-for-steel-rims-CTR-PB-01C.webp',
             tagline: 'Lead clip on wheel balancing weight designed for steel rims.',
             desc: 'Lead clip on wheel balancing weight designed for steel rims.',
             keywords: 'Pb Clip On Wheel Weight, CTR-PB-01C, steel rim clip on weight, lead clip on weight',
@@ -233,7 +233,7 @@ export const categories = [
           {
             slug: 'pb-clip-on-wheel-weight-alloy-rims-ctr-pb-02c',
             name: 'Pb Clip On Wheel Weight for Alloy Rims CTR-PB-02C',
-            image: '/images/products/Wheel Balancing Weights/Pb--clip-on-balance-weight-for-Alloy-rims-CTR-PB-02C.jpg',
+            image: '/images/products/Wheel Balancing Weights/Pb--clip-on-balance-weight-for-Alloy-rims-CTR-PB-02C.webp',
             tagline: 'Lead clip on wheel balancing weight designed for alloy rims.',
             desc: 'Lead clip on wheel balancing weight designed for alloy rims.',
             keywords: 'Pb Clip On Wheel Weight, CTR-PB-02C, alloy rim clip on weight, lead clip on weight',
@@ -246,7 +246,7 @@ export const categories = [
           {
             slug: 'pb-clip-on-wheel-weight-truck-ctr-pb-03c',
             name: 'Pb Clip On Wheel Weight for Truck CTR-PB-03C',
-            image: '/images/products/Wheel Balancing Weights/Pb-clip-on-wheel-weight-for-Truck-CTR-PB-03C.jpg',
+            image: '/images/products/Wheel Balancing Weights/Pb-clip-on-wheel-weight-for-Truck-CTR-PB-03C.webp',
             tagline: 'Lead clip on wheel balancing weight for truck steel wheels.',
             desc: 'Lead clip on wheel balancing weight designed for truck steel wheels.',
             keywords: 'Pb Clip On Wheel Weight, CTR-PB-03C, truck wheel weight, lead clip on weight',
@@ -296,10 +296,10 @@ export const categories = [
           {
             slug: 'tr414-tyre-valve',
             name: 'TR414 Tyre Valve',
-            image: '/images/products/tyre%20valves/tr414-tyre-valve001.jpg',
+            image: '/images/products/tyre%20valves/tr414-tyre-valve001.webp',
             images: [
-              '/images/products/tyre%20valves/tr414-tyre-valve001.jpg',
-              '/images/products/tyre%20valves/tr414-tyre-valve002.jpg',
+              '/images/products/tyre%20valves/tr414-tyre-valve001.webp',
+              '/images/products/tyre%20valves/tr414-tyre-valve002.webp',
             ],
             tagline: 'High quality rubber tyre valve for passenger cars and light trucks. Ref V2.03.2, 11.5mm/.453" rim hole, 38mm/1.50" effective length.',
             desc: 'The TR414 tyre valve is a high quality rubber valve stem designed for passenger cars and light trucks, offering a reliable, leak-proof seal for long service life. As a standard TR414 valve with an 11.5mm (.453") rim hole and 38mm (1.50") effective length, it is a direct replacement for most aftermarket and OEM passenger car applications. Our TR414 rubber tyre valves are factory-direct, precision built from high-grade vulcanized rubber with a brass core and cap, ensuring consistent air retention and easy installation. Suitable for inner tube and tubeless rims, available in bulk and with custom packaging for wholesale and export orders.',
@@ -313,10 +313,10 @@ export const categories = [
           {
             slug: 'tyre-valve-stem-tr414-tr412-tr413-tr415',
             name: 'Tyre Valve Stem TR414 TR412 TR413 TR415',
-            image: '/images/products/tyre%20valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415001.jpg',
+            image: '/images/products/tyre%20valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415001.webp',
             images: [
-              '/images/products/tyre%20valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415001.jpg',
-              '/images/products/tyre%20valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415002.jpg',
+              '/images/products/tyre%20valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415001.webp',
+              '/images/products/tyre%20valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415002.webp',
             ],
             tagline: 'Standard rubber tyre valve stems covering TR414, TR412, TR413 and TR415 for passenger cars and light trucks.',
             desc: 'Standard rubber tyre valve stems for passenger cars and light trucks.',
@@ -335,10 +335,10 @@ export const categories = [
           {
             slug: 'tr413-tr414-valve',
             name: 'TR413 TR414 Valve',
-            image: '/images/products/tyre%20valves/tr413-tr414-valve-001.jpg',
+            image: '/images/products/tyre%20valves/tr413-tr414-valve-001.webp',
             images: [
-              '/images/products/tyre%20valves/tr413-tr414-valve-001.jpg',
-              '/images/products/tyre%20valves/tr413-tr414-valve-002.jpg',
+              '/images/products/tyre%20valves/tr413-tr414-valve-001.webp',
+              '/images/products/tyre%20valves/tr413-tr414-valve-002.webp',
             ],
             tagline: 'The TR413 and TR414 rubber tyre valves offer reliable sealing for passenger cars and light trucks.',
             desc: 'Rubber tyre valves TR413 and TR414 for passenger cars and light trucks.',
@@ -355,10 +355,10 @@ export const categories = [
           {
             slug: 'tr412-tr413-tr415-tr414-tyre-valve-stem',
             name: 'TR412 TR413 TR415 TR414 Tyre Valve Stem',
-            image: '/images/products/tyre%20valves/Tr412-Tr413-Tr415-tr414-tire-valve-stem001.jpg',
+            image: '/images/products/tyre%20valves/Tr412-Tr413-Tr415-tr414-tire-valve-stem001.webp',
             images: [
-              '/images/products/tyre%20valves/Tr412-Tr413-Tr415-tr414-tire-valve-stem001.jpg',
-              '/images/products/tyre%20valves/Tr412-Tr413-Tr415-tr414-tire-valve-stem002.jpg',
+              '/images/products/tyre%20valves/Tr412-Tr413-Tr415-tr414-tire-valve-stem001.webp',
+              '/images/products/tyre%20valves/Tr412-Tr413-Tr415-tr414-tire-valve-stem002.webp',
             ],
             tagline: 'Standard rubber tyre valve stems covering TR412, TR413, TR415 and TR414 for passenger cars and light trucks.',
             desc: 'Standard rubber valve stems covering TR412, TR413, TR415 and TR414.',
@@ -377,7 +377,7 @@ export const categories = [
           {
             slug: 'tr414c-tyre-valve-stem',
             name: 'TR414C Tyre Valve Stem',
-            image: '/images/products/tyre%20valves/tr414c-tire-valve-stem.jpg',
+            image: '/images/products/tyre%20valves/tr414c-tire-valve-stem.webp',
             tagline: 'Rubber valve stem with 11.5mm/.453" rim hole, 38mm/1.50" length, max pressure 65 PSI.',
             desc: 'Rubber valve stem with 11.5mm/.453" rim hole, 38mm/1.50" length, max pressure 65 PSI.',
             keywords: 'TR414C, tyre valve stem, rubber valve stem, passenger car valve',
@@ -390,10 +390,10 @@ export const categories = [
           {
             slug: 'pvr70-pvr60-pvr50-pvr40-valve-stem',
             name: 'PVR70 PVR60 PVR50 PVR40 Valve Stem',
-            image: '/images/products/tyre%20valves/pvr70-pvr60-pvr50-pvr40-valve-stem001.jpg',
+            image: '/images/products/tyre%20valves/pvr70-pvr60-pvr50-pvr40-valve-stem001.webp',
             images: [
-              '/images/products/tyre%20valves/pvr70-pvr60-pvr50-pvr40-valve-stem001.jpg',
-              '/images/products/tyre%20valves/pvr70-pvr60-pvr50-pvr40-valve-stem002.jpg',
+              '/images/products/tyre%20valves/pvr70-pvr60-pvr50-pvr40-valve-stem001.webp',
+              '/images/products/tyre%20valves/pvr70-pvr60-pvr50-pvr40-valve-stem002.webp',
             ],
             tagline: 'Motorcycle and scooter tyre valve stems in PVR40, PVR50, PVR60 and PVR70 with 45° / 90° bend options.',
             desc: 'Motorcycle valve stems PVR40 - PVR70, 45° / 90° bend.',
@@ -412,10 +412,10 @@ export const categories = [
           {
             slug: 'pvr70-pvr60-pvr50-pvr40-ventil',
             name: 'PVR70 PVR60 PVR50 PVR40 Ventil',
-            image: '/images/products/tyre%20valves/pvr70-pvr60-pvr50-pvr40-ventil001.jpg',
+            image: '/images/products/tyre%20valves/pvr70-pvr60-pvr50-pvr40-ventil001.webp',
             images: [
-              '/images/products/tyre%20valves/pvr70-pvr60-pvr50-pvr40-ventil001.jpg',
-              '/images/products/tyre%20valves/pvr70-pvr60-pvr50-pvr40-ventil002.jpg',
+              '/images/products/tyre%20valves/pvr70-pvr60-pvr50-pvr40-ventil001.webp',
+              '/images/products/tyre%20valves/pvr70-pvr60-pvr50-pvr40-ventil002.webp',
             ],
             tagline: 'Motorcycle and scooter tyre valve (ventil) stems in PVR40, PVR50, PVR60 and PVR70 with 45° / 90° bend options.',
             desc: 'Motorcycle valve stems (ventil) PVR40 - PVR70, 45° / 90° bend.',
@@ -434,10 +434,10 @@ export const categories = [
           {
             slug: 'valvula-pvr40-pvr50-pvr60-pvr70',
             name: 'Valvula PVR40 PVR50 PVR60 PVR70',
-            image: '/images/products/tyre%20valves/valvula-pvr40-pvr50-pvr60-pvr70002.jpg',
+            image: '/images/products/tyre%20valves/valvula-pvr40-pvr50-pvr60-pvr70002.webp',
             images: [
-              '/images/products/tyre%20valves/valvula-pvr40-pvr50-pvr60-pvr70002.jpg',
-              '/images/products/tyre%20valves/valvula-pvr40-pvr50-pvr60-pvr70001.jpg',
+              '/images/products/tyre%20valves/valvula-pvr40-pvr50-pvr60-pvr70002.webp',
+              '/images/products/tyre%20valves/valvula-pvr40-pvr50-pvr60-pvr70001.webp',
             ],
             tagline: 'Motorcycle and scooter tyre valve stems (valvula) in PVR40, PVR50, PVR60 and PVR70 with 45° / 90° bend options.',
             desc: 'Motorcycle valve stems (valvula) PVR40 - PVR70, 45° / 90° bend.',
@@ -473,11 +473,11 @@ export const categories = [
           {
             slug: 'v3-20-4-v3-20-6-valve-stem',
             name: 'V3-20-4 V3-20-6 Valve Stem',
-            image: '/images/products/tyre%20valves\/v3-20-4-v3-20-6-valve-stem001.jpg',
+            image: '/images/products/tyre%20valves\/v3-20-4-v3-20-6-valve-stem001.webp',
             images: [
-              '/images/products/tyre%20valves\/v3-20-4-v3-20-6-valve-stem001.jpg',
-              '/images/products/tyre%20valves\/v3-20-4-v3-20-6-valve-stem002.jpg',
-              '/images/products/tyre%20valves\/v3-20-4-v3-20-6-valve-stem003.jpg',
+              '/images/products/tyre%20valves\/v3-20-4-v3-20-6-valve-stem001.webp',
+              '/images/products/tyre%20valves\/v3-20-4-v3-20-6-valve-stem002.webp',
+              '/images/products/tyre%20valves\/v3-20-4-v3-20-6-valve-stem003.webp',
             ],
             tagline: 'High-pressure brass metal valve stems for truck and bus. V3-20-4: 27° bend, \u03a616 x 90 mm; V3-20-6: 27° bend, \u03a616 x 115 mm.',
             desc: 'V3-20-4 and V3-20-6 high-pressure brass metal tyre valve stems for truck and bus applications.',
@@ -494,10 +494,10 @@ export const categories = [
           {
             slug: 'v3-series-brass-tyre-valve',
             name: 'V3 Series Brass Tyre Valve',
-            image: '/images/products/tyre%20valves\/v3-series-brass-tyre-valve001.jpg',
+            image: '/images/products/tyre%20valves\/v3-series-brass-tyre-valve001.webp',
             images: [
-              '/images/products/tyre%20valves\/v3-series-brass-tyre-valve001.jpg',
-              '/images/products/tyre%20valves\/v3-series-brass-tyre-valve002.jpg',
+              '/images/products/tyre%20valves\/v3-series-brass-tyre-valve001.webp',
+              '/images/products/tyre%20valves\/v3-series-brass-tyre-valve002.webp',
             ],
             tagline: 'V3 series brass metal tyre valves for truck and bus. High-pressure heavy-duty construction.',
             desc: 'V3 series high-pressure brass metal tyre valves for trucks, buses and heavy-duty commercial vehicles.',
@@ -511,7 +511,7 @@ export const categories = [
           {
             slug: '58ms-valve',
             name: '58MS Valve',
-            image: '/images/products/tyre%20valves\/58ms-valve.jpg',
+            image: '/images/products/tyre%20valves\/58ms-valve.webp',
             tagline: 'High-pressure brass metal bus valve, ref V3-22-1/58MS. 45° bend, \u03a616 x 58 mm.',
             desc: 'V3-22-1/58MS high-pressure brass metal tyre valve for truck and bus applications.',
             keywords: '58MS valve, V3-22-1, V3-22-1/58MS, truck valve, bus valve, brass metal tyre valve',
@@ -524,13 +524,13 @@ export const categories = [
           {
             slug: 'tr570-tr571-tr572-tr573-tr574-valve-stem',
             name: 'TR570 TR571 TR572 TR573 TR574 Valve Stem',
-            image: '/images/products/tyre%20valves\/tr570-tr571-tr572-tr573-tr574-valve-stem001.jpg',
+            image: '/images/products/tyre%20valves\/tr570-tr571-tr572-tr573-tr574-valve-stem001.webp',
             images: [
-              '/images/products/tyre%20valves\/tr570-tr571-tr572-tr573-tr574-valve-stem001.jpg',
-              '/images/products/tyre%20valves\/tr570-tr571-tr572-tr573-tr574-valve-stem002.jpg',
-              '/images/products/tyre%20valves\/tr570-tr571-tr572-tr573-tr574-valve-stem003.jpg',
-              '/images/products/tyre%20valves\/tr570-tr571-tr572-tr573-tr574-valve-stem004.jpg',
-              '/images/products/tyre%20valves\/tr570-tr571-tr572-tr573-tr574-valve-stem005.jpg',
+              '/images/products/tyre%20valves\/tr570-tr571-tr572-tr573-tr574-valve-stem001.webp',
+              '/images/products/tyre%20valves\/tr570-tr571-tr572-tr573-tr574-valve-stem002.webp',
+              '/images/products/tyre%20valves\/tr570-tr571-tr572-tr573-tr574-valve-stem003.webp',
+              '/images/products/tyre%20valves\/tr570-tr571-tr572-tr573-tr574-valve-stem004.webp',
+              '/images/products/tyre%20valves\/tr570-tr571-tr572-tr573-tr574-valve-stem005.webp',
             ],
             tagline: 'Brass metal valve stems, ref V3.21.4-V3.21.6, \u03a619 x 84-100 mm. TR570-TR574 family for truck and bus.',
             desc: 'TR570-TR574 brass metal tyre valve stems (ref V3.21.4-V3.21.6) for truck and bus applications.',
@@ -548,11 +548,11 @@ export const categories = [
           {
             slug: 'tr571c-tr572c-tr573c-valve-stem',
             name: 'TR571C TR572C TR573C Valve Stem',
-            image: '/images/products/tyre%20valves\/tr571C-tr572C-tr573C-valve-stem001.jpg',
+            image: '/images/products/tyre%20valves\/tr571C-tr572C-tr573C-valve-stem001.webp',
             images: [
-              '/images/products/tyre%20valves\/tr571C-tr572C-tr573C-valve-stem001.jpg',
-              '/images/products/tyre%20valves\/tr571C-tr572C-tr573C-valve-stem002.jpg',
-              '/images/products/tyre%20valves\/tr571C-tr572C-tr573C-valve-stem003.jpg',
+              '/images/products/tyre%20valves\/tr571C-tr572C-tr573C-valve-stem001.webp',
+              '/images/products/tyre%20valves\/tr571C-tr572C-tr573C-valve-stem002.webp',
+              '/images/products/tyre%20valves\/tr571C-tr572C-tr573C-valve-stem003.webp',
             ],
             tagline: 'Brass metal valve stems with 90° or 27° bend. TR571C/572C/573C for truck and bus.',
             desc: 'TR571C/TR572C/TR573C brass metal tyre valve stems for truck and bus applications.',
@@ -569,7 +569,7 @@ export const categories = [
           {
             slug: 'ms70-7-valve-stem',
             name: 'MS70-7 Valve Stem',
-            image: '/images/products/tyre%20valves\/ms70-7-valve-stem.jpg',
+            image: '/images/products/tyre%20valves\/ms70-7-valve-stem.webp',
             tagline: 'Ni-plated brass metal valve stem for heavy-duty commercial applications. 7° bend, 40.5 + 29.5 mm.',
             desc: 'MS70-7 (70MS-7) Ni-plated brass metal tyre valve stem for heavy-duty commercial applications.',
             keywords: 'MS70-7 valve stem, 70MS-7, truck valve, bus valve, Ni-plated brass tyre valve',
@@ -600,10 +600,10 @@ export const categories = [
           {
             slug: 'tr618a-tubeless-valve',
             name: 'TR618A Tubeless Valve',
-            image: '/images/products/tyre%20valves/tubeless-valve-tr618-tr618a-tire-valve-stem001.jpg',
+            image: '/images/products/tyre%20valves/tubeless-valve-tr618-tr618a-tire-valve-stem001.webp',
             images: [
-              '/images/products/tyre%20valves/tubeless-valve-tr618-tr618a-tire-valve-stem001.jpg',
-              '/images/products/tyre%20valves/tubeless-valve-tr618-tr618a-tire-valve-stem002.jpg',
+              '/images/products/tyre%20valves/tubeless-valve-tr618-tr618a-tire-valve-stem001.webp',
+              '/images/products/tyre%20valves/tubeless-valve-tr618-tr618a-tire-valve-stem002.webp',
             ],
             tagline: 'Tubeless tyre valve stem for agricultural and off-road vehicles. REF V5.01.1, 5/8" hole, 90 PSI.',
             desc: 'TR618A tubeless tyre valve stem designed for agricultural machinery and off-road vehicles.',
@@ -617,10 +617,10 @@ export const categories = [
           {
             slug: 'trj650-02-03-large-bore-swivel-valve',
             name: 'TRJ650-02 TRJ650-03 Large Bore Swivel Valve',
-            image: '/images/products/tyre%20valves/Valves-Trj650-03-Trj651-03-Large-Bore-Swivel-Type001.jpg',
+            image: '/images/products/tyre%20valves/Valves-Trj650-03-Trj651-03-Large-Bore-Swivel-Type001.webp',
             images: [
-              '/images/products/tyre%20valves/Valves-Trj650-03-Trj651-03-Large-Bore-Swivel-Type001.jpg',
-              '/images/products/tyre%20valves/Valves-Trj650-03-Trj651-03-Large-Bore-Swivel-Type002.jpg',
+              '/images/products/tyre%20valves/Valves-Trj650-03-Trj651-03-Large-Bore-Swivel-Type001.webp',
+              '/images/products/tyre%20valves/Valves-Trj650-03-Trj651-03-Large-Bore-Swivel-Type002.webp',
             ],
             tagline: 'Large bore swivel type valve for tractors. REF V5.04.1, rim hole 20.5 mm, core 7002, cap VC6.',
             desc: 'TRJ650-02/TRJ650-03 large bore swivel type valve for tractors and agricultural machinery.',
@@ -634,7 +634,7 @@ export const categories = [
           {
             slug: 'tr1175a-tire-valve',
             name: 'TR1175A Tire Valve',
-            image: '/images/products/tyre%20valves/Tire-Valve-TR1175A.jpg',
+            image: '/images/products/tyre%20valves/Tire-Valve-TR1175A.webp',
             tagline: 'Heavy-duty tire valve for off-road and agricultural vehicles. 86° bend, rim hole 20.5 mm.',
             desc: 'TR1175A heavy-duty tire valve designed for off-road vehicles and agricultural machinery.',
             keywords: 'TR1175A, TR1175A tire valve, off-road valve, agricultural valve, tractor tire valve',
@@ -720,11 +720,11 @@ export const categories = [
           {
             slug: 'tire-repair-strings-rubber-strips',
             name: 'Tire Repair Strings Rubber Strips',
-            image: '/images/products/tyre%20string/tire-repair-%20strings-rubber-strips-001.jpg',
+            image: '/images/products/tyre%20string/tire-repair-%20strings-rubber-strips-001.webp',
             images: [
-              '/images/products/tyre%20string/tire-repair-%20strings-rubber-strips-001.jpg',
-              '/images/products/tyre%20string/tire-repair-strings-rubber-strips002.jpg',
-              '/images/products/tyre%20string/tire-repair-strings-rubber-strips003.jpg',
+              '/images/products/tyre%20string/tire-repair-%20strings-rubber-strips-001.webp',
+              '/images/products/tyre%20string/tire-repair-strings-rubber-strips002.webp',
+              '/images/products/tyre%20string/tire-repair-strings-rubber-strips003.webp',
             ],
             tagline: 'Rubber repair strings for quick emergency puncture repairs. CTR-TS series, 100-200 mm lengths.',
             desc: 'Tire repair strings (rubber strips) in the CTR-TS series for quick emergency puncture repairs on tubeless tyres.',
@@ -746,11 +746,11 @@ export const categories = [
           {
             slug: 'tire-seal-string',
             name: 'Tire Seal String',
-            image: '/images/products/tyre%20string/tire-seal-string001.jpg',
+            image: '/images/products/tyre%20string/tire-seal-string001.webp',
             images: [
-              '/images/products/tyre%20string/tire-seal-string001.jpg',
-              '/images/products/tyre%20string/tire-seal-string002.jpg',
-              '/images/products/tyre%20string/tire-seal-string003.jpg',
+              '/images/products/tyre%20string/tire-seal-string001.webp',
+              '/images/products/tyre%20string/tire-seal-string002.webp',
+              '/images/products/tyre%20string/tire-seal-string003.webp',
             ],
             tagline: 'Rubber seal string for quick emergency puncture repairs. CTR-TS series, 100-200 mm lengths.',
             desc: 'Tire seal string in the CTR-TS series for quick emergency puncture repairs on tubeless tyres.',
@@ -809,10 +809,10 @@ export const categories = [
           {
             slug: 'all-purpose-repair-patch-round',
             name: 'All-Purpose Repair Patch (Universal Round Cold Patch)',
-            image: '/images/products/TYRE%20PATCH/All-Purpose-Repair-Patch-universal-round--cold-patch-tyre-patch-repair001.jpg',
+            image: '/images/products/TYRE%20PATCH/All-Purpose-Repair-Patch-universal-round--cold-patch-tyre-patch-repair001.webp',
             images: [
-              '/images/products/TYRE%20PATCH/All-Purpose-Repair-Patch-universal-round--cold-patch-tyre-patch-repair001.jpg',
-              '/images/products/TYRE%20PATCH/All-Purpose-Repair-Patch-universal-round--cold-patch-tyre-patch-repair002.jpg',
+              '/images/products/TYRE%20PATCH/All-Purpose-Repair-Patch-universal-round--cold-patch-tyre-patch-repair001.webp',
+              '/images/products/TYRE%20PATCH/All-Purpose-Repair-Patch-universal-round--cold-patch-tyre-patch-repair002.webp',
             ],
             tagline: 'Universal round cold patches for all-purpose tyre repair. CTR-TPU-10# to CTR-TPU-116#.',
             desc: 'All-purpose universal round cold patches for tyre repair. CTR-TPU-10# to CTR-TPU-116# series.',
@@ -833,7 +833,7 @@ export const categories = [
           {
             slug: 'radial-tire-patch-sidewall',
             name: 'Radial Tire Patch - Sidewall',
-            image: '/images/products/TYRE%20PATCH/radial-tire-patch-sidewall001.jpg',
+            image: '/images/products/TYRE%20PATCH/radial-tire-patch-sidewall001.webp',
             tagline: 'Heavy-duty radial sidewall patches. CTR-TPU-10 HD to CTR-TPU-14 HD, 65 x 80 to 105 x 165 mm.',
             desc: 'Heavy-duty radial tire sidewall patches. CTR-TPU-10 HD to CTR-TPU-14 HD series.',
             keywords: 'radial tire patch, sidewall patch, heavy duty patch, CTR-TPU HD',
@@ -850,11 +850,11 @@ export const categories = [
           {
             slug: 'black-radial-tire-patch',
             name: 'Black Radial Tire Patch',
-            image: '/images/products/TYRE%20PATCH/black-radial-tire-patch001.jpg',
+            image: '/images/products/TYRE%20PATCH/black-radial-tire-patch001.webp',
             images: [
-              '/images/products/TYRE%20PATCH/black-radial-tire-patch001.jpg',
-              '/images/products/TYRE%20PATCH/black-radial-tire-patch002.jpg',
-              '/images/products/TYRE%20PATCH/black-radial-tire-patch003.jpg',
+              '/images/products/TYRE%20PATCH/black-radial-tire-patch001.webp',
+              '/images/products/TYRE%20PATCH/black-radial-tire-patch002.webp',
+              '/images/products/TYRE%20PATCH/black-radial-tire-patch003.webp',
             ],
             tagline: 'Black radial patches in round, oval and square shapes. CTR-TPU-20# to CTR-TPU-42#.',
             desc: 'Black radial tire patches in round, oval and square shapes. CTR-TPU-20# to CTR-TPU-42# series.',
@@ -881,10 +881,10 @@ export const categories = [
           {
             slug: 'bias-ply-tire-patch',
             name: 'Bias Ply Tire Patch',
-            image: '/images/products/TYRE%20PATCH/bias-ply-tire-patch001.jpg',
+            image: '/images/products/TYRE%20PATCH/bias-ply-tire-patch001.webp',
             images: [
-              '/images/products/TYRE%20PATCH/bias-ply-tire-patch001.jpg',
-              '/images/products/TYRE%20PATCH/bias-ply-tire-patch002.jpg',
+              '/images/products/TYRE%20PATCH/bias-ply-tire-patch001.webp',
+              '/images/products/TYRE%20PATCH/bias-ply-tire-patch002.webp',
             ],
             tagline: 'Bias ply tire patches. CTR-TPU-01 to CTR-TPU-05, 75 to 165 mm.',
             desc: 'Bias ply tire patches for traditional bias-ply tyres. CTR-TPU-01 to CTR-TPU-05 series.',
@@ -921,7 +921,7 @@ export const categories = [
           {
             slug: 'eu-style-radial-tire-patch',
             name: 'Radial Tire Patch (EU-Style)',
-            image: '/images/products/TYRE%20PATCH/radial-tire-patch.jpg',
+            image: '/images/products/TYRE%20PATCH/radial-tire-patch.webp',
             tagline: 'EU-style radial tire patches with 1-4 ply. CTR-TPE-08# to CTR-TPE-46#.',
             desc: 'EU-style radial tire patches. CTR-TPE-08# to CTR-TPE-46# series, 1-4 ply.',
             keywords: 'radial tire patch, EU style patch, radial patch, tyre patch, CTR-TPE, ply',
@@ -949,7 +949,7 @@ export const categories = [
           {
             slug: 'eu-style-bias-ply-tire-patch',
             name: 'EU-Style Bias Ply Tire Patch',
-            image: '/images/products/TYRE%20PATCH/EU-Style-bias-ply-tire-patch.jpg',
+            image: '/images/products/TYRE%20PATCH/EU-Style-bias-ply-tire-patch.webp',
             tagline: 'EU-style bias ply tire patches with 1-6 ply. CTR-TPE-01 to CTR-TPE-08.',
             desc: 'EU-style bias ply tire patches. CTR-TPE-01 to CTR-TPE-08, 1-6 ply.',
             keywords: 'EU bias ply patch, bias ply tire patch, tyre patch, CTR-TPE, ply',
@@ -971,10 +971,10 @@ export const categories = [
           {
             slug: 'all-purpose-repair-patch-round-patch',
             name: 'All-Purpose Repair Patch - Round Patch',
-            image: '/images/products/TYRE%20PATCH/All-Purpose-Repair-Patch-Round-Patch.jpg',
+            image: '/images/products/TYRE%20PATCH/All-Purpose-Repair-Patch-Round-Patch.webp',
             images: [
-              '/images/products/TYRE%20PATCH/All-Purpose-Repair-Patch-Round-Patch.jpg',
-              '/images/products/TYRE%20PATCH/All-Purpose-Repair-Patch-Round-Patch002.jpg',
+              '/images/products/TYRE%20PATCH/All-Purpose-Repair-Patch-Round-Patch.webp',
+              '/images/products/TYRE%20PATCH/All-Purpose-Repair-Patch-Round-Patch002.webp',
             ],
             tagline: 'All-purpose round and square repair patches. CTR-TPE-32 to CTR-TPE-08S.',
             desc: 'All-purpose repair patches in round and square shapes. CTR-TPE-32 to CTR-TPE-08S series.',
@@ -999,11 +999,11 @@ export const categories = [
           {
             slug: 'inner-tire-patch-sunflower-oval',
             name: 'Inner Tire Patch / Sunflower / Inner Oval Patch',
-            image: '/images/products/TYRE%20PATCH/Inner-Tire-Patch-Sunflower-Tire-Patch-Inner-Oval-Tire-Patch.jpg',
+            image: '/images/products/TYRE%20PATCH/Inner-Tire-Patch-Sunflower-Tire-Patch-Inner-Oval-Tire-Patch.webp',
             images: [
-              '/images/products/TYRE%20PATCH/Inner-Tire-Patch-Sunflower-Tire-Patch-Inner-Oval-Tire-Patch.jpg',
-              '/images/products/TYRE%20PATCH/Inner-Tire-Patch-Sunflower-Tire-Patch-Inner-Oval-Tire-Patch002.jpg',
-              '/images/products/TYRE%20PATCH/Inner-Tire-Patch-Sunflower-Tire-Patch-Inner-Oval-Tire-Patch003.jpg',
+              '/images/products/TYRE%20PATCH/Inner-Tire-Patch-Sunflower-Tire-Patch-Inner-Oval-Tire-Patch.webp',
+              '/images/products/TYRE%20PATCH/Inner-Tire-Patch-Sunflower-Tire-Patch-Inner-Oval-Tire-Patch002.webp',
+              '/images/products/TYRE%20PATCH/Inner-Tire-Patch-Sunflower-Tire-Patch-Inner-Oval-Tire-Patch003.webp',
             ],
             tagline: 'Inner tube repair patches: round, sunflower and inner oval shapes. CTR-TPE-00 to CTR-TPE-05OV.',
             desc: 'Inner tire patches in round, sunflower and inner oval shapes. CTR-TPE-00 to CTR-TPE-05OV series.',
@@ -1036,7 +1036,7 @@ export const categories = [
           {
             slug: 'bicycle-repair-patch',
             name: 'Bicycle Repair Patch',
-            image: '/images/products/TYRE%20PATCH/Bicycle-Repair-Patch.jpg',
+            image: '/images/products/TYRE%20PATCH/Bicycle-Repair-Patch.webp',
             tagline: 'Bicycle inner tube repair patches. CTR-TPE-24M and CTR-TPE-48M.',
             desc: 'Bicycle repair patches for inner tube repairs. CTR-TPE-24M and CTR-TPE-48M.',
             keywords: 'bicycle repair patch, bicycle tube patch, bike inner tube patch, CTR-TPE',
@@ -1089,10 +1089,10 @@ export const categories = [
           {
             slug: 'mushroom-tire-repair-patch-plug',
             name: 'Mushroom Tire Repair Patch Plug',
-            image: '/images/products/Mushroom%20Patch%20Plug/Mushroom-Tire-Repair-Patch-plug001.jpg',
+            image: '/images/products/Mushroom%20Patch%20Plug/Mushroom-Tire-Repair-Patch-plug001.webp',
             images: [
-              '/images/products/Mushroom%20Patch%20Plug/Mushroom-Tire-Repair-Patch-plug001.jpg',
-              '/images/products/Mushroom%20Patch%20Plug/Mushroom-Tire-Repair-Patch-plug002.jpg',
+              '/images/products/Mushroom%20Patch%20Plug/Mushroom-Tire-Repair-Patch-plug001.webp',
+              '/images/products/Mushroom%20Patch%20Plug/Mushroom-Tire-Repair-Patch-plug002.webp',
             ],
             tagline: 'Mushroom tire repair patch plugs. CTR-TPE-264D to CTR-TPE-1014D, 26 x 4 to 100 x 100 x 14 mm.',
             desc: 'Mushroom tire repair patch plugs for permanent combination plug and patch repairs. CTR-TPE-264D to CTR-TPE-1014D series.',
@@ -1117,10 +1117,10 @@ export const categories = [
           {
             slug: 'eu-style-mushroom-plug-with-plys',
             name: 'EU-Style Mushroom Plug with PLYs',
-            image: '/images/products/Mushroom%20Patch%20Plug/EU-Style-Mushroom-Plug-with-PLYS001.jpg',
+            image: '/images/products/Mushroom%20Patch%20Plug/EU-Style-Mushroom-Plug-with-PLYS001.webp',
             images: [
-              '/images/products/Mushroom%20Patch%20Plug/EU-Style-Mushroom-Plug-with-PLYS001.jpg',
-              '/images/products/Mushroom%20Patch%20Plug/EU-Style-Mushroom-Plug-with-PLYS002.jpg',
+              '/images/products/Mushroom%20Patch%20Plug/EU-Style-Mushroom-Plug-with-PLYS001.webp',
+              '/images/products/Mushroom%20Patch%20Plug/EU-Style-Mushroom-Plug-with-PLYS002.webp',
             ],
             tagline: 'EU-style mushroom plugs with 1-2 PLY options. CTR-TPE-HP-9D to CTR-TPE-HP-14D.',
             desc: 'EU-style mushroom plugs with PLY options for permanent tyre repairs. CTR-TPE-HP-9D to CTR-TPE-HP-14D series.',

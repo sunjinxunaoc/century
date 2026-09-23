@@ -2,12 +2,15 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
-import { articles, findArticle } from '../data/articles'
+import { articles, findArticle, hubTags, tagSlug } from '../data/articles'
 import BreadcrumbNav from '../components/BreadcrumbNav.vue'
 import CtaSection from '../components/CtaSection.vue'
 
 const route = useRoute()
 const article = computed(() => findArticle(route.params.slug))
+
+const hubTagSlugs = new Set(hubTags.map(t => t.slug))
+const isHubTag = (name) => hubTagSlugs.has(tagSlug(name))
 
 const crumbs = computed(() => [
   { label: 'Home', path: '/' },
@@ -28,8 +31,8 @@ useHead(() => {
         description: article.value.desc,
         image: article.value.img ? `https://centurymanufacture.com${article.value.img}` : undefined,
         datePublished: article.value.dateISO,
-        author: { '@type': 'Organization', name: 'Hebei Century Auto Parts Co., Ltd.' },
-        publisher: { '@type': 'Organization', name: 'Hebei Century Auto Parts Co., Ltd.' },
+        author: { '@id': 'https://centurymanufacture.com/#organization' },
+        publisher: { '@id': 'https://centurymanufacture.com/#organization' },
         mainEntityOfPage: url,
       }),
     })
@@ -69,7 +72,10 @@ useHead(() => {
       { property: 'og:description', content: article.value?.desc || '' },
       { property: 'og:type', content: 'article' },
       { property: 'og:url', content: url },
+      { property: 'og:image', content: `https://centurymanufacture.com${article.value?.img || '/images/factory.webp'}` },
+      { property: 'og:image:alt', content: article.value?.imgAlt || 'Century Auto Parts' },
       { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:image', content: `https://centurymanufacture.com${article.value?.img || '/images/factory.webp'}` },
     ],
     link: [
       { rel: 'canonical', href: url },
@@ -83,7 +89,7 @@ useHead(() => {
   <div v-if="article">
     <section class="relative bg-gradient-to-br from-[#1A1A2E] via-[#2B2B45] to-[#4A2B1A] text-white">
       <div class="container-app py-20 md:py-24 text-center">
-        <h1 class="text-3xl md:text-4xl font-bold mb-4">News</h1>
+        <div class="text-3xl md:text-4xl font-bold mb-4">News</div>
         <p class="text-gray-300">Industry insights & product guides from Century Auto Parts</p>
       </div>
     </section>
@@ -94,14 +100,17 @@ useHead(() => {
 
         <header class="mb-8">
           <div class="flex flex-wrap gap-1.5 mb-3">
-            <span v-for="t in article.tags" :key="t" class="tag">{{ t }}</span>
+            <template v-for="t in article.tags" :key="t">
+              <RouterLink v-if="isHubTag(t)" :to="`/news/tag/${tagSlug(t)}/`" class="tag hover:bg-orange-100 transition">{{ t }}</RouterLink>
+              <span v-else class="tag">{{ t }}</span>
+            </template>
           </div>
           <h1 class="text-3xl font-bold text-[#1A1A2E] leading-tight mb-4">{{ article.title }}</h1>
           <div class="text-sm text-gray-400">{{ article.date }} &middot; By Century Auto Parts</div>
         </header>
 
         <div class="rounded-lg overflow-hidden shadow-card mb-10">
-          <img :src="article.img" :alt="article.imgAlt" class="w-full aspect-[21/9] object-cover">
+          <img :src="article.img" :alt="article.imgAlt" width="1600" height="686" fetchpriority="high" decoding="async" class="w-full aspect-[21/9] object-cover">
         </div>
 
         <div class="article-content" v-html="article.content"></div>

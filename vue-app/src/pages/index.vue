@@ -78,7 +78,7 @@ const catImages = {
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div v-for="cat in categories" :key="cat.slug" class="card reveal flex flex-col">
             <div class="aspect-[4/3] overflow-hidden bg-gray-100">
-              <img :src="catImages[cat.slug]" :alt="cat.name" loading="lazy" class="w-full h-full object-cover">
+              <img :src="catImages[cat.slug]" :alt="cat.name" width="800" height="600" loading="lazy" decoding="async" class="w-full h-full object-cover">
             </div>
             <div class="p-5 flex flex-col flex-1">
               <h3 class="font-semibold text-[#1A1A2E] mb-2">{{ cat.name }}</h3>
@@ -86,6 +86,9 @@ const catImages = {
               <RouterLink :to="`/products/${cat.slug}/`" class="text-[#FF6B00] text-sm font-medium hover:underline">Explore Range &rarr;</RouterLink>
             </div>
           </div>
+        </div>
+        <div class="text-center mt-10">
+          <RouterLink to="/catalog/" class="btn btn-primary btn-large">Download Full Product Catalog</RouterLink>
         </div>
       </div>
     </section>

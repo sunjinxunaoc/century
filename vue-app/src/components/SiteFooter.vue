@@ -3,6 +3,7 @@ const quickLinks = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about/' },
   { label: 'Products', path: '/products/' },
+  { label: 'Catalog', path: '/catalog/' },
   { label: 'News', path: '/news/' },
   { label: 'Contact', path: '/contact/' },
 ]
@@ -28,7 +29,7 @@ const socials = [
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
           <div class="flex items-center gap-2.5 mb-4">
-            <img src="/ctr.svg" alt="Century Auto Parts" class="h-10 w-auto object-contain">
+            <img src="/ctr.svg" alt="Century Auto Parts" width="160" height="48" class="h-10 w-auto object-contain">
             <span class="text-lg font-bold tracking-wider text-white">CENTURY<span class="text-[#E8590C]">AUTO</span></span>
           </div>
           <p class="text-sm text-gray-400 leading-relaxed">Professional manufacturer of tire repair products since 2010. Trusted by 50+ countries worldwide.</p>

@@ -123,6 +123,21 @@
   .article-content tbody tr:nth-child(even) td {
     @apply bg-gray-50;
   }
+  .article-content figure {
+    @apply mb-6;
+  }
+  .article-content img {
+    @apply w-full rounded-lg border border-gray-200;
+  }
+  .article-content figcaption {
+    @apply mt-2 text-sm text-gray-400 text-center italic;
+  }
+  .article-content .sources {
+    @apply mt-8 pt-5 border-t border-gray-200 text-sm text-gray-500;
+  }
+  .article-content .sources li {
+    @apply mb-1.5;
+  }
 }
 
 @layer utilities {

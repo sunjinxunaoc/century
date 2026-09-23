@@ -59,7 +59,7 @@ onMounted(() => {
     <div class="container-app">
       <div class="flex items-center justify-between py-3.5">
         <RouterLink to="/" class="flex items-center gap-2.5">
-          <img src="/ctr.svg" alt="Century Auto Parts" class="h-10 w-auto object-contain">
+          <img src="/ctr.svg" alt="Century Auto Parts" width="160" height="48" class="h-10 w-auto object-contain">
           <span class="text-lg font-bold tracking-wider text-[#1A1A2E]">CENTURY<span class="text-[#E8590C]">AUTO</span></span>
         </RouterLink>
 

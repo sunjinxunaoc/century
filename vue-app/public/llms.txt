@@ -9,6 +9,7 @@ Email: info@centurymanufacture.com
 - Home: https://centurymanufacture.com/
 - About Us: https://centurymanufacture.com/about/
 - Products: https://centurymanufacture.com/products/
+- Catalog: https://centurymanufacture.com/catalog/
 - News: https://centurymanufacture.com/news/
 - Contact: https://centurymanufacture.com/contact/
 
@@ -127,6 +128,10 @@ Email: info@centurymanufacture.com
     - EU-Style Mushroom Plug with PLYs: https://centurymanufacture.com/products/mushroom-patch-plug/eu-style-mushroom-plug-with-plys/
 
 ## News & Guides
+- Adhesive (Stick-On) Wheel Weights: The Complete Wholesale Buying Guide: https://centurymanufacture.com/news/adhesive-stick-on-wheel-weights-guide/
+- Why Stick-On Wheel Weights Fall Off (And How to Prevent It): https://centurymanufacture.com/news/stick-on-wheel-weights-fall-off/
+- Wheel Weight Tape Guide: 3M, Norton, Blue & White Compared: https://centurymanufacture.com/news/wheel-weight-tape-comparison/
+- Adhesive Wheel Weight Sizes: Gram & OZ Chart for Buyers: https://centurymanufacture.com/news/adhesive-wheel-weight-sizes/
 - Wheel Weight Manufacturers: Global Guide for Buyers: https://centurymanufacture.com/news/wheel-weight-manufacturers/
 - How to Choose Wheel Balancing Weights: Fe vs Pb, Clip-On vs Adhesive: https://centurymanufacture.com/news/wheel-weight-guide/
 - Tyre Valve Types Explained: TR Series, Truck & Bus, Agricultural: https://centurymanufacture.com/news/tyre-valve-guide/
@@ -134,6 +139,12 @@ Email: info@centurymanufacture.com
 - Tyre Patch vs Plug vs Mushroom Patch Plug: Which to Use: https://centurymanufacture.com/news/tyre-patch-vs-plug/
 - How to Use a Tyre Seal String for Emergency Repair: https://centurymanufacture.com/news/seal-string-repair/
 - How to Order from Century Auto Parts: MOQ, Samples & Shipping: https://centurymanufacture.com/news/ordering-guide/
+
+## Topics
+- Wheel Weights (6 articles): https://centurymanufacture.com/news/tag/wheel-weights/
+- Industry Guide (4 articles): https://centurymanufacture.com/news/tag/industry-guide/
+- Product Guide (2 articles): https://centurymanufacture.com/news/tag/product-guide/
+- Repairs (2 articles): https://centurymanufacture.com/news/tag/repairs/
 
 ## Preferred Pronouns
 The company uses 'we' and 'our' when referring to itself.

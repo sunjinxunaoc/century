@@ -1,717 +1,1354 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://centurymanufacture.com/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://centurymanufacture.com/about/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://centurymanufacture.com/catalog/</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://centurymanufacture.com/news/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://centurymanufacture.com/contact/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Fe%2520Adhensive%2520Wheel%2520Weight%2520CTR-FE-01A.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Steel-Adhensive-Wheel-Weight-CTR-FE-02A.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/FE--Clip-On-wheel-balancing-weight-For-Alloy-Rims-CTR-FE-01C.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/fe-wheel-balancing-weights/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Fe%2520Adhensive%2520Wheel%2520Weight%2520CTR-FE-01A.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Steel-Adhensive-Wheel-Weight-CTR-FE-02A.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/FE--Clip-On-wheel-balancing-weight-For-Alloy-Rims-CTR-FE-01C.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/fe-adhesive-wheel-weight-ctr-fe-01a/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Fe%2520Adhensive%2520Wheel%2520Weight%2520CTR-FE-01A.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/steel-adhesive-wheel-weight-ctr-fe-02a/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Steel-Adhensive-Wheel-Weight-CTR-FE-02A.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/fe-clip-on-wheel-weight-alloy-rims-ctr-fe-01c/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/FE--Clip-On-wheel-balancing-weight-For-Alloy-Rims-CTR-FE-01C.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/fe-clip-on-wheel-weight-fn-series-car-rims-ctr-fe-02c/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Fe%2520clip%2520on%2520wheel%2520weight%2520for%2520FN%2520series%2520car%2520rims%2520CTR-FE-02C.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/fe-clip-on-wheel-weight-steel-rims-ctr-fe-03c/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Fe-clip-on-wheel-weight-for-Steel-rims-CTR-FE-03C.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/fe-clip-on-wheel-weight-alloy-rims-ctr-fe-04c/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Fe%2520clip%2520on%2520wheel%2520weight%2520for%2520Alloy%2520rims%2520CTR-FE-04C.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/lead-wheel-balancing-weights/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Pb-Adhensive-Wheel-Weight-CTR-PB-01A.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Lead-Adhensive-Wheel-Weight-CTR-PB-02A.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Pb--clip-on-balance-weight-for-steel-rims-CTR-PB-01C.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/pb-adhesive-wheel-weight-ctr-pb-01a/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Pb-Adhensive-Wheel-Weight-CTR-PB-01A.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/lead-adhesive-wheel-weight-ctr-pb-02a/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Lead-Adhensive-Wheel-Weight-CTR-PB-02A.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/pb-clip-on-wheel-weight-steel-rims-ctr-pb-01c/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Pb--clip-on-balance-weight-for-steel-rims-CTR-PB-01C.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/pb-clip-on-wheel-weight-alloy-rims-ctr-pb-02c/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Pb--clip-on-balance-weight-for-Alloy-rims-CTR-PB-02C.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/wheel-balancing-weights/pb-clip-on-wheel-weight-truck-ctr-pb-03c/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Wheel%20Balancing%20Weights/Pb-clip-on-wheel-weight-for-Truck-CTR-PB-03C.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr414-tyre-valve001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr413-tr414-valve-001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/passenger-car-light-truck-valves/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr414-tyre-valve001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr413-tr414-valve-001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/tr414-tyre-valve/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr414-tyre-valve001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr414-tyre-valve002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr414-tyre-valve001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/tyre-valve-stem-tr414-tr412-tr413-tr415/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/tr413-tr414-valve/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr413-tr414-valve-001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr413-tr414-valve-002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr413-tr414-valve-001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/tr412-tr413-tr415-tr414-tyre-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/Tr412-Tr413-Tr415-tr414-tire-valve-stem001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/Tr412-Tr413-Tr415-tr414-tire-valve-stem002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/Tr412-Tr413-Tr415-tr414-tire-valve-stem001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/tr414c-tyre-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr414c-tire-valve-stem.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/pvr70-pvr60-pvr50-pvr40-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/pvr70-pvr60-pvr50-pvr40-valve-stem001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/pvr70-pvr60-pvr50-pvr40-valve-stem002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/pvr70-pvr60-pvr50-pvr40-valve-stem001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/pvr70-pvr60-pvr50-pvr40-ventil/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/pvr70-pvr60-pvr50-pvr40-ventil001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/pvr70-pvr60-pvr50-pvr40-ventil002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/pvr70-pvr60-pvr50-pvr40-ventil001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/valvula-pvr40-pvr50-pvr60-pvr70/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/valvula-pvr40-pvr50-pvr60-pvr70002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/valvula-pvr40-pvr50-pvr60-pvr70001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/valvula-pvr40-pvr50-pvr60-pvr70002.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/truck-bus-valves/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/v3-20-4-v3-20-6-valve-stem001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/v3-series-brass-tyre-valve001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/58ms-valve.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/v3-20-4-v3-20-6-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/v3-20-4-v3-20-6-valve-stem001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/v3-20-4-v3-20-6-valve-stem002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/v3-20-4-v3-20-6-valve-stem003.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/v3-20-4-v3-20-6-valve-stem001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/v3-series-brass-tyre-valve/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/v3-series-brass-tyre-valve001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/v3-series-brass-tyre-valve002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/v3-series-brass-tyre-valve001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/58ms-valve/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/58ms-valve.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/tr570-tr571-tr572-tr573-tr574-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr570-tr571-tr572-tr573-tr574-valve-stem001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr570-tr571-tr572-tr573-tr574-valve-stem002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr570-tr571-tr572-tr573-tr574-valve-stem003.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr570-tr571-tr572-tr573-tr574-valve-stem004.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/tr571c-tr572c-tr573c-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr571C-tr572C-tr573C-valve-stem001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr571C-tr572C-tr573C-valve-stem002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr571C-tr572C-tr573C-valve-stem003.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tr571C-tr572C-tr573C-valve-stem001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/ms70-7-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/ms70-7-valve-stem.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/agricultural-tractors-off-road-valves/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tubeless-valve-tr618-tr618a-tire-valve-stem001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/Valves-Trj650-03-Trj651-03-Large-Bore-Swivel-Type001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/Tire-Valve-TR1175A.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/tr618a-tubeless-valve/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tubeless-valve-tr618-tr618a-tire-valve-stem001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tubeless-valve-tr618-tr618a-tire-valve-stem002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/tubeless-valve-tr618-tr618a-tire-valve-stem001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/trj650-02-03-large-bore-swivel-valve/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/Valves-Trj650-03-Trj651-03-Large-Bore-Swivel-Type001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/Valves-Trj650-03-Trj651-03-Large-Bore-Swivel-Type002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/Valves-Trj650-03-Trj651-03-Large-Bore-Swivel-Type001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-valves/tr1175a-tire-valve/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520valves/Tire-Valve-TR1175A.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-2.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-3.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-2.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-3.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-valve-stem/page/2/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-valve-stem/page/3/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-valve-stem/page/4/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-1-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-1.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-2-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-2.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-3-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-3.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-4-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-4.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-5-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-5.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-6-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-6.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-7-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-7.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-8-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-8.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-9-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-9.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-10-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-10.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-11-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-11.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-12-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-12.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-13-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-13.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-14-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-14.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-15-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-15.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-16-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-16.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-17-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-17.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-18-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-18.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-19-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-19.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-20-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-20.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-21-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-21.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-22-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-22.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-23-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-23.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-24-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-24.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-25-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-25.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-26-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-26.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-27-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-27.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-28-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-28.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-29-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-29.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-30-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-30.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-31-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-31.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-32-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-32.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-33-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-33.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-34-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-34.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-35-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-35.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-36-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-36.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-37-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-37.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-38-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-38.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-39-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-39.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-40-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-40.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-41-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-41.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-42-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-42.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-43-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-43.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-44-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-44.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-45-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-45.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-46-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-46.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tpms/tpms-47-valve-stem/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tpms/TPMS-47.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-seal-string/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520string/tire-repair-%2520strings-rubber-strips-001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520string/tire-seal-string001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-seal-string/tyre-repair-strings/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520string/tire-repair-%2520strings-rubber-strips-001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520string/tire-seal-string001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-seal-string/tire-repair-strings-rubber-strips/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520string/tire-repair-%2520strings-rubber-strips-001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520string/tire-repair-strings-rubber-strips002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520string/tire-repair-strings-rubber-strips003.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520string/tire-repair-%2520strings-rubber-strips-001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-seal-string/tire-seal-string/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520string/tire-seal-string001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520string/tire-seal-string002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520string/tire-seal-string003.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/tyre%2520string/tire-seal-string001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-patch/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/All-Purpose-Repair-Patch-universal-round--cold-patch-tyre-patch-repair001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/radial-tire-patch-sidewall001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/black-radial-tire-patch001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-patch/us-style-tire-patch/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/All-Purpose-Repair-Patch-universal-round--cold-patch-tyre-patch-repair001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/radial-tire-patch-sidewall001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/black-radial-tire-patch001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-patch/all-purpose-repair-patch-round/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/All-Purpose-Repair-Patch-universal-round--cold-patch-tyre-patch-repair001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/All-Purpose-Repair-Patch-universal-round--cold-patch-tyre-patch-repair002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/All-Purpose-Repair-Patch-universal-round--cold-patch-tyre-patch-repair001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-patch/radial-tire-patch-sidewall/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/radial-tire-patch-sidewall001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-patch/black-radial-tire-patch/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/black-radial-tire-patch001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/black-radial-tire-patch002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/black-radial-tire-patch003.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/black-radial-tire-patch001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-patch/bias-ply-tire-patch/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/bias-ply-tire-patch001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/bias-ply-tire-patch002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/bias-ply-tire-patch001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-patch/eu-style-tire-patch/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/radial-tire-patch.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/EU-Style-bias-ply-tire-patch.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/All-Purpose-Repair-Patch-Round-Patch.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-patch/eu-style-radial-tire-patch/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/radial-tire-patch.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-patch/eu-style-bias-ply-tire-patch/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/EU-Style-bias-ply-tire-patch.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-patch/all-purpose-repair-patch-round-patch/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/All-Purpose-Repair-Patch-Round-Patch.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/All-Purpose-Repair-Patch-Round-Patch002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/All-Purpose-Repair-Patch-Round-Patch.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-patch/inner-tire-patch-sunflower-oval/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/Inner-Tire-Patch-Sunflower-Tire-Patch-Inner-Oval-Tire-Patch.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/Inner-Tire-Patch-Sunflower-Tire-Patch-Inner-Oval-Tire-Patch002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/Inner-Tire-Patch-Sunflower-Tire-Patch-Inner-Oval-Tire-Patch003.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/Inner-Tire-Patch-Sunflower-Tire-Patch-Inner-Oval-Tire-Patch.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/tyre-patch/bicycle-repair-patch/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/TYRE%2520PATCH/Bicycle-Repair-Patch.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/mushroom-patch-plug/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Mushroom%2520Patch%2520Plug/Mushroom-Tire-Repair-Patch-plug001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Mushroom%2520Patch%2520Plug/EU-Style-Mushroom-Plug-with-PLYS001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/mushroom-patch-plug/mushroom-patch-plugs/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Mushroom%2520Patch%2520Plug/Mushroom-Tire-Repair-Patch-plug001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Mushroom%2520Patch%2520Plug/EU-Style-Mushroom-Plug-with-PLYS001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/mushroom-patch-plug/mushroom-tire-repair-patch-plug/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Mushroom%2520Patch%2520Plug/Mushroom-Tire-Repair-Patch-plug001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Mushroom%2520Patch%2520Plug/Mushroom-Tire-Repair-Patch-plug002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Mushroom%2520Patch%2520Plug/Mushroom-Tire-Repair-Patch-plug001.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/products/mushroom-patch-plug/eu-style-mushroom-plug-with-plys/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Mushroom%2520Patch%2520Plug/EU-Style-Mushroom-Plug-with-PLYS001.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Mushroom%2520Patch%2520Plug/EU-Style-Mushroom-Plug-with-PLYS002.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/products/Mushroom%2520Patch%2520Plug/EU-Style-Mushroom-Plug-with-PLYS001.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://centurymanufacture.com/news/adhesive-stick-on-wheel-weights-guide/</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/wheel-weight-manufacturers.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://centurymanufacture.com/news/stick-on-wheel-weights-fall-off/</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/adhesive-wheel-weights-fall-off.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://centurymanufacture.com/news/wheel-weight-tape-comparison/</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/wheel-weight-tape-guide.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://centurymanufacture.com/news/adhesive-wheel-weight-sizes/</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/adhesive-wheel-weight-sizes.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/news/wheel-weight-manufacturers/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/wheel-weight-manufacturers.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/news/wheel-weight-guide/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/wheel%20weight.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/news/tyre-valve-guide/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/tire%20valve.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/news/tpms-maintenance/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/TPMS%20Valve.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/news/tyre-patch-vs-plug/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/tire%20patch.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/news/seal-string-repair/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/tire%20seal.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://centurymanufacture.com/news/ordering-guide/</loc>
-        <lastmod>2026-09-19</lastmod>
+        <lastmod>2026-09-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://centurymanufacture.com/images/factory.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://centurymanufacture.com/news/tag/wheel-weights/</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://centurymanufacture.com/news/tag/industry-guide/</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://centurymanufacture.com/news/tag/product-guide/</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://centurymanufacture.com/news/tag/repairs/</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
     </url>
 </urlset>

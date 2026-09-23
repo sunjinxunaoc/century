@@ -2,7 +2,7 @@
 import PageHero from '../components/PageHero.vue'
 import ArticleCard from '../components/ArticleCard.vue'
 import CtaSection from '../components/CtaSection.vue'
-import { articles } from '../data/articles'
+import { articles, hubTags } from '../data/articles'
 import { useHead } from '@unhead/vue'
 
 useHead({
@@ -29,6 +29,14 @@ useHead({
         <div class="section-header">
           <h2 class="section-title">Latest Articles</h2>
           <p class="section-subtitle">Practical guides and industry knowledge for tyre repair professionals and importers</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-3 mb-10">
+          <RouterLink
+            v-for="t in hubTags"
+            :key="t.slug"
+            :to="`/news/tag/${t.slug}/`"
+            class="tag hover:bg-orange-100 transition"
+          >{{ t.name }} ({{ t.articles.length }})</RouterLink>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <ArticleCard v-for="a in articles" :key="a.slug" :article="a" />

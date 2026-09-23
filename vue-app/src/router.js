@@ -1,19 +1,21 @@
 import { categories, PAGE_SIZE } from './data/products'
-import { articles as articleData } from './data/articles'
+import { articles as articleData, hubTags } from './data/articles'
 
 export const routes = [
   { path: '/', name: 'home', component: () => import('./pages/index.vue') },
   { path: '/about', name: 'about', component: () => import('./pages/about.vue') },
   { path: '/contact', name: 'contact', component: () => import('./pages/contact.vue') },
   { path: '/products', name: 'products', component: () => import('./pages/products.vue') },
+  { path: '/catalog', name: 'catalog', component: () => import('./pages/catalog.vue') },
   { path: '/news', name: 'news', component: () => import('./pages/news.vue') },
+  { path: '/news/tag/:slug', name: 'tag', component: () => import('./pages/TagPage.vue') },
   { path: '/news/:slug', name: 'article', component: () => import('./pages/ArticlePage.vue') },
   { path: '/products/:category/:slug?', name: 'product', component: () => import('./pages/ProductPage.vue') },
   { path: '/products/:category/:slug/page/:page', name: 'product-page', component: () => import('./pages/ProductPage.vue') },
 ]
 
 export function buildStaticPaths() {
-  const paths = ['/', '/about', '/contact', '/products', '/news']
+  const paths = ['/', '/about', '/contact', '/products', '/catalog', '/news']
   for (const cat of categories) {
     paths.push(`/products/${cat.slug}`)
     for (const sub of cat.subcategories || []) {
@@ -30,6 +32,9 @@ export function buildStaticPaths() {
   }
   for (const a of articleData) {
     paths.push(`/news/${a.slug}`)
+  }
+  for (const t of hubTags) {
+    paths.push(`/news/tag/${t.slug}`)
   }
   return paths
 }

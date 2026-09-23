@@ -50,6 +50,12 @@ async function onSubmit() {
     })
     if (res.ok) {
       submitted.value = true
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', {
+          form: 'contact_inquiry',
+          product: form.product,
+        })
+      }
       form.name = ''
       form.email = ''
       form.mobile = ''

@@ -50,7 +50,7 @@ const values = [
           <div class="relative overflow-hidden rounded-lg shadow-card-lg">
             <div v-for="(s, i) in slides" :key="s.img" class="transition-opacity duration-500"
               :class="i === current ? 'opacity-100' : 'opacity-0 absolute inset-0'">
-              <img :src="s.img" :alt="s.caption" class="w-full aspect-[4/3] object-cover">
+              <img :src="s.img" :alt="s.caption" width="1200" height="900" decoding="async" class="w-full aspect-[4/3] object-cover">
               <div v-if="i === current" class="absolute bottom-0 inset-x-0 bg-black/50 text-white text-center py-2 text-sm">{{ s.caption }}</div>
             </div>
             <div class="absolute bottom-0 inset-x-0 flex justify-center gap-2 pb-2">
@@ -60,11 +60,12 @@ const values = [
           </div>
           <div>
             <h2 class="text-3xl font-bold text-[#1A1A2E] mb-5">Hebei Century Auto Parts Co., Ltd.</h2>
-            <div class="space-y-4 text-gray-600 leading-relaxed">
+            <div class="space-y-4 text-gray-600 leading-relaxed mb-8">
               <p>Since 2010, Century Auto Parts has been a professional manufacturer and exporter of tire repair products. Based in Cangzhou, Hebei Province, China, we focus on wheel balancing weights, tyre valves, TPMS, tyre seal strings, tyre patches and mushroom patch plugs.</p>
               <p>With more than a decade of experience, we serve distributors, wholesalers and OEM customers in over 50 countries across Asia, Europe, the Middle East, Africa and the Americas.</p>
               <p>We support OEM/ODM services with custom packaging and branding, backed by strict quality control and reliable after-sales support.</p>
             </div>
+            <RouterLink to="/catalog/" class="btn btn-primary btn-large">Download Our Catalog</RouterLink>
           </div>
         </div>
       </div>
