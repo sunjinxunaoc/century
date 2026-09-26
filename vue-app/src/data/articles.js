@@ -1056,6 +1056,300 @@ export const articles = [
       { slug: 'wheel-weight-guide', title: 'How to Choose Wheel Balancing Weights', date: 'August 8, 2026', desc: 'Fe vs Pb materials and clip-on vs adhesive types.', tag: 'Wheel Weights' },
     ],
   },
+  {
+    slug: 'us-vs-eu-style-tire-patch',
+    title: 'US-Style vs EU-Style Tyre Patches: Which Should You Use?',
+    date: 'September 24, 2026',
+    dateISO: '2026-09-24',
+    tags: ['Comparison', 'Tyre Patch'],
+    img: '/images/tire patch.webp',
+    imgAlt: 'US-style and EU-style tyre repair patches',
+    desc: 'US-style vs EU-style tyre patches compared: shape, ply rating, sizing, coverage and how to choose the right patch for radial or bias tyres.',
+    faq: [
+      { q: 'What is the difference between US-style and EU-style tyre patches?', a: 'US-style patches are usually round, square or oval general-purpose and radial patches marketed for the North American repair method, while EU-style patches are specified by PLY rating and sized as rectangles or ovals for the European repair method. Both bond to the inner liner; the difference is mainly how they are sized and specified.' },
+      { q: 'What does "ply" mean on an EU-style patch?', a: 'The ply number indicates how many reinforcing cord layers the patch contains. Higher ply patches are stronger and used for larger injuries, heavier vehicles and higher-speed ratings. A 1-ply patch is fine for small passenger car repairs; 4-6 ply patches are used for commercial and larger injuries.' },
+      { q: 'Which patch is better, US-style or EU-style?', a: 'Neither is universally better. Choose by repair standard and tyre type: match the patch to the market method your technicians are trained in, and pick radial or bias construction and a ply rating suited to the injury size.' },
+      { q: 'Can I repair both radial and bias-ply tyres?', a: 'Yes, but with the correct patch for each construction. Radial patches are reinforced for radial cord angles, while bias-ply patches suit older bias construction. Always match the patch to the tyre and never exceed the injury limits.' },
+    ],
+    content: `
+      <p>Tyre patches all do the same job - seal an injury from the inside of the tyre - but buyers quickly discover there are two broad families on the market: <strong>US-style</strong> and <strong>EU-style</strong> repair patches. They are not interchangeable part numbers, and understanding the difference helps distributors stock the right range for their region and workshops avoid failed repairs.</p>
+
+      <h2>US-style patches at a glance</h2>
+      <p>US-style patches are the general-purpose and radial patches widely used in North American repair practice. They are commonly supplied as round, square and oval shapes in a numbered series, with a separate heavy-duty sidewall range. Typical types include:</p>
+      <ul>
+        <li><strong>All-purpose round / square cold patches</strong> - the everyday repair patch in sizes from about 35 mm up to 75 mm.</li>
+        <li><strong>Black radial patches</strong> - reinforced for radial tyres, in round, oval and square shapes.</li>
+        <li><strong>Radial sidewall patches (HD)</strong> - heavy-duty patches for sidewall-area repairs.</li>
+        <li><strong>Bias-ply patches</strong> - for traditional bias construction.</li>
+      </ul>
+      <p>See the full <a href="/products/tyre-patch/us-style-tire-patch/">US-style tyre patch range</a>, including CTR-TPU-10# to CTR-TPU-116# all-purpose patches.</p>
+
+      <h2>EU-style patches at a glance</h2>
+      <p>EU-style patches follow the European repair method and are usually specified by <strong>PLY rating</strong> rather than by shape alone. They are generally rectangular or oval and are chosen to match the injury size and the vehicle category. Typical types include:</p>
+      <ul>
+        <li><strong>Radial patches (1-4 ply)</strong> - for passenger and light commercial radial tyres.</li>
+        <li><strong>Bias-ply patches (1-6 ply)</strong> - for bias tyres and larger injuries.</li>
+        <li><strong>All-purpose round and square patches</strong> - general workshop use.</li>
+        <li><strong>Inner / sunflower / oval patches</strong> - inner-tube and specific-profile repairs.</li>
+        <li><strong>Bicycle repair patches</strong> - compact patches for cycle tubes.</li>
+      </ul>
+      <p>See the full <a href="/products/tyre-patch/eu-style-tire-patch/">EU-style tyre patch range</a>, including CTR-TPE radial and bias series.</p>
+
+      <h2>Key differences compared</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>US-style patch</th><th>EU-style patch</th></tr></thead>
+          <tbody>
+            <tr><td>Sizing basis</td><td>Shape and nominal size (mm)</td><td>PLY rating plus dimensions</td></tr>
+            <tr><td>Common shapes</td><td>Round, square, oval</td><td>Rectangle, oval, round</td></tr>
+            <tr><td>Typical ply range</td><td>Specified by patch type</td><td>1 to 6 ply</td></tr>
+            <tr><td>Typical sizes</td><td>35 mm to 165 mm</td><td>48 x 68 mm up to 180 x 440 mm</td></tr>
+            <tr><td>Heavy-duty options</td><td>Sidewall HD range, truck patches</td><td>High-ply radial and bias patches</td></tr>
+            <tr><td>Best fit market</td><td>North America and general export</td><td>Europe and markets using the EU method</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>How to choose</h2>
+      <ol>
+        <li><strong>Match your repair standard.</strong> If your technicians are trained to the European method, stock EU-style patches with ply ratings; if they use the US method, stock US-style shapes and sizes.</li>
+        <li><strong>Match the tyre construction.</strong> Use radial patches for radial tyres and bias-ply patches for bias tyres.</li>
+        <li><strong>Size to the injury.</strong> The patch must overlap the injury with an adequate margin; do not stretch a small patch over a large hole.</li>
+        <li><strong>Choose the ply for the duty.</strong> Use higher-ply patches for larger injuries, heavier vehicles and higher speed ratings.</li>
+        <li><strong>Check the injury limits.</strong> Regardless of style, sidewall, shoulder and cord-damaged repairs are restricted - see when a tyre should not be repaired in our <a href="/news/tyre-patch-vs-plug/">patch vs plug guide</a>.</li>
+      </ol>
+
+      <h2>Stocking both ranges</h2>
+      <p>Many distributors stock both families so they can serve workshops using either method. A practical starter range includes all-purpose round patches in a few sizes, radial patches in 2-3 ply options, bias patches for older tyres, and a small sidewall HD selection. Combine these with <a href="/products/mushroom-patch-plug/">mushroom patch plugs</a> and <a href="/products/tyre-seal-string/">tyre seal strings</a> to complete a repair kit. For a factory-direct quote on mixed patch ranges, <a href="/contact/">contact our team</a>.</p>
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>BS AU 159 (UK standard for repair of car and light van tyres) and industry repair practice - repair method background</li>
+          <li>Product ranges, shapes and ply ratings: Century Auto Parts published product data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'tyre-patch-vs-plug', title: 'Tyre Patch vs Plug vs Mushroom', date: 'July 18, 2026', desc: 'Which repair method should you use?', tag: 'Repairs' },
+      { slug: 'mushroom-plug-vs-seal-string', title: 'Mushroom Patch Plug vs Seal String', date: 'September 24, 2026', desc: 'Permanent versus temporary puncture repair.', tag: 'Comparison' },
+    ],
+  },
+  {
+    slug: 'tr413-vs-tr414-tyre-valve',
+    title: 'TR413 vs TR414 Tyre Valves: Differences, Sizes & Fitment',
+    date: 'September 24, 2026',
+    dateISO: '2026-09-24',
+    tags: ['Comparison', 'Tyre Valves'],
+    img: '/images/tire valve.webp',
+    imgAlt: 'TR413 and TR414 rubber tyre valves',
+    desc: 'TR413 vs TR414 tyre valves compared: rim hole, effective length and fitment, plus how the whole TR412-TR415 family differs.',
+    faq: [
+      { q: 'What is the difference between a TR413 and a TR414 valve?', a: 'Both use the same 11.5 mm (.453") rim hole and differ only in effective length: the TR413 is 32 mm (1.25") and the TR414 is 38 mm (1.50"). Choose the length that positions the valve stem correctly for the specific wheel and any trim.' },
+      { q: 'Can I use a TR414 instead of a TR413?', a: 'Not always. Although both fit the same rim hole, the stem length differs, so a TR414 may be too long or a TR413 too short for a given wheel and hubcap. Always fit the length specified for the wheel.' },
+      { q: 'Which valve fits a 0.625 inch rim hole?', a: 'The TR415, which has a 15.8 mm (0.625") rim hole and a 32 mm effective length. It is used on wheels with the larger hole size rather than the standard 11.5 mm.' },
+      { q: 'What core and cap do TR413 and TR414 use?', a: 'Both use a standard 9002# valve core and a VC8 plastic cap, which are also available separately as consumables.' },
+    ],
+    content: `
+      <p>The <strong>TR413</strong> and <strong>TR414</strong> are two of the most common tyre valves in the world, and buyers often assume they are interchangeable. They are not. Both fit the same rim hole, but they differ in stem length, and fitting the wrong one causes problems ranging from a hard-to-reach valve to a leak against a hubcap. Here is the practical difference, and how the whole TR412-TR415 family fits together.</p>
+
+      <h2>The TR412-TR415 family at a glance</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Model</th><th>Ref. No.</th><th>Rim hole</th><th>Effective length</th><th>Core</th><th>Cap</th></tr></thead>
+          <tbody>
+            <tr><td>TR412</td><td>V2.03.6</td><td>11.5 mm / .453"</td><td>22 mm / 0.88"</td><td>9002#</td><td>VC8</td></tr>
+            <tr><td>TR413</td><td>V2.03.1</td><td>11.5 mm / .453"</td><td>32 mm / 1.25"</td><td>9002#</td><td>VC8</td></tr>
+            <tr><td>TR414</td><td>V2.03.2</td><td>11.5 mm / .453"</td><td>38 mm / 1.50"</td><td>9002#</td><td>VC8</td></tr>
+            <tr><td>TR415</td><td>V2.03.3</td><td>15.8 mm / 0.625"</td><td>32 mm / 1.25"</td><td>9002#</td><td>VC8</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Read the table carefully: the <strong>rim hole column is the hard constraint</strong>. TR412, TR413 and TR414 all use the standard 11.5 mm hole, so they are physically interchangeable at the rim - the only real difference is how far the stem sticks out. The TR415 is different: it uses a larger 15.8 mm hole.</p>
+
+      <h2>TR413 vs TR414: the length question</h2>
+      <p>The TR413 is <strong>32 mm</strong> and the TR414 is <strong>38 mm</strong> - a 6 mm difference that matters more than it sounds. Stem length is chosen so that the valve sits correctly for the wheel and for whatever is around it:</p>
+      <ul>
+        <li><strong>Steel wheels with no trim</strong> - a shorter TR412 or TR413 keeps the valve neat and out of the way.</li>
+        <li><strong>Alloy wheels and deeper wheel designs</strong> - a longer TR414 gives better access for the inflation chuck.</li>
+        <li><strong>Wheels with hubcaps or covers</strong> - the correct length keeps the valve reachable through the cover opening.</li>
+      </ul>
+      <p>Fitting a stem that is too short can make inflation awkward and cause the chuck to scratch the rim. Fitting one that is too long can let the valve foul a hubcap or protrude where it can be knocked. That is why a distributor should stock all three lengths rather than substituting one for another.</p>
+
+      <h2>When the hole size changes: TR415</h2>
+      <p>The TR415 exists because some wheels use a <strong>0.625" (15.8 mm)</strong> valve hole instead of the standard 0.453". A TR413 or TR414 will not seal a 15.8 mm hole, so the TR415 is the correct part for those fitments. Always confirm the rim hole before specifying a valve.</p>
+
+      <h2>High-pressure variant: the TR414C</h2>
+      <p>For light commercial and trailer applications where standard passenger valves are marginal, the <strong>TR414C</strong> is a high-pressure version of the TR414 rated to <strong>65 PSI</strong>. It shares the same 11.5 mm hole and 38 mm length but is built to hold higher pressures safely - see the <a href="/products/tyre-valves/passenger-car-light-truck-valves/">passenger car and light truck valve range</a>.</p>
+
+      <h2>How to specify the right valve</h2>
+      <ol>
+        <li><strong>Measure the rim hole.</strong> 11.5 mm for TR412/413/414, 15.8 mm for TR415.</li>
+        <li><strong>Choose the length.</strong> Match the stem length to the wheel and trim - do not substitute lengths.</li>
+        <li><strong>Confirm the pressure rating.</strong> Use a TR414C or a metal valve where pressures exceed the standard passenger rating.</li>
+        <li><strong>Specify the core and cap.</strong> Standardise on 9002# cores and VC8 caps, and stock them as consumables.</li>
+        <li><strong>Check TPMS fitment.</strong> Where a sensor is fitted, use a TPMS valve stem instead - see the <a href="/products/tpms/tpms-valve-stem/">TPMS valve stem range</a>.</li>
+      </ol>
+
+      <h2>Buying note for distributors</h2>
+      <p>Because TR412, TR413 and TR414 are so similar, the easiest way to lose a customer is to ship the wrong length. Stock the three lengths in depth, sell cores and caps separately, and keep a smaller quantity of TR415 for the larger-hole fitments. For the full reference see our <a href="/news/tyre-valve-guide/">tyre valve types guide</a> or browse the <a href="/products/tyre-valves/">tyre valves range</a>.</p>
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>ETRTO rim hole and valve fitment reference values</li>
+          <li>Dimensional specifications and pressure ratings: Century Auto Parts published product data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'tyre-valve-guide', title: 'Tyre Valve Types Explained', date: 'August 1, 2026', desc: 'TR series, truck & bus and agricultural valves.', tag: 'Tyre Valves' },
+      { slug: 'tpms-maintenance', title: 'TPMS Valve Maintenance', date: 'July 25, 2026', desc: 'How to extend the life of your TPMS sensors.', tag: 'TPMS' },
+    ],
+  },
+  {
+    slug: 'fe-vs-pb-wheel-weights',
+    title: 'Fe (Steel) vs Pb (Lead) Wheel Weights: Which Should You Buy?',
+    date: 'September 24, 2026',
+    dateISO: '2026-09-24',
+    tags: ['Comparison', 'Wheel Weights'],
+    img: '/images/wheel weight.webp',
+    imgAlt: 'Fe steel and Pb lead wheel balancing weights',
+    desc: 'Fe (steel) vs Pb (lead) wheel weights compared: density, strip size, compliance, cost and damping, and which material to stock for your market.',
+    faq: [
+      { q: 'Are Fe wheel weights as good as lead?', a: 'For balancing performance, yes. A steel weight of the correct mass corrects the same imbalance as the equivalent lead weight. The main difference is physical size: because lead is denser, a lead strip is smaller for the same mass. Steel is also lead-free and accepted in nearly every market.' },
+      { q: 'Are lead wheel weights banned?', a: 'Lead wheel weights are restricted or banned in the EU, the UK, Canada and several US states, and the US EPA runs a voluntary lead-free initiative. That is why steel, zinc and adhesive weights dominate export demand. Always confirm the rules in your market before ordering Pb.' },
+      { q: 'Why are lead wheel weights smaller than steel?', a: 'Lead has a density of about 11.3 g/cm3 versus roughly 7.8 g/cm3 for steel. For the same mass, lead takes up less volume, so a lead strip is physically smaller. This can matter in tight spaces, but steel is the safer compliance choice.' },
+      { q: 'Which material should I stock?', a: 'Steel (Fe) is the safe default for most markets because it is lead-free and widely accepted. Zinc suits premium and harsh-climate ranges, while lead should be stocked only for markets where it remains permitted and only if your customers specifically request it.' },
+    ],
+    content: `
+      <p>When you specify wheel balancing weights, one of the first decisions is material: <strong>Fe (steel)</strong> or <strong>Pb (lead)</strong>. Both correct imbalance equally well, but they differ in physical size, compliance, cost and where they can legally be sold. This comparison sets out the trade-offs so you can stock the right range for your market.</p>
+
+      <h2>The core difference: density</h2>
+      <p>The materials do the same job but weigh differently for their volume, and that shapes everything else:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Fe (steel)</th><th>Pb (lead)</th></tr></thead>
+          <tbody>
+            <tr><td>Density</td><td>About 7.8 g/cm&sup3;</td><td>About 11.3 g/cm&sup3;</td></tr>
+            <tr><td>Size for the same mass</td><td>Larger</td><td>Smaller</td></tr>
+            <tr><td>Compliance</td><td>Lead-free; accepted worldwide</td><td>Restricted or banned in several markets</td></tr>
+            <tr><td>Corrosion protection</td><td>Zinc plated, epoxy or black coated</td><td>Coated, but lead is inherently soft</td></tr>
+            <tr><td>Relative unit cost</td><td>Lower and stable</td><td>Higher and subject to regulation risk</td></tr>
+            <tr><td>Typical adhesive strip</td><td>140 x 19 x 3.8 mm</td><td>105 x 18 x 4 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Because lead is denser, a <strong>105 mm lead strip carries a similar mass to a 140 mm steel strip</strong>. That compactness was historically lead's main advantage - it fits neatly into tight wheel barrels - but it comes with a compliance problem.</p>
+
+      <h2>Compliance: the deciding factor</h2>
+      <p>Under <strong>EU Directive 2000/53/EC</strong> on end-of-life vehicles, materials and components must not contain lead except where listed as an exemption, and lead in balance weights is addressed within that framework. In practice, lead wheel weights are restricted or banned across the EU, the UK, Canada and several US states, and the US EPA runs a voluntary lead-free initiative. The result is that steel, zinc and adhesive weights now dominate export demand.</p>
+      <p><strong>Practical rule:</strong> treat steel and zinc as the safe default and stock lead only for markets where it remains permitted and where customers specifically ask for it. Always confirm the current rules before committing to a lead order - see our <a href="/news/adhesive-stick-on-wheel-weights-guide/">adhesive wheel weights buying guide</a> for more compliance detail.</p>
+
+      <h2>Performance: is there a real difference?</h2>
+      <p>For correcting imbalance, <strong>no</strong> - a correctly specified weight of the right mass balances the wheel regardless of material. Claims about "better damping" for lead refer to its density and softness, which historically made it forgiving in tight spaces, but they do not change the balancing result. Steel weights with a good coating perform just as well in service.</p>
+
+      <h2>Cost and supply</h2>
+      <ul>
+        <li><strong>Steel</strong> - lower, more stable unit cost, with abundant supply and no regulation risk.</li>
+        <li><strong>Zinc</strong> - priced above steel but offers premium corrosion resistance for harsh climates.</li>
+        <li><strong>Lead</strong> - often higher cost per unit and exposed to regulatory risk, which can disrupt supply.</li>
+      </ul>
+
+      <h2>How to choose</h2>
+      <ol>
+        <li><strong>Check legality first.</strong> If lead is restricted in your market, stock steel or zinc only.</li>
+        <li><strong>Default to steel.</strong> Fe is the cost-effective, lead-free standard for most applications.</li>
+        <li><strong>Upgrade to zinc</strong> for harsh weather, road salt or premium/oE-oriented ranges.</li>
+        <li><strong>Use lead only where permitted</strong> and where customers request the smaller size for specific wheels.</li>
+        <li><strong>Match the type to the wheel.</strong> Adhesive for alloy rims, clip-on for steel - see our <a href="/news/wheel-weight-guide/">wheel weight guide</a>.</li>
+      </ol>
+      <p>We manufacture <a href="/products/wheel-balancing-weights/fe-wheel-balancing-weights/">Fe wheel balancing weights</a> and <a href="/products/wheel-balancing-weights/lead-wheel-balancing-weights/">Pb weights</a> in gram and OZ series from 5 g to 500 g. Browse the full <a href="/products/wheel-balancing-weights/">wheel balancing weights range</a> or <a href="/contact/">contact our team</a> for a quote.</p>
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Directive 2000/53/EC on end-of-life vehicles, Official Journal L 269, 21.10.2000 - <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32000L0053" rel="nofollow noopener" target="_blank">eur-lex.europa.eu</a></li>
+          <li>US EPA National Lead-Free Wheel Weight Initiative - voluntary programme background</li>
+          <li>Material densities and product specifications: Century Auto Parts published product data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'wheel-weight-guide', title: 'How to Choose Wheel Balancing Weights', date: 'August 8, 2026', desc: 'Fe vs Pb materials and clip-on vs adhesive types.', tag: 'Wheel Weights' },
+      { slug: 'adhesive-stick-on-wheel-weights-guide', title: 'Adhesive Wheel Weights: Wholesale Buying Guide', date: 'September 20, 2026', desc: 'Materials, tapes, sizes and supplier checks.', tag: 'Industry Guide' },
+    ],
+  },
+  {
+    slug: 'mushroom-plug-vs-seal-string',
+    title: 'Mushroom Patch Plug vs Seal String: Which Repair Is Best?',
+    date: 'September 24, 2026',
+    dateISO: '2026-09-24',
+    tags: ['Comparison', 'Repairs'],
+    img: '/images/mushroom patch plug.webp',
+    imgAlt: 'Mushroom patch plug and tyre seal string',
+    desc: 'Mushroom patch plug vs seal string compared: permanent versus temporary repair, when to use each, and how to combine them safely.',
+    faq: [
+      { q: 'Is a mushroom patch plug better than a seal string?', a: 'They serve different purposes. A seal string is a temporary, get-you-home repair; a mushroom patch plug is a permanent repair that seals the puncture and bonds to the inner liner. For a lasting, roadworthy repair the mushroom plug is the better choice.' },
+      { q: 'Can a mushroom patch plug be fitted from outside the tyre?', a: 'No. A mushroom patch plug is fitted from inside: the stem is pulled through the puncture and the patch is bonded to the inner liner. The tyre must be demounted to install it correctly.' },
+      { q: 'When should I use a seal string instead?', a: 'Use a seal string for a quick roadside repair so the vehicle can reach a workshop safely. It is temporary and must be followed by an internal patch or mushroom plug, or the tyre replaced, once at the workshop.' },
+      { q: 'Can a punctured tyre be repaired permanently at all?', a: 'Only if the injury is within the repairable area (tread, not sidewall or shoulder) and the cords are not cut or exposed. If those conditions are not met, the tyre must be replaced regardless of the repair product.' },
+    ],
+    content: `
+      <p>Two products dominate puncture repair, and they are often confused: the <strong>seal string</strong> and the <strong>mushroom patch plug</strong>. One is a fast temporary fix; the other is a permanent repair. Knowing which to use - and how to combine them - is the difference between a safe repair and an unsafe one.</p>
+
+      <h2>The fundamental difference</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Seal string</th><th>Mushroom patch plug</th></tr></thead>
+          <tbody>
+            <tr><td>Repair type</td><td>Temporary</td><td>Permanent</td></tr>
+            <tr><td>Fitted from</td><td>Outside the tyre</td><td>Inside the tyre</td></tr>
+            <tr><td>Seals</td><td>The puncture channel only</td><td>The channel and the inner liner</td></tr>
+            <tr><td>Bonds to liner</td><td>No</td><td>Yes (vulcanised)</td></tr>
+            <tr><td>Typical time</td><td>A few minutes at the roadside</td><td>Workshop job, tyre demounted</td></tr>
+            <tr><td>Best for</td><td>Getting to a workshop</td><td>A lasting, roadworthy repair</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>How a seal string works</h2>
+      <p>A seal string is a rubber strip pushed through the puncture from outside with a rasp and insertion tool. It fills the hole and creates an immediate seal, which is exactly what you want at the roadside. But it does not bond to the inner liner, so air and moisture can eventually work past it, and it does nothing to reinforce the damaged area from inside.</p>
+      <p>Use it for: small tread-area punctures, to reach a workshop safely, and as a spare-kit item. Full instructions are in our <a href="/news/seal-string-repair/">seal string repair guide</a>.</p>
+
+      <h2>How a mushroom patch plug works</h2>
+      <p>A mushroom patch plug combines a stem and a patch in one piece. The stem is pulled through the puncture from inside so it fills the hole, while the round patch is bonded to the inner liner around the injury. It seals the puncture and reinforces the area in a single action, which is why it is regarded as the most reliable permanent repair for passenger car and light truck tyres.</p>
+      <p>Use it for: permanent repairs of repairable tread punctures. See the <a href="/products/mushroom-patch-plug/">mushroom patch plug range</a>.</p>
+
+      <h2>Combining the two: the real-world workflow</h2>
+      <ol>
+        <li><strong>At the roadside</strong>, insert a seal string to stop the leak and get the vehicle to a workshop.</li>
+        <li><strong>At the workshop</strong>, demount the tyre and inspect the injury. If it is repairable, remove the string if necessary and fit a <strong>mushroom patch plug</strong> (or a radial patch) from the inside.</li>
+        <li><strong>If the injury is not repairable</strong> - sidewall, shoulder, exposed cords or too large - replace the tyre.</li>
+      </ol>
+      <p>The seal string is the bridge to a permanent repair; it is never the final answer.</p>
+
+      <h2>When a tyre cannot be repaired</h2>
+      <ul>
+        <li>Damage in the <strong>sidewall or shoulder</strong>.</li>
+        <li>Injuries where the <strong>cords are cut, exposed or separated</strong>.</li>
+        <li>Punctures <strong>larger than the product is rated for</strong>.</li>
+        <li>Tyres <strong>run flat and overheated</strong>, or with internal damage.</li>
+        <li>Multiple or overlapping repairs.</li>
+      </ul>
+
+      <h2>Which should you stock?</h2>
+      <p>Distributors and workshops should stock both: <strong>seal strings</strong> as a high-turnover roadside consumable and <strong>mushroom patch plugs</strong> as the permanent repair product. Pair them with <a href="/products/tyre-patch/">tyre patches</a> for repairable injuries that do not need a plug, and see our <a href="/news/tyre-patch-vs-plug/">patch vs plug guide</a> for the full decision tree. For a mixed repair-kit quote, <a href="/contact/">contact our team</a>.</p>
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>BS AU 159 (UK standard for the repair of car and light van tyres) - temporary versus permanent repair guidance</li>
+          <li>Product specifications and repair ranges: Century Auto Parts published product data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'seal-string-repair', title: 'How to Use a Tyre Seal String', date: 'July 10, 2026', desc: 'Emergency puncture repair, step by step.', tag: 'Repairs' },
+      { slug: 'us-vs-eu-style-tire-patch', title: 'US-Style vs EU-Style Tyre Patches', date: 'September 24, 2026', desc: 'Which patch style should you use?', tag: 'Comparison' },
+    ],
+  },
 ]
 
 export function findArticle(slug) {
