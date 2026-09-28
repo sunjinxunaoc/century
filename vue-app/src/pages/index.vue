@@ -2,6 +2,7 @@
 import { categories } from '../data/products'
 import CtaSection from '../components/CtaSection.vue'
 import { useHead } from '@unhead/vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 useHead({
   title: 'Wheel Weight Manufacturer | Wheel Balancing Weights Factory - Century Auto Parts',
@@ -41,15 +42,62 @@ const catImages = {
   'tyre-patch': '/images/tire patch.webp',
   'mushroom-patch-plug': '/images/mushroom patch plug.webp',
 }
+
+// Banner carousel
+const banners = ref([
+  { src: '/images/hero-banner-warm-640.webp', alt: 'Clip-on and adhesive wheel balancing weights', href: '/products/wheel-balancing-weights/' },
+  { src: '/images/hero-banner-tyre-valve.webp', alt: 'Rubber and metal tyre valves', href: '/products/tyre-valves/' },
+])
+const idx = ref(0)
+let timer = null
+
+function next() {
+  idx.value = (idx.value + 1) % banners.value.length
+  restart()
+}
+function prev() {
+  idx.value = (idx.value - 1 + banners.value.length) % banners.value.length
+  restart()
+}
+function go(i) {
+  idx.value = i
+  restart()
+}
+function restart() {
+  if (timer) clearInterval(timer)
+  timer = setInterval(next, 5000)
+}
+onMounted(restart)
+onUnmounted(() => { if (timer) clearInterval(timer) })
 </script>
 
 <template>
   <div>
     <section class="relative bg-gradient-to-br from-[#1A1A2E] via-[#2B2B45] to-[#4A2B1A] text-white overflow-hidden">
-      <div class="container-app pt-36 pb-24 md:pt-44 md:pb-32 text-center">
-        <span class="inline-block bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6">&#9672; Since 2010 &nbsp;&middot;&nbsp; Exported to 50+ Countries</span>
-        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">Wheel Weight <span class="text-[#FF6B00]">Manufacturer</span> for Global Markets</h1>
-        <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">Wheel balancing weights, tyre valves, TPMS, patches and repair materials - manufactured and exported worldwide with factory-direct quality and pricing.</p>
+      <!-- bg carousel: wheel weight + tyre valve -->
+      <div class="absolute inset-0">
+        <RouterLink v-for="(b, i) in banners" :key="b.src" :to="b.href" :aria-label="`Shop ${b.alt}`" :tabindex="i === idx ? 0 : -1"
+             class="absolute inset-0 block transition-opacity duration-1000 ease-in-out"
+             :class="i === idx ? 'opacity-100' : 'opacity-0 pointer-events-none'">
+          <img :src="b.src" :alt="b.alt" class="w-full h-full object-cover object-center">
+        </RouterLink>
+      </div>
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-b from-[#1A1A2E]/60 via-[#2B2B45]/50 to-[#1A1A2E]/60"></div>
+
+      <!-- carousel nav -->
+      <button @click="prev" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center text-white transition" aria-label="Previous banner">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <button @click="next" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center text-white transition" aria-label="Next banner">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </button>
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        <button v-for="(b, i) in banners" :key="i" @click="go(i)" class="h-1.5 rounded-full transition-all" :class="i === idx ? 'w-8 bg-white' : 'w-4 bg-white/40 hover:bg-white/60'" :aria-label="`Go to slide ${i + 1}`"></button>
+      </div>
+      <div class="container-app relative z-10 pt-44 pb-28 md:pt-60 md:pb-44 text-center">
+        <span class="inline-block bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6 text-shadow-hero">&#9672; Since 2010 &nbsp;&middot;&nbsp; Exported to 50+ Countries</span>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-shadow-hero">Wheel Weight <span class="text-[#FF6B00]">Manufacturer</span> for Global Markets</h1>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8 text-shadow-hero">Wheel balancing weights, tyre valves, TPMS, patches and repair materials - manufactured and exported worldwide with factory-direct quality and pricing.</p>
         <div class="flex justify-center gap-4 flex-wrap">
           <RouterLink to="/products/" class="btn btn-primary btn-large">Explore Products</RouterLink>
           <RouterLink to="/contact/" class="btn btn-outline btn-large">Get a Quote</RouterLink>

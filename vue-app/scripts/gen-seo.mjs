@@ -1,6 +1,6 @@
 import { writeFileSync, mkdirSync } from 'node:fs'
 import { categories, PAGE_SIZE } from '../src/data/products.js'
-import { articles, hubTags } from '../src/data/articles.js'
+import { articles, hubTags, NEWS_PER_PAGE } from '../src/data/articles.js'
 
 const BASE = 'https://centurymanufacture.com'
 const lastmod = new Date().toISOString().slice(0, 10)
@@ -35,6 +35,9 @@ for (const cat of categories) {
 }
 for (const a of articles) {
   add(`/news/${a.slug}/`, '0.7', 'monthly', a.img ? [a.img] : [])
+}
+for (let page = 2; page <= Math.ceil(articles.length / NEWS_PER_PAGE); page++) {
+  add(`/news/page/${page}/`, '0.5', 'weekly')
 }
 for (const t of hubTags) {
   add(`/news/tag/${t.slug}/`, '0.5', 'weekly')

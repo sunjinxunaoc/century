@@ -9,6 +9,29 @@ import CtaSection from '../components/CtaSection.vue'
 const route = useRoute()
 const article = computed(() => findArticle(route.params.slug))
 
+// Product page each article's cover image links to
+const productLinks = {
+  'clip-on-wheel-weights-guide': '/products/wheel-balancing-weights/fe-wheel-balancing-weights/',
+  'clip-on-wheel-weight-profiles': '/products/wheel-balancing-weights/fe-wheel-balancing-weights/',
+  'clip-on-wheel-weights-durability': '/products/wheel-balancing-weights/fe-wheel-balancing-weights/',
+  'adhesive-stick-on-wheel-weights-guide': '/products/wheel-balancing-weights/',
+  'stick-on-wheel-weights-fall-off': '/products/wheel-balancing-weights/',
+  'wheel-weight-tape-comparison': '/products/wheel-balancing-weights/',
+  'adhesive-wheel-weight-sizes': '/products/wheel-balancing-weights/',
+  'wheel-weight-manufacturers': '/products/wheel-balancing-weights/',
+  'wheel-weight-guide': '/products/wheel-balancing-weights/',
+  'tyre-valve-guide': '/products/tyre-valves/',
+  'tpms-maintenance': '/products/tpms/tpms-valve-stem/',
+  'tyre-patch-vs-plug': '/products/tyre-patch/',
+  'seal-string-repair': '/products/tyre-seal-string/',
+  'ordering-guide': '/products/',
+  'us-vs-eu-style-tire-patch': '/products/tyre-patch/',
+  'tr413-vs-tr414-tyre-valve': '/products/tyre-valves/passenger-car-light-truck-valves/',
+  'fe-vs-pb-wheel-weights': '/products/wheel-balancing-weights/',
+  'mushroom-plug-vs-seal-string': '/products/mushroom-patch-plug/',
+}
+const coverLink = computed(() => productLinks[route.params.slug] || null)
+
 const hubTagSlugs = new Set(hubTags.map(t => t.slug))
 const isHubTag = (name) => hubTagSlugs.has(tagSlug(name))
 
@@ -110,7 +133,11 @@ useHead(() => {
         </header>
 
         <div class="rounded-lg overflow-hidden shadow-card mb-10">
-          <img :src="article.img" :alt="article.imgAlt" width="1600" height="686" fetchpriority="high" decoding="async" class="w-full aspect-[21/9] object-cover">
+          <RouterLink v-if="coverLink" :to="coverLink" :aria-label="`Shop ${article.imgAlt}`" class="block group relative">
+            <img :src="article.img" :alt="article.imgAlt" width="1600" height="686" fetchpriority="high" decoding="async" class="w-full aspect-[21/9] object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+            <span class="absolute bottom-4 right-4 inline-flex items-center gap-1.5 bg-[#FF6B00] text-white text-sm font-medium px-4 py-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">Shop Products &rarr;</span>
+          </RouterLink>
+          <img v-else :src="article.img" :alt="article.imgAlt" width="1600" height="686" fetchpriority="high" decoding="async" class="w-full aspect-[21/9] object-cover">
         </div>
 
         <div class="article-content" v-html="article.content"></div>

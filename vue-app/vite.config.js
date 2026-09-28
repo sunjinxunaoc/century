@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { categories, PAGE_SIZE } from './src/data/products'
-import { articles, hubTags } from './src/data/articles'
+import { articles, hubTags, NEWS_PER_PAGE } from './src/data/articles'
 
 function buildStaticPaths() {
   const paths = ['/catalog']
@@ -20,6 +20,9 @@ function buildStaticPaths() {
   }
   for (const a of articles) {
     paths.push(`/news/${a.slug}`)
+  }
+  for (let p = 2; p <= Math.ceil(articles.length / NEWS_PER_PAGE); p++) {
+    paths.push(`/news/page/${p}`)
   }
   for (const t of hubTags) {
     paths.push(`/news/tag/${t.slug}`)

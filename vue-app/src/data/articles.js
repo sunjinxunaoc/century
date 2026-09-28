@@ -1,11 +1,216 @@
 export const articles = [
   {
+    slug: 'clip-on-wheel-weights-guide',
+    title: 'Clip-On Wheel Weights: The Complete Wholesale Buying Guide',
+    date: 'September 26, 2026',
+    dateISO: '2026-09-26',
+    tags: ['Industry Guide', 'Wheel Weights'],
+    img: '/images/articles/clip-on-wheel-weights-guide.webp',
+    imgAlt: 'Clip-on wheel balancing weights with hooked steel clips',
+    desc: 'Wholesale guide to clip-on wheel weights: materials, clip profiles, weight series, packing and the supplier checks that separate a real factory from a trader.',
+    faq: [
+      { q: 'What are clip-on wheel weights?', a: 'Clip-on wheel weights are balancing weights with a metal spring clip that grips the rim flange. They are the standard choice for steel wheels and are also made for some alloy and truck rim profiles.' },
+      { q: 'What materials are clip-on weights made from?', a: 'Fe (steel) is the lead-free standard and the most widely accepted. Zn (zinc) offers premium corrosion resistance for harsh climates, while Pb (lead) is restricted or banned in several markets.' },
+      { q: 'How do I choose the right clip profile?', a: 'Match the clip to the rim flange profile - for example FN for alloy rims and MC for steel rims. Supplying the wrong profile means the weight will not seat and can fly off in service.' },
+      { q: 'What weight range do clip-on weights come in?', a: 'Car clip-on weights typically run from 5 g to 60 g, while truck weights go up to 500 g. Both gram and OZ series are available for different markets.' },
+    ],
+    content: `
+      <p>Clip-on wheel weights are one of the highest-turnover items in any tyre workshop. They attach to the rim flange with a spring steel clip, which makes them fast to fit and secure under load - the reason they remain the default for steel wheels. This guide covers what to look for when buying clip-on weights in bulk.</p>
+
+      <h2>How clip-on weights work</h2>
+      <p>A clip-on weight is a cast or stamped mass attached to a steel clip. The clip grips the rolled edge (flange) of the wheel rim, so the weight sits on the rim rather than on the inner barrel. Because the clip must match the flange profile, clip-on weights are supplied in several profile families (see our <a href="/news/clip-on-wheel-weight-profiles/">clip profile guide</a>).</p>
+
+      <h2>Clip-on vs adhesive</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Clip-on</th><th>Adhesive (stick-on)</th></tr></thead>
+          <tbody>
+            <tr><td>Mounting position</td><td>Rim flange (edge)</td><td>Inner barrel of the rim</td></tr>
+            <tr><td>Best for</td><td>Steel wheels, some alloy and truck rims</td><td>Alloy and aluminum wheels</td></tr>
+            <tr><td>Weight range</td><td>5 g to 500 g</td><td>Mainly 5 g to 60 g</td></tr>
+            <tr><td>Installation</td><td>Needs the correct clip profile</td><td>Needs a clean, dry surface</td></tr>
+            <tr><td>Visibility</td><td>Visible on the rim edge</td><td>Hidden behind the wheel face</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The rule most workshops use: <strong>steel rims take clip-on weights, alloy rims take adhesive weights</strong>. Many distributors stock both - see our <a href="/news/adhesive-stick-on-wheel-weights-guide/">adhesive wheel weights guide</a> for the stick-on range.</p>
+
+      <h2>Materials: Fe, Zn and Pb</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Material</th><th>Density</th><th>Compliance</th><th>Typical positioning</th></tr></thead>
+          <tbody>
+            <tr><td>Fe (steel)</td><td>About 7.8 g/cm&sup3;</td><td>Lead-free; accepted worldwide</td><td>Standard range</td></tr>
+            <tr><td>Zn (zinc)</td><td>About 7.1 g/cm&sup3;</td><td>Lead-free; strong in Europe</td><td>Premium / harsh climates</td></tr>
+            <tr><td>Pb (lead)</td><td>About 11.3 g/cm&sup3;</td><td>Restricted or banned in some markets</td><td>Legacy markets only</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Check compliance before you order.</strong> Lead is restricted or phased out in the EU, the UK, Canada and several US states, so steel and zinc are the safe default. See our <a href="/news/fe-vs-pb-wheel-weights/">Fe vs Pb comparison</a> for the full detail.</p>
+
+      <h2>Weight series and packing</h2>
+      <p>Car clip-on weights are usually packed 100 pcs / 50 pcs per box, while truck weights are packed 50 pcs / 25 pcs. Retail-ready and private label packing are available for distributors.</p>
+
+      <h2>What to check before you buy</h2>
+      <ol>
+        <li><strong>Clip profile range</strong> - confirm the factory covers the profiles your market services.</li>
+        <li><strong>Coating quality</strong> - ask for salt-spray test data, and confirm the clip cavity is coated to prevent galvanic corrosion.</li>
+        <li><strong>Weight tolerance</strong> - request the tolerance band and a sample inspection report.</li>
+        <li><strong>Materials</strong> - choose Fe or Zn for lead-free markets.</li>
+        <li><strong>Packing</strong> - bulk or private label, in the box counts your customers expect.</li>
+      </ol>
+      <p>Build a complete range with both clip-on and <a href="/products/wheel-balancing-weights/">wheel balancing weights</a>, and see our <a href="/news/wheel-weight-guide/">guide to choosing wheel balancing weights</a>. To request a quote, <a href="/contact/">contact our team</a>.</p>
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Directive 2000/53/EC on end-of-life vehicles - lead restriction background for balance weights</li>
+          <li>Product materials, profiles and packing: Century Auto Parts published product data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'clip-on-wheel-weight-profiles', title: 'Clip-On Wheel Weight Profiles Explained', date: 'September 26, 2026', desc: 'FN, MC, EN and more - matching the clip to the rim.', tag: 'Product Guide' },
+      { slug: 'wheel-weight-guide', title: 'How to Choose Wheel Balancing Weights', date: 'August 8, 2026', desc: 'Fe vs Pb materials and clip-on vs adhesive types.', tag: 'Wheel Weights' },
+    ],
+  },
+  {
+    slug: 'clip-on-wheel-weight-profiles',
+    title: 'Clip-On Wheel Weight Profiles: FN, MC, EN & More Explained',
+    date: 'September 26, 2026',
+    dateISO: '2026-09-26',
+    tags: ['Product Guide', 'Wheel Weights'],
+    img: '/images/articles/clip-on-wheel-weight-profiles.webp',
+    imgAlt: 'Clip-on wheel weights showing different clip profiles',
+    desc: 'A practical guide to clip-on wheel weight profiles - FN, FNC, MC, AW and T-series - and how to match the clip to the rim flange for a secure fit.',
+    faq: [
+      { q: 'What does FN mean on a wheel weight clip?', a: 'FN is a clip profile widely used for alloy wheels. FNC is a related profile variant. The letters identify the shape of the clip, which must match the rim flange so the weight seats securely.' },
+      { q: 'What is the difference between MC and FN clips?', a: 'MC clips are designed for steel rims and FN clips for alloy rims. The clip geometry differs because steel and alloy flanges have different thicknesses and shapes.' },
+      { q: 'What happens if I use the wrong clip profile?', a: 'The weight will not seat correctly on the flange. It may be loose, damage the rim, or fly off at speed - which is why matching the profile to the wheel is essential.' },
+      { q: 'Are there heavy-duty clip profiles for trucks?', a: 'Yes. Truck weights use heavier T-series style clips built for commercial steel wheel flanges and much higher masses, up to 500 g.' },
+    ],
+    content: `
+      <p>Two clip-on weights that look similar can behave very differently, because the part that matters most is the <strong>clip profile</strong> - the shape of the spring steel clip that grips the rim. Fitting the wrong profile is one of the most common causes of weights coming loose. This guide explains the main profiles and how to match them.</p>
+
+      <h2>Why the profile matters</h2>
+      <p>Rim flanges are not all the same. A steel wheel has a different flange thickness and shape from an alloy wheel, and truck rims differ again. The clip is stamped and heat-treated to a specific profile so it grips one flange type correctly. A clip that is too loose will not hold; one that is too tight can crack or damage the rim edge.</p>
+
+      <h2>Common clip profiles</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Profile</th><th>Typical application</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>FN</td><td>Alloy rims</td><td>Very common clip-on profile for alloy wheels</td></tr>
+            <tr><td>FNC</td><td>Alloy rims</td><td>Related variant for specific flange shapes</td></tr>
+            <tr><td>MC</td><td>Steel rims</td><td>Standard steel-wheel clip</td></tr>
+            <tr><td>AW</td><td>Certain alloy rims</td><td>Profile for particular alloy flange designs</td></tr>
+            <tr><td>EN / EA</td><td>European and other rims</td><td>Market-specific profiles</td></tr>
+            <tr><td>T-series (heavy duty)</td><td>Truck and commercial steel wheels</td><td>Up to 500 g masses</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Exact naming varies between manufacturers, so the practical approach is to match the clip to the rim by testing on the actual wheel, or to order by the rim type you are servicing.</p>
+
+      <h2>How to match the profile to the wheel</h2>
+      <ol>
+        <li><strong>Identify the rim.</strong> Steel or alloy, and for commercial use, the truck rim type.</li>
+        <li><strong>Check the flange thickness and shape.</strong> This determines which clip geometry will grip properly.</li>
+        <li><strong>Test-fit a sample.</strong> Confirm the weight seats fully against the flange with no play.</li>
+        <li><strong>Stock a mix.</strong> Carry the profiles your customers actually service rather than a single type.</li>
+        <li><strong>Confirm coating.</strong> Fully coated clips resist corrosion and protect alloy rims from galvanic corrosion.</li>
+      </ol>
+
+      <h2>Choosing a supplier</h2>
+      <p>Because profile naming is inconsistent, buy from a factory that can match profiles to your market and provide samples. Ask which profiles they tool in-house and whether they can supply profile sets with your private label. For the full range context, see our <a href="/news/clip-on-wheel-weights-guide/">clip-on wheel weights buying guide</a> and the <a href="/products/wheel-balancing-weights/fe-wheel-balancing-weights/">Fe wheel balancing weights range</a>.</p>
+      <p>Poor coating on the clip is the other common failure - see our guide to <a href="/news/clip-on-wheel-weights-durability/">clip-on weight durability</a>. To discuss profiles and samples, <a href="/contact/">contact our team</a>.</p>
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Wheel weight clip profile terminology as used across the aftermarket - reference classification</li>
+          <li>Product profiles and applications: Century Auto Parts published product data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'clip-on-wheel-weights-guide', title: 'Clip-On Wheel Weights Buying Guide', date: 'September 26, 2026', desc: 'Materials, weight series, packing and supplier checks.', tag: 'Industry Guide' },
+      { slug: 'clip-on-wheel-weights-durability', title: 'Why Clip-On Wheel Weights Break or Corrode', date: 'September 26, 2026', desc: 'Causes of failure and how to prevent them.', tag: 'Maintenance' },
+    ],
+  },
+  {
+    slug: 'clip-on-wheel-weights-durability',
+    title: 'Why Clip-On Wheel Weights Break or Corrode (And How to Prevent It)',
+    date: 'September 26, 2026',
+    dateISO: '2026-09-26',
+    tags: ['Maintenance', 'Wheel Weights'],
+    img: '/images/articles/clip-on-wheel-weights-durability.webp',
+    imgAlt: 'Close-up of clip-on wheel weight coating and clip',
+    desc: 'Why clip-on wheel weights break or corrode - clip fatigue, coating quality and galvanic corrosion - and what buyers should specify to prevent failures.',
+    faq: [
+      { q: 'Why do clip-on wheel weights break?', a: 'The most common causes are over-bending the clip during fitting and poor clip heat treatment, which makes the steel brittle. Recycling a weight by re-bending the clip weakens it further.' },
+      { q: 'Why do clip-on weights corrode?', a: 'Incomplete coating is the main cause. If the clip cavity or the weight edges are left uncoated, moisture and road salt attack the steel. Galvanic corrosion can also occur where a bare steel clip contacts an alloy rim.' },
+      { q: 'How can I prevent clip-on weight failures?', a: 'Specify fully coated weights with a proper zinc or epoxy finish, ask for salt-spray test data, fit the correct clip profile, and never reuse a weight by re-bending its clip.' },
+      { q: 'What salt-spray test should a supplier provide?', a: 'Ask for salt-spray results (for example to ASTM B117) covering both the weight body and the clip, so you can confirm the coating protects the areas most exposed to moisture.' },
+    ],
+    content: `
+      <p>Clip-on wheel weights are simple parts, but they fail in two predictable ways: the clip <strong>breaks</strong>, or the weight <strong>corrodes</strong>. Both are usually traceable to a specific cause - and both can be avoided by specifying the right product and fitting it correctly.</p>
+
+      <h2>Why clips break</h2>
+      <ul>
+        <li><strong>Over-bending during fitting.</strong> Springing the clip too far to force it onto a flange stresses the steel and can crack it.</li>
+        <li><strong>Poor heat treatment.</strong> If the clip is not correctly tempered, the steel is brittle and snaps under load.</li>
+        <li><strong>Reusing weights.</strong> Re-bending a used clip to fit another rim weakens it and is a leading cause of roadside failures.</li>
+        <li><strong>Wrong profile.</strong> A mismatched clip forces the fitter to bend it excessively, which shortens its life.</li>
+      </ul>
+
+      <h2>Why weights corrode</h2>
+      <p>Corrosion starts where the coating is missing or thin. The two critical areas are the weight body and the <strong>clip cavity</strong> - the inside of the clip that is easy to leave uncoated, yet is the part most exposed to trapped moisture.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Failure</th><th>Cause</th><th>Prevention</th></tr></thead>
+          <tbody>
+            <tr><td>Rust on the weight face</td><td>Thin or damaged coating</td><td>Specify zinc-plated, epoxy or black coated weights</td></tr>
+            <tr><td>Rust inside the clip</td><td>Uncoated clip cavity</td><td>Require full coating including the clip cavity</td></tr>
+            <tr><td>White/grey deposits on alloy rims</td><td>Galvanic corrosion at a bare steel contact</td><td>Use fully coated clips; avoid bare metal contact</td></tr>
+            <tr><td>Clip cracking</td><td>Over-bending or brittle steel</td><td>Fit the correct profile; never reuse a bent weight</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Galvanic corrosion: the alloy rim problem</h2>
+      <p>When two different metals touch in the presence of moisture, the less noble one corrodes - a process called galvanic corrosion. A bare steel clip in contact with an alloy rim can leave deposits and pit the rim surface. The fix is simple: use weights whose clips are <strong>fully coated</strong>, including the cavity, so the metals never make direct electrical contact.</p>
+
+      <h2>How to prevent failures - buyer checklist</h2>
+      <ol>
+        <li><strong>Specify full coating</strong> - weight body and clip cavity.</li>
+        <li><strong>Ask for salt-spray data</strong> (e.g. ASTM B117) covering both parts.</li>
+        <li><strong>Request the clip heat-treatment specification</strong> to confirm it is not brittle.</li>
+        <li><strong>Match the profile</strong> to the rim - see our <a href="/news/clip-on-wheel-weight-profiles/">clip profile guide</a>.</li>
+        <li><strong>Train fitters not to reuse weights</strong> or over-bend clips.</li>
+        <li><strong>Store stock dry</strong> and rotate it so older stock is used first.</li>
+      </ol>
+
+      <h2>Specifying a durable weight</h2>
+      <p>A durable clip-on weight has a correctly tempered clip, a full protective coating and the right profile for the wheel. Compare suppliers on these points rather than on price alone - a cheap weight that corrodes or sheds in service costs far more in returns. See our <a href="/news/clip-on-wheel-weights-guide/">clip-on buying guide</a> and <a href="/news/wheel-weight-manufacturers/">global manufacturer guide</a> for supplier checks, or <a href="/contact/">contact our team</a> for a quote.</p>
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>ASTM B117 (salt spray testing) - test method referenced for coating evaluation</li>
+          <li>Galvanic corrosion principles for dissimilar metals in contact</li>
+          <li>Product coating and clip specifications: Century Auto Parts published product data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'clip-on-wheel-weight-profiles', title: 'Clip-On Wheel Weight Profiles Explained', date: 'September 26, 2026', desc: 'FN, MC, EN and more - matching the clip to the rim.', tag: 'Product Guide' },
+      { slug: 'wheel-weight-manufacturers', title: 'Wheel Weight Manufacturers: Global Guide', date: 'September 18, 2026', desc: 'The major manufacturers by region and how to vet a factory.', tag: 'Industry Guide' },
+    ],
+  },
+  {
     slug: 'adhesive-stick-on-wheel-weights-guide',
     title: 'Adhesive (Stick-On) Wheel Weights: The Complete Wholesale Buying Guide',
     date: 'September 20, 2026',
     dateISO: '2026-09-20',
     tags: ['Industry Guide', 'Wheel Weights'],
-    img: '/images/wheel-weight-manufacturers.webp',
+    img: '/images/articles/adhesive-stick-on-wheel-weights-guide.webp',
     imgAlt: 'Fe adhesive wheel weights with red 3M tape and a 50 g clip-on wheel weight',
     desc: 'Wholesale guide to adhesive (stick-on) wheel weights: Fe and Pb materials, 3M, Norton and generic tape options, sizes, packaging and supplier checks.',
     faq: [
@@ -21,7 +226,7 @@ export const articles = [
       <p>This guide covers what actually matters when buying them in bulk: materials, tape options, size ranges, packaging and the checks that separate a real manufacturer from a trading company.</p>
 
       <figure>
-        <img src="/images/products/Wheel%20Balancing%20Weights/Lead-Adhensive-Wheel-Weight-CTR-PB-02A.webp" alt="Pb adhesive wheel weight strip with blue tape backing" loading="lazy">
+        <a href="/products/wheel-balancing-weights/lead-wheel-balancing-weights/"><img src="/images/products/Wheel%20Balancing%20Weights/Lead-Adhensive-Wheel-Weight-CTR-PB-02A.webp" alt="Pb adhesive wheel weight strip with blue tape backing" loading="lazy"></a>
         <figcaption>Pb adhesive wheel weight strip - physically smaller than Fe for the same mass because lead is denser</figcaption>
       </figure>
 
@@ -86,7 +291,7 @@ export const articles = [
       <p>Buyers in the US and some export markets order in ounces, so most factories offer both gram and OZ series. For the full conversion chart, see our <a href="/news/adhesive-wheel-weight-sizes/">adhesive wheel weight sizes guide</a>.</p>
 
       <figure>
-        <img src="/images/products/Wheel%20Balancing%20Weights/Fe%20Adhensive%20Wheel%20Weight%20CTR-FE-01A.webp" alt="Fe adhesive wheel weight strip CTR-FE-01A with 5 g and 10 g segments" loading="lazy">
+        <a href="/products/wheel-balancing-weights/fe-wheel-balancing-weights/"><img src="/images/products/Wheel%20Balancing%20Weights/Fe%20Adhensive%20Wheel%20Weight%20CTR-FE-01A.webp" alt="Fe adhesive wheel weight strip CTR-FE-01A with 5 g and 10 g segments" loading="lazy"></a>
         <figcaption>CTR-FE-01A: 4 x 5 g + 4 x 10 g Fe adhesive strip, 140 x 19 x 3.8 mm</figcaption>
       </figure>
 
@@ -125,7 +330,7 @@ export const articles = [
     date: 'September 20, 2026',
     dateISO: '2026-09-20',
     tags: ['Industry Guide', 'Wheel Weights'],
-    img: '/images/adhesive-wheel-weights-fall-off.webp',
+    img: '/images/articles/stick-on-wheel-weights-fall-off.webp',
     imgAlt: 'Adhesive wheel weight strips with Norton blue tape and 3M red tape liners',
     desc: 'Why stick-on wheel weights fall off: surface contamination, temperature, tape choice and rim coatings - with a prevention checklist for distributors and workshops.',
     faq: [
@@ -140,7 +345,7 @@ export const articles = [
       <p>This article is written for distributors and workshops: what causes the failure, how to prevent it, and what to ask a manufacturer before you place an order.</p>
 
       <figure>
-        <img src="/images/adhesive-wheel-weights-fall-off.webp" alt="Adhesive wheel weight strips with Norton blue liner and 3M red liner tape" loading="lazy">
+        <a href="/products/wheel-balancing-weights/"><img src="/images/adhesive-wheel-weights-fall-off.webp" alt="Adhesive wheel weight strips with Norton blue liner and 3M red liner tape" loading="lazy"></a>
         <figcaption>The tape liner, not the weight, is usually what decides whether a stick-on weight stays on</figcaption>
       </figure>
 
@@ -206,7 +411,7 @@ export const articles = [
     date: 'September 20, 2026',
     dateISO: '2026-09-20',
     tags: ['Industry Guide', 'Wheel Weights'],
-    img: '/images/wheel-weight-tape-guide.webp',
+    img: '/images/articles/wheel-weight-tape-comparison.webp',
     imgAlt: 'Fe adhesive wheel weight strip with red 3M tape liner close up',
     desc: 'Compare 3M, Norton, blue and white adhesive tape for wheel weights: liner colours, typical positioning, climate suitability and what to specify when ordering.',
     faq: [
@@ -220,7 +425,7 @@ export const articles = [
       <p>Two quotations for <strong>adhesive wheel weights</strong> can differ by a wide margin even when the metal, size and packing look identical. The usual reason is the tape. Here is what the options actually are, and what each one is suited to.</p>
 
       <figure>
-        <img src="/images/wheel-weight-tape-guide.webp" alt="Close up of Fe adhesive wheel weight strip with red 3M tape liner" loading="lazy">
+        <a href="/products/wheel-balancing-weights/"><img src="/images/wheel-weight-tape-guide.webp" alt="Close up of Fe adhesive wheel weight strip with red 3M tape liner" loading="lazy"></a>
         <figcaption>Fe adhesive weight strip with a red 3M liner - one of four common tape options</figcaption>
       </figure>
 
@@ -290,7 +495,7 @@ export const articles = [
     date: 'September 20, 2026',
     dateISO: '2026-09-20',
     tags: ['Wheel Weights', 'Buying Guide'],
-    img: '/images/adhesive-wheel-weight-sizes.webp',
+    img: '/images/articles/adhesive-wheel-weight-sizes.webp',
     imgAlt: 'Fe 5 g and 10 g adhesive wheel weight strips with blue tape',
     desc: 'Adhesive wheel weight sizes explained: gram and OZ conversion chart, standard strip dimensions for Fe and Pb weights, and how to pick the right series.',
     faq: [
@@ -303,7 +508,7 @@ export const articles = [
       <p>Ordering <strong>adhesive wheel weights</strong> in the wrong size series is one of the most common and most avoidable purchasing mistakes. This page sets out the standard sizes, the gram to OZ conversion chart, and how the segments are used in practice.</p>
 
       <figure>
-        <img src="/images/adhesive-wheel-weight-sizes.webp" alt="Fe adhesive wheel weight strips with 5 g and 10 g segments" loading="lazy">
+        <a href="/products/wheel-balancing-weights/"><img src="/images/adhesive-wheel-weight-sizes.webp" alt="Fe adhesive wheel weight strips with 5 g and 10 g segments" loading="lazy"></a>
         <figcaption>Fe adhesive strips with alternating 5 g and 10 g segments - the most practical stock configuration</figcaption>
       </figure>
 
@@ -392,7 +597,7 @@ export const articles = [
       </div>
 
       <figure>
-        <img src="/images/products/Wheel%20Balancing%20Weights/Pb-Adhensive-Wheel-Weight-CTR-PB-01A.webp" alt="Pb adhesive wheel weight strip CTR-PB-01A with 5 g and 10 g segments" loading="lazy">
+        <a href="/products/wheel-balancing-weights/lead-wheel-balancing-weights/"><img src="/images/products/Wheel%20Balancing%20Weights/Pb-Adhensive-Wheel-Weight-CTR-PB-01A.webp" alt="Pb adhesive wheel weight strip CTR-PB-01A with 5 g and 10 g segments" loading="lazy"></a>
         <figcaption>CTR-PB-01A: 4 x 5 g + 4 x 10 g Pb adhesive strip, 105 x 18 x 4 mm</figcaption>
       </figure>
 
@@ -432,7 +637,7 @@ export const articles = [
     date: 'September 18, 2026',
     dateISO: '2026-09-18',
     tags: ['Industry Guide', 'Wheel Weights'],
-    img: '/images/wheel-weight-manufacturers.webp',
+    img: '/images/articles/wheel-weight-manufacturers.webp',
     imgAlt: 'Fe adhesive wheel weights with red tape and a 50 g clip-on wheel weight from a wheel weight manufacturer',
     desc: 'A practical global guide to wheel weight manufacturers: the major factories and brands by region, what materials and certifications they offer, and how to vet a supplier before placing a wholesale order.',
     faq: [
@@ -515,7 +720,7 @@ export const articles = [
     date: 'August 8, 2026',
     dateISO: '2026-08-08',
     tags: ['Product Guide', 'Wheel Weights'],
-    img: '/images/wheel weight.webp',
+    img: '/images/articles/wheel-weight-guide.webp',
     imgAlt: 'Wheel balancing weights - clip on and adhesive types',
     desc: 'A practical guide to selecting wheel balancing weights: Fe (steel), Zn (zinc) and Pb (lead) materials, clip-on vs adhesive types, and weight ranges.',
     content: `
@@ -598,7 +803,7 @@ export const articles = [
     date: 'August 1, 2026',
     dateISO: '2026-08-01',
     tags: ['Product Guide', 'Tyre Valves'],
-    img: '/images/tire valve.webp',
+    img: '/images/articles/tyre-valve-guide.webp',
     imgAlt: 'Rubber and metal tyre valves',
     desc: 'A practical tyre valve series reference: TR412-TR415 rubber valves, TR570-TR572 truck and bus valves, TR618A agricultural and PVR motorcycle valves.',
     content: `
@@ -721,7 +926,7 @@ export const articles = [
     date: 'July 25, 2026',
     dateISO: '2026-07-25',
     tags: ['Maintenance', 'TPMS'],
-    img: '/images/TPMS Valve.webp',
+    img: '/images/articles/tpms-maintenance.webp',
     imgAlt: 'TPMS valve sensor',
     desc: 'Practical TPMS maintenance tips: battery life, valve core care, avoiding sensor damage and choosing quality replacement parts.',
     content: `
@@ -807,7 +1012,7 @@ export const articles = [
     date: 'July 18, 2026',
     dateISO: '2026-07-18',
     tags: ['Repairs', 'Tyre Patch'],
-    img: '/images/tire patch.webp',
+    img: '/images/articles/tyre-patch-vs-plug.webp',
     imgAlt: 'Tyre patches and repair materials',
     desc: 'The difference between tyre patches, plugs and mushroom patch plugs, and how to store tyre repair products correctly for long-lasting, permanent repairs.',
     content: `
@@ -888,7 +1093,7 @@ export const articles = [
     date: 'July 10, 2026',
     dateISO: '2026-07-10',
     tags: ['Repairs', 'Tyre Seal String'],
-    img: '/images/tire seal.webp',
+    img: '/images/articles/seal-string-repair.webp',
     imgAlt: 'Tyre seal string for emergency puncture repair',
     desc: 'Step-by-step guide to emergency puncture repair with a tyre seal string on tubeless tyres, plus advice on when a permanent repair is required.',
     content: `
@@ -967,7 +1172,7 @@ export const articles = [
     date: 'July 2, 2026',
     dateISO: '2026-07-02',
     tags: ['Ordering', 'Trade'],
-    img: '/images/factory.webp',
+    img: '/images/articles/ordering-guide.webp',
     imgAlt: 'Century Auto Parts factory',
     desc: 'Everything importers need to know about ordering from Century Auto Parts: MOQ, samples, OEM/ODM, production and shipping times.',
     content: `
@@ -1062,7 +1267,7 @@ export const articles = [
     date: 'September 24, 2026',
     dateISO: '2026-09-24',
     tags: ['Comparison', 'Tyre Patch'],
-    img: '/images/tire patch.webp',
+    img: '/images/articles/us-vs-eu-style-tire-patch.webp',
     imgAlt: 'US-style and EU-style tyre repair patches',
     desc: 'US-style vs EU-style tyre patches compared: shape, ply rating, sizing, coverage and how to choose the right patch for radial or bias tyres.',
     faq: [
@@ -1140,7 +1345,7 @@ export const articles = [
     date: 'September 24, 2026',
     dateISO: '2026-09-24',
     tags: ['Comparison', 'Tyre Valves'],
-    img: '/images/tire valve.webp',
+    img: '/images/articles/tr413-vs-tr414-tyre-valve.webp',
     imgAlt: 'TR413 and TR414 rubber tyre valves',
     desc: 'TR413 vs TR414 tyre valves compared: rim hole, effective length and fitment, plus how the whole TR412-TR415 family differs.',
     faq: [
@@ -1211,7 +1416,7 @@ export const articles = [
     date: 'September 24, 2026',
     dateISO: '2026-09-24',
     tags: ['Comparison', 'Wheel Weights'],
-    img: '/images/wheel weight.webp',
+    img: '/images/articles/fe-vs-pb-wheel-weights.webp',
     imgAlt: 'Fe steel and Pb lead wheel balancing weights',
     desc: 'Fe (steel) vs Pb (lead) wheel weights compared: density, strip size, compliance, cost and damping, and which material to stock for your market.',
     faq: [
@@ -1283,7 +1488,7 @@ export const articles = [
     date: 'September 24, 2026',
     dateISO: '2026-09-24',
     tags: ['Comparison', 'Repairs'],
-    img: '/images/mushroom patch plug.webp',
+    img: '/images/articles/mushroom-plug-vs-seal-string.webp',
     imgAlt: 'Mushroom patch plug and tyre seal string',
     desc: 'Mushroom patch plug vs seal string compared: permanent versus temporary repair, when to use each, and how to combine them safely.',
     faq: [
@@ -1357,6 +1562,8 @@ export function findArticle(slug) {
 }
 
 export const MIN_TAG_ARTICLES = 2
+
+export const NEWS_PER_PAGE = 9
 
 export function tagSlug(name) {
   return String(name).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')

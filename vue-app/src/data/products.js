@@ -66,10 +66,12 @@ export const categories = [
   {
     slug: 'wheel-balancing-weights',
     name: 'Wheel Balancing Weights',
+    seoTitle: 'Wheel Balancing Weights | Clip-On & Adhesive (Stick-On) Weights',
+    keywords: 'wheel balancing weights, adhesive wheel weights, stick on wheel weights, clip on wheel weights, Fe wheel weights, lead wheel weights, wheel weight manufacturer',
     tagline: 'Precision-balanced clip-on & adhesive weights for every wheel type',
-    intro: 'Clip-on and adhesive wheel balancing weights in Fe (steel) and Pb (lead). Available in gram and OZ series from 5g up, with zinc plated, epoxy coated or black coated finishes.',
+    intro: 'Clip-on and adhesive (stick-on) wheel balancing weights in Fe (steel) and Pb (lead). Available in gram and OZ series from 5g up, with zinc plated, epoxy coated or black coated finishes.',
     highlights: [
-      'Clip-on and adhesive types for steel, alloy and aluminum rims',
+      'Clip-on and adhesive (stick-on) types for steel, alloy and aluminum rims',
       'Fe (steel) and Pb (lead) series with zinc plated, epoxy coated or black coated finishes',
       'Gram and OZ series from 5g up to 500g for truck wheels',
       'Self-adhesive backing with blue, white, Norton or 3M tape options',
@@ -77,6 +79,7 @@ export const categories = [
     ],
     faqs: [
       { q: 'What is the difference between clip-on and adhesive wheel weights?', a: 'Clip-on weights attach to the rim edge and suit steel rims and trucks, while adhesive weights stick to the inner barrel of alloy rims for a cleaner look and no rim contact damage.' },
+      { q: 'Are adhesive and stick-on wheel weights the same product?', a: 'Yes. Adhesive, stick-on and self-adhesive all describe the same item - a balancing weight with a pre-applied adhesive tape that mounts on the inner barrel of an alloy wheel.' },
       { q: 'What finishes are available?', a: 'Fe and Pb weights come zinc plated, epoxy coated or black coated, with blue, white, Norton or 3M adhesive tape for the adhesive range.' },
       { q: 'Can you supply custom sizes and packaging?', a: 'Yes. We offer gram and OZ series from 5g upward, including 500g truck weights, and custom packaging for wholesale and export orders.' },
     ],
@@ -84,7 +87,9 @@ export const categories = [
       {
         slug: 'fe-wheel-balancing-weights',
         name: 'Fe Wheel Balancing Weights',
-        desc: 'Six Fe models in adhesive and clip-on types: CTR-FE-01A/02A, CTR-FE-01C to CTR-FE-04C.',
+        seoTitle: 'Fe (Steel) Wheel Balancing Weights | Adhesive & Clip-On',
+        keywords: 'fe wheel weights, steel wheel weights, adhesive wheel weights, steel adhesive wheel weight, clip on wheel weights, steel clip on wheel weights',
+        desc: 'Six Fe models in adhesive and clip-on types: CTR-FE-01A/02A adhesive (stick-on) weights and CTR-FE-01C to CTR-FE-04C clip-on weights.',
         highlights: [
           'Adhesive and clip-on steel weights for alloy and steel rims',
           'Round and right-angle profiles; 140 x 19 x 3.8 mm adhesive size',
@@ -179,7 +184,9 @@ export const categories = [
       {
         slug: 'lead-wheel-balancing-weights',
         name: 'Lead Wheel Balancing Weights',
-        desc: 'Five Pb models in adhesive and clip-on types: CTR-PB-01A/02A, CTR-PB-01C to CTR-PB-03C.',
+        seoTitle: 'Lead (Pb) Wheel Balancing Weights | Adhesive & Clip-On',
+        keywords: 'lead wheel weights, pb wheel weights, lead adhesive wheel weights, clip on wheel weights, truck wheel weights',
+        desc: 'Five Pb models in adhesive and clip-on types: CTR-PB-01A/02A adhesive (stick-on) weights and CTR-PB-01C to CTR-PB-03C clip-on weights.',
         highlights: [
           'Adhesive and clip-on lead weights for superior vibration damping',
           '105 x 18 x 4 mm adhesive size; ordinary or easy-peel tape',

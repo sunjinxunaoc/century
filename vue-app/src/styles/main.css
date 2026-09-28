@@ -144,4 +144,7 @@
   .animate-reveal {
     @apply transition-all duration-500 ease-out;
   }
+  .text-shadow-hero {
+    text-shadow: 0 2px 14px rgba(26, 26, 46, 0.6), 0 1px 4px rgba(26, 26, 46, 0.4);
+  }
 }

@@ -1,5 +1,5 @@
 import { categories, PAGE_SIZE } from './data/products'
-import { articles as articleData, hubTags } from './data/articles'
+import { articles as articleData, hubTags, NEWS_PER_PAGE } from './data/articles'
 
 export const routes = [
   { path: '/', name: 'home', component: () => import('./pages/index.vue') },
@@ -8,6 +8,7 @@ export const routes = [
   { path: '/products', name: 'products', component: () => import('./pages/products.vue') },
   { path: '/catalog', name: 'catalog', component: () => import('./pages/catalog.vue') },
   { path: '/news', name: 'news', component: () => import('./pages/news.vue') },
+  { path: '/news/page/:page', name: 'news-page', component: () => import('./pages/news.vue') },
   { path: '/news/tag/:slug', name: 'tag', component: () => import('./pages/TagPage.vue') },
   { path: '/news/:slug', name: 'article', component: () => import('./pages/ArticlePage.vue') },
   { path: '/products/:category/:slug?', name: 'product', component: () => import('./pages/ProductPage.vue') },
@@ -32,6 +33,9 @@ export function buildStaticPaths() {
   }
   for (const a of articleData) {
     paths.push(`/news/${a.slug}`)
+  }
+  for (let p = 2; p <= Math.ceil(articleData.length / NEWS_PER_PAGE); p++) {
+    paths.push(`/news/page/${p}`)
   }
   for (const t of hubTags) {
     paths.push(`/news/tag/${t.slug}`)

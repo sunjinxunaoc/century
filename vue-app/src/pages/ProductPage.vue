@@ -232,11 +232,11 @@ useHead(() => {
     if (currentPage.value < totalPages.value) link.push({ rel: 'next', href: `${baseUrl}/page/${currentPage.value + 1}/` })
   }
   return {
-    title: `${pageTitle.value} | Century Auto Parts`,
+    title: `${product.value?.seoTitle || subcategory.value?.seoTitle || category.value?.seoTitle || pageTitle.value} | Century Auto Parts`,
     meta: [
       { name: 'description', content: metaDesc },
-      { name: 'keywords', content: product.value?.keywords || category.value?.name || '' },
-      { property: 'og:title', content: `${pageTitle.value} | Century Auto Parts` },
+      { name: 'keywords', content: product.value?.keywords || subcategory.value?.keywords || category.value?.keywords || category.value?.name || '' },
+      { property: 'og:title', content: `${product.value?.seoTitle || subcategory.value?.seoTitle || category.value?.seoTitle || pageTitle.value} | Century Auto Parts` },
       { property: 'og:description', content: metaDesc },
       { property: 'og:type', content: product.value ? 'product' : 'website' },
       { property: 'og:url', content: url },
