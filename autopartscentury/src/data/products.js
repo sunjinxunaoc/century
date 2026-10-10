@@ -33,12 +33,12 @@ export const category = {
       "name": "Passenger Car & Light Truck",
       "seoTitle": "TR412 TR413 TR414 TR415 Snap-In Tyre Valves | Rubber Stems",
       "keywords": "tyre valve stem, TR414, TR413, TR412, TR415, rubber valve stem, snap-in tubeless valve, tyre valve dimensions, car tyre valves, tyre valves car, tyre valve replacement",
-      "desc": "Rubber snap-in and brass clamp-in tyre valves for passenger cars and light trucks: TR412-TR438 snap-in series, TR600HP-TR802HP high-pressure valves and TR416/TR525/VS metal clamp-in valves.",
+      "desc": "Rubber snap-in and brass clamp-in tyre valves for passenger cars and light trucks: TR412-TR438 snap-in series, TR600HP-TR802HP high-pressure valves, TR416/TR525/VS metal clamp-in valves and PVR153 valve stems.",
       "highlights": [
         "Rubber snap-in valves for passenger cars and light trucks",
         "TR412-TR438 snap-in series, 11.5mm / .453\" and 15.9mm / .625\" rim holes",
         "TR600HP-TR802HP high-pressure snap-in and TR416/TR525/VS clamp-in metal valves",
-        "Brass 9002# core and cap included"
+        "PVR153 valve stems and brass 9002# core and cap included"
       ],
       "faqs": [
         {
@@ -51,6 +51,90 @@ export const category = {
         }
       ],
       "products": [
+        {
+          "slug": "pvr153-3-2-valve-stem",
+          "name": "PVR153-3.2 Valve Stem",
+          "image": "/images/products/tyre-valves/pvr153-3-2-valve-stem001.webp",
+          "images": [
+            "/images/products/tyre-valves/pvr153-3-2-valve-stem001.webp",
+            "/images/products/tyre-valves/pvr153-3-2-valve-stem002.webp"
+          ],
+          "seoTitle": "PVR153-3.2 Bent Valve Stem | Nickel-Plated, 80mm, Φ11.5 Rim Hole",
+          "tagline": "PVR153-3.2 nickel-plated brass bent tubeless valve stem, A=80mm, rim hole Φ11.5 (.453\").",
+          "desc": "PVR153-3.2 nickel-plated brass bent tubeless tyre valve stem with 80mm stem length (A), fitting the Φ11.5mm (.453\") rim hole. The smoothly curved stem eases inflation access on deep-dish and commercial rims. Part of the PVR153 series with 60/70/80mm options. Factory-direct with bulk and OEM/ODM options.",
+          "keywords": "PVR153-3.2 valve stem, PVR153, bent valve stem, tubeless valve, Φ11.5 rim hole",
+          "features": [
+            "Ni-plated brass bent stem",
+            "Stem length A=80mm",
+            "Rim hole Φ11.5mm (.453\")",
+            "Rubber grommet seal, cap included",
+            "Factory direct, OEM/ODM & bulk supply"
+          ],
+          "spec": {
+            "headers": ["Model", "A (mm)", "Rim Hole"],
+            "rows": [
+              ["PVR153-2.3", "60", "Φ11.5 (.453\")"],
+              ["PVR153-2.7", "70", "Φ11.5 (.453\")"],
+              ["PVR153-3.2", "80", "Φ11.5 (.453\")"]
+            ]
+          }
+        },
+        {
+          "slug": "pvr153-2-7-valve-stem",
+          "name": "PVR153-2.7 Valve Stem",
+          "image": "/images/products/tyre-valves/pvr153-2-7-valve-stem001.webp",
+          "images": [
+            "/images/products/tyre-valves/pvr153-2-7-valve-stem001.webp",
+            "/images/products/tyre-valves/pvr153-2-7-valve-stem002.webp"
+          ],
+          "seoTitle": "PVR153-2.7 Bent Valve Stem | Nickel-Plated, 70mm, Φ11.5 Rim Hole",
+          "tagline": "PVR153-2.7 nickel-plated brass bent tubeless valve stem, A=70mm, rim hole Φ11.5 (.453\").",
+          "desc": "PVR153-2.7 nickel-plated brass bent tubeless tyre valve stem with 70mm stem length (A), fitting the Φ11.5mm (.453\") rim hole. The smoothly curved stem eases inflation access on deep-dish and commercial rims. Part of the PVR153 series with 60/70/80mm options. Factory-direct with bulk and OEM/ODM options.",
+          "keywords": "PVR153-2.7 valve stem, PVR153, bent valve stem, tubeless valve, Φ11.5 rim hole",
+          "features": [
+            "Ni-plated brass bent stem",
+            "Stem length A=70mm",
+            "Rim hole Φ11.5mm (.453\")",
+            "Rubber grommet seal, cap included",
+            "Factory direct, OEM/ODM & bulk supply"
+          ],
+          "spec": {
+            "headers": ["Model", "A (mm)", "Rim Hole"],
+            "rows": [
+              ["PVR153-2.3", "60", "Φ11.5 (.453\")"],
+              ["PVR153-2.7", "70", "Φ11.5 (.453\")"],
+              ["PVR153-3.2", "80", "Φ11.5 (.453\")"]
+            ]
+          }
+        },
+        {
+          "slug": "pvr153-2-3-valve-stem",
+          "name": "PVR153-2.3 Valve Stem",
+          "image": "/images/products/tyre-valves/pvr153-2-3-valve-stem001.webp",
+          "images": [
+            "/images/products/tyre-valves/pvr153-2-3-valve-stem001.webp",
+            "/images/products/tyre-valves/pvr153-2-3-valve-stem002.webp"
+          ],
+          "seoTitle": "PVR153-2.3 Bent Valve Stem | Nickel-Plated, 60mm, Φ11.5 Rim Hole",
+          "tagline": "PVR153-2.3 nickel-plated brass bent tubeless valve stem, A=60mm, rim hole Φ11.5 (.453\").",
+          "desc": "PVR153-2.3 nickel-plated brass bent tubeless tyre valve stem with 60mm stem length (A), fitting the Φ11.5mm (.453\") rim hole. The smoothly curved stem eases inflation access on deep-dish and commercial rims. Part of the PVR153 series with 60/70/80mm options. Factory-direct with bulk and OEM/ODM options.",
+          "keywords": "PVR153-2.3 valve stem, PVR153, bent valve stem, tubeless valve, Φ11.5 rim hole",
+          "features": [
+            "Ni-plated brass bent stem",
+            "Stem length A=60mm",
+            "Rim hole Φ11.5mm (.453\")",
+            "Rubber grommet seal, cap included",
+            "Factory direct, OEM/ODM & bulk supply"
+          ],
+          "spec": {
+            "headers": ["Model", "A (mm)", "Rim Hole"],
+            "rows": [
+              ["PVR153-2.3", "60", "Φ11.5 (.453\")"],
+              ["PVR153-2.7", "70", "Φ11.5 (.453\")"],
+              ["PVR153-3.2", "80", "Φ11.5 (.453\")"]
+            ]
+          }
+        },
         {
           "slug": "tr412-snap-in-valve",
           "name": "TR412 Snap-In Valve",
@@ -505,29 +589,6 @@ export const category = {
           }
         },
         {
-          "slug": "tr48e-colored-valve-stem",
-          "name": "TR48E Colored Valve Stem",
-          "image": "/images/products/tyre-valves/tr48e-colored-valve-stem001.webp",
-          "images": [
-            "/images/products/tyre-valves/tr48e-colored-valve-stem001.webp"
-          ],
-          "seoTitle": "TR48E Colored Valve Stem | Anodized Clamp-In, Passenger Car",
-          "tagline": "Colored anodized clamp-in valve stem TR48E for passenger cars and tuning wheels, rigid bolt-in metal design.",
-          "desc": "The TR48E colored clamp-in valve stem features an anodized metal body with matching cap for passenger cars and custom tuning wheels. The rigid bolt-in design with sealing grommet provides a high-pressure, leak-proof fit on alloy rims while adding a colorful accent. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "TR48E valve, TR48E valve stem, colored valve stem, anodized valve, clamp-in valve, tuning valve, passenger car valve",
-          "features": [
-            "Anodized colored metal body",
-            "Clamp-in rigid bolt-in design",
-            "For passenger cars & tuning wheels",
-            "Core & matching cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["Model", "Type", "Material", "Application"],
-            "rows": [["TR48E", "Clamp-in", "Anodized metal", "Passenger car / tuning"]]
-          }
-        },
-        {
           "slug": "tr416-clamp-in-valve",
           "name": "TR416 Clamp-In Valve",
           "image": "/images/products/tyre-valves/tr416-clamp-in-valve001.webp",
@@ -837,12 +898,13 @@ export const category = {
     {
       "slug": "motorcycle-bicycle-valves",
       "name": "Motorcycle & Bicycle",
-      "seoTitle": "Motorcycle & Bicycle Tyre Valves | PVR30 PVR32 PVR40-PVR70",
-      "keywords": "motorcycle valve, PVR30, PVR32, PVR40, PVR50, PVR60, PVR70, motorcycle tyre valve, scooter valve, bicycle valve, 90 degree valve stem",
-      "desc": "PVR series tubeless valves for motorcycles, scooters and bicycles: PVR30, PVR32 (black/blue/orange anodized), PVR40-PVR70 in 45° and 90° bend options.",
+      "seoTitle": "Motorcycle & Bicycle Tyre Valves | PVR30 PVR32 PVR40-PVR70, TR48E",
+      "keywords": "motorcycle valve, PVR30, PVR32, PVR40, PVR50, PVR60, PVR70, TR48E, motorcycle tyre valve, scooter valve, bicycle valve, 90 degree valve stem",
+      "desc": "PVR series tubeless valves and TR48E colored aluminum alloy valves for motorcycles, scooters and bicycles: PVR30, PVR32 (black/blue/orange anodized), PVR40-PVR70 in 45° and 90° bend options.",
       "highlights": [
         "90° and 45° bent options for tight motorcycle rims",
         "PVR32 with anodized color options (black / blue / orange)",
+        "TR48E colored aluminum alloy valve",
         "Rim holes from 8.3mm to 11.5mm",
         "Core & cap included, max 65psi"
       ],
@@ -857,6 +919,29 @@ export const category = {
         }
       ],
       "products": [
+        {
+          "slug": "tr48e-colored-valve-stem",
+          "name": "TR48E Colored Valve Stem",
+          "image": "/images/products/tyre-valves/tr48e-colored-valve-stem001.webp",
+          "images": [
+            "/images/products/tyre-valves/tr48e-colored-valve-stem001.webp"
+          ],
+          "seoTitle": "TR48E Colored Valve Stem | Anodized Clamp-In, Passenger Car",
+          "tagline": "Colored anodized clamp-in valve stem TR48E for passenger cars and tuning wheels, rigid bolt-in metal design.",
+          "desc": "The TR48E colored clamp-in valve stem features an anodized metal body with matching cap for passenger cars and custom tuning wheels. The rigid bolt-in design with sealing grommet provides a high-pressure, leak-proof fit on alloy rims while adding a colorful accent. Factory-direct with bulk and OEM/ODM options.",
+          "keywords": "TR48E valve, TR48E valve stem, colored valve stem, anodized valve, clamp-in valve, tuning valve, passenger car valve",
+          "features": [
+            "Anodized colored metal body",
+            "Clamp-in rigid bolt-in design",
+            "For passenger cars & tuning wheels",
+            "Core & matching cap included",
+            "Factory direct, OEM/ODM & bulk supply"
+          ],
+          "spec": {
+            "headers": ["Model", "Type", "Material", "Application"],
+            "rows": [["TR48E", "Clamp-in", "Anodized metal", "Passenger car / tuning"]]
+          }
+        },
         {
           "slug": "pvr30-motorcycle-valve",
           "name": "PVR30 Motorcycle Valve",
@@ -1072,12 +1157,12 @@ export const category = {
     {
       "slug": "truck-bus-valves",
       "name": "Truck & Bus",
-      "seoTitle": "Truck & Bus Tyre Valves | Brass Clamp-In, V3-20, TR618 Series",
-      "keywords": "truck tyre valve, bus valve, brass clamp-in valve, V3-20-4, V3-20-6, TR573C, TR618A, heavy duty valve stem, metal tyre valves, clamp in tyre valves, metal valve stems",
-      "desc": "V3-20 series, TR500-TR575, TR570C-TR573C, TR618 and MS series metal high-pressure clamp-in valves for trucks, buses and heavy-duty commercial vehicles.",
+      "seoTitle": "Truck & Bus Tyre Valves | Brass Clamp-In, V3-20, V3.12-V3.19 Series",
+      "keywords": "truck tyre valve, bus valve, brass clamp-in valve, V3-20-4, V3-20-6, TR573C, V3.18 swivel valve, European style clamp-in valve, heavy duty valve stem, metal tyre valves",
+      "desc": "V3-20 series, V3.12-V3.19 European style, TR500-TR575, TR570C-TR573C and MS series metal high-pressure clamp-in valves for trucks, buses and heavy-duty commercial vehicles.",
       "highlights": [
         "Brass clamp-in metal valves for high pressure",
-        "V3-20 series, TR500-TR575, TR570C-TR573C, TR618 and MS series options",
+        "V3-20 series, V3.12-V3.19 European style, TR500-TR575, TR570C-TR573C and MS series options",
         "Rim holes Φ9.7-20.5mm; straight and bent versions up to 90°",
         "Heavy-duty construction for commercial vehicles"
       ],
@@ -1092,6 +1177,155 @@ export const category = {
         }
       ],
       "products": [
+        {
+          "slug": "v3-12-1-swivel-valve",
+          "name": "V3.12.1 Swivel Valve",
+          "image": "/images/products/tyre-valves/v3-12-1-swivel-valve001.webp",
+          "images": [
+            "/images/products/tyre-valves/v3-12-1-swivel-valve001.webp",
+            "/images/products/tyre-valves/v3-12-1-swivel-valve002.webp"
+          ],
+          "seoTitle": "V3.12.1 Swivel Valve | Φ26 Base, A=40mm, Φ15.7 Rim Hole",
+          "tagline": "Brass swivel tyre valve for agricultural machinery, Φ26 base, straight stem A=40mm, rim hole Φ15.7 (.625\").",
+          "desc": "The V3.12.1 swivel type tyre valve is designed for tractors and agricultural machinery, with a swiveling Φ26mm base and straight stem. A=40mm, fitting the Φ15.7mm (.625\") rim hole. Factory-direct with bulk and OEM/ODM options.",
+          "keywords": "V3.12.1 valve, swivel valve, tractor valve, agricultural valve, Φ26 base, Φ15.7 rim hole",
+          "features": [
+            "Swivel type, Φ26 base",
+            "Straight stem, A=40mm",
+            "Rim hole Φ15.7mm (.625\")",
+            "Core & cap included",
+            "Factory direct, OEM/ODM & bulk supply"
+          ],
+          "spec": {
+            "headers": ["ETRTO No.", "Rel Length (D)", "A (mm)", "Rim Hole"],
+            "rows": [
+              ["V3.12.1", "Φ26", "40", "Φ15.7 (.625\")"],
+              ["V3.12.2", "Φ26", "95", "Φ15.7 (.625\")"],
+              ["V3.12.3", "Φ26", "65", "Φ15.7 (.625\")"],
+              ["V3.12.4", "Φ26", "90", "Φ15.7 (.625\")"]
+            ]
+          }
+        }
+,
+        {
+          "slug": "v3-14-2-swivel-valve",
+          "name": "V3.14.2 Swivel Valve",
+          "image": "/images/products/tyre-valves/v3-14-2-swivel-valve001.webp",
+          "images": [
+            "/images/products/tyre-valves/v3-14-2-swivel-valve001.webp",
+            "/images/products/tyre-valves/v3-14-2-swivel-valve002.webp"
+          ],
+          "seoTitle": "V3.14.2 Swivel Valve | Φ26 Base, A=45mm, 147°, Φ15.7 Rim Hole",
+          "tagline": "Brass swivel tyre valve for agricultural machinery, Φ26 base, A=45mm, α/β=147°, rim hole Φ15.7 (.625\").",
+          "desc": "The V3.14.2 swivel type tyre valve is designed for tractors and agricultural machinery, with a swiveling Φ26mm base and bent stem for easy inflation access. A=45mm, α/β=147°, fitting the Φ15.7mm (.625\") rim hole. Factory-direct with bulk and OEM/ODM options.",
+          "keywords": "V3.14.2 valve, swivel valve, tractor valve, agricultural valve, Φ26 base, Φ15.7 rim hole",
+          "features": [
+            "Swivel type, Φ26 base",
+            "Bent stem for easy access",
+            "A=45mm, α/β=147°",
+            "Rim hole Φ15.7mm (.625\")",
+            "Core & cap included",
+            "Factory direct, OEM/ODM & bulk supply"
+          ],
+          "spec": {
+            "headers": ["ETRTO No.", "Rel Length (D)", "A (mm)", "α/β°", "Rim Hole"],
+            "rows": [
+              ["V3.14.1", "Φ26", "26", "147°", "Φ15.7 (.625\")"],
+              ["V3.14.2", "Φ26", "45", "147°", "Φ15.7 (.625\")"],
+              ["V3.14.3", "Φ26", "37", "147°", "Φ15.7 (.625\")"]
+            ]
+          }
+        },
+        {
+          "slug": "v3-18-4-swivel-valve",
+          "name": "V3.18.4 Swivel Valve",
+          "image": "/images/products/tyre-valves/v3-18-4-swivel-valve001.webp",
+          "images": [
+            "/images/products/tyre-valves/v3-18-4-swivel-valve001.webp",
+            "/images/products/tyre-valves/v3-18-4-swivel-valve002.webp"
+          ],
+          "seoTitle": "V3.18.4 Large Bore Swivel Valve | Φ31 Base, A51 B37.5 C19.5, 138°",
+          "tagline": "Large-bore brass swivel tyre valve for agricultural and off-road machinery, Φ31 base, A=51mm, B=37.5mm, C=19.5mm, α/β=138°, rim hole Φ20.5 (.812\").",
+          "desc": "The V3.18.4 large-bore swivel type tyre valve is designed for tractors, agricultural machinery and off-road vehicles. The swiveling Φ31mm base and double-bent stem allow fast inflation and easy access on heavy equipment. A=51mm, B=37.5mm, C=19.5mm, α/β=138°, fitting the Φ20.5mm (.812\") rim hole. Factory-direct with bulk and OEM/ODM options.",
+          "keywords": "V3.18.4 valve, large bore swivel valve, tractor valve, agricultural valve, off-road valve, Φ31 base, Φ20.5 rim hole",
+          "features": [
+            "Large-bore swivel type, Φ31 base",
+            "Double-bent stem for easy access",
+            "A=51mm, B=37.5mm, C=19.5mm, α/β=138°",
+            "Rim hole Φ20.5mm (.812\")",
+            "Core & cap included",
+            "Factory direct, OEM/ODM & bulk supply"
+          ],
+          "spec": {
+            "headers": ["ETRTO No.", "Rel Length (D)", "A (mm)", "B (mm)", "C (mm)", "α/β°", "Rim Hole"],
+            "rows": [
+              ["V3.18.1", "Φ31", "64", "24.5", "14.5", "146°", "Φ20.5 (.812\")"],
+              ["V3.18.2", "Φ31", "81", "24.5", "14.5", "146°", "Φ20.5 (.812\")"],
+              ["V3.18.4", "Φ31", "51", "37.5", "19.5", "138°", "Φ20.5 (.812\")"],
+              ["V3.18.5", "Φ31", "68", "37.5", "19.5", "138°", "Φ20.5 (.812\")"]
+            ]
+          }
+        },
+        {
+          "slug": "v3-18-2-swivel-valve",
+          "name": "V3.18.2 Swivel Valve",
+          "image": "/images/products/tyre-valves/v3-18-2-swivel-valve001.webp",
+          "images": [
+            "/images/products/tyre-valves/v3-18-2-swivel-valve001.webp",
+            "/images/products/tyre-valves/v3-18-2-swivel-valve002.webp"
+          ],
+          "seoTitle": "V3.18.2 Large Bore Swivel Valve | Φ31 Base, A81 B24.5 C14.5, 146°",
+          "tagline": "Large-bore brass swivel tyre valve for agricultural and off-road machinery, Φ31 base, A=81mm, B=24.5mm, C=14.5mm, α/β=146°, rim hole Φ20.5 (.812\").",
+          "desc": "The V3.18.2 large-bore swivel type tyre valve is designed for tractors, agricultural machinery and off-road vehicles. The swiveling Φ31mm base and double-bent stem allow fast inflation and easy access on heavy equipment. A=81mm, B=24.5mm, C=14.5mm, α/β=146°, fitting the Φ20.5mm (.812\") rim hole. Factory-direct with bulk and OEM/ODM options.",
+          "keywords": "V3.18.2 valve, large bore swivel valve, tractor valve, agricultural valve, off-road valve, Φ31 base, Φ20.5 rim hole",
+          "features": [
+            "Large-bore swivel type, Φ31 base",
+            "Double-bent stem for easy access",
+            "A=81mm, B=24.5mm, C=14.5mm, α/β=146°",
+            "Rim hole Φ20.5mm (.812\")",
+            "Core & cap included",
+            "Factory direct, OEM/ODM & bulk supply"
+          ],
+          "spec": {
+            "headers": ["ETRTO No.", "Rel Length (D)", "A (mm)", "B (mm)", "C (mm)", "α/β°", "Rim Hole"],
+            "rows": [
+              ["V3.18.1", "Φ31", "64", "24.5", "14.5", "146°", "Φ20.5 (.812\")"],
+              ["V3.18.2", "Φ31", "81", "24.5", "14.5", "146°", "Φ20.5 (.812\")"],
+              ["V3.18.4", "Φ31", "51", "37.5", "19.5", "138°", "Φ20.5 (.812\")"],
+              ["V3.18.5", "Φ31", "68", "37.5", "19.5", "138°", "Φ20.5 (.812\")"]
+            ]
+          }
+        },
+        {
+          "slug": "v3-18-1-swivel-valve",
+          "name": "V3.18.1 Swivel Valve",
+          "image": "/images/products/tyre-valves/v3-18-1-swivel-valve001.webp",
+          "images": [
+            "/images/products/tyre-valves/v3-18-1-swivel-valve001.webp",
+            "/images/products/tyre-valves/v3-18-1-swivel-valve002.webp"
+          ],
+          "seoTitle": "V3.18.1 Large Bore Swivel Valve | Φ31 Base, A64 B24.5 C14.5, 146°",
+          "tagline": "Large-bore brass swivel tyre valve for agricultural and off-road machinery, Φ31 base, A=64mm, B=24.5mm, C=14.5mm, α/β=146°, rim hole Φ20.5 (.812\").",
+          "desc": "The V3.18.1 large-bore swivel type tyre valve is designed for tractors, agricultural machinery and off-road vehicles. The swiveling Φ31mm base and double-bent stem allow fast inflation and easy access on heavy equipment. A=64mm, B=24.5mm, C=14.5mm, α/β=146°, fitting the Φ20.5mm (.812\") rim hole. Factory-direct with bulk and OEM/ODM options.",
+          "keywords": "V3.18.1 valve, large bore swivel valve, tractor valve, agricultural valve, off-road valve, Φ31 base, Φ20.5 rim hole",
+          "features": [
+            "Large-bore swivel type, Φ31 base",
+            "Double-bent stem for easy access",
+            "A=64mm, B=24.5mm, C=14.5mm, α/β=146°",
+            "Rim hole Φ20.5mm (.812\")",
+            "Core & cap included",
+            "Factory direct, OEM/ODM & bulk supply"
+          ],
+          "spec": {
+            "headers": ["ETRTO No.", "Rel Length (D)", "A (mm)", "B (mm)", "C (mm)", "α/β°", "Rim Hole"],
+            "rows": [
+              ["V3.18.1", "Φ31", "64", "24.5", "14.5", "146°", "Φ20.5 (.812\")"],
+              ["V3.18.2", "Φ31", "81", "24.5", "14.5", "146°", "Φ20.5 (.812\")"],
+              ["V3.18.4", "Φ31", "51", "37.5", "19.5", "138°", "Φ20.5 (.812\")"],
+              ["V3.18.5", "Φ31", "68", "37.5", "19.5", "138°", "Φ20.5 (.812\")"]
+            ]
+          }
+        },
         {
           "slug": "tr552-clamp-in-valve",
           "name": "TR552 Clamp-In Valve",
@@ -1417,90 +1651,6 @@ export const category = {
               ["TR546E", "25", "83", "75°", "Φ9.7 (.390\")"],
               ["TR547", "124", "—", "—", "Φ9.7 (.390\")"],
               ["TR547D", "25", "94", "60°", "Φ9.7 (.390\")"]
-            ]
-          }
-        },
-        {
-          "slug": "pvr153-2-3-valve-stem",
-          "name": "PVR153-2.3 Valve Stem",
-          "image": "/images/products/tyre-valves/pvr153-2-3-valve-stem001.webp",
-          "images": [
-            "/images/products/tyre-valves/pvr153-2-3-valve-stem001.webp",
-            "/images/products/tyre-valves/pvr153-2-3-valve-stem002.webp"
-          ],
-          "seoTitle": "PVR153-2.3 Bent Valve Stem | Nickel-Plated, 60mm, Φ11.5 Rim Hole",
-          "tagline": "PVR153-2.3 nickel-plated brass bent tubeless valve stem, A=60mm, rim hole Φ11.5 (.453\").",
-          "desc": "PVR153-2.3 nickel-plated brass bent tubeless tyre valve stem with 60mm stem length (A), fitting the Φ11.5mm (.453\") rim hole. The smoothly curved stem eases inflation access on deep-dish and commercial rims. Part of the PVR153 series with 60/70/80mm options. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "PVR153-2.3 valve stem, PVR153, bent valve stem, tubeless valve, Φ11.5 rim hole",
-          "features": [
-            "Ni-plated brass bent stem",
-            "Stem length A=60mm",
-            "Rim hole Φ11.5mm (.453\")",
-            "Rubber grommet seal, cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["Model", "A (mm)", "Rim Hole"],
-            "rows": [
-              ["PVR153-2.3", "60", "Φ11.5 (.453\")"],
-              ["PVR153-2.7", "70", "Φ11.5 (.453\")"],
-              ["PVR153-3.2", "80", "Φ11.5 (.453\")"]
-            ]
-          }
-        },
-        {
-          "slug": "pvr153-2-7-valve-stem",
-          "name": "PVR153-2.7 Valve Stem",
-          "image": "/images/products/tyre-valves/pvr153-2-7-valve-stem001.webp",
-          "images": [
-            "/images/products/tyre-valves/pvr153-2-7-valve-stem001.webp",
-            "/images/products/tyre-valves/pvr153-2-7-valve-stem002.webp"
-          ],
-          "seoTitle": "PVR153-2.7 Bent Valve Stem | Nickel-Plated, 70mm, Φ11.5 Rim Hole",
-          "tagline": "PVR153-2.7 nickel-plated brass bent tubeless valve stem, A=70mm, rim hole Φ11.5 (.453\").",
-          "desc": "PVR153-2.7 nickel-plated brass bent tubeless tyre valve stem with 70mm stem length (A), fitting the Φ11.5mm (.453\") rim hole. The smoothly curved stem eases inflation access on deep-dish and commercial rims. Part of the PVR153 series with 60/70/80mm options. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "PVR153-2.7 valve stem, PVR153, bent valve stem, tubeless valve, Φ11.5 rim hole",
-          "features": [
-            "Ni-plated brass bent stem",
-            "Stem length A=70mm",
-            "Rim hole Φ11.5mm (.453\")",
-            "Rubber grommet seal, cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["Model", "A (mm)", "Rim Hole"],
-            "rows": [
-              ["PVR153-2.3", "60", "Φ11.5 (.453\")"],
-              ["PVR153-2.7", "70", "Φ11.5 (.453\")"],
-              ["PVR153-3.2", "80", "Φ11.5 (.453\")"]
-            ]
-          }
-        },
-        {
-          "slug": "pvr153-3-2-valve-stem",
-          "name": "PVR153-3.2 Valve Stem",
-          "image": "/images/products/tyre-valves/pvr153-3-2-valve-stem001.webp",
-          "images": [
-            "/images/products/tyre-valves/pvr153-3-2-valve-stem001.webp",
-            "/images/products/tyre-valves/pvr153-3-2-valve-stem002.webp"
-          ],
-          "seoTitle": "PVR153-3.2 Bent Valve Stem | Nickel-Plated, 80mm, Φ11.5 Rim Hole",
-          "tagline": "PVR153-3.2 nickel-plated brass bent tubeless valve stem, A=80mm, rim hole Φ11.5 (.453\").",
-          "desc": "PVR153-3.2 nickel-plated brass bent tubeless tyre valve stem with 80mm stem length (A), fitting the Φ11.5mm (.453\") rim hole. The smoothly curved stem eases inflation access on deep-dish and commercial rims. Part of the PVR153 series with 60/70/80mm options. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "PVR153-3.2 valve stem, PVR153, bent valve stem, tubeless valve, Φ11.5 rim hole",
-          "features": [
-            "Ni-plated brass bent stem",
-            "Stem length A=80mm",
-            "Rim hole Φ11.5mm (.453\")",
-            "Rubber grommet seal, cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["Model", "A (mm)", "Rim Hole"],
-            "rows": [
-              ["PVR153-2.3", "60", "Φ11.5 (.453\")"],
-              ["PVR153-2.7", "70", "Φ11.5 (.453\")"],
-              ["PVR153-3.2", "80", "Φ11.5 (.453\")"]
             ]
           }
         },
@@ -2175,201 +2325,6 @@ export const category = {
           }
         },
         {
-          "slug": "tr618-clamp-in-valve",
-          "name": "TR618 Clamp-In Valve",
-          "image": "/images/products/tyre-valves/tr618-clamp-in-valve001.webp",
-          "images": [
-            "/images/products/tyre-valves/tr618-clamp-in-valve001.webp",
-            "/images/products/tyre-valves/tr618-clamp-in-valve002.webp"
-          ],
-          "seoTitle": "TR618 Clamp-In Truck Valve | Straight Brass, A=30mm, Φ16 Rim Hole",
-          "tagline": "Straight brass clamp-in tubeless valve for truck, bus and agricultural rims, A=30mm, rim hole Φ16 (.625\").",
-          "desc": "The TR618 straight brass clamp-in tubeless tyre valve is designed for truck, bus and agricultural steel rims, with an A dimension of 30mm, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass stem with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "TR618 valve, TR618 clamp-in valve, truck tyre valve, bus valve, agricultural valve, brass clamp-in valve, Φ16 rim hole valve",
-          "features": [
-            "Heavy-duty brass construction",
-            "Straight stem, A=30mm",
-            "Rim hole Φ16mm (.625\")",
-            "Hex nut & rubber grommet seal",
-            "Core & metal cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["ETRTO No.", "A (mm)", "B (mm)", "β°", "Rim Hole"],
-            "rows": [
-              ["TR618", "30", "—", "—", "Φ16 (.625\")"],
-              ["TR618A", "36", "—", "—", "Φ16 (.625\")"],
-              ["TR618B", "22.5", "—", "—", "Φ16 (.625\")"],
-              ["TR621A", "39", "75", "65°", "Φ16 (.625\")"],
-              ["TR622A", "44.5", "115", "90°", "Φ16 (.625\")"],
-              ["TR623A", "39", "57", "65°", "Φ16 (.625\")"]
-            ]
-          }
-        },
-        {
-          "slug": "tr618a-clamp-in-valve",
-          "name": "TR618A Clamp-In Valve",
-          "image": "/images/products/tyre-valves/tr618a-clamp-in-valve001.webp",
-          "images": [
-            "/images/products/tyre-valves/tr618a-clamp-in-valve001.webp",
-            "/images/products/tyre-valves/tr618a-clamp-in-valve002.webp"
-          ],
-          "seoTitle": "TR618A Clamp-In Truck Valve | Straight Brass, A=36mm, Φ16 Rim Hole",
-          "tagline": "Straight brass clamp-in tubeless valve for truck, bus and agricultural rims, A=36mm, rim hole Φ16 (.625\").",
-          "desc": "The TR618A straight brass clamp-in tubeless tyre valve is designed for truck, bus and agricultural steel rims, with an A dimension of 36mm, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass stem with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "TR618A valve, TR618A clamp-in valve, truck tyre valve, bus valve, agricultural valve, brass clamp-in valve, Φ16 rim hole valve",
-          "features": [
-            "Heavy-duty brass construction",
-            "Straight stem, A=36mm",
-            "Rim hole Φ16mm (.625\")",
-            "Hex nut & rubber grommet seal",
-            "Core & metal cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["ETRTO No.", "A (mm)", "B (mm)", "β°", "Rim Hole"],
-            "rows": [
-              ["TR618", "30", "—", "—", "Φ16 (.625\")"],
-              ["TR618A", "36", "—", "—", "Φ16 (.625\")"],
-              ["TR618B", "22.5", "—", "—", "Φ16 (.625\")"],
-              ["TR621A", "39", "75", "65°", "Φ16 (.625\")"],
-              ["TR622A", "44.5", "115", "90°", "Φ16 (.625\")"],
-              ["TR623A", "39", "57", "65°", "Φ16 (.625\")"]
-            ]
-          }
-        },
-        {
-          "slug": "tr618b-clamp-in-valve",
-          "name": "TR618B Clamp-In Valve",
-          "image": "/images/products/tyre-valves/tr618b-clamp-in-valve001.webp",
-          "images": [
-            "/images/products/tyre-valves/tr618b-clamp-in-valve001.webp",
-            "/images/products/tyre-valves/tr618b-clamp-in-valve002.webp"
-          ],
-          "seoTitle": "TR618B Clamp-In Truck Valve | Straight Brass, A=22.5mm, Φ16 Rim Hole",
-          "tagline": "Straight brass clamp-in tubeless valve for truck, bus and agricultural rims, compact A=22.5mm, rim hole Φ16 (.625\").",
-          "desc": "The TR618B straight brass clamp-in tubeless tyre valve is the compact version for truck, bus and agricultural steel rims, with an A dimension of just 22.5mm, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass stem with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "TR618B valve, TR618B clamp-in valve, truck tyre valve, bus valve, agricultural valve, brass clamp-in valve, Φ16 rim hole valve",
-          "features": [
-            "Heavy-duty brass construction",
-            "Compact straight stem, A=22.5mm",
-            "Rim hole Φ16mm (.625\")",
-            "Hex nut & rubber grommet seal",
-            "Core & metal cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["ETRTO No.", "A (mm)", "B (mm)", "β°", "Rim Hole"],
-            "rows": [
-              ["TR618", "30", "—", "—", "Φ16 (.625\")"],
-              ["TR618A", "36", "—", "—", "Φ16 (.625\")"],
-              ["TR618B", "22.5", "—", "—", "Φ16 (.625\")"],
-              ["TR621A", "39", "75", "65°", "Φ16 (.625\")"],
-              ["TR622A", "44.5", "115", "90°", "Φ16 (.625\")"],
-              ["TR623A", "39", "57", "65°", "Φ16 (.625\")"]
-            ]
-          }
-        },
-        {
-          "slug": "tr621a-clamp-in-valve",
-          "name": "TR621A Clamp-In Valve",
-          "image": "/images/products/tyre-valves/tr621a-clamp-in-valve001.webp",
-          "images": [
-            "/images/products/tyre-valves/tr621a-clamp-in-valve001.webp",
-            "/images/products/tyre-valves/tr621a-clamp-in-valve002.webp"
-          ],
-          "seoTitle": "TR621A Clamp-In Truck Valve | 65° Bent Brass, A39 B75, Φ16 Rim Hole",
-          "tagline": "65° bent brass clamp-in tubeless valve for truck and bus, A=39mm and B=75mm, rim hole Φ16 (.625\").",
-          "desc": "The TR621A brass clamp-in tubeless tyre valve features a 65° bent stem for easy inflation access on truck and bus steel rims. A=39mm lower section and B=75mm stem length, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "TR621A valve, TR621A clamp-in valve, 65 degree truck valve, bus valve, brass clamp-in valve, bent truck valve, Φ16 rim hole valve",
-          "features": [
-            "Heavy-duty brass construction",
-            "65° bent stem for easy access",
-            "A=39mm, B=75mm",
-            "Rim hole Φ16mm (.625\")",
-            "Hex nut & rubber grommet seal",
-            "Core & metal cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["ETRTO No.", "A (mm)", "B (mm)", "β°", "Rim Hole"],
-            "rows": [
-              ["TR618", "30", "—", "—", "Φ16 (.625\")"],
-              ["TR618A", "36", "—", "—", "Φ16 (.625\")"],
-              ["TR618B", "22.5", "—", "—", "Φ16 (.625\")"],
-              ["TR621A", "39", "75", "65°", "Φ16 (.625\")"],
-              ["TR622A", "44.5", "115", "90°", "Φ16 (.625\")"],
-              ["TR623A", "39", "57", "65°", "Φ16 (.625\")"]
-            ]
-          }
-        },
-        {
-          "slug": "tr622a-clamp-in-valve",
-          "name": "TR622A Clamp-In Valve",
-          "image": "/images/products/tyre-valves/tr622a-clamp-in-valve001.webp",
-          "images": [
-            "/images/products/tyre-valves/tr622a-clamp-in-valve001.webp",
-            "/images/products/tyre-valves/tr622a-clamp-in-valve002.webp"
-          ],
-          "seoTitle": "TR622A Clamp-In Truck Valve | 90° Bent Brass, A44.5 B115, Φ16 Rim Hole",
-          "tagline": "90° bent brass clamp-in tubeless valve for truck and bus, A=44.5mm and B=115mm, rim hole Φ16 (.625\").",
-          "desc": "The TR622A brass clamp-in tubeless tyre valve features a 90° bent long stem for easy inflation access on truck and bus steel rims. A=44.5mm lower section and B=115mm stem length, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "TR622A valve, TR622A clamp-in valve, 90 degree truck valve, bus valve, brass clamp-in valve, bent truck valve, Φ16 rim hole valve",
-          "features": [
-            "Heavy-duty brass construction",
-            "90° bent long stem for easy access",
-            "A=44.5mm, B=115mm",
-            "Rim hole Φ16mm (.625\")",
-            "Hex nut & rubber grommet seal",
-            "Core & metal cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["ETRTO No.", "A (mm)", "B (mm)", "β°", "Rim Hole"],
-            "rows": [
-              ["TR618", "30", "—", "—", "Φ16 (.625\")"],
-              ["TR618A", "36", "—", "—", "Φ16 (.625\")"],
-              ["TR618B", "22.5", "—", "—", "Φ16 (.625\")"],
-              ["TR621A", "39", "75", "65°", "Φ16 (.625\")"],
-              ["TR622A", "44.5", "115", "90°", "Φ16 (.625\")"],
-              ["TR623A", "39", "57", "65°", "Φ16 (.625\")"]
-            ]
-          }
-        },
-        {
-          "slug": "tr623a-clamp-in-valve",
-          "name": "TR623A Clamp-In Valve",
-          "image": "/images/products/tyre-valves/tr623a-clamp-in-valve001.webp",
-          "images": [
-            "/images/products/tyre-valves/tr623a-clamp-in-valve001.webp",
-            "/images/products/tyre-valves/tr623a-clamp-in-valve002.webp"
-          ],
-          "seoTitle": "TR623A Clamp-In Truck Valve | 65° Bent Brass, A39 B57, Φ16 Rim Hole",
-          "tagline": "65° bent brass clamp-in tubeless valve for truck and bus, A=39mm and B=57mm, rim hole Φ16 (.625\").",
-          "desc": "The TR623A brass clamp-in tubeless tyre valve features a 65° bent stem for easy inflation access on truck and bus steel rims. A=39mm lower section and B=57mm stem length, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "TR623A valve, TR623A clamp-in valve, 65 degree truck valve, bus valve, brass clamp-in valve, bent truck valve, Φ16 rim hole valve",
-          "features": [
-            "Heavy-duty brass construction",
-            "65° bent stem for easy access",
-            "A=39mm, B=57mm",
-            "Rim hole Φ16mm (.625\")",
-            "Hex nut & rubber grommet seal",
-            "Core & metal cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["ETRTO No.", "A (mm)", "B (mm)", "β°", "Rim Hole"],
-            "rows": [
-              ["TR618", "30", "—", "—", "Φ16 (.625\")"],
-              ["TR618A", "36", "—", "—", "Φ16 (.625\")"],
-              ["TR618B", "22.5", "—", "—", "Φ16 (.625\")"],
-              ["TR621A", "39", "75", "65°", "Φ16 (.625\")"],
-              ["TR622A", "44.5", "115", "90°", "Φ16 (.625\")"],
-              ["TR623A", "39", "57", "65°", "Φ16 (.625\")"]
-            ]
-          }
-        },
-        {
           "slug": "70ms-7-clamp-in-valve",
           "name": "70MS-7 Clamp-In Valve",
           "image": "/images/products/tyre-valves/70ms-7-clamp-in-valve001.webp",
@@ -2463,12 +2418,12 @@ export const category = {
       "slug": "agricultural-tractors-off-road-valves",
       "name": "Agricultural & Off-Road",
       "seoTitle": "Agricultural & Off-Road Tyre Valves | Large Bore Swivel, Tractor Valves",
-      "keywords": "agricultural valve, tractor tyre valve, off-road valve, large bore valve, swivel valve, TR618A, TRJ650, TR1175A, V3.18, V3.14, V3.12",
-      "desc": "TR618A, TRJ650-02/03 and TR1175A heavy-duty valves for agricultural machinery and off-road vehicles.",
+      "keywords": "agricultural valve, tractor tyre valve, off-road valve, large bore valve, swivel valve, TR618A, TRJ650, TR1175A, TR621A, TR622A, TR623A",
+      "desc": "TR618A, TRJ650-02/03, TR621A-TR623A and TR1175A heavy-duty valves for agricultural machinery and off-road vehicles.",
       "highlights": [
         "Heavy-duty tubeless valves for tractors and off-road machinery",
         "TR618A (5/8\" hole, 90 PSI) and TRJ650 large-bore swivel type",
-        "TR1175A with 86° bend and 20.5mm rim hole",
+        "TR621A/TR622A/TR623A large-bore tubeless valves",
         "Brass/metal construction for harsh conditions"
       ],
       "faqs": [
@@ -2482,6 +2437,105 @@ export const category = {
         }
       ],
       "products": [
+        {
+          "slug": "tr623a-clamp-in-valve",
+          "name": "TR623A Clamp-In Valve",
+          "image": "/images/products/tyre-valves/tr623a-clamp-in-valve001.webp",
+          "images": [
+            "/images/products/tyre-valves/tr623a-clamp-in-valve001.webp",
+            "/images/products/tyre-valves/tr623a-clamp-in-valve002.webp"
+          ],
+          "seoTitle": "TR623A Clamp-In Truck Valve | 65° Bent Brass, A39 B57, Φ16 Rim Hole",
+          "tagline": "65° bent brass clamp-in tubeless valve for truck and bus, A=39mm and B=57mm, rim hole Φ16 (.625\").",
+          "desc": "The TR623A brass clamp-in tubeless tyre valve features a 65° bent stem for easy inflation access on truck and bus steel rims. A=39mm lower section and B=57mm stem length, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
+          "keywords": "TR623A valve, TR623A clamp-in valve, 65 degree truck valve, bus valve, brass clamp-in valve, bent truck valve, Φ16 rim hole valve",
+          "features": [
+            "Heavy-duty brass construction",
+            "65° bent stem for easy access",
+            "A=39mm, B=57mm",
+            "Rim hole Φ16mm (.625\")",
+            "Hex nut & rubber grommet seal",
+            "Core & metal cap included",
+            "Factory direct, OEM/ODM & bulk supply"
+          ],
+          "spec": {
+            "headers": ["ETRTO No.", "A (mm)", "B (mm)", "β°", "Rim Hole"],
+            "rows": [
+              ["TR618", "30", "—", "—", "Φ16 (.625\")"],
+              ["TR618A", "36", "—", "—", "Φ16 (.625\")"],
+              ["TR618B", "22.5", "—", "—", "Φ16 (.625\")"],
+              ["TR621A", "39", "75", "65°", "Φ16 (.625\")"],
+              ["TR622A", "44.5", "115", "90°", "Φ16 (.625\")"],
+              ["TR623A", "39", "57", "65°", "Φ16 (.625\")"]
+            ]
+          }
+        },
+        {
+          "slug": "tr622a-clamp-in-valve",
+          "name": "TR622A Clamp-In Valve",
+          "image": "/images/products/tyre-valves/tr622a-clamp-in-valve001.webp",
+          "images": [
+            "/images/products/tyre-valves/tr622a-clamp-in-valve001.webp",
+            "/images/products/tyre-valves/tr622a-clamp-in-valve002.webp"
+          ],
+          "seoTitle": "TR622A Clamp-In Truck Valve | 90° Bent Brass, A44.5 B115, Φ16 Rim Hole",
+          "tagline": "90° bent brass clamp-in tubeless valve for truck and bus, A=44.5mm and B=115mm, rim hole Φ16 (.625\").",
+          "desc": "The TR622A brass clamp-in tubeless tyre valve features a 90° bent long stem for easy inflation access on truck and bus steel rims. A=44.5mm lower section and B=115mm stem length, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
+          "keywords": "TR622A valve, TR622A clamp-in valve, 90 degree truck valve, bus valve, brass clamp-in valve, bent truck valve, Φ16 rim hole valve",
+          "features": [
+            "Heavy-duty brass construction",
+            "90° bent long stem for easy access",
+            "A=44.5mm, B=115mm",
+            "Rim hole Φ16mm (.625\")",
+            "Hex nut & rubber grommet seal",
+            "Core & metal cap included",
+            "Factory direct, OEM/ODM & bulk supply"
+          ],
+          "spec": {
+            "headers": ["ETRTO No.", "A (mm)", "B (mm)", "β°", "Rim Hole"],
+            "rows": [
+              ["TR618", "30", "—", "—", "Φ16 (.625\")"],
+              ["TR618A", "36", "—", "—", "Φ16 (.625\")"],
+              ["TR618B", "22.5", "—", "—", "Φ16 (.625\")"],
+              ["TR621A", "39", "75", "65°", "Φ16 (.625\")"],
+              ["TR622A", "44.5", "115", "90°", "Φ16 (.625\")"],
+              ["TR623A", "39", "57", "65°", "Φ16 (.625\")"]
+            ]
+          }
+        },
+        {
+          "slug": "tr621a-clamp-in-valve",
+          "name": "TR621A Clamp-In Valve",
+          "image": "/images/products/tyre-valves/tr621a-clamp-in-valve001.webp",
+          "images": [
+            "/images/products/tyre-valves/tr621a-clamp-in-valve001.webp",
+            "/images/products/tyre-valves/tr621a-clamp-in-valve002.webp"
+          ],
+          "seoTitle": "TR621A Clamp-In Truck Valve | 65° Bent Brass, A39 B75, Φ16 Rim Hole",
+          "tagline": "65° bent brass clamp-in tubeless valve for truck and bus, A=39mm and B=75mm, rim hole Φ16 (.625\").",
+          "desc": "The TR621A brass clamp-in tubeless tyre valve features a 65° bent stem for easy inflation access on truck and bus steel rims. A=39mm lower section and B=75mm stem length, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
+          "keywords": "TR621A valve, TR621A clamp-in valve, 65 degree truck valve, bus valve, brass clamp-in valve, bent truck valve, Φ16 rim hole valve",
+          "features": [
+            "Heavy-duty brass construction",
+            "65° bent stem for easy access",
+            "A=39mm, B=75mm",
+            "Rim hole Φ16mm (.625\")",
+            "Hex nut & rubber grommet seal",
+            "Core & metal cap included",
+            "Factory direct, OEM/ODM & bulk supply"
+          ],
+          "spec": {
+            "headers": ["ETRTO No.", "A (mm)", "B (mm)", "β°", "Rim Hole"],
+            "rows": [
+              ["TR618", "30", "—", "—", "Φ16 (.625\")"],
+              ["TR618A", "36", "—", "—", "Φ16 (.625\")"],
+              ["TR618B", "22.5", "—", "—", "Φ16 (.625\")"],
+              ["TR621A", "39", "75", "65°", "Φ16 (.625\")"],
+              ["TR622A", "44.5", "115", "90°", "Φ16 (.625\")"],
+              ["TR623A", "39", "57", "65°", "Φ16 (.625\")"]
+            ]
+          }
+        },
         {
           "slug": "tr618a-tubeless-valve",
           "name": "TR618A Tubeless Valve",
@@ -2503,7 +2557,8 @@ export const category = {
           "spec": {
             "headers": ["Model", "Ref. No.", "Eff. Length", "Max Pressure (PSI)", "Hole Size"],
             "rows": [
-              ["TR618A", "V5.01.1", "Φ22.5 x 30", "90", "5/8 inch"]
+              ["TR618A", "V5.01.1", "Φ22.5 x 30", "90", "5/8 inch"],
+              ["TR618", "—", "Φ22.5 x 56", "90", "5/8 inch"]
             ]
           }
         },
@@ -3038,154 +3093,6 @@ export const category = {
             ]
           }
         },
-        {
-          "slug": "v3-18-1-swivel-valve",
-          "name": "V3.18.1 Swivel Valve",
-          "image": "/images/products/tyre-valves/v3-18-1-swivel-valve001.webp",
-          "images": [
-            "/images/products/tyre-valves/v3-18-1-swivel-valve001.webp",
-            "/images/products/tyre-valves/v3-18-1-swivel-valve002.webp"
-          ],
-          "seoTitle": "V3.18.1 Large Bore Swivel Valve | Φ31 Base, A64 B24.5 C14.5, 146°",
-          "tagline": "Large-bore brass swivel tyre valve for agricultural and off-road machinery, Φ31 base, A=64mm, B=24.5mm, C=14.5mm, α/β=146°, rim hole Φ20.5 (.812\").",
-          "desc": "The V3.18.1 large-bore swivel type tyre valve is designed for tractors, agricultural machinery and off-road vehicles. The swiveling Φ31mm base and double-bent stem allow fast inflation and easy access on heavy equipment. A=64mm, B=24.5mm, C=14.5mm, α/β=146°, fitting the Φ20.5mm (.812\") rim hole. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "V3.18.1 valve, large bore swivel valve, tractor valve, agricultural valve, off-road valve, Φ31 base, Φ20.5 rim hole",
-          "features": [
-            "Large-bore swivel type, Φ31 base",
-            "Double-bent stem for easy access",
-            "A=64mm, B=24.5mm, C=14.5mm, α/β=146°",
-            "Rim hole Φ20.5mm (.812\")",
-            "Core & cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["ETRTO No.", "Rel Length (D)", "A (mm)", "B (mm)", "C (mm)", "α/β°", "Rim Hole"],
-            "rows": [
-              ["V3.18.1", "Φ31", "64", "24.5", "14.5", "146°", "Φ20.5 (.812\")"],
-              ["V3.18.2", "Φ31", "81", "24.5", "14.5", "146°", "Φ20.5 (.812\")"],
-              ["V3.18.4", "Φ31", "51", "37.5", "19.5", "138°", "Φ20.5 (.812\")"],
-              ["V3.18.5", "Φ31", "68", "37.5", "19.5", "138°", "Φ20.5 (.812\")"]
-            ]
-          }
-        },
-        {
-          "slug": "v3-18-2-swivel-valve",
-          "name": "V3.18.2 Swivel Valve",
-          "image": "/images/products/tyre-valves/v3-18-2-swivel-valve001.webp",
-          "images": [
-            "/images/products/tyre-valves/v3-18-2-swivel-valve001.webp",
-            "/images/products/tyre-valves/v3-18-2-swivel-valve002.webp"
-          ],
-          "seoTitle": "V3.18.2 Large Bore Swivel Valve | Φ31 Base, A81 B24.5 C14.5, 146°",
-          "tagline": "Large-bore brass swivel tyre valve for agricultural and off-road machinery, Φ31 base, A=81mm, B=24.5mm, C=14.5mm, α/β=146°, rim hole Φ20.5 (.812\").",
-          "desc": "The V3.18.2 large-bore swivel type tyre valve is designed for tractors, agricultural machinery and off-road vehicles. The swiveling Φ31mm base and double-bent stem allow fast inflation and easy access on heavy equipment. A=81mm, B=24.5mm, C=14.5mm, α/β=146°, fitting the Φ20.5mm (.812\") rim hole. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "V3.18.2 valve, large bore swivel valve, tractor valve, agricultural valve, off-road valve, Φ31 base, Φ20.5 rim hole",
-          "features": [
-            "Large-bore swivel type, Φ31 base",
-            "Double-bent stem for easy access",
-            "A=81mm, B=24.5mm, C=14.5mm, α/β=146°",
-            "Rim hole Φ20.5mm (.812\")",
-            "Core & cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["ETRTO No.", "Rel Length (D)", "A (mm)", "B (mm)", "C (mm)", "α/β°", "Rim Hole"],
-            "rows": [
-              ["V3.18.1", "Φ31", "64", "24.5", "14.5", "146°", "Φ20.5 (.812\")"],
-              ["V3.18.2", "Φ31", "81", "24.5", "14.5", "146°", "Φ20.5 (.812\")"],
-              ["V3.18.4", "Φ31", "51", "37.5", "19.5", "138°", "Φ20.5 (.812\")"],
-              ["V3.18.5", "Φ31", "68", "37.5", "19.5", "138°", "Φ20.5 (.812\")"]
-            ]
-          }
-        },
-        {
-          "slug": "v3-18-4-swivel-valve",
-          "name": "V3.18.4 Swivel Valve",
-          "image": "/images/products/tyre-valves/v3-18-4-swivel-valve001.webp",
-          "images": [
-            "/images/products/tyre-valves/v3-18-4-swivel-valve001.webp",
-            "/images/products/tyre-valves/v3-18-4-swivel-valve002.webp"
-          ],
-          "seoTitle": "V3.18.4 Large Bore Swivel Valve | Φ31 Base, A51 B37.5 C19.5, 138°",
-          "tagline": "Large-bore brass swivel tyre valve for agricultural and off-road machinery, Φ31 base, A=51mm, B=37.5mm, C=19.5mm, α/β=138°, rim hole Φ20.5 (.812\").",
-          "desc": "The V3.18.4 large-bore swivel type tyre valve is designed for tractors, agricultural machinery and off-road vehicles. The swiveling Φ31mm base and double-bent stem allow fast inflation and easy access on heavy equipment. A=51mm, B=37.5mm, C=19.5mm, α/β=138°, fitting the Φ20.5mm (.812\") rim hole. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "V3.18.4 valve, large bore swivel valve, tractor valve, agricultural valve, off-road valve, Φ31 base, Φ20.5 rim hole",
-          "features": [
-            "Large-bore swivel type, Φ31 base",
-            "Double-bent stem for easy access",
-            "A=51mm, B=37.5mm, C=19.5mm, α/β=138°",
-            "Rim hole Φ20.5mm (.812\")",
-            "Core & cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["ETRTO No.", "Rel Length (D)", "A (mm)", "B (mm)", "C (mm)", "α/β°", "Rim Hole"],
-            "rows": [
-              ["V3.18.1", "Φ31", "64", "24.5", "14.5", "146°", "Φ20.5 (.812\")"],
-              ["V3.18.2", "Φ31", "81", "24.5", "14.5", "146°", "Φ20.5 (.812\")"],
-              ["V3.18.4", "Φ31", "51", "37.5", "19.5", "138°", "Φ20.5 (.812\")"],
-              ["V3.18.5", "Φ31", "68", "37.5", "19.5", "138°", "Φ20.5 (.812\")"]
-            ]
-          }
-        },
-        {
-          "slug": "v3-14-2-swivel-valve",
-          "name": "V3.14.2 Swivel Valve",
-          "image": "/images/products/tyre-valves/v3-14-2-swivel-valve001.webp",
-          "images": [
-            "/images/products/tyre-valves/v3-14-2-swivel-valve001.webp",
-            "/images/products/tyre-valves/v3-14-2-swivel-valve002.webp"
-          ],
-          "seoTitle": "V3.14.2 Swivel Valve | Φ26 Base, A=45mm, 147°, Φ15.7 Rim Hole",
-          "tagline": "Brass swivel tyre valve for agricultural machinery, Φ26 base, A=45mm, α/β=147°, rim hole Φ15.7 (.625\").",
-          "desc": "The V3.14.2 swivel type tyre valve is designed for tractors and agricultural machinery, with a swiveling Φ26mm base and bent stem for easy inflation access. A=45mm, α/β=147°, fitting the Φ15.7mm (.625\") rim hole. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "V3.14.2 valve, swivel valve, tractor valve, agricultural valve, Φ26 base, Φ15.7 rim hole",
-          "features": [
-            "Swivel type, Φ26 base",
-            "Bent stem for easy access",
-            "A=45mm, α/β=147°",
-            "Rim hole Φ15.7mm (.625\")",
-            "Core & cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["ETRTO No.", "Rel Length (D)", "A (mm)", "α/β°", "Rim Hole"],
-            "rows": [
-              ["V3.14.1", "Φ26", "26", "147°", "Φ15.7 (.625\")"],
-              ["V3.14.2", "Φ26", "45", "147°", "Φ15.7 (.625\")"],
-              ["V3.14.3", "Φ26", "37", "147°", "Φ15.7 (.625\")"]
-            ]
-          }
-        },
-        {
-          "slug": "v3-12-1-swivel-valve",
-          "name": "V3.12.1 Swivel Valve",
-          "image": "/images/products/tyre-valves/v3-12-1-swivel-valve001.webp",
-          "images": [
-            "/images/products/tyre-valves/v3-12-1-swivel-valve001.webp",
-            "/images/products/tyre-valves/v3-12-1-swivel-valve002.webp"
-          ],
-          "seoTitle": "V3.12.1 Swivel Valve | Φ26 Base, A=40mm, Φ15.7 Rim Hole",
-          "tagline": "Brass swivel tyre valve for agricultural machinery, Φ26 base, straight stem A=40mm, rim hole Φ15.7 (.625\").",
-          "desc": "The V3.12.1 swivel type tyre valve is designed for tractors and agricultural machinery, with a swiveling Φ26mm base and straight stem. A=40mm, fitting the Φ15.7mm (.625\") rim hole. Factory-direct with bulk and OEM/ODM options.",
-          "keywords": "V3.12.1 valve, swivel valve, tractor valve, agricultural valve, Φ26 base, Φ15.7 rim hole",
-          "features": [
-            "Swivel type, Φ26 base",
-            "Straight stem, A=40mm",
-            "Rim hole Φ15.7mm (.625\")",
-            "Core & cap included",
-            "Factory direct, OEM/ODM & bulk supply"
-          ],
-          "spec": {
-            "headers": ["ETRTO No.", "Rel Length (D)", "A (mm)", "Rim Hole"],
-            "rows": [
-              ["V3.12.1", "Φ26", "40", "Φ15.7 (.625\")"],
-              ["V3.12.2", "Φ26", "95", "Φ15.7 (.625\")"],
-              ["V3.12.3", "Φ26", "65", "Φ15.7 (.625\")"],
-              ["V3.12.4", "Φ26", "90", "Φ15.7 (.625\")"]
-            ]
-          }
-        }
       ]
     },
     {
