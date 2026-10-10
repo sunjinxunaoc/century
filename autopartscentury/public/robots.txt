@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://autopartscentury.com/sitemap.xml
