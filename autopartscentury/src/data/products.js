@@ -1276,7 +1276,7 @@ export const category = {
           ],
           "seoTitle": "V3.18.2 Large Bore Swivel Valve | Φ31 Base, A81 B24.5 C14.5, 146°",
           "tagline": "Large-bore brass swivel tyre valve for agricultural and off-road machinery, Φ31 base, A=81mm, B=24.5mm, C=14.5mm, α/β=146°, rim hole Φ20.5 (.812\").",
-          "desc": "The V3.18.2 large-bore swivel type tyre valve is designed for tractors, agricultural machinery and off-road vehicles. The swiveling Φ31mm base and double-bent stem allow fast inflation and easy access on heavy equipment. A=81mm, B=24.5mm, C=14.5mm, α/β=146°, fitting the Φ20.5mm (.812\") rim hole. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The V3.18.2 large-bore swivel type tyre valve is designed for tractors, agricultural machinery and off-road vehicles. The swiveling Φ31mm base and double-bent stem allow fast inflation and easy access on heavy equipment. A=81mm, B=24.5mm, C=14.5mm, α/β=146°, fitting the Φ20.5mm (.812\") rim hole. The extended 81 mm stem of the V3.18.2 reaches valve seats set deeper in the disc, as found on larger tractor rear wheels. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "V3.18.2 valve, large bore swivel valve, tractor valve, agricultural valve, off-road valve, Φ31 base, Φ20.5 rim hole",
           "features": [
             "Large-bore swivel type, Φ31 base",
@@ -1306,7 +1306,7 @@ export const category = {
           ],
           "seoTitle": "V3.18.1 Large Bore Swivel Valve | Φ31 Base, A64 B24.5 C14.5, 146°",
           "tagline": "Large-bore brass swivel tyre valve for agricultural and off-road machinery, Φ31 base, A=64mm, B=24.5mm, C=14.5mm, α/β=146°, rim hole Φ20.5 (.812\").",
-          "desc": "The V3.18.1 large-bore swivel type tyre valve is designed for tractors, agricultural machinery and off-road vehicles. The swiveling Φ31mm base and double-bent stem allow fast inflation and easy access on heavy equipment. A=64mm, B=24.5mm, C=14.5mm, α/β=146°, fitting the Φ20.5mm (.812\") rim hole. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The V3.18.1 large-bore swivel type tyre valve is designed for tractors, agricultural machinery and off-road vehicles. The swiveling Φ31mm base and double-bent stem allow fast inflation and easy access on heavy equipment. A=64mm, B=24.5mm, C=14.5mm, α/β=146°, fitting the Φ20.5mm (.812\") rim hole. With its shorter 64 mm stem, the V3.18.1 is the choice when the valve seat sits close to the rim face. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "V3.18.1 valve, large bore swivel valve, tractor valve, agricultural valve, off-road valve, Φ31 base, Φ20.5 rim hole",
           "features": [
             "Large-bore swivel type, Φ31 base",
@@ -1754,7 +1754,7 @@ export const category = {
           ],
           "seoTitle": "V3-20-6 Clamp-In Truck Valve | 27° Bent Brass, A25 B85, Φ9.7 Rim Hole",
           "tagline": "Bent brass clamp-in truck and bus tubeless valve, 27° bend, A=25mm and B=85mm, rim hole Φ9.7 (.390\").",
-          "desc": "The V3-20-6 brass clamp-in tubeless tyre valve is designed for truck and bus steel rims, with a 27° bent stem for easy inflation access. A=25mm lower section and B=85mm stem length, fitting the Φ9.7mm (.390\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet, supplied complete with core and cap. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The V3-20-6 brass clamp-in tubeless tyre valve is designed for truck and bus steel rims, with a 27° bent stem for easy inflation access. A=25mm lower section and B=85mm stem length, fitting the Φ9.7mm (.390\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet, supplied complete with core and cap. With an 85 mm stem, the V3-20-6 is the long-reach variant in the V3-20 series, clearing deeper rim contours and wheel covers. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "V3-20-6 valve, V3-20-6 clamp-in valve, truck tyre valve, bus valve, brass clamp-in valve, bent truck valve, Φ9.7 rim hole valve",
           "features": [
             "Heavy-duty brass construction",
@@ -1922,7 +1922,7 @@ export const category = {
           ],
           "seoTitle": "V3-20-4 Clamp-In Truck Valve | 27° Bent Brass, A25 B60, Φ9.7 Rim Hole",
           "tagline": "Bent brass clamp-in truck and bus tubeless valve, 27° bend, A=25mm and B=60mm, rim hole Φ9.7 (.390\").",
-          "desc": "The V3-20-4 brass clamp-in tubeless tyre valve is designed for truck and bus steel rims, with a 27° bent stem for easy inflation access. A=25mm lower section and B=60mm stem length, fitting the Φ9.7mm (.390\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet, supplied complete with core and cap. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The V3-20-4 brass clamp-in tubeless tyre valve is designed for truck and bus steel rims, with a 27° bent stem for easy inflation access. A=25mm lower section and B=60mm stem length, fitting the Φ9.7mm (.390\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet, supplied complete with core and cap. Its 60 mm stem makes the V3-20-4 the compact option in the V3-20 series for standard truck and bus steel wheels. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "V3-20-4 valve, V3-20-4 clamp-in valve, truck tyre valve, bus valve, brass clamp-in valve, bent truck valve, Φ9.7 rim hole valve",
           "features": [
             "Heavy-duty brass construction",
@@ -2241,7 +2241,7 @@ export const category = {
           ],
           "seoTitle": "TR571C Clamp-In Truck Valve | 90° Bent Brass, A34 B62, Φ16 Rim Hole",
           "tagline": "90° bent brass clamp-in truck and bus tubeless valve, A=34mm and B=62mm, rim hole Φ16 (.625\").",
-          "desc": "The TR571C brass clamp-in tubeless tyre valve features a 90° bent stem for easy inflation access on truck and bus steel rims. A=34mm base height and B=62mm horizontal reach, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The TR571C brass clamp-in tubeless tyre valve features a 90° bent stem for easy inflation access on truck and bus steel rims. A=34mm base height and B=62mm horizontal reach, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. Its 62 mm reach suits standard single steel wheels on trucks and buses. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "TR571C valve, TR571C clamp-in valve, 90 degree truck valve, bus valve, brass clamp-in valve, bent truck valve, Φ16 rim hole valve",
           "features": [
             "Heavy-duty brass construction",
@@ -2272,7 +2272,7 @@ export const category = {
           ],
           "seoTitle": "TR572C Clamp-In Truck Valve | 90° Bent Brass, A34 B61, Φ16 Rim Hole",
           "tagline": "90° bent brass clamp-in truck and bus tubeless valve, A=34mm and B=61mm, rim hole Φ16 (.625\").",
-          "desc": "The TR572C brass clamp-in tubeless tyre valve features a 90° bent stem for easy inflation access on truck and bus steel rims. A=34mm base height and B=61mm horizontal reach, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The TR572C brass clamp-in tubeless tyre valve features a 90° bent stem for easy inflation access on truck and bus steel rims. A=34mm base height and B=61mm horizontal reach, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. At 61 mm reach with the same 90 degree bend, the TR572C fits rim designs where clearance around the valve hole is tight. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "TR572C valve, TR572C clamp-in valve, 90 degree truck valve, bus valve, brass clamp-in valve, bent truck valve, Φ16 rim hole valve",
           "features": [
             "Heavy-duty brass construction",
@@ -2303,7 +2303,7 @@ export const category = {
           ],
           "seoTitle": "TR573C Clamp-In Truck Valve | 90° Bent Brass, A34 B77, Φ16 Rim Hole",
           "tagline": "90° bent brass clamp-in truck and bus tubeless valve, A=34mm and B=77mm, rim hole Φ16 (.625\").",
-          "desc": "The TR573C brass clamp-in tubeless tyre valve features a 90° bent stem for easy inflation access on truck and bus steel rims. A=34mm base height and B=77mm horizontal reach, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The TR573C brass clamp-in tubeless tyre valve features a 90° bent stem for easy inflation access on truck and bus steel rims. A=34mm base height and B=77mm horizontal reach, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. The extended 77 mm reach of the TR573C clears deeper rim contours and inner dual-wheel positions on heavy trucks. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "TR573C valve, TR573C clamp-in valve, 90 degree truck valve, bus valve, brass clamp-in valve, bent truck valve, Φ16 rim hole valve",
           "features": [
             "Heavy-duty brass construction",
@@ -2364,7 +2364,7 @@ export const category = {
           ],
           "seoTitle": "60MS Clamp-In Truck Valve | Nickel-Plated Straight, A=60mm, Φ9.7 Rim Hole",
           "tagline": "Nickel-plated straight clamp-in truck and bus tubeless valve, A=60mm, rim hole Φ9.7 (.390\").",
-          "desc": "The 60MS nickel-plated brass clamp-in tubeless tyre valve is designed for truck and bus steel rims, with an overall A dimension of 60mm, fitting the Φ9.7mm (.390\") rim hole. Corrosion-resistant nickel-plated finish with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The 60MS nickel-plated brass clamp-in tubeless tyre valve is designed for truck and bus steel rims, with an overall A dimension of 60mm, fitting the Φ9.7mm (.390\") rim hole. Corrosion-resistant nickel-plated finish with hex nut and rubber grommet base, supplied complete with core and metal cap. The 60 mm overall length suits standard truck wheel boss depths. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "60MS valve, 60MS clamp-in valve, nickel plated truck valve, bus valve, clamp-in valve, Φ9.7 rim hole valve",
           "features": [
             "Nickel-plated brass construction",
@@ -2393,7 +2393,7 @@ export const category = {
           ],
           "seoTitle": "40MS Clamp-In Truck Valve | Nickel-Plated Straight, A=40mm, Φ9.7 Rim Hole",
           "tagline": "Nickel-plated straight clamp-in truck and bus tubeless valve, A=40mm, rim hole Φ9.7 (.390\").",
-          "desc": "The 40MS nickel-plated brass clamp-in tubeless tyre valve is designed for truck and bus steel rims, with an overall A dimension of 40mm, fitting the Φ9.7mm (.390\") rim hole. Corrosion-resistant nickel-plated finish with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The 40MS nickel-plated brass clamp-in tubeless tyre valve is designed for truck and bus steel rims, with an overall A dimension of 40mm, fitting the Φ9.7mm (.390\") rim hole. Corrosion-resistant nickel-plated finish with hex nut and rubber grommet base, supplied complete with core and metal cap. The shorter 40 mm body of the 40MS fits rims with limited valve boss depth. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "40MS valve, 40MS clamp-in valve, nickel plated truck valve, bus valve, clamp-in valve, Φ9.7 rim hole valve",
           "features": [
             "Nickel-plated brass construction",
@@ -2447,7 +2447,7 @@ export const category = {
           ],
           "seoTitle": "TR623A Clamp-In Truck Valve | 65° Bent Brass, A39 B57, Φ16 Rim Hole",
           "tagline": "65° bent brass clamp-in tubeless valve for truck and bus, A=39mm and B=57mm, rim hole Φ16 (.625\").",
-          "desc": "The TR623A brass clamp-in tubeless tyre valve features a 65° bent stem for easy inflation access on truck and bus steel rims. A=39mm lower section and B=57mm stem length, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The TR623A brass clamp-in tubeless tyre valve features a 65° bent stem for easy inflation access on truck and bus steel rims. A=39mm lower section and B=57mm stem length, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. At 57 mm stem length, the TR623A is the shorter-reach option in the TR62xA series for standard implement wheels. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "TR623A valve, TR623A clamp-in valve, 65 degree truck valve, bus valve, brass clamp-in valve, bent truck valve, Φ16 rim hole valve",
           "features": [
             "Heavy-duty brass construction",
@@ -2513,7 +2513,7 @@ export const category = {
           ],
           "seoTitle": "TR621A Clamp-In Truck Valve | 65° Bent Brass, A39 B75, Φ16 Rim Hole",
           "tagline": "65° bent brass clamp-in tubeless valve for truck and bus, A=39mm and B=75mm, rim hole Φ16 (.625\").",
-          "desc": "The TR621A brass clamp-in tubeless tyre valve features a 65° bent stem for easy inflation access on truck and bus steel rims. A=39mm lower section and B=75mm stem length, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The TR621A brass clamp-in tubeless tyre valve features a 65° bent stem for easy inflation access on truck and bus steel rims. A=39mm lower section and B=75mm stem length, fitting the Φ16mm (.625\") rim hole. Heavy-duty brass construction with hex nut and rubber grommet base, supplied complete with core and metal cap. The 75 mm stem of the TR621A reaches valve seats recessed in deeper agricultural implement rims. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "TR621A valve, TR621A clamp-in valve, 65 degree truck valve, bus valve, brass clamp-in valve, bent truck valve, Φ16 rim hole valve",
           "features": [
             "Heavy-duty brass construction",
@@ -2784,7 +2784,7 @@ export const category = {
           ],
           "seoTitle": "TRJ650-03 Large Bore Valve | 80° Swivel, A27 B79, Φ20.5 Rim Hole",
           "tagline": "Large-bore brass swivel tyre valve for agricultural and off-road machinery, 80° bend, A=27mm and B=79mm, rim hole Φ20.5 (.812\").",
-          "desc": "The TRJ650-03 large-bore brass swivel tyre valve is designed for tractors, agricultural machinery and off-road vehicles, with an 80° bent stem for fast inflation and easy access on heavy equipment. A=27mm base height and B=79mm stem length, fitting the Φ20.5mm (.812\") rim hole. Hexagonal base with rubber grommet seal. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The TRJ650-03 large-bore brass swivel tyre valve is designed for tractors, agricultural machinery and off-road vehicles, with an 80° bent stem for fast inflation and easy access on heavy equipment. A=27mm base height and B=79mm stem length, fitting the Φ20.5mm (.812\") rim hole. Hexagonal base with rubber grommet seal. Its 79 mm stem length suits standard large-bore tractor wheel fittings. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "TRJ650-03 valve, large bore valve, tractor valve, agricultural valve, off-road valve, swivel valve, Φ20.5 rim hole",
           "features": [
             "Large-bore brass swivel type",
@@ -2944,7 +2944,7 @@ export const category = {
           ],
           "seoTitle": "TRJ657-03 Large Bore Valve | 80° Swivel, A27 B102, Φ20.5 Rim Hole",
           "tagline": "Large-bore brass swivel tyre valve for agricultural and off-road machinery, 80° bend, A=27mm and B=102mm, rim hole Φ20.5 (.812\").",
-          "desc": "The TRJ657-03 large-bore brass swivel tyre valve is designed for tractors, agricultural machinery and off-road vehicles, with an 80° bent stem for fast inflation and easy access on heavy equipment. A=27mm base height and B=102mm stem length, fitting the Φ20.5mm (.812\") rim hole. Hexagonal base with rubber grommet seal. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The TRJ657-03 large-bore brass swivel tyre valve is designed for tractors, agricultural machinery and off-road vehicles, with an 80° bent stem for fast inflation and easy access on heavy equipment. A=27mm base height and B=102mm stem length, fitting the Φ20.5mm (.812\") rim hole. Hexagonal base with rubber grommet seal. The 102 mm stem of the TRJ657-03 is the long-reach version, clearing deep-dish agricultural and off-road rims. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "TRJ657-03 valve, large bore valve, tractor valve, agricultural valve, off-road valve, swivel valve, Φ20.5 rim hole",
           "features": [
             "Large-bore brass swivel type",
@@ -4280,7 +4280,7 @@ export const category = {
           ],
           "seoTitle": "VC-8SJ Plastic Valve Cap | Tyre Valve Dust Cap, 8V1 Thread",
           "tagline": "VC-8SJ plastic tyre valve cap, black finish, standard 8V1 thread, dust and moisture protection.",
-          "desc": "VC-8SJ plastic tyre valve cap with black finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "VC-8SJ plastic tyre valve cap with black finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. Compared with the standard VC-8 dome, the VC-8SJ offers an alternative profile in the same plastic series, giving buyers a second style option for private-label programs. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "VC-8SJ valve cap, plastic valve cap, tyre valve dust cap, 8V1 valve cap",
           "features": [
             "Plastic construction, black finish",
@@ -4307,7 +4307,7 @@ export const category = {
           ],
           "seoTitle": "VC-8 Plastic Valve Cap | Tyre Valve Dust Cap, 8V1 Thread",
           "tagline": "VC-8 plastic tyre valve cap, black finish, standard 8V1 thread, dust and moisture protection.",
-          "desc": "VC-8 plastic tyre valve cap with black finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "VC-8 plastic tyre valve cap with black finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. The VC-8 is the standard dome profile of the series and the most-ordered plastic cap for general tire service. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "VC-8 valve cap, plastic valve cap, tyre valve dust cap, 8V1 valve cap",
           "features": [
             "Plastic construction, black finish",
@@ -4415,7 +4415,7 @@ export const category = {
           ],
           "seoTitle": "VT Chrome metal Valve Cap | Tyre Valve Dust Cap, 8V1 Thread",
           "tagline": "VT metal tyre valve cap, chrome finish, standard 8V1 thread, dust and moisture protection.",
-          "desc": "VT metal tyre valve cap with chrome finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "VT metal tyre valve cap with chrome finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. The VT pairs a polished dome top with grooved grip bands for easy hand tightening. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "VT valve cap, metal valve cap, tyre valve dust cap, 8V1 valve cap",
           "features": [
             "Chrome metal construction, chrome finish",
@@ -4442,7 +4442,7 @@ export const category = {
           ],
           "seoTitle": "AT Chrome metal Valve Cap | Tyre Valve Dust Cap, 8V1 Thread",
           "tagline": "AT metal tyre valve cap, chrome hex finish, standard 8V1 thread, dust and moisture protection.",
-          "desc": "AT metal tyre valve cap with chrome hex finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "AT metal tyre valve cap with chrome hex finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. The AT combines a dome top with a hex shoulder, so it can be seated with a wrench as well as by hand. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "AT valve cap, metal valve cap, tyre valve dust cap, 8V1 valve cap",
           "features": [
             "Chrome metal construction, chrome hex finish",
@@ -4469,7 +4469,7 @@ export const category = {
           ],
           "seoTitle": "ANT Chrome metal Valve Cap | Tyre Valve Dust Cap, 8V1 Thread",
           "tagline": "ANT metal tyre valve cap, chrome hex finish, standard 8V1 thread, dust and moisture protection.",
-          "desc": "ANT metal tyre valve cap with chrome hex finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "ANT metal tyre valve cap with chrome hex finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. The ANT is a tall hex-body cap with a rounded crown, allowing wrench access along its full length. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "ANT valve cap, metal valve cap, tyre valve dust cap, 8V1 valve cap",
           "features": [
             "Chrome metal construction, chrome hex finish",
@@ -4496,7 +4496,7 @@ export const category = {
           ],
           "seoTitle": "APT Chrome metal Valve Cap | Tyre Valve Dust Cap, 8V1 Thread",
           "tagline": "APT metal tyre valve cap, chrome hex finish, standard 8V1 thread, dust and moisture protection.",
-          "desc": "APT metal tyre valve cap with chrome hex finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "APT metal tyre valve cap with chrome hex finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. The APT has a flat-top hex profile that sits neatly against decorative wheel covers. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "APT valve cap, metal valve cap, tyre valve dust cap, 8V1 valve cap",
           "features": [
             "Chrome metal construction, chrome hex finish",
@@ -4523,7 +4523,7 @@ export const category = {
           ],
           "seoTitle": "ET Chrome metal Valve Cap | Tyre Valve Dust Cap, 8V1 Thread",
           "tagline": "ET metal tyre valve cap, chrome hex finish, standard 8V1 thread, dust and moisture protection.",
-          "desc": "ET metal tyre valve cap with chrome hex finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "ET metal tyre valve cap with chrome hex finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. The ET is a full-hex, flat-top design - the most wrench-friendly cap in the range. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "ET valve cap, metal valve cap, tyre valve dust cap, 8V1 valve cap",
           "features": [
             "Chrome metal construction, chrome hex finish",
@@ -4577,7 +4577,7 @@ export const category = {
           ],
           "seoTitle": "FZT Chrome metal Valve Cap | Tyre Valve Dust Cap, 8V1 Thread",
           "tagline": "FZT metal tyre valve cap, chrome finish, standard 8V1 thread, dust and moisture protection.",
-          "desc": "FZT metal tyre valve cap with chrome finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "FZT metal tyre valve cap with chrome finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. The FZT combines a rounded dome with a straight-knurled grip and a smooth lower band. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "FZT valve cap, metal valve cap, tyre valve dust cap, 8V1 valve cap",
           "features": [
             "Chrome metal construction, chrome finish",
@@ -4658,7 +4658,7 @@ export const category = {
           ],
           "seoTitle": "DT Chrome metal Valve Cap | Tyre Valve Dust Cap, 8V1 Thread",
           "tagline": "DT metal tyre valve cap, chrome finish, standard 8V1 thread, dust and moisture protection.",
-          "desc": "DT metal tyre valve cap with chrome finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "DT metal tyre valve cap with chrome finish, fitting the standard 8V1 valve thread. Protects the valve core from dust, dirt and moisture on passenger cars, trucks, buses and agricultural vehicles. Part of our valve cap range covering plastic dome caps (EP, VC-8 series), chrome metal caps and brass caps. The DT uses a two-band knurled body with a low dome top, giving extra grip in greasy workshop conditions. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "DT valve cap, metal valve cap, tyre valve dust cap, 8V1 valve cap",
           "features": [
             "Chrome metal construction, chrome finish",
@@ -4739,7 +4739,7 @@ export const category = {
           ],
           "seoTitle": "9001 Tyre Valve Core | Standard Type, 0-15 kgf/cm², -40~+100°C",
           "tagline": "Standard type tyre valve core, working pressure 0-15 kgf/cm² (0-212 lbf/in²), -40~+100°C, installing torque 3 kgf·cm.",
-          "desc": "The 9001 standard type tyre valve core is a precision metal valve insert with threaded body, spring-loaded pin and sealing ring, suitable for standard tyre valve stems. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -40~+100°C (-40~+212°F), suggested installing torque 3 kgf·cm. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The 9001 standard type tyre valve core is a precision metal valve insert with threaded body, spring-loaded pin and sealing ring, suitable for standard tyre valve stems. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -40~+100°C (-40~+212°F), suggested installing torque 3 kgf·cm. With a 3 kgf·cm installing torque, the 9001 is the standard-choice core for passenger car and light truck valve stems. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "9001 valve core, tyre valve core, valve insert, standard valve core, valve core wholesale",
           "features": [
             "Standard type valve core",
@@ -4772,7 +4772,7 @@ export const category = {
           ],
           "seoTitle": "9002 Tyre Valve Core | High/Low Temperature Resistant, -54~+150°C",
           "tagline": "High/low temperature resistant tyre valve core with red seal, working pressure 0-15 kgf/cm² (0-212 lbf/in²), -54~+150°C, installing torque 3 kgf·cm.",
-          "desc": "The 9002 high/low temperature resistant tyre valve core features a red high-temperature sealing ring for extreme climate applications. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -54~+150°C (-65~+302°F), suggested installing torque 3 kgf·cm. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The 9002 high/low temperature resistant tyre valve core features a red high-temperature sealing ring for extreme climate applications. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -54~+150°C (-65~+302°F), suggested installing torque 3 kgf·cm. The red seal ring identifies it at a glance in the workshop, and the 3 kgf·cm installing torque matches standard passenger and light truck stems. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "9002 valve core, high temperature valve core, tyre valve core, valve insert, red seal valve core",
           "features": [
             "High/low temperature resistant",
@@ -4805,7 +4805,7 @@ export const category = {
           ],
           "seoTitle": "7001 Tyre Valve Core | Standard Type, 0-15 kgf/cm², -40~+100°C",
           "tagline": "Standard type tyre valve core, working pressure 0-15 kgf/cm² (0-212 lbf/in²), -40~+100°C, installing torque 4 kgf·cm.",
-          "desc": "The 7001 standard type tyre valve core is a precision metal valve insert with threaded body, spring-loaded pin and sealing ring, suitable for standard tyre valve stems. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -40~+100°C (-40~+212°F), suggested installing torque 4 kgf·cm. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The 7001 standard type tyre valve core is a precision metal valve insert with threaded body, spring-loaded pin and sealing ring, suitable for standard tyre valve stems. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -40~+100°C (-40~+212°F), suggested installing torque 4 kgf·cm. With a 4 kgf·cm installing torque, the 7001 is specified where a tighter core seat is required. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "7001 valve core, tyre valve core, valve insert, standard valve core, valve core wholesale",
           "features": [
             "Standard type valve core",
@@ -4838,7 +4838,7 @@ export const category = {
           ],
           "seoTitle": "7002 Tyre Valve Core | High/Low Temperature Resistant, -54~+150°C",
           "tagline": "High/low temperature resistant tyre valve core with red seal, working pressure 0-15 kgf/cm² (0-212 lbf/in²), -54~+150°C, installing torque 4 kgf·cm.",
-          "desc": "The 7002 high/low temperature resistant tyre valve core features a red high-temperature sealing ring for extreme climate applications. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -54~+150°C (-65~+302°F), suggested installing torque 4 kgf·cm. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The 7002 high/low temperature resistant tyre valve core features a red high-temperature sealing ring for extreme climate applications. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -54~+150°C (-65~+302°F), suggested installing torque 4 kgf·cm. The red seal ring allows quick identification in the workshop, with a 4 kgf·cm installing torque for stems requiring a tighter seat. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "7002 valve core, high temperature valve core, tyre valve core, valve insert, red seal valve core",
           "features": [
             "High/low temperature resistant",
@@ -4871,7 +4871,7 @@ export const category = {
           ],
           "seoTitle": "6001 Tyre Valve Core | Standard Type Long Spring, 0-15 kgf/cm²",
           "tagline": "Standard type long-spring tyre valve core, working pressure 0-15 kgf/cm² (0-212 lbf/in²), -40~+100°C, installing torque 4 kgf·cm.",
-          "desc": "The 6001 standard type tyre valve core features an extended spring body for large-bore and heavy-duty valve applications. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -40~+100°C (-40~+212°F), suggested installing torque 4 kgf·cm. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The 6001 standard type tyre valve core features an extended spring body for large-bore and heavy-duty valve applications. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -40~+100°C (-40~+212°F), suggested installing torque 4 kgf·cm. It installs at 4 kgf·cm and is the standard-temperature core choice for large-bore agricultural and OTR valve stems. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "6001 valve core, long spring valve core, large bore valve core, tyre valve core, valve insert",
           "features": [
             "Standard type, long spring body",
@@ -4904,7 +4904,7 @@ export const category = {
           ],
           "seoTitle": "6002 Tyre Valve Core | High/Low Temperature Resistant Long Spring, -54~+150°C",
           "tagline": "High/low temperature resistant long-spring tyre valve core with red seal, -54~+150°C, installing torque 4 kgf·cm.",
-          "desc": "The 6002 high/low temperature resistant tyre valve core combines an extended spring body with a red high-temperature sealing ring, for large-bore and heavy-duty valve applications in extreme climates. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -54~+150°C (-65~+302°F), suggested installing torque 4 kgf·cm. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The 6002 high/low temperature resistant tyre valve core combines an extended spring body with a red high-temperature sealing ring, for large-bore and heavy-duty valve applications in extreme climates. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -54~+150°C (-65~+302°F), suggested installing torque 4 kgf·cm. The red seal ring allows quick identification, with a 4 kgf·cm installing torque for large-bore agricultural and OTR stems. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "6002 valve core, high temperature valve core, long spring valve core, large bore valve core, tyre valve core",
           "features": [
             "High/low temperature resistant",
@@ -4937,7 +4937,7 @@ export const category = {
           ],
           "seoTitle": "8001 Tyre Valve Core | Standard Type Long Spring, 0-15 kgf/cm²",
           "tagline": "Standard type long-spring tyre valve core, working pressure 0-15 kgf/cm² (0-212 lbf/in²), -40~+100°C, installing torque 3 kgf·cm.",
-          "desc": "The 8001 standard type tyre valve core features an extended spring body for large-bore and heavy-duty valve applications. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -40~+100°C (-40~+212°F), suggested installing torque 3 kgf·cm. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The 8001 standard type tyre valve core features an extended spring body for large-bore and heavy-duty valve applications. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -40~+100°C (-40~+212°F), suggested installing torque 3 kgf·cm. It installs at 3 kgf·cm, matching large-bore stems specified to the lower torque standard. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "8001 valve core, long spring valve core, large bore valve core, tyre valve core, valve insert",
           "features": [
             "Standard type, long spring body",
@@ -4970,7 +4970,7 @@ export const category = {
           ],
           "seoTitle": "8002 Tyre Valve Core | High/Low Temperature Resistant Long Spring, -54~+150°C",
           "tagline": "High/low temperature resistant long-spring tyre valve core with red seal, -54~+150°C, installing torque 3 kgf·cm.",
-          "desc": "The 8002 high/low temperature resistant tyre valve core combines an extended spring body with a red high-temperature sealing ring, for large-bore and heavy-duty valve applications in extreme climates. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -54~+150°C (-65~+302°F), suggested installing torque 3 kgf·cm. Factory-direct with bulk and OEM/ODM options.",
+          "desc": "The 8002 high/low temperature resistant tyre valve core combines an extended spring body with a red high-temperature sealing ring, for large-bore and heavy-duty valve applications in extreme climates. Working pressure 0-15 kgf/cm² (0-212 lbf/in²), working temperature -54~+150°C (-65~+302°F), suggested installing torque 3 kgf·cm. The red seal ring allows quick identification, with a 3 kgf·cm installing torque matching lower-torque large-bore stems. Factory-direct with bulk and OEM/ODM options.",
           "keywords": "8002 valve core, high temperature valve core, long spring valve core, large bore valve core, tyre valve core",
           "features": [
             "High/low temperature resistant",
