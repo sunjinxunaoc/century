@@ -15,12 +15,17 @@
           v-for="a in articles"
           :key="a.slug"
           :to="`/news/${a.slug}`"
-          class="mi-card group flex flex-col p-7"
+          class="mi-card group flex flex-col overflow-hidden p-0"
         >
-          <div class="mb-2 text-[12px] text-muted">{{ a.date }}</div>
-          <h2 class="mb-2 text-[18px] font-semibold leading-snug text-ink transition-colors group-hover:text-brand">{{ a.title }}</h2>
-          <p class="mb-4 flex-1 text-[13px] leading-relaxed text-muted">{{ a.excerpt }}</p>
-          <div class="text-[13px] font-medium text-brand">Read More &rarr;</div>
+          <div class="h-44 overflow-hidden">
+            <img :src="a.image" :alt="a.title" loading="lazy" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <div class="mb-2 text-[12px] text-muted">{{ a.date }}</div>
+            <h2 class="mb-2 text-[18px] font-semibold leading-snug text-ink transition-colors group-hover:text-brand">{{ a.title }}</h2>
+            <p class="mb-4 flex-1 text-[13px] leading-relaxed text-muted">{{ a.excerpt }}</p>
+            <div class="text-[13px] font-medium text-brand">Read More &rarr;</div>
+          </div>
         </router-link>
       </div>
     </section>

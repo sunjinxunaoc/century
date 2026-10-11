@@ -96,11 +96,16 @@
             v-for="a in articles"
             :key="a.slug"
             :to="`/news/${a.slug}`"
-            class="mi-card group flex flex-col p-5"
+            class="mi-card group flex flex-col overflow-hidden p-0"
           >
-            <div class="mb-2 text-[11px] text-muted">{{ a.date }}</div>
-            <h3 class="mb-2 flex-1 text-[14px] font-semibold leading-snug text-ink transition-colors group-hover:text-brand">{{ a.title }}</h3>
-            <div class="text-[12px] font-medium text-brand">Read More &rarr;</div>
+            <div class="h-32 overflow-hidden">
+              <img :src="a.image" :alt="a.title" loading="lazy" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            </div>
+            <div class="flex flex-1 flex-col p-5">
+              <div class="mb-2 text-[11px] text-muted">{{ a.date }}</div>
+              <h3 class="mb-2 flex-1 text-[14px] font-semibold leading-snug text-ink transition-colors group-hover:text-brand">{{ a.title }}</h3>
+              <div class="text-[12px] font-medium text-brand">Read More &rarr;</div>
+            </div>
           </router-link>
         </div>
       </div>

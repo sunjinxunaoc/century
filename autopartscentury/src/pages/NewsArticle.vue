@@ -6,6 +6,7 @@
       <div class="mi-card p-8 sm:p-10">
         <div class="mb-2 text-[12px] text-muted">{{ article.date }}</div>
         <h1 class="mb-6 text-2xl font-bold leading-snug sm:text-3xl">{{ article.title }}</h1>
+        <img :src="article.image" :alt="article.title" class="mb-8 w-full rounded-md object-cover" loading="eager" />
 
         <div v-for="(s, i) in article.sections" :key="i" class="mb-6">
           <h2 class="mb-2 text-[18px] font-semibold text-ink">{{ s.h2 }}</h2>
@@ -49,6 +50,7 @@ useHead({
     { name: 'keywords', content: () => article.value?.keywords || '' },
     { property: 'og:title', content: () => article.value?.seoTitle || '' },
     { property: 'og:description', content: () => article.value?.desc || '' },
+    { property: 'og:image', content: () => article.value ? `https://autopartscentury.com${article.value.image}` : '' },
   ],
   link: [{ rel: 'canonical', href: () => `https://autopartscentury.com/news/${route.params.slug}/` }],
 })
