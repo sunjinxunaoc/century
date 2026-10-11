@@ -50,7 +50,8 @@
           <router-link to="/contact" class="nav-link" :class="{ active: route.path === '/contact' }">Contact</router-link>
         </nav>
 
-        <div class="flex items-center gap-3">
+        <div class="flex flex-1 items-center justify-end gap-3">
+          <SearchBar class="hidden md:block" />
           <router-link
             to="/contact"
             class="hidden rounded-sm bg-brand px-5 py-2 text-[14px] font-medium text-white transition-colors hover:bg-brand-dark sm:block"
@@ -66,6 +67,9 @@
 
       <div v-if="mobileOpen" class="border-t border-black/5 bg-white lg:hidden">
         <div class="container-mi flex flex-col py-2 text-[15px]">
+          <div class="py-3 md:hidden">
+            <SearchBar />
+          </div>
           <router-link to="/" class="mobile-link" @click="mobileOpen = false">Home</router-link>
           <router-link to="/products" class="mobile-link" @click="mobileOpen = false">All Tyre Valves</router-link>
           <router-link
@@ -87,6 +91,7 @@
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { subcategories } from '../data/products'
+import SearchBar from './SearchBar.vue'
 
 const route = useRoute()
 const mobileOpen = ref(false)

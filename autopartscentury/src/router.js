@@ -5,5 +5,6 @@ export const routes = [
   { path: '/products/:sub/:slug', component: () => import('./pages/ProductPage.vue') },
   { path: '/about', component: () => import('./pages/about.vue') },
   { path: '/contact', component: () => import('./pages/contact.vue') },
+  { path: '/search', component: () => import('./pages/search.vue') },
   { path: '/:pathMatch(.*)*', component: () => import('./pages/NotFound.vue') },
 ]
