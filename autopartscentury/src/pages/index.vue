@@ -83,6 +83,30 @@
     </section>
 
     <section class="bg-page py-14">
+      <div class="container-mi">
+        <div class="mb-6 flex items-end justify-between">
+          <div>
+            <h2 class="text-[26px] font-semibold">News & Insights</h2>
+            <p class="mt-1 text-[14px] text-muted">Buying guides and industry insights for tyre valve importers and distributors.</p>
+          </div>
+          <router-link to="/news" class="shrink-0 text-[13px] text-muted transition-colors hover:text-brand">View All &rarr;</router-link>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <router-link
+            v-for="a in articles"
+            :key="a.slug"
+            :to="`/news/${a.slug}`"
+            class="mi-card group flex flex-col p-5"
+          >
+            <div class="mb-2 text-[11px] text-muted">{{ a.date }}</div>
+            <h3 class="mb-2 flex-1 text-[14px] font-semibold leading-snug text-ink transition-colors group-hover:text-brand">{{ a.title }}</h3>
+            <div class="text-[12px] font-medium text-brand">Read More &rarr;</div>
+          </router-link>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-page py-14">
       <div class="container-mi max-w-3xl">
         <h2 class="mb-8 text-center text-[26px] font-semibold">Frequently Asked Questions</h2>
         <FaqSection :faqs="category.faqs" />
@@ -96,6 +120,7 @@
 <script setup>
 import { useHead } from '@unhead/vue'
 import { category, subcategories } from '../data/products'
+import { articles } from '../data/news'
 import HeroSlider from '../components/HeroSlider.vue'
 import ProductCard from '../components/ProductCard.vue'
 import FaqSection from '../components/FaqSection.vue'

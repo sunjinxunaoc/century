@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { subcategories, category } from '../src/data/products.js'
+import { articles } from '../src/data/news.js'
 
 const BASE = 'https://autopartscentury.com'
 const today = new Date().toISOString().slice(0, 10)
@@ -9,7 +10,12 @@ const urls = [
   { loc: '/products/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/about/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/contact/', priority: '0.8', changefreq: 'monthly' },
+  { loc: '/news/', priority: '0.7', changefreq: 'weekly' },
 ]
+
+for (const a of articles) {
+  urls.push({ loc: `/news/${a.slug}/`, priority: '0.6', changefreq: 'monthly' })
+}
 
 for (const sub of subcategories) {
   urls.push({ loc: `/products/${sub.slug}/`, priority: '0.9', changefreq: 'weekly' })
@@ -57,6 +63,8 @@ ${subcategories.map(s => `- [${s.name}](${BASE}/products/${s.slug}/): ${s.desc}`
 
 - [Home](${BASE}/)
 - [All Tyre Valves](${BASE}/products/)
+- [News & Insights](${BASE}/news/)
+${articles.map(a => `- [${a.title}](${BASE}/news/${a.slug}/)`).join('\n')}
 - [About Us](${BASE}/about/)
 - [Contact](${BASE}/contact/)
 `

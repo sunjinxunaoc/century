@@ -47,6 +47,7 @@
             </div>
           </div>
           <router-link to="/about" class="nav-link" :class="{ active: route.path === '/about' }">About Us</router-link>
+          <router-link to="/news" class="nav-link" :class="{ active: route.path.startsWith('/news') }">News</router-link>
           <router-link to="/contact" class="nav-link" :class="{ active: route.path === '/contact' }">Contact</router-link>
         </nav>
 
@@ -80,6 +81,7 @@
             @click="mobileOpen = false"
           >{{ sub.name }}</router-link>
           <router-link to="/about" class="mobile-link" @click="mobileOpen = false">About Us</router-link>
+          <router-link to="/news" class="mobile-link" @click="mobileOpen = false">News</router-link>
           <router-link to="/contact" class="mobile-link" @click="mobileOpen = false">Contact</router-link>
         </div>
       </div>

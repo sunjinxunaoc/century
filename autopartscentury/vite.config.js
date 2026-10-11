@@ -1,9 +1,13 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { subcategories } from './src/data/products'
+import { articles } from './src/data/news'
 
 function buildStaticPaths() {
-  const paths = ['/products', '/about', '/contact']
+  const paths = ['/products', '/about', '/contact', '/news']
+  for (const a of articles) {
+    paths.push(`/news/${a.slug}`)
+  }
   for (const sub of subcategories) {
     paths.push(`/products/${sub.slug}`)
     for (const p of sub.products) {
