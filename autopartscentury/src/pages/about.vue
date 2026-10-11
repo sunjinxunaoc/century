@@ -5,10 +5,10 @@
     <section class="container-mi">
       <div class="mi-card overflow-hidden">
         <div class="relative h-[280px]">
-          <img src="/images/factory.webp" alt="AutoParts Century factory" class="absolute inset-0 h-full w-full object-cover" />
+          <img src="/images/factory.webp" alt="Century AutoParts factory" class="absolute inset-0 h-full w-full object-cover" />
           <div class="absolute inset-0 bg-black/50"></div>
           <div class="relative flex h-full flex-col items-center justify-center px-6 text-center text-white">
-            <h1 class="mb-2 text-3xl font-bold lg:text-4xl">About AutoParts Century</h1>
+            <h1 class="mb-2 text-3xl font-bold lg:text-4xl">About Century AutoParts</h1>
             <p class="max-w-2xl text-[15px] text-white/85">Professional tyre valve manufacturer trusted by distributors in 50+ countries.</p>
           </div>
         </div>
@@ -18,7 +18,7 @@
             <h2 class="mb-4 text-[22px] font-semibold">Who We Are</h2>
             <div class="space-y-4 text-[14px] leading-relaxed text-muted">
               <p>
-                AutoParts Century is a specialized manufacturer of tyre valves based in Cangzhou, Hebei, China — one of the country's key automotive parts production hubs. Since 2010, we have focused on the design and production of rubber snap-in and brass clamp-in valve stems for the global aftermarket.
+                Century AutoParts is a specialized manufacturer of tyre valves based in Cangzhou, Hebei, China — one of the country's key automotive parts production hubs. Since 2010, we have focused on the design and production of rubber snap-in and brass clamp-in valve stems for the global aftermarket.
               </p>
               <p>
                 Our range covers passenger car and light truck valves (TR412, TR413, TR414, TR415, TR414C, PVR40-70), truck and bus high-pressure valves (V3-20 series, TR570-TR574, MS70-7), and agricultural &amp; off-road valves (TR618A, TRJ650, TR1175A). Every valve ships complete with brass core and cap.
@@ -99,10 +99,10 @@ const qualitySteps = [
 ]
 
 useHead({
-  title: 'About Us | Tyre Valve Manufacturer Since 2010 - AutoParts Century',
+  title: 'About Us | Tyre Valve Manufacturer Since 2010 - Century AutoParts',
   meta: [
-    { name: 'description', content: 'AutoParts Century is a specialized tyre valve manufacturer in Cangzhou, Hebei, China. Rubber snap-in and brass clamp-in valve stems for 50+ countries with OEM/ODM support.' },
-    { property: 'og:title', content: 'About AutoParts Century | Tyre Valve Manufacturer' },
+    { name: 'description', content: 'Century AutoParts is a specialized tyre valve manufacturer in Cangzhou, Hebei, China. Rubber snap-in and brass clamp-in valve stems for 50+ countries with OEM/ODM support.' },
+    { property: 'og:title', content: 'About Century AutoParts | Tyre Valve Manufacturer' },
     { property: 'og:description', content: 'Professional tyre valve manufacturer since 2010, trusted by distributors in 50+ countries.' },
   ],
   link: [{ rel: 'canonical', href: 'https://autopartscentury.com/about/' }],
@@ -112,11 +112,11 @@ useHead({
       children: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'AboutPage',
-        name: 'About AutoParts Century',
+        name: 'About Century AutoParts',
         url: 'https://autopartscentury.com/about/',
         mainEntity: {
           '@type': 'Organization',
-          name: 'AutoParts Century',
+          name: 'Century AutoParts',
           legalName: 'Hebei Century Auto Parts Co.,Ltd.',
           url: 'https://autopartscentury.com/',
           foundingDate: '2010',

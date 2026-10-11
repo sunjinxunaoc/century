@@ -41,7 +41,7 @@ import BreadcrumbNav from '../components/BreadcrumbNav.vue'
 import CtaSection from '../components/CtaSection.vue'
 
 useHead({
-  title: 'News & Insights - AutoParts Century',
+  title: 'News & Insights - Century AutoParts',
   meta: [
     { name: 'description', content: 'Tyre valve buying guides, quality standards and industry insights for importers and distributors: wholesale, bulk purchasing, supplier verification and OEM tips.' },
     { name: 'keywords', content: 'tyre valves manufacturer, tubeless tire valves wholesale, auto tire valve stems bulk, auto tire valve stems supplier' },

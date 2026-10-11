@@ -187,7 +187,7 @@ const related = computed(() => {
 })
 
 useHead({
-  title: () => product.value ? `${product.value.seoTitle || product.value.name} - AutoParts Century` : 'Product Not Found',
+  title: () => product.value ? `${product.value.seoTitle || product.value.name} - Century AutoParts` : 'Product Not Found',
   meta: [
     { name: 'description', content: () => product.value?.tagline || '' },
     { name: 'keywords', content: () => product.value?.keywords || '' },
@@ -207,10 +207,10 @@ useHead({
         image: `https://autopartscentury.com${product.value.image}`,
         sku: product.value.slug,
         mpn: product.value.name.split(' ')[0],
-        brand: { '@type': 'Brand', name: 'AutoParts Century' },
+        brand: { '@type': 'Brand', name: 'Century AutoParts' },
         manufacturer: {
           '@type': 'Organization',
-          name: 'AutoParts Century',
+          name: 'Century AutoParts',
           url: 'https://autopartscentury.com/',
         },
         offers: {
@@ -219,7 +219,7 @@ useHead({
           availability: 'https://schema.org/InStock',
           businessFunction: 'http://purl.org/goodrelations/v1#Sell',
           itemCondition: 'https://schema.org/NewCondition',
-          seller: { '@type': 'Organization', name: 'AutoParts Century' },
+          seller: { '@type': 'Organization', name: 'Century AutoParts' },
         },
       }) : '{}',
     },

@@ -12,7 +12,7 @@
 <script setup>
 import { useHead } from '@unhead/vue'
 useHead({
-  title: '404 Not Found - AutoParts Century',
+  title: '404 Not Found - Century AutoParts',
   meta: [{ name: 'robots', content: 'noindex, follow' }],
 })
 </script>

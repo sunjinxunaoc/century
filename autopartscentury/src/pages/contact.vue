@@ -113,10 +113,10 @@ const contacts = [
 ]
 
 useHead({
-  title: 'Contact Us | Request Tyre Valve Quote - AutoParts Century',
+  title: 'Contact Us | Request Tyre Valve Quote - Century AutoParts',
   meta: [
-    { name: 'description', content: 'Contact AutoParts Century for factory-direct tyre valve quotes. Phone, WhatsApp and email support. Reply within 24 hours.' },
-    { property: 'og:title', content: 'Contact AutoParts Century' },
+    { name: 'description', content: 'Contact Century AutoParts for factory-direct tyre valve quotes. Phone, WhatsApp and email support. Reply within 24 hours.' },
+    { property: 'og:title', content: 'Contact Century AutoParts' },
     { property: 'og:description', content: 'Request a factory-direct tyre valve quote. Reply within 24 hours.' },
   ],
   link: [{ rel: 'canonical', href: 'https://autopartscentury.com/contact/' }],
@@ -126,11 +126,11 @@ useHead({
       children: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'ContactPage',
-        name: 'Contact AutoParts Century',
+        name: 'Contact Century AutoParts',
         url: 'https://autopartscentury.com/contact/',
         mainEntity: {
           '@type': 'Organization',
-          name: 'AutoParts Century',
+          name: 'Century AutoParts',
           url: 'https://autopartscentury.com/',
           contactPoint: { '@type': 'ContactPoint', contactType: 'sales', email: 'info@centurymanufacture.com', telephone: '+86-156-3363-2668', availableLanguage: ['English', 'Chinese'], hoursAvailable: 'Mo-Sa 08:00-18:00 GMT+8' },
         },

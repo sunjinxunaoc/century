@@ -37,7 +37,7 @@ ${urls.map(u => `  <url>
 
 fs.writeFileSync(new URL('../public/sitemap.xml', import.meta.url), xml)
 
-const llms = `# AutoParts Century
+const llms = `# Century AutoParts
 
 > Tyre valve manufacturer since 2010 based in Cangzhou, Hebei, China. Rubber snap-in and brass clamp-in valve stems for passenger cars, light trucks, trucks, buses, motorcycles, agricultural machinery and off-road vehicles. OEM/ODM and bulk supply, exporting to 50+ countries.
 

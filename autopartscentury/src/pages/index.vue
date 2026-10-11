@@ -68,7 +68,7 @@
 
     <section class="bg-white py-14">
       <div class="container-mi">
-        <h2 class="mb-2 text-center text-[26px] font-semibold">Why Choose AutoParts Century</h2>
+        <h2 class="mb-2 text-center text-[26px] font-semibold">Why Choose Century AutoParts</h2>
         <p class="mx-auto mb-10 max-w-2xl text-center text-[14px] text-muted">
           Specialized in tyre valves since 2010 — rubber snap-in and brass clamp-in valve stems trusted by distributors in 50+ countries.
         </p>
@@ -175,11 +175,11 @@ const why = [
 ]
 
 useHead({
-  title: 'Tyre Valves Manufacturer | Rubber Snap-In & Brass Clamp-In Valve Stems - AutoParts Century',
+  title: 'Tyre Valves Manufacturer | Rubber Snap-In & Brass Clamp-In Valve Stems - Century AutoParts',
   meta: [
     { name: 'description', content: category.intro },
     { name: 'keywords', content: category.keywords },
-    { property: 'og:title', content: 'Tyre Valves Manufacturer | AutoParts Century' },
+    { property: 'og:title', content: 'Tyre Valves Manufacturer | Century AutoParts' },
     { property: 'og:description', content: category.tagline },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://autopartscentury.com/' },
@@ -194,7 +194,7 @@ useHead({
       children: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Organization',
-        name: 'AutoParts Century',
+        name: 'Century AutoParts',
         url: 'https://autopartscentury.com/',
         logo: 'https://autopartscentury.com/images/logo/logo-icon-transparent.png',
         contactPoint: {

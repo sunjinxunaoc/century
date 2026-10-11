@@ -61,8 +61,8 @@ export const articles = [
         'Honest answer: occasionally, yes. A good trading company earns its margin when you need dozens of unrelated product families consolidated — valves, weights, patches and tools in one shipment with one point of contact. The premium you pay buys consolidation and their supplier network.',
         'For a focused valve programme, however, factory-direct wins on every axis that matters: price, technical accuracy, customization speed and accountability when something goes wrong. If a trader cannot name the factory, control its schedule or sign its test reports, their margin is buying you risk, not service. Most mature distributors end up factory-direct for their core lines once volumes justify it.',
       ] },
-      { h2: 'About AutoParts Century', paras: [
-        'AutoParts Century is a tyre valves manufacturer located in Cangzhou, Hebei province, in the heart of China’s valve production cluster. Since 2010 we have produced rubber snap-in valves, brass clamp-in valves, truck and bus valves, agricultural and off-road valves, valve extensions, caps and cores, exporting to more than fifty countries across Europe, the Americas, the Middle East and Southeast Asia.',
+      { h2: 'About Century AutoParts', paras: [
+        'Century AutoParts is a tyre valves manufacturer located in Cangzhou, Hebei province, in the heart of China’s valve production cluster. Since 2010 we have produced rubber snap-in valves, brass clamp-in valves, truck and bus valves, agricultural and off-road valves, valve extensions, caps and cores, exporting to more than fifty countries across Europe, the Americas, the Middle East and Southeast Asia.',
         'We welcome the checklist above: material certificates, one hundred percent leak testing records, mixed-container MOQ policies and full OEM/ODM support are part of our standard export workflow. If you are evaluating tyre valves manufacturers for your market, contact us for a catalogue, samples and a quotation — we reply to technical inquiries within twenty-four hours.',
       ] },
     ],
@@ -139,7 +139,7 @@ export const articles = [
       ] },
       { h2: 'The Wholesale Buyer’s Bottom Line', paras: [
         'Success in tubeless tire valves wholesale comes down to four disciplines: know your market’s rim holes, buy EPDM rubber with test data to prove it, balance your range across snap-in volume and clamp-in margin, and structure orders for velocity rather than price breaks. Get those right and valves become the most predictable line in your catalogue.',
-        'AutoParts Century supplies tubeless tire valves wholesale to distributors in more than fifty countries, with mixed-model containers, EPDM compounds verified by aging tests, and full OEM packaging support. Contact us for the wholesale price list and current stock availability.',
+        'Century AutoParts supplies tubeless tire valves wholesale to distributors in more than fifty countries, with mixed-model containers, EPDM compounds verified by aging tests, and full OEM packaging support. Contact us for the wholesale price list and current stock availability.',
       ] },
     ],
     faqs: [
@@ -216,7 +216,7 @@ export const articles = [
       ] },
       { h2: 'Total Cost: Why the Cheapest Container Is Rarely Cheapest', paras: [
         'The true cost of a bulk valve stem order is unit price plus freight plus defect claims plus the working capital tied up in stock. A supplier five percent cheaper on paper who ships with a one percent defect rate has just charged you double the apparent saving, before counting a single unhappy customer. Experienced bulk buyers therefore negotiate on specification and reliability first, and let price follow.',
-        'AutoParts Century supplies auto tire valve stems in bulk direct from our Hebei factory: batch test reports with every shipment, mixed-model container support, OEM packaging, and a defect policy that puts replacements in your next container. Our range covers rubber snap-in stems, brass clamp-in stems, truck and bus valves, agricultural large-bore valves, extensions, caps and cores — one purchase order, one shipment, one accountable partner. Request the bulk price list and a sample kit to start the evaluation.',
+        'Century AutoParts supplies auto tire valve stems in bulk direct from our Hebei factory: batch test reports with every shipment, mixed-model container support, OEM packaging, and a defect policy that puts replacements in your next container. Our range covers rubber snap-in stems, brass clamp-in stems, truck and bus valves, agricultural large-bore valves, extensions, caps and cores — one purchase order, one shipment, one accountable partner. Request the bulk price list and a sample kit to start the evaluation.',
       ] },
     ],
     faqs: [
@@ -292,8 +292,8 @@ export const articles = [
         'The first year proves the product; the following years build the advantage. Once a supplier has earned trust, the leverage points multiply: consignment-style stock reservations on fast movers, exclusive packaging for your brand in your region, priority production slots in peak season, and early access to new product lines before they reach the open market.',
         'These arrangements are earned, not negotiated. They flow to buyers who forecast honestly, pay on schedule and share inspection data. Distributors who reach this level with a manufacturer effectively outsource their product development — when TPMS service kits or new extension designs emerge, their supplier brings the opportunity to them first.',
       ] },
-      { h2: 'Working with AutoParts Century', paras: [
-        'AutoParts Century is a factory-direct auto tire valve stems supplier in Cangzhou, Hebei, China, manufacturing snap-in valves, brass clamp-in valves, truck and bus valves, agricultural and off-road valves, extensions, caps and cores since 2010. We export to more than fifty countries with the standard toolkit serious buyers expect: video factory tours, batch test reports, mixed-model containers, OEM branding and balanced payment terms.',
+      { h2: 'Working with Century AutoParts', paras: [
+        'Century AutoParts is a factory-direct auto tire valve stems supplier in Cangzhou, Hebei, China, manufacturing snap-in valves, brass clamp-in valves, truck and bus valves, agricultural and off-road valves, extensions, caps and cores since 2010. We export to more than fifty countries with the standard toolkit serious buyers expect: video factory tours, batch test reports, mixed-model containers, OEM branding and balanced payment terms.',
         'Start with a sample kit and a technical conversation — send us your five fastest models and your target market, and we will respond within twenty-four hours with specifications, pricing and current lead times. Whether you need a single container of TR414 or a fifty-model mixed programme with your brand on every cap, the process begins the same way: a message to our export team.',
       ] },
     ],

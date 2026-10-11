@@ -106,7 +106,7 @@ const compareRows = computed(() => {
 })
 
 useHead({
-  title: () => sub.value ? `${sub.value.seoTitle || sub.value.name} - AutoParts Century` : 'Category Not Found',
+  title: () => sub.value ? `${sub.value.seoTitle || sub.value.name} - Century AutoParts` : 'Category Not Found',
   meta: [
     { name: 'description', content: () => sub.value?.desc || '' },
     { name: 'keywords', content: () => sub.value?.keywords || '' },
@@ -121,7 +121,7 @@ useHead({
         name: sub.value.name,
         description: sub.value.desc,
         url: `https://autopartscentury.com/products/${sub.value.slug}/`,
-        isPartOf: { '@type': 'WebSite', name: 'AutoParts Century', url: 'https://autopartscentury.com/' },
+        isPartOf: { '@type': 'WebSite', name: 'Century AutoParts', url: 'https://autopartscentury.com/' },
         mainEntity: {
           '@type': 'ItemList',
           numberOfItems: sub.value.products.length,

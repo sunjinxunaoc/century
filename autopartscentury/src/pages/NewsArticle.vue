@@ -5,7 +5,7 @@
     <section class="container-mi max-w-4xl">
       <div class="mi-card p-8 sm:p-10">
         <div class="mb-2 flex flex-wrap items-center gap-2 text-[12px] text-muted">
-          <span>By <span class="font-medium text-ink">AutoParts Century Engineering Team</span></span>
+          <span>By <span class="font-medium text-ink">Century AutoParts Engineering Team</span></span>
           <span aria-hidden="true">·</span>
           <time :datetime="article.date">{{ article.date }}</time>
         </div>
@@ -82,7 +82,7 @@ const relatedBySlug = {
 const relatedProducts = computed(() => relatedBySlug[route.params.slug] || [])
 
 useHead({
-  title: () => article.value ? `${article.value.seoTitle} - AutoParts Century` : 'News - AutoParts Century',
+  title: () => article.value ? `${article.value.seoTitle} - Century AutoParts` : 'News - Century AutoParts',
   meta: [
     { name: 'description', content: () => article.value?.desc || '' },
     { name: 'keywords', content: () => article.value?.keywords || '' },
@@ -102,10 +102,10 @@ useHead({
         image: `https://autopartscentury.com${article.value.image}`,
         datePublished: article.value.date,
         dateModified: article.value.date,
-        author: { '@type': 'Organization', name: 'AutoParts Century', url: 'https://autopartscentury.com/' },
+        author: { '@type': 'Organization', name: 'Century AutoParts', url: 'https://autopartscentury.com/' },
         publisher: {
           '@type': 'Organization',
-          name: 'AutoParts Century',
+          name: 'Century AutoParts',
           url: 'https://autopartscentury.com/',
           logo: { '@type': 'ImageObject', url: 'https://autopartscentury.com/images/logo/logo-icon-transparent.png' },
         },

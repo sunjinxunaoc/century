@@ -74,7 +74,7 @@ const results = computed(() => {
 })
 
 useHead({
-  title: 'Product Search - AutoParts Century',
+  title: 'Product Search - Century AutoParts',
   meta: [
     { name: 'robots', content: 'noindex, follow' },
     { name: 'description', content: 'Search tyre valves by model number or keyword: snap-in valves, clamp-in valves, truck and bus valves, agricultural valves, valve extensions, caps and cores.' },

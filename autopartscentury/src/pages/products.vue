@@ -48,7 +48,7 @@ import FaqSection from '../components/FaqSection.vue'
 import CtaSection from '../components/CtaSection.vue'
 
 useHead({
-  title: `${category.seoTitle} - AutoParts Century`,
+  title: `${category.seoTitle} - Century AutoParts`,
   meta: [
     { name: 'description', content: category.intro },
     { name: 'keywords', content: category.keywords },

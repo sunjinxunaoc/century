@@ -52,8 +52,8 @@
     <div class="bg-page py-6">
       <div class="container-mi flex flex-col items-center gap-2 text-center text-[12px] text-muted">
         <div class="flex items-center gap-2">
-          <img src="/images/logo/logo-icon-transparent-160.webp" alt="AutoParts Century" class="h-6 w-6 object-contain" width="24" height="24" />
-          <span class="font-semibold text-ink">AUTOPARTS CENTURY</span>
+          <img src="/images/logo/logo-icon-transparent-160.webp" alt="Century AutoParts" class="h-6 w-6 object-contain" width="24" height="24" />
+          <span class="font-semibold text-ink">CENTURY AUTOPARTS</span>
         </div>
         <p>Professional tyre valve manufacturer. Factory-direct rubber snap-in & brass clamp-in valve stems for global markets.</p>
         <p>&copy; 2010 - {{ year }} AutoPartsCentury.com All Rights Reserved.</p>
