@@ -74,7 +74,7 @@
             </a>
           </div>
 
-          <div class="mt-6 grid grid-cols-3 gap-3 text-center">
+          <div class="mt-6 grid grid-cols-1 gap-3 text-center sm:grid-cols-3">
             <div class="bg-page px-2 py-3">
               <div class="text-[13px] font-semibold">MOQ</div>
               <div class="text-[12px] text-muted">Negotiable</div>

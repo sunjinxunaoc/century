@@ -184,7 +184,10 @@ useHead({
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://autopartscentury.com/' },
   ],
-  link: [{ rel: 'canonical', href: 'https://autopartscentury.com/' }],
+  link: [
+    { rel: 'canonical', href: 'https://autopartscentury.com/' },
+    { rel: 'preload', as: 'image', href: slides[0].image, fetchpriority: 'high' },
+  ],
   script: [
     {
       type: 'application/ld+json',

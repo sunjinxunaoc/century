@@ -18,7 +18,7 @@
     <div class="sticky top-0 border-b border-black/5 bg-white">
       <div class="container-mi flex h-[68px] items-center justify-between gap-6">
         <router-link to="/" class="flex shrink-0 items-center gap-3">
-          <img src="/images/logo/logo-icon-transparent.png" alt="AutoParts Century" class="h-10 w-10 object-contain" />
+          <img src="/images/logo/logo-icon-transparent-160.webp" alt="AutoParts Century" class="h-10 w-10 object-contain" width="40" height="40" />
           <div class="leading-tight">
             <div class="text-[17px] font-bold tracking-tight">AUTOPARTS <span class="text-brand">CENTURY</span></div>
             <div class="text-[11px] text-muted">Tyre Valves Specialist</div>

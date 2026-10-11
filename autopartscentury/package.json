@@ -8,6 +8,7 @@
     "gen-sitemap": "node scripts/gen-sitemap.mjs",
     "prebuild": "node scripts/gen-sitemap.mjs",
     "build": "vite-ssg build",
+    "postbuild": "node scripts/postbuild-404.cjs",
     "preview": "vite preview"
   },
   "dependencies": {

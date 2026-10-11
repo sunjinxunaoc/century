@@ -8,5 +8,6 @@ export const routes = [
   { path: '/news', component: () => import('./pages/news.vue') },
   { path: '/news/:slug', component: () => import('./pages/NewsArticle.vue') },
   { path: '/search', component: () => import('./pages/search.vue') },
+  { path: '/404', component: () => import('./pages/NotFound.vue') },
   { path: '/:pathMatch(.*)*', component: () => import('./pages/NotFound.vue') },
 ]

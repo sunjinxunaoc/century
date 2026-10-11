@@ -6,12 +6,13 @@
     >
       <div v-for="(slide, i) in slides" :key="i" class="relative w-full shrink-0">
         <div class="relative h-[300px] sm:h-[380px] lg:h-[460px]">
-          <img :src="slide.image" :alt="slide.title" class="absolute inset-0 h-full w-full object-cover" />
+          <img :src="slide.image" :alt="slide.title" class="absolute inset-0 h-full w-full object-cover" :fetchpriority="i === 0 ? 'high' : 'auto'" :loading="i === 0 ? 'eager' : 'lazy'" />
           <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
           <div class="container-mi relative flex h-full flex-col justify-center">
             <div class="max-w-xl pl-0 text-white lg:pl-[240px]">
               <div class="mb-2 text-[13px] font-medium uppercase tracking-widest text-brand">{{ slide.kicker }}</div>
-              <h1 class="mb-3 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">{{ slide.title }}</h1>
+              <h1 v-if="i === 0" class="mb-3 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">{{ slide.title }}</h1>
+              <div v-else class="mb-3 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">{{ slide.title }}</div>
               <p class="mb-6 text-[15px] text-white/80">{{ slide.desc }}</p>
               <div class="flex gap-3">
                 <router-link :to="slide.to" class="rounded-sm bg-brand px-7 py-3 text-[14px] font-medium text-white transition-colors hover:bg-brand-dark">

@@ -1,0 +1,163 @@
+{
+  "summary": {
+    "health_score": 71,
+    "business_type": "B2B manufacturer product catalog (tyre valves, export trade, RFQ-based, no cart)",
+    "pages_crawled": 163,
+    "audit_target": "http://localhost:4173 (production dist build, vite preview)",
+    "top_findings": [
+      "Soft 404: every unknown URL returns HTTP 200 with homepage content; no 404.html in dist",
+      "696KB logo PNG (1024x1024) displayed at 40x40 and loaded eagerly on all 163 pages",
+      "No BreadcrumbList JSON-LD despite visible breadcrumbs on all 163 pages",
+      "Product schema missing offers/sku/mpn - ineligible for Google rich results",
+      "Mobile product-page info grid overflows horizontally by 170px on all SKU pages",
+      "Near-duplicate sibling product descriptions (29 groups covering ~60-70 of 148 product pages)"
+    ],
+    "quick_wins": [
+      "Resize logo to ~160px WebP (~5KB) - saves ~690KB on every first visit",
+      "Emit BreadcrumbList from BreadcrumbNav.vue - one component covers all 163 pages",
+      "Add FAQPage JSON-LD to pages already rendering visible FAQs (home, 6 categories, news)",
+      "Add fetchpriority=high + preload to first hero banner image",
+      "Link model-number cells in spec tables to sibling product pages (+508 exact-match internal links)",
+      "Make product-page info-box grid responsive (grid-cols-1 sm:grid-cols-3)"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 78,
+      "what_works": [
+        "163/163 pages return 200 with perfect canonicals",
+        "Valid sitemap.xml (163 URLs), /search correctly noindex",
+        "Zero mixed content, clean URL structure, llms.txt present",
+        "Good mobile viewport markup"
+      ],
+      "findings": [
+        {"title": "Soft 404s site-wide", "severity": "Critical", "description": "Unknown URLs return HTTP 200 with homepage content; no 404.html emitted in dist; wastes crawl budget and dilutes signals", "recommendation": "Emit static 404.html and configure host to return real 404 status; add 301 from non-trailing-slash to trailing-slash URLs"},
+        {"title": "Non-trailing-slash URLs return 200 duplicate", "severity": "High", "description": "/about, /search etc. serve duplicate homepage content instead of 301 to /about/", "recommendation": "Configure host redirect rules non-slash -> slash"},
+        {"title": "All 163 sitemap lastmod identical", "severity": "Medium", "description": "Every URL stamped with build date; lastmod loses meaning for recrawl prioritization", "recommendation": "Stamp lastmod from actual content change date in gen-sitemap.mjs"},
+        {"title": "No security/cache headers", "severity": "Medium", "description": "vite preview sends no HSTS/CSP/Cache-Control (host-level config)", "recommendation": "Configure production host headers: long-cache immutable /assets, security headers"}
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 74,
+      "what_works": [
+        "No thin product pages (404-582 words each)",
+        "No duplicate or missing titles; natural spec-driven copy",
+        "Clean heading hierarchy on inner pages; 4 strong ~2,200-word news articles"
+      ],
+      "findings": [
+        {"title": "Near-duplicate sibling product descriptions", "severity": "High", "description": "29 groups covering ~60-70 of 148 product pages; e.g. VC-8 cap family identical except color word - risks SERP clustering/filtering of model pages", "recommendation": "Add 1-2 differentiating sentences per sibling (vehicle applications, compatibility, packaging)"},
+        {"title": "Homepage renders 3 H1s (hero carousel)", "severity": "High", "description": "Each hero slide outputs an H1", "recommendation": "Keep first slide H1, demote slides 2-3 to div/p"},
+        {"title": "161/163 titles exceed 60 chars", "severity": "Medium", "description": "Model-first titles are good but truncate in SERP", "recommendation": "Trim suffix patterns to keep core model + category within 60 chars where possible"},
+        {"title": "News articles lack author + internal links to products", "severity": "Medium", "description": "No E-E-A-T author signal, articles don't link to catalog pages", "recommendation": "Add author/date byline and in-article links to relevant product/category pages"},
+        {"title": "About page has no certifications", "severity": "Medium", "description": "No ISO/IATF/QA content anywhere on site", "recommendation": "Add certifications + factory capability content to About"}
+      ]
+    },
+    {
+      "name": "On-Page & Search Experience",
+      "score": 77,
+      "what_works": [
+        "Intent mapping clean across page types; model-first titles match buyer queries",
+        "Request Quote CTA + breadcrumbs on product pages; 100% spec-table coverage",
+        "Homepage answers who/what/contact within first screen (visual score 82)"
+      ],
+      "findings": [
+        {"title": "Mobile product-page info grid overflows 170px", "severity": "High", "description": "MOQ/Packaging/Lead Time grid doesn't collapse on 390px viewport - affects every SKU page", "recommendation": "grid-cols-1 sm:grid-cols-3 on the info-box grid"},
+        {"title": "508 unlinked sibling-model references in spec tables", "severity": "High", "description": "Spec tables list series models as plain text while each has its own page", "recommendation": "Link model cells to their product pages - exact-match internal links"},
+        {"title": "Subcategory pages lack consolidated comparison tables", "severity": "High", "description": "Category pages list products but no series-wide size comparison table - biggest featured-snippet opportunity; data already exists", "recommendation": "Add consolidated model/size comparison table to each of 6 subcategory pages"},
+        {"title": "WhatsApp float covers content on mobile", "severity": "Medium", "description": "FAB overlaps text/links on all pages at 390px", "recommendation": "Reduce size / add safe-area offset on mobile"},
+        {"title": "11 pages missing og:image", "severity": "Low", "description": "Some category/utility pages lack og:image", "recommendation": "Set default og:image fallback"}
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 38,
+      "what_works": [
+        "Organization schema on homepage and Product schema on 148 product pages are valid JSON with absolute URLs",
+        "No parse errors, no placeholder values"
+      ],
+      "findings": [
+        {"title": "No BreadcrumbList anywhere", "severity": "High", "description": "Visual breadcrumbs render on all 163 pages but emit no schema", "recommendation": "Emit BreadcrumbList JSON-LD from BreadcrumbNav.vue - one component change, SERP-visible result"},
+        {"title": "Product schema ineligible for rich results", "severity": "High", "description": "Missing offers/review/aggregateRating and sku/mpn", "recommendation": "Add mpn (model number), brand, and Offer (businessFunction/priceSpecification appropriate for B2B RFQ) to Product JSON-LD"},
+        {"title": "14/163 pages have zero JSON-LD", "severity": "High", "description": "All category, news, about, contact pages have no structured data", "recommendation": "Add CollectionPage to subcategories, Article/NewsArticle to news (headline, image, datePublished, author), ContactPage/AboutPage"},
+        {"title": "FAQ sections without FAQPage markup", "severity": "Medium", "description": "Visible FAQs on home + 6 categories + 4 news pages; Google FAQ rich results deprecated for most sites but still valuable for AI surfaces", "recommendation": "Emit FAQPage JSON-LD from FaqSection.vue"}
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 72,
+      "what_works": [
+        "Route-level code splitting, 98.7% WebP images, zero webfonts, zero third-party scripts",
+        "Broad lazy loading, prerendered SSG HTML"
+      ],
+      "findings": [
+        {"title": "696KB logo PNG displayed at 40x40", "severity": "Critical", "description": "1024x1024 PNG loaded eagerly in header on all 163 pages - largest single byte cost on the site", "recommendation": "Resize to ~160px WebP (~5KB)"},
+        {"title": "Hero carousel images eager, no fetchpriority", "severity": "High", "description": "All 3 hero banners (1920x640 webp) load eagerly; LCP image competes with ~930KB eager imagery", "recommendation": "fetchpriority=high on first slide only, lazy-load slides 2-3, add preload"},
+        {"title": "298KB products.js inside main bundle", "severity": "High", "description": "Full catalog hoisted into 356KB app bundle via SiteHeader/SearchBar imports - downloaded on every page", "recommendation": "Split search index into a lazily loaded chunk (dynamic import on search focus)"},
+        {"title": "No srcset / width+height on content images", "severity": "Medium", "description": "Responsive sizing and CLS reserves missing", "recommendation": "Add width/height attrs; generate srcset variants for product images"}
+      ]
+    },
+    {
+      "name": "AI Search Readiness (GEO)",
+      "score": 72,
+      "what_works": [
+        "Fully pre-rendered HTML - trivially crawlable by AI bots",
+        "Spec-compliant llms.txt, real HTML spec tables, consistent NAP"
+      ],
+      "findings": [
+        {"title": "Zero certification (ISO/IATF) content", "severity": "High", "description": "AI answers about 'reliable tyre valve manufacturer' lean on certifications; site has none", "recommendation": "Publish certifications + QA process content (About + homepage block)"},
+        {"title": "Missing buyer-question content (MOQ/lead time/payment/shipping)", "severity": "High", "description": "Top B2B buyer questions not answered anywhere - AI engines can't cite the site for them", "recommendation": "Add per-page or FAQ answers for MOQ, lead time, OEM, payment, shipping"},
+        {"title": "robots.txt has no explicit AI-crawler policy", "severity": "Medium", "description": "GPTBot/ClaudeBot/PerplexityBot not mentioned (default allow)", "recommendation": "Explicitly allow major AI crawlers in robots.txt"}
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 70,
+      "what_works": [
+        "100% alt coverage across 2,802 images with keyword-rich product/news alts",
+        "98.7% WebP, SEO-friendly filenames"
+      ],
+      "findings": [
+        {"title": "Oversized logo PNG sitewide", "severity": "High", "description": "696KB PNG at 40px display", "recommendation": "Replace with small WebP/SVG"},
+        {"title": "Zero srcset anywhere", "severity": "High", "description": "Full-size images served to mobile", "recommendation": "Generate responsive variants for hero + product images"},
+        {"title": "No width/height attributes (CLS risk)", "severity": "Medium", "description": "Images lack dimension reserves", "recommendation": "Add width/height or aspect-ratio boxes in ProductCard and product gallery"}
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {"name": "Phase 1: Critical Fixes", "timeframe": "Week 1", "items": [
+        "Emit 404.html + configure real 404 status and slash redirects on host",
+        "Resize 696KB logo to small WebP",
+        "Fix mobile product info-grid overflow",
+        "Homepage hero: single H1, fetchpriority on first slide"
+      ]},
+      {"name": "Phase 2: High-Impact Improvements", "timeframe": "Weeks 2-3", "items": [
+        "BreadcrumbList JSON-LD from BreadcrumbNav.vue (all 163 pages)",
+        "Product schema: add mpn/brand/Offer",
+        "FAQPage JSON-LD from existing FAQ content",
+        "CollectionPage + Article schema for category/news pages",
+        "Link spec-table model cells to sibling pages (+508 internal links)",
+        "Split search index out of main JS bundle",
+        "Differentiating copy for 29 near-duplicate sibling groups"
+      ]},
+      {"name": "Phase 3: Content & Authority", "timeframe": "Month 2", "items": [
+        "Certifications/QA content (About + homepage)",
+        "MOQ/lead-time/OEM/shipping answer content",
+        "Consolidated comparison tables on 6 subcategory pages",
+        "News articles: author bylines + links to products",
+        "Trim 161 over-long titles"
+      ]},
+      {"name": "Phase 4: Monitoring & Iteration", "timeframe": "Ongoing", "items": [
+        "Capture drift baseline; re-audit after deployment to real host (headers, compression, real CWV)",
+        "Per-page lastmod in sitemap",
+        "Responsive srcset generation pipeline"
+      ]}
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}
