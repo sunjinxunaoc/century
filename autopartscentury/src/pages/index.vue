@@ -111,12 +111,12 @@ const slides = [
     to: '/products',
   },
   {
-    kicker: 'Best Seller',
-    title: 'TR414 Snap-In Tyre Valve',
-    desc: 'The global standard for passenger cars — 11.5mm rim hole, 38mm effective length, brass core & cap included.',
-    image: '/images/products/tyre-valves/tr414-snap-in-tubeless-valve001.webp',
-    cta: 'View TR414',
-    to: '/products/passenger-car-light-truck-valves/tr414-snap-in-tubeless-valve',
+    kicker: 'Factory Direct Since 2010',
+    title: 'Tyre Valve Manufacturing You Can Trust',
+    desc: 'One-stop supply of tyre valves, caps, cores and extensions, exported to 50+ countries with bulk and OEM/ODM options.',
+    image: '/images/hero-banner-tyre-valve.webp',
+    cta: 'About Us',
+    to: '/about',
   },
   {
     kicker: 'Heavy Duty',
