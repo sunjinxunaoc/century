@@ -3,7 +3,6 @@ import { subcategories, category } from '../src/data/products.js'
 import { articles } from '../src/data/news.js'
 
 const BASE = 'https://autopartscentury.com'
-const today = new Date().toISOString().slice(0, 10)
 
 const urls = [
   { loc: '/', priority: '1.0', changefreq: 'weekly' },
@@ -28,7 +27,6 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url>
     <loc>${BASE}${u.loc}</loc>
-    <lastmod>${today}</lastmod>
     <changefreq>${u.changefreq}</changefreq>
     <priority>${u.priority}</priority>
   </url>`).join('\n')}
