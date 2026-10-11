@@ -32,7 +32,7 @@
               Tyre Valves
               <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             </router-link>
-            <div class="invisible absolute left-1/2 top-full z-50 w-[560px] -translate-x-1/2 pt-3 opacity-0 transition-all group-hover:visible group-hover:opacity-100">
+            <div class="invisible absolute left-1/2 top-full z-50 w-[660px] -translate-x-1/2 pt-3 opacity-0 transition-all group-hover:visible group-hover:opacity-100">
               <div class="grid grid-cols-3 gap-2 rounded-lg border border-black/5 bg-white p-4 shadow-xl">
                 <router-link
                   v-for="sub in subcategories"
@@ -40,7 +40,10 @@
                   :to="`/products/${sub.slug}`"
                   class="rounded-md p-3 transition-colors hover:bg-page"
                 >
-                  <div class="text-[14px] font-semibold text-ink">{{ sub.name }}</div>
+                  <div class="mb-2 flex h-20 items-center justify-center overflow-hidden rounded-sm bg-white">
+                    <img :src="subImages[sub.slug]" :alt="sub.name" class="h-full w-full object-contain" loading="lazy" />
+                  </div>
+                  <div class="text-[14px] font-semibold leading-snug text-ink">{{ sub.name }}</div>
                   <div class="mt-1 text-[12px] leading-snug text-muted">{{ sub.products.length }} products</div>
                 </router-link>
               </div>
@@ -97,6 +100,15 @@ import SearchBar from './SearchBar.vue'
 
 const route = useRoute()
 const mobileOpen = ref(false)
+
+const subImages = {
+  'passenger-car-light-truck-valves': '/images/products/tyre-valves/tr414-snap-in-tubeless-valve001.webp',
+  'motorcycle-bicycle-valves': '/images/products/tyre-valves/pvr32-motorcycle-valve001.webp',
+  'truck-bus-valves': '/images/products/tyre-valves/tr571-clamp-in-valve001.webp',
+  'agricultural-tractors-off-road-valves': '/images/products/tyre-valves/trj650-03-valve001.webp',
+  'valve-extensions': '/images/products/tyre-valves/ex125p-valve-extension001.webp',
+  'valve-accessories': '/images/products/tyre-valves/vc-8r-valve-cap001.webp',
+}
 </script>
 
 <style scoped>
