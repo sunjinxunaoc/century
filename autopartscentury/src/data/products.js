@@ -14,6 +14,22 @@ export const category = {
     "Factory-direct with OEM/ODM and bulk supply options"
   ],
   "faqs": [
+      {
+        "q": "What is your minimum order quantity (MOQ)?",
+        "a": "MOQ is negotiable and depends on the model and packaging. Standard models can start from small trial orders - send us your target quantity for an exact quote."
+      },
+      {
+        "q": "How long is the lead time?",
+        "a": "Standard models ship in 7-20 days depending on order volume. OEM/ODM orders with custom packaging may need a few extra days for artwork confirmation and sampling."
+      },
+      {
+        "q": "Do you support OEM / private label orders?",
+        "a": "Yes. We offer OEM and ODM services including custom packaging, private labeling and branded cartons. Send your artwork and requirements for a fast quotation."
+      },
+      {
+        "q": "How do you ship export orders?",
+        "a": "We ship worldwide by sea (FCL/LCL), air freight and express courier for samples. Export cartons and pallets follow your requirements, and we can work with your nominated forwarder."
+      },
     {
       "q": "What is the difference between rubber and metal tyre valves?",
       "a": "Rubber snap-in valves are lighter and suit standard passenger car rims, while brass clamp-in metal valves handle higher pressures and are recommended for trucks, buses and high-speed applications."
@@ -41,6 +57,22 @@ export const category = {
         "PVR153 valve stems and brass 9002# core and cap included"
       ],
       "faqs": [
+      {
+        "q": "What is your minimum order quantity (MOQ)?",
+        "a": "MOQ is negotiable and depends on the model and packaging. Standard models can start from small trial orders - send us your target quantity for an exact quote."
+      },
+      {
+        "q": "How long is the lead time?",
+        "a": "Standard models ship in 7-20 days depending on order volume. OEM/ODM orders with custom packaging may need a few extra days for artwork confirmation and sampling."
+      },
+      {
+        "q": "Do you support OEM / private label orders?",
+        "a": "Yes. We offer OEM and ODM services including custom packaging, private labeling and branded cartons. Send your artwork and requirements for a fast quotation."
+      },
+      {
+        "q": "How do you ship export orders?",
+        "a": "We ship worldwide by sea (FCL/LCL), air freight and express courier for samples. Export cartons and pallets follow your requirements, and we can work with your nominated forwarder."
+      },
         {
           "q": "What rim hole does the TR414 fit?",
           "a": "The TR414 fits the standard 11.5mm (.453\") rim hole, with a 38mm (1.50\") effective length."
@@ -909,6 +941,22 @@ export const category = {
         "Core & cap included, max 65psi"
       ],
       "faqs": [
+      {
+        "q": "What is your minimum order quantity (MOQ)?",
+        "a": "MOQ is negotiable and depends on the model and packaging. Standard models can start from small trial orders - send us your target quantity for an exact quote."
+      },
+      {
+        "q": "How long is the lead time?",
+        "a": "Standard models ship in 7-20 days depending on order volume. OEM/ODM orders with custom packaging may need a few extra days for artwork confirmation and sampling."
+      },
+      {
+        "q": "Do you support OEM / private label orders?",
+        "a": "Yes. We offer OEM and ODM services including custom packaging, private labeling and branded cartons. Send your artwork and requirements for a fast quotation."
+      },
+      {
+        "q": "How do you ship export orders?",
+        "a": "We ship worldwide by sea (FCL/LCL), air freight and express courier for samples. Export cartons and pallets follow your requirements, and we can work with your nominated forwarder."
+      },
         {
           "q": "Which PVR valve fits my motorcycle?",
           "a": "Match the rim hole: PVR70 fits the standard 11.5mm hole, PVR40/50/60 fit smaller holes from 8.3-10.5mm, and PVR30/PVR32 are compact 90° bent valves for scooters and mopeds."
@@ -1167,6 +1215,22 @@ export const category = {
         "Heavy-duty construction for commercial vehicles"
       ],
       "faqs": [
+      {
+        "q": "What is your minimum order quantity (MOQ)?",
+        "a": "MOQ is negotiable and depends on the model and packaging. Standard models can start from small trial orders - send us your target quantity for an exact quote."
+      },
+      {
+        "q": "How long is the lead time?",
+        "a": "Standard models ship in 7-20 days depending on order volume. OEM/ODM orders with custom packaging may need a few extra days for artwork confirmation and sampling."
+      },
+      {
+        "q": "Do you support OEM / private label orders?",
+        "a": "Yes. We offer OEM and ODM services including custom packaging, private labeling and branded cartons. Send your artwork and requirements for a fast quotation."
+      },
+      {
+        "q": "How do you ship export orders?",
+        "a": "We ship worldwide by sea (FCL/LCL), air freight and express courier for samples. Export cartons and pallets follow your requirements, and we can work with your nominated forwarder."
+      },
         {
           "q": "What pressure do these valves handle?",
           "a": "These brass metal valves are built for high-pressure truck and bus applications, well above standard passenger car ratings."
@@ -2427,6 +2491,22 @@ export const category = {
         "Brass/metal construction for harsh conditions"
       ],
       "faqs": [
+      {
+        "q": "What is your minimum order quantity (MOQ)?",
+        "a": "MOQ is negotiable and depends on the model and packaging. Standard models can start from small trial orders - send us your target quantity for an exact quote."
+      },
+      {
+        "q": "How long is the lead time?",
+        "a": "Standard models ship in 7-20 days depending on order volume. OEM/ODM orders with custom packaging may need a few extra days for artwork confirmation and sampling."
+      },
+      {
+        "q": "Do you support OEM / private label orders?",
+        "a": "Yes. We offer OEM and ODM services including custom packaging, private labeling and branded cartons. Send your artwork and requirements for a fast quotation."
+      },
+      {
+        "q": "How do you ship export orders?",
+        "a": "We ship worldwide by sea (FCL/LCL), air freight and express courier for samples. Export cartons and pallets follow your requirements, and we can work with your nominated forwarder."
+      },
         {
           "q": "Do these fit agricultural rims?",
           "a": "Yes. They are designed for tractor and off-road rims with rim holes from 5/8\" (15.9mm) up to 20.5mm."
@@ -3108,6 +3188,22 @@ export const category = {
         "For dual wheels, trucks, buses and RVs"
       ],
       "faqs": [
+      {
+        "q": "What is your minimum order quantity (MOQ)?",
+        "a": "MOQ is negotiable and depends on the model and packaging. Standard models can start from small trial orders - send us your target quantity for an exact quote."
+      },
+      {
+        "q": "How long is the lead time?",
+        "a": "Standard models ship in 7-20 days depending on order volume. OEM/ODM orders with custom packaging may need a few extra days for artwork confirmation and sampling."
+      },
+      {
+        "q": "Do you support OEM / private label orders?",
+        "a": "Yes. We offer OEM and ODM services including custom packaging, private labeling and branded cartons. Send your artwork and requirements for a fast quotation."
+      },
+      {
+        "q": "How do you ship export orders?",
+        "a": "We ship worldwide by sea (FCL/LCL), air freight and express courier for samples. Export cartons and pallets follow your requirements, and we can work with your nominated forwarder."
+      },
         {
           "q": "Which extension do I need for dual wheels?",
           "a": "For truck and bus dual wheels, metal EXJ/EX-MT extensions or braided EXR hose extensions are recommended; choose the length that brings the valve mouth beyond the outer wheel."
@@ -4234,6 +4330,22 @@ export const category = {
         "Standard 8V1 thread fit"
       ],
       "faqs": [
+      {
+        "q": "What is your minimum order quantity (MOQ)?",
+        "a": "MOQ is negotiable and depends on the model and packaging. Standard models can start from small trial orders - send us your target quantity for an exact quote."
+      },
+      {
+        "q": "How long is the lead time?",
+        "a": "Standard models ship in 7-20 days depending on order volume. OEM/ODM orders with custom packaging may need a few extra days for artwork confirmation and sampling."
+      },
+      {
+        "q": "Do you support OEM / private label orders?",
+        "a": "Yes. We offer OEM and ODM services including custom packaging, private labeling and branded cartons. Send your artwork and requirements for a fast quotation."
+      },
+      {
+        "q": "How do you ship export orders?",
+        "a": "We ship worldwide by sea (FCL/LCL), air freight and express courier for samples. Export cartons and pallets follow your requirements, and we can work with your nominated forwarder."
+      },
         {
           "q": "Are caps and cores included with valves?",
           "a": "Yes, all our valves ship with matching cores and caps; this range covers replacements and special types."

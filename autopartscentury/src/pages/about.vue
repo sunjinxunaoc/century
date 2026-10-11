@@ -48,6 +48,25 @@
       </div>
     </section>
 
+    <section class="container-mi mt-8">
+      <div class="mi-card p-8 lg:p-12">
+        <h2 class="mb-4 text-[22px] font-semibold">Quality Control &amp; Inspection</h2>
+        <p class="mb-6 max-w-3xl text-[14px] leading-relaxed text-muted">
+          Every batch of tyre valves passes through a documented inspection process before shipment. Our goal is simple: valves that hold air, fit the rim, and last their service life.
+        </p>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div v-for="(q, i) in qualitySteps" :key="i">
+            <div class="mb-2 text-[13px] font-semibold uppercase tracking-wide text-brand">Step {{ i + 1 }}</div>
+            <div class="mb-1 text-[15px] font-semibold">{{ q.title }}</div>
+            <p class="text-[13px] leading-relaxed text-muted">{{ q.desc }}</p>
+          </div>
+        </div>
+        <p class="mt-6 max-w-3xl text-[13px] leading-relaxed text-muted">
+          Dimensions follow ETRTO / TRA designations, and every valve ships complete with core and cap. Third-party inspection (SGS, BV or buyer-nominated) is welcome before container loading.
+        </p>
+      </div>
+    </section>
+
     <CtaSection class="mt-14" title="Work With a Tyre Valve Specialist" desc="Tell us your target market and order volume — we will recommend the right valve range and quote within 24 hours." />
   </div>
 </template>
@@ -70,6 +89,13 @@ const commitments = [
   'OEM / ODM support with custom packaging and private labels',
   'Factory-direct pricing for bulk and wholesale orders',
   'Fast response — quotations within 24 hours on working days',
+]
+
+const qualitySteps = [
+  { title: 'Material Check', desc: 'Incoming EPDM rubber compound and brass rods are verified for grade and hardness before production starts.' },
+  { title: 'In-Process Control', desc: 'Vulcanization time, temperature and mold condition are monitored; metal stems are checked for thread and plating quality.' },
+  { title: '100% Leak Test', desc: 'Every finished valve is air-tested for leakage - not sampled, every piece. Core seating and torque are verified at the same station.' },
+  { title: 'Pre-Shipment Review', desc: 'Dimensional sampling against size charts, packaging check, and carton drop review before the container is sealed.' },
 ]
 
 useHead({

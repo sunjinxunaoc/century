@@ -4,13 +4,26 @@
 
     <section class="container-mi max-w-4xl">
       <div class="mi-card p-8 sm:p-10">
-        <div class="mb-2 text-[12px] text-muted">{{ article.date }}</div>
+        <div class="mb-2 flex flex-wrap items-center gap-2 text-[12px] text-muted">
+          <span>By <span class="font-medium text-ink">AutoParts Century Engineering Team</span></span>
+          <span aria-hidden="true">·</span>
+          <time :datetime="article.date">{{ article.date }}</time>
+        </div>
         <h1 class="mb-6 text-2xl font-bold leading-snug sm:text-3xl">{{ article.title }}</h1>
         <img :src="article.image" :alt="article.title" class="mb-8 w-full rounded-md object-cover" loading="eager" />
 
         <div v-for="(s, i) in article.sections" :key="i" class="mb-6">
           <h2 class="mb-2 text-[18px] font-semibold text-ink">{{ s.h2 }}</h2>
           <p v-for="(p, j) in s.paras" :key="j" class="text-[14px] leading-relaxed text-muted">{{ p }}</p>
+        </div>
+
+        <div v-if="relatedProducts.length" class="mt-8 rounded-md border border-black/5 p-5">
+          <div class="mb-3 text-[14px] font-semibold">Related Products</div>
+          <ul class="space-y-1.5 text-[13px]">
+            <li v-for="r in relatedProducts" :key="r.to">
+              <router-link :to="r.to" class="text-brand hover:underline">{{ r.label }}</router-link>
+            </li>
+          </ul>
         </div>
 
         <div class="mt-8 rounded-md bg-page p-5 text-[14px]">
@@ -42,6 +55,31 @@ import NotFound from './NotFound.vue'
 
 const route = useRoute()
 const article = computed(() => getArticle(route.params.slug))
+
+const relatedBySlug = {
+  'choosing-a-tyre-valves-manufacturer': [
+    { to: '/products/', label: 'Browse the full tyre valve catalog' },
+    { to: '/products/passenger-car-light-truck-valves/', label: 'Passenger Car & Light Truck Valves' },
+    { to: '/products/truck-bus-valves/', label: 'Truck & Bus Valves' },
+    { to: '/about', label: 'About our factory and quality control' },
+  ],
+  'tubeless-tire-valves-wholesale-guide': [
+    { to: '/products/passenger-car-light-truck-valves/tr414-snap-in-tubeless-valve/', label: 'TR414 Snap-In Tubeless Valve' },
+    { to: '/products/passenger-car-light-truck-valves/', label: 'Snap-in tubeless valve range' },
+    { to: '/products/truck-bus-valves/', label: 'Truck & Bus clamp-in valves' },
+  ],
+  'auto-tire-valve-stems-bulk': [
+    { to: '/products/passenger-car-light-truck-valves/', label: 'Passenger Car & Light Truck Valve Stems' },
+    { to: '/products/valve-accessories/', label: 'Valve cores and caps for bulk orders' },
+    { to: '/contact', label: 'Request a bulk quotation' },
+  ],
+  'find-reliable-auto-tire-valve-stems-supplier': [
+    { to: '/about', label: 'Our factory, capacity and quality control' },
+    { to: '/products/', label: 'Full tyre valve product range' },
+    { to: '/contact', label: 'Start a supplier conversation' },
+  ],
+}
+const relatedProducts = computed(() => relatedBySlug[route.params.slug] || [])
 
 useHead({
   title: () => article.value ? `${article.value.seoTitle} - AutoParts Century` : 'News - AutoParts Century',
