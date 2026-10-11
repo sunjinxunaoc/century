@@ -20,11 +20,26 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { useHead } from '@unhead/vue'
 
-defineProps({
+const props = defineProps({
   faqs: { type: Array, required: true },
 })
 
 const open = ref(0)
+
+const faqJson = computed(() => JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: props.faqs.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+}))
+
+useHead({
+  script: [{ type: 'application/ld+json', children: faqJson }],
+})
 </script>

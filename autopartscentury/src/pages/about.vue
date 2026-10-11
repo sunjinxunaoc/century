@@ -80,5 +80,26 @@ useHead({
     { property: 'og:description', content: 'Professional tyre valve manufacturer since 2010, trusted by distributors in 50+ countries.' },
   ],
   link: [{ rel: 'canonical', href: 'https://autopartscentury.com/about/' }],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'AboutPage',
+        name: 'About AutoParts Century',
+        url: 'https://autopartscentury.com/about/',
+        mainEntity: {
+          '@type': 'Organization',
+          name: 'AutoParts Century',
+          legalName: 'Hebei Century Auto Parts Co.,Ltd.',
+          url: 'https://autopartscentury.com/',
+          foundingDate: '2010',
+          logo: 'https://autopartscentury.com/images/logo/logo-icon-transparent.png',
+          address: { '@type': 'PostalAddress', addressRegion: 'Hebei', addressLocality: 'Cangzhou', addressCountry: 'CN' },
+          contactPoint: { '@type': 'ContactPoint', contactType: 'sales', email: 'info@centurymanufacture.com', telephone: '+86-156-3363-2668', availableLanguage: ['English', 'Chinese'] },
+        },
+      }),
+    },
+  ],
 })
 </script>

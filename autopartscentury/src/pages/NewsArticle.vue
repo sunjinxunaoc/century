@@ -53,5 +53,27 @@ useHead({
     { property: 'og:image', content: () => article.value ? `https://autopartscentury.com${article.value.image}` : '' },
   ],
   link: [{ rel: 'canonical', href: () => `https://autopartscentury.com/news/${route.params.slug}/` }],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: () => article.value ? JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: article.value.title,
+        description: article.value.desc,
+        image: `https://autopartscentury.com${article.value.image}`,
+        datePublished: article.value.date,
+        dateModified: article.value.date,
+        author: { '@type': 'Organization', name: 'AutoParts Century', url: 'https://autopartscentury.com/' },
+        publisher: {
+          '@type': 'Organization',
+          name: 'AutoParts Century',
+          url: 'https://autopartscentury.com/',
+          logo: { '@type': 'ImageObject', url: 'https://autopartscentury.com/images/logo/logo-icon-transparent.png' },
+        },
+        mainEntityOfPage: `https://autopartscentury.com/news/${article.value.slug}/`,
+      }) : '{}',
+    },
+  ],
 })
 </script>

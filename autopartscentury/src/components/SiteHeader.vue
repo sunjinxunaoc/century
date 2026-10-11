@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <header class="z-50">
     <div class="bg-ink text-[12px] text-[#b0b0b0]">
       <div class="container-mi flex h-10 items-center justify-between">
@@ -35,7 +35,7 @@
             <div class="invisible absolute left-1/2 top-full z-50 w-[660px] -translate-x-1/2 pt-3 opacity-0 transition-all group-hover:visible group-hover:opacity-100">
               <div class="grid grid-cols-3 gap-2 rounded-lg border border-black/5 bg-white p-4 shadow-xl">
                 <router-link
-                  v-for="sub in subcategories"
+                  v-for="sub in navSubs"
                   :key="sub.slug"
                   :to="`/products/${sub.slug}`"
                   class="rounded-md p-3 transition-colors hover:bg-page"
@@ -44,7 +44,7 @@
                     <img :src="subImages[sub.slug]" :alt="sub.name" class="h-full w-full object-contain" loading="lazy" />
                   </div>
                   <div class="text-[14px] font-semibold leading-snug text-ink">{{ sub.name }}</div>
-                  <div class="mt-1 text-[12px] leading-snug text-muted">{{ sub.products.length }} products</div>
+                  <div class="mt-1 text-[12px] leading-snug text-muted">{{ sub.count }} products</div>
                 </router-link>
               </div>
             </div>
@@ -77,7 +77,7 @@
           <router-link to="/" class="mobile-link" @click="mobileOpen = false">Home</router-link>
           <router-link to="/products" class="mobile-link" @click="mobileOpen = false">All Tyre Valves</router-link>
           <router-link
-            v-for="sub in subcategories"
+            v-for="sub in navSubs"
             :key="sub.slug"
             :to="`/products/${sub.slug}`"
             class="mobile-link pl-6 text-muted"
@@ -95,7 +95,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
-import { subcategories } from '../data/products'
+import { navSubs } from '../data/nav'
 import SearchBar from './SearchBar.vue'
 
 const route = useRoute()

@@ -5013,3 +5013,17 @@ export function getProduct(subSlug, productSlug) {
 export function allProducts() {
   return subcategories.flatMap(s => s.products.map(p => ({ ...p, sub: s.slug, subName: s.name })))
 }
+
+const modelIndex = new Map()
+for (const s of subcategories) {
+  for (const p of s.products) {
+    const model = p.name.split(' ')[0]
+    if (!modelIndex.has(model)) modelIndex.set(model, { sub: s.slug, slug: p.slug })
+  }
+}
+
+export function findProductByModel(cell) {
+  if (!cell) return undefined
+  const key = String(cell).trim().replace(/\s*\(.*?\)\s*/g, '')
+  return modelIndex.get(key)
+}

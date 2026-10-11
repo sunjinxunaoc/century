@@ -11,7 +11,29 @@
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+import { useHead } from '@unhead/vue'
+
+const props = defineProps({
   items: { type: Array, required: true },
+})
+
+const route = useRoute()
+const BASE = 'https://autopartscentury.com'
+
+const breadcrumbJson = computed(() => JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: props.items.map((item, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.label,
+    item: item.to ? `${BASE}${item.to === '/' ? '/' : item.to.replace(/\/?$/, '/')}` : `${BASE}${route.fullPath}`,
+  })),
+}))
+
+useHead({
+  script: [{ type: 'application/ld+json', children: breadcrumbJson }],
 })
 </script>

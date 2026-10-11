@@ -16,7 +16,7 @@
           <div class="mb-3 text-[14px] font-semibold">Products</div>
           <ul class="space-y-2 text-[13px] text-muted">
             <li><router-link to="/products" class="hover:text-brand">All Tyre Valves</router-link></li>
-            <li v-for="sub in subcategories" :key="sub.slug">
+            <li v-for="sub in navSubs" :key="sub.slug">
               <router-link :to="`/products/${sub.slug}`" class="hover:text-brand">{{ sub.name }}</router-link>
             </li>
           </ul>
@@ -63,7 +63,7 @@
 </template>
 
 <script setup>
-import { subcategories } from '../data/products'
+import { navSubs } from '../data/nav'
 
 const year = new Date().getFullYear()
 

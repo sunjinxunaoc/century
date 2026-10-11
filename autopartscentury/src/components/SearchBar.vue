@@ -7,7 +7,7 @@
         type="search"
         placeholder="Search tyre valves, e.g. TR414"
         class="w-full rounded-sm border border-black/10 bg-page py-2 pl-9 pr-3 text-[13px] text-ink outline-none transition-colors placeholder:text-muted/70 focus:border-brand focus:bg-white"
-        @focus="open = true"
+        @focus="onFocus"
         @input="open = true"
       />
     </form>
@@ -39,19 +39,35 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, shallowRef } from 'vue'
 import { useRouter } from 'vue-router'
-import { allProducts } from '../data/products'
 
 const router = useRouter()
 const q = ref('')
 const open = ref(false)
 const wrap = ref(null)
+const index = shallowRef([])
+
+let indexPromise = null
+function loadIndex() {
+  if (!indexPromise && typeof fetch !== 'undefined') {
+    indexPromise = fetch('/search-index.json')
+      .then(r => r.json())
+      .then(data => { index.value = data })
+      .catch(() => { indexPromise = null })
+  }
+  return indexPromise
+}
+
+function onFocus() {
+  open.value = true
+  loadIndex()
+}
 
 const results = computed(() => {
   const s = q.value.trim().toLowerCase()
   if (!s) return []
-  return allProducts().filter(p =>
+  return index.value.filter(p =>
     p.name.toLowerCase().includes(s) ||
     (p.keywords || '').toLowerCase().includes(s) ||
     (p.tagline || '').toLowerCase().includes(s)

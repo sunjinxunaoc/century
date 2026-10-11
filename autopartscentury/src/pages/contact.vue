@@ -120,6 +120,23 @@ useHead({
     { property: 'og:description', content: 'Request a factory-direct tyre valve quote. Reply within 24 hours.' },
   ],
   link: [{ rel: 'canonical', href: 'https://autopartscentury.com/contact/' }],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ContactPage',
+        name: 'Contact AutoParts Century',
+        url: 'https://autopartscentury.com/contact/',
+        mainEntity: {
+          '@type': 'Organization',
+          name: 'AutoParts Century',
+          url: 'https://autopartscentury.com/',
+          contactPoint: { '@type': 'ContactPoint', contactType: 'sales', email: 'info@centurymanufacture.com', telephone: '+86-156-3363-2668', availableLanguage: ['English', 'Chinese'], hoursAvailable: 'Mo-Sa 08:00-18:00 GMT+8' },
+        },
+      }),
+    },
+  ],
 })
 </script>
 

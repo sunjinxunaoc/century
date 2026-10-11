@@ -57,5 +57,28 @@ useHead({
     { name: 'keywords', content: () => sub.value?.keywords || '' },
   ],
   link: [{ rel: 'canonical', href: () => `https://autopartscentury.com/products/${route.params.sub}/` }],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: () => sub.value ? JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: sub.value.name,
+        description: sub.value.desc,
+        url: `https://autopartscentury.com/products/${sub.value.slug}/`,
+        isPartOf: { '@type': 'WebSite', name: 'AutoParts Century', url: 'https://autopartscentury.com/' },
+        mainEntity: {
+          '@type': 'ItemList',
+          numberOfItems: sub.value.products.length,
+          itemListElement: sub.value.products.map((p, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name: p.name,
+            url: `https://autopartscentury.com/products/${sub.value.slug}/${p.slug}/`,
+          })),
+        },
+      }) : '{}',
+    },
+  ],
 })
 </script>
