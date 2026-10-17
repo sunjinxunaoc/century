@@ -6,6 +6,7 @@ const quickLinks = [
   { label: 'Catalog', path: '/catalog/' },
   { label: 'News', path: '/news/' },
   { label: 'Contact', path: '/contact/' },
+  { label: 'Privacy Policy', path: '/privacy/' },
 ]
 const productLinks = [
   { label: 'Wheel Balancing Weights', path: '/products/wheel-balancing-weights/' },
@@ -29,7 +30,7 @@ const socials = [
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
           <div class="flex items-center gap-2.5 mb-4">
-            <img src="/ctr.svg" alt="Century Auto Parts" width="160" height="48" class="h-10 w-auto object-contain">
+            <img src="/images/logo/logo-icon-transparent.png" alt="Century Auto Parts" width="48" height="48" class="h-10 w-auto object-contain">
             <span class="text-lg font-bold tracking-wider text-white">CENTURY<span class="text-[#E8590C]">AUTO</span></span>
           </div>
           <p class="text-sm text-gray-400 leading-relaxed">Professional manufacturer of tire repair products since 2010. Trusted by 50+ countries worldwide.</p>
@@ -60,7 +61,7 @@ const socials = [
         <div class="flex gap-5 text-sm">
           <a v-for="s in socials" :key="s.label" :href="s.href" target="_blank" rel="noopener" class="hover:text-[#FF6B00]">{{ s.label }}</a>
         </div>
-        <p class="text-sm text-gray-500">Copyright 2012 - 2025 Hebei Century Auto Parts Co.,Ltd. All Rights Reserved.</p>
+        <p class="text-sm text-gray-500">Copyright 2010 - 2026 Hebei Century Auto Parts Co.,Ltd. All Rights Reserved.</p>
       </div>
     </div>
   </footer>

@@ -2,6 +2,22 @@
 
 站点为纯静态站（vite-ssg 预渲染），所有页面都是真实 HTML，无需 Node / PHP / 数据库。
 
+## ⚠️ 防误传锁定（必读）
+
+**只允许上传 `vue-app/dist/` 内的内容，严禁上传 `websit/` 父目录的任何文件。**
+
+| 位置 | 状态 | 后果 |
+|---|---|---|
+| `websit/robots.txt`（父目录旧版） | 🔴 内容为 `Disallow: /` | 误传会让 Google 全站屏蔽，前功尽弃 |
+| `websit/vue-app/dist/robots.txt` | ✅ 内容为 `Allow: /` | 唯一允许上传的版本 |
+| `websit/index.html`、`about.html` 等（父目录旧版） | 🔴 旧版静态站残留 | 误传会覆盖新站 |
+
+**上传前自检清单（每次部署必查）：**
+- [ ] 确认 zip 来源是 `vue-app/dist/`，不是 `websit/` 根目录
+- [ ] 解压后第一件事：打开 `robots.txt` 确认是 `Allow: /`
+- [ ] 检查 `sitemap.xml` 中的 URL 都是 trailing-slash 形式（`/products/.../`），不是 `.html`
+- [ ] 服务器上保留的 `.htaccess` 不要带 `Disallow` 规则
+
 ## 部署内容
 
 使用构建产物 `dist/` 文件夹。（已打包为 `deploy.zip`，解压后内容等同 `dist/`。）

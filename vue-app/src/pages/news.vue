@@ -25,7 +25,7 @@ useHead(() => {
   const title = isPaged
     ? `News & Product Guides - Page ${currentPage.value} | Century Auto Parts`
     : 'News & Product Guides | Century Auto Parts'
-  const desc = 'Latest news and product guides from Century Auto Parts - wheel weight guides, tyre valve guides, TPMS maintenance, tyre repair tips and ordering information.'
+  const desc = 'Latest news and product guides from Century Auto Parts - wheel weight guides, tyre valve guides, TPMS maintenance, tyre repair tips and ordering information.' + (isPaged ? ` Page ${currentPage.value}.` : '')
   const url = isPaged
     ? `https://centurymanufacture.com/news/page/${currentPage.value}/`
     : 'https://centurymanufacture.com/news/'

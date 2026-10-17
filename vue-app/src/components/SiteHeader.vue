@@ -57,15 +57,15 @@ onMounted(() => {
   <header class="fixed top-0 left-0 right-0 z-[1000] bg-white/95 backdrop-blur border-b border-black/5 transition-shadow"
     :class="shadowed ? 'shadow-lg' : 'shadow-md'">
     <div class="container-app">
-      <div class="flex items-center justify-between py-3.5">
-        <RouterLink to="/" class="flex items-center gap-2.5">
-          <img src="/ctr.svg" alt="Century Auto Parts" width="160" height="48" class="h-10 w-auto object-contain">
-          <span class="text-lg font-bold tracking-wider text-[#1A1A2E]">CENTURY<span class="text-[#E8590C]">AUTO</span></span>
+      <div class="flex items-center justify-between py-6">
+        <RouterLink to="/" class="flex items-center gap-3">
+          <img src="/images/logo/logo-icon-transparent.png" alt="Century Auto Parts" width="64" height="64" class="h-14 w-auto object-contain">
+          <span class="text-2xl md:text-3xl font-bold tracking-wider text-[#1A1A2E]">CENTURY<span class="text-[#E8590C]">AUTO</span></span>
         </RouterLink>
 
         <!-- Desktop nav -->
         <nav class="hidden md:block">
-          <ul class="flex gap-6">
+          <ul class="flex gap-8">
             <li><RouterLink to="/" class="nav-link" exact-active-class="active">Home</RouterLink></li>
             <li><RouterLink to="/about/" class="nav-link" active-class="active">About Us</RouterLink></li>
             <li class="group relative">
@@ -151,14 +151,14 @@ onMounted(() => {
 
 <style scoped>
 .nav-link {
-  @apply font-medium text-gray-600 px-3 py-2 rounded relative transition-colors hover:bg-orange-50 hover:text-[#FF6B00];
+  @apply font-medium text-gray-600 px-5 py-3.5 text-lg rounded relative transition-colors hover:bg-orange-50 hover:text-[#FF6B00];
 }
 .nav-link.active {
   @apply text-[#FF6B00];
 }
 .nav-link.active::after {
   content: '';
-  @apply absolute bottom-0 left-3 right-3 h-0.5 bg-[#FF6B00];
+  @apply absolute bottom-0 left-5 right-5 h-0.5 bg-[#FF6B00];
 }
 .dropdown-menu {
   @apply hidden absolute top-full left-0 min-w-[240px] bg-white border border-gray-200 rounded-lg shadow-card-lg p-2 z-50;

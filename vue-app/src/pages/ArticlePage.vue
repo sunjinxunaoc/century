@@ -11,6 +11,9 @@ const article = computed(() => findArticle(route.params.slug))
 
 // Product page each article's cover image links to
 const productLinks = {
+  'tyre-valve-cores': '/products/tyre-valves/passenger-car-light-truck-valves/',
+  'tyre-valve-caps': '/products/tyre-valves/',
+  'tyre-valve-sizes-dimensions': '/products/tyre-valves/',
   'clip-on-wheel-weights-guide': '/products/wheel-balancing-weights/fe-wheel-balancing-weights/',
   'clip-on-wheel-weight-profiles': '/products/wheel-balancing-weights/fe-wheel-balancing-weights/',
   'clip-on-wheel-weights-durability': '/products/wheel-balancing-weights/fe-wheel-balancing-weights/',
@@ -111,7 +114,7 @@ useHead(() => {
 <template>
   <div v-if="article">
     <section class="relative bg-gradient-to-br from-[#1A1A2E] via-[#2B2B45] to-[#4A2B1A] text-white">
-      <div class="container-app py-20 md:py-24 text-center">
+      <div class="container-app pt-36 pb-20 md:pt-40 md:pb-24 text-center">
         <div class="text-3xl md:text-4xl font-bold mb-4">News</div>
         <p class="text-gray-300">Industry insights & product guides from Century Auto Parts</p>
       </div>

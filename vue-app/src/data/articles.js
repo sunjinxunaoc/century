@@ -1,4 +1,776 @@
-export const articles = [
+﻿export const articles = [
+  {
+    slug: 'lead-wheel-weight-bans',
+    title: 'Lead Wheel Weight Bans: US State Laws & Lead-Free Alternatives',
+    date: 'September 29, 2026',
+    dateISO: '2026-09-29',
+    tags: ['Industry Guide', 'Wheel Weights'],
+    img: '/images/articles/lead-wheel-weight-bans.webp',
+    imgAlt: 'Lead-free Fe wheel weights replacing banned lead weights',
+    desc: 'Which US states ban lead wheel weights, what the EPA phase-out means for importers, and the lead-free Fe and Zn alternatives to stock.',
+    faq: [
+      { q: 'Are lead wheel weights banned in the US?', a: 'There is no federal ban, but several states ban the sale, installation and distribution of lead wheel weights, including California, Illinois, Maine, Maryland, New York, Vermont and Washington. Scope differs by state - some exempt commercial vehicles - so verify the current statute before shipping.' },
+      { q: 'What is the EPA lead wheel weight program?', a: 'The EPA ran a National Lead-Free Wheel Weight Initiative encouraging a voluntary phase-out of lead wheel weights across the supply chain. Combined with state bans, this has made lead-free steel and zinc weights the default for most US supply.' },
+      { q: 'What are the lead-free alternatives?', a: 'Steel (Fe) is the mainstream lead-free material for both clip-on and adhesive weights; zinc (Zn) is also used. Both deliver the same balancing function without lead, and both are available across the full gram and OZ size series.' },
+      { q: 'Do lead bans apply to truck wheel weights?', a: 'It depends on the state. Some state bans exempt commercial vehicles, others do not. Because scope differs, fleets operating across state lines typically standardise on lead-free weights to stay compliant everywhere.' },
+    ],
+    content: `
+      <p><strong>Lead wheel weight bans</strong> now shape purchasing decisions across the US and beyond. For importers and distributors, the question is no longer whether to stock lead-free, but how much lead - if any - to keep in the range. This page maps the regulatory picture and the compliant alternatives.</p>
+
+      <figure>
+        <img src="/images/articles/lead-wheel-weight-bans.webp" alt="Lead-free steel wheel weights - the compliant alternative to banned lead weights" loading="lazy">
+        <figcaption>Steel (Fe) weights - the mainstream lead-free replacement across US ban states</figcaption>
+      </figure>
+
+      <h2>There is no US federal ban - the states lead</h2>
+      <p>The US has no nationwide prohibition on lead wheel weights. Instead, individual states have legislated, and the list has grown steadily. States that have enacted bans on the sale, installation or distribution of lead wheel weights include:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>State</th><th>Status</th><th>Scope notes</th></tr></thead>
+          <tbody>
+            <tr><td>California</td><td>Banned</td><td>Sale and installation; lead-free required</td></tr>
+            <tr><td>Illinois</td><td>Banned</td><td>Sale and installation ban</td></tr>
+            <tr><td>Maine</td><td>Banned</td><td>Among the earliest adopters</td></tr>
+            <tr><td>Maryland</td><td>Banned</td><td>Sale and installation ban</td></tr>
+            <tr><td>New York</td><td>Banned</td><td>Sale and installation ban</td></tr>
+            <tr><td>Vermont</td><td>Banned</td><td>Sale and installation ban</td></tr>
+            <tr><td>Washington</td><td>Banned</td><td>Sale and installation ban</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Scope differs by state - some exempt commercial vehicles, others do not - so always verify the current statute with the state environmental agency before shipping. Other states allow lead but see it phased out voluntarily.</p>
+
+      <h2>The EPA voluntary phase-out</h2>
+      <p>Alongside state law, the US EPA's National Lead-Free Wheel Weight Initiative pushed the supply chain - manufacturers, distributors, fleets and retailers - toward a voluntary phase-out of lead weights. The practical result: even in states where lead remains legal, many national buyers and workshop chains specify lead-free as policy, because a single compliant SKU set is simpler than managing two ranges.</p>
+      <p>Europe moved earlier: lead weights have effectively disappeared from new supply in the EU and UK, making Fe and Zn the global default for export-oriented ranges.</p>
+
+      <h2>What this means for importers</h2>
+      <ul>
+        <li><strong>Default to lead-free.</strong> Stock Fe (and Zn where specified) as the core range; treat Pb as a niche line only for markets that still permit it.</li>
+        <li><strong>One range, all states.</strong> Fleets and distributors operating across state lines standardise on lead-free to avoid compliance errors.</li>
+        <li><strong>Documents matter.</strong> Buyers increasingly ask for RoHS/REACH-style material declarations - have them ready with your quotation.</li>
+        <li><strong>Truck exemptions are not a strategy.</strong> Even where commercial vehicles are exempt, mixed fleets prefer one compliant range.</li>
+      </ul>
+
+      <h2>The lead-free alternatives</h2>
+      <p><strong>Steel (Fe)</strong> is the mainstream replacement: slightly larger than lead for the same mass, but available across the full clip-on and adhesive range from 5 g upward, with zinc plated, epoxy or black coated finishes. <strong>Zinc (Zn)</strong> serves buyers who want a denser, lead-like feel with full compliance. Both balance identically to lead in practice - see the material comparison in our <a href="/news/fe-vs-pb-wheel-weights/">Fe vs Pb guide</a>, and browse the <a href="/products/wheel-balancing-weights/fe-wheel-balancing-weights/">Fe wheel weight range</a> for current models and finishes.</p>
+      <p>Planning a compliant range? <a href="/contact/">Send your target states</a> and we will suggest a lead-free stock list.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>State lead wheel weight bans: individual state statutes (California, Illinois, Maine, Maryland, New York, Vermont, Washington) - verify current text with the state environmental agency</li>
+          <li>Voluntary phase-out: US EPA National Lead-Free Wheel Weight Initiative</li>
+          <li>Lead-free product ranges: Century Auto Parts published product data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'fe-vs-pb-wheel-weights', title: 'Fe vs Pb Wheel Weights: Which Should You Buy?', date: 'September 24, 2026', desc: 'Material comparison plus the US state lead bans.', tag: 'Comparison' },
+      { slug: 'wheel-weight-guide', title: 'How to Choose Wheel Balancing Weights', date: 'August 8, 2026', desc: 'Fe vs Pb materials and clip-on vs adhesive types.', tag: 'Wheel Weights' },
+    ],
+  },
+  {
+    slug: 'tpms-valve-buying-guide',
+    title: 'TPMS Valve Stem Buying Guide: Types, Compatibility & Bulk Sourcing',
+    date: 'September 29, 2026',
+    dateISO: '2026-09-29',
+    tags: ['Product Guide', 'TPMS'],
+    img: '/images/articles/tpms-valve-buying-guide.webp',
+    imgAlt: 'TPMS valve stems for OE and aftermarket sensors',
+    desc: 'How to buy TPMS valve stems: snap-in vs aluminium construction, vehicle compatibility, service kits, 80 PSI ratings and factory-direct bulk sourcing.',
+    faq: [
+      { q: 'How do I choose the right TPMS valve stem?', a: 'Match the stem to the vehicle make and model - TPMS stems are application-specific because the sensor interface differs. Provide your vehicle list (brand, model, year) and the supplier matches stems to it. Universal stems such as the Autel-compatible TPMS-30 cover aftermarket sensor programs.' },
+      { q: 'Rubber or aluminium TPMS stem?', a: 'Rubber snap-in stems (EPDM with brass internals) suit standard passenger fitments and are the economical choice. Aluminium-and-rubber stems are more durable and used in premium applications; match the seal material to the rim to avoid galvanic corrosion.' },
+      { q: 'What is a TPMS service kit?', a: 'The service kit is the replaceable hardware on a TPMS valve - stem, core, cap, seal, grommet and nut. It should be replaced at every tyre change; the sensor electronics are reused until the battery dies.' },
+      { q: 'What pressure rating do TPMS stems have?', a: 'Our TPMS valve stems are rated to 80 PSI maximum inflation pressure, covering standard passenger and light-truck applications.' },
+    ],
+    content: `
+      <p>Buying <strong>TPMS valve stems</strong> is different from buying standard valves: the stem interfaces with an electronic sensor, so fitment is vehicle-specific and the service parts matter as much as the stem itself. This guide is the purchasing version - for the maintenance side, see our <a href="/news/tpms-maintenance/">TPMS maintenance guide</a>.</p>
+
+      <figure>
+        <img src="/images/articles/tpms-valve-buying-guide.webp" alt="TPMS valve stems compatible with OE and aftermarket sensors" loading="lazy">
+        <figcaption>TPMS valve stems - application-specific stems for OE and aftermarket sensors</figcaption>
+      </figure>
+
+      <h2>The two constructions</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Construction</th><th>Materials</th><th>Best for</th></tr></thead>
+          <tbody>
+            <tr><td>Rubber snap-in</td><td>EPDM rubber and brass stem, brass core</td><td>Standard passenger and light-truck fitments; economical volume line</td></tr>
+            <tr><td>Aluminium &amp; rubber</td><td>Aluminium stem, rubber seal, brass core</td><td>Premium and aftermarket installations; match seal to rim against galvanic corrosion</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Both are snap-in type for fast replacement and rated to <strong>80 PSI</strong> maximum inflation pressure.</p>
+
+      <h2>Compatibility: the part that decides the order</h2>
+      <p>Unlike a TR414 that fits almost any passenger rim hole, a TPMS stem must match the sensor and vehicle. Our range covers <strong>47 vehicle applications</strong> - Buick, Toyota, Nissan, BMW, Mercedes-Benz, Volkswagen, Geely and more - plus a universal stem for Autel aftermarket sensors (TPMS-30). The practical workflow:</p>
+      <ol>
+        <li>Send your <strong>vehicle list</strong> (brand, model, year) with target quantities.</li>
+        <li>We map each application to the correct stem - including universal options where you want to simplify stock.</li>
+        <li>Samples are confirmed against your sensors before the bulk order.</li>
+      </ol>
+      <p>Browse the <a href="/products/tpms/tpms-valve-stem/">TPMS valve stem range</a> for the current application list.</p>
+
+      <h2>Do not forget the service kits</h2>
+      <p>The stem, core, cap, seal, grommet and nut - the service kit - wear far faster than the sensor electronics and <strong>should be replaced at every tyre change</strong>. Distributors who stock stems without service kits leave repeat business on the table; the kits are the consumable that brings customers back. Specify plastic caps for TPMS applications to avoid metal caps seizing on aluminium stems.</p>
+
+      <h2>Bulk sourcing notes</h2>
+      <ul>
+        <li><strong>MOQ by model</strong> - mixed applications can be combined in one order; consolidated shipping with valves, weights and repair materials is standard.</li>
+        <li><strong>Specify construction</strong> per application: rubber snap-in for volume lines, aluminium for premium programs.</li>
+        <li><strong>Verify pressure rating</strong> (80 PSI) covers your market's passenger applications.</li>
+        <li><strong>Ask for compatibility confirmation in writing</strong> with the quotation - TPMS mistakes are expensive.</li>
+      </ul>
+      <p>Century Auto Parts manufactures TPMS valve stems in our own factory in Hebei, China - see the <a href="/products/tpms/">TPMS category</a>, the <a href="/news/ordering-guide/">ordering guide</a>, or <a href="/contact/">send your vehicle list</a> for a quotation.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Application coverage, materials and 80 PSI rating: Century Auto Parts published product data</li>
+          <li>Service-kit replacement practice: industry standard TPMS service guidance (see our TPMS maintenance guide)</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'tpms-maintenance', title: 'TPMS Valve Maintenance', date: 'July 25, 2026', desc: 'How to extend the life of your TPMS sensors.', tag: 'TPMS' },
+      { slug: 'tyre-valve-guide', title: 'Tyre Valve Types Explained', date: 'August 1, 2026', desc: 'TR series, truck & bus, and agricultural valves explained.', tag: 'Product Guide' },
+    ],
+  },
+  {
+    slug: 'wheel-weight-conversion-chart',
+    title: 'Wheel Weight Conversion Chart: Grams to Ounces (5g - 500g)',
+    date: 'September 29, 2026',
+    dateISO: '2026-09-29',
+    tags: ['Product Guide', 'Wheel Weights'],
+    img: '/images/articles/wheel-weight-conversion-chart.webp',
+    imgAlt: 'Wheel weight gram to ounce conversion chart',
+    desc: 'Quick wheel weight conversion chart: grams to ounces and ounces to grams, 5 g to 500 g, covering passenger strips and truck weights.',
+    faq: [
+      { q: 'How many grams are in an ounce for wheel weights?', a: 'One ounce equals exactly 28.3495 grams. A 0.25 oz weight is about 7.1 g, 1 oz is about 28.3 g, and a 60 g strip is about 2.12 oz.' },
+      { q: 'Why do wheel weights come in grams and ounces?', a: 'Grams are the convention in most of the world, while ounces are standard in the US market. Most factories, including ours, offer the same weights in both gram and OZ series so buyers can order in the convention their machines use.' },
+      { q: 'What is 100 grams in ounces for truck weights?', a: '100 g equals about 3.53 oz. Large truck clip-on weights run to 500 g, which is about 17.64 oz.' },
+      { q: 'Do gram and OZ weights balance differently?', a: 'No - the balancing effect is identical for the same mass. The two series exist only to match the readout convention of the balancing machine in your market.' },
+    ],
+    content: `
+      <p>Balancing machines in the US read ounces; most of the rest of the world reads grams. This <strong>wheel weight conversion chart</strong> converts both directions across the full range - passenger car strips through 500 g truck weights - so ordering in the wrong unit never costs you a container of the wrong stock.</p>
+
+      <figure>
+        <img src="/images/articles/wheel-weight-conversion-chart.webp" alt="Wheel weight conversion chart - grams to ounces reference" loading="lazy">
+        <figcaption>Gram to OZ reference - the chart to pin next to the balancing machine</figcaption>
+      </figure>
+
+      <h2>The conversion</h2>
+      <p><strong>1 ounce = 28.3495 grams</strong>. All values below are exact conversions rounded to two decimals.</p>
+
+      <h2>Grams to ounces</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Grams</th><th>Ounces</th><th>Typical use</th></tr></thead>
+          <tbody>
+            <tr><td>5 g</td><td>0.18 oz</td><td>Passenger adhesive / clip-on segment</td></tr>
+            <tr><td>10 g</td><td>0.35 oz</td><td>Passenger adhesive / clip-on segment</td></tr>
+            <tr><td>15 g</td><td>0.53 oz</td><td>Passenger corrections</td></tr>
+            <tr><td>20 g</td><td>0.71 oz</td><td>Passenger corrections</td></tr>
+            <tr><td>25 g</td><td>0.88 oz</td><td>Passenger / light truck</td></tr>
+            <tr><td>30 g</td><td>1.06 oz</td><td>Passenger / light truck</td></tr>
+            <tr><td>40 g</td><td>1.41 oz</td><td>Light truck</td></tr>
+            <tr><td>50 g</td><td>1.76 oz</td><td>Light truck / large wheels</td></tr>
+            <tr><td>60 g</td><td>2.12 oz</td><td>Largest passenger strip</td></tr>
+            <tr><td>100 g</td><td>3.53 oz</td><td>Truck clip-on</td></tr>
+            <tr><td>150 g</td><td>5.29 oz</td><td>Truck clip-on</td></tr>
+            <tr><td>200 g</td><td>7.05 oz</td><td>Truck clip-on</td></tr>
+            <tr><td>300 g</td><td>10.58 oz</td><td>Heavy truck</td></tr>
+            <tr><td>400 g</td><td>14.11 oz</td><td>Heavy truck</td></tr>
+            <tr><td>500 g</td><td>17.64 oz</td><td>Heaviest truck corrections</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Ounces to grams</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Ounces</th><th>Grams</th></tr></thead>
+          <tbody>
+            <tr><td>0.25 oz</td><td>7.09 g</td></tr>
+            <tr><td>0.50 oz</td><td>14.17 g</td></tr>
+            <tr><td>0.75 oz</td><td>21.26 g</td></tr>
+            <tr><td>1.00 oz</td><td>28.35 g</td></tr>
+            <tr><td>1.25 oz</td><td>35.44 g</td></tr>
+            <tr><td>1.50 oz</td><td>42.52 g</td></tr>
+            <tr><td>1.75 oz</td><td>49.61 g</td></tr>
+            <tr><td>2.00 oz</td><td>56.70 g</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Ordering notes</h2>
+      <ul>
+        <li><strong>Match the machine, not the market habit</strong> - order OZ series if your customers' machines read ounces.</li>
+        <li><strong>Mixed-series orders are normal</strong> - gram and OZ can ship in the same container; just state both lists clearly.</li>
+        <li><strong>Truck range runs to 500 g</strong> - see the <a href="/news/truck-wheel-weights/">truck wheel weights guide</a> for the 5 g - 500 g series.</li>
+        <li><strong>Strip sizes and segment layouts</strong> are a separate topic - see the <a href="/news/adhesive-wheel-weight-sizes/">adhesive wheel weight sizes guide</a>.</li>
+      </ul>
+      <p>Ready to order? Browse the <a href="/products/wheel-balancing-weights/">wheel balancing weights range</a> or <a href="/contact/">send your size list</a> in grams or ounces - both are fine.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Conversion factor: 1 oz = 28.3495 g (avoirdupois ounce, international standard)</li>
+          <li>Size series 5 g - 500 g and gram/OZ availability: Century Auto Parts published product data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'adhesive-wheel-weight-sizes', title: 'Adhesive Wheel Weight Sizes: Gram & OZ Chart for Buyers', date: 'September 20, 2026', desc: 'Strip sizes, segments and weight series explained.', tag: 'Wheel Weights' },
+      { slug: 'truck-wheel-weights', title: 'Truck Wheel Weights: Clip-On & Adhesive Weights from 5g to 500g', date: 'September 29, 2026', desc: 'Clip-on and adhesive weights for heavy-duty wheels.', tag: 'Wheel Weights' },
+    ],
+  },
+  {
+    slug: 'tyre-repair-supplies-wholesale',
+    title: 'Tyre Repair Supplies Wholesale: Patches, Plugs & Seal Strings',
+    date: 'September 29, 2026',
+    dateISO: '2026-09-29',
+    tags: ['Industry Guide', 'Repairs'],
+    img: '/images/tire%20patch.webp',
+    imgAlt: 'Tyre repair patches and supplies for wholesale buyers',
+    desc: 'How distributors build a tyre repair supplies range: patches, mushroom plugs and seal strings, US vs EU styles, private label and consolidated containers.',
+    faq: [
+      { q: 'What tyre repair supplies should a distributor stock first?', a: 'Start with the daily consumables: radial and all-purpose patches for permanent repairs, mushroom patch plugs for one-step puncture repair, and seal strings for emergency roadside fixes. These three lines cover the bulk of a tyre shop\'s demand.' },
+      { q: 'What is the difference between US-style and EU-style patches?', a: 'They are different patch constructions and application styles preferred by different markets - the US-style and EU-style ranges cover radial, bias and all-purpose repairs. See our US vs EU patch comparison for the full breakdown.' },
+      { q: 'Can tyre repair supplies be private labelled?', a: 'Yes. Patches, plugs and seal strings are available with custom branding, retail-ready card packing and barcodes. OEM orders carry a higher MOQ because of packaging tooling.' },
+      { q: 'Can repair materials ship together with wheel weights and valves?', a: 'Yes - consolidated containers mixing patches, plugs, seal strings, wheel weights and tyre valves are standard, which is how distributors keep landed cost per unit down.' },
+    ],
+    content: `
+      <p>Tyre repair is a repeat-purchase business: patches, plugs and seal strings are consumed daily and reordered monthly. For distributors building a <strong>tyre repair supplies wholesale</strong> range, the winning formula is simple - cover the three core consumables, match the styles your market prefers, and consolidate freight. Here is how to build it.</p>
+
+      <h2>The three consumable lines</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Line</th><th>Role</th><th>Range</th></tr></thead>
+          <tbody>
+            <tr><td><a href="/products/tyre-patch/">Tyre patches</a></td><td>Permanent repair bonded to the inner liner</td><td>US-style and EU-style radial, bias and all-purpose patches, 32 mm to 440 mm, 1-6 ply</td></tr>
+            <tr><td><a href="/products/mushroom-patch-plug/">Mushroom patch plugs</a></td><td>One-step permanent repair - stem fills the puncture, patch bonds the liner</td><td>26 x 4 mm to 100 x 100 x 14 mm, EU-style with 1-2 ply options</td></tr>
+            <tr><td><a href="/products/tyre-seal-string/">Seal strings</a></td><td>Quick emergency repair for tubeless tyres, no demounting</td><td>CTR-TS series, 100 mm and 200 mm lengths, 3-6 mm diameters</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Each line has its own selection logic - see <a href="/news/us-vs-eu-style-tire-patch/">US vs EU patches</a>, <a href="/news/mushroom-plug-vs-seal-string/">mushroom plug vs seal string</a> and <a href="/news/tyre-patch-vs-plug/">patch vs plug</a> for the comparisons your customers will ask about.</p>
+
+      <h2>Match the style to the market</h2>
+      <p>Workshop habits differ by region: some markets are trained on US-style self-vulcanizing patches, others on EU-style constructions with ply reinforcement. Stocking the wrong style for your market means retraining every workshop you sell to - check what local tyre shops already use before committing a container.</p>
+
+      <h2>Private label and retail packing</h2>
+      <p>Repair consumables are a natural private-label line: the unit cost is low, the brand loyalty is real, and the packaging <em>is</em> the product on a workshop shelf. Custom branding, retail-ready card packing and barcodes are standard options; OEM/ODM orders carry a higher MOQ because of the packaging tooling involved.</p>
+
+      <h2>Consolidate the container</h2>
+      <p>Repair materials alone rarely fill a container - and they do not need to. The standard play is a mixed shipment: patches, plugs and strings combined with <a href="/products/wheel-balancing-weights/">wheel weights</a> and <a href="/products/tyre-valves/">tyre valves</a> from the same factory. One freight bill, one customs entry, and a supplier who covers the whole tyre-service aisle.</p>
+      <p>Century Auto Parts manufactures all of these lines in our Hebei, China factory. MOQ by product and pack size; samples refundable on bulk orders - details in the <a href="/news/ordering-guide/">ordering guide</a>, or <a href="/contact/">send your product list</a> for a consolidated quotation.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Product ranges, sizes and series: Century Auto Parts published product data (CTR-TPU, CTR-TPE, CTR-TS, mushroom plug series)</li>
+          <li>MOQ, OEM and consolidation details: Century Auto Parts published trade information</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'us-vs-eu-style-tire-patch', title: 'US-Style vs EU-Style Tyre Patches: Which Should You Use?', date: 'September 24, 2026', desc: 'Which patch style fits your market.', tag: 'Comparison' },
+      { slug: 'mushroom-plug-vs-seal-string', title: 'Mushroom Patch Plug vs Seal String: Which Repair Is Best?', date: 'September 24, 2026', desc: 'One-step repair vs emergency string - when to use each.', tag: 'Comparison' },
+    ],
+  },
+  {
+    slug: 'middle-east-auto-parts-market',
+    title: 'Middle East Auto Parts Market: Size, Dubai Hub & Product Guide',
+    date: 'September 29, 2026',
+    dateISO: '2026-09-29',
+    tags: ['Industry Guide'],
+    img: '/images/factory.webp',
+    imgAlt: 'Century Auto Parts factory serving Middle East auto parts importers',
+    desc: 'Middle East auto parts market size, why Dubai is the re-export hub, which tyre service products survive the heat, and how to source factory-direct.',
+    faq: [
+      { q: 'How big is the Middle East auto parts market?', a: 'Public market research generally places the Middle East automotive aftermarket in the range of USD 20-30 billion, with the GCC states accounting for roughly USD 10-15 billion of that and Saudi Arabia as the largest single market. Exact figures vary by research firm and methodology.' },
+      { q: 'Why is Dubai the hub for Middle East auto parts?', a: 'Dubai combines Jebel Ali port, the JAFZA free zone and established trading houses, making it the region\'s re-export centre: parts land in Dubai and are redistributed to Saudi Arabia, the wider Gulf, Africa and Central Asia. Winning a Dubai distributor effectively opens several markets at once.' },
+      { q: 'Which tyre service products suit the Middle East climate?', a: 'Heat is the deciding factor. Adhesive wheel weights need premium tape grades (3M or Norton class) because economy tapes soften and fail on hot wheel barrels; rubber snap-in valves should be quality EPDM to resist accelerated aging; brass clamp-in valves suit the region\'s large truck fleets.' },
+      { q: 'Does Century Auto Parts ship to the Middle East?', a: 'Yes. We export to the Middle East and 50+ countries overall, with sea, air and express options, OEM packaging and consolidated shipments combining wheel weights, tyre valves and repair materials in one container.' },
+    ],
+    content: `
+      <p>The <strong>Middle East auto parts market</strong> rewards suppliers who understand two things: the region buys through hubs, and the climate is genuinely hostile to cheap consumables. For distributors stocking wheel weights, tyre valves and repair materials, here is how the market is structured and what to put in the container.</p>
+
+      <h2>How big is the market?</h2>
+      <p>Exact numbers depend on the research firm and where each draws the regional boundary, but public estimates cluster around consistent ranges:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Scope</th><th>Commonly cited size</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Middle East automotive aftermarket</td><td>~USD 20-30 billion</td><td>Growth in the mid-single digits per year</td></tr>
+            <tr><td>GCC states (Saudi, UAE, Kuwait, Qatar, Bahrain, Oman)</td><td>~USD 10-15 billion</td><td>High car ownership, young but fast-aging fleet</td></tr>
+            <tr><td>Saudi Arabia</td><td>Largest single national market in the region</td><td>Big vehicle parc; hot climate drives wear parts demand</td></tr>
+            <tr><td>UAE</td><td>Smaller domestic market, outsized trade role</td><td>The region's re-export hub - see below</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Treat these as orientation ranges, not audited figures - the strategic picture (hub structure, climate, fleet) matters more to a buyer than the decimal point.</p>
+
+      <h2>Dubai: the hub that opens the region</h2>
+      <p>The single most important structural fact about this market: <strong>Dubai is a re-export machine</strong>. Parts shipped into Jebel Ali and traded through the JAFZA free zone move onward to Saudi Arabia, the wider Gulf, East Africa and Central Asia. A distributor relationship in Dubai is rarely just a UAE relationship - it is a regional one.</p>
+      <p>The trade calendar reinforces this: <strong>Automechanika Dubai</strong>, organised by Messe Frankfurt, is the region's largest automotive aftermarket exhibition and the standard venue for meeting importers from across the Middle East and Africa.</p>
+
+      <h2>The climate filter: what actually survives</h2>
+      <p>Summer road surface temperatures across the Gulf regularly exceed anything a European or North American product is designed around. That heat filters the product range:</p>
+      <ul>
+        <li><strong>Adhesive wheel weights</strong> - economy tapes soften and creep on hot wheel barrels; weights that stay on in Germany fall off in Riyadh. For Gulf markets, specify premium tape grades (3M or Norton class) and brief customers on surface prep. Our <a href="/news/wheel-weight-tape-comparison/">wheel weight tape comparison</a> and <a href="/news/stick-on-wheel-weights-fall-off/">adhesion failure guide</a> cover the mechanics.</li>
+        <li><strong>Rubber snap-in valves</strong> - heat and ozone accelerate rubber aging, shortening replacement intervals and raising the value of consistent EPDM quality. See the <a href="/news/tyre-valve-guide/">tyre valve types guide</a>.</li>
+        <li><strong>Truck valves</strong> - the region's large commercial fleets run brass clamp-in valves (V3-20, TR570 series) for good reason; see the <a href="/products/tyre-valves/truck-bus-valves/">truck &amp; bus range</a>.</li>
+        <li><strong>Repair materials</strong> - patches and seal strings store and perform best within their rated conditions; quality stock rotated properly matters in hot warehouses.</li>
+      </ul>
+
+      <h2>What goes in a Middle East container</h2>
+      <ul>
+        <li><strong>Clip-on and adhesive wheel weights</strong> in gram and OZ series - adhesive strips with premium tape for alloy-wheel markets, clip-on for steel-wheel fleets.</li>
+        <li><strong>TR series passenger valves plus V3-20 / TR570 truck valves</strong> - one supplier covering both is a real logistics advantage.</li>
+        <li><strong>Patches, mushroom plugs and seal strings</strong> - the daily consumables of every tyre shop in the region.</li>
+        <li><strong>TPMS valve stems</strong> - sensor fitment grows with the fleet's renewal.</li>
+      </ul>
+      <p>All of these consolidate into one shipment from our factory - the freight saving is a large part of what makes the region's price points work.</p>
+
+      <h2>Sourcing factory-direct</h2>
+      <p>Century Auto Parts manufactures wheel weights, tyre valves, TPMS stems and tyre repair materials in Hebei, China, and exports to the Middle East as part of a 50+ country trade network. OEM packaging, mixed-category containers and sample evaluation are standard - see the <a href="/news/ordering-guide/">ordering guide</a> for MOQ and shipping details, or <a href="/contact/">send your product list</a> for a quotation.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Market size ranges: orientation figures commonly published by market research firms covering the Middle East automotive aftermarket (verify current figures with the research provider before external citation)</li>
+          <li>Dubai re-export role and JAFZA free zone structure: publicly available information from JAFZA and Dubai trade bodies</li>
+          <li>Automechanika Dubai: Messe Frankfurt exhibition information</li>
+          <li>Product and export details: Century Auto Parts published data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'wheel-weight-manufacturers', title: 'Wheel Weight Manufacturers: Global Guide', date: 'September 18, 2026', desc: 'The major manufacturers by region and how to vet a factory.', tag: 'Industry Guide' },
+      { slug: 'ordering-guide', title: 'How to Order from Century Auto Parts', date: 'July 2, 2026', desc: 'MOQ, samples, OEM/ODM, production and shipping times.', tag: 'Trade' },
+    ],
+  },
+  {
+    slug: 'commercial-truck-valve-factory-china',
+    title: 'Commercial Truck Valve Factory in China: Sourcing Guide for Importers',
+    date: 'September 29, 2026',
+    dateISO: '2026-09-29',
+    tags: ['Industry Guide', 'Tyre Valves'],
+    img: '/images/articles/commercial-truck-valve-factory-china.webp',
+    imgAlt: 'V3 series brass commercial truck valves from a China factory',
+    desc: 'What a commercial truck valve factory in China should offer: V3-20, TR570 and 58MS brass valve series, factory vetting checklist, OEM options and consolidated shipping.',
+    faq: [
+      { q: 'What does a commercial truck valve factory in China produce?', a: 'A specialist factory produces brass clamp-in valve families for commercial vehicles: the V3-20 series for trucks and buses, the TR570-TR574 series, the 58MS high-pressure bus valve and heavy-duty stems such as MS70-7, usually alongside passenger TR series valves from the same plant.' },
+      { q: 'How do I verify a truck valve factory is real and not a trader?', a: 'Ask for production-line photos and a live video call from the workshop, request ISO 9001 certification, order samples from an actual production batch, and ask for batch dimensional check records. A real factory answers all four quickly; a trader usually hesitates on at least one.' },
+      { q: 'What is the typical MOQ from a China truck valve factory?', a: 'MOQ varies by model and pack size, and most factories accept mixed-series orders - for example combining V3-20, TR570 and passenger TR414 valves in one shipment. Confirm the MOQ per model with your inquiry list.' },
+      { q: 'Can a China truck valve factory do OEM branding?', a: 'Yes. Established factories offer OEM/ODM packaging with your brand, logo and barcodes, plus private label versions of standard series. OEM orders carry a higher MOQ because of the packaging tooling involved.' },
+    ],
+    content: `
+      <p>Searching for a <strong>commercial truck valve factory in China</strong> returns hundreds of names, but only a fraction are real factories with their own brass machining and vulcanising lines. This guide covers what a specialist truck valve plant actually produces, why buyers source from China, and how to vet a supplier before the first container.</p>
+
+      <figure>
+        <img src="/images/products/tyre%20valves/v3-series-brass-tyre-valve001.webp" alt="V3 series brass clamp-in commercial truck valve stems" loading="lazy">
+        <figcaption>V3 series brass clamp-in valves - the workhorse of commercial truck and bus fleets</figcaption>
+      </figure>
+
+      <h2>What a commercial truck valve factory makes</h2>
+      <p>Commercial valves are brass clamp-in stems secured with a nut, built for high pressure and constant heat cycling. A serious factory covers the full commercial families, not just one or two models:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Series</th><th>Key dimensions</th><th>Bend</th><th>Typical application</th></tr></thead>
+          <tbody>
+            <tr><td>V3-20-4 / V3-20-6</td><td>&#934;16 x 90 / 115 mm</td><td>27&deg;</td><td>Truck and bus, the volume sellers</td></tr>
+            <tr><td>V3-22-1 / 58MS</td><td>&#934;16 x 58 mm</td><td>45&deg;</td><td>High-pressure bus service</td></tr>
+            <tr><td>TR570 / TR571 / TR572</td><td>&#934;19 x 84-100 mm</td><td>Straight</td><td>Commercial truck wheels</td></tr>
+            <tr><td>TR571C / TR572C / TR573C</td><td>&#934;19 x 90-100 mm</td><td>90&deg; or 27&deg;</td><td>Wheels where a straight stem is unreachable</td></tr>
+            <tr><td>MS70-7 (70MS-7)</td><td>40.5 + 29.5 mm</td><td>7&deg;</td><td>Ni-plated heavy-duty commercial and off-highway</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Most plants also run the passenger TR series and TPMS stems on parallel lines - see our <a href="/news/tyre-valve-guide/">tyre valve types guide</a> for how the families fit together, and the <a href="/products/tyre-valves/truck-bus-valves/">commercial truck &amp; bus valve range</a> for current production models.</p>
+
+      <h2>Why importers source truck valves from China</h2>
+      <ul>
+        <li><strong>Complete series under one roof</strong> - V3, TR57x, 58MS and agricultural valves from a single purchase order.</li>
+        <li><strong>Brass machining depth</strong> - China's valve cluster has decades of brass hot-forging and CNC experience behind it.</li>
+        <li><strong>Consolidated containers</strong> - truck valves ship in the same container as <a href="/products/wheel-balancing-weights/">wheel weights</a>, patches and seal strings, which is how distributors keep freight cost per unit down.</li>
+        <li><strong>OEM packaging at source</strong> - private label, barcodes and retail-ready packing done in the factory, not re-labelled at destination.</li>
+      </ul>
+
+      <h2>Vetting checklist: factory or trader?</h2>
+      <ol>
+        <li><strong>Production evidence</strong> - ask for workshop photos and a live video call from the line, not just catalogue renders.</li>
+        <li><strong>Certification</strong> - ISO 9001 as baseline; RoHS/REACH documentation where your market requires it.</li>
+        <li><strong>Batch dimensional checks</strong> - a valve that is a fraction short leaks at the rim seal, so ask how rim hole fit and thread dimensions are inspected per batch.</li>
+        <li><strong>Real-batch samples</strong> - evaluate samples pulled from an actual production run, then order against the sample.</li>
+        <li><strong>Complete supply</strong> - valves should arrive with cores and caps fitted, and cores/caps available separately as consumables.</li>
+      </ol>
+
+      <h2>What to include in your first inquiry</h2>
+      <ol>
+        <li><strong>Model list with quantities</strong> - for example V3-20-6, TR570 and TR414 with target quantities per model.</li>
+        <li><strong>Finish and packing</strong> - natural brass or plated; bulk or retail card; your branding or neutral.</li>
+        <li><strong>Destination port and market</strong> - so the quotation can reflect real freight and any market documentation.</li>
+      </ol>
+      <p>Our team answers complete inquiries with FOB pricing within 24 hours. The full process - MOQ, samples, production lead time and shipping options - is laid out in our <a href="/news/ordering-guide/">ordering guide</a>.</p>
+
+      <h2>Working with Century Auto Parts</h2>
+      <p>Century Auto Parts is a commercial truck valve factory in Hebei, China, exporting to 50+ countries. We manufacture the V3-20, TR570-TR574, 58MS and MS70-7 commercial series alongside passenger TR valves, TPMS stems, wheel weights and tyre repair materials - all consolidatable in one shipment. Browse the <a href="/products/tyre-valves/truck-bus-valves/">truck &amp; bus valve range</a>, check the <a href="/news/wheel-weight-manufacturers/">global supplier landscape</a>, or <a href="/contact/">send your model list</a> for a quotation.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Model dimensions and series coverage: Century Auto Parts published product data</li>
+          <li>Export, MOQ and OEM details: Century Auto Parts published trade information</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'wheel-weight-manufacturers', title: 'Wheel Weight Manufacturers: Global Guide', date: 'September 18, 2026', desc: 'The major manufacturers by region and how to vet a factory.', tag: 'Industry Guide' },
+      { slug: 'tyre-valve-guide', title: 'Tyre Valve Types Explained', date: 'August 1, 2026', desc: 'TR series, truck & bus, and agricultural valves explained.', tag: 'Product Guide' },
+    ],
+  },
+  {
+    slug: 'truck-wheel-weights',
+    title: 'Truck Wheel Weights: Clip-On & Adhesive Weights from 5g to 500g',
+    date: 'September 29, 2026',
+    dateISO: '2026-09-29',
+    tags: ['Product Guide', 'Wheel Weights'],
+    img: '/images/articles/truck-wheel-weights.webp',
+    imgAlt: 'Lead clip-on truck wheel weight CTR-PB-03C for steel wheels',
+    desc: 'Truck wheel weights explained: why heavy-duty wheels need clip-on weights up to 500g, when adhesive works on truck alloys, size series and lead regulation notes.',
+    faq: [
+      { q: 'What size wheel weights do trucks use?', a: 'Truck wheels need much larger correction masses than passenger cars. Our truck clip-on weight CTR-PB-03C runs from 5g up to 500g per unit, and the full truck range is available in both gram and OZ series.' },
+      { q: 'Clip-on or adhesive for truck wheels?', a: 'Most trucks run steel wheels with a rim flange, so clip-on weights are the standard choice - they stay secure under high load and heat. Adhesive weights are used on truck alloy wheels, where tape quality and surface preparation decide whether they stay on.' },
+      { q: 'Are lead truck wheel weights legal?', a: 'It depends on the market. Several US states ban the sale and installation of lead wheel weights, and scope differs by state - some exempt commercial vehicles, others do not. Verify the current statute for every state you ship into; our Fe steel range covers lead-free requirements.' },
+      { q: 'Can I order mixed sizes in one shipment?', a: 'Yes. Truck weights are supplied in 25 or 50 piece boxes per size, and mixed-model orders can be consolidated with other products in one shipment. Send your size list for a quotation.' },
+    ],
+    content: `
+      <p>Passenger car balancing tops out at 60 g strips. <strong>Truck wheel weights</strong> are a different product class: heavy wheels, high loads and long service intervals mean correction masses an order of magnitude larger, mounted on steel rims that see far more abuse than any alloy. This guide covers what distributors and fleet suppliers need to stock for truck and bus work.</p>
+
+      <figure>
+        <img src="/images/products/Wheel%20Balancing%20Weights/Pb-clip-on-wheel-weight-for-Truck-CTR-PB-03C.webp" alt="CTR-PB-03C lead clip-on truck wheel weight for steel wheels" loading="lazy">
+        <figcaption>CTR-PB-03C: the lead clip-on truck weight, supplied from 5 g up to 500 g per unit</figcaption>
+      </figure>
+
+      <h2>Why trucks need dedicated weights</h2>
+      <p>A truck wheel and tyre assembly is far heavier than a car wheel, so the residual imbalance - and the correction mass needed to fix it - is correspondingly larger. A 60 g adhesive strip that covers almost any passenger car job simply is not enough for a commercial wheel. Truck weights therefore run in a much wider size series, and the attachment has to survive high load, heat and long distances between services.</p>
+
+      <h2>Size series: 5 g to 500 g</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Model</th><th>Application</th><th>Weight range</th><th>Finish</th><th>Packing</th></tr></thead>
+          <tbody>
+            <tr><td>CTR-PB-03C</td><td>Truck steel wheels</td><td>5 g - 500 g</td><td>Natural or plastic coated</td><td>50 PCS / 25 PCS per box</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The same truck range is available in the <strong>OZ series</strong> for US and export markets - order in grams or ounces to match your customers' balancing machines. For smaller commercial vehicles and light trucks, the standard Fe and Pb clip-on ranges (5 g - 60 g) usually suffice.</p>
+
+      <h2>Clip-on vs adhesive on trucks</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th></th><th>Clip-on (truck standard)</th><th>Adhesive (truck alloys)</th></tr></thead>
+          <tbody>
+            <tr><td>Wheel type</td><td>Steel rims with a flange - the majority of truck wheels</td><td>Truck alloy wheels with no flange</td></tr>
+            <tr><td>Attachment</td><td>Clip mechanically locked on the rim edge</td><td>Tape bonded to the inner barrel</td></tr>
+            <tr><td>Heavy-duty suitability</td><td>Proven under high load and heat cycling</td><td>Depends entirely on tape grade and installation - see below</td></tr>
+            <tr><td>Size coverage</td><td>Up to 500 g per unit</td><td>Segmented strips, typically to 60 g per strip</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Where a truck does run alloys, adhesive weights work - but the failure mode is the same as on cars, amplified by wheel mass: poor surface prep or economy tape means lost weights. Specify a premium tape and follow the <a href="/news/stick-on-wheel-weights-fall-off/">installation checklist</a>; our <a href="/news/wheel-weight-tape-comparison/">wheel weight tape comparison</a> explains the tape grades.</p>
+
+      <h2>Lead regulation: check before you ship</h2>
+      <p>Traditional truck weights are lead (Pb), and lead wheel weights are banned for sale or installation in a growing list of US states - including California, Illinois, Maine, Maryland, New York, Vermont and Washington. Scope differs by state and some exempt commercial vehicles, so verify the statute for every state you sell into. Where lead is restricted, steel (Fe) is the compliant alternative. The full state-by-state breakdown is in our <a href="/news/lead-wheel-weight-bans/">lead wheel weight bans guide</a>.</p>
+
+      <h2>Stocking notes for distributors</h2>
+      <ul>
+        <li><strong>Stock the full gram series in depth at the small end</strong> - 50 g to 200 g covers most daily truck balancing, with 300 g - 500 g kept for the heaviest corrections.</li>
+        <li><strong>Offer both finishes.</strong> Natural lead for economy accounts; plastic coated for corrosion protection and cleaner handling.</li>
+        <li><strong>Carry gram and OZ series</strong> if you export - US workshops commonly balance in ounces.</li>
+        <li><strong>Pair with valves.</strong> Truck balancing jobs almost always coincide with a valve service - see the <a href="/products/tyre-valves/truck-bus-valves/">truck &amp; bus valve range</a> (TR570, V3-20 series) and the <a href="/news/tyre-valve-guide/">tyre valve types guide</a>.</li>
+      </ul>
+      <p>Browse the <a href="/products/wheel-balancing-weights/">wheel balancing weights range</a> or <a href="/contact/">contact us</a> with your size list for a consolidated quotation - truck weights ship consolidated with valves and repair materials in one order.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Weight range, finishes and packing for CTR-PB-03C: Century Auto Parts published product data</li>
+          <li>US state lead wheel weight restrictions: state statutes as summarised in our Fe vs Pb guide</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'wheel-weight-guide', title: 'How to Choose Wheel Balancing Weights', date: 'August 8, 2026', desc: 'Fe vs Pb materials and clip-on vs adhesive types.', tag: 'Wheel Weights' },
+      { slug: 'fe-vs-pb-wheel-weights', title: 'Fe vs Pb Wheel Weights: Which Should You Buy?', date: 'September 24, 2026', desc: 'Material comparison plus the US state lead bans.', tag: 'Comparison' },
+    ],
+  },
+  {
+    slug: 'tyre-valve-cores',
+    title: 'Tyre Valve Cores Explained: Types, Torque & Replacement',
+    date: 'September 29, 2026',
+    dateISO: '2026-09-29',
+    tags: ['Product Guide', 'Tyre Valves'],
+    img: '/images/articles/tyre-valve-cores.webp',
+    imgAlt: 'Rubber tyre valve stems with brass valve cores fitted',
+    desc: 'What a tyre valve core does, how 9002# and 7002# cores differ, tightening torque, leak diagnosis and why workshops replace cores at every tyre service.',
+    faq: [
+      { q: 'What is a tyre valve core?', a: 'The valve core is the small spring-loaded insert screwed into the valve stem. It is the actual seal: the spring holds the poppet closed to keep air in, and the inflation chuck presses the pin to let air through. When a valve leaks, the core is the first part to check.' },
+      { q: 'How tight should a valve core be?', a: 'Component makers commonly specify a tightening torque of roughly 0.25 N.m (about 2-3 in-lb) for standard cores. Over-tightening damages the sealing seat; under-tightening leaves a slow leak. Follow the supplier specification where one is given.' },
+      { q: 'Can you replace a valve core without removing the tyre?', a: 'Yes. Deflate the tyre fully, unscrew the old core with a core tool, screw in a new core to the correct torque and reinflate. There is no need to break the bead as long as the stem itself is undamaged.' },
+      { q: 'What is the difference between 9002# and 7002# valve cores?', a: 'The 9002# is the standard core for passenger car and commercial valves such as the TR412-TR415 and TR570 series. The 7002# is a large-bore core used on agricultural swivel valves like the TRJ650, which need much higher airflow for large tyres and liquid ballast service.' },
+    ],
+    content: `
+      <p>Every tyre valve has two parts that can leak: the stem you can see, and the <strong>tyre valve core</strong> hidden inside it. The core is a cheap, spring-loaded insert that screws into the stem - yet it is the component that actually holds the air. A large share of "mystery" slow leaks in workshops trace back to a tired, dirty or wrongly tightened core, not the valve body. For distributors and fleets, cores are a classic high-turnover consumable: small unit cost, big service impact.</p>
+
+      <figure>
+        <img src="/images/products/tyre%20valves/tr413-tr414-valve-002.webp" alt="TR413 and TR414 rubber tyre valve stems fitted with 9002# brass valve cores and VC8 caps" loading="lazy">
+        <figcaption>The brass core sits inside the stem thread; the cap protects it as a second line of defence</figcaption>
+      </figure>
+
+      <h2>What the valve core does</h2>
+      <p>The core is a spring-loaded check valve. At rest, the spring presses the poppet against the seat and seals the air inside the tyre. When you push the centre pin - with an inflation chuck, a pressure gauge or a deflator - the passage opens. Release the pin and the seal closes again. Because every inflation cycle works the spring and seat, the core wears and eventually leaks.</p>
+      <p>On standard stems the core threads into a bore commonly designated <strong>5V1</strong> under TRA conventions, which is why replacement cores are effectively universal across standard passenger valves.</p>
+
+      <h2>Core types: 9002#, 7002# and TPMS</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Core type</th><th>Used in</th><th>Why it exists</th></tr></thead>
+          <tbody>
+            <tr><td>9002# (standard)</td><td>TR412-TR415 passenger valves, TR570-TR572 truck valves</td><td>The default core for the vast majority of road vehicles - our TR and TR57 series valves are supplied with it</td></tr>
+            <tr><td>7002# (large bore)</td><td>TRJ650 agricultural swivel valves</td><td>Faster airflow for large agricultural tyres and liquid ballast filling</td></tr>
+            <tr><td>TPMS cores</td><td>TPMS valve stems (service kits)</td><td>Nickel-plated variants matched to sensor stems to resist corrosion and keep readings accurate</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>See how the cores pair with stems and caps in the <a href="/news/tyre-valve-guide/">tyre valve types guide</a>, and the matching caps in our <a href="/news/tyre-valve-caps/">tyre valve caps guide</a>.</p>
+
+      <h2>Torque: the detail that causes comebacks</h2>
+      <p>Component makers commonly specify a tightening torque of roughly <strong>0.25 N.m (2-3 in-lb)</strong> for standard cores. Both directions of error cause leaks: over-tightening crushes or distorts the sealing seat; under-tightening lets pressure push past the threads. Core tools with a torque feature exist for exactly this reason - relevant for TPMS service in particular, where an over-stressed core can also distort readings.</p>
+
+      <h2>Diagnosing a leaking core</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Symptom</th><th>Quick test</th><th>Fix</th></tr></thead>
+          <tbody>
+            <tr><td>Slow pressure loss, no visible damage</td><td>Bubble solution on the valve mouth - bubbles at the pin mean the core</td><td>Replace the core (and cap) with a core tool</td></tr>
+            <tr><td>Leak only when the valve is touched</td><td>Bubbles around the stem base, not the pin</td><td>The stem seal or grommet, not the core - replace the valve</td></tr>
+            <tr><td>Cap missing, dusty thread</td><td>Grit has likely entered the core</td><td>Replace core and cap together; never leave stems uncapped</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Replacement practice for workshops and fleets</h2>
+      <ol>
+        <li><strong>Replace at every tyre service.</strong> The core and cap cost almost nothing compared with a comeback visit.</li>
+        <li><strong>Use a core tool</strong> - not pliers - to avoid twisting the stem.</li>
+        <li><strong>Standardise the stock.</strong> One 9002# core covers the bulk of a fleet; add 7002# only if you service agricultural large-bore valves.</li>
+        <li><strong>Torque to spec</strong> (around 0.25 N.m) rather than "hand tight plus a bit".</li>
+      </ol>
+
+      <h2>Buying cores in bulk</h2>
+      <p>All Century Auto Parts valves are supplied complete with brass cores and caps, and we also sell cores separately as consumables for distributors and fleet workshops. Mixed orders with valve stems qualify for consolidated shipping - browse our <a href="/products/tyre-valves/">tyre valve range</a> or <a href="/contact/">send us your list</a> for a quotation.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Thread designations (5V1 bore conventions) per TRA (Tire and Rim Association) practice for valve cores</li>
+          <li>Torque guidance per component maker service specifications (commonly ~0.25 N.m for standard cores)</li>
+          <li>Core and stem pairings (9002#, 7002#, TPMS): Century Auto Parts published product data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'tyre-valve-caps', title: 'Tyre Valve Caps: Plastic vs Metal & Missing Caps', date: 'September 29, 2026', desc: 'The small part that keeps dirt and leaks out of every valve.', tag: 'Tyre Valves' },
+      { slug: 'tr413-vs-tr414-tyre-valve', title: 'TR413 vs TR414 Tyre Valves', date: 'September 24, 2026', desc: 'The single most asked comparison in the TR series.', tag: 'Comparison' },
+    ],
+  },
+  {
+    slug: 'tyre-valve-caps',
+    title: 'Tyre Valve Caps: Plastic vs Metal & Why Missing Caps Cause Leaks',
+    date: 'September 29, 2026',
+    dateISO: '2026-09-29',
+    tags: ['Product Guide', 'Tyre Valves'],
+    img: '/images/articles/tyre-valve-caps.webp',
+    imgAlt: 'Rubber tyre valve stems in four sizes, each with a dome cap',
+    desc: 'Tyre valve caps are a dust seal and a backup air seal. Types, TPMS cap notes, and why fleets replace caps in bulk instead of reusing them.',
+    faq: [
+      { q: 'Does a tyre valve cap hold air?', a: 'Not primarily - the valve core holds the air. The cap is a dust and moisture seal, and a secondary air seal only if the core starts to leak. A vehicle can run without a cap, but dirt and water reach the core and greatly increase the chance of a slow leak.' },
+      { q: 'Can metal valve caps seize on the stem?', a: 'Yes. Metal caps can seize through corrosion, especially on aluminium TPMS stems where dissimilar metals react. For TPMS applications, plastic caps are the safer choice.' },
+      { q: 'How often should valve caps be replaced?', a: 'Replace the cap whenever it is lost, cracked or its seal is damaged - and as standard practice alongside a new valve core at every tyre service.' },
+      { q: 'Are tyre valve caps universal?', a: 'The vast majority of passenger car valves share the same external stem thread, so standard caps such as the VC8 fit almost all passenger and commercial Schrader-type stems. Agricultural large-bore valves use their own cap, such as the VC6.' },
+    ],
+    content: `
+      <p>The <strong>tyre valve cap</strong> is the cheapest part on the entire wheel - and the one most often missing. That matters more than it looks: the cap is the only thing stopping grit, water and road salt from reaching the <a href="/news/tyre-valve-cores/">valve core</a>, and it doubles as a backup seal if the core ever weeps. Fleets that enforce a "cap on every valve" rule see fewer slow-leak call-backs for pennies per vehicle.</p>
+
+      <figure>
+        <img src="/images/tire%20valve.webp" alt="Four rubber snap-in tyre valve stems with black dome caps fitted" loading="lazy">
+        <figcaption>Every valve in our TR range ships with a cap fitted - here VC8 dome caps on TR412-TR415 stems</figcaption>
+      </figure>
+
+      <h2>Tyre valve cap types</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Cap type</th><th>Typical use</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>VC8 (plastic dome)</td><td>Standard TR series passenger and truck valves</td><td>The default cap supplied with our TR412-TR415 and TR570 series valves</td></tr>
+            <tr><td>VC6</td><td>TRJ650 agricultural large-bore swivel valves</td><td>Matches the larger 7002# core assembly</td></tr>
+            <tr><td>Metal cap with sealing washer</td><td>Heavy-duty and commercial service</td><td>More robust; must thread freely - discard any cap with a damaged seal</td></tr>
+            <tr><td>TPMS-specific caps</td><td>TPMS valve stems</td><td>Prefer plastic: metal caps can seize on aluminium stems through galvanic corrosion</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Why a missing cap turns into a leak</h2>
+      <ol>
+        <li><strong>Dirt reaches the core.</strong> Grit on the poppet seat stops the core sealing cleanly - a classic slow leak.</li>
+        <li><strong>Moisture corrodes the spring.</strong> Salt water inside the stem shortens core life dramatically.</li>
+        <li><strong>Freezing.</strong> In cold climates, trapped water can freeze the pin open or block inflation.</li>
+        <li><strong>The backup seal is gone.</strong> If the core ever weeps, only the cap was holding that air in.</li>
+      </ol>
+      <p>That is why our workshop partners treat the cap and core as one consumable pair: replace both at every tyre service. The cost is negligible; a comeback for a flat tyre is not.</p>
+
+      <h2>A note on metal caps and TPMS stems</h2>
+      <p>Decorative metal caps are popular in the aftermarket, but on <a href="/products/tpms/tpms-valve-stem/">TPMS valve stems</a> - many of which are aluminium - a metal cap can seize through galvanic corrosion and damage the stem thread when forced off. Specify plastic caps for TPMS applications, and keep metal caps for standard brass-stem valves. See our <a href="/news/tpms-maintenance/">TPMS maintenance guide</a> for the full service-kit practice.</p>
+
+      <h2>Bulk buying notes</h2>
+      <ul>
+        <li>Caps are an easy add-on to any valve order - we supply every valve with caps fitted and sell caps separately as consumables.</li>
+        <li>Standardise on VC8 for the bulk of your range; add VC6 only if you stock agricultural large-bore valves.</li>
+        <li>Bundle caps with cores in workshop service packs - the two are replaced together.</li>
+      </ul>
+      <p>Browse the <a href="/products/tyre-valves/">tyre valve range</a> or <a href="/contact/">contact us</a> with your model list for a consolidated quotation on stems, cores and caps.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Cap pairings (VC8, VC6) per Century Auto Parts published product data</li>
+          <li>TPMS cap material guidance per industry service practice for aluminium sensor stems</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'tyre-valve-cores', title: 'Tyre Valve Cores Explained: Types, Torque & Replacement', date: 'September 29, 2026', desc: '9002# vs 7002#, torque and leak diagnosis.', tag: 'Tyre Valves' },
+      { slug: 'tpms-maintenance', title: 'TPMS Valve Maintenance', date: 'July 25, 2026', desc: 'How to extend the life of your TPMS sensors.', tag: 'TPMS' },
+    ],
+  },
+  {
+    slug: 'tyre-valve-sizes-dimensions',
+    title: 'Tyre Valve Sizes & Dimensions: TR, PVR, V3 & TR57 Series Chart',
+    date: 'September 28, 2026',
+    dateISO: '2026-09-28',
+    tags: ['Product Guide', 'Tyre Valves'],
+    img: '/images/articles/tyre-valve-sizes-dimensions.webp',
+    imgAlt: 'TR414 rubber snap-in tyre valve stems showing dimensions',
+    desc: 'Tyre valve size chart covering TR412-TR415 snap-in, PVR motorcycle, V3-20 and TR570 truck valves: rim hole, effective length, bend angle and pressure ratings.',
+    faq: [
+      { q: 'What size is a TR414 tyre valve?', a: 'The TR414 is a rubber snap-in valve with an 11.5 mm (.453 inch) rim hole and 38 mm (1.50 inch) effective length, reference V2.03.2. It is the most common valve for passenger cars and light trucks.' },
+      { q: 'What is the difference between TR413 and TR414?', a: 'Both share the same 11.5 mm rim hole and rubber snap-in construction; the only difference is effective length - TR413 is 32 mm (1.25 inch) and TR414 is 38 mm (1.50 inch). The longer TR414 clears deeper rim drop centres.' },
+      { q: 'What is the difference between snap-in and clamp-in valves?', a: 'Snap-in valves are rubber and press into the rim hole, used for passenger cars and light trucks. Clamp-in valves are brass and secured with a nut, used for trucks, buses and high-pressure applications.' },
+      { q: 'What rim hole do truck valves need?', a: 'Common truck and bus valves use larger holes than passenger valves: V3-20 series fits a 16 mm hole, TR570-TR572 series fit a 19 mm hole, and agricultural valves such as TR1175A and TRJ650 use 20.5 mm holes.' },
+      { q: 'Tube vs tubeless - which valve do I need?', a: 'Tubeless rims take snap-in (rubber) or clamp-in (brass) valves mounted in the rim hole. Tube-type wheels carry the valve on the tube itself, so the rim just needs a clearance hole. Most modern road wheels are tubeless.' },
+    ],
+    content: `
+      <p>Ordering the wrong <strong>tyre valve size</strong> is the most common purchasing mistake in this category: the rim hole diameter is off by a millimetre, or the effective length is too short to reach past a deep rim drop centre. This page is the <strong>tyre valve types chart</strong> buyers keep bookmarked - every size from our production range, organised by vehicle type, so you can match a model to the wheel in seconds.</p>
+
+      <figure>
+        <img src="/images/tyre-valve-sizes-guide.webp" alt="TR414 rubber snap-in tyre valve stems showing 11.5mm rim hole and 38mm length" loading="lazy">
+        <figcaption>Rubber snap-in valves - the 11.5 mm rim hole and effective length are the two numbers that decide fit</figcaption>
+      </figure>
+
+      <h2>Passenger car and light truck (rubber snap-in)</h2>
+      <p>The TR series is the global standard for passenger cars. All four share the same snap-in construction and brass 9002# core with VC8 cap; the only differences are rim hole and effective length:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Model</th><th>Ref. No.</th><th>Rim hole</th><th>Effective length</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>TR412</td><td>V2.03.6</td><td>11.5 mm / .453"</td><td>22 mm / 0.88"</td><td>Short valve for shallow rims</td></tr>
+            <tr><td>TR413</td><td>V2.03.1</td><td>11.5 mm / .453"</td><td>32 mm / 1.25"</td><td>Common on older and compact cars</td></tr>
+            <tr><td>TR414</td><td>V2.03.2</td><td>11.5 mm / .453"</td><td>38 mm / 1.50"</td><td><strong>The most common passenger car valve</strong></td></tr>
+            <tr><td>TR415</td><td>V2.03.3</td><td>15.8 mm / .625"</td><td>32 mm / 1.25"</td><td>Larger hole, light truck applications</td></tr>
+            <tr><td>TR414C</td><td>鈥?/td><td>11.5 mm / .453"</td><td>38 mm / 1.50"</td><td>Heavy-duty variant rated to 65 PSI</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>For the single most asked comparison in this range, see our <a href="/news/tr413-vs-tr414-tyre-valve/">TR413 vs TR414 breakdown</a>, and browse the <a href="/products/tyre-valves/passenger-car-light-truck-valves/">passenger car valve range</a>.</p>
+
+      <h2>Motorcycle, scooter and bike valves (PVR series)</h2>
+      <p>Motorcycle and bike tyre valves bend at 45 or 90 degrees to clear the disc and caliper. Choose by rim hole diameter:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Model</th><th>Valve hole diameter</th><th>Max pressure</th><th>Bend</th></tr></thead>
+          <tbody>
+            <tr><td>PVR40</td><td>8.8 - 9.5 mm</td><td>65 PSI</td><td>45掳 / 90掳</td></tr>
+            <tr><td>PVR50</td><td>9.5 - 10 mm</td><td>65 PSI</td><td>45掳 / 90掳</td></tr>
+            <tr><td>PVR60</td><td>10 - 10.5 mm</td><td>65 PSI</td><td>45掳 / 90掳</td></tr>
+            <tr><td>PVR70</td><td>11.5 mm</td><td>65 PSI</td><td>45掳 / 90掳</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Truck and bus (brass clamp-in)</h2>
+      <p>Commercial vehicle valves are brass clamp-in stems, secured with a nut so they hold up to high pressure and long hauls. Key dimensions:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Model</th><th>Ref. No.</th><th>Dimension (mm)</th><th>Material</th><th>Bend</th></tr></thead>
+          <tbody>
+            <tr><td>V3-20-4</td><td>鈥?/td><td>16 x 90</td><td>Brass</td><td>27掳</td></tr>
+            <tr><td>V3-20-6</td><td>鈥?/td><td>16 x 115</td><td>Brass</td><td>27掳</td></tr>
+            <tr><td>V3-22-1 / 58MS</td><td>58MS</td><td>16 x 58</td><td>Brass</td><td>45掳</td></tr>
+            <tr><td>TR570</td><td>V3.21.4</td><td>19 x 84</td><td>Brass</td><td>Straight</td></tr>
+            <tr><td>TR571</td><td>V3.21.5</td><td>19 x 90</td><td>Brass</td><td>Straight</td></tr>
+            <tr><td>TR572</td><td>V3.21.6</td><td>19 x 100</td><td>Brass</td><td>Straight</td></tr>
+            <tr><td>TR571C</td><td>V3.21.10</td><td>19 x 90</td><td>Brass</td><td>90掳 or 27掳</td></tr>
+            <tr><td>TR572C</td><td>V3.21.11</td><td>19 x 100</td><td>Brass</td><td>90掳 or 27掳</td></tr>
+            <tr><td>MS70-7 / 70MS-7</td><td>鈥?/td><td>40.5 + 29.5</td><td>Ni-plated brass</td><td>7掳</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>See the full <a href="/products/tyre-valves/truck-bus-valves/">truck and bus valve range</a>.</p>
+
+      <h2>Agricultural and off-road</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Model</th><th>Ref. No.</th><th>Key dimensions</th><th>Rim hole</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>TR618A</td><td>V5.01.1</td><td>22.5 x 30 mm</td><td>5/8" (15.9 mm)</td><td>90 PSI, tubeless tractor valve</td></tr>
+            <tr><td>TRJ650-02/03</td><td>V5.04.1</td><td>鈥?/td><td>20.5 mm</td><td>Large-bore swivel type, core 7002 + cap VC6</td></tr>
+            <tr><td>TR1175A</td><td>鈥?/td><td>22.5 x 24 mm</td><td>20.5 mm</td><td>86掳 bend, off-road and agricultural</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Tube vs tubeless - the question behind half of these searches</h2>
+      <p>A large share of sizing questions come down to one thing: does the wheel carry a tube? On a <strong>tubeless</strong> wheel, the valve itself mounts in the rim hole and seals it - that is the TR / PVR / V3 valve you are choosing above. On a <strong>tube-type</strong> wheel, the valve is vulcanised into the tube, and the rim only needs a clearance hole for it to pass through. Most modern road wheels are tubeless; some agricultural, motorcycle and trailer wheels still run tubes. If you are unsure, check whether the rim has a machined valve hole with a sealing surface - that means tubeless.</p>
+
+      <h2>How to order the right valve, every time</h2>
+      <ol>
+        <li><strong>Rim hole diameter first</strong> - measure the hole, not the old valve.</li>
+        <li><strong>Effective length second</strong> - the valve must clear the rim drop centre and leave room for the pump chuck.</li>
+        <li><strong>Pressure rating third</strong> - passenger valves around 65 PSI; trucks and agricultural vehicles need the brass clamp-in families.</li>
+        <li><strong>Bend angle fourth</strong> - 45掳 / 90掳 motorcycle bends, 27掳 or 90掳 truck bends.</li>
+      </ol>
+      <p>For a broader explanation of valve types see our <a href="/news/tyre-valve-guide/">tyre valve types guide</a>, browse the <a href="/products/tyre-valves/">full valve range</a>, or <a href="/contact/">contact us</a> with your vehicle list for a matched quotation.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>All dimensions, reference numbers and ratings: Century Auto Parts published product specifications (TR, PVR, V3, TR57 and agricultural series)</li>
+          <li>Rim hole sizes follow the industry standard designations used across TR-series catalogues</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'tr413-vs-tr414-tyre-valve', title: 'TR413 vs TR414 Tyre Valves: Differences, Sizes & Fitment', date: 'September 24, 2026', desc: 'The single most asked comparison in the TR series.', tag: 'Comparison' },
+      { slug: 'tyre-valve-guide', title: 'Tyre Valve Types Explained', date: 'August 1, 2026', desc: 'TR series, truck & bus, and agricultural valves explained.', tag: 'Product Guide' },
+    ],
+  },
   {
     slug: 'clip-on-wheel-weights-guide',
     title: 'Clip-On Wheel Weights: The Complete Wholesale Buying Guide',
@@ -13,6 +785,7 @@ export const articles = [
       { q: 'What materials are clip-on weights made from?', a: 'Fe (steel) is the lead-free standard and the most widely accepted. Zn (zinc) offers premium corrosion resistance for harsh climates, while Pb (lead) is restricted or banned in several markets.' },
       { q: 'How do I choose the right clip profile?', a: 'Match the clip to the rim flange profile - for example FN for alloy rims and MC for steel rims. Supplying the wrong profile means the weight will not seat and can fly off in service.' },
       { q: 'What weight range do clip-on weights come in?', a: 'Car clip-on weights typically run from 5 g to 60 g, while truck weights go up to 500 g. Both gram and OZ series are available for different markets.' },
+      { q: 'Can I buy clip-on wheel balancing weights in bulk?', a: 'Yes. We supply clip-on wheel balancing weights in bulk factory-direct: car weights packed 100/50 pcs per box, truck weights 50/25 pcs, with mixed models in one order and private label packing available for distributors.' },
     ],
     content: `
       <p>Clip-on wheel weights are one of the highest-turnover items in any tyre workshop. They attach to the rim flange with a spring steel clip, which makes them fast to fit and secure under load - the reason they remain the default for steel wheels. This guide covers what to look for when buying clip-on weights in bulk.</p>
@@ -215,6 +988,7 @@ export const articles = [
     desc: 'Wholesale guide to adhesive (stick-on) wheel weights: Fe and Pb materials, 3M, Norton and generic tape options, sizes, packaging and supplier checks.',
     faq: [
       { q: 'Are adhesive and stick-on wheel weights the same product?', a: 'Yes. Adhesive, stick-on, self-adhesive, tape and glue weights all describe the same product: a balancing weight with a pressure-sensitive adhesive backing that mounts on the inner barrel of an alloy wheel.' },
+      { q: 'How do I choose a stick-on wheel weights supplier?', a: 'Ask three things: which tape the price is based on (3M, Norton or generic), whether samples come from a real production batch, and whether the supplier manufactures in-house. Century Auto Parts is a stick-on wheel weights supplier and factory in Hebei, China, shipping wholesale and bulk orders to 50+ countries.' },
       { q: 'Which tape should I choose for adhesive wheel weights?', a: '3M and Norton (Saint-Gobain) tapes are the premium options, usually specified for Europe and North America. Generic blue tape is the standard export choice, while white or ordinary tape suits hot dry markets and economy ranges. Always ask which tape a quotation is based on.' },
       { q: 'What sizes do adhesive wheel weights come in?', a: 'The most common range is 5 g to 60 g in segmented strips, with 5 g and 10 g segments used most. Typical strip dimensions are 140 x 19 x 3.8 mm for Fe and 105 x 18 x 4 mm for Pb, and both gram and OZ series are available.' },
       { q: 'Are lead (Pb) adhesive wheel weights still legal?', a: 'It depends on the market. EU end-of-life vehicle rules restrict lead in vehicle materials and components subject to a published list of exemptions, and several markets have phased lead weights out. Steel and zinc are the safe default; confirm your local rules before ordering Pb.' },
@@ -245,7 +1019,7 @@ export const articles = [
           </tbody>
         </table>
       </div>
-      <p>The rule most workshops follow: <strong>steel rims take clip-on weights, alloy rims take adhesive weights</strong>. If you are building a balanced range, see our <a href="/news/wheel-weight-guide/">guide to choosing wheel balancing weights</a>.</p>
+      <p>The rule most workshops follow: <strong>steel rims take clip-on weights, alloy rims take adhesive weights</strong>. If you are building a balanced range, see our <a href="/news/wheel-weight-guide/">guide to choosing wheel balancing weights</a> and the companion <a href="/news/clip-on-wheel-weights-guide/">clip-on wheel weights buying guide</a> for the steel-rim side of the range.</p>
 
       <h2>Materials: Fe, Zn and Pb</h2>
       <div class="table-wrap">
@@ -288,12 +1062,23 @@ export const articles = [
           </tbody>
         </table>
       </div>
-      <p>Buyers in the US and some export markets order in ounces, so most factories offer both gram and OZ series. For the full conversion chart, see our <a href="/news/adhesive-wheel-weight-sizes/">adhesive wheel weight sizes guide</a>.</p>
+      <p>Buyers in the US and some export markets order in ounces, so most factories offer both gram and OZ series. For the full conversion table, see our <a href="/news/wheel-weight-conversion-chart/">wheel weight gram to OZ conversion chart</a>.</p>
 
       <figure>
         <a href="/products/wheel-balancing-weights/fe-wheel-balancing-weights/"><img src="/images/products/Wheel%20Balancing%20Weights/Fe%20Adhensive%20Wheel%20Weight%20CTR-FE-01A.webp" alt="Fe adhesive wheel weight strip CTR-FE-01A with 5 g and 10 g segments" loading="lazy"></a>
         <figcaption>CTR-FE-01A: 4 x 5 g + 4 x 10 g Fe adhesive strip, 140 x 19 x 3.8 mm</figcaption>
       </figure>
+
+      <h2>How to install stick-on wheel weights</h2>
+      <p>Adhesion failures almost always trace back to installation, not the weight. The short version your customers' technicians should follow:</p>
+      <ol>
+        <li><strong>Strip the old weight and every trace of old adhesive</strong> from the inner barrel.</li>
+        <li><strong>Clean with isopropyl alcohol</strong> and let the surface dry completely - silicone, tyre sealant and release agent all kill the bond.</li>
+        <li><strong>Work warm</strong> - the wheel surface should be above about 15 C so the adhesive can wet out.</li>
+        <li><strong>Handle by the metal, not the tape</strong> - skin oils on the adhesive side cut bond strength.</li>
+        <li><strong>Press firmly and evenly for several seconds</strong>, working from the centre of the strip outwards.</li>
+      </ol>
+      <p>For the full checklist with the reasoning behind each step, plus what to do when weights still come off, see <a href="/news/stick-on-wheel-weights-fall-off/">why stick-on wheel weights fall off</a>.</p>
 
       <h2>What to check before you place an order</h2>
       <ol>
@@ -305,6 +1090,12 @@ export const articles = [
         <li><strong>Range depth</strong> - gram and OZ series, 5 g to 60 g minimum, with round and right-angle profiles.</li>
         <li><strong>Packaging</strong> - bulk cartons or retail-ready private label packing.</li>
       </ol>
+
+      <div style="background:#FFF7ED;border:1px solid #FDBA74;border-left:4px solid #FF6B00;border-radius:8px;padding:20px 24px;margin:28px 0;">
+        <h3 style="margin:0 0 8px;font-size:1.1rem;color:#1A1A2E;">Free: Stick-On Wheel Weights Supplier Verification Checklist (PDF)</h3>
+        <p style="margin:0 0 12px;color:#57534E;">We turned the seven checks above - plus tape peel specs, tolerance bands and the questions that expose trading companies - into a one-page checklist our own QC team uses. Send us a message with the subject <strong>"Supplier Checklist"</strong> and we will email the PDF within 24 hours, together with a sample quotation for your size list.</p>
+        <a href="/contact/" style="display:inline-block;background:#FF6B00;color:#fff;font-weight:600;padding:10px 22px;border-radius:6px;text-decoration:none;">Request the Checklist &rarr;</a>
+      </div>
 
       <h2>Where adhesive weights fit in a full range</h2>
       <p>Most distributors stock adhesive weights alongside clip-on weights so they can serve both alloy and steel wheels. See the <a href="/products/wheel-balancing-weights/">wheel balancing weights range</a>, the <a href="/products/wheel-balancing-weights/fe-wheel-balancing-weights/">Fe series</a> and the <a href="/products/wheel-balancing-weights/lead-wheel-balancing-weights/">Pb series</a>, or read how our <a href="/news/wheel-weight-manufacturers/">manufacturing process and export service</a> works. To request a quote, <a href="/contact/">contact our team</a>.</p>
@@ -771,9 +1562,9 @@ export const articles = [
       <ul>
         <li><strong>Adhesive strips</strong> - 5 g to 60 g in segments (typically 4 x 5 g + 4 x 10 g, or 12 x 5 g).</li>
         <li><strong>Clip-on car weights</strong> - 5 g to 60 g in round and right-angle profiles.</li>
-        <li><strong>Truck weights</strong> - up to 500 g for steel commercial wheels.</li>
+        <li><strong>Truck weights</strong> - up to 500 g for steel commercial wheels (see the <a href="/news/truck-wheel-weights/">truck wheel weights guide</a>).</li>
       </ul>
-      <p>Buyers in the US and some export markets order in ounces, so most factories offer both series. For the full conversion chart, see our <a href="/news/adhesive-wheel-weight-sizes/">adhesive wheel weight sizes guide</a>.</p>
+      <p>Buyers in the US and some export markets order in ounces, so most factories offer both series. For the full conversion table, see our <a href="/news/wheel-weight-conversion-chart/">wheel weight gram to OZ conversion chart</a>.</p>
 
       <h2>Packing and private label</h2>
       <p>We supply wheel weights in standard cartons or retail-ready packing, with private label branding available for distributors. Adhesive weights are usually packed 100 pcs / 50 pcs per box, and clip-on car weights in the same quantities, while truck weights are packed 50 pcs / 25 pcs.</p>
@@ -813,8 +1604,8 @@ export const articles = [
       <p>Almost every valve shares the same four parts, and each can be specified separately:</p>
       <ul>
         <li><strong>Stem</strong> - the body, either rubber (snap-in), metal (clamp-in) or a metal stem over-moulded with rubber.</li>
-        <li><strong>Valve core</strong> - the spring-loaded mechanism that lets air in and seals it out. The <strong>9002#</strong> core is the standard for most passenger and commercial valves.</li>
-        <li><strong>Cap</strong> - the dust seal. A plastic cap such as <strong>VC8</strong> keeps dirt and moisture out of the core.</li>
+        <li><strong>Valve core</strong> - the spring-loaded mechanism that lets air in and seals it out. The <strong>9002#</strong> core is the standard for most passenger and commercial valves - see our <a href="/news/tyre-valve-cores/">tyre valve core guide</a>.</li>
+        <li><strong>Cap</strong> - the dust seal. A plastic cap such as <strong>VC8</strong> keeps dirt and moisture out of the core - see the <a href="/news/tyre-valve-caps/">tyre valve cap guide</a>.</li>
         <li><strong>Seal / grommet</strong> - the rubber washer that seals the valve against the rim hole.</li>
       </ul>
       <p>Most field failures are not caused by the metal or rubber body but by a tired valve core or a hardened seal, so specify these parts as carefully as the stem itself.</p>
@@ -832,7 +1623,7 @@ export const articles = [
           </tbody>
         </table>
       </div>
-      <p>The <strong>TR414C</strong> is a high-pressure variant of the TR414 built for a 65 PSI rating, making it a good choice for light commercial and trailer applications where standard passenger valves would be marginal. See the full <a href="/products/tyre-valves/passenger-car-light-truck-valves/">passenger car &amp; light truck valve range</a>.</p>
+      <p>The <strong>TR414C</strong> is a high-pressure variant of the TR414 built for a 65 PSI rating, making it a good choice for light commercial and trailer applications where standard passenger valves would be marginal. See the full <a href="/products/tyre-valves/passenger-car-light-truck-valves/">passenger car &amp; light truck valve range</a>, or the <a href="/news/tyre-valve-sizes-dimensions/">complete tyre valve size and dimension chart</a>.</p>
 
       <h2>Motorcycle and scooter valves (PVR series)</h2>
       <p>The <strong>PVR40, PVR50, PVR60 and PVR70</strong> valves are bent-stem valves for motorcycle and scooter wheels. They are matched to the rim by the valve hole diameter, and all are rated to 65 PSI with a 45&deg; or 90&deg; bend so the stem clears the brake and rim.</p>
@@ -850,7 +1641,7 @@ export const articles = [
       <p>Because motorcycle rims vary so much between models, selling the PVR range as a set of four hole sizes lets a workshop cover almost every machine without ordering specific part numbers.</p>
 
       <h2>Truck and bus valves</h2>
-      <p>Commercial valves are metal, clamp-in designs that hold high pressure and survive far more heat cycling than a rubber snap-in valve. These are split into two families: the high-pressure bus valves and the TR570-TR572 truck series.</p>
+      <p>Commercial truck valves are metal, clamp-in designs that hold high pressure and survive far more heat cycling than a rubber snap-in valve. As a <a href="/news/commercial-truck-valve-factory-china/">commercial truck valve factory in China</a>, we split these into two families: the high-pressure bus valves and the TR570-TR572 truck series.</p>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Model</th><th>Ref. No.</th><th>Valve hole / length</th><th>Material</th><th>Bend</th></tr></thead>
@@ -884,6 +1675,32 @@ export const articles = [
       </div>
       <p>The <strong>TRJ650-02/03</strong> is a large-bore swivel valve for tractors, letting the valve head rotate for easier inflation on wide rims with liquid ballast. The <strong>TR1175A</strong> is an extra-large off-road valve for heavy machinery.</p>
 
+      <h2>Which to stock: rubber snap-in vs metal clamp-in</h2>
+      <p>Buyers comparing the different types of tyre valves usually decide between the two constructions first:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th></th><th>Rubber snap-in (metal-free body)</th><th>Metal clamp-in (brass)</th></tr></thead>
+          <tbody>
+            <tr><td>Typical fitment</td><td>Passenger cars, light trucks, motorcycles - the mainstay types of car tyre valves</td><td>Trucks, buses, agricultural and high-speed wheels</td></tr>
+            <tr><td>Mounting</td><td>Pressed into the rim hole by hand or tool</td><td>Through the rim hole, secured with a nut</td></tr>
+            <tr><td>Strength profile</td><td>Flexible, economical, easy to replace</td><td>Withstands higher pressure and heat cycling</td></tr>
+            <tr><td>Examples</td><td>TR412-TR415, PVR40-PVR70</td><td>V3-20, TR570-TR572, 58MS, TR618A</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The types of car tyre valves a distributor needs are overwhelmingly the rubber snap-in TR series; metal clamp-in valves serve commercial and agricultural accounts. Many ranges pair both with the same 9002# core, which simplifies spare-part stocking.</p>
+
+      <h2>When to replace tyre valves</h2>
+      <p>Tyre valve replacement is cheap insurance. Industry practice is to fit a new snap-in valve (or at minimum a new core, cap and seal) <strong>every time a tyre is replaced</strong>, and to replace any valve immediately if you see:</p>
+      <ul>
+        <li>Cracking, perishing or hardening of the rubber body - typical on valves older than 4-6 years;</li>
+        <li>Bubble-test leaks at the stem base (the rim seal) or the valve mouth (the core);</li>
+        <li>A bent metal stem or a stripped cap thread;</li>
+        <li>Corrosion on clamp-in valves after winter service;</li>
+        <li>Any vibration damage after a kerb strike or wheel repair.</li>
+      </ul>
+      <p>For TPMS-equipped wheels, replace the service kit (stem, core, seal, grommet and nut) at every tyre change - the <a href="/news/tpms-maintenance/">TPMS maintenance guide</a> covers the details.</p>
+
       <h2>How to choose the right series</h2>
       <ol>
         <li><strong>Match the rim hole.</strong> The rim hole diameter is the first hard constraint - 11.5 mm for most car valves, 15.8 mm for TR415, 20.5 mm for large agricultural valves.</li>
@@ -911,9 +1728,11 @@ export const articles = [
     `,
     faq: [
       { q: 'What is the difference between a TR413 and a TR414 valve?', a: 'Both share the same 11.5 mm rim hole; the difference is effective length. The TR413 is 32 mm and the TR414 is 38 mm. Choose the length that keeps the valve stem correctly positioned for the specific wheel and any trim.' },
-      { q: 'What does the "C" mean in TR571C?', a: 'The C suffix denotes a bent-stem version of the valve. A bent (for example 90°) stem is used where a straight valve would be difficult to reach or could be damaged by a hubcap or brake component.' },
+      { q: 'What does the "C" mean in TR571C?', a: 'The C suffix denotes a bent-stem version of the valve. A bent (for example 90掳) stem is used where a straight valve would be difficult to reach or could be damaged by a hubcap or brake component.' },
       { q: 'When should I use a metal valve instead of a rubber snap-in valve?', a: 'Metal clamp-in valves are the right choice for truck, bus, agricultural and other high-pressure or high-heat applications. Rubber snap-in valves are economical and suitable for passenger cars and light trucks at standard pressures.' },
       { q: 'What core and cap do most tyre valves use?', a: 'The 9002# valve core and VC8 plastic cap are the standards for the majority of passenger and commercial valves, though some TPMS and agricultural valves use different cores such as 7002.' },
+      { q: 'How often should tyre valves be replaced?', a: 'Best practice is to fit a new snap-in valve every time a tyre is replaced, since rubber hardens over 4-6 years. Metal clamp-in valves last longer but still need a new core, cap and seal at each service. Replace immediately on any crack, leak or thread damage.' },
+      { q: 'What are the different types of tyre valves?', a: 'The main types are rubber snap-in valves for passenger cars and motorcycles (TR and PVR series), brass clamp-in valves for trucks and buses (V3-20, TR570, 58MS), large-bore agricultural valves (TRJ650, TR1175A, TR618A) and TPMS valve stems for vehicles with pressure sensors.' },
     ],
     related: [
       { slug: 'tpms-maintenance', title: 'TPMS Valve Maintenance', date: 'July 25, 2026', desc: 'How to extend the life of your TPMS sensors.', tag: 'TPMS' },
@@ -930,7 +1749,7 @@ export const articles = [
     imgAlt: 'TPMS valve sensor',
     desc: 'Practical TPMS maintenance tips: battery life, valve core care, avoiding sensor damage and choosing quality replacement parts.',
     content: `
-      <p>TPMS (Tyre Pressure Monitoring System) sensors monitor tyre pressure in real time and warn the driver before an under-inflated tyre becomes dangerous. On most vehicles the sensors are mounted on the valve stem, which means every tyre service is also an opportunity to damage - or protect - an expensive component. These practices help fleets, workshops and distributors get the longest possible life from every TPMS valve.</p>
+      <p>TPMS (Tyre Pressure Monitoring System) sensors monitor tyre pressure in real time and warn the driver before an under-inflated tyre becomes dangerous. On most vehicles the sensors are mounted on the valve stem - a <strong>tyre valve with a sensor</strong> fitted is simply called a TPMS valve - which means every tyre service is also an opportunity to damage - or protect - an expensive component. These practices help fleets, workshops and distributors get the longest possible life from every TPMS valve.</p>
 
       <h2>The two parts that actually fail</h2>
       <p>A TPMS valve assembly has two distinct pieces of hardware with very different service lives:</p>
@@ -986,7 +1805,7 @@ export const articles = [
         <li><strong>An 80 PSI pressure rating</strong> for standard passenger applications, with higher-rated designs for commercial use.</li>
         <li><strong>Vehicle compatibility</strong> - match the stem to the make and model, or choose a universal sensor stem such as those for Autel systems.</li>
       </ul>
-      <p>Pairing quality TPMS stems with good <a href="/news/tyre-valve-guide/">tyre valve practice</a> keeps warning lights off and avoids call-backs. For punctures, see <a href="/news/tyre-patch-vs-plug/">patch vs plug</a>.</p>
+      <p>Pairing quality TPMS stems with good <a href="/news/tyre-valve-guide/">tyre valve practice</a> keeps warning lights off and avoids call-backs. For punctures, see <a href="/news/tyre-patch-vs-plug/">patch vs plug</a>. Sourcing stems? See the <a href="/news/tpms-valve-buying-guide/">TPMS valve stem buying guide</a>.</p>
       <div class="sources">
         <strong>Sources</strong>
         <ul>
@@ -1000,6 +1819,7 @@ export const articles = [
       { q: 'Do I need to replace the valve stem when I change a tyre?', a: 'Yes. On TPMS valves the stem, core, seal and grommet - the service kit - wear far faster than the sensor and should be replaced every time a tyre is fitted. Reusing them is the most common cause of slow leaks.' },
       { q: 'What is the difference between rubber and aluminium TPMS valve stems?', a: 'Rubber snap-in stems use an EPDM rubber and brass construction and suit standard passenger fitments. Aluminium-and-rubber stems are more durable and are used in premium and aftermarket installations, though the seal material should be matched to the rim to avoid galvanic corrosion.' },
       { q: 'Why does my TPMS light stay on after I inflate the tyre?', a: 'Either the sensor has not been relearned after service, or its battery is weak. Relearn the sensor first; if the light persists, test the sensor and replace it if the battery is low or the unit is damaged.' },
+      { q: 'What is a tyre valve with a sensor?', a: 'It is a TPMS valve: a standard-looking valve stem with a pressure sensor body mounted behind it inside the wheel. The valve still handles inflation through a normal core, but the stem, seal and nut form a replaceable service kit, and the sensor electronics are replaced as a unit when the battery dies after roughly 5-10 years.' },
     ],
     related: [
       { slug: 'tyre-valve-guide', title: 'Tyre Valve Types Explained', date: 'August 1, 2026', desc: 'Understand TR412-TR415, TR570-TR572 and V3-20 series.', tag: 'Tyre Valves' },
@@ -1080,7 +1900,7 @@ export const articles = [
       { q: 'Can a tyre plug be a permanent repair?', a: 'No. A plug or seal string is a temporary repair intended to get the vehicle to a workshop. It does not bond to the inner liner, so it should be followed by a permanent internal repair such as a tyre patch or mushroom patch plug.' },
       { q: 'What is the difference between a tyre patch and a mushroom patch plug?', a: 'A patch seals only the inner liner over the puncture. A mushroom patch plug combines a stem that fills the puncture with a patch that bonds to the liner, sealing and reinforcing in one piece - which is why it is considered the most reliable permanent repair.' },
       { q: 'When should a tyre not be repaired?', a: 'A tyre should be replaced if the damage is in the sidewall or shoulder, if the cords are cut or exposed, if the puncture is larger than the product is rated for, or if the tyre has been run flat and overheated. Multiple or overlapping repairs are also unsafe.' },
-      { q: 'How should tyre patches be stored?', a: 'Store patches cool and dry, away from sunlight and heat, ideally at 15-25°C (59-77°F). Rotate stock so older patches are used first, and discard any patch whose surface has hardened.' },
+      { q: 'How should tyre patches be stored?', a: 'Store patches cool and dry, away from sunlight and heat, ideally at 15-25掳C (59-77掳F). Rotate stock so older patches are used first, and discard any patch whose surface has hardened.' },
     ],
     related: [
       { slug: 'seal-string-repair', title: 'How to Use a Tyre Seal String', date: 'July 10, 2026', desc: 'Emergency puncture repair, step by step.', tag: 'Repairs' },
@@ -1240,7 +2060,7 @@ export const articles = [
       <p>Standard export documents include the commercial invoice, packing list and bill of lading or airway bill. Certificates such as ISO 9001, RoHS or REACH documentation can be provided where applicable to your market.</p>
 
       <h2>Worldwide delivery</h2>
-      <p>We export to <strong>50+ countries</strong>, including the USA, Canada, UK, Germany, France, Australia, the Middle East, Southeast Asia, South America and Africa.</p>
+      <p>We export to <strong>50+ countries</strong>, including the USA, Canada, UK, Germany, France, Australia, the <a href="/news/middle-east-auto-parts-market/">Middle East</a>, Southeast Asia, South America and Africa.</p>
       <p>Comparing suppliers? See our <a href="/news/wheel-weight-manufacturers/">wheel weight manufacturers guide</a> for a map of the global industry and a supplier vetting checklist, or download the <a href="/catalog/">product catalog</a> to build your order list. Ready to start? <a href="/contact/">Contact our team</a>.</p>
       <div class="sources">
         <strong>Sources</strong>
@@ -1255,6 +2075,7 @@ export const articles = [
       { q: 'Can I get samples before placing a bulk order?', a: 'Yes. Samples are available at a nominal cost that is refundable on bulk orders, and free samples can be arranged for qualified buyers and long-term partners. We recommend sampling one key product from each category.' },
       { q: 'How long does production and shipping take?', a: 'Sea freight takes 25-35 days to the USA and Europe, air freight 7-10 days, and express courier 3-5 days. Add production lead time, which is confirmed with your quotation.' },
       { q: 'Do you offer OEM/ODM and private label?', a: 'Yes. We offer custom packaging, custom specifications, retail-ready packing and private label versions of our standard ranges. OEM/ODM orders carry a higher MOQ because of tooling and artwork.' },
+      { q: 'What affects tyre valve prices from a factory?', a: 'Tyre valve prices depend on the model (standard TR series cost less than truck TR570 or agricultural valves), construction (rubber snap-in vs brass clamp-in), order quantity and packing format. Send us your model list and quantities and we return FOB pricing within 24 hours.' },
     ],
     related: [
       { slug: 'wheel-weight-manufacturers', title: 'Wheel Weight Manufacturers: Global Guide', date: 'September 18, 2026', desc: 'The major manufacturers by region and how to vet a factory.', tag: 'Industry Guide' },
@@ -1391,7 +2212,7 @@ export const articles = [
         <li><strong>Measure the rim hole.</strong> 11.5 mm for TR412/413/414, 15.8 mm for TR415.</li>
         <li><strong>Choose the length.</strong> Match the stem length to the wheel and trim - do not substitute lengths.</li>
         <li><strong>Confirm the pressure rating.</strong> Use a TR414C or a metal valve where pressures exceed the standard passenger rating.</li>
-        <li><strong>Specify the core and cap.</strong> Standardise on 9002# cores and VC8 caps, and stock them as consumables.</li>
+        <li><strong>Specify the core and cap.</strong> Standardise on <a href="/news/tyre-valve-cores/">9002# cores</a> and <a href="/news/tyre-valve-caps/">VC8 caps</a>, and stock them as consumables.</li>
         <li><strong>Check TPMS fitment.</strong> Where a sensor is fitted, use a TPMS valve stem instead - see the <a href="/products/tpms/tpms-valve-stem/">TPMS valve stem range</a>.</li>
       </ol>
 
@@ -1446,7 +2267,7 @@ export const articles = [
       <p>Because lead is denser, a <strong>105 mm lead strip carries a similar mass to a 140 mm steel strip</strong>. That compactness was historically lead's main advantage - it fits neatly into tight wheel barrels - but it comes with a compliance problem.</p>
 
       <h2>Compliance: the deciding factor</h2>
-      <p>Under <strong>EU Directive 2000/53/EC</strong> on end-of-life vehicles, materials and components must not contain lead except where listed as an exemption, and lead in balance weights is addressed within that framework. In practice, lead wheel weights are restricted or banned across the EU, the UK, Canada and several US states, and the US EPA runs a voluntary lead-free initiative. The result is that steel, zinc and adhesive weights now dominate export demand.</p>
+      <p>Under <strong>EU Directive 2000/53/EC</strong> on end-of-life vehicles, materials and components must not contain lead except where listed as an exemption, and lead in balance weights is addressed within that framework. In practice, lead wheel weights are restricted or banned across the EU, the UK, Canada and several US states, and the US EPA runs a voluntary lead-free initiative - the state-by-state picture is mapped in our <a href="/news/lead-wheel-weight-bans/">lead wheel weight bans guide</a>. The result is that steel, zinc and adhesive weights now dominate export demand.</p>
       <p><strong>Practical rule:</strong> treat steel and zinc as the safe default and stock lead only for markets where it remains permitted and where customers specifically ask for it. Always confirm the current rules before committing to a lead order - see our <a href="/news/adhesive-stick-on-wheel-weights-guide/">adhesive wheel weights buying guide</a> for more compliance detail.</p>
 
       <h2>Performance: is there a real difference?</h2>

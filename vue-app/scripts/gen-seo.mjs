@@ -16,6 +16,7 @@ add('/products/', '0.8', 'weekly')
 add('/catalog/', '0.7', 'weekly')
 add('/news/', '0.8', 'weekly')
 add('/contact/', '0.7', 'weekly')
+add('/privacy/', '0.3', 'yearly')
 
 for (const cat of categories) {
   const catImages = [...new Set((cat.subcategories || []).flatMap(s => (s.products || []).map(p => p.image)).filter(Boolean))].slice(0, 3)

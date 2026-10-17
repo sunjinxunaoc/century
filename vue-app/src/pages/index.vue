@@ -13,7 +13,12 @@ useHead({
     { property: 'og:description', content: 'Wheel weight manufacturer since 2010. Clip-on and adhesive wheel balancing weights in Fe, Zn & Pb, gram & OZ series, plus tyre valves, TPMS and repair products. Factory direct to 50+ countries.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://centurymanufacture.com/' },
+    { property: 'og:image', content: 'https://centurymanufacture.com/images/hero-banner-warm-640.webp' },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' },
+    { property: 'og:image:alt', content: 'Century Auto Parts - Wheel Weight Manufacturer' },
     { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:image', content: 'https://centurymanufacture.com/images/hero-banner-warm-640.webp' },
   ],
   link: [
     { rel: 'canonical', href: 'https://centurymanufacture.com/' },
@@ -94,7 +99,7 @@ onUnmounted(() => { if (timer) clearInterval(timer) })
       <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
         <button v-for="(b, i) in banners" :key="i" @click="go(i)" class="h-1.5 rounded-full transition-all" :class="i === idx ? 'w-8 bg-white' : 'w-4 bg-white/40 hover:bg-white/60'" :aria-label="`Go to slide ${i + 1}`"></button>
       </div>
-      <div class="container-app relative z-10 pt-44 pb-28 md:pt-60 md:pb-44 text-center">
+      <div class="container-app relative z-10 pt-52 pb-28 md:pt-72 md:pb-44 text-center">
         <span class="inline-block bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6 text-shadow-hero">&#9672; Since 2010 &nbsp;&middot;&nbsp; Exported to 50+ Countries</span>
         <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-shadow-hero">Wheel Weight <span class="text-[#FF6B00]">Manufacturer</span> for Global Markets</h1>
         <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8 text-shadow-hero">Wheel balancing weights, tyre valves, TPMS, patches and repair materials - manufactured and exported worldwide with factory-direct quality and pricing.</p>
@@ -114,6 +119,35 @@ onUnmounted(() => { if (timer) clearInterval(timer) })
             <div class="text-sm text-gray-500 mt-2">{{ s.label }}</div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white">
+      <div class="container-app max-w-4xl">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A2E] mb-6 text-center">A Wheel Weight Manufacturer You Can Audit</h2>
+        <div class="text-gray-600 leading-relaxed space-y-4">
+          <p>Hebei Century Auto Parts Co., Ltd. has manufactured wheel balancing weights since 2010 in Yanshan County, Hebei Province - one of China's main tyre-repair product clusters. Unlike trading companies, we stamp, coat and pack every weight in our own factory, so the samples you approve are the goods you receive.</p>
+          <p>Our range covers clip-on and adhesive (stick-on) wheel weights in Fe (steel) and Pb (lead), gram and OZ series from 5 g up to 500 g for truck wheels, plus tyre valves, TPMS stems and tyre repair materials for consolidated shipping. We export directly to distributors in 50+ countries across North America, the Middle East, Europe and Africa, with OEM and private label programs for importers building their own brand.</p>
+        </div>
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div class="border border-gray-200 rounded-lg p-4">
+            <div class="font-semibold text-[#1A1A2E]">Own Factory</div>
+            <div class="text-xs text-gray-500 mt-1">Stamping, coating & packing in-house</div>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-4">
+            <div class="font-semibold text-[#1A1A2E]">OEM / ODM</div>
+            <div class="text-xs text-gray-500 mt-1">Private label cartons &amp; tape liner</div>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-4">
+            <div class="font-semibold text-[#1A1A2E]">Mixed Containers</div>
+            <div class="text-xs text-gray-500 mt-1">Weights + valves + patches in one shipment</div>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-4">
+            <div class="font-semibold text-[#1A1A2E]">Lead-Free Range</div>
+            <div class="text-xs text-gray-500 mt-1">Fe series for EPA &amp; EU markets</div>
+          </div>
+        </div>
+        <p class="text-center mt-8 text-sm text-gray-500">Sourcing for distribution? Read our <RouterLink to="/news/wheel-weight-manufacturers/" class="text-[#FF6B00] hover:underline">global wheel weight manufacturers guide</RouterLink> or <RouterLink to="/contact/" class="text-[#FF6B00] hover:underline">request a factory quote</RouterLink>.</p>
       </div>
     </section>
 

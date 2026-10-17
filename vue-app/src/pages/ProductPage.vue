@@ -5,6 +5,7 @@ import { useHead } from '@unhead/vue'
 import { findCategory, findSubcategory, findProduct, relatedProducts, PAGE_SIZE } from '../data/products'
 import PageHero from '../components/PageHero.vue'
 import ProductSidebar from '../components/ProductSidebar.vue'
+import ProductSearch from '../components/ProductSearch.vue'
 import BreadcrumbNav from '../components/BreadcrumbNav.vue'
 import ProductCard from '../components/ProductCard.vue'
 import CategoryCard from '../components/CategoryCard.vue'
@@ -130,9 +131,10 @@ useHead(() => {
     srcDesc = `${srcDesc.trim()}${p ? ' ' + p : ''}`
   }
 
-  const metaDesc = srcDesc.length > 152
+  let metaDesc = srcDesc.length > 152
     ? `${srcDesc.slice(0, 152).replace(/\s+\S*$/, '').replace(/[\.\s]+$/, '')}...`
     : srcDesc.trim()
+  if (isSubPaged && currentPage.value > 1) metaDesc = `${metaDesc} Page ${currentPage.value}.`
   const scripts = []
   if (product.value) {
     const modelCode = (product.value.name.match(/\bCTR-[A-Z0-9-]+/i) || [])[0]
@@ -153,11 +155,14 @@ useHead(() => {
         offers: {
           '@type': 'Offer',
           url,
-          priceCurrency: product.value.currency || 'USD',
-          price: String(product.value.price != null ? product.value.price : '0.10'),
+          ...(product.value.price != null
+            ? {
+                price: String(product.value.price),
+                priceCurrency: product.value.currency || 'USD',
+              }
+            : { businessFunction: 'http://purl.org/goodrelations/v1#Sell' }),
           availability: 'https://schema.org/InStock',
           itemCondition: 'https://schema.org/NewCondition',
-          priceValidUntil: '2027-12-31',
           seller: { '@type': 'Organization', name: 'Hebei Century Auto Parts Co., Ltd.' },
         },
       }),
@@ -232,11 +237,11 @@ useHead(() => {
     if (currentPage.value < totalPages.value) link.push({ rel: 'next', href: `${baseUrl}/page/${currentPage.value + 1}/` })
   }
   return {
-    title: `${product.value?.seoTitle || subcategory.value?.seoTitle || category.value?.seoTitle || pageTitle.value} | Century Auto Parts`,
+    title: `${pageType.value === 'product' ? (product.value?.seoTitle || pageTitle.value) : pageType.value === 'subcategory' ? (subcategory.value?.seoTitle || pageTitle.value) : (category.value?.seoTitle || pageTitle.value)} | Century Auto Parts`,
     meta: [
       { name: 'description', content: metaDesc },
       { name: 'keywords', content: product.value?.keywords || subcategory.value?.keywords || category.value?.keywords || category.value?.name || '' },
-      { property: 'og:title', content: `${product.value?.seoTitle || subcategory.value?.seoTitle || category.value?.seoTitle || pageTitle.value} | Century Auto Parts` },
+      { property: 'og:title', content: `${pageType.value === 'product' ? (product.value?.seoTitle || pageTitle.value) : pageType.value === 'subcategory' ? (subcategory.value?.seoTitle || pageTitle.value) : (category.value?.seoTitle || pageTitle.value)} | Century Auto Parts` },
       { property: 'og:description', content: metaDesc },
       { property: 'og:type', content: product.value ? 'product' : 'website' },
       { property: 'og:url', content: url },
@@ -254,6 +259,7 @@ useHead(() => {
     <PageHero :title="pageTitle" :subtitle="product?.tagline || category.tagline" :heading-tag="product ? 'div' : 'h1'" />
     <section class="py-16">
       <div class="container-app">
+        <ProductSearch class="mb-10" />
         <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-10 items-start">
           <ProductSidebar :category="categorySlug" :subcategory="activeSubSlug" :product="slug" />
           <div class="min-w-0">
@@ -285,13 +291,6 @@ useHead(() => {
                   <p v-if="product.tagline" class="text-[#FF6B00] font-medium mt-2">{{ product.tagline }}</p>
                   <div class="w-12 h-0.5 bg-[#FF6B00] mt-4 mb-5"></div>
                   <p class="text-gray-500 leading-relaxed">{{ product.desc }}</p>
-
-                  <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
-                    <div v-for="f in product.features" :key="f" class="flex items-start gap-2.5 text-gray-600">
-                      <svg class="w-5 h-5 shrink-0 text-[#FF6B00] mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                      <span>{{ f }}</span>
-                    </div>
-                  </div>
 
                   <div class="mt-8 pt-6 border-t border-gray-200">
                     <div class="flex flex-col sm:flex-row gap-3">
@@ -377,7 +376,7 @@ useHead(() => {
               </div>
 
               <div v-if="category.subcategories.length" class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <CategoryCard v-for="sub in category.subcategories" :key="sub.slug" :title="sub.name" :desc="sub.desc" :href="`/products/${categorySlug}/${sub.slug}/`" />
+                <CategoryCard v-for="sub in category.subcategories" :key="sub.slug" :title="sub.name" :desc="sub.desc" :image="sub.image" :href="`/products/${categorySlug}/${sub.slug}/`" />
               </div>
               <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div v-for="c in category.cards" :key="c.title" class="card reveal p-6 text-center">
@@ -385,6 +384,22 @@ useHead(() => {
                   <h3 class="font-semibold text-[#1A1A2E] mb-2">{{ c.title }}</h3>
                   <p class="text-sm text-gray-500 leading-relaxed">{{ c.desc }}</p>
                 </div>
+              </div>
+
+              <div v-if="category.wholesaleInfo" class="mt-14 bg-gray-50 border border-gray-200 rounded-lg p-6 md:p-8">
+                <h2 class="text-xl font-bold text-[#1A1A2E] mb-2">{{ category.wholesaleInfo.heading }}</h2>
+                <p class="text-sm text-gray-500 mb-5">{{ category.wholesaleInfo.intro }}</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm">
+                    <tbody>
+                      <tr v-for="(row, i) in category.wholesaleInfo.rows" :key="row[0]" :class="i % 2 === 0 ? 'bg-white' : 'bg-gray-50'">
+                        <th class="text-left font-semibold text-[#1A1A2E] px-4 py-3 whitespace-nowrap align-top border border-gray-200 w-48">{{ row[0] }}</th>
+                        <td class="text-gray-600 px-4 py-3 border border-gray-200">{{ row[1] }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="text-sm text-gray-500 mt-4">Ready to price an order? <RouterLink to="/contact/" class="text-[#FF6B00] font-medium hover:underline">Send us your size list for a 24-hour quotation</RouterLink>.</p>
               </div>
 
               <div v-if="featuredProducts.length" class="mt-14">

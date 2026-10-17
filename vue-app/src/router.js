@@ -5,6 +5,7 @@ export const routes = [
   { path: '/', name: 'home', component: () => import('./pages/index.vue') },
   { path: '/about', name: 'about', component: () => import('./pages/about.vue') },
   { path: '/contact', name: 'contact', component: () => import('./pages/contact.vue') },
+  { path: '/privacy', name: 'privacy', component: () => import('./pages/privacy.vue') },
   { path: '/products', name: 'products', component: () => import('./pages/products.vue') },
   { path: '/catalog', name: 'catalog', component: () => import('./pages/catalog.vue') },
   { path: '/news', name: 'news', component: () => import('./pages/news.vue') },
@@ -16,7 +17,7 @@ export const routes = [
 ]
 
 export function buildStaticPaths() {
-  const paths = ['/', '/about', '/contact', '/products', '/catalog', '/news']
+  const paths = ['/', '/about', '/contact', '/privacy', '/products', '/catalog', '/news']
   for (const cat of categories) {
     paths.push(`/products/${cat.slug}`)
     for (const sub of cat.subcategories || []) {
