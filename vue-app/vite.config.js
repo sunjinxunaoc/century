@@ -35,6 +35,22 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
+    watch: {
+      // Agent/team state files, browser profiles and editor temp dirs are
+      // written with transient locks on Windows; watching them crashes Vite
+      // with EBUSY. Polling avoids fs.watch locks entirely.
+      usePolling: true,
+      interval: 300,
+      ignored: [
+        '**/.git/**',
+        '**/node_modules/**',
+        '**/team/**',
+        '**/*.tmpdir/**',
+        '**/*.tmp',
+        '**/.*/**',
+        '**/chrome-prof/**',
+      ],
+    },
   },
   ssgOptions: {
     dirStyle: 'nested',

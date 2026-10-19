@@ -236,16 +236,22 @@ useHead(() => {
     if (currentPage.value > 1) link.push({ rel: 'prev', href: currentPage.value === 2 ? `${baseUrl}/` : `${baseUrl}/page/${currentPage.value - 1}/` })
     if (currentPage.value < totalPages.value) link.push({ rel: 'next', href: `${baseUrl}/page/${currentPage.value + 1}/` })
   }
+  const headTitleBase = pageType.value === 'product'
+    ? (product.value?.seoTitle || pageTitle.value)
+    : pageType.value === 'subcategory'
+      ? (subcategory.value?.seoTitle || pageTitle.value)
+      : (category.value?.seoTitle || pageTitle.value)
+  const headTitle = isSubPaged && currentPage.value > 1 ? `${headTitleBase} - Page ${currentPage.value}` : headTitleBase
   return {
-    title: `${pageType.value === 'product' ? (product.value?.seoTitle || pageTitle.value) : pageType.value === 'subcategory' ? (subcategory.value?.seoTitle || pageTitle.value) : (category.value?.seoTitle || pageTitle.value)} | Century Auto Parts`,
+    title: `${headTitle} | Century Auto Parts`,
     meta: [
       { name: 'description', content: metaDesc },
       { name: 'keywords', content: product.value?.keywords || subcategory.value?.keywords || category.value?.keywords || category.value?.name || '' },
-      { property: 'og:title', content: `${pageType.value === 'product' ? (product.value?.seoTitle || pageTitle.value) : pageType.value === 'subcategory' ? (subcategory.value?.seoTitle || pageTitle.value) : (category.value?.seoTitle || pageTitle.value)} | Century Auto Parts` },
+      { property: 'og:title', content: `${headTitle} | Century Auto Parts` },
       { property: 'og:description', content: metaDesc },
       { property: 'og:type', content: product.value ? 'product' : 'website' },
       { property: 'og:url', content: url },
-      ...(product.value?.image ? [{ property: 'og:image', content: `https://centurymanufacture.com${product.value.image}` }] : []),
+      { property: 'og:image', content: product.value?.image ? `https://centurymanufacture.com${product.value.image}` : 'https://centurymanufacture.com/images/factory.webp' },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
     link,

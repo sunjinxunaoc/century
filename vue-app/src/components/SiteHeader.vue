@@ -10,15 +10,7 @@ const openMobile = ref(new Set())
 const productsNav = categories.map((cat) => {
   const children = []
   for (const sub of cat.subcategories || []) {
-    const products = (sub.products || []).map((p) => ({
-      label: p.name,
-      path: `/products/${cat.slug}/${p.slug}/`,
-    }))
-    children.push({
-      label: sub.name,
-      path: `/products/${cat.slug}/${sub.slug}/`,
-      children: products.length ? products : undefined,
-    })
+    children.push({ label: sub.name, path: `/products/${cat.slug}/${sub.slug}/` })
   }
   for (const card of cat.cards || []) {
     children.push({ label: card.title, path: `/products/${cat.slug}/` })
@@ -75,14 +67,8 @@ onMounted(() => {
                   <template v-if="p.children">
                     <RouterLink :to="p.path" class="dropdown-item flex items-center justify-between">{{ p.label }} <span class="text-xs">&#9656;</span></RouterLink>
                     <ul class="dropdown-submenu">
-                      <li v-for="c in p.children" :key="c.path" class="relative group/sub2">
-                        <template v-if="c.children">
-                          <RouterLink :to="c.path" class="dropdown-item flex items-center justify-between">{{ c.label }} <span class="text-xs">&#9656;</span></RouterLink>
-                          <ul class="dropdown-submenu">
-                            <li v-for="prod in c.children" :key="prod.path"><RouterLink :to="prod.path" class="dropdown-item">{{ prod.label }}</RouterLink></li>
-                          </ul>
-                        </template>
-                        <RouterLink v-else :to="c.path" class="dropdown-item">{{ c.label }}</RouterLink>
+                      <li v-for="c in p.children" :key="c.path">
+                        <RouterLink :to="c.path" class="dropdown-item">{{ c.label }}</RouterLink>
                       </li>
                     </ul>
                   </template>
@@ -122,18 +108,7 @@ onMounted(() => {
                   </div>
                   <ul v-show="openMobile.has(p.label)" class="ml-4 flex flex-col gap-1 border-l-2 border-orange-300 pl-3">
                     <li v-for="c in p.children" :key="c.path">
-                      <template v-if="c.children">
-                        <div class="flex items-center justify-between">
-                          <RouterLink :to="c.path" class="mobile-link" active-class="active" @click="onNavLinkClick">{{ c.label }}</RouterLink>
-                          <button class="px-2 text-[#FF6B00]" @click="toggleMobile(c.label)">&#9662;</button>
-                        </div>
-                        <ul v-show="openMobile.has(c.label)" class="ml-4 flex flex-col gap-1 border-l-2 border-orange-300 pl-3">
-                          <li v-for="prod in c.children" :key="prod.path">
-                            <RouterLink :to="prod.path" class="mobile-link" active-class="active" @click="closeNav">{{ prod.label }}</RouterLink>
-                          </li>
-                        </ul>
-                      </template>
-                      <RouterLink v-else :to="c.path" class="mobile-link" active-class="active" @click="closeNav">{{ c.label }}</RouterLink>
+                      <RouterLink :to="c.path" class="mobile-link" active-class="active" @click="closeNav">{{ c.label }}</RouterLink>
                     </li>
                   </ul>
                 </template>
@@ -167,9 +142,6 @@ onMounted(() => {
   @apply block;
 }
 .group\/sub:hover > .dropdown-submenu {
-  @apply block;
-}
-.group\/sub2:hover > .dropdown-submenu {
   @apply block;
 }
 .dropdown-item {

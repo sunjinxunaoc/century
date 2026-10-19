@@ -13,7 +13,9 @@ useHead({
     { property: 'og:description', content: 'Download the complete Century Auto Parts product catalog 2026 - wheel balancing weights, tyre valves, TPMS, tyre seal strings, tyre patches and mushroom patch plugs.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://centurymanufacture.com/catalog/' },
+    { property: 'og:image', content: 'https://centurymanufacture.com/images/factory.webp' },
     { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:image', content: 'https://centurymanufacture.com/images/factory.webp' },
   ],
   link: [
     { rel: 'canonical', href: 'https://centurymanufacture.com/catalog/' },

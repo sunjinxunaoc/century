@@ -1,0 +1,9 @@
+{
+  "host": "203.0.113.10",
+  "user": "deploy",
+  "port": 22,
+  "remote_dir": "/www/wwwroot/centurymanufacture.com",
+  "identity_file": "C:\\Users\\86189\\.ssh\\id_ed25519",
+  "live_check_url": "https://centurymanufacture.com/robots.txt",
+  "expect_remote_robots": "Allow: /"
+}

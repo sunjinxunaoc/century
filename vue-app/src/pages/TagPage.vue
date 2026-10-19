@@ -27,7 +27,9 @@ useHead(() => {
       { property: 'og:description', content: desc },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: url },
+      { property: 'og:image', content: 'https://centurymanufacture.com/images/factory.webp' },
       { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:image', content: 'https://centurymanufacture.com/images/factory.webp' },
     ],
     link: [
       { rel: 'canonical', href: url },

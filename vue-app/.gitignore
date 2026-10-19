@@ -22,6 +22,8 @@ dev-server.err.log
 
 # Deployment artifacts
 deploy.zip
+deploy-config.json
+deploy-manifest.json
 
 # Temporary / cache dirs
 .chrome-tmp
@@ -48,3 +50,4 @@ Thumbs.db
 
 # Misc
 *.local
+.esbtmp/

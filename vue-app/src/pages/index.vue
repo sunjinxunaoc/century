@@ -13,12 +13,12 @@ useHead({
     { property: 'og:description', content: 'Wheel weight manufacturer since 2010. Clip-on and adhesive wheel balancing weights in Fe, Zn & Pb, gram & OZ series, plus tyre valves, TPMS and repair products. Factory direct to 50+ countries.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://centurymanufacture.com/' },
-    { property: 'og:image', content: 'https://centurymanufacture.com/images/hero-banner-warm-640.webp' },
-    { property: 'og:image:width', content: '1200' },
-    { property: 'og:image:height', content: '630' },
+    { property: 'og:image', content: 'https://centurymanufacture.com/images/hero-banner-warm-640-v2.webp' },
+    { property: 'og:image:width', content: '1920' },
+    { property: 'og:image:height', content: '640' },
     { property: 'og:image:alt', content: 'Century Auto Parts - Wheel Weight Manufacturer' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:image', content: 'https://centurymanufacture.com/images/hero-banner-warm-640.webp' },
+    { name: 'twitter:image', content: 'https://centurymanufacture.com/images/hero-banner-warm-640-v2.webp' },
   ],
   link: [
     { rel: 'canonical', href: 'https://centurymanufacture.com/' },
@@ -40,17 +40,17 @@ const values = [
 ]
 
 const catImages = {
-  'wheel-balancing-weights': '/images/wheel weight.webp',
-  'tyre-valves': '/images/tire valve.webp',
-  'tpms': '/images/TPMS Valve.webp',
-  'tyre-seal-string': '/images/tire seal.webp',
-  'tyre-patch': '/images/tire patch.webp',
-  'mushroom-patch-plug': '/images/mushroom patch plug.webp',
+  'wheel-balancing-weights': '/images/cards-v2/cat-wheel-balancing-weights.webp',
+  'tyre-valves': '/images/cards-v2/cat-tyre-valves.webp',
+  'tpms': '/images/cards-v2/cat-tpms.webp',
+  'tyre-seal-string': '/images/cards-v2/cat-tyre-seal-string.webp',
+  'tyre-patch': '/images/cards-v2/cat-tyre-patch.webp',
+  'mushroom-patch-plug': '/images/cards-v2/cat-mushroom-patch-plug.webp',
 }
 
 // Banner carousel
 const banners = ref([
-  { src: '/images/hero-banner-warm-640.webp', alt: 'Clip-on and adhesive wheel balancing weights', href: '/products/wheel-balancing-weights/' },
+  { src: '/images/hero-banner-warm-640-v2.webp', alt: 'Clip-on and adhesive wheel balancing weights', href: '/products/wheel-balancing-weights/' },
   { src: '/images/hero-banner-tyre-valve.webp', alt: 'Rubber and metal tyre valves', href: '/products/tyre-valves/' },
 ])
 const idx = ref(0)
@@ -73,7 +73,7 @@ function restart() {
   timer = setInterval(next, 5000)
 }
 onMounted(restart)
-onUnmounted(() => { if (timer) clearInterval(timer) })
+onUnmounted(() => { clearInterval(timer) })
 </script>
 
 <template>
@@ -87,7 +87,7 @@ onUnmounted(() => { if (timer) clearInterval(timer) })
           <img :src="b.src" :alt="b.alt" class="w-full h-full object-cover object-center">
         </RouterLink>
       </div>
-      <div class="absolute inset-0 pointer-events-none bg-gradient-to-b from-[#1A1A2E]/60 via-[#2B2B45]/50 to-[#1A1A2E]/60"></div>
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-b from-[#1A1A2E]/70 via-[#1A1A2E]/40 to-[#1A1A2E]/15"></div>
 
       <!-- carousel nav -->
       <button @click="prev" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center text-white transition" aria-label="Previous banner">
@@ -99,7 +99,7 @@ onUnmounted(() => { if (timer) clearInterval(timer) })
       <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
         <button v-for="(b, i) in banners" :key="i" @click="go(i)" class="h-1.5 rounded-full transition-all" :class="i === idx ? 'w-8 bg-white' : 'w-4 bg-white/40 hover:bg-white/60'" :aria-label="`Go to slide ${i + 1}`"></button>
       </div>
-      <div class="container-app relative z-10 pt-52 pb-28 md:pt-72 md:pb-44 text-center">
+      <div class="container-app relative z-10 pt-32 pb-72 md:pt-36 md:pb-36 text-center">
         <span class="inline-block bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6 text-shadow-hero">&#9672; Since 2010 &nbsp;&middot;&nbsp; Exported to 50+ Countries</span>
         <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-shadow-hero">Wheel Weight <span class="text-[#FF6B00]">Manufacturer</span> for Global Markets</h1>
         <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8 text-shadow-hero">Wheel balancing weights, tyre valves, TPMS, patches and repair materials - manufactured and exported worldwide with factory-direct quality and pricing.</p>
@@ -107,12 +107,12 @@ onUnmounted(() => { if (timer) clearInterval(timer) })
           <RouterLink to="/products/" class="btn btn-primary btn-large">Explore Products</RouterLink>
           <RouterLink to="/contact/" class="btn btn-outline btn-large">Get a Quote</RouterLink>
         </div>
-        <p class="text-sm text-gray-400 mt-6">New: <RouterLink to="/news/wheel-weight-manufacturers/" class="text-[#FF6B00] hover:underline">Wheel Weight Manufacturers - Global Guide for Buyers</RouterLink></p>
+        <p class="text-sm text-gray-300 mt-6 inline-block bg-[#1A1A2E]/35 backdrop-blur-sm px-4 py-1.5 rounded-full text-shadow-hero">New: <RouterLink to="/news/wheel-weight-manufacturers/" class="text-[#FF6B00] hover:underline">Wheel Weight Manufacturers - Global Guide for Buyers</RouterLink></p>
       </div>
     </section>
 
     <section class="relative z-10 bg-white border-b border-gray-100">
-      <div class="container-app -mt-[60px]">
+      <div class="container-app -mt-5">
         <div class="bg-white rounded-lg shadow-card-lg p-10 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div v-for="s in stats" :key="s.label" class="text-center">
             <div class="text-3xl font-bold bg-gradient-to-r from-[#FF6B00] to-orange-500 bg-clip-text text-transparent">{{ s.value }}</div>
@@ -147,7 +147,7 @@ onUnmounted(() => { if (timer) clearInterval(timer) })
             <div class="text-xs text-gray-500 mt-1">Fe series for EPA &amp; EU markets</div>
           </div>
         </div>
-        <p class="text-center mt-8 text-sm text-gray-500">Sourcing for distribution? Read our <RouterLink to="/news/wheel-weight-manufacturers/" class="text-[#FF6B00] hover:underline">global wheel weight manufacturers guide</RouterLink> or <RouterLink to="/contact/" class="text-[#FF6B00] hover:underline">request a factory quote</RouterLink>.</p>
+        <p class="text-center mt-8 text-sm text-gray-500">Sourcing for distribution? Read our <RouterLink to="/news/wheel-weight-manufacturers/" class="text-[#C2410C] hover:underline">global wheel weight manufacturers guide</RouterLink> or <RouterLink to="/contact/" class="text-[#C2410C] hover:underline">request a factory quote</RouterLink>.</p>
       </div>
     </section>
 
@@ -159,13 +159,13 @@ onUnmounted(() => { if (timer) clearInterval(timer) })
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div v-for="cat in categories" :key="cat.slug" class="card reveal flex flex-col">
-            <div class="aspect-[4/3] overflow-hidden bg-gray-100">
-              <img :src="catImages[cat.slug]" :alt="cat.name" width="800" height="600" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            <div class="aspect-[4/3] overflow-hidden bg-[#F6F2EC]">
+              <img :src="catImages[cat.slug]" :alt="cat.name" width="1200" height="900" loading="lazy" decoding="async" class="w-full h-full object-cover">
             </div>
             <div class="p-5 flex flex-col flex-1">
               <h3 class="font-semibold text-[#1A1A2E] mb-2">{{ cat.name }}</h3>
               <p class="text-sm text-gray-500 leading-relaxed mb-4 flex-1">{{ cat.tagline }}</p>
-              <RouterLink :to="`/products/${cat.slug}/`" class="text-[#FF6B00] text-sm font-medium hover:underline">Explore Range &rarr;</RouterLink>
+              <RouterLink :to="`/products/${cat.slug}/`" class="text-[#C2410C] text-sm font-medium hover:underline">Explore Range &rarr;</RouterLink>
             </div>
           </div>
         </div>

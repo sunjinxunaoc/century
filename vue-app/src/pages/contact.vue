@@ -11,7 +11,9 @@ useHead({
     { property: 'og:description', content: 'Contact Hebei Century Auto Parts Co., Ltd. for factory-direct pricing on wheel balancing weights, tyre valves, TPMS and tyre repair products.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://centurymanufacture.com/contact/' },
+    { property: 'og:image', content: 'https://centurymanufacture.com/images/factory.webp' },
     { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:image', content: 'https://centurymanufacture.com/images/factory.webp' },
   ],
   link: [
     { rel: 'canonical', href: 'https://centurymanufacture.com/contact/' },

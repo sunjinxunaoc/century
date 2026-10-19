@@ -2,6 +2,38 @@
 
 站点为纯静态站（vite-ssg 预渲染），所有页面都是真实 HTML，无需 Node / PHP / 数据库。
 
+## 🚀 推荐：一键增量部署（`deploy.ps1`）
+
+不再手动整传，本地一条命令搞定：**自动构建 → 只上传变更文件 → 自动校验 robots.txt**。
+
+### 首次配置（一次性）
+1. 复制 `deploy-config.example.json` 为 `deploy-config.json`，填入：
+   - `host`：服务器 IP/域名
+   - `user`：SSH 用户名
+   - `port`：SSH 端口（默认 22）
+   - `remote_dir`：服务器网站根目录（如 `/www/wwwroot/centurymanufacture.com`）
+   - `identity_file`：SSH 私钥路径（留空用默认 `~/.ssh/id_*`）
+2. 确保服务器支持 **SSH 密钥免密登录**（本机能直接 `ssh user@host` 进服务器，不需输密码）。
+
+> `deploy-config.json` 和 `deploy-manifest.json` 已被 `.gitignore` 忽略；模板保留在 `deploy-config.example.json`。
+
+### 日常部署
+```powershell
+.\deploy.ps1          # 构建 + 增量上传（只传变化文件）
+.\deploy.ps1 -Full    # 强制全量重传
+.\deploy.ps1 -SkipBuild   # 不重新构建，只同步（dist 已是最新时更快）
+```
+
+- 增量靠本地 `deploy-manifest.json` 记录每个文件的 大小+时间戳；没变化的文件（尤其 images/ 大图）**不会重传**。
+- 脚本只操作 `vue-app/dist/`，**绝不触碰 `websit/` 父目录**。
+- 上传完自动抓线上 `robots.txt` 校验是 `Allow: /`（防止误传父目录 Disallow 版本）。
+
+### 前提
+- 本机有 OpenSSH（`ssh` / `scp`，Windows 10/11 自带）。
+- 无需服务器装任何额外软件。
+
+---
+
 ## ⚠️ 防误传锁定（必读）
 
 **只允许上传 `vue-app/dist/` 内的内容，严禁上传 `websit/` 父目录的任何文件。**

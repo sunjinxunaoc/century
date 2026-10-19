@@ -58,7 +58,9 @@ useHead(() => {
       { property: 'og:description', content: desc },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: url },
+      { property: 'og:image', content: 'https://centurymanufacture.com/images/factory.webp' },
       { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:image', content: 'https://centurymanufacture.com/images/factory.webp' },
     ],
     link: [
       { rel: 'canonical', href: url },
@@ -87,12 +89,12 @@ useHead(() => {
 })
 
 const catImages = {
-  'wheel-balancing-weights': '/images/wheel weight.webp',
-  'tyre-valves': '/images/tire valve.webp',
-  'tpms': '/images/TPMS Valve.webp',
-  'tyre-seal-string': '/images/tire seal.webp',
-  'tyre-patch': '/images/tire patch.webp',
-  'mushroom-patch-plug': '/images/mushroom patch plug.webp',
+  'wheel-balancing-weights': '/images/cards-v2/cat-wheel-balancing-weights.webp',
+  'tyre-valves': '/images/cards-v2/cat-tyre-valves.webp',
+  'tpms': '/images/cards-v2/cat-tpms.webp',
+  'tyre-seal-string': '/images/cards-v2/cat-tyre-seal-string.webp',
+  'tyre-patch': '/images/cards-v2/cat-tyre-patch.webp',
+  'mushroom-patch-plug': '/images/cards-v2/cat-mushroom-patch-plug.webp',
 }
 </script>
 
@@ -142,8 +144,8 @@ const catImages = {
 
             <div v-else class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
               <div v-for="cat in categories" :key="cat.slug" class="card reveal flex flex-col">
-                <div class="aspect-[4/3] overflow-hidden bg-gray-100">
-                  <img :src="catImages[cat.slug]" :alt="cat.name" width="800" height="600" loading="lazy" decoding="async" class="w-full h-full object-cover">
+                <div class="aspect-[4/3] overflow-hidden bg-[#F6F2EC]">
+                  <img :src="catImages[cat.slug]" :alt="cat.name" width="1200" height="900" loading="lazy" decoding="async" class="w-full h-full object-cover">
                 </div>
                 <div class="p-5 flex flex-col flex-1">
                   <h3 class="font-semibold text-[#1A1A2E] mb-2">{{ cat.name }}</h3>
