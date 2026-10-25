@@ -1,5 +1,474 @@
 ﻿export const articles = [
   {
+    slug: 'import-tyre-repair-products-from-china',
+    title: 'How to Import Tyre Repair Products from China: MOQ, Shipping & Costs',
+    date: 'October 14, 2026',
+    dateISO: '2026-10-14',
+    tags: ['Industry Guide', 'Trade'],
+    img: '/images/articles/import-tyre-repair-products-from-china.webp',
+    imgAlt: 'Factory packing and cartons for importing tyre repair products from China',
+    desc: 'Importing tyre repair products from China: what a container really costs, MOQ and samples, sea vs air freight, plus the import checklist used by distributors.',
+    faq: [
+      { q: 'What does a container of tyre repair products cost to import?', a: 'It depends on the product mix and destination port - freight for a 40-foot container runs differently by route and season. Because we manufacture in one plant, we consolidate weights, valves, TPMS and repair materials into single containers, which cuts freight cost per unit compared with many small shipments.' },
+      { q: 'What is the minimum order quantity (MOQ)?', a: 'MOQ varies by product and pack size, and we accept mixed-model orders - for example combining wheel weights, tyre valves and patches in one container. Small trial orders are available before you commit to bulk.' },
+      { q: 'Sea freight or air freight?', a: 'Sea freight (FCL or LCL) is the economical choice for bulk container orders; air freight and express courier suit samples and urgent restocking. We quote both so you can choose by cost versus speed.' },
+      { q: 'Can I get samples before a bulk order?', a: 'Yes. Samples are available at a nominal cost, refundable on bulk orders, and free samples can be arranged for qualified buyers. We recommend sampling one key product from each category.' },
+    ],
+    content: `
+      <p>Importing <strong>tyre repair products from China</strong> is how most tyre-service distributors keep their price points competitive - but only if the logistics are done right. This guide walks through what a container really involves, how MOQ and samples work, the trade terms and documents that decide your landed cost, and the checklist importers use to avoid the expensive mistakes.</p>
+
+      <h2>Why import from China</h2>
+      <p>China produces the bulk of the world's wheel weights, tyre valves, TPMS stems and repair patches. Buying factory-direct removes intermediary margins, and one consolidated container can carry your whole tyre-service aisle. The alternative - buying from a local wholesaler who imported the same goods - adds a layer of margin without adding value you cannot get from a factory relationship. See how the global supplier landscape breaks down in our <a href="/news/wheel-weight-manufacturers/">wheel weight manufacturers guide</a>.</p>
+
+      <h2>What goes in a typical container</h2>
+      <p>Distributors rarely import a single product. A balanced first container from our factory typically mixes:</p>
+      <ul>
+        <li><a href="/products/wheel-balancing-weights/">Wheel balancing weights</a> - adhesive and clip-on, gram and OZ series, Fe and Pb</li>
+        <li><a href="/products/tyre-valves/">Tyre valves</a> - passenger TR series, truck and bus, motorcycle PVR</li>
+        <li><a href="/products/tpms/">TPMS valve stems</a> - application-specific stems</li>
+        <li><a href="/products/tyre-patch/">Tyre patches</a>, <a href="/products/mushroom-patch-plug/">mushroom plugs</a> and <a href="/products/tyre-seal-string/">seal strings</a></li>
+      </ul>
+      <p>Consolidating categories in one shipment is the single biggest way to cut landed cost per unit, and it is standard practice with a full-line factory. It also means one set of documents, one freight booking and one payment instead of four.</p>
+
+      <h2>Sea vs air freight</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Method</th><th>Use for</th><th>Trade-off</th></tr></thead>
+          <tbody>
+            <tr><td>Sea (FCL / LCL)</td><td>Bulk containers</td><td>Lowest cost per unit; longer transit</td></tr>
+            <tr><td>Air freight</td><td>Urgent restocking</td><td>Fast but much higher cost</td></tr>
+            <tr><td>Express courier</td><td>Samples, small urgent orders</td><td>Fastest for small packages</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>FCL</strong> (full container load) gives the lowest per-unit cost and avoids handling damage, while <strong>LCL</strong> (less than container load) lets a smaller importer share a container. For heavy consumables like wheel weights and patches, sea freight is almost always the right answer - the goods are dense, so you are paying for weight, and air freight rarely pays off on bulk. Air and express are for samples and emergency restocks, not for building stock.</p>
+      <p>We quote FOB and can arrange door-to-door delivery; your forwarder can also be used if you prefer to keep shipping in-house.</p>
+
+      <h2>Incoterms: what FOB, CIF and DDP mean for you</h2>
+      <p>The trade term decides where your responsibility starts and where the cost sits. Under the <strong>Incoterms 2020</strong> rules:</p>
+      <ul>
+        <li><strong>FOB (Free On Board)</strong> - the seller delivers the goods on board the vessel at the port of shipment; you arrange and pay the main freight and insurance. Most factory quotes are FOB.</li>
+        <li><strong>CIF (Cost, Insurance and Freight)</strong> - the seller pays freight and insurance to your destination port; you handle import clearance and inland delivery.</li>
+        <li><strong>DDP (Delivered Duty Paid)</strong> - the seller delivers to your door with duties paid; the simplest for a first-time importer but the least transparent on cost.</li>
+      </ul>
+      <p>For a first container, many importers choose FOB plus their own forwarder, because it keeps freight cost visible and lets them compare forwarders. Ask the factory which terms it quotes and confirm exactly what is included before comparing prices - a CIF price and an FOB price are not the same number.</p>
+
+      <h2>MOQ and samples</h2>
+      <p>MOQ varies by model and pack size, and mixed orders are welcome. Samples are a standard part of the process - see the full ordering workflow in our <a href="/news/ordering-guide/">ordering guide</a> for MOQ, lead time and payment terms. The right way to use samples is to evaluate a real production batch: check the material, the finish, the tape grade on adhesive weights, the clip profile on clip-on weights, and the patch construction - not just a single showroom piece.</p>
+
+      <h2>Payment terms</h2>
+      <p>Common factory terms are a deposit with the balance before shipment (T/T), or a letter of credit (L/C) for larger orders. The deposit protects the factory's production slot; the balance-before-shipment protects the factory against non-payment. For a new relationship, start with a smaller trial order and a sample, then scale to containers once the quality and communication are proven. Never send the full balance before you have seen inspection photos or a third-party inspection report.</p>
+
+      <h2>Documents you will need</h2>
+      <ol>
+        <li><strong>Commercial invoice</strong> - the customs value and terms.</li>
+        <li><strong>Packing list</strong> - carton counts, dimensions and weights.</li>
+        <li><strong>Bill of lading (sea) or airway bill (air)</strong> - the transport document.</li>
+        <li><strong>Certificate of origin</strong> - where your market grants preferential duty.</li>
+        <li><strong>Material or test certificates</strong> - e.g. lead-free declarations, where your market requires them.</li>
+      </ol>
+      <p>Missing or inconsistent documents are the most common cause of customs delay. Confirm the document set with the factory and your broker before the goods ship, not after they arrive.</p>
+
+      <h2>Compliance and market rules</h2>
+      <p>Compliance is where importers get caught. Two examples that matter for this product category:</p>
+      <ul>
+        <li><strong>Lead wheel weight bans</strong> - several US states and the EU restrict or ban lead weights, so specify Fe (steel) or Zn (zinc) for those markets. See our <a href="/news/lead-wheel-weight-bans/">lead weight bans guide</a>.</li>
+        <li><strong>Labelling and packaging rules</strong> - some markets require specific labelling, language or packaging; confirm before production, because changing it after the goods are made is expensive.</li>
+      </ul>
+      <p>Your customs broker confirms the HS classification and duty rate for your country - do not rely on a generic code from a forum, because classification drives both duty and whether any restriction applies.</p>
+
+      <h2>Quality control and inspection</h2>
+      <p>For a first order, build a simple QC step into the process:</p>
+      <ul>
+        <li><strong>Pre-production sample</strong> - approve the exact product, finish and packaging.</li>
+        <li><strong>In-process photos</strong> - ask for photos of the actual production batch.</li>
+        <li><strong>Pre-shipment inspection</strong> - either the factory's own report or a third-party inspection for larger orders.</li>
+        <li><strong>Arrival check</strong> - count, condition and a spot check against the approved sample.</li>
+      </ul>
+      <p>A factory that welcomes inspection and sends honest batch photos is the one to build a long relationship with.</p>
+
+      <h2>Packaging and container loading</h2>
+      <p>Wheel weights and patches are heavy for their volume, so loading efficiency is a real cost lever. Ask for carton dimensions, carton weights and pallet specifications early - you need them for the freight quote anyway. Decide whether you want palletised or floor-loaded cartons; pallets cost a little volume but speed up unloading and reduce damage. Consolidated mixed orders need clear carton marking so your warehouse can separate categories on arrival without opening every box.</p>
+
+      <h2>Understanding landed cost</h2>
+      <p>The factory price is only the start. Landed cost per unit is the number that decides your margin, and it includes:</p>
+      <ul>
+        <li>Goods cost (FOB price)</li>
+        <li>Main freight and insurance</li>
+        <li>Import duty and any taxes</li>
+        <li>Port charges, customs broker and inland delivery</li>
+        <li>Bank charges and currency conversion</li>
+        <li>Shrinkage, damage and inspection costs</li>
+      </ul>
+      <p>A low FOB price with poor loading and a high-duty classification can land more expensive than a slightly higher price with a better logistics plan. Build the full calculation before you commit to a container.</p>
+
+      <h2>Lead time and planning</h2>
+      <p>Total lead time runs from order confirmation through production, packing, booking, sailing and clearance. Because sea transit is long, the practical rule is to plan stock cover around the full cycle, not just production. A distributor who orders only when stock runs low will always be short; the ones who reorder on a rolling schedule keep the shelf full through the transit gap.</p>
+
+      <h2>The import checklist distributors use</h2>
+      <ol>
+        <li><strong>Send your full product list</strong> - categories, models and target quantities - so the quotation reflects real consolidation.</li>
+        <li><strong>Ask for the packing details</strong> - carton dimensions, weights and pallet specs for your freight calculation.</li>
+        <li><strong>Confirm the trade term</strong> - FOB, CIF or DDP, and exactly what each includes.</li>
+        <li><strong>Confirm the documents</strong> - commercial invoice, packing list, bill of lading or airway bill, certificate of origin, and material certificates where your market needs them.</li>
+        <li><strong>Check compliance early</strong> - e.g. lead-free wheel weights for markets with lead bans, <a href="/news/lead-wheel-weight-bans/">see the bans guide</a>.</li>
+        <li><strong>Sample first</strong> - evaluate a real production batch before the bulk container.</li>
+        <li><strong>Inspect before shipment</strong> - photos or a third-party report.</li>
+        <li><strong>Plan the reorder</strong> - rolling schedule sized to the full lead time.</li>
+      </ol>
+
+      <h2>Common first-container mistakes</h2>
+      <ul>
+        <li><strong>Comparing FOB to DDP prices</strong> as if they were the same number.</li>
+        <li><strong>Ordering a single category</strong> and paying full freight on a light container.</li>
+        <li><strong>Skipping the sample</strong> and discovering a finish or tape problem after the goods land.</li>
+        <li><strong>Ignoring lead bans</strong> in the destination market and importing restricted lead weights.</li>
+        <li><strong>No inspection</strong> before the balance is paid.</li>
+        <li><strong>Underestimating total lead time</strong> and running out of stock mid-transit.</li>
+      </ul>
+
+      <h2>The distributor's strategy</h2>
+      <p>The importers who do well treat the container as a <strong>stock-building exercise</strong>, not a one-off bargain hunt. They consolidate the full tyre-service aisle, keep a rolling reorder, sample and inspect properly, and build a relationship with one reliable full-line factory instead of chasing the cheapest quote each time. That approach turns freight from a cost into leverage, and it keeps the shelf full through the long sea cycle.</p>
+      <p>Century Auto Parts exports to 50+ countries and consolidates all of the above in one shipment. <a href="/contact/">Send your product list</a> for a quotation.</p>
+
+      <h2>Working with a factory: what good communication looks like</h2>
+      <p>The difference between a smooth import and a stressful one is usually communication, not price. A reliable factory answers product questions with specifics - material, tape grade, clip profile, carton dimensions, lead time - rather than vague reassurance. It sends photos of the actual batch, flags any specification it cannot meet, and tells you when a document or a compliance point needs your attention.</p>
+      <p>On the importer's side, the clearer the brief, the fewer the surprises. Send a product list with models and quantities, state the destination market and any compliance rules, and confirm the trade term and packaging preference up front. Ambiguity at the quotation stage becomes a dispute at the loading dock, so it pays to over-specify on the first order and then simplify once the relationship is proven.</p>
+
+      <h2>Choosing the right product mix for your market</h2>
+      <p>The mix that works in one market rarely fits another. Three questions shape the first container:</p>
+      <ul>
+        <li><strong>What do local workshops actually fit?</strong> A market dominated by alloy passenger wheels needs adhesive weights and hidden-weight placement; a market full of steel-wheel commercial fleets needs clip-on and heavier sizes.</li>
+        <li><strong>What does regulation allow?</strong> If lead is restricted, the whole weight range should be Fe or Zn, not a token lead-free line.</li>
+        <li><strong>What unit convention do the machines read?</strong> US-facing customers balance in ounces, so the OZ series is not optional.</li>
+      </ul>
+      <p>Getting this right on the first order is worth more than shaving a few percent off the FOB price, because the wrong mix sits on the shelf while the right mix reorders itself.</p>
+
+      <h2>Frequently asked questions</h2>
+      <p><strong>What is the minimum order quantity?</strong> MOQ varies by model and pack size, and mixed orders are welcome - send your product list and the factory will quote the real MOQ for that mix rather than a single blanket number.</p>
+      <p><strong>Can I mix categories in one container?</strong> Yes, and you should. Consolidating wheel weights, valves, TPMS and patches into one shipment is the most effective way to cut landed cost per unit.</p>
+      <p><strong>Do you ship samples?</strong> Samples are a standard part of the process. Evaluate a real production batch - material, finish, tape, clip profile - before committing to a bulk container.</p>
+      <p><strong>What payment terms are typical?</strong> A deposit with the balance before shipment (T/T), or a letter of credit for larger orders. Start with a smaller trial order and scale once quality is proven.</p>
+      <p><strong>Who handles the freight?</strong> The factory quotes FOB and can arrange door-to-door; many importers use their own forwarder to keep freight cost visible. Confirm the trade term and what it includes before comparing prices.</p>
+      <p><strong>How long does an order take?</strong> Total lead time runs from order confirmation through production, packing, booking, sailing and clearance. Plan stock cover around the full cycle, not just production.</p>
+      <p><strong>Can you meet my market's compliance rules?</strong> Yes - for example lead-free (Fe or Zn) wheel weights for markets with lead bans. Tell the factory the destination market and any labelling or packaging rules before production.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Incoterms 2020 (ICC) - FOB, CIF and DDP term definitions</li>
+          <li>Import documentation and customs practice: standard international trade guidance</li>
+          <li>Product ranges and consolidation: Century Auto Parts published trade information</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'ordering-guide', title: 'How to Order from Century Auto Parts', date: 'July 2, 2026', desc: 'MOQ, samples, OEM/ODM, production and shipping times.', tag: 'Trade' },
+      { slug: 'wheel-weight-manufacturers', title: 'Wheel Weight Manufacturers: Global Guide', date: 'September 18, 2026', desc: 'The major manufacturers by region and how to vet a factory.', tag: 'Industry Guide' },
+    ],
+  },
+  {
+    slug: 'cold-patch-vs-hot-patch',
+    title: 'Cold Patch vs Hot Vulcanizing Patch: Which Tyre Repair Method?',
+    date: 'October 12, 2026',
+    dateISO: '2026-10-12',
+    tags: ['Repairs', 'Tyre Patch'],
+    img: '/images/articles/cold-patch-vs-hot-patch.webp',
+    imgAlt: 'Cold patch and heavy-duty bias ply patch for tyre repair comparison',
+    desc: 'Cold patch vs hot vulcanizing patch for tyre repair: how each works, when to use which, and what stock a workshop needs for both.',
+    faq: [
+      { q: 'What is the difference between a cold patch and a hot patch?', a: 'A cold (chemical) patch self-vulcanizes at room temperature using a reactive cement and needs no heat - fast and cost-effective for most repairs. A hot patch is cured under pressure and heat (typically around 140-150 C) for the strongest bond, used for heavy-duty and commercial tyres.' },
+      { q: 'When should I use a hot cure patch instead of a cold patch?', a: 'Hot curing is preferred for large injuries, sidewall repairs, bias-ply and retread lines where maximum bond strength matters. Cold patches cover the majority of straightforward tread repairs more quickly and cheaply.' },
+      { q: 'Are our patches cold or hot?', a: 'We supply both cold and hot vulcanizing patches: the CTR-TPU and CTR-TPE ranges include standard cold patches for everyday repairs as well as heavy-duty sidewall and bias-ply options suited to hot curing.' },
+      { q: 'Do I need different equipment for hot patching?', a: 'Yes - hot curing needs a tyre spot vulcanizer or curing pad to apply controlled heat and pressure. Cold patching needs only a buffer, cement and a firm roller.' },
+    ],
+    content: `
+      <p>Workshop conversations about <strong>cold patch vs hot patch</strong> come down to one question: how much bond strength does this specific repair need? Both methods are permanent when done right, but they suit different injuries, tyres and speed of work. Getting the choice right protects the customer, the workshop's liability and its reputation - and it shapes what a distributor should stock. This guide covers the chemistry, the process, the injury types, the patch constructions and the buying decisions behind each method.</p>
+
+      <h2>What a permanent tyre repair actually has to achieve</h2>
+      <p>A repair is not a plug that stops air today; it has to restore the tyre's structure for the rest of its life. That means three jobs at once:</p>
+      <ul>
+        <li><strong>Seal the injury</strong> so air cannot escape through the puncture channel.</li>
+        <li><strong>Restore the inner liner</strong> so the tyre holds pressure and the repair does not lift.</li>
+        <li><strong>Keep the repair attached</strong> under heat, flexing and centrifugal force at speed, for thousands of kilometres.</li>
+      </ul>
+      <p>Both cold and hot methods achieve all three when the injury is inside the repairable area and the preparation is correct. The difference is how the bond is created, and therefore how much punishment it can take.</p>
+
+      <h2>How cold (chemical) patching works</h2>
+      <p>A <strong>cold patch</strong> relies on a self-vulcanizing cement applied to a buffed, cleaned inner liner. The cement reacts chemically at room temperature and bonds the patch to the tyre without external heat. The process is:</p>
+      <ol>
+        <li><strong>Inspect</strong> the injury and confirm it is inside the repairable crown/tread area.</li>
+        <li><strong>Buff</strong> the inner liner around the injury to a clean, textured surface.</li>
+        <li><strong>Clean</strong> away buffing dust and contamination.</li>
+        <li><strong>Apply cement</strong> and let it dry to a tacky film (drying time matters - a wet cement layer will not bond).</li>
+        <li><strong>Press the patch</strong> firmly with a roller, working from the centre out to remove trapped air.</li>
+        <li><strong>Fill the puncture channel</strong> from the outside where the repair calls for it.</li>
+      </ol>
+      <p>The result is permanent for standard tread injuries and is the everyday workhorse of the repair bay. The chemistry is what makes it fast: no heat, no curing press, just cement, patch and roller.</p>
+
+      <h2>How hot vulcanizing works</h2>
+      <p>A <strong>hot vulcanizing patch</strong> (also called a hot-cure or vulcanizing patch) is cured under controlled heat and pressure - typically with a spot vulcanizer or curing pad held at around 140-150 C for a set time. The heat and pressure cross-link the patch and the surrounding rubber into one continuous material, so the bond can slightly exceed the strength of the original rubber. The process is slower and needs equipment, but it delivers the maximum bond available:</p>
+      <ol>
+        <li><strong>Inspect and prepare</strong> the injury, often with more aggressive buffing for heavy sidewall work.</li>
+        <li><strong>Apply</strong> the vulcanizing patch or repair unit.</li>
+        <li><strong>Clamp</strong> the spot vulcanizer or curing pad over the repair.</li>
+        <li><strong>Cure</strong> under heat and pressure for the specified time.</li>
+        <li><strong>Cool and inspect</strong> before the tyre returns to service.</li>
+      </ol>
+      <p>Because it fuses rather than glues, hot curing is the choice for the repairs that take the most punishment.</p>
+
+      <h2>Side-by-side comparison</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th></th><th>Cold (chemical) patch</th><th>Hot vulcanizing patch</th></tr></thead>
+          <tbody>
+            <tr><td>Bond</td><td>Self-vulcanizing cement reacts at room temperature</td><td>Cured under heat and pressure</td></tr>
+            <tr><td>Equipment</td><td>Buffer, cement, roller</td><td>Spot vulcanizer / curing pad (~140-150 C)</td></tr>
+            <tr><td>Speed</td><td>Fast, everyday repairs</td><td>Slower, higher-level repairs</td></tr>
+            <tr><td>Strength</td><td>Permanent for standard tread injuries</td><td>Maximum - heavy-duty, sidewall, bias-ply, retread</td></tr>
+            <tr><td>Best injuries</td><td>Crown/tread punctures, nails, screws</td><td>Sidewall, shoulder, bias-ply, commercial, retread</td></tr>
+            <tr><td>Cost</td><td>Lower per repair</td><td>Higher equipment + time</td></tr>
+            <tr><td>Skill</td><td>Moderate - preparation is everything</td><td>Higher - heat, pressure and timing control</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>When to choose cold patching</h2>
+      <p>For the majority of punctures and tread injuries on passenger and light-truck tyres, a <strong>cold patch</strong> is the everyday answer: fast, cost-effective and permanent when the surface is properly buffed and the cement cures fully before the tyre is used. Our <a href="/products/tyre-patch/">CTR-TPU and CTR-TPE patch ranges</a> cover round, oval, square and all-purpose cold patches across the sizes a workshop sees daily. Cold patching is also the right default for a shop that does not want to invest in vulcanizing equipment but still needs to deliver permanent repairs.</p>
+
+      <h2>When to choose hot vulcanizing</h2>
+      <p><strong>Hot curing</strong> is reserved for the repairs that take the most punishment: heavy sidewall injuries, bias-ply and commercial tyres where the bond must slightly exceed the surrounding rubber. The continuous pressure-and-heat cure delivers that margin. Heavy-duty sidewall and bias-ply options are available in the CTR-TPU HD series - see the <a href="/products/tyre-patch/us-style-tire-patch/">US-style patch range</a>. If a shop services truck fleets, retreads or off-road bias-ply tyres, a hot-cure line is not optional - it is what lets them take the repairs the cold method should refuse.</p>
+
+      <h2>Patch construction: TPU, TPE and reinforcement</h2>
+      <p>The patch material decides how the repair behaves in service:</p>
+      <ul>
+        <li><strong>TPU (thermoplastic polyurethane)</strong> - tough, flexible and resistant to heat and abrasion; the standard for durable repairs, including heavy-duty units.</li>
+        <li><strong>TPE (thermoplastic elastomer)</strong> - softer and more economical, well suited to everyday passenger and light-truck tread repairs.</li>
+        <li><strong>Reinforced / layered patches</strong> - carry additional fabric or cord layers to restore structure on larger or higher-stress injuries.</li>
+      </ul>
+      <p>The patch shape matters too: <strong>round</strong> patches suit small round punctures, <strong>oval and square</strong> patches cover larger or elongated injuries, and <strong>all-purpose</strong> units bridge the gap for mixed workshop use. The right shape and size is chosen from the injury dimensions, not from habit.</p>
+
+      <h2>Repairable vs non-repairable injuries</h2>
+      <p>No method should be used outside the repairable area. As a rule of thumb:</p>
+      <ul>
+        <li><strong>Repairable</strong> - punctures and injuries in the crown/tread area, within the limits the repair standard and tyre maker allow.</li>
+        <li><strong>Handle with care</strong> - shoulder and sidewall injuries; these are where hot curing earns its place, and where many makers restrict repair.</li>
+        <li><strong>Not repairable</strong> - injuries in the sidewall that compromise the casing, damage to the bead, run-flat damage, and any injury where the tyre maker prohibits repair.</li>
+      </ul>
+      <p>A workshop that repairs outside these limits creates a liability far bigger than the price of a new tyre - which is why the method choice and the injury assessment go together.</p>
+
+      <h2>Preparation is the real variable</h2>
+      <p>Ask any experienced repair technician what decides whether a patch holds, and the answer is preparation, not the patch brand. The bond depends on:</p>
+      <ul>
+        <li><strong>Buffing to a clean, textured surface</strong> - a glossy or under-buffed liner will not key.</li>
+        <li><strong>Removing all buffing dust and contamination</strong> - dust is the enemy of adhesion.</li>
+        <li><strong>Letting the cement dry fully</strong> - a wet layer traps solvent and weakens the bond.</li>
+        <li><strong>Rolling out trapped air</strong> - air pockets become lift points in service.</li>
+        <li><strong>Correct cure time and temperature</strong> for hot repairs - under-curing leaves the bond short.</li>
+      </ul>
+      <p>This is why selling <strong>cement and buffer supplies</strong> alongside patches is not an upsell - without them the patch cannot do its job. A distributor who supplies the full repair kit keeps the workshop's results consistent.</p>
+
+      <h2>Cold patch vs mushroom plug vs seal string</h2>
+      <p>Patching is only one of three repair families, and the choice depends on the injury:</p>
+      <ul>
+        <li><strong>Patch</strong> - restores the inner liner from inside; the permanent standard for crown injuries.</li>
+        <li><strong>Mushroom plug</strong> - a combined plug-and-patch unit that fills the channel and seals the liner in one step; fast and permanent for suitable punctures. See <a href="/news/mushroom-plug-vs-seal-string/">mushroom plug vs seal string</a>.</li>
+        <li><strong>Seal string</strong> - a cord-based emergency repair inserted from outside; quick but not a permanent structural repair. See <a href="/news/tyre-patch-vs-plug/">patch vs plug</a>.</li>
+      </ul>
+      <p>For the one-step option between a patch and a plug, the mushroom plug is often the best balance of speed and permanence on suitable tread injuries.</p>
+
+      <h2>Bias-ply vs radial tyres</h2>
+      <p>Repair method and patch choice also depend on tyre construction. <strong>Radial</strong> passenger and truck tyres dominate modern fleets, and cold patches handle their tread injuries well. <strong>Bias-ply</strong> tyres - still common in agricultural, off-road and some commercial applications - flex differently and often call for heavier, hot-cured repair units. Stocking both cold and HD ranges lets a shop serve both constructions without turning work away.</p>
+
+      <h2>What to stock: a practical matrix</h2>
+      <ul>
+        <li><strong>Cold patches</strong> in the most-used round, oval and square sizes for everyday tread repairs - the volume item.</li>
+        <li><strong>Mushroom plugs</strong> in the common stem diameters for fast permanent repairs.</li>
+        <li><strong>Heavy-duty and bias-ply patches</strong> for workshops running hot-cure lines.</li>
+        <li><strong>Cement and buffer supplies</strong> - the bond depends on preparation, not just the patch.</li>
+        <li><strong>Seal strings</strong> as an emergency item, clearly positioned as temporary.</li>
+      </ul>
+      <p>A mixed assortment matched to the shop's mix of passenger, truck and off-road work is what keeps reorders steady and avoids the "we don't have the size" lost sale.</p>
+
+      <h2>The distributor's view</h2>
+      <p>Patches are a consumable with steady, predictable demand: every puncture a workshop repairs uses one patch and a little cement. The commercial opportunity is in the <strong>breadth</strong> of the assortment - cold and HD, round/oval/square, TPU and TPE, plus plugs and strings - so one supplier can cover the whole repair bay. Consolidated with wheel weights, valves and TPMS, the repair range becomes part of a full tyre-service order rather than a separate purchase.</p>
+      <p>Browse the full <a href="/products/tyre-patch/">tyre patch range</a>, compare methods in <a href="/news/tyre-patch-vs-plug/">patch vs plug</a>, or <a href="/contact/">contact us</a> to build a mixed patch assortment for your market.</p>
+
+      <h2>Cost per repair and why the cheap method can cost more</h2>
+      <p>On paper a cold patch is the cheaper repair: a patch, a smear of cement and a few minutes of labour. But cost per repair is not the same as profit per repair. A cold patch used on an injury that needed hot curing will fail early - and a comeback repair costs the workshop the labour twice, the patch twice, and often the customer. The right comparison is <strong>total cost of a durable repair</strong>, not the price of the patch alone.</p>
+      <p>Hot curing looks more expensive because of the equipment and the time under the press, but it opens up repairs a cold-only shop has to refuse: sidewall injuries, bias-ply tyres, commercial and retread work. For a shop serving truck fleets, those jobs are often the highest-value repairs on the schedule, and refusing them sends the fleet to a competitor. The equipment pays for itself on the jobs it lets the shop keep, not on the passenger tyres it could have patched cold anyway.</p>
+
+      <h2>Safety, liability and the decision to repair</h2>
+      <p>The decision to repair is a safety decision before it is a commercial one. A tyre repaired outside the repairable area, or repaired with a method that does not match the injury, can fail at speed. That is why the method choice sits alongside a strict injury assessment: if the injury compromises the casing, the bead or the sidewall structure, the answer is a new tyre, not a better patch.</p>
+      <p>Documenting the repair - the injury, the method, the patch used - protects the workshop if the tyre later fails for an unrelated reason. A shop that can show it followed the repair standard and used the correct method is in a very different position from one that patched a sidewall with a cold patch because it was quick. Selling the customer the right repair is also selling them the reason to come back.</p>
+
+      <h2>Frequently asked questions</h2>
+      <p><strong>Is a cold patch as strong as a hot patch?</strong> For standard tread injuries, a correctly applied cold patch is permanent. Hot curing delivers a stronger bond and is the right choice for sidewall, bias-ply and heavy-duty work.</p>
+      <p><strong>Can I hot patch a passenger tyre?</strong> You can, but it is usually unnecessary for a normal tread puncture - a cold patch is faster and fully adequate. Save hot curing for the repairs that need it.</p>
+      <p><strong>Do I need a vulcanizer to run a repair bay?</strong> No. A cold-patch bay with a buffer, cement and roller handles the majority of passenger and light-truck work. A vulcanizer is what lets you take the heavier repairs.</p>
+      <p><strong>How long should cement dry before the patch goes on?</strong> Until it forms a tacky film. Applying a patch onto wet cement traps solvent and weakens the bond - this is one of the most common causes of a patch lifting.</p>
+      <p><strong>What patch shape should I use?</strong> Match the shape to the injury: round for small round punctures, oval or square for larger or elongated injuries, all-purpose for mixed workshop use.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Cold vs hot vulcanizing repair practice, repairable-area limits and preparation steps: industry-standard tyre repair guidance</li>
+          <li>Patch materials (TPU/TPE), shapes and HD/bias-ply ranges: Century Auto Parts published product data</li>
+          <li>Vulcanizing temperature range (~140-150 C): standard hot-cure repair practice</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'tyre-patch-vs-plug', title: 'Tyre Patch vs Plug vs Mushroom Patch Plug', date: 'July 18, 2026', desc: 'Which repair method should you use?', tag: 'Repairs' },
+      { slug: 'mushroom-plug-vs-seal-string', title: 'Mushroom Patch Plug vs Seal String', date: 'September 24, 2026', desc: 'One-step repair vs emergency string - when to use each.', tag: 'Comparison' },
+    ],
+  },
+  {
+    slug: 'how-wheel-balancing-works',
+    title: 'How Wheel Balancing Works: Machines, Weights & the Process',
+    date: 'October 10, 2026',
+    dateISO: '2026-10-10',
+    tags: ['Product Guide', 'Wheel Weights'],
+    img: '/images/articles/how-wheel-balancing-works.webp',
+    imgAlt: 'Clip-on and adhesive wheel balancing weights used in wheel balancing',
+    desc: 'How wheel balancing works: why wheels need weights, how the balancer finds the imbalance, and how clip-on and adhesive weights correct it.',
+    faq: [
+      { q: 'Why do wheels need balancing?', a: 'No wheel and tyre assembly is perfectly uniform - small variations in mass around the rim set up vibrations when it spins. Balancing corrects this by adding small weights at the right position to cancel the imbalance.' },
+      { q: 'How does a wheel balancer work?', a: 'The balancer spins the mounted wheel and its sensors measure the vibration (imbalance) at a known position; it then reports the weight needed and where to place it on the inner and outer planes.' },
+      { q: 'What is the difference between clip-on and adhesive weights?', a: 'Clip-on weights attach to the rim flange and suit steel wheels (and some alloy/truck rims). Adhesive (stick-on) weights bond to the inner barrel of alloy wheels for a clean, protected look.' },
+      { q: 'How much weight is typically needed?', a: 'It depends on the wheel and tyre, but passenger car balancing commonly uses 5g to 60g, often split between the inner and outer planes. Truck wheels run much larger, up to 500g.' },
+    ],
+    content: `
+      <p><strong>How wheel balancing works</strong> is the question behind the quiet part of every tyre service: the machine spins the wheel, finds the heavy spot, and a few small weights cancel it. Understood properly - the physics, the balancing planes, the two weight types and the materials - it becomes a repeat-purchase business for distributors and a confidence-building skill for workshops. This guide walks through the whole process and what to stock.</p>
+
+      <h2>Why wheels need balancing at all</h2>
+      <p>Every wheel and tyre is manufactured to a tolerance, not to a perfect uniform mass. Several unavoidable sources of imbalance exist even on a brand-new assembly:</p>
+      <ul>
+        <li><strong>The tyre splice and layout</strong> - the joint where the tyre body is joined is slightly denser than the rest of the casing.</li>
+        <li><strong>The valve position</strong> - a valve stem is a discrete mass fixed at one point on the rim.</li>
+        <li><strong>Casting tolerances in the rim</strong> - no two points on a cast alloy barrel are perfectly identical in thickness.</li>
+        <li><strong>Wheel weights left over</strong> - prior balance weights that were never removed before a re-balance.</li>
+      </ul>
+      <p>These small variations in mass are harmless at walking speed but, as the wheel spins faster, they become a centrifugal force that tugs the assembly left and right. That force is what you feel as a vibration through the steering wheel, the seat or the floor at certain road speeds. Balancing adds a controlled mass at the correct position to offset the heavy point, so the wheel re-spins as if it were perfectly uniform.</p>
+
+      <h2>The two kinds of imbalance: static and dynamic</h2>
+      <p>Understanding balancing comes down to recognising two distinct conditions:</p>
+      <ul>
+        <li><strong>Static imbalance</strong> - a single heavy spot around the wheel circumference. The wheel wants to stop with that heavy point at the bottom, like a wheel with a weight taped to one spot on a car's rim. It causes a vertical bounce.</li>
+        <li><strong>Dynamic imbalance</strong> - an uneven mass distribution across the wheel's width. Even if the wheel is statically balanced, the two sides (inner and outer planes) can pull in opposite directions, causing a side-to-side wobble at speed.</li>
+      </ul>
+      <p>A proper balancing machine corrects both: it measures the required correction on the <strong>inner plane</strong> and the <strong>outer plane</strong> of the wheel separately, because those are the two positions where weights can physically be placed. This is why a technician places weights in two locations, not just one.</p>
+
+      <h2>What the wheel balancer actually does</h2>
+      <p>A wheel balancer mounts the wheel and tyre assembly, spins it to speed, and measures the resulting force with precision sensors. From that measurement the machine reports two outputs the technician reads directly:</p>
+      <ol>
+        <li><strong>How much weight</strong> to apply - in grams or ounces.</li>
+        <li><strong>Where</strong> to apply it - the angular position, reported on both the inner and the outer plane.</li>
+      </ol>
+      <p>Modern machines show the technician exactly where to stick or clip each weight (often via a graphic or a laser pointer). The technician applies the weights, re-spins the wheel, and the residual vibration drops toward zero. A wheel is considered balanced when the residual imbalance is within the tolerance the machine (or the vehicle manufacturer) specifies.</p>
+
+      <h2>The two types of balance weight</h2>
+      <p>Every correction comes down to two attachment methods, each matched to a wheel construction:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th></th><th>Clip-on</th><th>Adhesive (stick-on)</th></tr></thead>
+          <tbody>
+            <tr><td>Mounting</td><td>Spring clip grips the rim flange</td><td>Adhesive tape bonds to the inner barrel</td></tr>
+            <tr><td>Best for</td><td>Steel wheels, some alloy and truck rims</td><td>Alloy and aluminum wheels</td></tr>
+            <tr><td>Position</td><td>On the rim edge, both planes possible</td><td>Hidden behind the barrel / spokes</td></tr>
+            <tr><td>Typical range</td><td>5g to 500g</td><td>5g to 60g strips (higher for truck adhesive)</td></tr>
+            <tr><td>Rim contact</td><td>Contact with the flange</td><td>No rim-outer contact - cleaner look</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Steel-wheel fleets overwhelmingly use <strong>clip-on</strong> weights clipped to the flange, on both balancing planes. Alloy-wheel vehicles - most modern passenger cars - use <strong>adhesive</strong> strips bonded to the inner barrel so the weights are hidden behind the spokes and never touch the outer rim finish. Some trucks running alloy wheels use the same adhesive logic at much higher masses. The full comparison is in our <a href="/news/wheel-weight-guide/">wheel weight guide</a>.</p>
+
+      <h2>Materials: Fe, Pb and Zn</h2>
+      <p>Weight material is a buying decision driven by regulation and price point as much as by performance:</p>
+      <ul>
+        <li><strong>Fe (steel)</strong> - the lead-free standard for both clip-on and adhesive weights. Slightly larger than lead for the same mass, but fully compliant and the default for export markets, available zinc plated, epoxy coated or black coated.</li>
+        <li><strong>Pb (lead)</strong> - the traditional dense material with excellent vibration damping, still widely used where regulation permits and for heavy truck balancing. Restricted or banned in several US states and the EU - see our <a href="/news/lead-wheel-weight-bans/">lead weight bans guide</a>.</li>
+        <li><strong>Zn (zinc)</strong> - a denser lead-free alternative with strong corrosion resistance for harsh climates.</li>
+      </ul>
+      <p>For a given installed size the balancing mass is identical regardless of material - the choice is about price, compliance and corrosion. The material breakdown is covered in our <a href="/news/fe-vs-pb-wheel-weights/">Fe vs Pb guide</a>.</p>
+
+      <h2>Sizes, segments and gram vs OZ</h2>
+      <p>Adhesive weights come in <strong>segmented strips</strong> (5g, 10g, 15g and so on) so the technician can tear off the exact mass the machine asks for. Strip dimensions differ by range - for example a common Fe adhesive strip measures 140 x 19 x 3.8mm - and the segment count varies by model. Clip-on weights are individual pieces in a size series from 5g up, and large truck clip-on weights run to 500g per piece.</p>
+      <p>Because balancing machines in the US read <strong>ounces</strong> and most of the world reads <strong>grams</strong>, the same weights are produced in both series. 1 ounce equals 28.3495 grams. Use our <a href="/news/wheel-weight-conversion-chart/">wheel weight conversion chart</a> to order in either convention, and see the <a href="/news/adhesive-wheel-weight-sizes/">adhesive weight sizes guide</a> for strip layouts.</p>
+
+      <h2>How much weight is typical?</h2>
+      <p>There is no single answer - it depends on the wheel, tyre and position - but a useful planning range for a workshop is that a passenger car balance commonly uses <strong>10g to 60g</strong> per wheel, often split between the inner and outer planes. That is why mixed 5g and 10g strips are the most practical adhesive stock item. Truck and commercial balancing needs are far larger, running to 500g per piece on steel rims - see our <a href="/news/truck-wheel-weights/">truck wheel weights guide</a>.</p>
+
+      <h2>Installation: the part that decides whether it holds</h2>
+      <p>Weights only balance if they stay put at speed, and most failures are installation errors, not product defects:</p>
+      <ul>
+        <li><strong>Clip-on</strong> - the clip profile must match the rim flange. A clip that is too loose will not grip; one that is too tight can damage the rim edge. Match the profile to the steel wheel, alloy wheel or truck rim you are serving.</li>
+        <li><strong>Adhesive</strong> - the inner barrel must be cleaned with isopropyl alcohol, allowed to dry, and the weight pressed firmly for several seconds. Surface temperature above about 15 C is required for the adhesive to wet out. Follow the full <a href="/news/stick-on-wheel-weights-fall-off/">installation checklist</a> to avoid weights that fall off later.</li>
+        <li><strong>Tape grade</strong> - premium 3M or Norton tape handles heat and cold better than generic tape. For hot climates or commercial wear, specify the better tape. The options are compared in our <a href="/news/wheel-weight-tape-comparison/">wheel weight tape guide</a>.</li>
+      </ul>
+      <p>A weight that flies off at speed is a liability for the driver and a warranty problem for the balancer - so surface prep and clip fit matter as much as the mass itself.</p>
+
+      <h2>Stocking for workshops and fleets</h2>
+      <p>For distributors and fleet suppliers, the practical balance range combines both families:</p>
+      <ul>
+        <li><strong>Clip-on</strong> in the common sizes, in Fe (lead-free) and, where allowed, Pb for trucks.</li>
+        <li><strong>Adhesive strips</strong> in mixed 5g/10g segments with premium tape, in the strip size your customers' machines most often call for.</li>
+        <li><strong>Both gram and OZ series</strong> if you export - US workshops balance in ounces.</li>
+        <li><strong>Finishes</strong> - zinc plated, epoxy or black coated to match the rim and corrosion requirements of the market.</li>
+      </ul>
+      <p>Century Auto Parts supplies clip-on and adhesive weights from 5g to 500g, in gram and OZ series, across Fe and Pb ranges with the full finish and tape options. Browse the <a href="/products/wheel-balancing-weights/">wheel balancing weights range</a>, check the material guide, or <a href="/contact/">ask for a wholesale quotation</a>.</p>
+
+      <h2>Reading the balancer result and tolerance</h2>
+      <p>After the first spin the machine shows the correction on each plane, usually in grams. The technician splits that correction into the segments available - a 15g call becomes a 10g plus a 5g segment torn from a strip. After fitting, the machine re-spins and reports the <strong>residual</strong> imbalance. A wheel is accepted when that residual falls inside the tolerance the machine or vehicle maker sets, often a small single-digit gram figure per plane. Chasing a zero reading is not necessary and wastes weights; the target is "inside tolerance", not "perfect". On the outer plane the technician also has to respect the rim design - on an alloy wheel there may be no outer flange to clip to, which is exactly why adhesive weights exist.</p>
+
+      <h2>Adhesive placement: inner barrel and behind the spokes</h2>
+      <p>Adhesive weights are placed on the <strong>inner barrel</strong> of the wheel, out of sight behind the spokes, so the outer face stays clean. Some machines support a "hidden weight" mode that calculates the split between two positions on the inner barrel so the correction is invisible from outside. That is why adhesive strips are narrow and segmented: they must follow the barrel curve and be torn to the exact gram the machine asks for, while still bonding flat enough to hold at speed. Getting that placement right is a training issue, and it is the single biggest reason a shop's adhesive re-balance either lasts or fails.</p>
+
+      <h2>Balancing is not the same as wheel alignment</h2>
+      <p>Two different jobs get confused constantly at the counter. <strong>Wheel balancing</strong> corrects the mass distribution of the wheel-and-tyre assembly so it spins without vibration - it is done with the wheel off the car on a balancer. <strong>Wheel alignment</strong> adjusts the angles of the suspension (camber, caster, toe) so the wheels point correctly relative to the road - it is done with the car on a lift and does not use balance weights at all. A vibration at speed points to balancing; a pull to one side or uneven tyre wear points to alignment. Selling the right one matters, because a customer who buys weights to fix a pull will come back unhappy.</p>
+
+      <h2>When a wheel needs re-balancing</h2>
+      <p>Balancing is not a one-time job. A wheel assembly should be balanced or checked whenever:</p>
+      <ul>
+        <li>A new tyre is fitted, or a tyre is repaired and remounted.</li>
+        <li>A weight is lost (knocked off a kerb, or an adhesive strip lifts).</li>
+        <li>The driver reports vibration at a specific speed band - commonly 80-120 km/h.</li>
+        <li>Wheels are rotated or swapped between positions.</li>
+        <li>A wheel or rim has taken an impact.</li>
+      </ul>
+      <p>Because a lost weight is one of the most common causes of a returning vibration, stocking enough mixed strips and clips to re-balance quickly is what keeps a workshop's turnaround tight.</p>
+
+      <h2>Road-force balancing and the limits of spin balancing</h2>
+      <p>Standard spin balancing corrects mass imbalance, but it cannot see a tyre that is <strong>round but stiff in one spot</strong> - a condition that produces a vibration even when the mass balance is perfect. Road-force balancing presses a roller against the spinning tyre to measure force variation and can match a stiff spot on the tyre to a low spot on the rim. That is an advanced service, not a replacement for weights, but it explains why a few vehicles still vibrate after a perfect balance: the issue is tyre uniformity, not missing weight.</p>
+
+      <h2>Common balancing mistakes at the workshop</h2>
+      <ul>
+        <li><strong>Reusing old weights</strong> - leftover weights from a previous balance skew the starting point. Always strip the old weights before re-balancing.</li>
+        <li><strong>Wrong clip profile</strong> - a clip that does not match the flange either will not hold or will damage the rim edge.</li>
+        <li><strong>Dirty barrel before adhesive</strong> - dust, brake residue or moisture stops the tape from bonding. Clean with alcohol and let it dry.</li>
+        <li><strong>Cold adhesive</strong> - below roughly 15 C the tape will not wet out properly, and the weight lifts in service. Warm the barrel or the workshop first.</li>
+        <li><strong>Balancing a damaged rim</strong> - a bent rim cannot be balanced out; the wheel should be repaired or replaced first.</li>
+      </ul>
+
+      <h2>Why this matters for distributors</h2>
+      <p>For a distributor, wheel weights are a high-turnover consumable: every tyre change and every re-balance uses a few grams, so the volume is steady and predictable. The commercial skill is in the assortment - carrying the right mix of clip-on and adhesive, Fe and Pb, gram and OZ, plus the finishes and tape grades that match the markets you serve. Get the assortment right and the reorder is automatic; get it wrong and the workshop goes elsewhere for the one size it needs today.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Wheel balancing physics and machine practice: standard industry balancing guidance (static/dynamic imbalance, balancing planes)</li>
+          <li>Wheel weight types, materials, sizes and finishes: Century Auto Parts published product data</li>
+          <li>Unit conversion: 1 oz = 28.3495 g (avoirdupois ounce, international standard)</li>
+          <li>State lead wheel weight restrictions: see our lead weight bans guide</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'wheel-weight-guide', title: 'How to Choose Wheel Balancing Weights', date: 'August 8, 2026', desc: 'Fe vs Pb materials and clip-on vs adhesive types.', tag: 'Wheel Weights' },
+      { slug: 'truck-wheel-weights', title: 'Truck Wheel Weights: Clip-On & Adhesive Weights from 5g to 500g', date: 'September 29, 2026', desc: 'Clip-on and adhesive weights for heavy-duty wheels.', tag: 'Wheel Weights' },
+    ],
+  },
+  {
     slug: 'lead-wheel-weight-bans',
     title: 'Lead Wheel Weight Bans: US State Laws & Lead-Free Alternatives',
     date: 'September 29, 2026',
