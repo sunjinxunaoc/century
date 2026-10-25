@@ -53,6 +53,7 @@ async function onSubmit() {
     if (res.ok) {
       submitted.value = true
       if (typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', { 'send_to': 'AW-18459000110/FHNYCMGQ3KgdEK769-FE' })
         window.gtag('event', 'generate_lead', {
           form: 'contact_inquiry',
           product: form.product,

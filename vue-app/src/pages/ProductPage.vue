@@ -160,10 +160,30 @@ useHead(() => {
                 price: String(product.value.price),
                 priceCurrency: product.value.currency || 'USD',
               }
-            : { businessFunction: 'http://purl.org/goodrelations/v1#Sell' }),
+            : {
+                businessFunction: 'http://purl.org/goodrelations/v1#Sell',
+                priceSpecification: {
+                  '@type': 'PriceSpecification',
+                  priceCurrency: product.value.currency || 'USD',
+                  validFrom: new Date().toISOString().slice(0, 10),
+                },
+              }),
+          validFrom: new Date().toISOString().slice(0, 10),
           availability: 'https://schema.org/InStock',
           itemCondition: 'https://schema.org/NewCondition',
           seller: { '@type': 'Organization', name: 'Hebei Century Auto Parts Co., Ltd.' },
+          shippingDetails: {
+            '@type': 'OfferShippingDetails',
+            shippingDestination: { '@type': 'DefinedRegion' },
+          },
+          hasMerchantReturnPolicy: {
+            '@type': 'MerchantReturnPolicy',
+            applicableCountry: 'CN',
+            returnPolicyCountry: 'CN',
+            merchantReturnDays: 30,
+            returnMethod: 'https://schema.org/ReturnByMail',
+            returnFees: 'https://schema.org/FreeReturn',
+          },
         },
       }),
     })
