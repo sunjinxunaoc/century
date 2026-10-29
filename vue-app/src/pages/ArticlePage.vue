@@ -2,12 +2,15 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
-import { articles, findArticle, hubTags, tagSlug } from '../data/articles'
+import { findArticle, getHubTags, getTagName, tagSlug } from '../data/localize'
 import BreadcrumbNav from '../components/BreadcrumbNav.vue'
 import CtaSection from '../components/CtaSection.vue'
+import { useI18n, absoluteUrl } from '../i18n'
 
 const route = useRoute()
-const article = computed(() => findArticle(route.params.slug))
+const { t, locale, p } = useI18n()
+
+const article = computed(() => findArticle(route.params.slug, locale.value))
 
 // Product page each article's cover image links to
 const productLinks = {
@@ -33,19 +36,19 @@ const productLinks = {
   'fe-vs-pb-wheel-weights': '/products/wheel-balancing-weights/',
   'mushroom-plug-vs-seal-string': '/products/mushroom-patch-plug/',
 }
-const coverLink = computed(() => productLinks[route.params.slug] || null)
+const coverLink = computed(() => (productLinks[route.params.slug] ? p(productLinks[route.params.slug]) : null))
 
-const hubTagSlugs = new Set(hubTags.map(t => t.slug))
-const isHubTag = (name) => hubTagSlugs.has(tagSlug(name))
+const hubTagSlugs = computed(() => new Set(getHubTags(locale.value).map((tag) => tag.slug)))
+const isHubTag = (name) => hubTagSlugs.value.has(tagSlug(name))
 
 const crumbs = computed(() => [
-  { label: 'Home', path: '/' },
-  { label: 'News', path: '/news' },
+  { label: t('common.home'), path: p('/') },
+  { label: t('nav.news'), path: p('/news') },
   { label: article.value?.title || '' },
 ])
 
 useHead(() => {
-  const url = `https://centurymanufacture.com/news/${route.params.slug}/`
+  const url = absoluteUrl(`/news/${route.params.slug}/`)
   const scripts = []
   if (article.value) {
     scripts.push({
@@ -57,6 +60,7 @@ useHead(() => {
         description: article.value.desc,
         image: article.value.img ? `https://centurymanufacture.com${article.value.img}` : undefined,
         datePublished: article.value.dateISO,
+        inLanguage: locale.value,
         author: { '@id': 'https://centurymanufacture.com/#organization' },
         publisher: { '@id': 'https://centurymanufacture.com/#organization' },
         mainEntityOfPage: url,
@@ -69,7 +73,7 @@ useHead(() => {
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        mainEntity: article.value.faq.map(f => ({
+        mainEntity: article.value.faq.map((f) => ({
           '@type': 'Question',
           name: f.q,
           acceptedAnswer: { '@type': 'Answer', text: f.a },
@@ -91,10 +95,10 @@ useHead(() => {
     }),
   })
   return {
-    title: `${article.value?.title || 'News'} | Century Auto Parts`,
+    title: `${article.value?.title || t('nav.news')} | Century Auto Parts`,
     meta: [
       { name: 'description', content: article.value?.desc || '' },
-      { property: 'og:title', content: `${article.value?.title || 'News'} | Century Auto Parts` },
+      { property: 'og:title', content: `${article.value?.title || t('nav.news')} | Century Auto Parts` },
       { property: 'og:description', content: article.value?.desc || '' },
       { property: 'og:type', content: 'article' },
       { property: 'og:url', content: url },
@@ -115,8 +119,8 @@ useHead(() => {
   <div v-if="article">
     <section class="relative bg-gradient-to-br from-[#1A1A2E] via-[#2B2B45] to-[#4A2B1A] text-white">
       <div class="container-app pt-36 pb-20 md:pt-40 md:pb-24 text-center">
-        <div class="text-3xl md:text-4xl font-bold mb-4">News</div>
-        <p class="text-gray-300">Industry insights & product guides from Century Auto Parts</p>
+        <div class="text-3xl md:text-4xl font-bold mb-4">{{ t('article.heroTitle') }}</div>
+        <p class="text-gray-300">{{ t('article.heroSubtitle') }}</p>
       </div>
     </section>
 
@@ -126,19 +130,19 @@ useHead(() => {
 
         <header class="mb-8">
           <div class="flex flex-wrap gap-1.5 mb-3">
-            <template v-for="t in article.tags" :key="t">
-              <RouterLink v-if="isHubTag(t)" :to="`/news/tag/${tagSlug(t)}/`" class="tag hover:bg-orange-100 transition">{{ t }}</RouterLink>
-              <span v-else class="tag">{{ t }}</span>
+            <template v-for="tag in article.tags" :key="tag">
+              <RouterLink v-if="isHubTag(tag)" :to="p(`/news/tag/${tagSlug(tag)}/`)" class="tag hover:bg-orange-100 transition">{{ getTagName(tag, locale) }}</RouterLink>
+              <span v-else class="tag">{{ getTagName(tag, locale) }}</span>
             </template>
           </div>
           <h1 class="text-3xl font-bold text-[#1A1A2E] leading-tight mb-4">{{ article.title }}</h1>
-          <div class="text-sm text-gray-400">{{ article.date }} &middot; By Century Auto Parts</div>
+          <div class="text-sm text-gray-400">{{ article.date }} &middot; {{ t('article.by') }}</div>
         </header>
 
         <div class="rounded-lg overflow-hidden shadow-card mb-10">
-          <RouterLink v-if="coverLink" :to="coverLink" :aria-label="`Shop ${article.imgAlt}`" class="block group relative">
+          <RouterLink v-if="coverLink" :to="coverLink" :aria-label="t('home.hero.shopBanner', { name: article.imgAlt })" class="block group relative">
             <img :src="article.img" :alt="article.imgAlt" width="1600" height="686" fetchpriority="high" decoding="async" class="w-full aspect-[21/9] object-cover transition-transform duration-500 group-hover:scale-[1.02]">
-            <span class="absolute bottom-4 right-4 inline-flex items-center gap-1.5 bg-[#FF6B00] text-white text-sm font-medium px-4 py-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">Shop Products &rarr;</span>
+            <span class="absolute bottom-4 right-4 inline-flex items-center gap-1.5 bg-[#FF6B00] text-white text-sm font-medium px-4 py-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">{{ t('common.shopProducts') }} &rarr;</span>
           </RouterLink>
           <img v-else :src="article.img" :alt="article.imgAlt" width="1600" height="686" fetchpriority="high" decoding="async" class="w-full aspect-[21/9] object-cover">
         </div>
@@ -146,7 +150,7 @@ useHead(() => {
         <div class="article-content" v-html="article.content"></div>
 
         <div v-if="article.faq && article.faq.length" class="mt-10">
-          <h2 class="text-2xl font-bold text-[#1A1A2E] mb-5">Frequently Asked Questions</h2>
+          <h2 class="text-2xl font-bold text-[#1A1A2E] mb-5">{{ t('article.faq') }}</h2>
           <div class="space-y-4">
             <div v-for="f in article.faq" :key="f.q" class="card p-6">
               <h3 class="font-semibold text-[#1A1A2E] mb-2">{{ f.q }}</h3>
@@ -156,22 +160,22 @@ useHead(() => {
         </div>
 
         <footer class="mt-12 pt-6 border-t border-gray-200">
-          <h3 class="text-xl font-bold text-[#1A1A2E] mb-5">Related Articles</h3>
+          <h3 class="text-xl font-bold text-[#1A1A2E] mb-5">{{ t('article.related') }}</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div v-for="r in article.related" :key="r.slug" class="card reveal p-5">
-              <span class="tag mb-2 inline-block">{{ r.tag }}</span>
+              <span class="tag mb-2 inline-block">{{ getTagName(r.tag, locale) }}</span>
               <h4 class="font-semibold text-[#1A1A2E] mb-1 leading-snug">{{ r.title }}</h4>
               <div class="text-xs text-gray-400 mb-2">{{ r.date }}</div>
               <p class="text-sm text-gray-500 mb-3">{{ r.desc }}</p>
-              <RouterLink :to="`/news/${r.slug}/`" class="text-[#FF6B00] text-sm font-medium hover:underline">Read More &rarr;</RouterLink>
+              <RouterLink :to="p(`/news/${r.slug}/`)" class="text-[#FF6B00] text-sm font-medium hover:underline">{{ t('common.readMore') }} &rarr;</RouterLink>
             </div>
           </div>
           <div class="mt-8">
-            <RouterLink to="/news/" class="btn border border-[#1A1A2E] text-[#1A1A2E] hover:bg-[#1A1A2E] hover:text-white">&#8592; Back to News</RouterLink>
+            <RouterLink :to="p('/news/')" class="btn border border-[#1A1A2E] text-[#1A1A2E] hover:bg-[#1A1A2E] hover:text-white">&#8592; {{ t('article.backToNews') }}</RouterLink>
           </div>
         </footer>
       </div>
     </article>
-    <CtaSection heading="Questions About Our Products?" />
+    <CtaSection :heading="t('article.ctaHeading')" />
   </div>
 </template>

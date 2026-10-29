@@ -2,7 +2,7 @@
 import { computed, ref, watch, onMounted, onBeforeUnmount } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
-import { findCategory, findSubcategory, findProduct, relatedProducts, PAGE_SIZE } from '../data/products'
+import { findCategory, findSubcategory, findProduct, relatedProducts, PAGE_SIZE } from '../data/localize'
 import PageHero from '../components/PageHero.vue'
 import ProductSidebar from '../components/ProductSidebar.vue'
 import ProductSearch from '../components/ProductSearch.vue'
@@ -12,22 +12,25 @@ import CategoryCard from '../components/CategoryCard.vue'
 import SpecTable from '../components/SpecTable.vue'
 import Pagination from '../components/Pagination.vue'
 import CtaSection from '../components/CtaSection.vue'
+import { useI18n, absoluteUrl } from '../i18n'
 
 const route = useRoute()
+const { t, locale, p } = useI18n()
+
 const categorySlug = computed(() => route.params.category)
 const slug = computed(() => route.params.slug)
 const currentPage = computed(() => Math.max(1, parseInt(route.params.page, 10) || 1))
 
-const category = computed(() => findCategory(categorySlug.value))
-const subcategory = computed(() => (slug.value ? findSubcategory(categorySlug.value, slug.value) : null))
-const found = computed(() => (slug.value ? findProduct(categorySlug.value, slug.value) : null))
+const category = computed(() => findCategory(categorySlug.value, locale.value))
+const subcategory = computed(() => (slug.value ? findSubcategory(categorySlug.value, slug.value, locale.value) : null))
+const found = computed(() => (slug.value ? findProduct(categorySlug.value, slug.value, locale.value) : null))
 const product = computed(() => found.value?.product || null)
-const related = computed(() => (product.value ? relatedProducts(categorySlug.value, product.value.slug, 3) : []))
+const related = computed(() => (product.value ? relatedProducts(categorySlug.value, product.value.slug, 3, locale.value) : []))
 
 const featuredProducts = computed(() => {
   const list = []
   for (const sub of (category.value?.subcategories || [])) {
-    for (const p of (sub.products || [])) list.push(p)
+    for (const pdt of (sub.products || [])) list.push(pdt)
   }
   return list.slice(0, 6)
 })
@@ -49,7 +52,7 @@ const pageType = computed(() => {
   return 'category'
 })
 
-const baseSubPath = computed(() => (category.value && subcategory.value ? `/products/${category.value.slug}/${subcategory.value.slug}` : ''))
+const baseSubPath = computed(() => (category.value && subcategory.value ? p(`/products/${category.value.slug}/${subcategory.value.slug}`) : ''))
 
 const canonicalPath = computed(() => {
   if (!category.value) return '/products'
@@ -60,18 +63,18 @@ const canonicalPath = computed(() => {
 
 const pageTitle = computed(() => {
   if (product.value) return product.value.name
-  if (subcategory.value) return totalPages.value > 1 && currentPage.value > 1 ? `${subcategory.value.name} - Page ${currentPage.value}` : subcategory.value.name
-  return category.value?.name || 'Products'
+  if (subcategory.value) return totalPages.value > 1 && currentPage.value > 1 ? `${subcategory.value.name} - ${t('product.page', { n: currentPage.value })}` : subcategory.value.name
+  return category.value?.name || t('nav.products')
 })
 
 const crumbs = computed(() => {
   const items = [
-    { label: 'Home', path: '/' },
-    { label: 'Products', path: '/products/' },
+    { label: t('common.home'), path: p('/') },
+    { label: t('nav.products'), path: p('/products/') },
   ]
-  if (category.value) items.push({ label: category.value.name, path: `/products/${category.value.slug}/` })
+  if (category.value) items.push({ label: category.value.name, path: p(`/products/${category.value.slug}/`) })
   if (subcategory.value) items.push({ label: subcategory.value.name, path: `${baseSubPath.value}/` })
-  if (totalPages.value > 1 && currentPage.value > 1 && pageType.value === 'subcategory') items.push({ label: `Page ${currentPage.value}` })
+  if (totalPages.value > 1 && currentPage.value > 1 && pageType.value === 'subcategory') items.push({ label: t('product.page', { n: currentPage.value }) })
   if (product.value) items.push({ label: product.value.name })
   return items
 })
@@ -115,26 +118,26 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
 
 useHead(() => {
   const isSubPaged = pageType.value === 'subcategory' && totalPages.value > 1
-  const baseUrl = `https://centurymanufacture.com${canonicalPath.value}`
-  const url = isSubPaged && currentPage.value > 1
-    ? `${baseUrl}/page/${currentPage.value}/`
-    : `${baseUrl}/`
+  const path = isSubPaged && currentPage.value > 1
+    ? `${canonicalPath.value}/page/${currentPage.value}`
+    : canonicalPath.value
+  const url = absoluteUrl(`${path}/`)
   const desc = product.value?.desc || subcategory.value?.desc || category.value?.intro || pageTitle.value
   const tagline = product.value?.tagline || subcategory.value?.tagline || category.value?.tagline || ''
   const catName = category.value?.name || ''
   const name = product.value?.name || subcategory.value?.name || ''
 
   let srcDesc = desc
-  const parts = [name, catName, tagline].filter(p => p && p.length > 3)
-  for (const p of parts) {
+  const parts = [name, catName, tagline].filter((part) => part && part.length > 3)
+  for (const part of parts) {
     if (srcDesc.length >= 120) break
-    srcDesc = `${srcDesc.trim()}${p ? ' ' + p : ''}`
+    srcDesc = `${srcDesc.trim()}${part ? ' ' + part : ''}`
   }
 
   let metaDesc = srcDesc.length > 152
     ? `${srcDesc.slice(0, 152).replace(/\s+\S*$/, '').replace(/[\.\s]+$/, '')}...`
     : srcDesc.trim()
-  if (isSubPaged && currentPage.value > 1) metaDesc = `${metaDesc} Page ${currentPage.value}.`
+  if (isSubPaged && currentPage.value > 1) metaDesc = `${metaDesc} ${t('product.page', { n: currentPage.value })}.`
   const scripts = []
   if (product.value) {
     const modelCode = (product.value.name.match(/\bCTR-[A-Z0-9-]+/i) || [])[0]
@@ -208,7 +211,7 @@ useHead(() => {
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        mainEntity: faqSource.faqs.map(f => ({
+        mainEntity: faqSource.faqs.map((f) => ({
           '@type': 'Question',
           name: f.q,
           acceptedAnswer: { '@type': 'Answer', text: f.a },
@@ -227,7 +230,7 @@ useHead(() => {
           '@type': 'ListItem',
           position: i + 1,
           name: sub.name,
-          url: `https://centurymanufacture.com/products/${category.value.slug}/${sub.slug}/`,
+          url: absoluteUrl(`/products/${category.value.slug}/${sub.slug}/`),
         })),
       }),
     })
@@ -240,11 +243,11 @@ useHead(() => {
         '@type': 'ItemList',
         name: `${subcategory.value.name} - ${category.value?.name || ''}`.trim(),
         numberOfItems: subcategory.value.products.length,
-        itemListElement: pagedProducts.value.map((p, i) => ({
+        itemListElement: pagedProducts.value.map((pdt, i) => ({
           '@type': 'ListItem',
           position: (currentPage.value - 1) * PAGE_SIZE + i + 1,
-          name: p.name,
-          url: `https://centurymanufacture.com/products/${category.value.slug}/${p.slug}/`,
+          name: pdt.name,
+          url: absoluteUrl(`/products/${category.value.slug}/${pdt.slug}/`),
         })),
       }),
     })
@@ -253,15 +256,16 @@ useHead(() => {
     { rel: 'canonical', href: url },
   ]
   if (isSubPaged) {
-    if (currentPage.value > 1) link.push({ rel: 'prev', href: currentPage.value === 2 ? `${baseUrl}/` : `${baseUrl}/page/${currentPage.value - 1}/` })
-    if (currentPage.value < totalPages.value) link.push({ rel: 'next', href: `${baseUrl}/page/${currentPage.value + 1}/` })
+    const baseUrl = absoluteUrl(`${canonicalPath.value}/`)
+    if (currentPage.value > 1) link.push({ rel: 'prev', href: currentPage.value === 2 ? baseUrl : absoluteUrl(`${canonicalPath.value}/page/${currentPage.value - 1}/`) })
+    if (currentPage.value < totalPages.value) link.push({ rel: 'next', href: absoluteUrl(`${canonicalPath.value}/page/${currentPage.value + 1}/`) })
   }
   const headTitleBase = pageType.value === 'product'
     ? (product.value?.seoTitle || pageTitle.value)
     : pageType.value === 'subcategory'
       ? (subcategory.value?.seoTitle || pageTitle.value)
       : (category.value?.seoTitle || pageTitle.value)
-  const headTitle = isSubPaged && currentPage.value > 1 ? `${headTitleBase} - Page ${currentPage.value}` : headTitleBase
+  const headTitle = isSubPaged && currentPage.value > 1 ? `${headTitleBase} - ${t('product.page', { n: currentPage.value })}` : headTitleBase
   return {
     title: `${headTitle} | Century Auto Parts`,
     meta: [
@@ -296,17 +300,17 @@ useHead(() => {
               <div class="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-10 lg:gap-14 items-start">
                 <div class="rounded-lg overflow-hidden bg-gray-100 shadow-card">
                   <div class="relative">
-                    <button type="button" class="group relative block w-full cursor-zoom-in" @click="openZoom" aria-label="Enlarge product image">
+                    <button type="button" class="group relative block w-full cursor-zoom-in" @click="openZoom" :aria-label="t('product.enlargeLabel')">
                       <img :src="currentImage" :alt="product.name" width="1200" height="1200" fetchpriority="high" decoding="async" class="w-full h-auto object-contain block transition-transform duration-300 group-hover:scale-105">
                       <span class="absolute inset-0 flex items-end justify-end p-3 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <span class="inline-flex items-center gap-1 bg-black/60 text-white text-xs px-2 py-1 rounded">&#128269; Click to enlarge</span>
+                        <span class="inline-flex items-center gap-1 bg-black/60 text-white text-xs px-2 py-1 rounded">&#128269; {{ t('product.enlarge') }}</span>
                       </span>
                     </button>
                     <template v-if="gallery.length > 1">
-                      <button type="button" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-black/40 text-white text-xl hover:bg-black/60" @click="prevImage" aria-label="Previous image">&#8249;</button>
-                      <button type="button" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-black/40 text-white text-xl hover:bg-black/60" @click="nextImage" aria-label="Next image">&#8250;</button>
+                      <button type="button" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-black/40 text-white text-xl hover:bg-black/60" @click="prevImage" :aria-label="t('product.prevImage')">&#8249;</button>
+                      <button type="button" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-black/40 text-white text-xl hover:bg-black/60" @click="nextImage" :aria-label="t('product.nextImage')">&#8250;</button>
                       <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-                        <button v-for="(img, i) in gallery" :key="img" type="button" class="h-2 rounded-full transition-all" :class="i === currentIndex ? 'w-5 bg-white' : 'w-2 bg-white/50'" @click="goToImage(i)" :aria-label="`Image ${i + 1}`"></button>
+                        <button v-for="(img, i) in gallery" :key="img" type="button" class="h-2 rounded-full transition-all" :class="i === currentIndex ? 'w-5 bg-white' : 'w-2 bg-white/50'" @click="goToImage(i)" :aria-label="t('product.imageN', { n: i + 1 })"></button>
                       </div>
                     </template>
                   </div>
@@ -320,7 +324,7 @@ useHead(() => {
 
                   <div class="mt-8 pt-6 border-t border-gray-200">
                     <div class="flex flex-col sm:flex-row gap-3">
-                      <RouterLink to="/contact/" class="btn btn-primary btn-large flex-1 justify-center">Request Quote</RouterLink>
+                      <RouterLink :to="p('/contact/')" class="btn btn-primary btn-large flex-1 justify-center">{{ t('common.requestQuote') }}</RouterLink>
                       <a href="https://api.whatsapp.com/send?phone=8615633632668&text=Hello, I'm interested in {{ product.name }}" target="_blank" rel="noopener" class="btn btn-large flex-1 justify-center border-2 border-[#25D366] text-[#128C7E] hover:bg-[#25D366] hover:text-white">
                         <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         WhatsApp
@@ -332,19 +336,19 @@ useHead(() => {
 
               <div class="mt-14">
                 <div class="section-header text-left">
-                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">Specifications</h2>
-                  <p class="text-gray-500">Detailed parameters for {{ product.name }}</p>
+                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">{{ t('product.specifications') }}</h2>
+                  <p class="text-gray-500">{{ t('product.specsFor', { name: product.name }) }}</p>
                 </div>
                 <SpecTable :headers="product.spec.headers" :rows="product.spec.rows" />
               </div>
 
               <div class="mt-14" v-if="related.length">
                 <div class="section-header text-left">
-                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">Related Products</h2>
-                  <p class="text-gray-500">Explore more related products</p>
+                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">{{ t('product.related') }}</h2>
+                  <p class="text-gray-500">{{ t('product.relatedSub') }}</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <ProductCard v-for="r in related" :key="r.slug" :name="r.name" :desc="r.tagline" :image="r.image" :href="`/products/${categorySlug}/${r.slug}/`" />
+                  <ProductCard v-for="r in related" :key="r.slug" :name="r.name" :desc="r.tagline" :image="r.image" :href="p(`/products/${categorySlug}/${r.slug}/`)" />
                 </div>
               </div>
             </template>
@@ -352,7 +356,7 @@ useHead(() => {
             <!-- SUB CATEGORY -->
             <template v-else-if="pageType === 'subcategory'">
               <div class="section-header text-left">
-                <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">Available Models</h2>
+                <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">{{ t('product.availableModels') }}</h2>
                 <p class="text-gray-500">{{ subcategory.desc }}</p>
               </div>
 
@@ -365,18 +369,18 @@ useHead(() => {
 
               <template v-if="subcategory.products && subcategory.products.length">
                 <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <ProductCard v-for="p in pagedProducts" :key="p.slug" :name="p.name" :desc="p.tagline" :image="p.image" :href="`/products/${categorySlug}/${p.slug}/`" />
+                  <ProductCard v-for="pdt in pagedProducts" :key="pdt.slug" :name="pdt.name" :desc="pdt.tagline" :image="pdt.image" :href="p(`/products/${categorySlug}/${pdt.slug}/`)" />
                 </div>
                 <Pagination :current="currentPage" :total="totalPages" :base-path="baseSubPath" />
               </template>
               <div v-else-if="subcategory.models" class="mt-6">
-                <SpecTable :headers="['Model', 'Type', 'Material', 'Remarks']" :rows="subcategory.models.map(m => [m, 'Tyre valve', 'Metal', 'TBD'])" />
+                <SpecTable :headers="[t('product.model'), t('product.type'), t('product.material'), t('product.remarks')]" :rows="subcategory.models.map((m) => [m, t('product.valveType'), t('product.metal'), 'TBD'])" />
               </div>
 
               <div v-if="subcategory.faqs && subcategory.faqs.length" class="mt-14">
                 <div class="section-header text-left">
-                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">Frequently Asked Questions</h2>
-                  <p class="text-gray-500">Common questions about {{ subcategory.name.toLowerCase() }}</p>
+                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">{{ t('product.faq') }}</h2>
+                  <p class="text-gray-500">{{ t('product.faqSub', { name: subcategory.name.toLowerCase() }) }}</p>
                 </div>
                 <div class="space-y-4">
                   <div v-for="f in subcategory.faqs" :key="f.q" class="card p-6">
@@ -402,7 +406,7 @@ useHead(() => {
               </div>
 
               <div v-if="category.subcategories.length" class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <CategoryCard v-for="sub in category.subcategories" :key="sub.slug" :title="sub.name" :desc="sub.desc" :image="sub.image" :href="`/products/${categorySlug}/${sub.slug}/`" />
+                <CategoryCard v-for="sub in category.subcategories" :key="sub.slug" :title="sub.name" :desc="sub.desc" :image="sub.image" :href="p(`/products/${categorySlug}/${sub.slug}/`)" />
               </div>
               <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div v-for="c in category.cards" :key="c.title" class="card reveal p-6 text-center">
@@ -425,23 +429,23 @@ useHead(() => {
                     </tbody>
                   </table>
                 </div>
-                <p class="text-sm text-gray-500 mt-4">Ready to price an order? <RouterLink to="/contact/" class="text-[#FF6B00] font-medium hover:underline">Send us your size list for a 24-hour quotation</RouterLink>.</p>
+                <p class="text-sm text-gray-500 mt-4">{{ t('product.wholesaleReady') }} <RouterLink :to="p('/contact/')" class="text-[#FF6B00] font-medium hover:underline">{{ t('product.wholesaleLink') }}</RouterLink>.</p>
               </div>
 
               <div v-if="featuredProducts.length" class="mt-14">
                 <div class="section-header text-left">
-                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">Featured Products</h2>
-                  <p class="text-gray-500">Popular {{ category.name.toLowerCase() }} from our factory</p>
+                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">{{ t('product.featured') }}</h2>
+                  <p class="text-gray-500">{{ t('product.featuredSub', { name: category.name.toLowerCase() }) }}</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <ProductCard v-for="p in featuredProducts" :key="p.slug" :name="p.name" :desc="p.tagline" :image="p.image" :href="`/products/${categorySlug}/${p.slug}/`" />
+                  <ProductCard v-for="pdt in featuredProducts" :key="pdt.slug" :name="pdt.name" :desc="pdt.tagline" :image="pdt.image" :href="p(`/products/${categorySlug}/${pdt.slug}/`)" />
                 </div>
               </div>
 
               <div v-if="category.faqs && category.faqs.length" class="mt-14">
                 <div class="section-header text-left">
-                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">Frequently Asked Questions</h2>
-                  <p class="text-gray-500">Common questions about {{ category.name.toLowerCase() }}</p>
+                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">{{ t('product.faq') }}</h2>
+                  <p class="text-gray-500">{{ t('product.faqSub', { name: category.name.toLowerCase() }) }}</p>
                 </div>
                 <div class="space-y-4">
                   <div v-for="f in category.faqs" :key="f.q" class="card p-6">
@@ -455,14 +459,14 @@ useHead(() => {
         </div>
       </div>
     </section>
-    <CtaSection :heading="`Need ${category.name}?`" />
+    <CtaSection :heading="t('product.ctaHeading', { name: category.name })" />
 
     <Teleport to="body">
       <div v-if="zoomOpen" class="fixed inset-0 z-[2000] flex items-center justify-center bg-black/85 p-4 md:p-10" @click.self="closeZoom">
         <img :src="currentImage" :alt="product?.name" class="max-w-full max-h-full object-contain shadow-2xl">
-        <button v-if="gallery.length > 1" type="button" class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl hover:bg-white/20" @click="prevImage" aria-label="Previous image">&#8249;</button>
-        <button v-if="gallery.length > 1" type="button" class="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl hover:bg-white/20" @click="nextImage" aria-label="Next image">&#8250;</button>
-        <button type="button" class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl hover:bg-white/20" @click="closeZoom" aria-label="Close">&times;</button>
+        <button v-if="gallery.length > 1" type="button" class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl hover:bg-white/20" @click="prevImage" :aria-label="t('product.prevImage')">&#8249;</button>
+        <button v-if="gallery.length > 1" type="button" class="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl hover:bg-white/20" @click="nextImage" :aria-label="t('product.nextImage')">&#8250;</button>
+        <button type="button" class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl hover:bg-white/20" @click="closeZoom" :aria-label="t('product.close')">&times;</button>
       </div>
     </Teleport>
   </div>
