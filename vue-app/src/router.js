@@ -1,7 +1,9 @@
-import { categories, PAGE_SIZE } from './data/products'
-import { articles as articleData, hubTags, NEWS_PER_PAGE } from './data/articles'
+import { SUPPORTED_LOCALES, DEFAULT_LOCALE } from './i18n'
+import { buildStaticPaths, buildAllStaticPaths } from './paths'
 
-export const routes = [
+export { buildStaticPaths, buildAllStaticPaths }
+
+const baseRoutes = [
   { path: '/', name: 'home', component: () => import('./pages/index.vue') },
   { path: '/about', name: 'about', component: () => import('./pages/about.vue') },
   { path: '/contact', name: 'contact', component: () => import('./pages/contact.vue') },
@@ -16,30 +18,18 @@ export const routes = [
   { path: '/products/:category/:slug/page/:page', name: 'product-page', component: () => import('./pages/ProductPage.vue') },
 ]
 
-export function buildStaticPaths() {
-  const paths = ['/', '/about', '/contact', '/privacy', '/products', '/catalog', '/news']
-  for (const cat of categories) {
-    paths.push(`/products/${cat.slug}`)
-    for (const sub of cat.subcategories || []) {
-      paths.push(`/products/${cat.slug}/${sub.slug}`)
-      const count = (sub.products || []).length
-      const totalPages = Math.ceil(count / PAGE_SIZE)
-      for (let page = 2; page <= totalPages; page++) {
-        paths.push(`/products/${cat.slug}/${sub.slug}/page/${page}`)
-      }
-      for (const p of sub.products || []) {
-        paths.push(`/products/${cat.slug}/${p.slug}`)
-      }
-    }
-  }
-  for (const a of articleData) {
-    paths.push(`/news/${a.slug}`)
-  }
-  for (let p = 2; p <= Math.ceil(articleData.length / NEWS_PER_PAGE); p++) {
-    paths.push(`/news/page/${p}`)
-  }
-  for (const t of hubTags) {
-    paths.push(`/news/tag/${t.slug}`)
-  }
-  return paths
+/**
+ * Same routes under every non-default locale prefix.
+ * "/" becomes "/es/", "/products" becomes "/es/products", and so on.
+ */
+function routesForLocale(locale) {
+  if (locale === DEFAULT_LOCALE) return baseRoutes
+  return baseRoutes.map((route) => {
+    const path = route.path === '/' ? `/${locale}/` : `/${locale}${route.path}`
+    const next = { ...route, path, name: `${route.name}-${locale}` }
+    if (route.path === '/') next.alias = `/${locale}`
+    return next
+  })
 }
+
+export const routes = SUPPORTED_LOCALES.flatMap(routesForLocale)

@@ -1,33 +1,9 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { categories, PAGE_SIZE } from './src/data/products'
-import { articles, hubTags, NEWS_PER_PAGE } from './src/data/articles'
+import { buildAllStaticPaths } from './src/paths'
 
 function buildStaticPaths() {
-  const paths = ['/catalog']
-  for (const cat of categories) {
-    paths.push(`/products/${cat.slug}`)
-    for (const sub of cat.subcategories || []) {
-      paths.push(`/products/${cat.slug}/${sub.slug}`)
-      const totalPages = Math.ceil((sub.products || []).length / PAGE_SIZE)
-      for (let page = 2; page <= totalPages; page++) {
-        paths.push(`/products/${cat.slug}/${sub.slug}/page/${page}`)
-      }
-      for (const p of sub.products || []) {
-        paths.push(`/products/${cat.slug}/${p.slug}`)
-      }
-    }
-  }
-  for (const a of articles) {
-    paths.push(`/news/${a.slug}`)
-  }
-  for (let p = 2; p <= Math.ceil(articles.length / NEWS_PER_PAGE); p++) {
-    paths.push(`/news/page/${p}`)
-  }
-  for (const t of hubTags) {
-    paths.push(`/news/tag/${t.slug}`)
-  }
-  return paths
+  return buildAllStaticPaths()
 }
 
 export default defineConfig({
@@ -54,6 +30,9 @@ export default defineConfig({
   },
   ssgOptions: {
     dirStyle: 'nested',
+    // The i18n store is module-level, so pages must render one at a time;
+    // parallel renders would leak the active locale between routes.
+    concurrency: 1,
     includedRoutes: (paths) => {
       const statics = paths.filter(p => !p.includes(':'))
       const set = new Set(statics)
