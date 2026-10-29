@@ -2,7 +2,8 @@
 import PageHero from '../components/PageHero.vue'
 import CtaSection from '../components/CtaSection.vue'
 import { useHead } from '@unhead/vue'
-import { reactive, ref } from 'vue'
+import { reactive, ref, onMounted } from 'vue'
+import { trackAdsConversion, trackEvent } from '../composables/useConversion'
 
 useHead({
   title: 'Product Catalog | Century Auto Parts',
@@ -91,6 +92,14 @@ function trackCatalogDownload() {
     window.gtag('event', 'catalog_download', { location: 'main_button' })
   }
 }
+
+// Catalog 浏览：Ads 转化需要单独建一条「网页加载 /catalog/」的转化操作，
+// 建好后把 label 填进 useConversion.js 的 LABELS.catalog_pageview。
+// label 为空时这里不会上报 Ads 转化，只发 GA4 事件。
+onMounted(() => {
+  trackAdsConversion('catalog_pageview')
+  trackEvent('catalog_view')
+})
 
 const categories = [
   { name: 'Wheel Balancing Weights', path: '/products/wheel-balancing-weights/', desc: 'Fe & Pb clip-on and adhesive weights for steel and alloy rims.' },

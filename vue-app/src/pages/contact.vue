@@ -1,7 +1,8 @@
 <script setup>
 import PageHero from '../components/PageHero.vue'
 import { useHead } from '@unhead/vue'
-import { reactive, ref } from 'vue'
+import { reactive, ref, onMounted } from 'vue'
+import { trackEvent } from '../composables/useConversion'
 
 useHead({
   title: 'Contact Us | Century Auto Parts',
@@ -29,6 +30,13 @@ const productOptions = [
   'Wheel Balancing Weights', 'Tyre Valves', 'TPMS', 'Tyre Seal String', 'Tyre Patch', 'Mushroom Patch Plug', 'Other',
 ]
 
+// GA4 事件。Ads 的「联系我们」转化由谷歌的网页加载规则自动上报
+// （page_view + /contact/，标签 70b9CNzIzqkdEK769-FE），不要再手动发 conversion，
+// 否则会和自动规则重复计数。
+onMounted(() => {
+  trackEvent('contact_view')
+})
+
 async function onSubmit() {
   if (sending.value) return
   sending.value = true
@@ -52,13 +60,10 @@ async function onSubmit() {
     })
     if (res.ok) {
       submitted.value = true
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'conversion', { 'send_to': 'AW-18459000110/FHNYCMGQ3KgdEK769-FE' })
-        window.gtag('event', 'generate_lead', {
-          form: 'contact_inquiry',
-          product: form.product,
-        })
-      }
+      trackEvent('generate_lead', {
+        form: 'contact_inquiry',
+        product: form.product,
+      })
       form.name = ''
       form.email = ''
       form.mobile = ''

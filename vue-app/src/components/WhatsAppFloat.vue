@@ -1,5 +1,10 @@
 <script setup>
+import { trackAdsConversion } from '../composables/useConversion'
+
 function trackWhatsAppClick() {
+  // Ads 转化需要单独建一条「WhatsApp 点击」转化操作，
+  // 建好后把 label 填进 useConversion.js 的 LABELS.whatsapp_click。
+  trackAdsConversion('whatsapp_click')
   if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
     window.gtag('event', 'contact_whatsapp_click', {
       event_category: 'engagement',
