@@ -1,10 +1,18 @@
-import { writeFileSync, mkdirSync } from 'node:fs'
+import { writeFileSync } from 'node:fs'
 import { categories, PAGE_SIZE } from '../src/data/products.js'
 import { articles, hubTags, NEWS_PER_PAGE } from '../src/data/articles.js'
+import esCategories from '../src/data/es/categories.js'
 
 const BASE = 'https://centurymanufacture.com'
 const lastmod = new Date().toISOString().slice(0, 10)
 
+// Locale prefixes: English at the root, Spanish under /es.
+const LOCALES = [
+  { code: 'en', prefix: '' },
+  { code: 'es', prefix: '/es' },
+]
+
+// Locale-independent paths, expanded per locale below.
 const urls = [{ path: '/', priority: '1.0', freq: 'weekly' }]
 
 function add(path, priority, freq = 'monthly', images = []) {
@@ -44,11 +52,26 @@ for (const t of hubTags) {
   add(`/news/tag/${t.slug}/`, '0.5', 'weekly')
 }
 
-const hasImages = urls.some(u => u.images && u.images.length)
+const entries = []
+for (const u of urls) {
+  const alternates = LOCALES.map(l => ({ hreflang: l.code, href: `${BASE}${l.prefix}${u.path}` }))
+  alternates.push({ hreflang: 'x-default', href: `${BASE}${u.path}` })
+  for (const l of LOCALES) {
+    entries.push({
+      ...u,
+      loc: `${BASE}${l.prefix}${u.path}`,
+      alternates,
+    })
+  }
+}
+
+const hasImages = entries.some(u => u.images && u.images.length)
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"${hasImages ? '\n        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"' : ''}>
-${urls.map(u => `    <url>
-        <loc>${BASE}${u.path}</loc>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"${hasImages ? '\n        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"' : ''}>
+${entries.map(u => `    <url>
+        <loc>${u.loc}</loc>${u.alternates.map(a => `
+        <xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${a.href}"/>`).join('')}
         <lastmod>${lastmod}</lastmod>
         <changefreq>${u.freq}</changefreq>
         <priority>${u.priority}</priority>${(u.images || []).map(img => `
@@ -61,12 +84,16 @@ ${urls.map(u => `    <url>
 
 writeFileSync(new URL('../public/sitemap.xml', import.meta.url), xml)
 
+const esCatName = (slug) => (esCategories.categories[slug] && esCategories.categories[slug].name) || ''
+const esSubName = (slug) => esCategories.subcategories[slug] || ''
+
 const llms = `# Century Auto Parts - Hebei Century Auto Parts Co., Ltd.
 > Professional manufacturer of wheel balancing weights, tyre valves, TPMS, tyre seal strings, tyre patches and mushroom patch plugs since 2010.
 
 Website: ${BASE}
 Phone: +86 15633632668
 Email: info@centurymanufacture.com
+Languages: English (${BASE}/), Spanish (${BASE}/es/)
 
 ## Pages
 - Home: ${BASE}/
@@ -76,8 +103,19 @@ Email: info@centurymanufacture.com
 - News: ${BASE}/news/
 - Contact: ${BASE}/contact/
 
+## Spanish Pages
+- Inicio: ${BASE}/es/
+- Nosotros: ${BASE}/es/about/
+- Productos: ${BASE}/es/products/
+- Catálogo: ${BASE}/es/catalog/
+- Noticias: ${BASE}/es/news/
+- Contacto: ${BASE}/es/contact/
+
 ## Product Categories
 ${categories.map(c => `- ${c.name}: ${BASE}/products/${c.slug}/`).join('\n')}
+
+## Categorías (Español)
+${categories.map(c => `- ${esCatName(c.slug) || c.name}: ${BASE}/es/products/${c.slug}/`).join('\n')}
 
 ## Subcategories & Products
 ${categories.map(c => {
@@ -101,4 +139,4 @@ The company uses 'we' and 'our' when referring to itself.
 `
 
 writeFileSync(new URL('../public/llms.txt', import.meta.url), llms)
-console.log(`Generated sitemap (${urls.length} URLs) and llms.txt (lastmod ${lastmod})`)
+console.log(`Generated sitemap (${entries.length} URLs, ${LOCALES.length} locales) and llms.txt (lastmod ${lastmod})`)

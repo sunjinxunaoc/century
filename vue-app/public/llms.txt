@@ -4,6 +4,7 @@
 Website: https://centurymanufacture.com
 Phone: +86 15633632668
 Email: info@centurymanufacture.com
+Languages: English (https://centurymanufacture.com/), Spanish (https://centurymanufacture.com/es/)
 
 ## Pages
 - Home: https://centurymanufacture.com/
@@ -13,6 +14,14 @@ Email: info@centurymanufacture.com
 - News: https://centurymanufacture.com/news/
 - Contact: https://centurymanufacture.com/contact/
 
+## Spanish Pages
+- Inicio: https://centurymanufacture.com/es/
+- Nosotros: https://centurymanufacture.com/es/about/
+- Productos: https://centurymanufacture.com/es/products/
+- Catálogo: https://centurymanufacture.com/es/catalog/
+- Noticias: https://centurymanufacture.com/es/news/
+- Contacto: https://centurymanufacture.com/es/contact/
+
 ## Product Categories
 - Wheel Balancing Weights: https://centurymanufacture.com/products/wheel-balancing-weights/
 - Tyre Valves: https://centurymanufacture.com/products/tyre-valves/
@@ -20,6 +29,14 @@ Email: info@centurymanufacture.com
 - Tyre Seal String: https://centurymanufacture.com/products/tyre-seal-string/
 - Tyre Patch: https://centurymanufacture.com/products/tyre-patch/
 - Mushroom Patch Plug: https://centurymanufacture.com/products/mushroom-patch-plug/
+
+## Categorías (Español)
+- Contrapesos de equilibrado: https://centurymanufacture.com/es/products/wheel-balancing-weights/
+- Válvulas para neumáticos: https://centurymanufacture.com/es/products/tyre-valves/
+- TPMS: https://centurymanufacture.com/es/products/tpms/
+- Cuerdas de sellado: https://centurymanufacture.com/es/products/tyre-seal-string/
+- Parches para neumáticos: https://centurymanufacture.com/es/products/tyre-patch/
+- Tapones de hongo: https://centurymanufacture.com/es/products/mushroom-patch-plug/
 
 ## Subcategories & Products
 - Wheel Balancing Weights: https://centurymanufacture.com/products/wheel-balancing-weights/
