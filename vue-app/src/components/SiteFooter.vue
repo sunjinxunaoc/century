@@ -1,21 +1,27 @@
 <script setup>
-const quickLinks = [
-  { label: 'Home', path: '/' },
-  { label: 'About Us', path: '/about/' },
-  { label: 'Products', path: '/products/' },
-  { label: 'Catalog', path: '/catalog/' },
-  { label: 'News', path: '/news/' },
-  { label: 'Contact', path: '/contact/' },
-  { label: 'Privacy Policy', path: '/privacy/' },
-]
-const productLinks = [
-  { label: 'Wheel Balancing Weights', path: '/products/wheel-balancing-weights/' },
-  { label: 'Tyre Valves', path: '/products/tyre-valves/' },
-  { label: 'TPMS', path: '/products/tpms/' },
-  { label: 'Tyre Seal String', path: '/products/tyre-seal-string/' },
-  { label: 'Tyre Patch', path: '/products/tyre-patch/' },
-  { label: 'Mushroom Patch Plug', path: '/products/mushroom-patch-plug/' },
-]
+import { computed } from 'vue'
+import { getCategories } from '../data/localize'
+import { useI18n } from '../i18n'
+
+const { t, locale, p } = useI18n()
+
+const quickLinks = computed(() => [
+  { label: t('nav.home'), path: p('/') },
+  { label: t('nav.about'), path: p('/about/') },
+  { label: t('nav.products'), path: p('/products/') },
+  { label: t('nav.catalog'), path: p('/catalog/') },
+  { label: t('nav.news'), path: p('/news/') },
+  { label: t('nav.contact'), path: p('/contact/') },
+  { label: t('nav.privacy'), path: p('/privacy/') },
+])
+
+const productLinks = computed(() =>
+  getCategories(locale.value).map((cat) => ({
+    label: cat.name,
+    path: p(`/products/${cat.slug}/`),
+  }))
+)
+
 const socials = [
   { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=100075854564828' },
   { label: 'Instagram', href: 'https://www.instagram.com/gracezzling0723/' },
@@ -33,27 +39,27 @@ const socials = [
             <img src="/images/logo/logo-icon-transparent.png" alt="Century Auto Parts" width="48" height="48" class="h-10 w-auto object-contain">
             <span class="text-lg font-bold tracking-wider text-white">CENTURY<span class="text-[#E8590C]">AUTO</span></span>
           </div>
-          <p class="text-sm text-gray-400 leading-relaxed">Professional manufacturer of tire repair products since 2010. Trusted by 50+ countries worldwide.</p>
+          <p class="text-sm text-gray-400 leading-relaxed">{{ t('footer.tagline') }}</p>
         </div>
         <div>
-          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <h4 class="text-white font-semibold mb-4">{{ t('footer.quickLinks') }}</h4>
           <ul class="flex flex-col gap-2.5 text-sm">
             <li v-for="l in quickLinks" :key="l.path"><RouterLink :to="l.path" class="hover:text-[#FF6B00]">{{ l.label }}</RouterLink></li>
           </ul>
         </div>
         <div>
-          <h4 class="text-white font-semibold mb-4">Products</h4>
+          <h4 class="text-white font-semibold mb-4">{{ t('footer.products') }}</h4>
           <ul class="flex flex-col gap-2.5 text-sm">
             <li v-for="l in productLinks" :key="l.path"><RouterLink :to="l.path" class="hover:text-[#FF6B00]">{{ l.label }}</RouterLink></li>
           </ul>
         </div>
         <div>
-          <h4 class="text-white font-semibold mb-4">Contact Us</h4>
+          <h4 class="text-white font-semibold mb-4">{{ t('footer.contact') }}</h4>
           <ul class="flex flex-col gap-3 text-sm text-gray-400">
-            <li><strong class="text-gray-300">Address:</strong><br>No.161, Qiantang Village, Qingyun Town, Yanshan County, Cangzhou City, Hebei Province, China</li>
-            <li><strong class="text-gray-300">Phone:</strong> +86 15633632668</li>
-            <li><strong class="text-gray-300">Email:</strong> info@centurymanufacture.com</li>
-            <li><strong class="text-gray-300">Hours:</strong> Mon-Sat: 8am - 6pm</li>
+            <li><strong class="text-gray-300">{{ t('footer.addressLabel') }}</strong><br>{{ t('footer.address') }}</li>
+            <li><strong class="text-gray-300">{{ t('footer.phoneLabel') }}</strong> {{ t('footer.phone') }}</li>
+            <li><strong class="text-gray-300">{{ t('footer.emailLabel') }}</strong> {{ t('footer.email') }}</li>
+            <li><strong class="text-gray-300">{{ t('footer.hoursLabel') }}</strong> {{ t('footer.hours') }}</li>
           </ul>
         </div>
       </div>
@@ -61,7 +67,7 @@ const socials = [
         <div class="flex gap-5 text-sm">
           <a v-for="s in socials" :key="s.label" :href="s.href" target="_blank" rel="noopener" class="hover:text-[#FF6B00]">{{ s.label }}</a>
         </div>
-        <p class="text-sm text-gray-500">Copyright 2010 - 2026 Hebei Century Auto Parts Co.,Ltd. All Rights Reserved.</p>
+        <p class="text-sm text-gray-500">{{ t('footer.rights') }}</p>
       </div>
     </div>
   </footer>

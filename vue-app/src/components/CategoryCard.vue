@@ -1,10 +1,14 @@
 <script setup>
+import { useI18n } from '../i18n'
+
 defineProps({
   title: { type: String, required: true },
   desc: { type: String, default: '' },
   href: { type: String, required: true },
   image: { type: String, default: '' },
 })
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -15,6 +19,6 @@ defineProps({
     <div v-else class="w-12 h-12 mx-auto mb-4 rounded-full bg-orange-50 text-[#FF6B00] flex items-center justify-center text-xl">&#9672;</div>
     <h3 class="font-semibold text-[#1A1A2E] mb-2">{{ title }}</h3>
     <p class="text-sm text-gray-500 leading-relaxed mb-4 flex-1">{{ desc }}</p>
-    <RouterLink :to="href" class="text-[#FF6B00] text-sm font-medium hover:underline">View Details &rarr;</RouterLink>
+    <RouterLink :to="href" class="text-[#FF6B00] text-sm font-medium hover:underline">{{ t('common.viewDetails') }} &rarr;</RouterLink>
   </div>
 </template>

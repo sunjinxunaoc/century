@@ -1,11 +1,14 @@
 <script setup>
 import { computed } from 'vue'
+import { useI18n } from '../i18n'
 
 const props = defineProps({
   current: { type: Number, required: true },
   total: { type: Number, required: true },
   basePath: { type: String, required: true },
 })
+
+const { t } = useI18n()
 
 function pagePath(page) {
   return page === 1 ? `${props.basePath}/` : `${props.basePath}/page/${page}/`
@@ -28,14 +31,14 @@ const pages = computed(() => {
 </script>
 
 <template>
-  <nav v-if="total > 1" class="flex items-center justify-center gap-2 mt-12" aria-label="Pagination">
+  <nav v-if="total > 1" class="flex items-center justify-center gap-2 mt-12" :aria-label="t('common.pagination')">
     <RouterLink
       v-if="current > 1"
       :to="pagePath(current - 1)"
       class="pagination-link"
       rel="prev"
-      aria-label="Previous page"
-    >&#8592; Prev</RouterLink>
+      :aria-label="t('common.previousPage')"
+    >&#8592; {{ t('common.prev') }}</RouterLink>
 
     <template v-for="(p, i) in pages" :key="i">
       <span v-if="p === '...'" class="px-2 text-gray-400 select-none">&#8230;</span>
@@ -54,8 +57,8 @@ const pages = computed(() => {
       :to="pagePath(current + 1)"
       class="pagination-link"
       rel="next"
-      aria-label="Next page"
-    >Next &#8594;</RouterLink>
+      :aria-label="t('common.nextPage')"
+    >{{ t('common.next') }} &#8594;</RouterLink>
   </nav>
 </template>
 

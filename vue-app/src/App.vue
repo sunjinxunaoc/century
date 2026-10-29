@@ -1,12 +1,31 @@
 <script setup>
+import { watch } from 'vue'
+import { useRoute } from 'vue-router'
 import SiteHeader from './components/SiteHeader.vue'
 import SiteFooter from './components/SiteFooter.vue'
 import WhatsAppFloat from './components/WhatsAppFloat.vue'
 import { useHead } from '@unhead/vue'
+import { useI18n, setLocale, localeFromPath, hreflangLinks } from './i18n'
 
-useHead({
+const route = useRoute()
+
+// The locale always comes from the URL, so shared links and SSG pages agree.
+watch(
+  () => route.path,
+  (path) => setLocale(localeFromPath(path)),
+  { immediate: true }
+)
+
+const { htmlLang, dir, ogLocale } = useI18n()
+
+useHead(() => ({
+  htmlAttrs: {
+    lang: htmlLang.value,
+    dir: dir.value,
+  },
   meta: [
     { property: 'og:site_name', content: 'Century Auto Parts' },
+    { property: 'og:locale', content: ogLocale.value },
   ],
   link: [
     { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
@@ -14,6 +33,7 @@ useHead({
     { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
     { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
     { rel: 'manifest', href: '/site.webmanifest' },
+    ...hreflangLinks(route.path),
   ],
   script: [
     {
@@ -29,7 +49,8 @@ useHead({
           '@type': 'ImageObject',
           url: 'https://centurymanufacture.com/android-chrome-512x512.png',
         },
-        description: 'Professional manufacturer of wheel balancing weights, tire valves, TPMS, tire repair tools and patches since 2010.',
+        description:
+          'Professional manufacturer of wheel balancing weights, tire valves, TPMS, tire repair tools and patches since 2010.',
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'No.161, Qiantang Village, Qingyun Town, Yanshan County',
@@ -52,7 +73,7 @@ useHead({
         name: 'Century Auto Parts',
         alternateName: 'centurymanufacture.com',
         url: 'https://centurymanufacture.com',
-        inLanguage: 'en',
+        inLanguage: htmlLang.value,
         publisher: { '@id': 'https://centurymanufacture.com/#organization' },
         potentialAction: {
           '@type': 'SearchAction',
@@ -65,7 +86,7 @@ useHead({
       }),
     },
   ],
-})
+}))
 </script>
 
 <template>
