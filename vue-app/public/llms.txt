@@ -31,12 +31,12 @@ Languages: English (https://centurymanufacture.com/), Spanish (https://centuryma
 - Mushroom Patch Plug: https://centurymanufacture.com/products/mushroom-patch-plug/
 
 ## Categorías (Español)
-- Contrapesos de equilibrado: https://centurymanufacture.com/es/products/wheel-balancing-weights/
-- Válvulas para neumáticos: https://centurymanufacture.com/es/products/tyre-valves/
+- Contrapesos de Equilibrado: https://centurymanufacture.com/es/products/wheel-balancing-weights/
+- Válvulas para Neumáticos: https://centurymanufacture.com/es/products/tyre-valves/
 - TPMS: https://centurymanufacture.com/es/products/tpms/
-- Cuerdas de sellado: https://centurymanufacture.com/es/products/tyre-seal-string/
-- Parches para neumáticos: https://centurymanufacture.com/es/products/tyre-patch/
-- Tapones de hongo: https://centurymanufacture.com/es/products/mushroom-patch-plug/
+- Cuerda de Sellado para Neumáticos: https://centurymanufacture.com/es/products/tyre-seal-string/
+- Parche para Neumáticos: https://centurymanufacture.com/es/products/tyre-patch/
+- Tapón de Hongo Combinado con Parche: https://centurymanufacture.com/es/products/mushroom-patch-plug/
 
 ## Subcategories & Products
 - Wheel Balancing Weights: https://centurymanufacture.com/products/wheel-balancing-weights/
