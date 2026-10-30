@@ -95,11 +95,12 @@ useHead(() => {
     }),
   })
   return {
-    title: `${article.value?.title || t('nav.news')} | Century Auto Parts`,
+    title: `${article.value?.seoTitle || article.value?.title || t('nav.news')} | Century Auto Parts`,
     meta: [
-      { name: 'description', content: article.value?.desc || '' },
-      { property: 'og:title', content: `${article.value?.title || t('nav.news')} | Century Auto Parts` },
-      { property: 'og:description', content: article.value?.desc || '' },
+      { name: 'description', content: article.value?.seoDescription || article.value?.desc || '' },
+      { name: 'keywords', content: article.value?.seoKeywords || '' },
+      { property: 'og:title', content: `${article.value?.seoTitle || article.value?.title || t('nav.news')} | Century Auto Parts` },
+      { property: 'og:description', content: article.value?.seoDescription || article.value?.desc || '' },
       { property: 'og:type', content: 'article' },
       { property: 'og:url', content: url },
       { property: 'og:image', content: `https://centurymanufacture.com${article.value?.img || '/images/factory.webp'}` },

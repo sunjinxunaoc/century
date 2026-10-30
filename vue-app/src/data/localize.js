@@ -36,6 +36,9 @@ export function localizeProduct(product, locale = 'en') {
     ...product,
     name: t.name || product.name,
     tagline: t.tagline || product.tagline,
+    desc: t.desc || product.desc,
+    keywords: t.keywords || product.keywords,
+    seoTitle: t.seoTitle || (product.seoTitle || product.name),
     // Specs, model numbers and SKU codes stay in English.
   }
 }
@@ -45,6 +48,7 @@ export function getCategories(locale = 'en') {
   return cached(`categories:${locale}`, () => {
     const catT = CATEGORY_TRANSLATIONS[locale].categories || {}
     const subT = CATEGORY_TRANSLATIONS[locale].subcategories || {}
+    const subDetailT = CATEGORY_TRANSLATIONS[locale].subcategoryDetails || {}
     return enCategories.map((cat) => {
       const t = catT[cat.slug] || {}
       return {
@@ -56,11 +60,22 @@ export function getCategories(locale = 'en') {
         intro: t.intro || cat.intro,
         highlights: t.highlights || cat.highlights,
         faqs: t.faqs || cat.faqs,
-        subcategories: (cat.subcategories || []).map((sub) => ({
-          ...sub,
-          name: subT[sub.slug] || sub.name,
-          products: (sub.products || []).map((product) => localizeProduct(product, locale)),
-        })),
+        keywords: t.keywords || cat.keywords,
+        wholesaleInfo: t.wholesaleInfo || cat.wholesaleInfo,
+        cards: t.cards || cat.cards,
+        subcategories: (cat.subcategories || []).map((sub) => {
+          const dt = subDetailT[sub.slug] || {}
+          return {
+            ...sub,
+            name: subT[sub.slug] || sub.name,
+            desc: dt.desc || sub.desc,
+            keywords: dt.keywords || sub.keywords,
+            seoTitle: dt.seoTitle || sub.seoTitle,
+            highlights: dt.highlights || sub.highlights,
+            faqs: dt.faqs || sub.faqs,
+            products: (sub.products || []).map((product) => localizeProduct(product, locale)),
+          }
+        }),
       }
     })
   })
