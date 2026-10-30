@@ -64,6 +64,9 @@ export default {
       '¡Gracias! Su consulta se ha enviado correctamente. Le responderemos en un plazo de 24 horas.',
     successCatalog:
       '¡Gracias! Hemos recibido sus datos y le responderemos en un plazo de 24 horas.',
+    onlineNow: 'En línea ahora',
+    chatWithUs: 'Chatee con nosotros',
+    chatOnWhatsApp: 'Chatear por WhatsApp',
   },
 
   home: {

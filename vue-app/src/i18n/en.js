@@ -58,6 +58,9 @@ export default {
     errorNetwork: 'Network error. Please try again or email us directly at info@centurymanufacture.com.',
     successContact: 'Thank you! Your inquiry has been sent successfully. We will reply within 24 hours.',
     successCatalog: 'Thank you! We have received your details and will get back to you within 24 hours.',
+    onlineNow: 'Online now',
+    chatWithUs: 'Chat with us',
+    chatOnWhatsApp: 'Chat on WhatsApp',
   },
 
   home: {
