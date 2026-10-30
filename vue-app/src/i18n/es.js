@@ -75,6 +75,9 @@ export default {
       titleStart: 'Fabricante de',
       titleHighlight: 'contrapesos',
       titleEnd: 'para ruedas y mercados internacionales',
+      valveTitleStart: 'Fabricante de',
+      valveTitleHighlight: 'válvulas para neumáticos',
+      valveTitleEnd: 'para los mercados internacionales',
       subtitle:
         'Contrapesos de equilibrado, válvulas para neumáticos, TPMS, parches y materiales de reparación: fabricados y exportados a todo el mundo con calidad y precio directos de fábrica.',
       newLabel: 'Nuevo:',

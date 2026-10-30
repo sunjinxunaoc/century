@@ -45,11 +45,21 @@ const banners = computed(() => [
     src: '/images/hero-banner-warm-640-v2.webp',
     alt: tm('home.hero.bannerAlts')[0],
     href: p('/products/wheel-balancing-weights/'),
+    title: {
+      s: 'home.hero.titleStart',
+      h: 'home.hero.titleHighlight',
+      e: 'home.hero.titleEnd',
+    },
   },
   {
     src: '/images/hero-banner-tyre-valve.webp',
     alt: tm('home.hero.bannerAlts')[1],
     href: p('/products/tyre-valves/'),
+    title: {
+      s: 'home.hero.valveTitleStart',
+      h: 'home.hero.valveTitleHighlight',
+      e: 'home.hero.valveTitleEnd',
+    },
   },
 ])
 const idx = ref(0)
@@ -100,7 +110,7 @@ onUnmounted(() => { clearInterval(timer) })
       </div>
       <div class="container-app relative z-10 pt-32 pb-72 md:pt-36 md:pb-36 text-center">
         <span class="inline-block bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6 text-shadow-hero">&#9672; {{ t('home.hero.badge') }}</span>
-        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-shadow-hero">{{ t('home.hero.titleStart') }} <span class="text-[#FF6B00]">{{ t('home.hero.titleHighlight') }}</span> {{ t('home.hero.titleEnd') }}</h1>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-shadow-hero">{{ t(banners[idx].title.s) }} <span class="text-[#FF6B00]">{{ t(banners[idx].title.h) }}</span> {{ t(banners[idx].title.e) }}</h1>
         <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8 text-shadow-hero">{{ t('home.hero.subtitle') }}</p>
         <div class="flex justify-center gap-4 flex-wrap">
           <RouterLink :to="p('/products/')" class="btn btn-primary btn-large">{{ t('common.exploreProducts') }}</RouterLink>

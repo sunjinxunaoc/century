@@ -69,6 +69,9 @@ export default {
       titleStart: 'Wheel Weight',
       titleHighlight: 'Manufacturer',
       titleEnd: 'for Global Markets',
+      valveTitleStart: 'Tyre Valve',
+      valveTitleHighlight: 'Manufacturer',
+      valveTitleEnd: 'for Global Markets',
       subtitle:
         'Wheel balancing weights, tyre valves, TPMS, patches and repair materials - manufactured and exported worldwide with factory-direct quality and pricing.',
       newLabel: 'New:',
