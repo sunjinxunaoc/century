@@ -127,7 +127,10 @@ Languages: English (${BASE}/), Spanish (${BASE}/es/), Arabic (${BASE}/ar/)
 - اتصل بنا: ${BASE}/ar/contact/
 
 ## Product Categories
-${categories.map(c => `- ${c.name}: ${BASE}/products/${c.slug}/`).join('\n')}
+${categories.map(c => {
+  const intro = (c.intro || '').replace(/\s+/g, ' ').trim()
+  return `- ${c.name}: ${BASE}/products/${c.slug}/${intro ? ` — ${intro}` : ''}`
+}).join('\n')}
 
 ## Categorías (Español)
 ${categories.map(c => `- ${esCatName(c.slug) || c.name}: ${BASE}/es/products/${c.slug}/`).join('\n')}
@@ -147,7 +150,10 @@ ${categories.map(c => {
 }).join('\n')}
 
 ## News & Guides
-${articles.map(a => `- ${a.title}: ${BASE}/news/${a.slug}/`).join('\n')}
+${articles.map(a => {
+  const ad = (a.desc || '').replace(/\s+/g, ' ').trim()
+  return `- ${a.title}: ${BASE}/news/${a.slug}/${ad ? ` — ${ad}` : ''}`
+}).join('\n')}
 
 ## Topics
 ${hubTags.map(t => `- ${t.name} (${t.articles.length} articles): ${BASE}/news/tag/${t.slug}/`).join('\n')}
