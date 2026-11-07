@@ -345,16 +345,6 @@ useHead(() => {
                   <div class="w-12 h-0.5 bg-[#FF6B00] mt-4 mb-5"></div>
                   <p class="text-gray-500 leading-relaxed">{{ product.desc }}</p>
 
-                  <div v-if="locale === 'en' && product.features && product.features.length" class="mt-7">
-                    <h2 class="text-sm font-semibold uppercase tracking-wide text-gray-400 mb-3">{{ t('product.keyFeatures') }}</h2>
-                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
-                      <li v-for="f in product.features" :key="f" class="flex items-start gap-2">
-                        <svg class="w-4 h-4 shrink-0 text-[#FF6B00] mt-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                        <span class="text-sm text-gray-600 leading-relaxed">{{ f }}</span>
-                      </li>
-                    </ul>
-                  </div>
-
                   <div class="mt-8 pt-6 border-t border-gray-200">
                     <div class="flex flex-col sm:flex-row gap-3">
                       <RouterLink :to="p('/contact/')" class="btn btn-primary btn-large flex-1 justify-center">{{ t('common.requestQuote') }}</RouterLink>

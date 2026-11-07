@@ -288,7 +288,6 @@ export default {
     imageN: 'Image {n}',
     specifications: 'Specifications',
     specsFor: 'Detailed parameters for {name}',
-    keyFeatures: 'Key features',
     related: 'Related Products',
     relatedSub: 'Explore more related products',
     guides: 'Guides & Buying Advice',

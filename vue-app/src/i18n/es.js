@@ -297,7 +297,6 @@ export default {
     imageN: 'Imagen {n}',
     specifications: 'Especificaciones',
     specsFor: 'Parámetros detallados de {name}',
-    keyFeatures: 'Características principales',
     related: 'Productos relacionados',
     relatedSub: 'Descubra más productos relacionados',
     guides: 'Guías y consejos de compra',
