@@ -4,7 +4,7 @@
 Website: https://centurymanufacture.com
 Phone: +86 15633632668
 Email: info@centurymanufacture.com
-Languages: English (https://centurymanufacture.com/), Spanish (https://centurymanufacture.com/es/)
+Languages: English (https://centurymanufacture.com/), Spanish (https://centurymanufacture.com/es/), Arabic (https://centurymanufacture.com/ar/)
 
 ## Pages
 - Home: https://centurymanufacture.com/
@@ -22,6 +22,14 @@ Languages: English (https://centurymanufacture.com/), Spanish (https://centuryma
 - Noticias: https://centurymanufacture.com/es/news/
 - Contacto: https://centurymanufacture.com/es/contact/
 
+## Arabic Pages
+- الرئيسية: https://centurymanufacture.com/ar/
+- من نحن: https://centurymanufacture.com/ar/about/
+- المنتجات: https://centurymanufacture.com/ar/products/
+- الكتالوج: https://centurymanufacture.com/ar/catalog/
+- الأخبار: https://centurymanufacture.com/ar/news/
+- اتصل بنا: https://centurymanufacture.com/ar/contact/
+
 ## Product Categories
 - Wheel Balancing Weights: https://centurymanufacture.com/products/wheel-balancing-weights/
 - Tyre Valves: https://centurymanufacture.com/products/tyre-valves/
@@ -37,6 +45,14 @@ Languages: English (https://centurymanufacture.com/), Spanish (https://centuryma
 - Cuerda de Sellado para Neumáticos: https://centurymanufacture.com/es/products/tyre-seal-string/
 - Parche para Neumáticos: https://centurymanufacture.com/es/products/tyre-patch/
 - Tapón de Hongo Combinado con Parche: https://centurymanufacture.com/es/products/mushroom-patch-plug/
+
+## الفئات (العربية)
+- أوزان موازنة العجلات: https://centurymanufacture.com/ar/products/wheel-balancing-weights/
+- صمامات الإطارات: https://centurymanufacture.com/ar/products/tyre-valves/
+- TPMS: https://centurymanufacture.com/ar/products/tpms/
+- سلك إغلاق الإطارات: https://centurymanufacture.com/ar/products/tyre-seal-string/
+- رقعة الإطارات: https://centurymanufacture.com/ar/products/tyre-patch/
+- سدادة الفطر المدمجة مع رقعة: https://centurymanufacture.com/ar/products/mushroom-patch-plug/
 
 ## Subcategories & Products
 - Wheel Balancing Weights: https://centurymanufacture.com/products/wheel-balancing-weights/

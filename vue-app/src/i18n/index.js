@@ -1,20 +1,21 @@
 import { computed, reactive } from 'vue'
 import en from './en'
 import es from './es'
+import ar from './ar'
 
-// URL prefix per locale. English lives at the site root, Spanish under /es.
-export const SUPPORTED_LOCALES = ['en', 'es']
+// URL prefix per locale. English lives at the site root, other locales under /xx.
+export const SUPPORTED_LOCALES = ['en', 'es', 'ar']
 export const DEFAULT_LOCALE = 'en'
 
-export const LOCALE_LABELS = { en: 'English', es: 'Español' }
-export const LOCALE_SHORT = { en: 'EN', es: 'ES' }
-export const LOCALE_HTML_LANG = { en: 'en', es: 'es' }
-export const LOCALE_OG = { en: 'en_US', es: 'es_ES' }
-export const LOCALE_DIR = { en: 'ltr', es: 'ltr' }
+export const LOCALE_LABELS = { en: 'English', es: 'Español', ar: 'العربية' }
+export const LOCALE_SHORT = { en: 'EN', es: 'ES', ar: 'AR' }
+export const LOCALE_HTML_LANG = { en: 'en', es: 'es', ar: 'ar' }
+export const LOCALE_OG = { en: 'en_US', es: 'es_ES', ar: 'ar_SA' }
+export const LOCALE_DIR = { en: 'ltr', es: 'ltr', ar: 'rtl' }
 
 export const SITE_URL = 'https://centurymanufacture.com'
 
-const messages = { en, es }
+const messages = { en, es, ar }
 const state = reactive({ locale: DEFAULT_LOCALE })
 
 /** Locale implied by a route path ("/es/about/" -> "es"). */

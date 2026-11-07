@@ -2,14 +2,16 @@ import { writeFileSync } from 'node:fs'
 import { categories, PAGE_SIZE } from '../src/data/products.js'
 import { articles, hubTags, NEWS_PER_PAGE } from '../src/data/articles.js'
 import esCategories from '../src/data/es/categories.js'
+import arCategories from '../src/data/ar/categories.js'
 
 const BASE = 'https://centurymanufacture.com'
 const lastmod = new Date().toISOString().slice(0, 10)
 
-// Locale prefixes: English at the root, Spanish under /es.
+// Locale prefixes: English at the root, others under /xx.
 const LOCALES = [
   { code: 'en', prefix: '' },
   { code: 'es', prefix: '/es' },
+  { code: 'ar', prefix: '/ar' },
 ]
 
 // Locale-independent paths, expanded per locale below.
@@ -89,6 +91,8 @@ writeFileSync(new URL('../public/sitemap.xml', import.meta.url), xml)
 
 const esCatName = (slug) => (esCategories.categories[slug] && esCategories.categories[slug].name) || ''
 const esSubName = (slug) => esCategories.subcategories[slug] || ''
+const arCatName = (slug) => (arCategories.categories[slug] && arCategories.categories[slug].name) || ''
+const arSubName = (slug) => arCategories.subcategories[slug] || ''
 
 const llms = `# Century Auto Parts - Hebei Century Auto Parts Co., Ltd.
 > Professional manufacturer of wheel balancing weights, tyre valves, TPMS, tyre seal strings, tyre patches and mushroom patch plugs since 2010.
@@ -96,7 +100,7 @@ const llms = `# Century Auto Parts - Hebei Century Auto Parts Co., Ltd.
 Website: ${BASE}
 Phone: +86 15633632668
 Email: info@centurymanufacture.com
-Languages: English (${BASE}/), Spanish (${BASE}/es/)
+Languages: English (${BASE}/), Spanish (${BASE}/es/), Arabic (${BASE}/ar/)
 
 ## Pages
 - Home: ${BASE}/
@@ -114,11 +118,22 @@ Languages: English (${BASE}/), Spanish (${BASE}/es/)
 - Noticias: ${BASE}/es/news/
 - Contacto: ${BASE}/es/contact/
 
+## Arabic Pages
+- الرئيسية: ${BASE}/ar/
+- من نحن: ${BASE}/ar/about/
+- المنتجات: ${BASE}/ar/products/
+- الكتالوج: ${BASE}/ar/catalog/
+- الأخبار: ${BASE}/ar/news/
+- اتصل بنا: ${BASE}/ar/contact/
+
 ## Product Categories
 ${categories.map(c => `- ${c.name}: ${BASE}/products/${c.slug}/`).join('\n')}
 
 ## Categorías (Español)
 ${categories.map(c => `- ${esCatName(c.slug) || c.name}: ${BASE}/es/products/${c.slug}/`).join('\n')}
+
+## الفئات (العربية)
+${categories.map(c => `- ${arCatName(c.slug) || c.name}: ${BASE}/ar/products/${c.slug}/`).join('\n')}
 
 ## Subcategories & Products
 ${categories.map(c => {

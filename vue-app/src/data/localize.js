@@ -14,12 +14,15 @@ import {
 import esCategories from './es/categories'
 import esProducts from './es/products'
 import esArticles from './es/articles'
+import arCategories from './ar/categories'
+import arProducts from './ar/products'
+import arArticles from './ar/articles'
 
 export { PAGE_SIZE, NEWS_PER_PAGE, tagSlug }
 
-const CATEGORY_TRANSLATIONS = { es: esCategories }
-const PRODUCT_TRANSLATIONS = { es: esProducts }
-const ARTICLE_TRANSLATIONS = { es: esArticles }
+const CATEGORY_TRANSLATIONS = { es: esCategories, ar: arCategories }
+const PRODUCT_TRANSLATIONS = { es: esProducts, ar: arProducts }
+const ARTICLE_TRANSLATIONS = { es: esArticles, ar: arArticles }
 
 const cache = new Map()
 
