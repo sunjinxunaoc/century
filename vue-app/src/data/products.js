@@ -2107,6 +2107,9 @@ export const categories = [
           {
             slug: 'tyre-valve-stem-tr414-tr412-tr413-tr415',
             name: 'Tyre Valve Stem TR414 TR412 TR413 TR415',
+            // Family page with near-duplicate content of tr412-tr413-tr415-tr414-...:
+            // consolidate TR-series ranking signals onto the primary TR414 page.
+            canonical: '/products/tyre-valves/tr414-tyre-valve',
             seoTitle: 'Rubber Valve Stems TR412 TR413 TR414 TR415 | 11.5 & 15.8mm',
             image: '/images/products/tyre%20valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415001.webp',
             images: [
@@ -2163,7 +2166,9 @@ export const categories = [
             slug: 'tr412-tr413-tr415-tr414-tyre-valve-stem',
             name: 'TR412 TR413 TR415 TR414 Tyre Valve Stem',
             // Duplicate of the TR412-TR415 family page below (96% identical copy).
-            canonical: '/products/tyre-valves/tyre-valve-stem-tr414-tr412-tr413-tr415',
+            // Consolidate ranking signals to the primary TR414 page so `tr414` /
+            // `tr414 valve stem` weight is not split across near-duplicate pages.
+            canonical: '/products/tyre-valves/tr414-tyre-valve',
             image: '/images/products/tyre-valves/tr412-front-logo.webp',
             images: [
               '/images/products/tyre-valves/tr412-front-logo.webp',

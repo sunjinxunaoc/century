@@ -2687,12 +2687,13 @@
   {
     slug: 'tr413-vs-tr414-tyre-valve',
     title: 'TR413 vs TR414 Tyre Valves: Differences, Sizes & Fitment',
-    seoTitle: 'TR413 vs TR414 Tyre Valves: Sizes & Fitment',
+    seoTitle: 'TR413 vs TR414 Tyre Valves: Sizes, Differences & Wholesale',
     date: 'September 24, 2026',
     dateISO: '2026-09-24',
     tags: ['Comparison', 'Tyre Valves'],
     img: '/images/articles/tr413-vs-tr414-tyre-valve.webp',
     imgAlt: 'TR413 and TR414 rubber tyre valves',
+    seoDescription: 'TR413 vs TR414 tyre valves compared: same 11.5mm rim hole, 32mm vs 38mm stem length. Sizes, fitment and factory-direct wholesale supply.',
     desc: 'TR413 vs TR414 tyre valves compared: rim hole, effective length and fitment, plus how the whole TR412-TR415 family differs.',
     faq: [
       { q: 'What is the difference between a TR413 and a TR414 valve?', a: 'Both use the same 11.5 mm (.453") rim hole and differ only in effective length: the TR413 is 32 mm (1.25") and the TR414 is 38 mm (1.50"). Choose the length that positions the valve stem correctly for the specific wheel and any trim.' },

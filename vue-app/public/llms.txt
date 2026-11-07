@@ -159,7 +159,6 @@ Languages: English (https://centurymanufacture.com/), Spanish (https://centuryma
     - VS-8-90 Clamp-In Valve: https://centurymanufacture.com/products/tyre-valves/vs-8-90-clamp-in-valve/
     - VS-6 Clamp-In Valve: https://centurymanufacture.com/products/tyre-valves/vs-6-clamp-in-valve/
     - TR414 Tyre Valve: https://centurymanufacture.com/products/tyre-valves/tr414-tyre-valve/
-    - Tyre Valve Stem TR414 TR412 TR413 TR415: https://centurymanufacture.com/products/tyre-valves/tyre-valve-stem-tr414-tr412-tr413-tr415/
     - TR414C Tyre Valve Stem: https://centurymanufacture.com/products/tyre-valves/tr414c-tyre-valve-stem/
     - PVR70 PVR60 PVR50 PVR40 Valve Stem: https://centurymanufacture.com/products/tyre-valves/pvr70-pvr60-pvr50-pvr40-valve-stem/
     - PVR70 PVR60 PVR50 PVR40 Ventil: https://centurymanufacture.com/products/tyre-valves/pvr70-pvr60-pvr50-pvr40-ventil/
