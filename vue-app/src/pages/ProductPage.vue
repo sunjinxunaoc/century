@@ -2,13 +2,14 @@
 import { computed, ref, watch, onMounted, onBeforeUnmount } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
-import { findCategory, findSubcategory, findProduct, relatedProducts, PAGE_SIZE } from '../data/localize'
+import { findCategory, findSubcategory, findProduct, relatedProducts, guidesForCategory, guideTagSlug, tagBySlug, PAGE_SIZE } from '../data/localize'
 import PageHero from '../components/PageHero.vue'
 import ProductSidebar from '../components/ProductSidebar.vue'
 import ProductSearch from '../components/ProductSearch.vue'
 import BreadcrumbNav from '../components/BreadcrumbNav.vue'
 import ProductCard from '../components/ProductCard.vue'
 import CategoryCard from '../components/CategoryCard.vue'
+import ArticleCard from '../components/ArticleCard.vue'
 import SpecTable from '../components/SpecTable.vue'
 import Pagination from '../components/Pagination.vue'
 import CtaSection from '../components/CtaSection.vue'
@@ -25,12 +26,24 @@ const category = computed(() => findCategory(categorySlug.value, locale.value))
 const subcategory = computed(() => (slug.value ? findSubcategory(categorySlug.value, slug.value, locale.value) : null))
 const found = computed(() => (slug.value ? findProduct(categorySlug.value, slug.value, locale.value) : null))
 const product = computed(() => found.value?.product || null)
-const related = computed(() => (product.value ? relatedProducts(categorySlug.value, product.value.slug, 3, locale.value) : []))
+const related = computed(() => (product.value
+  ? relatedProducts(categorySlug.value, product.value.slug, 3, locale.value).filter((r) => !r.canonical)
+  : []))
+
+const guides = computed(() => (category.value ? guidesForCategory(categorySlug.value, 3, locale.value) : []))
+const guideTag = computed(() => {
+  const slug = guideTagSlug(categorySlug.value)
+  if (!slug) return null
+  const tag = tagBySlug(slug, locale.value)
+  return tag ? { slug, name: tag.name } : null
+})
 
 const featuredProducts = computed(() => {
   const list = []
   for (const sub of (category.value?.subcategories || [])) {
-    for (const pdt of (sub.products || [])) list.push(pdt)
+    for (const pdt of (sub.products || [])) {
+      if (!pdt.canonical) list.push(pdt)
+    }
   }
   return list.slice(0, 6)
 })
@@ -43,7 +56,10 @@ const totalPages = computed(() => {
 const pagedProducts = computed(() => {
   const products = subcategory.value?.products || []
   const start = (currentPage.value - 1) * PAGE_SIZE
-  return products.slice(start, start + PAGE_SIZE)
+  // Products that declare `canonical` are near-duplicates consolidated onto a
+  // primary page: they stay live (and self-reach only by direct URL) but are
+  // not shown in the catalogue grid.
+  return products.slice(start, start + PAGE_SIZE).filter((pdt) => !pdt.canonical)
 })
 
 const pageType = computed(() => {
@@ -121,7 +137,10 @@ useHead(() => {
   const path = isSubPaged && currentPage.value > 1
     ? `${canonicalPath.value}/page/${currentPage.value}`
     : canonicalPath.value
-  const url = absoluteUrl(`${path}/`)
+  // A product may declare its canonical target when it is a near-duplicate of a
+  // primary page, so ranking signals consolidate instead of splitting.
+  const canonicalTarget = pageType.value === 'product' ? product.value?.canonical : null
+  const url = absoluteUrl(`${canonicalTarget || path}/`)
   const desc = product.value?.desc || subcategory.value?.desc || category.value?.intro || pageTitle.value
   const tagline = product.value?.tagline || subcategory.value?.tagline || category.value?.tagline || ''
   const catName = category.value?.name || ''
@@ -204,7 +223,11 @@ useHead(() => {
       })),
     }),
   })
-  const faqSource = pageType.value === 'category' ? category.value : pageType.value === 'subcategory' ? subcategory.value : null
+  const faqSource = pageType.value === 'category'
+    ? category.value
+    : pageType.value === 'subcategory'
+      ? subcategory.value
+      : (locale.value === 'en' && product.value?.faqs?.length ? product.value : null)
   if (faqSource?.faqs?.length) {
     scripts.push({
       type: 'application/ld+json',
@@ -286,7 +309,7 @@ useHead(() => {
 
 <template>
   <div v-if="category">
-    <PageHero :title="pageTitle" :subtitle="product?.tagline || category.tagline" :heading-tag="product ? 'div' : 'h1'" />
+    <PageHero :title="pageTitle" :subtitle="product ? (found?.subcategory?.name || category.tagline) : category.tagline" :heading-tag="product ? 'div' : 'h1'" />
     <section class="py-16">
       <div class="container-app">
         <ProductSearch class="mb-10" />
@@ -322,6 +345,16 @@ useHead(() => {
                   <div class="w-12 h-0.5 bg-[#FF6B00] mt-4 mb-5"></div>
                   <p class="text-gray-500 leading-relaxed">{{ product.desc }}</p>
 
+                  <div v-if="locale === 'en' && product.features && product.features.length" class="mt-7">
+                    <h2 class="text-sm font-semibold uppercase tracking-wide text-gray-400 mb-3">{{ t('product.keyFeatures') }}</h2>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
+                      <li v-for="f in product.features" :key="f" class="flex items-start gap-2">
+                        <svg class="w-4 h-4 shrink-0 text-[#FF6B00] mt-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        <span class="text-sm text-gray-600 leading-relaxed">{{ f }}</span>
+                      </li>
+                    </ul>
+                  </div>
+
                   <div class="mt-8 pt-6 border-t border-gray-200">
                     <div class="flex flex-col sm:flex-row gap-3">
                       <RouterLink :to="p('/contact/')" class="btn btn-primary btn-large flex-1 justify-center">{{ t('common.requestQuote') }}</RouterLink>
@@ -340,6 +373,26 @@ useHead(() => {
                   <p class="text-gray-500">{{ t('product.specsFor', { name: product.name }) }}</p>
                 </div>
                 <SpecTable :headers="product.spec.headers" :rows="product.spec.rows" />
+              </div>
+
+              <div v-if="locale === 'en' && product.sections && product.sections.length" class="mt-14 space-y-10">
+                <section v-for="s in product.sections" :key="s.heading">
+                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-3">{{ s.heading }}</h2>
+                  <div class="article-content" v-html="s.html"></div>
+                </section>
+              </div>
+
+              <div v-if="locale === 'en' && product.faqs && product.faqs.length" class="mt-14">
+                <div class="section-header text-left">
+                  <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">{{ t('product.faq') }}</h2>
+                  <p class="text-gray-500">{{ t('product.faqSub', { name: product.name.toLowerCase() }) }}</p>
+                </div>
+                <div class="space-y-4">
+                  <div v-for="f in product.faqs" :key="f.q" class="card p-6">
+                    <h3 class="font-semibold text-[#1A1A2E] mb-2">{{ f.q }}</h3>
+                    <p class="text-gray-500 leading-relaxed">{{ f.a }}</p>
+                  </div>
+                </div>
               </div>
 
               <div class="mt-14" v-if="related.length">
@@ -455,6 +508,22 @@ useHead(() => {
                 </div>
               </div>
             </template>
+
+            <!-- GUIDES (internal links from catalogue to blog) -->
+            <div v-if="pageType !== 'product' && guides.length" class="mt-14">
+              <div class="section-header text-left">
+                <h2 class="text-2xl font-bold text-[#1A1A2E] mb-2">{{ t('product.guides') }}</h2>
+                <p class="text-gray-500">{{ t('product.guidesSub', { name: category.name.toLowerCase() }) }}</p>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <ArticleCard v-for="a in guides" :key="a.slug" :article="a" />
+              </div>
+              <div v-if="guideTag" class="mt-8">
+                <RouterLink :to="p(`/news/tag/${guideTag.slug}/`)" class="text-[#FF6B00] font-medium hover:underline">
+                  {{ t('product.guidesAll', { tag: guideTag.name }) }} &rarr;
+                </RouterLink>
+              </div>
+            </div>
           </div>
         </div>
       </div>

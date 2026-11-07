@@ -32,7 +32,7 @@ const productLinks = {
   'seal-string-repair': '/products/tyre-seal-string/',
   'ordering-guide': '/products/',
   'us-vs-eu-style-tire-patch': '/products/tyre-patch/',
-  'tr413-vs-tr414-tyre-valve': '/products/tyre-valves/passenger-car-light-truck-valves/',
+  'tr413-vs-tr414-tyre-valve': '/products/tyre-valves/tr414-tyre-valve/',
   'fe-vs-pb-wheel-weights': '/products/wheel-balancing-weights/',
   'mushroom-plug-vs-seal-string': '/products/mushroom-patch-plug/',
 }

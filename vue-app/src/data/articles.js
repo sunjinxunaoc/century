@@ -1243,12 +1243,13 @@
   {
     slug: 'clip-on-wheel-weights-guide',
     title: 'Clip-On Wheel Weights: The Complete Wholesale Buying Guide',
+    seoTitle: 'Clip-On Wheel Weights: Wholesale Buying Guide',
     date: 'September 26, 2026',
     dateISO: '2026-09-26',
     tags: ['Industry Guide', 'Wheel Weights'],
     img: '/images/articles/clip-on-wheel-weights-guide.webp',
     imgAlt: 'Clip-on wheel balancing weights with hooked steel clips',
-    desc: 'Wholesale guide to clip-on wheel weights: materials, clip profiles, weight series, packing and the supplier checks that separate a real factory from a trader.',
+    desc: 'Wholesale guide to clip-on wheel weights: steel and alloy rim fitment, clip profiles, weight sizes, packing and supplier checks.',
     faq: [
       { q: 'What are clip-on wheel weights?', a: 'Clip-on wheel weights are balancing weights with a metal spring clip that grips the rim flange. They are the standard choice for steel wheels and are also made for some alloy and truck rim profiles.' },
       { q: 'What materials are clip-on weights made from?', a: 'Fe (steel) is the lead-free standard and the most widely accepted. Zn (zinc) offers premium corrosion resistance for harsh climates, while Pb (lead) is restricted or banned in several markets.' },
@@ -1275,7 +1276,33 @@
           </tbody>
         </table>
       </div>
-      <p>The rule most workshops use: <strong>steel rims take clip-on weights, alloy rims take adhesive weights</strong>. Many distributors stock both - see our <a href="/news/adhesive-stick-on-wheel-weights-guide/">adhesive wheel weights guide</a> for the stick-on range.</p>
+      <p>The rule most workshops start with: <strong>steel rims take clip-on weights, alloy rims take adhesive weights</strong>. The real decision is the flange profile, which is covered in the two sections below. Many distributors stock both - see our <a href="/news/adhesive-stick-on-wheel-weights-guide/">adhesive wheel weights guide</a> for the stick-on range.</p>
+
+      <h2>Clip-on wheel weights for steel wheels</h2>
+      <p>Steel wheels are the natural home of the clip-on weight. The rolled steel flange is thick and consistent, so a spring clip can bite into it and stay put under load. On a steel rim, specify an <strong>MC</strong> clip profile - the standard steel-wheel clip - and choose the mass from the balancer reading.</p>
+      <figure>
+        <img src="/images/products/Wheel%20Balancing%20Weights/Fe-Clip-On-Wheel-Weight-Steel-Wheel.webp" alt="Fe clip-on wheel balancing weights for steel wheels" loading="lazy" decoding="async">
+        <figcaption>Fe clip-on weights for steel rims, 5 g to 60 g.</figcaption>
+      </figure>
+      <ul>
+        <li><strong>Weight range</strong> - 5 g to 60 g in 5 g steps covers almost every passenger car steel wheel.</li>
+        <li><strong>Surface</strong> - galvanized or plastic coated Fe resists rust on winter wheels, trailer rims and farm equipment.</li>
+        <li><strong>Flange condition</strong> - a heavily corroded or bent flange will not hold a clip securely; clean or replace the wheel instead of forcing a heavier weight on.</li>
+        <li><strong>Truck and light truck</strong> - commercial steel rims use hook-type clips sized to the rim width (6.50, 7.00, 7.50 and 9.0) with masses from 50 g to 300 g.</li>
+      </ul>
+
+      <h2>Clip-on wheel weights for aluminum (alloy) wheels</h2>
+      <p>Alloy wheels can take clip-on weights, but only with the correct alloy clip profile - usually <strong>FN</strong> or <strong>FNC</strong> - and only where the flange is designed for it. Many alloy wheels have a thin, painted or decorative flange, and on those an adhesive weight on the inner barrel is the safer choice. The rule is not "never clip-on an alloy"; it is "match the clip to the flange".</p>
+      <figure>
+        <img src="/images/products/Wheel%20Balancing%20Weights/Fe-Clip-On-Wheel-Weight-Alloy-Wheel.webp" alt="Fe clip-on wheel balancing weights for alloy wheels" loading="lazy" decoding="async">
+        <figcaption>Fe clip-on weights with an alloy-rim clip profile.</figcaption>
+      </figure>
+      <ul>
+        <li><strong>Profile first</strong> - FN and FNC clips are shaped for alloy flanges; an MC steel clip will not seat correctly.</li>
+        <li><strong>Protect the finish</strong> - a coated clip reduces the risk of chipping the lacquer and of galvanic corrosion between steel and aluminium.</li>
+        <li><strong>When to switch to adhesive</strong> - thin or damaged flanges, or any wheel where the clip leaves a visible mark on the face.</li>
+      </ul>
+      <p>If the flange is too thin for a clip, use <a href="/news/adhesive-stick-on-wheel-weights-guide/">adhesive wheel weights</a> instead, and check the <a href="/news/clip-on-wheel-weight-profiles/">clip profile guide</a> before specifying a mixed order.</p>
 
       <h2>Materials: Fe, Zn and Pb</h2>
       <div class="table-wrap">
@@ -1290,8 +1317,36 @@
       </div>
       <p><strong>Check compliance before you order.</strong> Lead is restricted or phased out in the EU, the UK, Canada and several US states, so steel and zinc are the safe default. See our <a href="/news/fe-vs-pb-wheel-weights/">Fe vs Pb comparison</a> for the full detail.</p>
 
-      <h2>Weight series and packing</h2>
-      <p>Car clip-on weights are usually packed 100 pcs / 50 pcs per box, while truck weights are packed 50 pcs / 25 pcs. Retail-ready and private label packing are available for distributors.</p>
+      <h2>Weight sizes and packing</h2>
+      <p>Clip-on weights are sold by mass, in gram series for most markets and OZ series for the US and UK. Packing follows the weight: light car weights are boxed in high counts, while truck weights are boxed in low counts because each piece is much heavier.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Series</th><th>Typical mass</th><th>Standard packing</th><th>Typical use</th></tr></thead>
+          <tbody>
+            <tr><td>Car clip-on (gram)</td><td>5 g - 60 g</td><td>50 or 100 pcs per box</td><td>Passenger car steel and alloy rims</td></tr>
+            <tr><td>Car clip-on (OZ)</td><td>1/4 oz - 2 oz</td><td>50 or 100 pcs per box</td><td>US and UK market car rims</td></tr>
+            <tr><td>Light truck hook type</td><td>50 g - 150 g</td><td>50 or 25 pcs per box</td><td>Light truck rims 6.50 / 7.00 / 7.50</td></tr>
+            <tr><td>Truck clip-on</td><td>50 g - 300 g</td><td>50 or 25 pcs per box</td><td>Commercial 9.0 truck rims</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Mixed models can be combined in one order and private label boxes are available for distributors. Confirm the box count in writing - "100 pcs" and "100 g" are easy to confuse on a specification sheet.</p>
+
+      <h2>How to install clip-on wheel weights</h2>
+      <p>Clip-on weights are fitted after the tyre is mounted and the wheel is on the balancer, because the correction plane depends on the imbalance reading. The sequence is the same for car and truck wheels - only the scale changes.</p>
+      <ol>
+        <li><strong>Mount and spin the wheel</strong> on the balancer and read the required mass for the inner and outer correction planes.</li>
+        <li><strong>Pick the weight</strong> closest to the indicated mass, in the clip profile that matches the rim flange.</li>
+        <li><strong>Seat the clip</strong> on the flange with a weight hammer or fitting pliers - the weight should sit flat against the flange with the clip fully engaged.</li>
+        <li><strong>Check the fit</strong> by hand: no movement, no gap between weight and flange, and no contact with the brake caliper or suspension.</li>
+        <li><strong>Re-spin the wheel</strong> to confirm the balance is within tolerance, and add or move weights as needed.</li>
+        <li><strong>Record the result</strong> - a wheel that keeps needing weight in the same place usually has a tyre or rim problem, not a weight problem.</li>
+      </ol>
+      <figure>
+        <img src="/images/products/Wheel%20Balancing%20Weights/Fe-Clip-On-Wheel-Weight-Truck-Galvanized.webp" alt="Galvanized Fe clip-on truck wheel balancing weights for 9.0 rims" loading="lazy" decoding="async">
+        <figcaption>Truck clip-on weights use a heavier hook clip on 9.0 commercial rims.</figcaption>
+      </figure>
+      <p>Never hammer a clip-on weight directly onto a painted alloy flange, and never reuse a weight whose clip has been bent open - it will not hold at speed. For the failure modes to watch for, see <a href="/news/clip-on-wheel-weights-durability/">why clip-on wheel weights break or corrode</a>.</p>
 
       <h2>What to check before you buy</h2>
       <ol>
@@ -2632,6 +2687,7 @@
   {
     slug: 'tr413-vs-tr414-tyre-valve',
     title: 'TR413 vs TR414 Tyre Valves: Differences, Sizes & Fitment',
+    seoTitle: 'TR413 vs TR414 Tyre Valves: Sizes & Fitment',
     date: 'September 24, 2026',
     dateISO: '2026-09-24',
     tags: ['Comparison', 'Tyre Valves'],
@@ -2669,6 +2725,7 @@
         <li><strong>Wheels with hubcaps or covers</strong> - the correct length keeps the valve reachable through the cover opening.</li>
       </ul>
       <p>Fitting a stem that is too short can make inflation awkward and cause the chuck to scratch the rim. Fitting one that is too long can let the valve foul a hubcap or protrude where it can be knocked. That is why a distributor should stock all three lengths rather than substituting one for another.</p>
+      <p>If you already know the 38 mm length is the one you need, the <a href="/products/tyre-valves/tr414-tyre-valve/">TR414 tyre valve product page</a> lists the full specification - 11.5 mm rim hole, A=38 mm, B=48 mm, 9002# core and VC8 cap - with bulk and private label packing options.</p>
 
       <h2>When the hole size changes: TR415</h2>
       <p>The TR415 exists because some wheels use a <strong>0.625" (15.8 mm)</strong> valve hole instead of the standard 0.453". A TR413 or TR414 will not seal a 15.8 mm hole, so the TR415 is the correct part for those fitments. Always confirm the rim hole before specifying a valve.</p>

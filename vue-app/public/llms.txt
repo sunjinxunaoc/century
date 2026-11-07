@@ -121,7 +121,6 @@ Languages: English (https://centurymanufacture.com/), Spanish (https://centuryma
     - PVR153-2.3 Valve Stem: https://centurymanufacture.com/products/tyre-valves/pvr153-2-3-valve-stem/
     - TR412 Snap-In Valve: https://centurymanufacture.com/products/tyre-valves/tr412-snap-in-valve/
     - TR413 Snap-In Valve: https://centurymanufacture.com/products/tyre-valves/tr413-snap-in-valve/
-    - TR414 Snap-In Tubeless Valve: https://centurymanufacture.com/products/tyre-valves/tr414-snap-in-tubeless-valve/
     - TR414L Snap-In Valve: https://centurymanufacture.com/products/tyre-valves/tr414l-snap-in-valve/
     - TR415 Snap-In Valve: https://centurymanufacture.com/products/tyre-valves/tr415-snap-in-valve/
     - TR418 Snap-In Valve: https://centurymanufacture.com/products/tyre-valves/tr418-snap-in-valve/
@@ -145,8 +144,6 @@ Languages: English (https://centurymanufacture.com/), Spanish (https://centuryma
     - VS-6 Clamp-In Valve: https://centurymanufacture.com/products/tyre-valves/vs-6-clamp-in-valve/
     - TR414 Tyre Valve: https://centurymanufacture.com/products/tyre-valves/tr414-tyre-valve/
     - Tyre Valve Stem TR414 TR412 TR413 TR415: https://centurymanufacture.com/products/tyre-valves/tyre-valve-stem-tr414-tr412-tr413-tr415/
-    - TR413 TR414 Valve: https://centurymanufacture.com/products/tyre-valves/tr413-tr414-valve/
-    - TR412 TR413 TR415 TR414 Tyre Valve Stem: https://centurymanufacture.com/products/tyre-valves/tr412-tr413-tr415-tr414-tyre-valve-stem/
     - TR414C Tyre Valve Stem: https://centurymanufacture.com/products/tyre-valves/tr414c-tyre-valve-stem/
     - PVR70 PVR60 PVR50 PVR40 Valve Stem: https://centurymanufacture.com/products/tyre-valves/pvr70-pvr60-pvr50-pvr40-valve-stem/
     - PVR70 PVR60 PVR50 PVR40 Ventil: https://centurymanufacture.com/products/tyre-valves/pvr70-pvr60-pvr50-pvr40-ventil/

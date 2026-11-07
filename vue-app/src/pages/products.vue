@@ -20,7 +20,7 @@ const allProducts = computed(() => {
   const out = []
   for (const cat of categories.value) {
     for (const sub of cat.subcategories || []) {
-      for (const pdt of sub.products || []) {
+      for (const pdt of (sub.products || []).filter((x) => !x.canonical)) {
         out.push({
           ...pdt,
           href: p(`/products/${cat.slug}/${pdt.slug}/`),

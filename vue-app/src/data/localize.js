@@ -123,6 +123,52 @@ export function relatedProducts(categorySlug, currentSlug, count = 3, locale = '
   return all.slice(0, count)
 }
 
+// Editorial picks: which guides to surface on each product category page so the
+// catalogue links back into the blog (and readers can jump from copy to specs).
+const CATEGORY_GUIDES = {
+  'wheel-balancing-weights': {
+    tag: 'Wheel Weights',
+    slugs: ['wheel-weight-guide', 'fe-vs-pb-wheel-weights', 'adhesive-stick-on-wheel-weights-guide'],
+  },
+  'tyre-valves': {
+    tag: 'Tyre Valves',
+    slugs: ['tyre-valve-guide', 'tr413-vs-tr414-tyre-valve', 'tyre-valve-sizes-dimensions'],
+  },
+  tpms: {
+    tag: 'TPMS',
+    slugs: ['tpms-valve-buying-guide', 'tpms-maintenance'],
+  },
+  'tyre-seal-string': {
+    tag: null,
+    slugs: ['seal-string-repair', 'mushroom-plug-vs-seal-string'],
+  },
+  'tyre-patch': {
+    tag: 'Tyre Patch',
+    slugs: ['tyre-patch-vs-plug', 'us-vs-eu-style-tire-patch', 'cold-patch-vs-hot-patch'],
+  },
+  'mushroom-patch-plug': {
+    tag: null,
+    slugs: ['mushroom-plug-vs-seal-string', 'tyre-patch-vs-plug'],
+  },
+}
+
+/** Articles to show as "guides" on a category page, in editorial order. */
+export function guidesForCategory(categorySlug, count = 3, locale = 'en') {
+  const entry = CATEGORY_GUIDES[categorySlug]
+  if (!entry) return []
+  const all = getArticles(locale)
+  return entry.slugs
+    .map((slug) => all.find((a) => a.slug === slug))
+    .filter(Boolean)
+    .slice(0, count)
+}
+
+/** Hub tag for the "view all" link, or null when the category has no tag hub. */
+export function guideTagSlug(categorySlug) {
+  const entry = CATEGORY_GUIDES[categorySlug]
+  return entry && entry.tag ? tagSlug(entry.tag) : null
+}
+
 export function getArticles(locale = 'en') {
   if (locale === 'en' || !ARTICLE_TRANSLATIONS[locale]) return enArticles
   return cached(`articles:${locale}`, () => {

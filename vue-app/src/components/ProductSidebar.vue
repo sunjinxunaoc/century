@@ -102,7 +102,7 @@ function toggleSub(slug) {
                 >&#9656;</button>
               </div>
               <ul v-if="openSubs.has(sub.slug)" class="ml-3 border-l-2 border-orange-200 pl-2 flex flex-col gap-0.5">
-                <li v-for="pdt in sub.products" :key="pdt.slug">
+                <li v-for="pdt in sub.products.filter((x) => !x.canonical)" :key="pdt.slug">
                   <RouterLink :to="p(`/products/${cat.slug}/${pdt.slug}/`)" class="sidebar-link" :class="{ active: product === pdt.slug }">{{ pdt.name }}</RouterLink>
                 </li>
               </ul>

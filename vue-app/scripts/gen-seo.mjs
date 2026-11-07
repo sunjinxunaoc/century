@@ -37,6 +37,9 @@ for (const cat of categories) {
       add(`/products/${cat.slug}/${sub.slug}/page/${page}/`, '0.8', 'monthly')
     }
     for (const p of sub.products || []) {
+      // Consolidated near-duplicates point their canonical elsewhere: keep them
+      // out of the sitemap so only the primary URL is submitted.
+      if (p.canonical) continue
       const imgs = [...(p.images || []), p.image]
       add(`/products/${cat.slug}/${p.slug}/`, '0.8', 'monthly', imgs)
     }
@@ -124,7 +127,7 @@ ${categories.map(c => {
   return `- ${c.name}: ${BASE}/products/${c.slug}/\n${subs.map(s => {
     const products = s.products || []
     if (!products.length) return `  - ${s.name}: ${BASE}/products/${c.slug}/${s.slug}/`
-    return `  - ${s.name}: ${BASE}/products/${c.slug}/${s.slug}/\n${products.map(p => `    - ${p.name}: ${BASE}/products/${c.slug}/${p.slug}/`).join('\n')}`
+    return `  - ${s.name}: ${BASE}/products/${c.slug}/${s.slug}/\n${products.filter(p => !p.canonical).map(p => `    - ${p.name}: ${BASE}/products/${c.slug}/${p.slug}/`).join('\n')}`
   }).join('\n')}`
 }).join('\n')}
 

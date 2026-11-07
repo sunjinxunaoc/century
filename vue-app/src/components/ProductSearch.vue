@@ -18,7 +18,7 @@ const allProducts = computed(() => {
   const out = []
   for (const cat of getCategories(locale.value)) {
     for (const sub of cat.subcategories || []) {
-      for (const pdt of sub.products || []) {
+      for (const pdt of (sub.products || []).filter((x) => !x.canonical)) {
         out.push({
           name: pdt.name,
           image: pdt.image,

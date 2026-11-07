@@ -6,6 +6,7 @@ node_modules
 # Build output
 dist
 dist-ssr
+dist.tar
 .vite-ssg-temp
 
 # Local env / logs
@@ -32,6 +33,10 @@ deploy-manifest.json
 .edge-tmp*
 .cache
 *.tmp
+
+# Ad-hoc translation audit / benchmark scripts (not part of the build)
+translate-bench.mjs
+scripts/_audit-*.mjs
 
 # PDF extraction / working files
 panels/

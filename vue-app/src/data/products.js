@@ -1330,6 +1330,9 @@ export const categories = [
           {
             slug: 'tr414-snap-in-tubeless-valve',
             name: 'TR414 Snap-In Tubeless Valve',
+            // Near-duplicate of /tr414-tyre-valve/: kept live for old links and
+            // search results, but consolidated onto the primary TR414 page.
+            canonical: '/products/tyre-valves/tr414-tyre-valve',
             image: '/images/products/tyre-valves/tr414-front-logo.webp',
             images: [
               '/images/products/tyre-valves/tr414-front-logo.webp',
@@ -2009,29 +2012,102 @@ export const categories = [
             images: [
               '/images/products/tyre-valves/tr414-front-logo.webp',
               '/images/products/tyre%20valves/tr414-tyre-valve002.webp',
+              '/images/products/tyre-valves/tr414-snap-in-tubeless-valve002.webp',
+              '/images/products/tyre-valves/tr414-snap-in-tubeless-valve003.webp',
+              '/images/products/tyre-valves/tr414-snap-in-tubeless-valve004.webp',
+              '/images/products/tyre-valves/tr414-snap-in-tubeless-valve005.webp',
             ],
-            tagline: 'High quality rubber tyre valve for passenger cars and light trucks. Ref V2.03.2, 11.5mm/.453" rim hole, 38mm/1.50" effective length.',
-            desc: 'The TR414 tyre valve is a high quality rubber valve stem designed for passenger cars and light trucks, offering a reliable, leak-proof seal for long service life. As a standard TR414 valve with an 11.5mm (.453") rim hole and 38mm (1.50") effective length, it is a direct replacement for most aftermarket and OEM passenger car applications. Our TR414 rubber tyre valves are factory-direct, precision built from high-grade vulcanized rubber with a brass core and cap, ensuring consistent air retention and easy installation. Suitable for inner tube and tubeless rims, available in bulk and with custom packaging for wholesale and export orders.',
+            seoTitle: 'TR414 Tyre Valve | 11.5mm Rim Hole, 38mm Stem, Wholesale',
+            tagline: 'Rubber snap-in tubeless valve for passenger cars and light trucks. Ref V2.03.2, 11.5mm/.453" rim hole, A=38mm/1.50" effective length, B=48mm.',
+            desc: 'The TR414 tyre valve is a high quality rubber valve stem designed for passenger cars and light trucks, offering a reliable, leak-proof seal for long service life. As a standard TR414 valve with an 11.5mm (.453") rim hole and 38mm (1.50") effective length, it is a direct replacement for most aftermarket and OEM passenger car applications. Our TR414 rubber tyre valves are factory-direct, precision built from high-grade vulcanized rubber with a brass core and cap, ensuring consistent air retention and easy installation. Suitable for tubeless passenger car and light truck rims, available in bulk and with custom packaging for wholesale and export orders.',
             keywords: 'TR414 tyre valve, TR414, TR414 valve stem, rubber tyre valve, passenger car tyre valve, TR414 rubber valve, car tyre valve, V2.03.2 valve, tyre valve wholesale',
             features: [
-              'Precision-engineered vulcanized rubber',
-              'Reliable leak-proof sealing',
-              '11.5mm (.453") rim hole, TR414 standard',
-              '38mm (1.50") effective length',
-              'Brass core & cap included',
-              'Easy installation, direct fit',
-              'Factory direct, OEM/ODM & bulk supply',
+              '11.5mm (.453") rim hole - standard TR414 fitment',
+              'A=38mm (1.50") effective length, B=48mm overall',
+              'Vulcanized rubber body with brass insert',
+              '9002# valve core and VC8 cap included',
+              'Leak-proof seal, direct replacement fit',
+              'For passenger car and light truck tubeless rims',
+              'Factory direct, OEM/ODM, bulk & private label',
             ],
             spec: {
-              headers: ['Model', 'Ref. No.', 'Rim Hole', 'Eff. Length', 'Core', 'Cap'],
+              headers: ['Model', 'Ref. No.', 'Rim Hole', 'A (Eff. Length)', 'B (Overall)', 'Core', 'Cap'],
               rows: [
-                ['TR414', 'V2.03.2', '11.5mm / .453"', '38mm / 1.50"', '9002#', 'VC8'],
+                ['TR414', 'V2.03.2', '11.5mm / .453"', '38mm / 1.50"', '48mm', '9002#', 'VC8'],
               ],
             },
+            sections: [
+              {
+                heading: 'What the TR414 valve fits',
+                html: `<p>The TR414 is the 38 mm member of the rubber snap-in valve family, so it fits any wheel that takes a standard <strong>11.5 mm (.453")</strong> valve hole. That covers the majority of passenger car wheels in service today, plus light vans, trailers and caravans that use the same hole size.</p>
+<ul>
+  <li><strong>Passenger cars and estates</strong> - the default replacement valve for standard steel and alloy wheels.</li>
+  <li><strong>Light vans and light trucks</strong> - where the wheel uses a snap-in hole rather than a metal clamp-in valve.</li>
+  <li><strong>Trailers and caravans</strong> - commonly specified with the higher-pressure TR414C.</li>
+  <li><strong>Steel and alloy rims</strong> - the rim material does not matter, only the hole size and the valve seat.</li>
+</ul>
+<p>It is <strong>not</strong> the right part for a 0.625" (15.8 mm) hole - that is the TR415 - or for wheels that use a metal clamp-in valve or a direct TPMS sensor. Measure the hole before ordering, and check our <a href="/news/tyre-valve-sizes-dimensions/">tyre valve sizes guide</a> if you are unsure which series you need.</p>`,
+              },
+              {
+                heading: 'TR414 vs TR412, TR413, TR414L and TR415',
+                html: `<p>These valves share the same rubber body and 9002# core; the difference is length and hole size. Choose by the space around the valve, not by what happens to be in stock.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Model</th><th>Rim hole</th><th>A - effective length</th><th>When to use it</th></tr></thead>
+<tbody>
+<tr><td>TR412</td><td>11.5 mm</td><td>22 mm</td><td>Shortest stem; compact steel wheels</td></tr>
+<tr><td>TR413</td><td>11.5 mm</td><td>32 mm</td><td>Standard passenger car wheels</td></tr>
+<tr><td><strong>TR414</strong></td><td>11.5 mm</td><td>38 mm</td><td>Deeper wheels, better chuck access, hubcaps</td></tr>
+<tr><td>TR414L</td><td>11.5 mm</td><td>46 mm</td><td>Long-stem applications and deep rims</td></tr>
+<tr><td>TR415</td><td>15.8 / 15.9 mm</td><td>32 mm</td><td>Only for the larger 0.625" hole</td></tr>
+</tbody>
+</table>
+</div>
+<p>A stem that is too short makes inflation awkward and can let the chuck scratch the rim; one that is too long can foul a hubcap. The full dimensional comparison, including core and cap references, is in our <a href="/news/tr413-vs-tr414-tyre-valve/">TR413 vs TR414 guide</a>, and the whole range is on the <a href="/products/tyre-valves/passenger-car-light-truck-valves/">passenger car and light truck valve page</a>.</p>`,
+              },
+              {
+                heading: 'Materials and construction',
+                html: `<p>The valve body is moulded from vulcanized rubber around a brass insert, which gives a flexible seal against the rim while keeping a rigid thread for the core. Each TR414 is supplied complete with a <strong>9002# valve core</strong> and a <strong>VC8 cap</strong>, so it can be fitted straight from the box.</p>
+<ul>
+  <li><strong>Rubber body</strong> - seals against the rim hole and absorbs vibration and rim flex.</li>
+  <li><strong>Brass insert</strong> - holds the core thread and resists corrosion better than a plain steel insert.</li>
+  <li><strong>9002# core</strong> - the standard replaceable core used across the TR range.</li>
+  <li><strong>VC8 cap</strong> - seals the stem against dirt and moisture; replace it whenever a valve is changed.</li>
+</ul>
+<p>Because the seal is made by rubber compression against the rim, a clean, undamaged hole matters more than any other factor. Cores and caps are also available separately as consumables - see the <a href="/news/tyre-valve-cores/">valve cores guide</a>.</p>`,
+              },
+              {
+                heading: 'How to fit a TR414 snap-in valve',
+                html: `<ol>
+  <li><strong>Deflate the tyre</strong> and, where access is tight, break the bead so you can reach the valve from inside the rim.</li>
+  <li><strong>Remove the old valve</strong> by pulling it out from the inside of the rim.</li>
+  <li><strong>Clean the rim hole</strong> and remove old rubber, sealant or corrosion. Never enlarge or ream the hole.</li>
+  <li><strong>Lubricate the new valve</strong> with tyre soap or mounting paste - never oil or grease, which attacks rubber.</li>
+  <li><strong>Pull the valve through</strong> with a valve puller until the bead seats fully against the outside of the rim.</li>
+  <li><strong>Check the seat</strong> - the valve should sit square with no gap or distortion around the base.</li>
+  <li><strong>Inflate and leak-test</strong> the valve with soapy water before fitting the cap.</li>
+</ol>
+<p>A snap-in valve is a single-use part: once it has been pulled through, replace it rather than reusing it. If the hole is corroded or oversized, the wheel needs a clamp-in valve or a repair, not a larger rubber valve.</p>`,
+              },
+              {
+                heading: 'Ordering, packing and private label',
+                html: `<p>TR414 valves are supplied in bulk cartons for distributors, workshops and OEM programmes, with private label packing available. Because TR412, TR413 and TR414 look almost identical, label every carton by model and keep the lengths separated in the warehouse - shipping the wrong length is the most common order error in this product family.</p>
+<p>We also supply the matching <strong>9002# cores</strong>, <strong>VC8 caps</strong> and the high-pressure <strong>TR414C</strong> for light commercial and trailer use. Send your size list and volumes through the <a href="/contact/">contact form</a> for a quotation, or browse the full <a href="/products/tyre-valves/">tyre valves range</a>.</p>`,
+              },
+            ],
+            faqs: [
+              { q: 'What size rim hole does a TR414 valve fit?', a: 'The TR414 fits the standard 11.5 mm (.453") rim hole used on most passenger car and light truck wheels. It will not seal a 0.625" (15.8 mm) hole - that size takes a TR415.' },
+              { q: 'What is the difference between a TR413 and a TR414?', a: 'Both use the same 11.5 mm rim hole. The TR413 has a 32 mm effective length and the TR414 is longer at 38 mm, which gives better access to the valve on deeper wheels and behind hubcaps.' },
+              { q: 'What do the A and B dimensions mean on a TR414?', a: 'A is the effective length - 38 mm (1.50") on a TR414 - measured from the rim seat to the top of the stem. B is the overall length including the base, 48 mm on a TR414.' },
+              { q: 'Does a TR414 come with a valve core and cap?', a: 'Yes. Every TR414 is supplied with a 9002# valve core and a VC8 cap fitted, and both are also available separately as consumables for workshops and distributors.' },
+              { q: 'Is there a high-pressure version of the TR414?', a: 'Yes - the TR414C is the heavy-duty version for light commercial and trailer applications, using the same 11.5 mm hole and 38 mm length. Specify the TR414C where standard passenger valves are marginal.' },
+              { q: 'Can I buy TR414 valves in bulk with my own branding?', a: 'Yes. We supply TR414 valves factory-direct in bulk cartons, with OEM/ODM and private label packing available. Send your size list and quantities for a quotation.' },
+            ],
           },
           {
             slug: 'tyre-valve-stem-tr414-tr412-tr413-tr415',
             name: 'Tyre Valve Stem TR414 TR412 TR413 TR415',
+            seoTitle: 'Rubber Valve Stems TR412 TR413 TR414 TR415 | 11.5 & 15.8mm',
             image: '/images/products/tyre%20valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415001.webp',
             images: [
               '/images/products/tyre%20valves/tyre-valve-stem-Tr414-Tr412-Tr413-Tr415001.webp',
@@ -2059,6 +2135,8 @@ export const categories = [
           {
             slug: 'tr413-tr414-valve',
             name: 'TR413 TR414 Valve',
+            // Two-model page superseded by the expanded TR414 page.
+            canonical: '/products/tyre-valves/tr414-tyre-valve',
             image: '/images/products/tyre-valves/tr413-front-logo.webp',
             images: [
               '/images/products/tyre-valves/tr413-front-logo.webp',
@@ -2084,6 +2162,8 @@ export const categories = [
           {
             slug: 'tr412-tr413-tr415-tr414-tyre-valve-stem',
             name: 'TR412 TR413 TR415 TR414 Tyre Valve Stem',
+            // Duplicate of the TR412-TR415 family page below (96% identical copy).
+            canonical: '/products/tyre-valves/tyre-valve-stem-tr414-tr412-tr413-tr415',
             image: '/images/products/tyre-valves/tr412-front-logo.webp',
             images: [
               '/images/products/tyre-valves/tr412-front-logo.webp',
