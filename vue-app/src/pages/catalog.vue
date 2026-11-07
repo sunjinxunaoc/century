@@ -6,6 +6,7 @@ import CtaSection from '../components/CtaSection.vue'
 import { getCategories } from '../data/localize'
 import { trackAdsConversion, trackEvent } from '../composables/useConversion'
 import { useI18n, absoluteUrl } from '../i18n'
+import { buildWecomPayload } from '../lib/wecom'
 
 const { t, tm, locale, p } = useI18n()
 
@@ -43,10 +44,12 @@ useHead(() => {
   }
 })
 
-const form = reactive({ name: '', company: '', country: '', whatsapp: '', email: '' })
+const form = reactive({ name: '', company: '', country: '', whatsapp: '', email: '', _gotcha: '' })
 const sending = ref(false)
 const submitted = ref(false)
 const error = ref('')
+
+const FORM_ENDPOINT = import.meta.env.VITE_FORM_ENDPOINT || '/api/inquiry'
 
 const categories = computed(() =>
   getCategories(locale.value).map((cat) => ({
@@ -56,34 +59,31 @@ const categories = computed(() =>
   }))
 )
 
+const catalogUrl = '/downloads/century-auto-parts-catalog-2026.pdf'
+
 async function onSubmit() {
   if (sending.value) return
+  if (form._gotcha) return
+  if (!form.whatsapp.trim() && !form.email.trim()) {
+    error.value = t('common.atLeastOneContact')
+    return
+  }
   sending.value = true
   error.value = ''
-
-  const payload = new FormData()
-  payload.append('name', form.name)
-  payload.append('company', form.company)
-  payload.append('country', form.country)
-  payload.append('whatsapp', form.whatsapp)
-  payload.append('email', form.email)
-  payload.append('_subject', `Catalog Download Request - ${form.name || 'website'} - ${form.company || 'N/A'}`)
-  payload.append('_replyto', form.email)
-  payload.append('_template', 'table')
+  submitted.value = false
 
   try {
-    const res = await fetch('https://formsubmit.co/ajax/info@centurymanufacture.com', {
+    const res = await fetch(FORM_ENDPOINT, {
       method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: payload,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(buildWecomPayload({ type: 'catalog', ...form })),
     })
-    if (res.ok) {
+    const data = await res.json().catch(() => ({}))
+    if (res.ok && data.errcode === 0) {
       submitted.value = true
       if (typeof window.gtag === 'function') {
         window.gtag('event', 'catalog_download', { location: 'lead_form' })
-        window.gtag('event', 'generate_lead', {
-          form: 'catalog_quote',
-        })
+        window.gtag('event', 'generate_lead', { form: 'catalog_quote' })
       }
       form.name = ''
       form.company = ''
@@ -99,8 +99,6 @@ async function onSubmit() {
     sending.value = false
   }
 }
-
-const catalogUrl = '/downloads/century-auto-parts-catalog-2026.pdf'
 
 function trackCatalogDownload() {
   if (typeof window.gtag === 'function') {
@@ -145,6 +143,7 @@ onMounted(() => {
             <h2 class="text-2xl font-bold text-[#1A1A2E] mb-4">{{ t('catalog.quoteTitle') }}</h2>
             <p class="text-gray-500 text-sm mb-6">{{ t('catalog.quoteText') }}</p>
             <form @submit.prevent="onSubmit" class="space-y-4">
+              <input type="text" name="_gotcha" v-model="form._gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
               <div>
                 <label class="block text-sm font-medium text-gray-600 mb-1">{{ t('catalog.form.name') }}</label>
                 <input v-model="form.name" type="text" required :placeholder="t('catalog.form.namePh')"
@@ -162,15 +161,15 @@ onMounted(() => {
               </div>
               <div>
                 <label class="block text-sm font-medium text-gray-600 mb-1">{{ t('catalog.form.whatsapp') }}</label>
-                <input v-model="form.whatsapp" type="tel" required :placeholder="t('catalog.form.whatsappPh')"
+                <input v-model="form.whatsapp" type="tel" :placeholder="t('catalog.form.whatsappPh')"
                   class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF6B00]">
               </div>
               <div>
                 <label class="block text-sm font-medium text-gray-600 mb-1">{{ t('catalog.form.email') }}</label>
-                <input v-model="form.email" type="email" required :placeholder="t('catalog.form.emailPh')"
+                <input v-model="form.email" type="email" :placeholder="t('catalog.form.emailPh')"
                   class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF6B00]">
               </div>
-              <button type="submit" :disabled="sending" id="submitBtn"
+              <button type="submit" :disabled="sending"
                 class="w-full btn btn-primary" :class="{ 'opacity-60': sending }">
                 {{ sending ? t('common.sending') : t('catalog.form.submit') }}
               </button>

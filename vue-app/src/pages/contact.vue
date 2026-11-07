@@ -4,6 +4,7 @@ import { useHead } from '@unhead/vue'
 import PageHero from '../components/PageHero.vue'
 import { trackEvent } from '../composables/useConversion'
 import { useI18n, absoluteUrl } from '../i18n'
+import { buildWecomPayload } from '../lib/wecom'
 
 const { t, tm } = useI18n()
 
@@ -24,10 +25,12 @@ useHead(() => ({
   ],
 }))
 
-const form = reactive({ name: '', email: '', mobile: '', product: 'Wheel Balancing Weights', message: '' })
+const form = reactive({ name: '', email: '', mobile: '', product: 'Wheel Balancing Weights', message: '', _gotcha: '' })
 const sending = ref(false)
 const submitted = ref(false)
 const error = ref('')
+
+const FORM_ENDPOINT = import.meta.env.VITE_FORM_ENDPOINT || '/api/inquiry'
 
 const productOptions = computed(() => tm('contact.productOptions'))
 
@@ -47,26 +50,23 @@ onMounted(() => {
 
 async function onSubmit() {
   if (sending.value) return
+  if (form._gotcha) return
+  if (!form.email.trim() && !form.mobile.trim()) {
+    error.value = t('common.atLeastOneContact')
+    return
+  }
   sending.value = true
   error.value = ''
-
-  const payload = new FormData()
-  payload.append('name', form.name)
-  payload.append('email', form.email)
-  payload.append('mobile', form.mobile)
-  payload.append('product', form.product)
-  payload.append('message', form.message)
-  payload.append('_subject', `New Inquiry from ${form.name || 'website'} - ${form.product}`)
-  payload.append('_replyto', form.email)
-  payload.append('_template', 'table')
+  submitted.value = false
 
   try {
-    const res = await fetch('https://formsubmit.co/ajax/info@centurymanufacture.com', {
+    const res = await fetch(FORM_ENDPOINT, {
       method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: payload,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(buildWecomPayload({ type: 'contact', ...form })),
     })
-    if (res.ok) {
+    const data = await res.json().catch(() => ({}))
+    if (res.ok && data.errcode === 0) {
       submitted.value = true
       trackEvent('generate_lead', {
         form: 'contact_inquiry',
@@ -114,6 +114,7 @@ async function onSubmit() {
           <div class="bg-white border border-gray-200 rounded-lg shadow-card p-8">
             <h2 class="text-2xl font-bold text-[#1A1A2E] mb-6">{{ t('contact.formTitle') }}</h2>
             <form @submit.prevent="onSubmit" class="space-y-4">
+              <input type="text" name="_gotcha" v-model="form._gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
               <div>
                 <label class="block text-sm font-medium text-gray-600 mb-1">{{ t('contact.form.name') }}</label>
                 <input v-model="form.name" type="text" required :placeholder="t('contact.form.namePh')"
@@ -121,7 +122,7 @@ async function onSubmit() {
               </div>
               <div>
                 <label class="block text-sm font-medium text-gray-600 mb-1">{{ t('contact.form.email') }}</label>
-                <input v-model="form.email" type="email" required :placeholder="t('contact.form.emailPh')"
+                <input v-model="form.email" type="email" :placeholder="t('contact.form.emailPh')"
                   class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF6B00]">
               </div>
               <div>
@@ -140,7 +141,7 @@ async function onSubmit() {
                 <textarea v-model="form.message" rows="4" required :placeholder="t('contact.form.messagePh')"
                   class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF6B00]"></textarea>
               </div>
-              <button type="submit" :disabled="sending" id="submitBtn"
+              <button type="submit" :disabled="sending"
                 class="w-full btn btn-primary" :class="{ 'opacity-60': sending }">
                 {{ sending ? t('common.sending') : t('contact.form.submit') }}
               </button>

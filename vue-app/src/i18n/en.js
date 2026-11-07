@@ -61,16 +61,17 @@ export default {
     onlineNow: 'Online now',
     chatWithUs: 'Chat with us',
     chatOnWhatsApp: 'Chat on WhatsApp',
+    atLeastOneContact: 'Please provide at least one of Email or WhatsApp so we can reach you.',
   },
 
   home: {
     hero: {
       badge: 'Since 2010 · Exported to 50+ Countries',
-      titleStart: 'Wheel Weight',
-      titleHighlight: 'Manufacturer',
+      titleStart: 'Wheel Weight in',
+      titleHighlight: 'Bulk',
       titleEnd: 'for Global Markets',
-      valveTitleStart: 'Tyre Valve',
-      valveTitleHighlight: 'Manufacturer',
+      valveTitleStart: 'Tyre Valve in',
+      valveTitleHighlight: 'Bulk',
       valveTitleEnd: 'for Global Markets',
       subtitle:
         'Wheel balancing weights, tyre valves, TPMS, patches and repair materials - manufactured and exported worldwide with factory-direct quality and pricing.',
@@ -92,11 +93,11 @@ export default {
       { value: '24/7', label: 'Support' },
     ],
     intro: {
-      title: 'A Wheel Weight Manufacturer You Can Audit',
+      title: 'A Tyre Repair Products Supplier You Can Audit',
       paragraph1:
-        "Hebei Century Auto Parts Co., Ltd. has manufactured wheel balancing weights since 2010 in Yanshan County, Hebei Province - one of China's main tyre-repair product clusters. Unlike trading companies, we stamp, coat and pack every weight in our own factory, so the samples you approve are the goods you receive.",
+        "Hebei Century Auto Parts Co., Ltd. has manufactured tyre repair products since 2010 in Yanshan County, Hebei Province - one of China's main tyre-repair product clusters. Unlike trading companies, we stamp, coat and pack our own goods in our own factory, so the samples you approve are the products you receive.",
       paragraph2:
-        'Our range covers clip-on and adhesive (stick-on) wheel weights in Fe (steel) and Pb (lead), gram and OZ series from 5 g up to 500 g for truck wheels, plus tyre valves, TPMS stems and tyre repair materials for consolidated shipping. We export directly to distributors in 50+ countries across North America, the Middle East, Europe and Africa, with OEM and private label programs for importers building their own brand.',
+        'Our range covers wheel balancing weights (clip-on and adhesive in Fe, Zn &amp; Pb, gram and OZ series from 5 g up to 500 g for truck wheels), tyre valves, TPMS stems, tyre seal strings, tyre patches and mushroom patch plugs - everything a tyre service aisle needs. We export directly to distributors in 50+ countries across North America, the Middle East, Europe and Africa, with OEM and private label programs for importers building their own brand.',
       pillars: [
         { title: 'Own Factory', desc: 'Stamping, coating & packing in-house' },
         { title: 'OEM / ODM', desc: 'Private label cartons & tape liner' },

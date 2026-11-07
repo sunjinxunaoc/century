@@ -67,17 +67,19 @@ export default {
     onlineNow: 'En línea ahora',
     chatWithUs: 'Chatee con nosotros',
     chatOnWhatsApp: 'Chatear por WhatsApp',
+    atLeastOneContact:
+      'Proporcione al menos un correo electrónico o WhatsApp para que podamos contactarle.',
   },
 
   home: {
     hero: {
       badge: 'Desde 2010 · Exportamos a más de 50 países',
-      titleStart: 'Fabricante de',
-      titleHighlight: 'contrapesos',
-      titleEnd: 'para ruedas y mercados internacionales',
-      valveTitleStart: 'Fabricante de',
-      valveTitleHighlight: 'válvulas para neumáticos',
-      valveTitleEnd: 'para los mercados internacionales',
+      titleStart: 'Contrapesos al',
+      titleHighlight: 'por mayor',
+      titleEnd: 'para mercados internacionales',
+      valveTitleStart: 'Válvulas para neumáticos al',
+      valveTitleHighlight: 'por mayor',
+      valveTitleEnd: 'para mercados internacionales',
       subtitle:
         'Contrapesos de equilibrado, válvulas para neumáticos, TPMS, parches y materiales de reparación: fabricados y exportados a todo el mundo con calidad y precio directos de fábrica.',
       newLabel: 'Nuevo:',
@@ -98,11 +100,11 @@ export default {
       { value: '24/7', label: 'Atención' },
     ],
     intro: {
-      title: 'Un fabricante de contrapesos que puede auditar',
+      title: 'Un proveedor de productos para reparación de neumáticos que puede auditar',
       paragraph1:
-        'Hebei Century Auto Parts Co., Ltd. fabrica contrapesos de equilibrado desde 2010 en el condado de Yanshan, provincia de Hebei, uno de los principales clústeres chinos de productos para reparación de neumáticos. A diferencia de las empresas comerciales, estampamos, recubrimos y empaquetamos cada contrapeso en nuestra propia planta: la muestra que usted aprueba es la mercancía que recibe.',
+        'Hebei Century Auto Parts Co., Ltd. fabrica productos para reparación de neumáticos desde 2010 en el condado de Yanshan, provincia de Hebei, uno de los principales clústeres chinos de productos para reparación de neumáticos. A diferencia de las empresas comerciales, estampamos, recubrimos y empaquetamos nuestros propios productos en nuestra propia planta: la muestra que usted aprueba es el producto que recibe.',
       paragraph2:
-        'Nuestra gama incluye contrapesos de clip y adhesivos (autoadhesivos) en Fe (acero) y Pb (plomo), series en gramos y en onzas desde 5 g hasta 500 g para ruedas de camión, además de válvulas, vástagos TPMS y materiales de reparación para consolidar envíos. Exportamos directamente a distribuidores de más de 50 países de Norteamérica, Oriente Medio, Europa y África, con programas OEM y de marca privada para importadores que construyen su propia marca.',
+        'Nuestra gama incluye contrapesos de equilibrado (de clip y adhesivos en Fe, Zn y Pb, series en gramos y en onzas desde 5 g hasta 500 g para ruedas de camión), válvulas para neumáticos, vástagos TPMS, tiras sellantes, parches y tapones de hongo: todo lo que necesita una línea de servicio de neumáticos. Exportamos directamente a distribuidores de más de 50 países de Norteamérica, Oriente Medio, Europa y África, con programas OEM y de marca privada para importadores que construyen su propia marca.',
       pillars: [
         { title: 'Fábrica propia', desc: 'Estampado, recubrimiento y embalaje internos' },
         { title: 'OEM / ODM', desc: 'Cajas y cinta con su marca' },

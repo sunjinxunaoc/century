@@ -63,6 +63,7 @@ const banners = computed(() => [
   },
 ])
 const idx = ref(0)
+const current = computed(() => banners.value[idx.value])
 let timer = null
 
 function next() {
