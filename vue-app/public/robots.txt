@@ -60,5 +60,6 @@ Allow: /
 User-agent: *
 Allow: /
 
-# ---- Sitemaps (incl. the llms.txt discovery hint) ----
+# ---- Sitemaps & llms.txt ----
 Sitemap: https://centurymanufacture.com/sitemap.xml
+# llms.txt: https://centurymanufacture.com/llms.txt

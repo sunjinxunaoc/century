@@ -97,66 +97,66 @@ const arSubName = (slug) => arCategories.subcategories[slug] || ''
 const llms = `# Century Auto Parts - Hebei Century Auto Parts Co., Ltd.
 > Professional manufacturer of wheel balancing weights, tyre valves, TPMS, tyre seal strings, tyre patches and mushroom patch plugs since 2010.
 
-Website: ${BASE}
+Website: [centurymanufacture.com](${BASE})
 Phone: +86 15633632668
 Email: info@centurymanufacture.com
-Languages: English (${BASE}/), Spanish (${BASE}/es/), Arabic (${BASE}/ar/)
+Languages: [English](${BASE}/), [Spanish](${BASE}/es/), [Arabic](${BASE}/ar/)
 
 ## Pages
-- Home: ${BASE}/
-- About Us: ${BASE}/about/
-- Products: ${BASE}/products/
-- Catalog: ${BASE}/catalog/
-- News: ${BASE}/news/
-- Contact: ${BASE}/contact/
+- [Home](${BASE}/)
+- [About Us](${BASE}/about/)
+- [Products](${BASE}/products/)
+- [Catalog](${BASE}/catalog/)
+- [News](${BASE}/news/)
+- [Contact](${BASE}/contact/)
 
 ## Spanish Pages
-- Inicio: ${BASE}/es/
-- Nosotros: ${BASE}/es/about/
-- Productos: ${BASE}/es/products/
-- Catálogo: ${BASE}/es/catalog/
-- Noticias: ${BASE}/es/news/
-- Contacto: ${BASE}/es/contact/
+- [Inicio](${BASE}/es/)
+- [Nosotros](${BASE}/es/about/)
+- [Productos](${BASE}/es/products/)
+- [Catálogo](${BASE}/es/catalog/)
+- [Noticias](${BASE}/es/news/)
+- [Contacto](${BASE}/es/contact/)
 
 ## Arabic Pages
-- الرئيسية: ${BASE}/ar/
-- من نحن: ${BASE}/ar/about/
-- المنتجات: ${BASE}/ar/products/
-- الكتالوج: ${BASE}/ar/catalog/
-- الأخبار: ${BASE}/ar/news/
-- اتصل بنا: ${BASE}/ar/contact/
+- [الرئيسية](${BASE}/ar/)
+- [من نحن](${BASE}/ar/about/)
+- [المنتجات](${BASE}/ar/products/)
+- [الكتالوج](${BASE}/ar/catalog/)
+- [الأخبار](${BASE}/ar/news/)
+- [اتصل بنا](${BASE}/ar/contact/)
 
 ## Product Categories
 ${categories.map(c => {
   const intro = (c.intro || '').replace(/\s+/g, ' ').trim()
-  return `- ${c.name}: ${BASE}/products/${c.slug}/${intro ? ` — ${intro}` : ''}`
+  return `- [${c.name}](${BASE}/products/${c.slug}/)${intro ? `: ${intro}` : ''}`
 }).join('\n')}
 
 ## Categorías (Español)
-${categories.map(c => `- ${esCatName(c.slug) || c.name}: ${BASE}/es/products/${c.slug}/`).join('\n')}
+${categories.map(c => `- [${esCatName(c.slug) || c.name}](${BASE}/es/products/${c.slug}/)`).join('\n')}
 
 ## الفئات (العربية)
-${categories.map(c => `- ${arCatName(c.slug) || c.name}: ${BASE}/ar/products/${c.slug}/`).join('\n')}
+${categories.map(c => `- [${arCatName(c.slug) || c.name}](${BASE}/ar/products/${c.slug}/)`).join('\n')}
 
 ## Subcategories & Products
 ${categories.map(c => {
   const subs = c.subcategories || []
-  if (!subs.length) return `- ${c.name}: ${BASE}/products/${c.slug}/`
-  return `- ${c.name}: ${BASE}/products/${c.slug}/\n${subs.map(s => {
+  if (!subs.length) return `- [${c.name}](${BASE}/products/${c.slug}/)`
+  return `- [${c.name}](${BASE}/products/${c.slug}/)\n${subs.map(s => {
     const products = s.products || []
-    if (!products.length) return `  - ${s.name}: ${BASE}/products/${c.slug}/${s.slug}/`
-    return `  - ${s.name}: ${BASE}/products/${c.slug}/${s.slug}/\n${products.filter(p => !p.canonical).map(p => `    - ${p.name}: ${BASE}/products/${c.slug}/${p.slug}/`).join('\n')}`
+    if (!products.length) return `  - [${s.name}](${BASE}/products/${c.slug}/${s.slug}/)`
+    return `  - [${s.name}](${BASE}/products/${c.slug}/${s.slug}/)\n${products.filter(p => !p.canonical).map(p => `    - [${p.name}](${BASE}/products/${c.slug}/${p.slug}/)`).join('\n')}`
   }).join('\n')}`
 }).join('\n')}
 
 ## News & Guides
 ${articles.map(a => {
   const ad = (a.desc || '').replace(/\s+/g, ' ').trim()
-  return `- ${a.title}: ${BASE}/news/${a.slug}/${ad ? ` — ${ad}` : ''}`
+  return `- [${a.title}](${BASE}/news/${a.slug}/)${ad ? `: ${ad}` : ''}`
 }).join('\n')}
 
 ## Topics
-${hubTags.map(t => `- ${t.name} (${t.articles.length} articles): ${BASE}/news/tag/${t.slug}/`).join('\n')}
+${hubTags.map(t => `- [${t.name} (${t.articles.length} articles)](${BASE}/news/tag/${t.slug}/)`).join('\n')}
 
 ## Preferred Pronouns
 The company uses 'we' and 'our' when referring to itself.
