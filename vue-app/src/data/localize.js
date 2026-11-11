@@ -17,12 +17,21 @@ import esArticles from './es/articles'
 import arCategories from './ar/categories'
 import arProducts from './ar/products'
 import arArticles from './ar/articles'
+import deCategories from './de/categories'
+import deProducts from './de/products'
+import deArticles from './de/articles'
+import ptCategories from './pt/categories'
+import ptProducts from './pt/products'
+import ptArticles from './pt/articles'
+import ruCategories from './ru/categories'
+import ruProducts from './ru/products'
+import ruArticles from './ru/articles'
 
 export { PAGE_SIZE, NEWS_PER_PAGE, tagSlug }
 
-const CATEGORY_TRANSLATIONS = { es: esCategories, ar: arCategories }
-const PRODUCT_TRANSLATIONS = { es: esProducts, ar: arProducts }
-const ARTICLE_TRANSLATIONS = { es: esArticles, ar: arArticles }
+const CATEGORY_TRANSLATIONS = { es: esCategories, ar: arCategories, de: deCategories, pt: ptCategories, ru: ruCategories }
+const PRODUCT_TRANSLATIONS = { es: esProducts, ar: arProducts, de: deProducts, pt: ptProducts, ru: ruProducts }
+const ARTICLE_TRANSLATIONS = { es: esArticles, ar: arArticles, de: deArticles, pt: ptArticles, ru: ruArticles }
 
 const cache = new Map()
 

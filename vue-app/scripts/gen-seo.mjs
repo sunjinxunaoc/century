@@ -3,6 +3,9 @@ import { categories, PAGE_SIZE } from '../src/data/products.js'
 import { articles, hubTags, NEWS_PER_PAGE } from '../src/data/articles.js'
 import esCategories from '../src/data/es/categories.js'
 import arCategories from '../src/data/ar/categories.js'
+import deCategories from '../src/data/de/categories.js'
+import ptCategories from '../src/data/pt/categories.js'
+import ruCategories from '../src/data/ru/categories.js'
 
 const BASE = 'https://centurymanufacture.com'
 const lastmod = new Date().toISOString().slice(0, 10)
@@ -12,6 +15,9 @@ const LOCALES = [
   { code: 'en', prefix: '' },
   { code: 'es', prefix: '/es' },
   { code: 'ar', prefix: '/ar' },
+  { code: 'de', prefix: '/de' },
+  { code: 'pt', prefix: '/pt' },
+  { code: 'ru', prefix: '/ru' },
 ]
 
 // Locale-independent paths, expanded per locale below.
@@ -93,6 +99,12 @@ const esCatName = (slug) => (esCategories.categories[slug] && esCategories.categ
 const esSubName = (slug) => esCategories.subcategories[slug] || ''
 const arCatName = (slug) => (arCategories.categories[slug] && arCategories.categories[slug].name) || ''
 const arSubName = (slug) => arCategories.subcategories[slug] || ''
+const deCatName = (slug) => (deCategories.categories[slug] && deCategories.categories[slug].name) || ''
+const deSubName = (slug) => deCategories.subcategories[slug] || ''
+const ptCatName = (slug) => (ptCategories.categories[slug] && ptCategories.categories[slug].name) || ''
+const ptSubName = (slug) => ptCategories.subcategories[slug] || ''
+const ruCatName = (slug) => (ruCategories.categories[slug] && ruCategories.categories[slug].name) || ''
+const ruSubName = (slug) => ruCategories.subcategories[slug] || ''
 
 const llms = `# Century Auto Parts - Hebei Century Auto Parts Co., Ltd.
 > Professional manufacturer of wheel balancing weights, tyre valves, TPMS, tyre seal strings, tyre patches and mushroom patch plugs since 2010.
@@ -100,7 +112,7 @@ const llms = `# Century Auto Parts - Hebei Century Auto Parts Co., Ltd.
 Website: [centurymanufacture.com](${BASE})
 Phone: +86 15633632668
 Email: info@centurymanufacture.com
-Languages: [English](${BASE}/), [Spanish](${BASE}/es/), [Arabic](${BASE}/ar/)
+Languages: [English](${BASE}/), [Spanish](${BASE}/es/), [Arabic](${BASE}/ar/), [German](${BASE}/de/), [Portuguese](${BASE}/pt/), [Russian](${BASE}/ru/)
 
 ## Pages
 - [Home](${BASE}/)
@@ -126,6 +138,30 @@ Languages: [English](${BASE}/), [Spanish](${BASE}/es/), [Arabic](${BASE}/ar/)
 - [الأخبار](${BASE}/ar/news/)
 - [اتصل بنا](${BASE}/ar/contact/)
 
+## German Pages
+- [Startseite](${BASE}/de/)
+- [Über uns](${BASE}/de/about/)
+- [Produkte](${BASE}/de/products/)
+- [Katalog](${BASE}/de/catalog/)
+- [News](${BASE}/de/news/)
+- [Kontakt](${BASE}/de/contact/)
+
+## Portuguese Pages
+- [Início](${BASE}/pt/)
+- [Sobre nós](${BASE}/pt/about/)
+- [Produtos](${BASE}/pt/products/)
+- [Catálogo](${BASE}/pt/catalog/)
+- [Notícias](${BASE}/pt/news/)
+- [Contato](${BASE}/pt/contact/)
+
+## Russian Pages
+- [Главная](${BASE}/ru/)
+- [О нас](${BASE}/ru/about/)
+- [Продукция](${BASE}/ru/products/)
+- [Каталог](${BASE}/ru/catalog/)
+- [Новости](${BASE}/ru/news/)
+- [Контакты](${BASE}/ru/contact/)
+
 ## Product Categories
 ${categories.map(c => {
   const intro = (c.intro || '').replace(/\s+/g, ' ').trim()
@@ -137,6 +173,15 @@ ${categories.map(c => `- [${esCatName(c.slug) || c.name}](${BASE}/es/products/${
 
 ## الفئات (العربية)
 ${categories.map(c => `- [${arCatName(c.slug) || c.name}](${BASE}/ar/products/${c.slug}/)`).join('\n')}
+
+## Kategorien (Deutsch)
+${categories.map(c => `- [${deCatName(c.slug) || c.name}](${BASE}/de/products/${c.slug}/)`).join('\n')}
+
+## Categorias (Português)
+${categories.map(c => `- [${ptCatName(c.slug) || c.name}](${BASE}/pt/products/${c.slug}/)`).join('\n')}
+
+## Категории (Русский)
+${categories.map(c => `- [${ruCatName(c.slug) || c.name}](${BASE}/ru/products/${c.slug}/)`).join('\n')}
 
 ## Subcategories & Products
 ${categories.map(c => {

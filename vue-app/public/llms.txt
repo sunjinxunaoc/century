@@ -4,7 +4,7 @@
 Website: [centurymanufacture.com](https://centurymanufacture.com)
 Phone: +86 15633632668
 Email: info@centurymanufacture.com
-Languages: [English](https://centurymanufacture.com/), [Spanish](https://centurymanufacture.com/es/), [Arabic](https://centurymanufacture.com/ar/)
+Languages: [English](https://centurymanufacture.com/), [Spanish](https://centurymanufacture.com/es/), [Arabic](https://centurymanufacture.com/ar/), [German](https://centurymanufacture.com/de/), [Portuguese](https://centurymanufacture.com/pt/), [Russian](https://centurymanufacture.com/ru/)
 
 ## Pages
 - [Home](https://centurymanufacture.com/)
@@ -30,6 +30,30 @@ Languages: [English](https://centurymanufacture.com/), [Spanish](https://century
 - [الأخبار](https://centurymanufacture.com/ar/news/)
 - [اتصل بنا](https://centurymanufacture.com/ar/contact/)
 
+## German Pages
+- [Startseite](https://centurymanufacture.com/de/)
+- [Über uns](https://centurymanufacture.com/de/about/)
+- [Produkte](https://centurymanufacture.com/de/products/)
+- [Katalog](https://centurymanufacture.com/de/catalog/)
+- [News](https://centurymanufacture.com/de/news/)
+- [Kontakt](https://centurymanufacture.com/de/contact/)
+
+## Portuguese Pages
+- [Início](https://centurymanufacture.com/pt/)
+- [Sobre nós](https://centurymanufacture.com/pt/about/)
+- [Produtos](https://centurymanufacture.com/pt/products/)
+- [Catálogo](https://centurymanufacture.com/pt/catalog/)
+- [Notícias](https://centurymanufacture.com/pt/news/)
+- [Contato](https://centurymanufacture.com/pt/contact/)
+
+## Russian Pages
+- [Главная](https://centurymanufacture.com/ru/)
+- [О нас](https://centurymanufacture.com/ru/about/)
+- [Продукция](https://centurymanufacture.com/ru/products/)
+- [Каталог](https://centurymanufacture.com/ru/catalog/)
+- [Новости](https://centurymanufacture.com/ru/news/)
+- [Контакты](https://centurymanufacture.com/ru/contact/)
+
 ## Product Categories
 - [Wheel Balancing Weights](https://centurymanufacture.com/products/wheel-balancing-weights/): Clip-on and adhesive (stick-on) wheel balancing weights in Fe (steel) and Pb (lead). Available in gram and OZ series from 5g up, with zinc plated, epoxy coated or black coated finishes.
 - [Tyre Valves](https://centurymanufacture.com/products/tyre-valves/): Rubber & metal tyre valves for passenger cars, light trucks, trucks, buses, agricultural machinery and off-road vehicles. Full size charts for TR, PVR, V3 and TR57 series with rim hole and effective length data.
@@ -53,6 +77,30 @@ Languages: [English](https://centurymanufacture.com/), [Spanish](https://century
 - [سلك إغلاق الإطارات](https://centurymanufacture.com/ar/products/tyre-seal-string/)
 - [رقعة الإطارات](https://centurymanufacture.com/ar/products/tyre-patch/)
 - [سدادة الفطر المدمجة مع رقعة](https://centurymanufacture.com/ar/products/mushroom-patch-plug/)
+
+## Kategorien (Deutsch)
+- [Auswuchtgewichte](https://centurymanufacture.com/de/products/wheel-balancing-weights/)
+- [Reifenventile](https://centurymanufacture.com/de/products/tyre-valves/)
+- [TPMS](https://centurymanufacture.com/de/products/tpms/)
+- [Dichtstücke für Reifen](https://centurymanufacture.com/de/products/tyre-seal-string/)
+- [Reifenflicken](https://centurymanufacture.com/de/products/tyre-patch/)
+- [Pilzflicken](https://centurymanufacture.com/de/products/mushroom-patch-plug/)
+
+## Categorias (Português)
+- [Contrapesos de Balanceamento](https://centurymanufacture.com/pt/products/wheel-balancing-weights/)
+- [Válvulas de Pneu](https://centurymanufacture.com/pt/products/tyre-valves/)
+- [TPMS](https://centurymanufacture.com/pt/products/tpms/)
+- [Cordão de Vedação para Pneus](https://centurymanufacture.com/pt/products/tyre-seal-string/)
+- [Remendo para Pneus](https://centurymanufacture.com/pt/products/tyre-patch/)
+- [Plugue de Cogumelo Combinado com Remendo](https://centurymanufacture.com/pt/products/mushroom-patch-plug/)
+
+## Категории (Русский)
+- [Балансировочные грузики](https://centurymanufacture.com/ru/products/wheel-balancing-weights/)
+- [Шинные вентили](https://centurymanufacture.com/ru/products/tyre-valves/)
+- [TPMS](https://centurymanufacture.com/ru/products/tpms/)
+- [Жгут для шин](https://centurymanufacture.com/ru/products/tyre-seal-string/)
+- [Заплата для шин](https://centurymanufacture.com/ru/products/tyre-patch/)
+- [Грибок-заплата комбинированный](https://centurymanufacture.com/ru/products/mushroom-patch-plug/)
 
 ## Subcategories & Products
 - [Wheel Balancing Weights](https://centurymanufacture.com/products/wheel-balancing-weights/)
