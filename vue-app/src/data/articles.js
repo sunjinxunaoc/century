@@ -1163,7 +1163,7 @@
             <tr><td>TR413</td><td>V2.03.1</td><td>11.5 mm / .453"</td><td>32 mm / 1.25"</td><td>Common on older and compact cars</td></tr>
             <tr><td>TR414</td><td>V2.03.2</td><td>11.5 mm / .453"</td><td>38 mm / 1.50"</td><td><strong>The most common passenger car valve</strong></td></tr>
             <tr><td>TR415</td><td>V2.03.3</td><td>15.8 mm / .625"</td><td>32 mm / 1.25"</td><td>Larger hole, light truck applications</td></tr>
-            <tr><td>TR414C</td><td>鈥?/td><td>11.5 mm / .453"</td><td>38 mm / 1.50"</td><td>Heavy-duty variant rated to 65 PSI</td></tr>
+            <tr><td>TR414C</td><td>—/td><td>11.5 mm / .453"</td><td>38 mm / 1.50"</td><td>Heavy-duty variant rated to 65 PSI</td></tr>
           </tbody>
         </table>
       </div>
@@ -1175,10 +1175,10 @@
         <table>
           <thead><tr><th>Model</th><th>Valve hole diameter</th><th>Max pressure</th><th>Bend</th></tr></thead>
           <tbody>
-            <tr><td>PVR40</td><td>8.8 - 9.5 mm</td><td>65 PSI</td><td>45掳 / 90掳</td></tr>
-            <tr><td>PVR50</td><td>9.5 - 10 mm</td><td>65 PSI</td><td>45掳 / 90掳</td></tr>
-            <tr><td>PVR60</td><td>10 - 10.5 mm</td><td>65 PSI</td><td>45掳 / 90掳</td></tr>
-            <tr><td>PVR70</td><td>11.5 mm</td><td>65 PSI</td><td>45掳 / 90掳</td></tr>
+            <tr><td>PVR40</td><td>8.8 - 9.5 mm</td><td>65 PSI</td><td>45° / 90°</td></tr>
+            <tr><td>PVR50</td><td>9.5 - 10 mm</td><td>65 PSI</td><td>45° / 90°</td></tr>
+            <tr><td>PVR60</td><td>10 - 10.5 mm</td><td>65 PSI</td><td>45° / 90°</td></tr>
+            <tr><td>PVR70</td><td>11.5 mm</td><td>65 PSI</td><td>45° / 90°</td></tr>
           </tbody>
         </table>
       </div>
@@ -1189,15 +1189,15 @@
         <table>
           <thead><tr><th>Model</th><th>Ref. No.</th><th>Dimension (mm)</th><th>Material</th><th>Bend</th></tr></thead>
           <tbody>
-            <tr><td>V3-20-4</td><td>鈥?/td><td>16 x 90</td><td>Brass</td><td>27掳</td></tr>
-            <tr><td>V3-20-6</td><td>鈥?/td><td>16 x 115</td><td>Brass</td><td>27掳</td></tr>
-            <tr><td>V3-22-1 / 58MS</td><td>58MS</td><td>16 x 58</td><td>Brass</td><td>45掳</td></tr>
+            <tr><td>V3-20-4</td><td>—/td><td>16 x 90</td><td>Brass</td><td>27°</td></tr>
+            <tr><td>V3-20-6</td><td>—/td><td>16 x 115</td><td>Brass</td><td>27°</td></tr>
+            <tr><td>V3-22-1 / 58MS</td><td>58MS</td><td>16 x 58</td><td>Brass</td><td>45°</td></tr>
             <tr><td>TR570</td><td>V3.21.4</td><td>19 x 84</td><td>Brass</td><td>Straight</td></tr>
             <tr><td>TR571</td><td>V3.21.5</td><td>19 x 90</td><td>Brass</td><td>Straight</td></tr>
             <tr><td>TR572</td><td>V3.21.6</td><td>19 x 100</td><td>Brass</td><td>Straight</td></tr>
-            <tr><td>TR571C</td><td>V3.21.10</td><td>19 x 90</td><td>Brass</td><td>90掳 or 27掳</td></tr>
-            <tr><td>TR572C</td><td>V3.21.11</td><td>19 x 100</td><td>Brass</td><td>90掳 or 27掳</td></tr>
-            <tr><td>MS70-7 / 70MS-7</td><td>鈥?/td><td>40.5 + 29.5</td><td>Ni-plated brass</td><td>7掳</td></tr>
+            <tr><td>TR571C</td><td>V3.21.10</td><td>19 x 90</td><td>Brass</td><td>90° or 27°</td></tr>
+            <tr><td>TR572C</td><td>V3.21.11</td><td>19 x 100</td><td>Brass</td><td>90° or 27°</td></tr>
+            <tr><td>MS70-7 / 70MS-7</td><td>—/td><td>40.5 + 29.5</td><td>Ni-plated brass</td><td>7°</td></tr>
           </tbody>
         </table>
       </div>
@@ -1209,8 +1209,8 @@
           <thead><tr><th>Model</th><th>Ref. No.</th><th>Key dimensions</th><th>Rim hole</th><th>Notes</th></tr></thead>
           <tbody>
             <tr><td>TR618A</td><td>V5.01.1</td><td>22.5 x 30 mm</td><td>5/8" (15.9 mm)</td><td>90 PSI, tubeless tractor valve</td></tr>
-            <tr><td>TRJ650-02/03</td><td>V5.04.1</td><td>鈥?/td><td>20.5 mm</td><td>Large-bore swivel type, core 7002 + cap VC6</td></tr>
-            <tr><td>TR1175A</td><td>鈥?/td><td>22.5 x 24 mm</td><td>20.5 mm</td><td>86掳 bend, off-road and agricultural</td></tr>
+            <tr><td>TRJ650-02/03</td><td>V5.04.1</td><td>—/td><td>20.5 mm</td><td>Large-bore swivel type, core 7002 + cap VC6</td></tr>
+            <tr><td>TR1175A</td><td>—/td><td>22.5 x 24 mm</td><td>20.5 mm</td><td>86° bend, off-road and agricultural</td></tr>
           </tbody>
         </table>
       </div>
@@ -1223,7 +1223,7 @@
         <li><strong>Rim hole diameter first</strong> - measure the hole, not the old valve.</li>
         <li><strong>Effective length second</strong> - the valve must clear the rim drop centre and leave room for the pump chuck.</li>
         <li><strong>Pressure rating third</strong> - passenger valves around 65 PSI; trucks and agricultural vehicles need the brass clamp-in families.</li>
-        <li><strong>Bend angle fourth</strong> - 45掳 / 90掳 motorcycle bends, 27掳 or 90掳 truck bends.</li>
+        <li><strong>Bend angle fourth</strong> - 45° / 90° motorcycle bends, 27° or 90° truck bends.</li>
       </ol>
       <p>For a broader explanation of valve types see our <a href="/news/tyre-valve-guide/">tyre valve types guide</a>, browse the <a href="/products/tyre-valves/">full valve range</a>, or <a href="/contact/">contact us</a> with your vehicle list for a matched quotation.</p>
 
@@ -2252,7 +2252,7 @@
     `,
     faq: [
       { q: 'What is the difference between a TR413 and a TR414 valve?', a: 'Both share the same 11.5 mm rim hole; the difference is effective length. The TR413 is 32 mm and the TR414 is 38 mm. Choose the length that keeps the valve stem correctly positioned for the specific wheel and any trim.' },
-      { q: 'What does the "C" mean in TR571C?', a: 'The C suffix denotes a bent-stem version of the valve. A bent (for example 90掳) stem is used where a straight valve would be difficult to reach or could be damaged by a hubcap or brake component.' },
+      { q: 'What does the "C" mean in TR571C?', a: 'The C suffix denotes a bent-stem version of the valve. A bent (for example 90°) stem is used where a straight valve would be difficult to reach or could be damaged by a hubcap or brake component.' },
       { q: 'When should I use a metal valve instead of a rubber snap-in valve?', a: 'Metal clamp-in valves are the right choice for truck, bus, agricultural and other high-pressure or high-heat applications. Rubber snap-in valves are economical and suitable for passenger cars and light trucks at standard pressures.' },
       { q: 'What core and cap do most tyre valves use?', a: 'The 9002# valve core and VC8 plastic cap are the standards for the majority of passenger and commercial valves, though some TPMS and agricultural valves use different cores such as 7002.' },
       { q: 'How often should tyre valves be replaced?', a: 'Best practice is to fit a new snap-in valve every time a tyre is replaced, since rubber hardens over 4-6 years. Metal clamp-in valves last longer but still need a new core, cap and seal at each service. Replace immediately on any crack, leak or thread damage.' },
@@ -2424,7 +2424,7 @@
       { q: 'Can a tyre plug be a permanent repair?', a: 'No. A plug or seal string is a temporary repair intended to get the vehicle to a workshop. It does not bond to the inner liner, so it should be followed by a permanent internal repair such as a tyre patch or mushroom patch plug.' },
       { q: 'What is the difference between a tyre patch and a mushroom patch plug?', a: 'A patch seals only the inner liner over the puncture. A mushroom patch plug combines a stem that fills the puncture with a patch that bonds to the liner, sealing and reinforcing in one piece - which is why it is considered the most reliable permanent repair.' },
       { q: 'When should a tyre not be repaired?', a: 'A tyre should be replaced if the damage is in the sidewall or shoulder, if the cords are cut or exposed, if the puncture is larger than the product is rated for, or if the tyre has been run flat and overheated. Multiple or overlapping repairs are also unsafe.' },
-      { q: 'How should tyre patches be stored?', a: 'Store patches cool and dry, away from sunlight and heat, ideally at 15-25掳C (59-77掳F). Rotate stock so older patches are used first, and discard any patch whose surface has hardened.' },
+      { q: 'How should tyre patches be stored?', a: 'Store patches cool and dry, away from sunlight and heat, ideally at 15-25°C (59-77°F). Rotate stock so older patches are used first, and discard any patch whose surface has hardened.' },
     ],
     related: [
       { slug: 'seal-string-repair', title: 'How to Use a Tyre Seal String', date: 'July 10, 2026', desc: 'Emergency puncture repair, step by step.', tag: 'Repairs' },
