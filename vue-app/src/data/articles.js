@@ -1,4 +1,180 @@
 ﻿export const articles = [
+
+  {
+    slug: 'tyre-patches-wholesale',
+    title: 'Tyre Patches Wholesale: Sizes, Packing & What to Stock',
+    date: 'November 11, 2026',
+    dateISO: '2026-11-11',
+    tags: ['Tyre Patch', 'Industry Guide'],
+    img: '/images/articles/tyre-patches-wholesale.webp',
+    imgAlt: 'Tyre patches of different sizes and box packing for wholesale distribution',
+    desc: 'Tyre patches wholesale buying guide: how patches are sized, what box and pack quantities to buy, US vs EU styles, private label and how to build a profitable patch assortment.',
+    faq: [
+      { q: 'What is the minimum wholesale order for tyre patches?', a: 'MOQ varies by patch size and pack type. We accept mixed-assortment orders - combining round, oval, square, US-style and EU-style patches in one shipment - and small trial orders are available before you commit to bulk. See the ordering guide for current minimums.' },
+      { q: 'How are tyre patch sizes labelled?', a: 'Patches are sized by their diameter (round), length and width (oval/square), or by ply and repair class. A patch must be large enough to cover the injury plus the required overlap around it; the repair standard you follow sets the minimum coverage.' },
+      { q: 'Should I buy US-style or EU-style patches?', a: 'Stock the style your workshops are already trained on. US-style patches are self-vulcanizing radial/all-purpose units; EU-style units add ply reinforcement. Carrying both lets one supplier serve mixed fleets without retraining shops.' },
+      { q: 'Can tyre patches be private labelled?', a: 'Yes. Custom branding, retail-ready card packing and barcodes are standard options. OEM/ODM packing carries a higher MOQ because of the packaging tooling involved.' },
+    ],
+    content: `
+      <p>For distributors, <strong>tyre patches wholesale</strong> is a steady, repeat-purchase line: every puncture a workshop repairs consumes a patch, week in and week out. The margin is in the <em>assortment</em> - stocking the right sizes, styles and pack quantities so no customer ever hears "we don't have that size". This guide covers how patches are sized, what box and pack quantities to buy, US-style versus EU-style, private label, and how to assemble an assortment that turns a commodity into a dependable reorder business.</p>
+
+      <h2>Why tyre patches are a distributors' staple</h2>
+      <p>Unlike capital equipment, a patch is a low-cost consumable that is used up on every job. That creates two advantages for a wholesaler: <strong>predictable reorders</strong> (a workshop with steady volume uses a similar quantity month after month) and <strong>broad, shallow assortment demand</strong> (many sizes sold in modest quantities, which is exactly the mix a distributor is built to supply). Add in plugs, seal strings and repair consumables, and the repair bay becomes its own recurring revenue line. See the wider market in our <a href="/news/tyre-repair-supplies-wholesale/">tyre repair supplies guide</a>.</p>
+
+      <h2>How tyre patch sizes work</h2>
+      <p>Patches are selected to the injury, not bought in one universal size. The key dimensions:</p>
+      <ul>
+        <li><strong>Round patches</strong> - sized by diameter; the everyday choice for small tread punctures from nails, screws and similar round injuries.</li>
+        <li><strong>Oval and square patches</strong> - sized by length and width; chosen for larger or elongated injuries where a round patch would leave too little overlap.</li>
+        <li><strong>Ply and repair class</strong> - heavier units carry added reinforcement for bias-ply, commercial and higher-stress repairs, while lightweight units suit everyday passenger work.</li>
+      </ul>
+      <p>A useful rule: the patch must reach beyond the injury to overlap the sound liner by the margin your repair standard requires. Buying a range of diameters and lengths is what lets a shop match the patch to the injury instead of forcing a wrong-size repair.</p>
+
+      <h2>Box, pack and carton quantities</h2>
+      <p>Wholesale economics are driven by pack size. Buyers generally choose between:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Quantity</th><th>Best for</th><th>Trade-off</th></tr></thead>
+          <tbody>
+            <tr><td>Small trial packs</td><td>Testing a new size or brand</td><td>Low commitment, higher per-unit cost</td></tr>
+            <tr><td>Standard boxes / boxes per size</td><td>Inventory for daily reorders</td><td>Balanced unit cost and stock turnover</td></tr>
+            <tr><td>Assorted cartons</td><td>Building a broad retail assortment</td><td>One mixed buy, easier to open a range</td></tr>
+            <tr><td>Full cartons / pallets</td><td>Established, high-volume sellers</td><td>Lowest unit cost, needs turnover</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The fastest sellers rarely justify the very largest carton unless you already move them monthly. A common strategy is to buy the top-moving sizes in fuller cartons and the long tail in assorted cartons, so stock breadth does not tie up cash in slow sizes.</p>
+
+      <h2>US-style vs EU-style patches</h2>
+      <p>The two regional constructions are the single biggest assortment decision a tyre patch wholesaler makes:</p>
+      <ul>
+        <li><strong>US-style</strong> - self-vulcanizing radial and all-purpose patches that bond at room temperature with cement. Dominant in the Americas; fast and economical for everyday tread repairs.</li>
+        <li><strong>EU-style</strong> - patch units with ply reinforcement and a heavier construction, preferred across Europe and much of the Middle East, and the basis of the commercial and bias-ply lines.</li>
+      </ul>
+      <p>Stocking both lets you serve mixed fleets and regional training habits from one warehouse - a real advantage when your customers themselves serve international fleets. Our full <a href="/products/tyre-patch/">tyre patch range</a> covers radial, bias and all-purpose units from 32 mm to 440 mm, 1 to 6 ply, in both constructions; the <a href="/news/us-vs-eu-style-tire-patch/">US vs EU comparison</a> goes deeper on when each fits.</p>
+
+      <h2>Purchasing the replacement layer: cement and buffers</h2>
+      <p>Every cold patch needs cement, and nearly every repair needs a buffer. Wholesaling patches without these consumables leaves money on the table and service quality to chance - a workshop that runs out of cement cannot use the patches you just sold it. Pair each patch carton with the matching cement and buffer supply so the full repair process stays in stock. This is a genuine service advantage, not an upsell: it keeps your customers' results consistent and their loyalty to your line strong.</p>
+
+      <h2>Private label tyre patches</h2>
+      <p>Patches are one of the easiest products to private label because the packaging <em>is</em> the product on a workshop shelf and unit cost is low. Custom branding, retail-ready card packs and barcodes are standard; OEM/ODM orders carry a higher MOQ due to packaging tooling. A branded patch line builds a recurring buyer relationship that generic stock cannot - the customer reorders <em>your</em> box, not a commodity.</p>
+
+      <h2>Building a profitable assortment: a working model</h2>
+      <ol>
+        <li><strong>Start with the volume sizes</strong> - the round and oval patches your market uses most every day.</li>
+        <li><strong>Add the style your market is trained on</strong> - US or EU construction first, then the other as a second range.</li>
+        <li><strong>Add the commercial and bias-ply sizes</strong> for truck and off-road shops if your region supports heavy work.</li>
+        <li><strong>Carry cement, buffer and plugs alongside</strong> so the bay is never held up by a missing consumable.</li>
+        <li><strong>Reorder on turnover, not on habit</strong> - track the sizes that actually move and adjust the assortment monthly.</li>
+      </ol>
+      <p>Consolidate patches with <a href="/products/wheel-balancing-weights/">wheel weights</a>, <a href="/products/tyre-valves/">tyre valves</a> and repair materials in one shipment to cut landed cost per unit - the standard play at a full-line factory like Century Auto Parts.</p>
+
+      <h2>Cold patch vs other repair lines</h2>
+      <p>Patches are the permanent-repair backbone, but they sit alongside plugs and strings in every repair bay:</p>
+      <ul>
+        <li><strong>Patches</strong> - restore the inner liner from inside; the permanent standard for crown repairs.</li>
+        <li><strong>Mushroom plugs</strong> - combine a stem and patch to fill the puncture and seal the liner in one step. See <a href="/news/mushroom-plug-vs-seal-string/">mushroom plug vs seal string</a>.</li>
+        <li><strong>Seal strings</strong> - quick temporary roadside repairs. See <a href="/news/tyre-patch-vs-plug/">patch vs plug</a>.</li>
+      </ul>
+      <p>Wholesaling all three lets a distributor cover an entire repair bay from one account, which is exactly how <a href="/news/cold-patch-vs-hot-patch/">cold and hot patching</a> decisions play out in practice.</p>
+
+      <h2>The distributor's bottom line</h2>
+      <p>Tyre patches are a low-friction consumable: steady demand, no seasonal cliff, and a natural private-label path to recurring orders. The profit comes from the breadth and the associated consumables, not from any single box. Buy the range, match it to your market's style, and keep cement and buffers flowing with every carton.</p>
+      <p>Build your own <a href="/products/tyre-patch/">tyre patch assortment</a>, or <a href="/contact/">send your product list</a> for a wholesale quotation with consolidated shipping.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>Patch sizes, ply ratings and series: Century Auto Parts published product data (CTR-TPU, CTR-TPE, US &amp; EU styles)</li>
+          <li>Wholesale packing, MOQ and private-label terms: Century Auto Parts published trade information</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'tyre-repair-supplies-wholesale', title: 'Tyre Repair Supplies Wholesale', date: 'September 29, 2026', desc: 'Building a whole repair range: patches, plugs and seal strings.', tag: 'Industry Guide' },
+      { slug: 'cold-patch-vs-hot-patch', title: 'Cold Patch vs Hot Vulcanizing Patch', date: 'October 12, 2026', desc: 'Which repair method should you use?', tag: 'Repairs' },
+    ],
+  },
+  {
+    slug: 'cold-patch-vulcanizing',
+    title: 'Cold Patch Vulcanizing: Step-by-Step Tyre Repair Guide',
+    date: 'November 11, 2026',
+    dateISO: '2026-11-11',
+    tags: ['Repairs', 'Tyre Patch'],
+    img: '/images/articles/cold-patch-vulcanizing.webp',
+    imgAlt: 'Technician buffing a tyre inner liner and applying a cold patch vulcanizing repair',
+    desc: 'How to cold patch vulcanize a tyre step by step: buffing, cleaning, cement, pressing and finishing a permanent cold-cure repair that holds.',
+    faq: [
+      { q: 'What is cold patch vulcanizing?', a: 'Cold patch vulcanizing (chemical curing) bonds a repair patch to the tyre inner liner at room temperature using a self-vulcanizing cement. It is a permanent repair for tread injuries - no heat or curing press is needed, unlike hot vulcanizing.' },
+      { q: 'How long does a cold patch need to cure?', a: 'The cement must dry to a tacky film before the patch is rolled on, and the repair should sit undisturbed so the chemical cure builds its full strength - usually a short wait after pressing. Rushing the cement or using it wet is the most common cause of a failed cold patch.' },
+      { q: 'Can any tyre be cold patched?', a: 'Only injuries inside the repairable crown/tread area and within the limits set by the repair standard and the tyre maker. Sidewall, shoulder, cord-damaged, run-flat or oversized injuries must not be cold patched.' },
+      { q: 'Do I need heat to cold patch vulcanize?', a: 'No. "Cold" refers to room-temperature chemical curing versus heat curing. You need a buffer, a cleaning solvent, self-vulcanizing cement and a roller - no vulcanizing press.' },
+    ],
+    content: `
+      <p><strong>Cold patch vulcanizing</strong> is the shop-floor skill behind most quick, reliable and permanent tyre repairs. It bonds a repair patch to the inner liner at room temperature using a self-vulcanizing cement - no heat, no curing press. Done correctly it is a permanent repair; done hurriedly it fails. This step-by-step guide walks through every stage from inspection to finishing, so the repair holds under heat, flex and speed.</p>
+
+      <h2>What cold patch vulcanizing actually is</h2>
+      <p>In a cold (chemical) cure, the patch and the surrounding liner are joined as the cement self-vulcanizes at ambient temperature. Unlike <a href="/news/cold-patch-vs-hot-patch/">hot vulcanizing</a>, which applies heat and pressure with a spot vulcanizer (140-150 C), a cold patch relies on preparation and chemistry. The process is faster, needs far less equipment, and for standard tread injuries the result is permanent - which is why it is the everyday workhorse of the repair bay.</p>
+
+      <h2>Equipment you need</h2>
+      <ul>
+        <li>Buffer or rasp (hand or air-powered)</li>
+        <li>Cleaning solvent and clean cloth</li>
+        <li>Self-vulcanizing rubber cement</li>
+        <li>Pneumatic or stitch-on roller</li>
+        <li>The correct patch for the injury</li>
+      </ul>
+      <p>Everything here is simple to operate - the skill is in the preparation, not the machine.</p>
+
+      <h2>Step 1 - Inspect the injury</h2>
+      <p>Confirm the puncture is inside the <strong>repairable crown/tread area</strong> and below the repair limit for the tyre and patch. If the injury is in the sidewall or shoulder, has cut or exposed cords, or the tyre was run flat, do not cold patch it - replace it. A repair outside the safe area is a liability, not a service.</p>
+
+      <h2>Step 2 - Buff the inner liner</h2>
+      <p>Using a buffer or rasp, remove the shiny inner liner and buff to a clean, matte, textured surface around the injury, extending a little beyond the patch footprint. The patch needs a rough key to bond to; a glossy or under-buffed liner will not hold. Take care not to cut into the casing cords - buffer the liner, not the structure.</p>
+
+      <h2>Step 3 - Clean away the dust</h2>
+      <p>Buffing dust and contamination are the enemy of adhesion. Wipe the buffed area with a cleaning solvent on a clean cloth and let it fully dry. Do not touch the prepared surface with your fingers afterwards - skin oil can stop the cement bonding.</p>
+
+      <h2>Step 4 - Apply the cement</h2>
+      <p>Brush a thin, even coat of self-vulcanizing cement over the prepared surface, including the injury channel, and let it dry to a <strong>tacky film</strong>. Drying time matters: a wet layer traps solvent and weakens the bond, while too little coverage leaves bare spots. Wait for the confirmed touch-dry surface before the next step - this is where most rushed repairs go wrong.</p>
+
+      <h2>Step 5 - Press the patch</h2>
+      <p>Remove the patch's protective backing and centre it over the injury. Using a roller, press firmly from the centre outward to expel trapped air - air pockets become lift points in service. Roll the full area several times to seat the patch completely.</p>
+
+      <h2>Step 6 - Finish the repair</h2>
+      <p>Allow the repair to cure undisturbed, then re-inflate the tyre to specification and inspect. Depending on the repair and the product, the puncture channel may be filled from the outside and the area re-checked before the wheel returns to service. Where a stem or filler is involved, see the <a href="/news/mushroom-plug-vs-seal-string/">mushroom plug vs seal string</a> guide.</p>
+
+      <h2>Common causes of a failed cold patch</h2>
+      <ul>
+        <li><strong>Poor buffing</strong> - a glossy liner that never keys to the cement.</li>
+        <li><strong>Dust or oil left on the surface</strong> before the cement goes on.</li>
+        <li><strong>Wet cement</strong> - pressing the patch before the cement dries to tack.</li>
+        <li><strong>Trapped air</strong> from an uneven or incomplete roll.</li>
+        <li><strong>Wrong patch size</strong> - too small to reach the required overlap.</li>
+        <li><strong>Repairing a non-repairable injury</strong> in the first place.</li>
+      </ul>
+      <p>Every one of these is a preparation or judgement error, not a patch defect. That is why supplying <strong>cement, buffers and the correct patches</strong> together keeps field results consistent - exactly the mix covered in our <a href="/news/tyre-patches-wholesale/">tyre patches wholesale</a> guide.</p>
+
+      <h2>Cold patch vs hot vulcanizing: which is right now?</h2>
+      <p>Use a <strong>cold patch</strong> for standard crown/tread punctures - fast, economical and permanent when prepared correctly. Prefer <strong>hot vulcanizing</strong> for heavy sidewall injuries, bias-ply and commercial repairs where the bond must slightly exceed the surrounding rubber. The full trade-offs are in the <a href="/news/cold-patch-vs-hot-patch/">cold vs hot guide</a>.</p>
+
+      <h2>Build a repair line that holds</h2>
+      <p>Reliable repairs come from good preparation and the right stock. Carry <a href="/products/tyre-patch/">cold patches</a> in the sizes your shop sees, keep cement and buffers in supply, and add mushroom plugs and seal strings for the rest of the repair bay. For a wholesale contract with consolidated shipping, <a href="/contact/">contact our team</a>.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>BS AU 159 (UK standard for the repair of car and light van tyres) - repairable area and preparation guidance</li>
+          <li>Cold-cure process and product data: Century Auto Parts published repair information (CTR-TPU / CTR-TPE patches)</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'cold-patch-vs-hot-patch', title: 'Cold Patch vs Hot Vulcanizing Patch', date: 'October 12, 2026', desc: 'Cold vs hot: which method for which injury.', tag: 'Repairs' },
+      { slug: 'tyre-patches-wholesale', title: 'Tyre Patches Wholesale', date: 'November 11, 2026', desc: 'Sizes, packing and assortments for patch buyers.', tag: 'Tyre Patch' },
+    ],
+  },
+
   {
     slug: 'import-tyre-repair-products-from-china',
     title: 'How to Import Tyre Repair Products from China: MOQ, Shipping & Costs',
