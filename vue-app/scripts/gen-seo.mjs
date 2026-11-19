@@ -18,6 +18,9 @@ const LOCALES = [
   { code: 'de', prefix: '/de' },
   { code: 'pt', prefix: '/pt' },
   { code: 'ru', prefix: '/ru' },
+  { code: 'zh', prefix: '/zh' },
+  { code: 'vi', prefix: '/vi' },
+  { code: 'th', prefix: '/th' },
 ]
 
 // Locale-independent paths, expanded per locale below.

@@ -20,6 +20,9 @@ const FLAG_COUNTRY = {
   de: 'Germany',
   pt: 'Portugal',
   ru: 'Russia',
+  zh: 'China',
+  vi: 'Vietnam',
+  th: 'Thailand',
 }
 
 // Rect-style flags built from simple shapes for reliable rendering everywhere.
@@ -52,6 +55,22 @@ const FLAG_SVG = {
   ru: `<rect width="16" height="11" fill="#ffffff"/>
   <rect y="3.67" width="16" height="3.66" fill="#0039a6"/>
   <rect y="7.33" width="16" height="3.67" fill="#d52b1e"/>`,
+  // China
+  zh: `<rect width="16" height="11" fill="#de2910"/>
+  <path d="M8 1.2 l.9 1.9 2.1.2 -1.6 1.4 .5 2 -1.9 -1 -1.9 1 .5 -2 -1.6 -1.4 2.1 -.2z" fill="#ffde00"/>
+  <path d="M11.5 4.2 l.5 1 1.1 .1 -.85 .7 .3 1 -1 -.55 -1 .55 .3 -1 -.85 -.7 1.1 -.1z" fill="#ffde00"/>
+  <path d="M12.3 2 l.35 .7 .8 .1 -.55 .5 .2 .7 -.8 -.4 -.8 .4 .2 -.7 -.55 -.5 .8 -.1z" fill="#ffde00"/>
+  <path d="M4.9 4.2 l.5 1 1.1 .1 -.85 .7 .3 1 -1 -.55 -1 .55 .3 -1 -.85 -.7 1.1 -.1z" fill="#ffde00"/>
+  <path d="M5.7 2 l.35 .7 .8 .1 -.55 .5 .2 .7 -.8 -.4 -.8 .4 .2 -.7 -.55 -.5 .8 -.1z" fill="#ffde00"/>`,
+  // Vietnam
+  vi: `<rect width="16" height="11" fill="#da251d"/>
+  <path d="M8 3.1 l.8 1.85 2.0 .15 -1.52 1.28 .47 1.95 -1.75 -1.05 -1.75 1.05 .47 -1.95 -1.52 -1.28 2.0 -.15z" fill="#ffff00"/>
+  <rect y="7.2" width="16" height="0.9" fill="#ffff00" opacity="0.9"/>`,
+  // Thailand
+  th: `<rect width="16" height="11" fill="#a51931"/>
+  <rect y="2.4" width="16" height="1.5" fill="#ffffff"/>
+  <rect y="5.1" width="16" height="1.9" fill="#2d2a4a"/>
+  <rect y="7.9" width="16" height="1.5" fill="#ffffff"/>`,
 }
 
 function flagInner(code) {

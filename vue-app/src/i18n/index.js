@@ -5,20 +5,23 @@ import ar from './ar'
 import de from './de'
 import pt from './pt'
 import ru from './ru'
+import zh from './zh'
+import vi from './vi'
+import th from './th'
 
 // URL prefix per locale. English lives at the site root, other locales under /xx.
-export const SUPPORTED_LOCALES = ['en', 'es', 'ar', 'de', 'pt', 'ru']
+export const SUPPORTED_LOCALES = ['en', 'es', 'ar', 'de', 'pt', 'ru', 'zh', 'vi', 'th']
 export const DEFAULT_LOCALE = 'en'
 
-export const LOCALE_LABELS = { en: 'English', es: 'Español', ar: 'العربية', de: 'Deutsch', pt: 'Português', ru: 'Русский' }
-export const LOCALE_SHORT = { en: 'EN', es: 'ES', ar: 'AR', de: 'DE', pt: 'PT', ru: 'RU' }
-export const LOCALE_HTML_LANG = { en: 'en', es: 'es', ar: 'ar', de: 'de', pt: 'pt', ru: 'ru' }
-export const LOCALE_OG = { en: 'en_US', es: 'es_ES', ar: 'ar_SA', de: 'de_DE', pt: 'pt_PT', ru: 'ru_RU' }
-export const LOCALE_DIR = { en: 'ltr', es: 'ltr', ar: 'rtl', de: 'ltr', pt: 'ltr', ru: 'ltr' }
+export const LOCALE_LABELS = { en: 'English', es: 'Español', ar: 'العربية', de: 'Deutsch', pt: 'Português', ru: 'Русский', zh: '简体中文', vi: 'Tiếng Việt', th: 'ไทย' }
+export const LOCALE_SHORT = { en: 'EN', es: 'ES', ar: 'AR', de: 'DE', pt: 'PT', ru: 'RU', zh: '中', vi: 'VI', th: 'TH' }
+export const LOCALE_HTML_LANG = { en: 'en', es: 'es', ar: 'ar', de: 'de', pt: 'pt', ru: 'ru', zh: 'zh-CN', vi: 'vi', th: 'th' }
+export const LOCALE_OG = { en: 'en_US', es: 'es_ES', ar: 'ar_SA', de: 'de_DE', pt: 'pt_PT', ru: 'ru_RU', zh: 'zh_CN', vi: 'vi_VN', th: 'th_TH' }
+export const LOCALE_DIR = { en: 'ltr', es: 'ltr', ar: 'rtl', de: 'ltr', pt: 'ltr', ru: 'ltr', zh: 'ltr', vi: 'ltr', th: 'ltr' }
 
 export const SITE_URL = 'https://centurymanufacture.com'
 
-const messages = { en, es, ar, de, pt, ru }
+const messages = { en, es, ar, de, pt, ru, zh, vi, th }
 const state = reactive({ locale: DEFAULT_LOCALE })
 
 /** Locale implied by a route path ("/es/about/" -> "es"). */

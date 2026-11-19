@@ -213,6 +213,7 @@ Languages: [English](https://centurymanufacture.com/), [Spanish](https://century
     - [Valvula PVR40 PVR50 PVR60 PVR70](https://centurymanufacture.com/products/tyre-valves/valvula-pvr40-pvr50-pvr60-pvr70/)
   - [Motorcycle & Bicycle](https://centurymanufacture.com/products/tyre-valves/motorcycle-bicycle-valves/)
     - [TR48E Colored Valve Stem](https://centurymanufacture.com/products/tyre-valves/tr48e-colored-valve-stem/)
+    - [TR161 Valve Stem](https://centurymanufacture.com/products/tyre-valves/tr161-valve-stem/)
     - [PVR30 Motorcycle Valve](https://centurymanufacture.com/products/tyre-valves/pvr30-motorcycle-valve/)
     - [PVR32 Motorcycle Valve](https://centurymanufacture.com/products/tyre-valves/pvr32-motorcycle-valve/)
     - [PVR40 Motorcycle Valve](https://centurymanufacture.com/products/tyre-valves/pvr40-motorcycle-valve/)
@@ -417,6 +418,7 @@ Languages: [English](https://centurymanufacture.com/), [Spanish](https://century
     - [EU-Style Mushroom Plug with PLYs](https://centurymanufacture.com/products/mushroom-patch-plug/eu-style-mushroom-plug-with-plys/)
 
 ## News & Guides
+- [TR161 Valve Stems: Sizes, Fitment & Metal Bolt-In Buying Guide](https://centurymanufacture.com/news/tr161-valve-stem/): TR161 valve stems explained: metal bolt-in (clamp-in) construction equivalent to VAMD161, Φ16 × 34.5mm, the Φ11.5mm (.453") rim hole, fitment for motorcycles, ATVs, mowers and trailers, and how to choose and buy them in bulk.
 - [Tyre Patches Wholesale: Sizes, Packing & What to Stock](https://centurymanufacture.com/news/tyre-patches-wholesale/): Tyre patches wholesale buying guide: how patches are sized, what box and pack quantities to buy, US vs EU styles, private label and how to build a profitable patch assortment.
 - [Cold Patch Vulcanizing: Step-by-Step Tyre Repair Guide](https://centurymanufacture.com/news/cold-patch-vulcanizing/): How to cold patch vulcanize a tyre step by step: buffing, cleaning, cement, pressing and finishing a permanent cold-cure repair that holds.
 - [How to Import Tyre Repair Products from China: MOQ, Shipping & Costs](https://centurymanufacture.com/news/import-tyre-repair-products-from-china/): Importing tyre repair products from China: what a container really costs, MOQ and samples, sea vs air freight, plus the import checklist used by distributors.
@@ -454,9 +456,9 @@ Languages: [English](https://centurymanufacture.com/), [Spanish](https://century
 ## Topics
 - [Wheel Weights (14 articles)](https://centurymanufacture.com/news/tag/wheel-weights/)
 - [Industry Guide (11 articles)](https://centurymanufacture.com/news/tag/industry-guide/)
-- [Product Guide (10 articles)](https://centurymanufacture.com/news/tag/product-guide/)
+- [Product Guide (11 articles)](https://centurymanufacture.com/news/tag/product-guide/)
+- [Tyre Valves (7 articles)](https://centurymanufacture.com/news/tag/tyre-valves/)
 - [Repairs (6 articles)](https://centurymanufacture.com/news/tag/repairs/)
-- [Tyre Valves (6 articles)](https://centurymanufacture.com/news/tag/tyre-valves/)
 - [Tyre Patch (5 articles)](https://centurymanufacture.com/news/tag/tyre-patch/)
 - [Comparison (4 articles)](https://centurymanufacture.com/news/tag/comparison/)
 - [Maintenance (2 articles)](https://centurymanufacture.com/news/tag/maintenance/)

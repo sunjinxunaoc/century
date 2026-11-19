@@ -26,12 +26,21 @@ import ptArticles from './pt/articles'
 import ruCategories from './ru/categories'
 import ruProducts from './ru/products'
 import ruArticles from './ru/articles'
+import zhCategories from './zh/categories'
+import zhProducts from './zh/products'
+import zhArticles from './zh/articles'
+import viCategories from './vi/categories'
+import viProducts from './vi/products'
+import viArticles from './vi/articles'
+import thCategories from './th/categories'
+import thProducts from './th/products'
+import thArticles from './th/articles'
 
 export { PAGE_SIZE, NEWS_PER_PAGE, tagSlug }
 
-const CATEGORY_TRANSLATIONS = { es: esCategories, ar: arCategories, de: deCategories, pt: ptCategories, ru: ruCategories }
-const PRODUCT_TRANSLATIONS = { es: esProducts, ar: arProducts, de: deProducts, pt: ptProducts, ru: ruProducts }
-const ARTICLE_TRANSLATIONS = { es: esArticles, ar: arArticles, de: deArticles, pt: ptArticles, ru: ruArticles }
+const CATEGORY_TRANSLATIONS = { es: esCategories, ar: arCategories, de: deCategories, pt: ptCategories, ru: ruCategories, zh: zhCategories, vi: viCategories, th: thCategories }
+const PRODUCT_TRANSLATIONS = { es: esProducts, ar: arProducts, de: deProducts, pt: ptProducts, ru: ruProducts, zh: zhProducts, vi: viProducts, th: thProducts }
+const ARTICLE_TRANSLATIONS = { es: esArticles, ar: arArticles, de: deArticles, pt: ptArticles, ru: ruArticles, zh: zhArticles, vi: viArticles, th: thArticles }
 
 const cache = new Map()
 
