@@ -27,6 +27,7 @@ const productLinks = {
   'wheel-weight-manufacturers': '/products/wheel-balancing-weights/',
   'wheel-weight-guide': '/products/wheel-balancing-weights/',
   'tyre-valve-guide': '/products/tyre-valves/',
+  'tr161-valve-stem': '/products/tyre-valves/tr161-valve-stem/',
   'tpms-maintenance': '/products/tpms/tpms-valve-stem/',
   'tyre-patch-vs-plug': '/products/tyre-patch/',
   'seal-string-repair': '/products/tyre-seal-string/',

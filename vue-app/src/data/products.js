@@ -2300,13 +2300,14 @@ export const categories = [
       {
         slug: 'motorcycle-bicycle-valves',
         name: 'Motorcycle & Bicycle',
-        seoTitle: 'Motorcycle & Bicycle Tyre Valves | PVR30 PVR32 PVR40-PVR70, TR48E',
-        keywords: 'motorcycle valve, PVR30, PVR32, PVR40, PVR50, PVR60, PVR70, TR48E, motorcycle tyre valve, scooter valve, bicycle valve, 90 degree valve stem',
-        desc: 'PVR series tubeless valves and TR48E colored aluminum alloy valves for motorcycles, scooters and bicycles: PVR30, PVR32 (black/blue/orange anodized), PVR40-PVR70 in 45° and 90° bend options.',
+        seoTitle: 'Motorcycle & Bicycle Tyre Valves | PVR30-PVR70, TR161, TR48E',
+        keywords: 'motorcycle valve, PVR30, PVR32, PVR40, PVR50, PVR60, PVR70, TR48E, TR161 valve stem, TR161 valve stems, VAMD161, clamp-in valve stem, motorcycle tyre valve, scooter valve, bicycle valve, 90 degree valve stem',
+        desc: 'PVR series tubeless valves, TR48E colored aluminum alloy valves and TR161 / VAMD161 chrome clamp-in valve stems for motorcycles, scooters, ATVs and bicycles: PVR30, PVR32 (black/blue/orange anodized), PVR40-PVR70 in 45° and 90° bend options.',
         highlights: [
           '90° and 45° bent options for tight motorcycle rims',
           'PVR32 with anodized color options (black / blue / orange)',
           'TR48E colored aluminum alloy valve',
+          'TR161 / VAMD161 chrome clamp-in valve stem, Φ16 × 34.5mm',
           'Rim holes from 8.3mm to 11.5mm',
           'Core & cap included, max 65psi',
         ],
@@ -2359,6 +2360,74 @@ export const categories = [
                 ['TR48E', 'Clamp-in', 'Anodized metal', 'Passenger car / tuning'],
               ],
             },
+          },
+          {
+            slug: 'tr161-valve-stem',
+            name: 'TR161 Valve Stem',
+            image: '/images/products/tyre-valves/tr161-valve-stem001.webp',
+            images: [
+              '/images/products/tyre-valves/tr161-valve-stem001.webp',
+            ],
+            seoTitle: 'TR161 Valve Stem | Chrome Clamp-In, Φ16×34.5, Φ11.5 Rim Hole',
+            tagline: 'Chrome metal clamp-in (bolt-in) valve stem TR161 / VAMD161, Φ16 × 34.5mm, for the Φ11.5mm (.453") rim hole on motorcycles, ATVs, scooters and tubeless wheels.',
+            desc: 'The TR161 valve stem (VAMD161 equivalent) is a chrome metal clamp-in (bolt-in) valve stem for tubeless wheels with the Φ11.5mm (.453") rim hole. Measuring Φ16 × 34.5mm, it is secured with grommet HG2, washer RW12 and nut NH2 for a rigid, leak-proof fit, and supplied with a valve core and GT cap. A popular replacement on motorcycles, ATVs, scooters, lawn mowers, go-karts and trailers. Factory-direct with bulk and OEM/ODM options.',
+            keywords: 'TR161 valve stem, TR161 valve stems, VAMD161, VAMD161 valve stem, metal valve stem, clamp-in valve stem, bolt-in valve stem, motorcycle valve stem, ATV valve stem, 11.5mm rim hole valve',
+            features: [
+              'Chrome metal clamp-in (bolt-in) design',
+              'Φ16 × 34.5mm stem length',
+              'Fits the Φ11.5mm (.453") rim hole',
+              'Grommet HG2, washer RW12, nut NH2, cap GT',
+              'Core & cap included',
+              'Factory direct, OEM/ODM & bulk supply',
+            ],
+            spec: {
+              headers: ['Model', 'Type', 'Ref. Length', 'Rim Hole', 'Grommet', 'Washer', 'Nut', 'Cap'],
+              rows: [
+                ['TR161 / VAMD161', 'Clamp-in', 'Φ16 × 34.5mm', 'Φ11.5 / .453"', 'HG2', 'RW12', 'NH2', 'GT'],
+              ],
+            },
+            sections: [
+              {
+                heading: 'What is a TR161 valve stem?',
+                html: `<p>The <strong>TR161 valve stem</strong> (also sold as <strong>VAMD161</strong>) is a chrome metal clamp-in, or bolt-in, valve stem for tubeless wheels with the standard Φ11.5mm (.453") rim hole. Instead of a rubber snap-in body, it uses a rigid metal stem sealed with a grommet, washer and nut, giving a positive, leak-proof seat that stays firm under vibration.</p>
+<p>At Φ16 × 34.5mm it is a short, low-profile stem - the reason it is widely used on motorcycles, scooters, ATVs, lawn mowers, go-karts and trailers. Every stem is supplied with a valve core and a GT cap. For fitment advice and a comparison with rubber snap-in valves, read our <a href="/news/tr161-valve-stem/">TR161 valve stem guide</a>.</p>`,
+              },
+              {
+                heading: 'TR161 / VAMD161 valve stem dimensions and parts',
+                html: `<div class="table-wrap">
+<table>
+<thead><tr><th>Model</th><th>Ref. length</th><th>Rim hole</th><th>Grommet</th><th>Washer</th><th>Nut</th><th>Cap</th></tr></thead>
+<tbody>
+<tr><td>TR161 / VAMD161</td><td>&#934;16 &#215; 34.5mm</td><td>&#934;11.5mm (.453")</td><td>HG2</td><td>RW12</td><td>NH2</td><td>GT</td></tr>
+</tbody>
+</table>
+</div>
+<p>The <strong>HG2</strong> grommet, <strong>RW12</strong> washer, <strong>NH2</strong> nut and <strong>GT</strong> cap are standard service parts, so replacements are easy to supply alongside stems. Confirm the exact length and thread with our sales team before a large order.</p>`,
+              },
+              {
+                heading: 'Where TR161 valve stems are used',
+                html: `<ul>
+  <li>Motorcycles and scooters</li>
+  <li>ATVs and UTVs</li>
+  <li>Lawn mowers and ride-on mowers</li>
+  <li>Go-karts and buggies</li>
+  <li>Boat and utility trailers</li>
+  <li>Hot rods and custom / tubeless wheels</li>
+</ul>
+<p>It fits tubeless rims drilled with the Φ11.5mm (.453") hole. For the larger 15.9mm (.625") hole, see the wider <a href="/products/tyre-valves/">tyre valve range</a>, or the <a href="/products/tyre-valves/motorcycle-bicycle-valves/">motorcycle &amp; bicycle valve range</a>.</p>`,
+              },
+              {
+                heading: 'Ordering, packing and private label',
+                html: `<p>We supply TR161 / VAMD161 valve stems factory-direct in bulk cartons for distributors, workshops and OEM programmes, with private label packing available. Pair them with rubber snap-in valves, cores and caps in one consolidated shipment. Send your quantities and target price through the <a href="/contact/">contact form</a> for a quotation.</p>`,
+              },
+            ],
+            faqs: [
+              { q: 'What is a TR161 valve stem?', a: 'The TR161 (VAMD161) is a short chrome metal clamp-in (bolt-in) valve stem for tubeless wheels with the Φ11.5mm (.453") rim hole, measuring Φ16 × 34.5mm. It seals with a grommet, washer and nut for a rigid, leak-proof fit and is supplied with a core and GT cap.' },
+              { q: 'What size is a TR161 valve stem?', a: 'TR161 / VAMD161: stem length Φ16 × 34.5mm, rim hole Φ11.5mm (.453"), with grommet HG2, washer RW12, nut NH2 and cap GT.' },
+              { q: 'What rim hole does a TR161 valve stem fit?', a: 'It fits the standard Φ11.5mm (.453") rim hole. It will not seal the larger 15.9mm (.625") hole used by some light-truck valves.' },
+              { q: 'Is TR161 the same as VAMD161?', a: 'VAMD161 is the equivalent reference for the same short chrome clamp-in valve stem; the two numbers are often used interchangeably. Confirm the part number with us when ordering.' },
+              { q: 'Does a TR161 valve stem come with a core and cap?', a: 'Yes - every TR161 valve stem is supplied with a valve core and GT cap, and the grommet, washer and nut are available as service parts.' },
+            ],
           },
           {
             slug: 'pvr30-motorcycle-valve',

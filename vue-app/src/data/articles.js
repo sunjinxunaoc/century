@@ -1,6 +1,105 @@
 ﻿export const articles = [
 
   {
+    slug: 'tr161-valve-stem',
+    title: 'TR161 Valve Stems: Sizes, Fitment & Metal Bolt-In Buying Guide',
+    date: 'November 18, 2026',
+    dateISO: '2026-11-18',
+    tags: ['Product Guide', 'Tyre Valves'],
+    img: '/images/articles/tr161-valve-stem.webp',
+    imgAlt: 'TR161 metal bolt-in valve stem with hex nut and rubber grommets',
+    desc: 'TR161 valve stems explained: metal bolt-in (clamp-in) construction equivalent to VAMD161, Φ16 × 34.5mm, the Φ11.5mm (.453") rim hole, fitment for motorcycles, ATVs, mowers and trailers, and how to choose and buy them in bulk.',
+    seoTitle: 'TR161 Valve Stems: Sizes, Fitment & Buying Guide',
+    seoDescription: 'TR161 valve stems guide: metal bolt-in (clamp-in) design (VAMD161 equivalent), Φ16 × 34.5mm, Φ11.5mm (.453") rim hole, fitment for motorcycles, ATVs, mowers and trailers, plus core/cap details and bulk buying tips.',
+    seoKeywords: 'TR161 valve stem, TR161 valve stems, TR161 tire valve stem, metal valve stem, bolt-in valve stem, clamp-in valve stem, short valve stem, motorcycle valve stem, ATV valve stem, 11.5mm rim hole valve',
+    faq: [
+      { q: 'What is a TR161 valve stem?', a: 'A TR161 valve stem is a short metal bolt-in (clamp-in) tyre valve for tubeless wheels with the standard 11.5mm (.453") rim hole. Instead of being pulled through like a rubber snap-in valve, it is secured with rubber grommets on both sides of the rim hole, giving a rigid, leak-proof fit. It is commonly used on motorcycles, ATVs, lawn mowers, go-karts and trailers.' },
+      { q: 'What rim hole does a TR161 valve stem fit?', a: 'The TR161 valve stem fits the standard 11.5mm (.453") rim hole. Check the hole diameter before ordering - it will not seal the larger 15.9mm (.625") hole used by some light-truck valves.' },
+      { q: 'What is the difference between a TR161 valve stem and a TR413 or TR414?', a: 'A TR161 is a metal bolt-in (clamp-in) stem, while a TR413 or TR414 is a rubber snap-in valve that is pulled through the rim. Both use the 11.5mm rim hole, but the TR161 gives a shorter, rigid metal stem that suits motorcycles, ATVs, mowers and custom wheels, whereas the TR413/TR414 are the everyday passenger-car valves.' },
+      { q: 'How long is a TR161 valve stem?', a: 'The TR161 (VAMD161) is a short stem, Φ16 × 34.5mm overall. The compact length keeps it low-profile on small wheels and avoids fouling brake parts or trim. Confirm the exact dimension with our sales team before a large order.' },
+      { q: 'Does a TR161 valve stem come with a core and cap?', a: 'Yes. TR161 valve stems are supplied with a valve core and cap fitted, and both are also available separately as consumables for workshops and distributors.' },
+      { q: 'Can I buy TR161 valve stems in bulk with my own branding?', a: 'Yes. We supply TR161 valve stems factory-direct in bulk cartons, with OEM/ODM and private-label packing available. Send your quantities and target price for a quotation.' },
+    ],
+    content: `
+      <p><strong>TR161 valve stems</strong> are short metal bolt-in valves for tubeless wheels - a small part, but one that decides whether a motorcycle, ATV or trailer wheel holds air. If you are searching for a <strong>TR161 valve stem</strong> to replace a leaking or broken one, or sourcing them in bulk for a workshop or distributorship, this guide covers what the TR161 is, its size and rim-hole fitment, how it differs from rubber snap-in valves, and how to buy it.</p>
+
+      <h2>What is a TR161 valve stem?</h2>
+      <p>A TR161 valve stem is a <strong>metal bolt-in (clamp-in)</strong> tyre valve. Instead of the vulcanised rubber body of a snap-in valve, it uses a rigid metal stem that is secured through the rim hole with rubber grommets on both sides and a nut. That construction gives a positive, leak-proof seat and keeps the stem firm under vibration - which is exactly what small, high-revving or off-road wheels need.</p>
+      <p>The TR161 (VAMD161) fits the standard <strong>&#934;11.5mm (.453")</strong> rim hole and is short - &#934;16 &#215; 34.5mm overall - so it sits low on the rim. Each stem is supplied with a valve core and a cap.</p>
+
+      <h2>TR161 valve stems vs rubber snap-in valves</h2>
+      <p>The two families solve different problems, and choosing the wrong one is the most common fitment error:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>&nbsp;</th><th>TR161 valve stem</th><th>TR413 / TR414 snap-in valve</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Type</strong></td><td>Metal bolt-in / clamp-in</td><td>Rubber snap-in</td></tr>
+            <tr><td><strong>Rim hole</strong></td><td>11.5 mm / .453"</td><td>11.5 mm / .453"</td></tr>
+            <tr><td><strong>Typical length</strong></td><td>&#934;16 &#215; 34.5 mm</td><td>TR413 32 mm, TR414 38 mm</td></tr>
+            <tr><td><strong>Seal</strong></td><td>Rubber grommets both sides + nut</td><td>Vulcanised rubber base</td></tr>
+            <tr><td><strong>Best for</strong></td><td>Motorcycles, ATVs, mowers, hot rods, compact wheels</td><td>Passenger cars and light trucks</td></tr>
+            <tr><td><strong>Core / cap</strong></td><td>Included</td><td>Included</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>In short: pick a <strong>TR161 valve stem</strong> when you need a short, rigid metal stem for the 11.5mm hole, and a rubber snap-in valve when you need a long, flexible, low-cost stem for a standard car wheel. For the car side, see the <a href="/news/tr413-vs-tr414-tyre-valve/">TR413 vs TR414 comparison</a> and the <a href="/products/tyre-valves/passenger-car-light-truck-valves/">passenger car and light truck valve range</a>.</p>
+
+      <h2>TR161 valve stem size and dimensions</h2>
+      <p>The headline numbers to check before you buy are the rim-hole diameter, the length and the sealing parts. The standard TR161 (also listed as <strong>VAMD161</strong>) is a short chrome metal clamp-in stem for the &#934;11.5 mm (.453") hole:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Model</th><th>Type</th><th>Rim hole</th><th>Ref. length</th><th>Grommet</th><th>Washer</th><th>Nut</th><th>Cap</th></tr></thead>
+          <tbody>
+            <tr><td><strong>TR161 / VAMD161</strong></td><td>Clamp-in / bolt-in</td><td>&#934;11.5 mm / .453"</td><td>&#934;16 &#215; 34.5 mm</td><td>HG2</td><td>RW12</td><td>NH2</td><td>GT</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The stem uses grommet <strong>HG2</strong>, washer <strong>RW12</strong>, nut <strong>NH2</strong> and cap <strong>GT</strong>, so replacement seals are easy to source. Dimensions vary slightly between manufacturers, so for a large order always confirm the exact length, thread and grommet size with your supplier. The <a href="/news/tyre-valve-sizes-dimensions/">complete tyre valve size and dimension chart</a> covers how the rest of the TR and PVR series are measured.</p>
+
+      <h2>Where TR161 valve stems are used</h2>
+      <p>Because it is short, rigid and fits the common 11.5mm hole, the TR161 is a popular replacement across compact tubeless wheels:</p>
+      <ul>
+        <li><strong>Motorcycles and scooters</strong> - a firm metal stem that clears brake and rim parts.</li>
+        <li><strong>ATVs and UTVs</strong> - survives vibration and off-road knocks better than a soft rubber stem.</li>
+        <li><strong>Lawn mowers and ride-on mowers</strong> - a low-profile stem on small wheels.</li>
+        <li><strong>Go-karts and buggies</strong> - compact and robust.</li>
+        <li><strong>Boat and utility trailers</strong> - a tidy, replaceable metal valve.</li>
+        <li><strong>Hot rods and custom wheels</strong> - a clean, short metal finish.</li>
+      </ul>
+      <p>It fits any tubeless rim drilled with the 11.5mm (.453") hole. It is <em>not</em> a substitute for the larger 15.9mm (.625") valves used on some light trucks - check the hole before ordering, or browse the wider <a href="/products/tyre-valves/">tyre valve range</a>. Full specifications, images and ordering details are on the <a href="/products/tyre-valves/tr161-valve-stem/">TR161 valve stem product page</a>.</p>
+
+      <h2>Materials, cores and caps</h2>
+      <p>A quality TR161 valve stem uses a chrome-plated metal body for corrosion resistance, with oil- and weather-resistant rubber grommets that seal on both faces of the rim hole. The valve core is the part that actually holds the air, and the cap keeps dirt and moisture out - both matter as much as the stem. Learn how to specify them in our <a href="/news/tyre-valve-cores/">valve core guide</a> and <a href="/news/tyre-valve-caps/">valve cap guide</a>.</p>
+
+      <h2>How to fit a TR161 bolt-in valve stem</h2>
+      <ol>
+        <li><strong>Deflate the tyre</strong> and support the wheel safely; remove the old valve.</li>
+        <li><strong>Clean the rim hole</strong> - remove old rubber, sealant and corrosion. Never enlarge or ream the hole.</li>
+        <li><strong>Fit the new stem</strong> with the rubber grommets correctly seated on both sides of the rim hole.</li>
+        <li><strong>Seat and tighten the nut</strong> firmly to seal the grommets without distorting them - do not overtighten.</li>
+        <li><strong>Fit the core and cap</strong>, inflate, and leak-test the valve with soapy water before fitting the wheel.</li>
+      </ol>
+      <p>A bolt-in valve is reusable in principle, but the rubber grommets age and harden; replace the grommets (or the whole stem) whenever you fit a new tyre to avoid slow leaks.</p>
+
+      <h2>Buying TR161 valve stems in bulk</h2>
+      <p>For distributors, workshops and OEM programmes, the TR161 is a natural companion to rubber snap-in valves and cores. We supply it factory-direct in bulk cartons with OEM/ODM and private-label packing available, so you can pair TR161 metal stems with <a href="/products/tyre-valves/">TR412-TR415 rubber valves</a>, cores and caps in one consolidated shipment. Send your quantities and target price through the <a href="/contact/">contact form</a> for a quotation, or browse the <a href="/products/tyre-valves/motorcycle-bicycle-valves/">motorcycle &amp; bicycle valve range</a>.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>TR161 dimensions and rim-hole fitment: industry tyre valve data (11.5mm / .453" hole, ~33mm length)</li>
+          <li>Construction, core/cap supply and packing: Century Auto Parts published product data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'tyre-valve-guide', title: 'Tyre Valve Types Explained: TR Series, Truck & Bus, Agricultural', date: 'August 1, 2026', desc: 'TR series, truck & bus and agricultural valves explained.', tag: 'Product Guide' },
+      { slug: 'tr413-vs-tr414-tyre-valve', title: 'TR413 vs TR414 Tyre Valves: Differences, Sizes & Fitment', date: 'September 24, 2026', desc: 'The single most asked comparison in the TR series.', tag: 'Comparison' },
+      { slug: 'tyre-valve-sizes-dimensions', title: 'Tyre Valve Sizes & Dimensions Chart', date: 'September 24, 2026', desc: 'How to read valve dimensions and pick the right size.', tag: 'Tyre Valves' },
+      { slug: 'tyre-valve-cores', title: 'Tyre Valve Cores Explained: Types, Torque & Replacement', date: 'September 29, 2026', desc: '9002# vs 7002#, torque and leak diagnosis.', tag: 'Tyre Valves' },
+    ],
+  },
+  {
     slug: 'tyre-patches-wholesale',
     title: 'Tyre Patches Wholesale: Sizes, Packing & What to Stock',
     date: 'November 11, 2026',
