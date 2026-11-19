@@ -763,6 +763,13 @@ export default {
     keywords: "van TR48E, thân van TR48E, thân van màu, van anod, van vặn, van độ, van xe con",
     seoTitle: "Thân Van Màu TR48E | Anod Vặn, Xe Con",
   },
+  'tr161-valve-stem': {
+    name: "Thân van TR161",
+    tagline: "Thân van bắt vít (bolt-in) kim loại mạ crom TR161 / VAMD161, Φ16 × 34.5mm, cho lỗ mâm Φ11.5mm (.453\") trên xe máy, ATV, xe tay ga và bánh không săm.",
+    desc: "Thân van TR161 (tương đương VAMD161) là thân van bắt vít (bolt-in) kim loại mạ crom cho bánh không săm có lỗ mâm Φ11.5mm (.453\"). Kích thước Φ16 × 34.5mm, được cố định bằng gioăng HG2, vòng đệm RW12 và đai ốc NH2 tạo khớp cứng, kín khít, kèm ruột van và nắp GT. Là phụ tùng thay thế phổ biến trên xe máy, ATV, xe tay ga, máy cắt cỏ, xe go-kart và rơ moóc. Trực tiếp từ nhà máy với lựa chọn số lượng lớn và OEM/ODM.",
+    keywords: "thân van TR161, thân van TR161, VAMD161, thân van VAMD161, thân van kim loại, thân van bắt vít, thân van vặn, thân van xe máy, thân van ATV, van lỗ mâm 11.5mm",
+    seoTitle: "Thân Van TR161 | Mạ Crom Bắt Vít, Φ16×34.5, Lỗ Mâm Φ11.5",
+  },
   'pvr30-motorcycle-valve': {
     name: "Van xe máy PVR30",
     tagline: "Van không săm uốn 90° gọn PVR30 cho xe máy và xe tay ga, bơm hơi dễ dàng trên mâm chật.",

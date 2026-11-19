@@ -226,13 +226,14 @@ export default {
     ],
   },
   'motorcycle-bicycle-valves': {
-    seoTitle: "Van Lốp Xe Máy & Xe Đạp | PVR30 PVR32 PVR40-PVR70, TR48E",
-    keywords: "van xe máy, PVR30, PVR32, PVR40, PVR50, PVR60, PVR70, TR48E, van lốp xe máy, van xe tay ga, van xe đạp, thân van 90 độ",
-    desc: "Van không săm loạt PVR và van hợp kim nhôm màu TR48E cho xe máy, xe tay ga và xe đạp: PVR30, PVR32 (anod đen/xanh/cam), PVR40-PVR70 với lựa chọn uốn 45° và 90°.",
+    seoTitle: "Van Lốp Xe Máy & Xe Đạp | PVR30-PVR70, TR161, TR48E",
+    keywords: "van xe máy, PVR30, PVR32, PVR40, PVR50, PVR60, PVR70, TR48E, thân van TR161, thân van TR161, VAMD161, thân van bắt vít, van lốp xe máy, van xe tay ga, van xe đạp, thân van 90 độ",
+    desc: "Van không săm loạt PVR, van hợp kim nhôm màu TR48E và thân van bắt vít mạ crom TR161 / VAMD161 cho xe máy, xe tay ga, ATV và xe đạp: PVR30, PVR32 (anod đen/xanh/cam), PVR40-PVR70 với lựa chọn uốn 45° và 90°.",
     highlights: [
       "Lựa chọn uốn 90° và 45° cho mâm xe máy chật",
       "PVR32 với các lựa chọn màu anod (đen / xanh / cam)",
       "Van hợp kim nhôm màu TR48E",
+      "Thân van bắt vít mạ crom TR161 / VAMD161, Φ16 × 34.5mm",
       "Lỗ mâm từ 8.3mm tới 11.5mm",
       "Kèm ruột và nắp van, tối đa 65psi",
     ],
