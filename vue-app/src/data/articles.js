@@ -1,6 +1,125 @@
 ﻿export const articles = [
 
   {
+    slug: 'v3-20-4-valve-stem',
+    title: 'V3-20-4 Valve Stem: Sizes, Fitment & Truck/Bus Buying Guide',
+    date: 'November 20, 2026',
+    dateISO: '2026-11-20',
+    tags: ['Product Guide', 'Tyre Valves'],
+    img: '/images/products/tyre-valves/v3-20-4-front-logo.webp',
+    imgAlt: 'V3-20-4 brass clamp-in truck valve stem with 27 degree bend, hex nut and rubber grommet',
+    desc: 'V3-20-4 valve stem explained: the 27° bent brass clamp-in valve for truck and bus tubeless steel rims, A=25mm, B=60mm, Φ16 × 90mm, the Φ9.7mm (.390") rim hole, the TPMS version, fitment, installation and bulk buying.',
+    seoTitle: 'V3-20-4 Valve Stem: Sizes, Fitment & Buying Guide',
+    seoDescription: 'V3-20-4 valve stem guide: 27° bent brass clamp-in valve for truck and bus tubeless rims, A=25mm, B=60mm, Φ16 × 90mm, Φ9.7mm (.390") rim hole, TPMS version, V3-20-6 comparison and bulk buying tips.',
+    seoKeywords: 'v3 20 4 valve stem, V3-20-4 valve stem, V3-20-4 clamp-in valve, truck valve stem, bus valve stem, brass clamp-in valve, 27 degree bent valve, 9.7mm rim hole valve, V3-20-4 TPMS valve',
+    faq: [
+      { q: 'What is a V3-20-4 valve stem?', a: 'A V3-20-4 valve stem is a brass clamp-in (bolt-in) tubeless tyre valve for commercial truck and bus steel rims. It has a 27° bent stem, an A dimension of 25mm and a B stem length of 60mm, and fits the standard Φ9.7mm (.390") truck rim hole. It is clamped through the rim with a hex nut and rubber grommet and is supplied with a valve core and cap.' },
+      { q: 'What rim hole does a V3-20-4 valve stem fit?', a: 'The V3-20-4 fits the standard truck and bus rim hole of Φ9.7mm (.390"). It will not fit passenger-car wheels, which use the smaller 11.5mm (.453") hole and a different valve family. Check the hole diameter before ordering.' },
+      { q: 'What are the V3-20-4 valve stem dimensions?', a: 'The V3-20-4 has a 27° bend, A=25mm (lower section), B=60mm (stem length) and an overall body of roughly Φ16 × 90mm, with a Φ9.7mm (.390") rim hole. Nominal dimensions vary slightly between manufacturers, so confirm the exact A/B lengths and grommet size with your supplier for a large order.' },
+      { q: 'What is the difference between the V3-20-4 and V3-20-6?', a: 'Both are 27° bent brass clamp-in valves with the same Φ9.7mm rim hole. The V3-20-4 has a 60mm stem (overall Φ16 × 90mm), while the V3-20-6 has an 85mm stem (overall Φ16 × 115mm). The V3-20-4 is the compact option; the V3-20-6 gives extra reach for deep or twin rims.' },
+      { q: 'Is there a TPMS version of the V3-20-4?', a: 'Yes. The V3-20-4 TPMS clamp-in valve uses the same 27° bent body (A=25mm, B=60mm, Φ9.7mm rim hole) but is built to accept a tyre pressure monitoring sensor. If the vehicle has TPMS, specify the TPMS version instead of the plain valve.' },
+      { q: 'Can I buy V3-20-4 valve stems in bulk with my own branding?', a: 'Yes. We supply V3-20-4 valve stems factory-direct in bulk cartons, with OEM/ODM and private-label packing available. Send your quantities and target price for a quotation.' },
+    ],
+    content: `
+      <p><strong>V3-20-4 valve stems</strong> are the 27° bent brass clamp-in valves used on truck and bus tubeless steel wheels - the compact member of the V3-20 series, with an A dimension of 25mm and a 60mm stem. If you are searching for a <strong>V3-20-4 valve stem</strong> to replace a leaking or corroded valve, or sourcing them in bulk for a fleet, workshop or distributorship, this guide explains the size and rim-hole fitment, how it differs from the V3-20-6 and the TPMS version, and how to buy it.</p>
+
+      <h2>What is a V3-20-4 valve stem?</h2>
+      <p>A V3-20-4 valve stem is a <strong>brass clamp-in (bolt-in) tubeless tyre valve</strong> for commercial truck and bus steel rims. Unlike a rubber snap-in valve, it is clamped through the rim hole with a hex nut and a rubber grommet, so it stays rigid under high pressure and vibration. The 27° bend angles the stem outward so a twin-wheel or dual-tyre inflator chuck can reach it without fouling the rim or the brake drum.</p>
+      <p>The V3-20-4 uses the standard truck rim hole of <strong>&#934;9.7mm (.390")</strong> and sits at A=25mm with a B=60mm stem, for an overall body of roughly &#934;16 &#215; 90mm. It is supplied complete with a valve core and cap, and is the compact option in the V3-20 family - the V3-20-6 is the same valve with a longer 85mm stem.</p>
+
+      <h2>V3-20-4 dimensions and specifications</h2>
+      <p>Check the rim hole, the bend angle and the A/B dimensions before ordering. The key figures for the standard V3-20-4 are:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Spec</th><th>V3-20-4</th></tr></thead>
+          <tbody>
+            <tr><td><strong>ETRTO model</strong></td><td>V3-20-4</td></tr>
+            <tr><td><strong>Type</strong></td><td>Brass clamp-in / bolt-in, tubeless</td></tr>
+            <tr><td><strong>Bend angle</strong></td><td>27&deg;</td></tr>
+            <tr><td><strong>A (lower section)</strong></td><td>25 mm</td></tr>
+            <tr><td><strong>B (stem length)</strong></td><td>60 mm</td></tr>
+            <tr><td><strong>Overall body</strong></td><td>&#934;16 &#215; 90 mm</td></tr>
+            <tr><td><strong>Rim hole</strong></td><td>&#934;9.7 mm / .390"</td></tr>
+            <tr><td><strong>Material</strong></td><td>Brass, hex nut and rubber grommet</td></tr>
+            <tr><td><strong>Supplied with</strong></td><td>Valve core and cap</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Because truck and bus valves carry high pressure, the brass body and the nut-and-grommet seal matter as much as the dimensions. Confirm the exact A/B lengths, thread and grommet size with your supplier before a large order - nominal dimensions vary slightly between manufacturers. The <a href="/news/tyre-valve-sizes-dimensions/">complete tyre valve size and dimension chart</a> shows how the V3-20, TR570 and 58MS series are measured.</p>
+
+      <h2>V3-20-4 in the V3-20 series</h2>
+      <p>The V3-20 series shares the same &#934;9.7mm rim hole and 27° bend, and differs mainly in stem length. This is how the common models compare:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Model</th><th>A (mm)</th><th>B (mm)</th><th>Bend</th><th>Rim hole</th></tr></thead>
+          <tbody>
+            <tr><td>V3-20-1</td><td>41</td><td>-</td><td>-</td><td>&#934;9.7 (.390")</td></tr>
+            <tr><td>V3-20-2</td><td>30</td><td>60</td><td>17&deg;</td><td>&#934;9.7 (.390")</td></tr>
+            <tr><td><strong>V3-20-4</strong></td><td><strong>25</strong></td><td><strong>60</strong></td><td><strong>27&deg;</strong></td><td><strong>&#934;9.7 (.390")</strong></td></tr>
+            <tr><td>V3-20-5</td><td>25</td><td>40</td><td>27&deg;</td><td>&#934;9.7 (.390")</td></tr>
+            <tr><td>V3-20-6</td><td>25</td><td>85</td><td>27&deg;</td><td>&#934;9.7 (.390")</td></tr>
+            <tr><td>V3-20-7</td><td>25</td><td>50</td><td>27&deg;</td><td>&#934;9.7 (.390")</td></tr>
+            <tr><td>V3-20-12</td><td>25</td><td>70</td><td>27&deg;</td><td>&#934;9.7 (.390")</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>If a wheel needs more reach - for example a deep-dish or heavily dished truck rim - step up to the <a href="/products/tyre-valves/v3-20-4-v3-20-6-valve-stem/">V3-20-6 with its 85mm stem</a>. If clearance is tight, the V3-20-5 (40mm) or V3-20-7 (50mm) may suit better. Always match the valve to the rim, not the other way round.</p>
+
+      <h2>V3-20-4 vs V3-20-6</h2>
+      <p>The single most common question is which of the two bent truck valves to stock. They are the same 27° brass clamp-in design with the same &#934;9.7mm rim hole; the difference is length:</p>
+      <ul>
+        <li><strong>V3-20-4</strong> - B=60mm, overall &#934;16 &#215; 90mm. The compact choice for standard steel truck and bus rims where the valve sits close to the rim edge.</li>
+        <li><strong>V3-20-6</strong> - B=85mm, overall &#934;16 &#215; 115mm. The longer reach for deep rims, twin wheels and applications where the inflator needs extra clearance.</li>
+      </ul>
+      <p>Stocking both covers most truck and bus fitments. Full specifications for both are on the <a href="/products/tyre-valves/v3-20-4-v3-20-6-valve-stem/">V3-20-4 / V3-20-6 valve stem page</a>.</p>
+
+      <h2>TPMS version of the V3-20-4</h2>
+      <p>Many modern trucks and buses run tyre pressure monitoring systems, and the standard brass valve can interfere with the sensor or fail to seat it correctly. The <a href="/products/tyre-valves/v3-20-4-tpms-clamp-in-valve/">V3-20-4 TPMS clamp-in valve</a> is the same 27° bent body (A=25mm, B=60mm, &#934;9.7mm rim hole) built to accept a TPMS sensor. If the vehicle has TPMS, specify the TPMS version rather than the plain valve. For the wider topic, see the <a href="/news/tpms-valve-buying-guide/">TPMS valve stem buying guide</a>.</p>
+
+      <h2>Where V3-20-4 valve stems are used</h2>
+      <p>The V3-20-4 is a standard service part on commercial tubeless steel wheels:</p>
+      <ul>
+        <li><strong>Trucks and tractor units</strong> - steer, drive and trailer axles.</li>
+        <li><strong>Buses and coaches</strong> - where a short, rigid stem clears the hub and brake parts.</li>
+        <li><strong>Twin-wheel / dual-tyre setups</strong> - the 27° bend gives the inflator chuck room to engage.</li>
+        <li><strong>Trailers and semi-trailers</strong> - a durable replacement for corroded or leaking valves.</li>
+        <li><strong>Fleets and workshops</strong> - a fast-moving consumable kept in bulk.</li>
+      </ul>
+      <p>It fits any tubeless truck or bus rim drilled with the &#934;9.7mm (.390") hole. It is <em>not</em> a passenger-car valve: car wheels use the smaller 11.5mm (.453") hole and a different valve family. Browse the full <a href="/products/tyre-valves/truck-bus-valves/">truck and bus valve range</a> or the complete <a href="/products/tyre-valves/">tyre valve catalogue</a>.</p>
+
+      <h2>Materials, cores and caps</h2>
+      <p>A quality V3-20-4 uses a <strong>brass body</strong> for corrosion resistance and a high-pressure rating, with a rubber grommet that seals against the rim on both faces and a hex nut that clamps it down. The valve core is the part that actually holds the air, and the cap keeps dirt and moisture out of the stem. On commercial wheels, a missing cap or a worn core is a common cause of slow leaks - replace both at every tyre service. See the <a href="/news/tyre-valve-cores/">valve core guide</a> and <a href="/news/tyre-valve-caps/">valve cap guide</a>.</p>
+
+      <h2>How to fit a V3-20-4 clamp-in valve</h2>
+      <ol>
+        <li><strong>Deflate the tyre</strong> fully and support the wheel safely; remove the old valve and nut.</li>
+        <li><strong>Clean the rim hole</strong> - remove corrosion, old rubber and sealant. Never enlarge or ream the hole.</li>
+        <li><strong>Fit the new valve</strong> with the rubber grommet correctly seated on the rim face.</li>
+        <li><strong>Fit the hex nut and tighten</strong> firmly enough to seal the grommet without distorting it - do not overtighten brass.</li>
+        <li><strong>Fit the core and cap</strong>, inflate to the specified pressure, and leak-test with soapy water before refitting the wheel.</li>
+      </ol>
+      <p>Clamp-in valves are reusable in principle, but the rubber grommet hardens with age and heat. Replace the grommet - or the whole valve - whenever a new tyre is fitted to avoid slow leaks and corrosion-related failures.</p>
+
+      <h2>Buying V3-20-4 valve stems in bulk</h2>
+      <p>For fleets, tyre shops and distributors, the V3-20-4 is a high-turnover consumable that pairs naturally with cores, caps and the rest of the V3-20 series. We supply it factory-direct in bulk cartons with OEM/ODM and private-label packing, so you can consolidate V3-20-4, V3-20-6, TPMS versions and <a href="/products/tyre-valves/">other tyre valves</a> in one shipment. For sourcing context, read the <a href="/news/commercial-truck-valve-factory-china/">commercial truck valve factory guide</a>, then send your quantities and target price through the <a href="/contact/">contact form</a> for a quotation.</p>
+
+      <div class="sources">
+        <strong>Sources</strong>
+        <ul>
+          <li>V3-20-4 dimensions, bend angle and rim-hole fitment: ETRTO V3-20 series valve data (A=25mm, B=60mm, 27&deg;, &#934;9.7mm / .390")</li>
+          <li>Construction, core/cap supply and packing: Century Auto Parts published product data</li>
+        </ul>
+      </div>
+    `,
+    related: [
+      { slug: 'commercial-truck-valve-factory-china', title: 'Commercial Truck Valve Factory in China: Sourcing Guide for Importers', date: 'September 29, 2026', desc: 'V3-20, TR570 and 58MS brass valve series and factory vetting.', tag: 'Industry Guide' },
+      { slug: 'tyre-valve-sizes-dimensions', title: 'Tyre Valve Sizes & Dimensions: TR, PVR, V3 & TR57 Series Chart', date: 'September 28, 2026', desc: 'How to read valve dimensions and pick the right size.', tag: 'Product Guide' },
+      { slug: 'tpms-valve-buying-guide', title: 'TPMS Valve Stem Buying Guide: Types, Compatibility & Bulk Sourcing', date: 'September 29, 2026', desc: 'Snap-in vs aluminium, compatibility and bulk sourcing.', tag: 'Product Guide' },
+      { slug: 'tyre-valve-cores', title: 'Tyre Valve Cores Explained: Types, Torque & Replacement', date: 'September 29, 2026', desc: '9002# vs 7002#, torque and leak diagnosis.', tag: 'Product Guide' },
+    ],
+  },
+
+  {
     slug: 'tr161-valve-stem',
     title: 'TR161 Valve Stems: Sizes, Fitment & Metal Bolt-In Buying Guide',
     date: 'November 18, 2026',
