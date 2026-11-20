@@ -6,7 +6,7 @@
     date: 'November 20, 2026',
     dateISO: '2026-11-20',
     tags: ['Product Guide', 'Tyre Valves'],
-    img: '/images/products/tyre-valves/v3-20-4-front-logo.webp',
+    img: '/images/articles/v3-20-4-valve-stem.webp',
     imgAlt: 'V3-20-4 brass clamp-in truck valve stem with 27 degree bend, hex nut and rubber grommet',
     desc: 'V3-20-4 valve stem explained: the 27° bent brass clamp-in valve for truck and bus tubeless steel rims, A=25mm, B=60mm, Φ16 × 90mm, the Φ9.7mm (.390") rim hole, the TPMS version, fitment, installation and bulk buying.',
     seoTitle: 'V3-20-4 Valve Stem: Sizes, Fitment & Buying Guide',
