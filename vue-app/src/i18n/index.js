@@ -113,9 +113,18 @@ export function useI18n() {
   }
 }
 
+/** Normalize a route path to its canonical (trailing-slash) URL path. */
+function canonicalPagePath(path) {
+  const rooted = String(path || '/')
+  if (rooted === '/' || rooted.endsWith('/')) return rooted
+  // Keep file-like paths (an extension in the last segment) slash-less.
+  const last = rooted.slice(rooted.lastIndexOf('/') + 1)
+  return last.includes('.') ? rooted : `${rooted}/`
+}
+
 /** hreflang <link> entries for a locale-independent path. */
 export function hreflangLinks(path) {
-  const base = stripLocale(path)
+  const base = canonicalPagePath(stripLocale(path))
   const links = SUPPORTED_LOCALES.map((l) => ({
     rel: 'alternate',
     hreflang: LOCALE_HTML_LANG[l],
